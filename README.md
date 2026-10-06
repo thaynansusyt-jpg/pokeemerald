@@ -3,8 +3,9 @@
 Primeira alpha de uma hack de Pokémon Emerald, baseada na decompilação
 [pret/pokeemerald](https://github.com/pret/pokeemerald).
 
-Versão: **0.1.0 alpha**. TMs reutilizáveis, evoluções solo, encontros ajustados
-e uma missão de pesquisa no laboratório do Birch.
+Versão: **0.2.0 alpha**. TMs reutilizáveis, evoluções solo, encontros ajustados
+uma missão de pesquisa no laboratório do Birch, nova tela inicial, Pikachu na
+apresentação, Senhor Laranja como NPC e um seletor EN / PT-BR com tradução parcial.
 
 Confira os recursos, evoluções, encontros, testes e instruções para baixar
 pelo celular em [HOENN_EXPANSION.md](docs/HOENN_EXPANSION.md).

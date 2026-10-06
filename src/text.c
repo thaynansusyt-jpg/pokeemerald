@@ -1,4 +1,5 @@
 #include "global.h"
+#include "hoenn_expansion.h"
 #include "battle.h"
 #include "main.h"
 #include "m4a.h"
@@ -252,7 +253,7 @@ bool16 AddTextPrinterParameterized(u8 windowId, u8 fontId, const u8 *str, u8 x, 
 {
     struct TextPrinterTemplate printerTemplate;
 
-    printerTemplate.currentChar = str;
+    printerTemplate.currentChar = HeLocalize(str);
     printerTemplate.windowId = windowId;
     printerTemplate.fontId = fontId;
     printerTemplate.x = x;
@@ -286,6 +287,7 @@ bool16 AddTextPrinter(struct TextPrinterTemplate *printerTemplate, u8 speed, Tex
         sTempTextPrinter.subStructFields[i] = 0;
 
     sTempTextPrinter.printerTemplate = *printerTemplate;
+    sTempTextPrinter.printerTemplate.currentChar = HeLocalize(printerTemplate->currentChar);
     sTempTextPrinter.callback = callback;
     sTempTextPrinter.minLetterSpacing = 0;
     sTempTextPrinter.japanese = 0;

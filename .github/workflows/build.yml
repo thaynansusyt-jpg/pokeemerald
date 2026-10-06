@@ -31,11 +31,11 @@ jobs:
           ./build.sh
           ./install.sh ../
       - name: Build alpha
-        run: make -j"$(nproc)" COMPARE=0
+        run: make -j2 COMPARE=0
       - name: Upload playable build
         uses: actions/upload-artifact@v4
         with:
-          name: Pokemon-Hoenn-Expansion-0.1.0-alpha
+          name: Pokemon-Hoenn-Expansion-0.2.0-alpha
           path: |
             pokemon_hoenn_expansion.gba
             docs/HOENN_EXPANSION.md

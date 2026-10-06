@@ -960,3 +960,75 @@ LittlerootTown_Text_BirchSomethingToShowYouAtLab:
 	.string "I have something to show you.\n"
 	.string "Let's go to my LAB.$"
 
+
+@ Senhor Laranja: a one-time welcome gift and a battle after the Pokedex.
+HoennExpansion_EventScript_Laranja::
+	lock
+	faceplayer
+	goto_if_set FLAG_HE_LARANJA_GIFT, HoennExpansion_EventScript_LaranjaCheckBattle
+	msgbox HoennExpansion_Text_LaranjaWelcome, MSGBOX_DEFAULT
+	giveitem ITEM_RARE_CANDY, 6
+	goto_if_eq VAR_RESULT, FALSE, HoennExpansion_EventScript_LaranjaBagFull
+	setflag FLAG_HE_LARANJA_GIFT
+	msgbox HoennExpansion_Text_LaranjaGift, MSGBOX_DEFAULT
+	release
+	end
+
+HoennExpansion_EventScript_LaranjaBagFull::
+	msgbox HoennExpansion_Text_LaranjaBagFull, MSGBOX_DEFAULT
+	release
+	end
+
+HoennExpansion_EventScript_LaranjaCheckBattle::
+	goto_if_unset FLAG_SYS_POKEDEX_GET, HoennExpansion_EventScript_LaranjaWait
+	goto_if_defeated TRAINER_RED, HoennExpansion_EventScript_LaranjaDone
+	msgbox HoennExpansion_Text_LaranjaChallenge, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, HoennExpansion_EventScript_LaranjaWait
+	trainerbattle_single TRAINER_RED, HoennExpansion_Text_LaranjaBattle, HoennExpansion_Text_LaranjaDefeated
+	msgbox HoennExpansion_Text_LaranjaAfterBattle, MSGBOX_DEFAULT
+	release
+	end
+
+HoennExpansion_EventScript_LaranjaWait::
+	msgbox HoennExpansion_Text_LaranjaWait, MSGBOX_DEFAULT
+	release
+	end
+
+HoennExpansion_EventScript_LaranjaDone::
+	msgbox HoennExpansion_Text_LaranjaAfterBattle, MSGBOX_DEFAULT
+	release
+	end
+
+HoennExpansion_Text_LaranjaWelcome:
+	.string "Hi, are you new around here?\p"
+	.string "I'm SENHOR LARANJA! I can't wait\n"
+	.string "for our battle.\p"
+	.string "Come back after getting a POKéDEX.\n"
+	.string "I'll help you on your journey.\p"
+	.string "Here, take these!$"
+
+HoennExpansion_Text_LaranjaGift:
+	.string "Six RARE CANDIES for your journey!\n"
+	.string "Talk to me when you want to battle.$"
+
+HoennExpansion_Text_LaranjaBagFull:
+	.string "Make room in your BAG for the gift.\n"
+	.string "I'll keep it safe for you!$"
+
+HoennExpansion_Text_LaranjaChallenge:
+	.string "You got your POKéDEX! Ready for\n"
+	.string "a friendly battle with my PIKACHU?$"
+
+HoennExpansion_Text_LaranjaBattle:
+	.string "SENHOR LARANJA: Let's go, PIKACHU!$"
+
+HoennExpansion_Text_LaranjaDefeated:
+	.string "That was a great first battle!$"
+
+HoennExpansion_Text_LaranjaWait:
+	.string "I'll be here! Come back with\n"
+	.string "your POKéDEX when you're ready.$"
+
+HoennExpansion_Text_LaranjaAfterBattle:
+	.string "Keep going! I'm cheering for you\n"
+	.string "and your POKéMON!$"
