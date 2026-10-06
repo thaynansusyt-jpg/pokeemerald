@@ -265,12 +265,62 @@ LittlerootTown_ProfessorBirchsLab_Movement_PlayerEnterLabForJohtoStarter:
 LittlerootTown_ProfessorBirchsLab_EventScript_Aide::
 	lock
 	faceplayer
+	goto_if_set FLAG_SYS_POKEDEX_GET, HoennExpansion_EventScript_Research
 	goto_if_ge VAR_BIRCH_LAB_STATE, 3, LittlerootTown_ProfessorBirchsLab_EventScript_AideReceivedStarter
 	goto_if_set FLAG_BIRCH_AIDE_MET, LittlerootTown_ProfessorBirchsLab_EventScript_AideAlreadyMet
 	msgbox LittlerootTown_ProfessorBirchsLab_Text_BirchAwayOnFieldwork, MSGBOX_DEFAULT
 	setflag FLAG_BIRCH_AIDE_MET
 	release
 	end
+
+HoennExpansion_EventScript_Research::
+	goto_if_set FLAG_HE_RESEARCH_REWARD, HoennExpansion_EventScript_ResearchComplete
+	setvar VAR_0x8004, 0
+	special ScriptGetPokedexInfo
+	buffernumberstring STR_VAR_1, VAR_0x8006
+	goto_if_ge VAR_0x8006, 10, HoennExpansion_EventScript_ResearchReward
+	msgbox HoennExpansion_Text_Research, MSGBOX_DEFAULT
+	release
+	end
+
+HoennExpansion_EventScript_ResearchReward::
+	msgbox HoennExpansion_Text_ResearchReward, MSGBOX_DEFAULT
+	giveitem ITEM_EXP_SHARE
+	goto_if_eq VAR_RESULT, FALSE, HoennExpansion_EventScript_BagFull
+	setflag FLAG_HE_RESEARCH_REWARD
+	goto HoennExpansion_EventScript_ResearchComplete
+
+HoennExpansion_EventScript_BagFull::
+	msgbox HoennExpansion_Text_BagFull, MSGBOX_DEFAULT
+	release
+	end
+
+HoennExpansion_EventScript_ResearchComplete::
+	msgbox HoennExpansion_Text_ResearchComplete, MSGBOX_DEFAULT
+	release
+	end
+
+HoennExpansion_Text_Research:
+	.string "Join the HOENN research project!\p"
+	.string "Catch 10 different HOENN species,\n"
+	.string "then return for an EXP. SHARE.\p"
+	.string "Your POKéDEX records {STR_VAR_1} caught.\n"
+	.string "Evolved POKéMON count, too!$"
+
+HoennExpansion_Text_ResearchReward:
+	.string "Excellent fieldwork! Your POKéDEX\n"
+	.string "records at least 10 HOENN species.\p"
+	.string "Here is your research reward!$"
+
+HoennExpansion_Text_BagFull:
+	.string "Your BAG is full. Make room and\n"
+	.string "come back to claim your reward!$"
+
+HoennExpansion_Text_ResearchComplete:
+	.string "Let a POKéMON hold the EXP. SHARE\n"
+	.string "to help it grow with your team.\p"
+	.string "Keep exploring! HOENN has new\n"
+	.string "encounters waiting along its trails.$"
 
 LittlerootTown_ProfessorBirchsLab_EventScript_AideAlreadyMet::
 	msgbox LittlerootTown_ProfessorBirchsLab_Text_BirchIsntOneForDeskWork, MSGBOX_DEFAULT
