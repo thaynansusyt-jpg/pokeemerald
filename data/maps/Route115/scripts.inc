@@ -16,6 +16,7 @@ Route115_OnTransition:
 	end
 
 Route115_OnFrame:
+	map_script_2 VAR_HE_DEMO_BOUNDARY, 0, HE_Route115_Boundary
 	map_script_2 VAR_SHOULD_END_ABNORMAL_WEATHER, 1, AbnormalWeather_EventScript_EndEventAndCleanup_1
 	.2byte 0
 
@@ -143,3 +144,15 @@ Route115_Text_MeteorFallsSign:
 	.string "METEOR FALLS\n"
 	.string "FALLARBOR TOWN THROUGH HERE$"
 
+
+HE_Route115_Boundary::
+	lockall
+	msgbox HE_Route115_Closed, MSGBOX_DEFAULT
+	closemessage
+	warp MAP_RUSTBORO_CITY, 255, 27, 20
+	waitstate
+	releaseall
+	end
+
+HE_Route115_Closed:
+	.string "AVISO DA LIGA\pEsta estrada está fechada\npor risco de desabamento.\pO capítulo atual termina\nno ginásio de Roxanne.\pAs próximas áreas serão\nabertas na continuação.$"

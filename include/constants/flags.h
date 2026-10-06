@@ -45,8 +45,8 @@
 
 #define FLAG_HE_RESEARCH_REWARD 0x20 // Hoenn Expansion: ten-species research reward
 #define FLAG_HE_LARANJA_GIFT 0x21 // Six Rare Candies from Senhor Laranja
-#define FLAG_UNUSED_0x022    0x22 // Unused Flag
-#define FLAG_UNUSED_0x023    0x23 // Unused Flag
+#define FLAG_HE_ECLIPSE_COMPLETE 0x22 // Chapter one ending shown
+#define FLAG_HE_ECLIPSE_PROOF 0x23 // Researcher rescued
 #define FLAG_UNUSED_0x024    0x24 // Unused Flag
 #define FLAG_UNUSED_0x025    0x25 // Unused Flag
 #define FLAG_UNUSED_0x026    0x26 // Unused Flag

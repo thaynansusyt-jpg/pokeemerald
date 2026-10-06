@@ -3,7 +3,7 @@
 Primeira alpha de uma hack de Pokémon Emerald, baseada na decompilação
 [pret/pokeemerald](https://github.com/pret/pokeemerald).
 
-Versão: **0.2.0 alpha**. TMs reutilizáveis, evoluções solo, encontros ajustados
+Versão: **0.3.0 alpha — Operação Eclipse**. Nova história em português até Roxanne, com a Rocket provocando a crise em Hoenn. Comece um novo save. TMs reutilizáveis, evoluções solo, encontros ajustados
 uma missão de pesquisa no laboratório do Birch, nova tela inicial, Pikachu na
 apresentação, Senhor Laranja como NPC e um seletor EN / PT-BR com tradução parcial.
 

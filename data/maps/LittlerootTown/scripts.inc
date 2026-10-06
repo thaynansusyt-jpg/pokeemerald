@@ -851,52 +851,22 @@ LittlerootTown_EventScript_GiveRunningShoes::
 	return
 
 LittlerootTown_Text_OurNewHomeLetsGoInside:
-	.string "MOM: {PLAYER}, we're here, honey!\p"
-	.string "It must be tiring riding with our things\n"
-	.string "in the moving truck.\p"
-	.string "Well, this is LITTLEROOT TOWN.\p"
-	.string "How do you like it?\n"
-	.string "This is our new home!\p"
-	.string "It has a quaint feel, but it seems to be\n"
-	.string "an easy place to live, don't you think?\p"
-	.string "And, you get your own room, {PLAYER}!\n"
-	.string "Let's go inside.$"
+	.string "Mãe: Chegamos, {PLAYER}!\pLittleroot parecia o lugar\nperfeito para recomeçar.\pSeu pai anda preocupado com\nos tremores em Hoenn. Aqui\pestaremos juntos.\pVamos conhecer nossa casa!$"
 
 LittlerootTown_Text_WaitPlayer:
-	.string "MOM: Wait, {PLAYER}!$"
+	.string "Mãe: Espere, {PLAYER}!$"
 
 LittlerootTown_Text_WearTheseRunningShoes:
-	.string "MOM: {PLAYER}! {PLAYER}! Did you\n"
-	.string "introduce yourself to PROF. BIRCH?\p"
-	.string "Oh! What an adorable POKéMON!\n"
-	.string "You got it from PROF. BIRCH. How nice!\p"
-	.string "You're your father's child, all right.\n"
-	.string "You look good together with POKéMON!\p"
-	.string "Here, honey! If you're going out on an\n"
-	.string "adventure, wear these RUNNING SHOES.\p"
-	.string "They'll put a zip in your step!$"
+	.string "Mãe: Birch te deu um\nPokémon! Que bom ver vocês\pjuntos.\pLeve estes tênis. As\nestradas estão difíceis\pdesde os apagões.$"
 
 LittlerootTown_Text_SwitchShoesWithRunningShoes:
-	.string "{PLAYER} switched shoes with the\n"
-	.string "RUNNING SHOES.$"
+	.string "{PLAYER} calçou os tênis de\ncorrida!$"
 
 LittlerootTown_Text_ExplainRunningShoes:
-	.string "MOM: {PLAYER}, those shoes came with\n"
-	.string "instructions.\p"
-	.string "“Press the B Button while wearing these\n"
-	.string "RUNNING SHOES to run extra-fast!\p"
-	.string "“Slip on these RUNNING SHOES and race\n"
-	.string "in the great outdoors!”$"
+	.string "Mãe: Segure B para correr.\nMas descanse quando\pprecisar!$"
 
 LittlerootTown_Text_ComeHomeIfAnythingHappens:
-	.string "… … … … … … … …\n"
-	.string "… … … … … … … …\p"
-	.string "To think that you have your very own\n"
-	.string "POKéMON now…\l"
-	.string "Your father will be overjoyed.\p"
-	.string "…But please be careful.\n"
-	.string "If anything happens, you can come home.\p"
-	.string "Go on, go get them, honey!$"
+	.string "Mãe: Prometa que vai\nvoltar.\pSe o mundo lá fora ficar\nassustador, nossa casa\pestará aqui. Cuide de\nvocês!$"
 
 LittlerootTown_Text_CanUsePCToStoreItems:
 	.string "If you use a PC, you can store items\n"
@@ -911,30 +881,19 @@ LittlerootTown_Text_BirchSpendsDaysInLab:
 	.string "at home?$"
 
 LittlerootTown_Text_IfYouGoInGrassPokemonWillJumpOut:
-	.string "Um, um, um!\p"
-	.string "If you go outside and go in the grass,\n"
-	.string "wild POKéMON will jump out!$"
+	.string "Os Pokémon da grama estão\nagitados desde o tremor.$"
 
 LittlerootTown_Text_DangerousIfYouDontHavePokemon:
-	.string "It's dangerous if you don't have\n"
-	.string "your own POKéMON.$"
+	.string "Sem um Pokémon, é perigoso\nsair sozinho!$"
 
 LittlerootTown_Text_CanYouGoSeeWhatsHappening:
-	.string "Um, hi!\p"
-	.string "There are scary POKéMON outside!\n"
-	.string "I can hear their cries!\p"
-	.string "I want to go see what's going on,\n"
-	.string "but I don't have any POKéMON…\p"
-	.string "Can you go see what's happening\n"
-	.string "for me?$"
+	.string "Ouvi um estrondo na Rota\n101! Os Pokémon estão\passustados.\pO professor foi investigar\ne está pedindo ajuda!$"
 
 LittlerootTown_Text_YouSavedBirch:
-	.string "You saved PROF. BIRCH!\n"
-	.string "I'm so glad!$"
+	.string "Você salvou o professor!\nAinda bem!$"
 
 LittlerootTown_Text_GoodLuckCatchingPokemon:
-	.string "Are you going to catch POKéMON?\n"
-	.string "Good luck!$"
+	.string "Cuide dos Pokémon durante a\nviagem!$"
 
 LittlerootTown_Text_TownSign:
 	.string "LITTLEROOT TOWN\n"
@@ -1000,35 +959,25 @@ HoennExpansion_EventScript_LaranjaDone::
 	end
 
 HoennExpansion_Text_LaranjaWelcome:
-	.string "Hi, are you new around here?\p"
-	.string "I'm SENHOR LARANJA! I can't wait\n"
-	.string "for our battle.\p"
-	.string "Come back after getting a POKéDEX.\n"
-	.string "I'll help you on your journey.\p"
-	.string "Here, take these!$"
+	.string "Olá, você é novo por aqui?\pSou SENHOR LARANJA! Estou\nansioso pela nossa batalha.\pVolte depois de pegar a\nPokédex. Vou te ajudar na\pjornada. Toma!$"
 
 HoennExpansion_Text_LaranjaGift:
-	.string "Six RARE CANDIES for your journey!\n"
-	.string "Talk to me when you want to battle.$"
+	.string "Seis Rare Candies!\pSe a Rocket aparecer, conte\ncomigo e com meu Pikachu.$"
 
 HoennExpansion_Text_LaranjaBagFull:
-	.string "Make room in your BAG for the gift.\n"
-	.string "I'll keep it safe for you!$"
+	.string "Abra espaço na mochila. Vou\nguardar seu presente!$"
 
 HoennExpansion_Text_LaranjaChallenge:
-	.string "You got your POKéDEX! Ready for\n"
-	.string "a friendly battle with my PIKACHU?$"
+	.string "Pegou a Pokédex! Vamos\ntreinar para defender\pHoenn?$"
 
 HoennExpansion_Text_LaranjaBattle:
-	.string "SENHOR LARANJA: Let's go, PIKACHU!$"
+	.string "LARANJA: Vamos, Pikachu!$"
 
 HoennExpansion_Text_LaranjaDefeated:
-	.string "That was a great first battle!$"
+	.string "Boa! Hoenn vai precisar de\ngente como você.$"
 
 HoennExpansion_Text_LaranjaWait:
-	.string "I'll be here! Come back with\n"
-	.string "your POKéDEX when you're ready.$"
+	.string "Volte com a Pokédex. Estou\norganizando ajuda para as\pcidades.$"
 
 HoennExpansion_Text_LaranjaAfterBattle:
-	.string "Keep going! I'm cheering for you\n"
-	.string "and your POKéMON!$"
+	.string "Birch confia em você.\pVá até Roxanne, em\nRustboro. Eu protejo\pLittleroot!$"

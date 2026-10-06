@@ -1,15 +1,51 @@
-# Pokémon Hoenn Expansion — 0.2.0 alpha
+# Pokémon Hoenn Expansion — 0.3.0 alpha
 
 Uma primeira hack de Pokémon Emerald feita para explorar Hoenn com mais
 opções de equipe e menos dependência de trocas. Base: pret/pokeemerald.
-Esta versão mantém a campanha, os mapas, os gráficos e o sistema de batalha
-de Emerald. A campanha original continua majoritariamente em inglês. Não inclui espécies de
-gerações posteriores à terceira, divisão físico/especial moderna ou Mega Evoluções.
+Esta versão troca o início da campanha pelo capítulo **Operação Eclipse**,
+em português, de Littleroot até a primeira insígnia em Rustboro. Os mapas e
+os sistemas de Emerald são a base. Não inclui espécies posteriores à terceira
+geração, divisão físico/especial moderna ou Mega Evoluções.
+Os diálogos centrais do capítulo são escritos diretamente em português;
+o seletor EN/PT-BR continua controlando os menus e os textos localizados da
+alpha anterior. Textos auxiliares, nomes de golpes, itens e mensagens de batalha
+ainda podem aparecer em inglês. Não é uma tradução integral de Emerald.
 A tela inicial usa a arte de Rayquaza fornecida pelo autor, o logo de Pokémon
 do jogo e o título Hoenn Expansion. O crédito de abertura inclui
 `(2026 - Senhor Laranja)`, junto dos avisos originais.
 
-## Novidades da 0.2.0
+## Capítulo 1 — Operação Eclipse
+
+**Comece um NOVO JOGO.** Saves das versões anteriores não possuem os eventos
+novos na sequência correta; guarde uma cópia deles e use um save separado.
+
+A Rocket provoca tremores e apagões com aparelhos que assustam os Pokémon e
+sobrecarregam usinas. Enquanto as cidades pedem socorro, ela oferece uma falsa
+proteção para controlar Hoenn. Birch investiga os sinais; Norman mantém um
+abrigo; Senhor Laranja protege Littleroot. Você encontra provas na floresta e
+ajuda Roxanne a formar a resistência em Rustboro.
+
+Roteiro jogável: mudança e notícia na TV → resgate de Birch → treino na Rota
+103 → Pokédex → Norman e Wally → patrulha Rocket opcional na Rota 104 →
+resgate do pesquisador na floresta → ginásio de Roxanne → transmissão Rocket,
+tremor e encerramento do capítulo.
+
+- Patrulha Rocket: Rattata nível 6. Floresta: Rattata 8 e Zubat 9.
+- Roxanne só aceita o desafio depois do resgate do pesquisador.
+- A insígnia e TM39 mantêm suas funções. A cena final aparece depois de
+  receber a TM; se a mochila estiver cheia, abra espaço e volte a Roxanne.
+- Após o final, pode salvar, treinar e explorar as áreas abertas.
+- Rotas 115 e 116 estão interditadas, inclusive antes da insígnia. Ao entrar,
+  o aviso retorna você para a frente do ginásio. O arco Aqua de roubo dos
+  Devon Goods permanece desativado. A viagem de Briney não é liberada.
+- A Rocket usa provisoriamente os sprites de recruta Magma da base Emerald;
+  nome de facção, equipes e diálogos são da Rocket. Uniformes próprios ficam
+  para uma próxima atualização.
+- Gancho: uma ordem pelo rádio anuncia a fase dois e o “guardião do céu”.
+  A continuação não está implementada nesta versão.
+
+## Recursos da 0.2.0 mantidos
+
 
 - Nova tela inicial com Rayquaza preto, Pokémon / Hoenn Expansion e START.
 - Crédito `(2026 - Senhor Laranja)` na abertura.
@@ -80,7 +116,7 @@ referem-se aos encontros em terra dentro da área indicada.
 
 1. Abra a aba **Actions** deste repositório.
 2. Abra uma execução verde de **Build Hoenn Expansion**.
-3. Em **Artifacts**, baixe **Pokemon-Hoenn-Expansion-0.2.0-alpha**.
+3. Em **Artifacts**, baixe **Pokemon-Hoenn-Expansion-0.3.0-alpha**.
 4. Extraia o ZIP e abra `pokemon_hoenn_expansion.gba` no KL Play ou em outro
    emulador de GBA. O download de artifacts pode exigir login no GitHub.
 
@@ -103,7 +139,9 @@ de Emerald, faça uma cópia; não garantimos compatibilidade de saves antigos.
 - Ensine a mesma TM a dois Pokémon compatíveis, com e sem substituição de golpe.
 - Suba Kadabra/Haunter/Graveler/Machoke até 36; confira cancelamento e Everstone.
 - Use as pedras nas espécies da tabela; confira consumo apenas após evolução.
-- Explore as áreas da tabela e continue até Roxanne e Brawly.
+- Resgate o pesquisador na floresta; desafie Roxanne e receba a primeira insígnia.
+- Confira o tremor e a transmissão final; salve depois do encerramento.
+- Entre nas rotas 115/116 e confira o retorno seguro para Rustboro.
 
 Compilar com sucesso valida integração do código, mas não substitui estes
 testes no emulador.
@@ -124,5 +162,10 @@ abertura, a entrada no menu, o seletor EN / PT-BR e o Pikachu da apresentação.
 Um cenário de teste em Littleroot confirmou: 6 Rare Candies sem duplicação,
 prêmio pendente com mochila cheia e retirada depois de liberar espaço,
 espera antes da Pokédex e início da batalha com Pikachu nível 5 após a Pokédex.
-O cenário de teste não faz parte da ROM entregue. Não houve teste da campanha
-inteira nem de migração de saves antigos.
+Na 0.3.0, cenários separados no mGBA confirmaram o resgate com batalha,
+`FLAG_HE_ECLIPSE_PROOF` e estado 1 da floresta; recusa de Roxanne sem as
+provas; vitória contra Roxanne, concessão da insígnia/TM e encerramento;
+cena final única e retorno da Rota 116 para (27,20) em Rustboro.
+Os cenários temporários não fazem parte da ROM entregue. Não houve um
+playthrough contínuo inteiro desde a mudança nem teste de migração de saves.
+A Rota 115 usa o mesmo bloqueio, com verificação da ligação no script.
