@@ -245,4 +245,4 @@ HE_Text_RoxanneResistance:
 	.string "ROXANNE: Guardião do céu...?\nO que eles querem despertar?\pA Devon desligou o aparelho.\nRustboro está segura por ora.\pMas isto foi só o começo.\pVou reunir os líderes. Birch\ne Laranja protegem o sul.\pHoje você conquistou mais\nque uma insígnia.\pVocê nos deu uma chance\nde resistir.$"
 
 HE_Text_EndChapter:
-	.string "HOENN EXPANSION\nCapítulo 1: Operação Eclipse\pFIM DO PRIMEIRO CAPÍTULO\pA história continua em uma\npróxima versão.\pVocê pode salvar, explorar\ne treinar nas áreas abertas.\pObrigado por defender Hoenn!$"
+	.string "ROXANNE: O pesquisador\nmontou um decodificador.\pEncontre ele em frente ao\nginásio. Há um transmissor\pna praça.\pCorte o sinal e procure\nBriney. Dewford precisa de\pajuda.\pA resistência começa agora!$"

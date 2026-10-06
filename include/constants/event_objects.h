@@ -253,6 +253,7 @@
 // object graphics that can be removed. If more graphics are needed, anything that
 // stores graphics ids will need to be increased in size. See wiki entry below:
 // https://github.com/pret/pokeemerald/wiki/Feature-Branches#overworld-expansion
+#define OBJ_EVENT_GFX_HE_TRANSMITTER OBJ_EVENT_GFX_LINK_RS_BRENDAN
 #define NUM_OBJ_EVENT_GFX                        239
 
 

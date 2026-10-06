@@ -782,8 +782,17 @@ struct MultichoiceListStruct
     u8 count;
 };
 
+static const u8 sHePulseA[] = _("Pulso A");
+static const u8 sHePulseB[] = _("Pulso B");
+static const u8 sHePulseC[] = _("Pulso C");
+static const u8 sHeExit[] = _("Sair");
+static const struct MenuAction sHeSignalChoices[] = {
+    {sHePulseA, {NULL}}, {sHePulseB, {NULL}}, {sHePulseC, {NULL}}, {sHeExit, {NULL}},
+};
+
 static const struct MultichoiceListStruct sMultichoiceLists[] =
 {
+    [MULTI_HE_SIGNAL]                 = MULTICHOICE(sHeSignalChoices),
     [MULTI_BRINEY_ON_DEWFORD]          = MULTICHOICE(MultichoiceList_BrineyOnDewford),
     [MULTI_PC]                         = MULTICHOICE(MultichoiceList_Exit),
     [MULTI_ENTERINFO]                  = MULTICHOICE(MultichoiceList_EnterInfo),

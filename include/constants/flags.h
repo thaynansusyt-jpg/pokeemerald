@@ -47,12 +47,12 @@
 #define FLAG_HE_LARANJA_GIFT 0x21 // Six Rare Candies from Senhor Laranja
 #define FLAG_HE_ECLIPSE_COMPLETE 0x22 // Chapter one ending shown
 #define FLAG_HE_ECLIPSE_PROOF 0x23 // Researcher rescued
-#define FLAG_UNUSED_0x024    0x24 // Unused Flag
-#define FLAG_UNUSED_0x025    0x25 // Unused Flag
-#define FLAG_UNUSED_0x026    0x26 // Unused Flag
-#define FLAG_UNUSED_0x027    0x27 // Unused Flag
-#define FLAG_UNUSED_0x028    0x28 // Unused Flag
-#define FLAG_UNUSED_0x029    0x29 // Unused Flag
+#define FLAG_HE_DECODER 0x24
+#define FLAG_HE_SIGNAL_RUSTBORO 0x25
+#define FLAG_HE_SIGNAL_DEWFORD 0x26
+#define FLAG_HE_HARBOR_SAFE 0x27
+#define FLAG_HE_SIGNAL_MAUVILLE 0x28
+#define FLAG_HE_ACT3_COMPLETE 0x29
 #define FLAG_UNUSED_0x02A    0x2A // Unused Flag
 #define FLAG_UNUSED_0x02B    0x2B // Unused Flag
 #define FLAG_UNUSED_0x02C    0x2C // Unused Flag

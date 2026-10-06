@@ -17,6 +17,7 @@ Route118_OnLoad:
 	end
 
 Route118_OnFrame:
+	map_script_2 VAR_HE_DEMO_BOUNDARY, 0, HE_Route118_Boundary
 	map_script_2 VAR_SHOULD_END_ABNORMAL_WEATHER, 1, AbnormalWeather_EventScript_EndEventAndCleanup_1
 	.2byte 0
 
@@ -291,3 +292,13 @@ Route118_Text_RouteSign119:
 	.string "ROUTE 118\n"
 	.string "{UP_ARROW} ROUTE 119$"
 
+HE_Route118_Boundary::
+	lockall
+	msgbox HE_Text_Route118Closed, MSGBOX_DEFAULT
+	closemessage
+	warp MAP_MAUVILLE_CITY, 255, 20, 16
+	waitstate
+	releaseall
+	end
+HE_Text_Route118Closed:
+	.string "AVISO DA RESISTÊNCIA\pEstrada interditada. O\ncapítulo atual termina\pdepois de Wattson.\pRetorne a Mauville. As\npróximas áreas virão na\pcontinuação.$"

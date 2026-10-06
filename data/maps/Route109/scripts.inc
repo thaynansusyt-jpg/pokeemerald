@@ -474,19 +474,13 @@ DewfordTown_Text_BrineyLandedInSlateportDeliverGoods:
 	.string "STERN and deliver the DEVON GOODS?$"
 
 Route109_Text_BrineySailToDewfordQuestion:
-	.string "MR. BRINEY: I thought you're supposed\n"
-	.string "to deliver the DEVON GOODS.\p"
-	.string "Would you like to sail back to\n"
-	.string "DEWFORD, then?$"
+	.string "BRINEY: Quer navegar de\nvolta a Dewford?$"
 
 Route109_Text_BrineyDewfordItIs:
-	.string "MR. BRINEY: DEWFORD it is, then!\p"
-	.string "Anchors aweigh!\n"
-	.string "PEEKO, we're setting sail, my darling!$"
+	.string "BRINEY: Rumo a Dewford!$"
 
 Route109_Text_BrineyDeliverDevonGoods:
-	.string "MR. BRINEY: Then you go on and deliver\n"
-	.string "the DEVON GOODS. I'll be waiting.$"
+	.string "BRINEY: Procure Stern no\nsegundo andar do museu de\pSlateport.$"
 
 DewfordTown_Text_BrineyLandedInSlateport:
 	.string "MR. BRINEY: Ahoy! We've made land in\n"
@@ -495,13 +489,10 @@ DewfordTown_Text_BrineyLandedInSlateport:
 	.string "you want to set sail again!$"
 
 Route109_Text_BrineyWhereAreWeBound:
-	.string "MR. BRINEY: Ahoy!\n"
-	.string "For you, I'll go out to sea anytime!\p"
-	.string "Now, my friend, where are we bound?$"
+	.string "BRINEY: Para onde vamos?$"
 
 Route109_Text_BrineyTellMeWhenYouNeedToSail:
-	.string "MR. BRINEY: You just tell me whenever\n"
-	.string "you need to set sail again!$"
+	.string "BRINEY: Estarei aqui quando\nprecisar.$"
 
 Route109_Text_ChillAtMyPapasSpot:
 	.string "Yo, TRAINERS!\n"
@@ -521,7 +512,7 @@ Route109_Text_SandCastleTakingLongTime:
 	.string "to make.$"
 
 Route109_Text_YouCanHaveThis:
-	.string "You can have this!$"
+	.string "Leve isto para ajudar seus\nPokémon!$"
 
 Route109_Text_WereGoingToMakeBigCastle:
 	.string "We're going to get all the sand from\n"

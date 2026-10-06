@@ -1,4 +1,5 @@
 #include "global.h"
+#include "hoenn_expansion.h"
 #include "battle.h"
 #include "battle_anim.h"
 #include "battle_controllers.h"
@@ -2322,6 +2323,8 @@ u32 BattleStringExpandPlaceholders(const u8 *src, u8 *dst)
         multiplayerId = gRecordedBattleMultiplayerId;
     else
         multiplayerId = GetMultiplayerId();
+
+    src = HeLocalize(src);
 
     while (*src != EOS)
     {

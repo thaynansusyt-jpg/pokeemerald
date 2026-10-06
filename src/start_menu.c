@@ -62,7 +62,8 @@ enum
     MENU_ACTION_PLAYER_LINK,
     MENU_ACTION_REST_FRONTIER,
     MENU_ACTION_RETIRE_FRONTIER,
-    MENU_ACTION_PYRAMID_BAG
+    MENU_ACTION_PYRAMID_BAG,
+    MENU_ACTION_HE_JOURNAL
 };
 
 // Save status
@@ -99,6 +100,9 @@ static bool8 StartMenuPlayerNameCallback(void);
 static bool8 StartMenuSaveCallback(void);
 static bool8 StartMenuOptionCallback(void);
 static bool8 StartMenuExitCallback(void);
+static bool8 HeJournalCallback(void);
+static const u8 sHeJournalName[] = _("MISSAO");
+extern const u8 HE_Journal[];
 static bool8 StartMenuSafariZoneRetireCallback(void);
 static bool8 StartMenuLinkModePlayerNameCallback(void);
 static bool8 StartMenuBattlePyramidRetireCallback(void);
@@ -181,6 +185,7 @@ static const struct WindowTemplate sWindowTemplate_PyramidPeak = {
 
 static const struct MenuAction sStartMenuItems[] =
 {
+    [MENU_ACTION_HE_JOURNAL]      = {sHeJournalName, {.u8_void = HeJournalCallback}},
     [MENU_ACTION_POKEDEX]         = {gText_MenuPokedex, {.u8_void = StartMenuPokedexCallback}},
     [MENU_ACTION_POKEMON]         = {gText_MenuPokemon, {.u8_void = StartMenuPokemonCallback}},
     [MENU_ACTION_BAG]             = {gText_MenuBag,     {.u8_void = StartMenuBagCallback}},
@@ -325,7 +330,9 @@ static void BuildNormalStartMenu(void)
 
     AddStartMenuAction(MENU_ACTION_BAG);
 
-    if (FlagGet(FLAG_SYS_POKENAV_GET) == TRUE)
+    if (FlagGet(FLAG_HE_DECODER))
+        AddStartMenuAction(MENU_ACTION_HE_JOURNAL);
+    else if (FlagGet(FLAG_SYS_POKENAV_GET) == TRUE)
     {
         AddStartMenuAction(MENU_ACTION_POKENAV);
     }
@@ -615,7 +622,8 @@ static bool8 HandleStartMenuInput(void)
 
         gMenuCallback = sStartMenuItems[sCurrentStartMenuActions[sStartMenuCursorPos]].func.u8_void;
 
-        if (gMenuCallback != StartMenuSaveCallback
+        if (gMenuCallback != HeJournalCallback
+            && gMenuCallback != StartMenuSaveCallback
             && gMenuCallback != StartMenuExitCallback
             && gMenuCallback != StartMenuSafariZoneRetireCallback
             && gMenuCallback != StartMenuBattlePyramidRetireCallback)
@@ -1436,4 +1444,12 @@ void AppendToList(u8 *list, u8 *pos, u8 newEntry)
 {
     list[*pos] = newEntry;
     (*pos)++;
+}
+
+static bool8 HeJournalCallback(void)
+{
+    RemoveExtraStartMenuWindows();
+    HideStartMenu();
+    ScriptContext_SetupScript(HE_Journal);
+    return TRUE;
 }

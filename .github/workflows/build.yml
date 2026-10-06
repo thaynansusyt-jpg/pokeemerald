@@ -35,7 +35,7 @@ jobs:
       - name: Upload playable build
         uses: actions/upload-artifact@v4
         with:
-          name: Pokemon-Hoenn-Expansion-0.3.0-alpha
+          name: Pokemon-Hoenn-Expansion-0.4.0-alpha
           path: |
             pokemon_hoenn_expansion.gba
             docs/HOENN_EXPANSION.md

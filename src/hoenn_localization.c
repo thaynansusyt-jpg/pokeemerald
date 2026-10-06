@@ -152,7 +152,69 @@ static const u8 sEn73[] = _("Your BAG is full. Make room and\ncome back to claim
 static const u8 sBr73[] = _("Sua MOCHILA está cheia.\nAbra espaço e volte pelo prêmio!");
 static const u8 sEn74[] = _("Let a POKéMON hold the EXP. SHARE\nto help it grow with your team.\pKeep exploring! HOENN has new\nencounters waiting along its trails.");
 static const u8 sBr74[] = _("Equipe um POKéMON com EXP. SHARE\npara ajudar seu time a crescer.\pContinue explorando! Há novos\nPOKéMON pelos caminhos de HOENN.");
+static const u8 sEn75[] = _("{B_ATK_NAME_WITH_PREFIX}'s\nattack missed!");
+static const u8 sBr75[] = _("O ataque de {B_ATK_NAME_WITH_PREFIX}\nerrou!");
+static const u8 sEn76[] = _("{B_ATK_NAME_WITH_PREFIX}\nfainted!\p");
+static const u8 sBr76[] = _("{B_ATK_NAME_WITH_PREFIX}\ndesmaiou!\p");
+static const u8 sEn77[] = _("{B_DEF_NAME_WITH_PREFIX}\nfainted!\p");
+static const u8 sBr77[] = _("{B_DEF_NAME_WITH_PREFIX}\ndesmaiou!\p");
+static const u8 sEn78[] = _("{B_PLAYER_NAME} got ¥{B_BUFF1}\nfor winning!\p");
+static const u8 sBr78[] = _("{B_PLAYER_NAME} recebeu ¥{B_BUFF1}\npela vitória!\p");
+static const u8 sEn79[] = _("It's not very effective…");
+static const u8 sBr79[] = _("Não foi muito eficaz...");
+static const u8 sEn80[] = _("It's super effective!");
+static const u8 sBr80[] = _("Foi supereficaz!");
+static const u8 sEn81[] = _("{B_TRAINER1_CLASS} {B_TRAINER1_NAME}\nwould like to battle!\p");
+static const u8 sBr81[] = _("{B_TRAINER1_CLASS} {B_TRAINER1_NAME}\nquer batalhar!\p");
+static const u8 sEn82[] = _("{B_TRAINER1_CLASS} {B_TRAINER1_NAME} sent\nout {B_OPPONENT_MON1_NAME}!");
+static const u8 sBr82[] = _("{B_TRAINER1_CLASS} {B_TRAINER1_NAME}\nenviou {B_OPPONENT_MON1_NAME}!");
+static const u8 sEn83[] = _("{B_TRAINER1_CLASS} {B_TRAINER1_NAME} sent\nout {B_BUFF1}!");
+static const u8 sBr83[] = _("{B_TRAINER1_CLASS} {B_TRAINER1_NAME}\nenviou {B_BUFF1}!");
+static const u8 sEn84[] = _("Go! {B_PLAYER_MON1_NAME}!");
+static const u8 sBr84[] = _("Vai, {B_PLAYER_MON1_NAME}!");
+static const u8 sEn85[] = _("{B_ATK_NAME_WITH_PREFIX} used\n{B_BUFF2}");
+static const u8 sBr85[] = _("{B_ATK_NAME_WITH_PREFIX} usou\n{B_BUFF2}");
+static const u8 sEn86[] = _("Wild {B_OPPONENT_MON1_NAME} appeared!\p");
+static const u8 sBr86[] = _("Um {B_OPPONENT_MON1_NAME}\nselvagem apareceu!\p");
+static const u8 sEn87[] = _("Player defeated\n{B_TRAINER1_CLASS} {B_TRAINER1_NAME}!\p");
+static const u8 sBr87[] = _("Você venceu\n{B_TRAINER1_CLASS} {B_TRAINER1_NAME}!\p");
+static const u8 sEn88[] = _("{B_PLAYER_NAME} used\n{B_LAST_ITEM}!");
+static const u8 sBr88[] = _("{B_PLAYER_NAME} usou\n{B_LAST_ITEM}!");
+static const u8 sEn89[] = _("WALLY used\n{B_LAST_ITEM}!");
+static const u8 sBr89[] = _("WALLY usou\n{B_LAST_ITEM}!");
+static const u8 sEn90[] = _("But it had no effect!");
+static const u8 sBr90[] = _("Mas não teve efeito!");
+static const u8 sEn91[] = _("What will\n{B_ACTIVE_NAME_WITH_PREFIX} do?");
+static const u8 sBr91[] = _("O que {B_ACTIVE_NAME_WITH_PREFIX}\nvai fazer?");
+static const u8 sEn92[] = _("What will\n{B_PLAYER_NAME} do?");
+static const u8 sBr92[] = _("O que {B_PLAYER_NAME}\nvai fazer?");
+static const u8 sEn93[] = _("What will\nWALLY do?");
+static const u8 sBr93[] = _("O que WALLY\nvai fazer?");
+static const u8 sEn94[] = _("FIGHT{CLEAR_TO 56}BAG\nPOKéMON{CLEAR_TO 56}RUN");
+static const u8 sBr94[] = _("LUTAR{CLEAR_TO 56}BOLSA\nPOKéMON{CLEAR_TO 56}FUGIR");
 static const struct HeTranslation sTranslations[] = {
+    {sEn91, sBr91},
+    {sEn92, sBr92},
+    {sEn93, sBr93},
+    {sEn94, sBr94},
+
+    {sEn75, sBr75},
+    {sEn76, sBr76},
+    {sEn77, sBr77},
+    {sEn78, sBr78},
+    {sEn79, sBr79},
+    {sEn80, sBr80},
+    {sEn81, sBr81},
+    {sEn82, sBr82},
+    {sEn83, sBr83},
+    {sEn84, sBr84},
+    {sEn85, sBr85},
+    {sEn86, sBr86},
+    {sEn87, sBr87},
+    {sEn88, sBr88},
+    {sEn89, sBr89},
+    {sEn90, sBr90},
+
     {sEn0, sBr0},
     {sEn1, sBr1},
     {sEn2, sBr2},

@@ -22,8 +22,8 @@ const u32 gTrainerPalette_AquaGruntF[] = INCGFX_U32("graphics/trainers/front_pic
 const u32 gTrainerFrontPic_SwimmerM[] = INCGFX_U32("graphics/trainers/front_pics/swimmer_m.png", ".4bpp.lz");
 const u32 gTrainerPalette_SwimmerM[] = INCGFX_U32("graphics/trainers/front_pics/swimmer_m.png", ".gbapal.lz");
 
-const u32 gTrainerFrontPic_MagmaGruntM[] = INCGFX_U32("graphics/trainers/front_pics/magma_grunt_m.png", ".4bpp.lz");
-const u32 gTrainerPalette_MagmaGruntM[] = INCGFX_U32("graphics/trainers/front_pics/magma_grunt_m.png", ".gbapal.lz");
+const u32 gTrainerFrontPic_MagmaGruntM[] = INCBIN_U32("graphics/hoenn_expansion/rocket_portrait.4bpp.lz");
+const u32 gTrainerPalette_MagmaGruntM[] = INCBIN_U32("graphics/hoenn_expansion/rocket_portrait.gbapal.lz");
 
 const u32 gTrainerFrontPic_ExpertM[] = INCGFX_U32("graphics/trainers/front_pics/expert_m.png", ".4bpp.lz");
 const u32 gTrainerPalette_ExpertM[] = INCGFX_U32("graphics/trainers/front_pics/expert_m.png", ".gbapal.lz");
@@ -76,8 +76,8 @@ const u32 gTrainerPalette_ExpertF[] = INCGFX_U32("graphics/trainers/front_pics/e
 const u32 gTrainerFrontPic_Pokemaniac[] = INCGFX_U32("graphics/trainers/front_pics/pokemaniac.png", ".4bpp.lz");
 const u32 gTrainerPalette_Pokemaniac[] = INCGFX_U32("graphics/trainers/front_pics/pokemaniac.png", ".gbapal.lz");
 
-const u32 gTrainerFrontPic_MagmaGruntF[] = INCGFX_U32("graphics/trainers/front_pics/magma_grunt_f.png", ".4bpp.lz");
-const u32 gTrainerPalette_MagmaGruntF[] = INCGFX_U32("graphics/trainers/front_pics/magma_grunt_f.png", ".gbapal.lz");
+const u32 gTrainerFrontPic_MagmaGruntF[] = INCBIN_U32("graphics/hoenn_expansion/commander_portrait.4bpp.lz");
+const u32 gTrainerPalette_MagmaGruntF[] = INCBIN_U32("graphics/hoenn_expansion/commander_portrait.gbapal.lz");
 
 const u32 gTrainerFrontPic_Guitarist[] = INCGFX_U32("graphics/trainers/front_pics/guitarist.png", ".4bpp.lz");
 const u32 gTrainerPalette_Guitarist[] = INCGFX_U32("graphics/trainers/front_pics/guitarist.png", ".gbapal.lz");

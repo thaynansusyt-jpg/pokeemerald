@@ -10227,10 +10227,10 @@ const struct Trainer gTrainers[] = {
 
     [TRAINER_LEAF] =
     {
-        .trainerClass = TRAINER_CLASS_RIVAL,
+        .trainerClass = TRAINER_CLASS_ROCKET,
         .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_LEAF,
-        .trainerName = _("LEAF"),
+        .trainerPic = TRAINER_PIC_MAGMA_GRUNT_F,
+        .trainerName = _("VÉSPER"),
         .items = {},
         .doubleBattle = FALSE,
         .aiFlags = 0,
@@ -10239,10 +10239,10 @@ const struct Trainer gTrainers[] = {
 
     [TRAINER_BRENDAN_PLACEHOLDER] =
     {
-        .trainerClass = TRAINER_CLASS_RS_PROTAG,
+        .trainerClass = TRAINER_CLASS_ROCKET,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_RS_BRENDAN,
-        .trainerName = _("BRENDAN"),
+        .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
+        .trainerName = _("RECRUTA"),
         .items = {},
         .doubleBattle = FALSE,
         .aiFlags = 0,
@@ -10251,10 +10251,10 @@ const struct Trainer gTrainers[] = {
 
     [TRAINER_MAY_PLACEHOLDER] =
     {
-        .trainerClass = TRAINER_CLASS_RS_PROTAG,
+        .trainerClass = TRAINER_CLASS_ROCKET,
         .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_RS_MAY,
-        .trainerName = _("MAY"),
+        .trainerPic = TRAINER_PIC_MAGMA_GRUNT_F,
+        .trainerName = _("VÉSPER"),
         .items = {},
         .doubleBattle = FALSE,
         .aiFlags = 0,

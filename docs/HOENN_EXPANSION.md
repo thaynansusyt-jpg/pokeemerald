@@ -1,48 +1,98 @@
-# Pokémon Hoenn Expansion — 0.3.0 alpha
+# Pokémon Hoenn Expansion — 0.4.0 alpha
 
 Uma primeira hack de Pokémon Emerald feita para explorar Hoenn com mais
 opções de equipe e menos dependência de trocas. Base: pret/pokeemerald.
-Esta versão troca o início da campanha pelo capítulo **Operação Eclipse**,
-em português, de Littleroot até a primeira insígnia em Rustboro. Os mapas e
-os sistemas de Emerald são a base. Não inclui espécies posteriores à terceira
-geração, divisão físico/especial moderna ou Mega Evoluções.
-Os diálogos centrais do capítulo são escritos diretamente em português;
-o seletor EN/PT-BR continua controlando os menus e os textos localizados da
-alpha anterior. Textos auxiliares, nomes de golpes, itens e mensagens de batalha
-ainda podem aparecer em inglês. Não é uma tradução integral de Emerald.
+Esta versão transforma o começo da campanha em três atos de **Operação Eclipse**,
+em português, de Littleroot até a terceira insígnia, em Mauville. Comece um
+NOVO JOGO com save separado. A continuação após Wattson ainda não está feita.
+A base continua sendo Emerald: mapas, sistemas e muitos gráficos originais
+permanecem. Esta atualização acrescenta arte própria e remodela praças e áreas
+de apoio; não é uma substituição completa de todos os tilesets/personagens.
+Não inclui Pokémon posteriores à terceira geração, Mega Evoluções ou divisão
+físico/especial moderna. Alguns nomes e mensagens auxiliares seguem em inglês.
 A tela inicial usa a arte de Rayquaza fornecida pelo autor, o logo de Pokémon
 do jogo e o título Hoenn Expansion. O crédito de abertura inclui
 `(2026 - Senhor Laranja)`, junto dos avisos originais.
 
-## Capítulo 1 — Operação Eclipse
+## Nova aventura — versão 0.4.0
 
-**Comece um NOVO JOGO.** Saves das versões anteriores não possuem os eventos
-novos na sequência correta; guarde uma cópia deles e use um save separado.
+A Rocket provoca tremores e apagões para ocupar a rede de energia de Hoenn.
+A comandante **Vésper** isola uma ilha, tenta tomar o porto e usa Mauville
+como uma bateria. Birch, Norman, Laranja, Brawly, Stern e Wattson formam uma
+resistência que você ajuda a conectar. As pistas apontam para o vulcão e o
+“guardião do céu”, preparando uma continuação.
 
-A Rocket provoca tremores e apagões com aparelhos que assustam os Pokémon e
-sobrecarregam usinas. Enquanto as cidades pedem socorro, ela oferece uma falsa
-proteção para controlar Hoenn. Birch investiga os sinais; Norman mantém um
-abrigo; Senhor Laranja protege Littleroot. Você encontra provas na floresta e
-ajuda Roxanne a formar a resistência em Rustboro.
+### Roteiro jogável
 
-Roteiro jogável: mudança e notícia na TV → resgate de Birch → treino na Rota
-103 → Pokédex → Norman e Wally → patrulha Rocket opcional na Rota 104 →
-resgate do pesquisador na floresta → ginásio de Roxanne → transmissão Rocket,
-tremor e encerramento do capítulo.
+1. **Littleroot / Rustboro:** resgate Birch, treine na Rota 103, receba a
+   Pokédex, ajude Wally/Norman e resgate o pesquisador na floresta. Vença Roxanne.
+2. **Decodificador:** fale com o pesquisador em frente ao ginásio de Rustboro.
+   Ele libera MISSAO no menu. Desligue o terminal ao lado dele: **A, C**.
+3. **Dewford:** fale com Briney na casa da Rota 104. A ilha recebe você com
+   apagão, tremor e uma moradora em pânico. Vá à entrada da Granite Cave.
+   Vença o recruta (Zubat 13 / Ekans 14) e desligue o terminal: **B, A**.
+4. **Segundo ginásio:** Brawly aceita o desafio depois de desligar o sinal.
+   Com a insígnia, Briney libera a viagem a Slateport.
+5. **Porto:** entre no museu, sem taxa, e fale com Stern no segundo andar.
+   Vésper entra, enfrenta você com Golbat 18 / Kadabra 18 / Electrike 19 e
+   recua. Stern registra a chave de Mauville no seu decodificador. Sua equipe
+   é recuperada antes e depois dessa batalha.
+6. **Mauville:** siga pela Rota 110, encontre o rival e chegue ao apagão da
+   cidade. Interaja com o terminal ao sul do Poké Mart, perto da área de apoio.
+   Vésper usa Magnemite 22 / Koffing 22 / Raichu 23. Depois, repita **C, B**.
+7. **Terceiro ginásio:** desafie Wattson. A terceira insígnia dispara uma
+   transmissão, tremor, apagamento da tela e revelação sobre a energia roubada.
+   Salve normalmente depois do encerramento.
 
-- Patrulha Rocket: Rattata nível 6. Floresta: Rattata 8 e Zubat 9.
-- Roxanne só aceita o desafio depois do resgate do pesquisador.
-- A insígnia e TM39 mantêm suas funções. A cena final aparece depois de
-  receber a TM; se a mochila estiver cheia, abra espaço e volte a Roxanne.
-- Após o final, pode salvar, treinar e explorar as áreas abertas.
-- Rotas 115 e 116 estão interditadas, inclusive antes da insígnia. Ao entrar,
-  o aviso retorna você para a frente do ginásio. O arco Aqua de roubo dos
-  Devon Goods permanece desativado. A viagem de Briney não é liberada.
-- A Rocket usa provisoriamente os sprites de recruta Magma da base Emerald;
-  nome de facção, equipes e diálogos são da Rocket. Uniformes próprios ficam
-  para uma próxima atualização.
-- Gancho: uma ordem pelo rádio anuncia a fase dois e o “guardião do céu”.
-  A continuação não está implementada nesta versão.
+### Mecânicas e visuais próprios
+
+- **Decodificador:** puzzles de dois pulsos, ordem diferente por cidade,
+  cancelamento com B/Sair, erro com reinício e tentativas ilimitadas. Não
+  consome itens. O terminal guarda seu estado e não exige repetir a solução.
+- **MISSAO:** diário no menu com o próximo objetivo e contador de três sinais.
+  Ocupa o lugar do Pokénav no menu após obter o decodificador; mantém oito linhas.
+- **Rede restaurada:** cada terminal libera a etapa seguinte da história.
+  Brawly e Wattson recusam desafios enquanto suas cidades estiverem sob o sinal.
+- **Apoio civil:** voluntárias em Rustboro, Dewford, Slateport e Mauville
+  recuperam sua equipe gratuitamente. Os Centros Pokémon continuam funcionando.
+- **Cutscenes:** chegada sob apagão à ilha e à cidade, entrada e retirada de
+  Vésper no museu, efeitos de tremor e transmissão após o terceiro ginásio.
+  As viagens conservam a animação de barco da base.
+- **Arte pixel a pixel:** recruta e comandante com nove quadros de campo;
+  retratos de batalha; transmissor com antena/painel; moldura azul com detalhes
+  dourados; cenário de combate com torres da Eclipse e cenário de floresta.
+  Há gráficos originais fora desses conjuntos, incluindo os protagonistas.
+- **Praças remodeladas:** mudanças no piso/jardins de Littleroot, Rustboro,
+  Dewford, Slateport e Mauville, com áreas de apoio e terminais próprios.
+  Casas, prédios e a maior parte da arquitetura da base são preservados.
+- **Novos iniciais:** Chikorita, Cyndaquil e Totodile. As linhas evolutivas dos
+  times de May/Brendan acompanham a escolha, inclusive na Rota 110.
+- **Novos encontros:** Sentret/Pidgey/Pichu na Rota 101; Mareep/Wooper/Hoppip
+  na 102; Phanpy/Wooper na 104; Paras/Pineco/Pikachu na floresta;
+  Sandshrew/Abra/Dunsparce na 116; Onix e outros na Granite Cave;
+  Mareep/Sandshrew/Wooper/Magnemite na 110. Níveis e taxas seguem os slots da base.
+- **PT-BR:** história central, viagens, diálogos dos líderes e rival; mensagens
+  básicas de ataque, vitória, envio de Pokémon e escolhas de batalha traduzidas.
+  A opção de idioma controla menus/mensagens localizadas; a história própria
+  permanece em português. Não é uma tradução integral de todos os textos.
+
+### Limite desta versão
+
+As rotas 111, 117 e 118 retornam você ao piso seguro em Mauville (20,16).
+A Rota 115 continua fechada. Rota 116 está aberta para exploração e capturas.
+O arco original de Devon Goods não participa da progressão. Steven e partes
+opcionais da base que não foram reescritas podem manter conteúdo original.
+Após o final, explore as áreas abertas, treine e salve. Não há quarto ginásio
+nem capítulo seguinte implementado. Saves antigos não são migrados.
+
+### Arte reproduzível
+
+O gerador de imagens recusou a folha solicitada. Os assets entregues foram
+desenhados em código, pixel a pixel, nos formatos nativos do GBA, sem amostrar
+imagens de terceiros. O código fonte está em
+`tools/hoenn_expansion/draw_assets.py`; os arquivos estão em
+`graphics/hoenn_expansion/`. Rode o script com Python 3 para reproduzir a arte.
+Não há dependência de geração online na compilação.
 
 ## Recursos da 0.2.0 mantidos
 
@@ -116,7 +166,7 @@ referem-se aos encontros em terra dentro da área indicada.
 
 1. Abra a aba **Actions** deste repositório.
 2. Abra uma execução verde de **Build Hoenn Expansion**.
-3. Em **Artifacts**, baixe **Pokemon-Hoenn-Expansion-0.3.0-alpha**.
+3. Em **Artifacts**, baixe **Pokemon-Hoenn-Expansion-0.4.0-alpha**.
 4. Extraia o ZIP e abra `pokemon_hoenn_expansion.gba` no KL Play ou em outro
    emulador de GBA. O download de artifacts pode exigir login no GitHub.
 
@@ -140,8 +190,9 @@ de Emerald, faça uma cópia; não garantimos compatibilidade de saves antigos.
 - Suba Kadabra/Haunter/Graveler/Machoke até 36; confira cancelamento e Everstone.
 - Use as pedras nas espécies da tabela; confira consumo apenas após evolução.
 - Resgate o pesquisador na floresta; desafie Roxanne e receba a primeira insígnia.
-- Confira o tremor e a transmissão final; salve depois do encerramento.
-- Entre nas rotas 115/116 e confira o retorno seguro para Rustboro.
+- Desligue os sinais, complete as viagens e os confrontos de Vésper.
+- Confira a transmissão após Wattson; salve depois do encerramento.
+- Confira a Rota 116 aberta, a Rota 115 fechada e os limites 111/117/118.
 
 Compilar com sucesso valida integração do código, mas não substitui estes
 testes no emulador.
@@ -157,15 +208,10 @@ Esses quatro pontos são propostas, ainda não recursos desta alpha.
 
 ## Validação desta entrega
 
-A ROM foi compilada e executada no mGBA. Foram conferidos o crédito, a nova
-abertura, a entrada no menu, o seletor EN / PT-BR e o Pikachu da apresentação.
-Um cenário de teste em Littleroot confirmou: 6 Rare Candies sem duplicação,
-prêmio pendente com mochila cheia e retirada depois de liberar espaço,
-espera antes da Pokédex e início da batalha com Pikachu nível 5 após a Pokédex.
-Na 0.3.0, cenários separados no mGBA confirmaram o resgate com batalha,
-`FLAG_HE_ECLIPSE_PROOF` e estado 1 da floresta; recusa de Roxanne sem as
-provas; vitória contra Roxanne, concessão da insígnia/TM e encerramento;
-cena final única e retorno da Rota 116 para (27,20) em Rustboro.
-Os cenários temporários não fazem parte da ROM entregue. Não houve um
-playthrough contínuo inteiro desde a mudança nem teste de migração de saves.
-A Rota 115 usa o mesmo bloqueio, com verificação da ligação no script.
+Build de produção com `COMPARE=0` e `git diff --check`. No mGBA, cenários
+separados verificam terminais (inclusive erro/cancelamento), batalhas do porto
+e do gerador, segunda/terceira insígnias, encerramento e diário. As capturas
+confirmam os novos sprites, retratos e cenários. Os cenários temporários são
+removidos antes do build entregue. Não houve playthrough contínuo completo
+nem migração de saves antigos. A viagem animada da Rota 104 até Dewford foi
+verificada; o trecho seguinte usa a navegação existente da base.

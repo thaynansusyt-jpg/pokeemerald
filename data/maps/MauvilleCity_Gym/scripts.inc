@@ -74,6 +74,9 @@ MauvilleCity_Gym_EventScript_DeactivatePuzzle::
 	end
 
 MauvilleCity_Gym_EventScript_Wattson::
+	lock
+	faceplayer
+	goto_if_unset FLAG_HE_SIGNAL_MAUVILLE, HE_WattsonNeedSignal
 	trainerbattle_single TRAINER_WATTSON_1, MauvilleCity_Gym_Text_WattsonIntro, MauvilleCity_Gym_Text_WattsonDefeat, MauvilleCity_Gym_EventScript_WattsonDefeated, NO_MUSIC
 	specialvar VAR_RESULT, ShouldTryRematchBattle
 	goto_if_eq VAR_RESULT, TRUE, MauvilleCity_Gym_EventScript_WattsonRematch
@@ -92,6 +95,7 @@ MauvilleCity_Gym_EventScript_WattsonDefeated::
 	clearflag FLAG_HIDE_VERDANTURF_TOWN_SCOTT
 	setflag FLAG_DEFEATED_MAUVILLE_GYM
 	setflag FLAG_BADGE03_GET
+	call_if_unset FLAG_HE_ACT3_COMPLETE, HE_Act3Ending
 	addvar VAR_PETALBURG_GYM_STATE, 1
 	call_if_eq VAR_PETALBURG_GYM_STATE, 6, Common_EventScript_ReadyPetalburgGymForBattle
 	setvar VAR_0x8008, 3
@@ -257,129 +261,79 @@ MauvilleCity_Gym_EventScript_GymStatue::
 	end
 
 MauvilleCity_Gym_Text_GymGuideAdvice:
-	.string "Hey, how's it going, CHAMPION-\n"
-	.string "bound {PLAYER}?\p"
-	.string "WATTSON, the LEADER of MAUVILLE\n"
-	.string "GYM, uses ELECTRIC-type POKéMON.\p"
-	.string "If you challenge him with WATER-type\n"
-	.string "POKéMON, he'll zap them! Bzzt!\p"
-	.string "And, he's put in switch-controlled\n"
-	.string "doors all over his GYM! Eccentric!\p"
-	.string "Hey, go for it!$"
+	.string "Wattson usa Pokémon\nElétricos. Terra é imune à\peletricidade!\pAs placas no chão mudam as\nbarreiras. Observe os\pcaminhos antes de avançar.$"
 
 MauvilleCity_Gym_Text_GymGuidePostVictory:
-	.string "Whoa, you're electrifying!\n"
-	.string "You've powered the door open!$"
+	.string "Três insígnias! As luzes de\nMauville estão acesas de\pnovo.$"
 
 MauvilleCity_Gym_Text_KirkIntro:
-	.string "My electric soul, it'll shatter your\n"
-	.string "dreams whole, whoa-yeahah!$"
+	.string "Treinamos para proteger o\nabrigo. Mostre sua força!$"
 
 MauvilleCity_Gym_Text_KirkDefeat:
-	.string "That was plugged in, amped up,\n"
-	.string "over-driven electric, man!$"
+	.string "Boa batalha! Você está\npronto.$"
 
 MauvilleCity_Gym_Text_KirkPostBattle:
-	.string "POKéMON and rock, it's all about heart,\n"
-	.string "whoa-yeah!$"
+	.string "Continue. Nosso líder\nespera por você!$"
 
 MauvilleCity_Gym_Text_ShawnIntro:
-	.string "I trained under WATTSON!\n"
-	.string "There ain't no way I'll lose easily!$"
+	.string "Treinamos para proteger o\nabrigo. Mostre sua força!$"
 
 MauvilleCity_Gym_Text_ShawnDefeat:
-	.string "Unplugged and turned off…$"
+	.string "Boa batalha! Você está\npronto.$"
 
 MauvilleCity_Gym_Text_ShawnPostBattle:
-	.string "WATTSON, our GYM LEADER, has been\n"
-	.string "around for a long, long time.\p"
-	.string "He was battling even before your\n"
-	.string "daddy was born, that tough coot.$"
+	.string "Continue. Nosso líder\nespera por você!$"
 
 MauvilleCity_Gym_Text_BenIntro:
-	.string "This GYM's got puzzles!\n"
-	.string "Isn't it fun?$"
+	.string "Treinamos para proteger o\nabrigo. Mostre sua força!$"
 
 MauvilleCity_Gym_Text_BenDefeat:
-	.string "It's no fun to lose…$"
+	.string "Boa batalha! Você está\npronto.$"
 
 MauvilleCity_Gym_Text_BenPostBattle:
-	.string "WATTSON says he likes setting up\n"
-	.string "little traps with switches.$"
+	.string "Continue. Nosso líder\nespera por você!$"
 
 MauvilleCity_Gym_Text_VivianIntro:
-	.string "With my charm and my POKéMON's moves,\n"
-	.string "you'll be shocked!$"
+	.string "Treinamos para proteger o\nabrigo. Mostre sua força!$"
 
 MauvilleCity_Gym_Text_VivianDefeat:
-	.string "I'm shocked by your power!$"
+	.string "Boa batalha! Você está\npronto.$"
 
 MauvilleCity_Gym_Text_VivianPostBattle:
-	.string "I've heard that MAUVILLE was founded\n"
-	.string "by WATTSON.\p"
-	.string "He was a TRAINER long before we\n"
-	.string "became TRAINERS.\l"
-	.string "He must know all sorts of things!$"
+	.string "Continue. Nosso líder\nespera por você!$"
 
 MauvilleCity_Gym_Text_AngeloIntro:
-	.string "I love shiny things!$"
+	.string "Treinamos para proteger o\nabrigo. Mostre sua força!$"
 
 MauvilleCity_Gym_Text_AngeloDefeat:
-	.string "Oh…\n"
-	.string "My eyes are frazzled…$"
+	.string "Boa batalha! Você está\npronto.$"
 
 MauvilleCity_Gym_Text_AngeloPostBattle:
-	.string "MAUVILLE GYM's WATTSON has a shiny\n"
-	.string "forehead. It makes me happy!$"
+	.string "Continue. Nosso líder\nespera por você!$"
 
 MauvilleCity_Gym_Text_WattsonIntro:
-	.string "I've given up on my plans to convert\n"
-	.string "the city, I have.\p"
-	.string "And so, I put my time into making\n"
-	.string "door traps in my GYM.\p"
-	.string "Oh? Now, what are you doing here?\p"
-	.string "What's that? You say you've gotten\n"
-	.string "past all my rigged doors?\p"
-	.string "Wahahahah!\n"
-	.string "Now, that is amusing!\p"
-	.string "Then, I, WATTSON, the LEADER of\n"
-	.string "MAUVILLE GYM, shall electrify you!$"
+	.string "WATTSON: O gerador voltou a\nresponder!\pVésper desviava a energia\npara fora da cidade. Você\pcortou o comando antes do\núltimo pulso.\pMinha equipe protege a\nrede. Vamos testar se a sua\paguenta uma tempestade!$"
 
 MauvilleCity_Gym_Text_WattsonDefeat:
-	.string "Wahahahah!\n"
-	.string "Fine, I lost!\p"
-	.string "You ended up giving me a thrill!\n"
-	.string "Take this BADGE!$"
+	.string "Hahaha! Sua equipe tem\nenergia de sobra! Receba a\pterceira insígnia.$"
 
 MauvilleCity_Gym_Text_ReceivedDynamoBadge:
-	.string "{PLAYER} received the DYNAMO BADGE\n"
-	.string "from WATTSON.$"
+	.string "{PLAYER} recebeu a INSÍGNIA\nDO DÍNAMO!$"
 
 MauvilleCity_Gym_Text_ExplainDynamoBadgeTakeThis:
-	.string "With the DYNAMO BADGE, POKéMON can\n"
-	.string "use ROCK SMASH out of battle.\p"
-	.string "And, it will make your POKéMON a little\n"
-	.string "bit faster, too.\p"
-	.string "Hmm…\n"
-	.string "You should take this, too!$"
+	.string "Esta insígnia permite usar\nROCK SMASH fora das\pbatalhas.\pSeu esforço protegeu três\ncidades.$"
 
 MauvilleCity_Gym_Text_ExplainShockWave:
-	.string "That TM34 there contains SHOCK WAVE.\p"
-	.string "It's a trustworthy move that never\n"
-	.string "misses! You can count on it!\p"
-	.string "… … … … … …$"
+	.string "SHOCK WAVE é um golpe\nElétrico que não erra.\pA TM é reutilizável. Treine\nsua equipe para a próxima\petapa.$"
 
 MauvilleCity_Gym_Text_RegisteredWattson:
-	.string "Registered GYM LEADER WATTSON\n"
-	.string "in the POKéNAV.$"
+	.string "WATTSON foi registrado no\nPokénav.$"
 
 MauvilleCity_Gym_Text_WattsonPostBattle:
-	.string "I swell with optimism, seeing a promising\n"
-	.string "young TRAINER like you!$"
+	.string "Birch e os líderes estão\nreunindo as pistas.\pDescanse e cuide dos seus\nparceiros.$"
 
 MauvilleCity_Gym_Text_WattsonGoForthAndEndeavor:
-	.string "Wahahahah!\n"
-	.string "Go forth and endeavor, youngster!$"
+	.string "Você deu uma chance ao\nfuturo de Hoenn!$"
 
 MauvilleCity_Gym_Text_GymStatue:
 	.string "MAUVILLE CITY POKéMON GYM$"
@@ -419,3 +373,27 @@ MauvilleCity_Gym_Text_WattsonRematchNeedTwoMons:
 	.string "Come see me with two or more\n"
 	.string "POKéMON, all right?$"
 
+HE_WattsonNeedSignal::
+	msgbox HE_Text_WattsonNeedSignal, MSGBOX_DEFAULT
+	release
+	end
+HE_Text_WattsonNeedSignal:
+	.string "WATTSON: Precisamos\nproteger o gerador.\pDesligue o transmissor da\npraça antes do desafio.$"
+HE_Act3Ending::
+	closemessage
+	playse SE_PC_ON
+	call HE_Shake
+	msgbox HE_Text_Act3Radio, MSGBOX_DEFAULT
+	fadescreen FADE_TO_BLACK
+	delay 45
+	fadescreen FADE_FROM_BLACK
+	msgbox HE_Text_Act3Wattson, MSGBOX_DEFAULT
+	setflag FLAG_HE_ACT3_COMPLETE
+	msgbox HE_Text_Act3End, MSGBOX_DEFAULT
+	return
+HE_Text_Act3Radio:
+	.string "... transmissão recuperada\n...\pVÉSPER: Os três nós caíram.\nAtivar protocolo Cinzas.\pVOZ DESCONHECIDA: A energia\njá foi coletada. O guardião\pvai ouvir nosso chamado.\p... sinal perdido ...$"
+HE_Text_Act3Wattson:
+	.string "WATTSON: As cidades eram\nbaterias...\pProtegemos as pessoas, mas\na energia roubada seguiu\ppara o vulcão.\pBirch e os líderes vão se\nreunir. Precisamos\pdescobrir o que pretendem\nacordar.\pHoje Hoenn voltou a\nacender. Graças a você.$"
+HE_Text_Act3End:
+	.string "HOENN EXPANSION\pOperação Eclipse: atos 1 a\n3.\pFIM DESTA VERSão\pA continuação vem depois de\nWattson. Você pode salvar e\pexplorar as áreas abertas.\pObrigado por defender\nHoenn!$"

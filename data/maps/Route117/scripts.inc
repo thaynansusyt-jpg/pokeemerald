@@ -1,4 +1,5 @@
 Route117_MapScripts::
+	map_script MAP_SCRIPT_ON_FRAME_TABLE, HE_Route117_Frame
 	map_script MAP_SCRIPT_ON_TRANSITION, Route117_OnTransition
 	.byte 0
 
@@ -204,3 +205,16 @@ Route117_Text_DayCareSign:
 	.string "POKéMON DAY CARE\n"
 	.string "“Let us raise your POKéMON.”$"
 
+HE_Route117_Frame:
+	map_script_2 VAR_HE_DEMO_BOUNDARY, 0, HE_Route117_Boundary
+	.2byte 0
+HE_Route117_Boundary::
+	lockall
+	msgbox HE_Text_Route117Closed, MSGBOX_DEFAULT
+	closemessage
+	warp MAP_MAUVILLE_CITY, 255, 20, 16
+	waitstate
+	releaseall
+	end
+HE_Text_Route117Closed:
+	.string "AVISO DA RESISTÊNCIA\pEstrada interditada. O\ncapítulo atual termina\pdepois de Wattson.\pRetorne a Mauville. As\npróximas áreas virão na\pcontinuação.$"

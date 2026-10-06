@@ -155,4 +155,4 @@ HE_Route115_Boundary::
 	end
 
 HE_Route115_Closed:
-	.string "AVISO DA LIGA\pEsta estrada está fechada\npor risco de desabamento.\pO capítulo atual termina\nno ginásio de Roxanne.\pAs próximas áreas serão\nabertas na continuação.$"
+	.string "AVISO DA LIGA\pEsta estrada está fechada\npor risco de desabamento.\pO capítulo atual termina\nno ginásio de Wattson.\pAs próximas áreas serão\nabertas na continuação.$"

@@ -21,7 +21,6 @@ Route116_OnLoad:
 	end
 
 Route116_OnFrame:
-	map_script_2 VAR_HE_DEMO_BOUNDARY, 0, HE_Route116_Boundary
 	map_script_2 VAR_SHOULD_END_ABNORMAL_WEATHER, 1, AbnormalWeather_EventScript_EndEventAndCleanup_1
 	.2byte 0
 
