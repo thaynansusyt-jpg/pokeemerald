@@ -1,4 +1,5 @@
 DewfordTown_MapScripts::
+	map_script MAP_SCRIPT_ON_FRAME_TABLE, HE_DewfordFrame
 	map_script MAP_SCRIPT_ON_TRANSITION, DewfordTown_OnTransition
 	.byte 0
 
@@ -7,6 +8,7 @@ DewfordTown_OnTransition:
 	end
 
 DewfordTown_EventScript_Briney::
+	goto_if_unset FLAG_BADGE02_GET, DewfordTown_EventScript_ReturnToPetalburgPrompt
 	lock
 	faceplayer
 	goto_if_unset FLAG_DELIVERED_STEVEN_LETTER, DewfordTown_EventScript_ReturnToPetalburgPrompt
@@ -620,9 +622,7 @@ DewfordTown_EventScript_PhraseNotTrendyEnough::
 	end
 
 DewfordTown_Text_TinyIslandCommunity:
-	.string "DEWFORD is a tiny island community.\n"
-	.string "If something gets trendy here,\l"
-	.string "everyone picks up on it right away.$"
+	.string "A ilha vive da pesca. Sem\nbarcos, nossa comunidade\pfica isolada.$"
 
 DewfordTown_Text_TownSign:
 	.string "DEWFORD TOWN\n"
@@ -644,89 +644,49 @@ Route104_Text_LandedInDewfordDeliverLetter:
 	.string "LETTER to, who was it now, STEVEN!$"
 
 DewfordTown_Text_SetSailBackToPetalburg:
-	.string "MR. BRINEY: Have you delivered your\n"
-	.string "LETTER?\p"
-	.string "Or were you meaning to sail back to\n"
-	.string "PETALBURG?$"
+	.string "BRINEY: Quer voltar para a\nRota 104?$"
 
 DewfordTown_Text_PetalburgWereSettingSail2:
-	.string "MR. BRINEY: PETALBURG it is, then!\p"
-	.string "Anchors aweigh!\n"
-	.string "PEEKO, we're setting sail, my darling!$"
+	.string "BRINEY: Vamos voltar ao\ncontinente!$"
 
 DewfordTown_Text_GoDeliverIllBeWaiting:
-	.string "MR. BRINEY: Then you go on and deliver\n"
-	.string "the LETTER. I'll be waiting.$"
+	.string "BRINEY: O sinal da caverna\nprecisa ser desligado.\pDepois, desafie Brawly.$"
 
 DewfordTown_Text_BrineyLandedInDewford:
-	.string "MR. BRINEY: Ahoy!\n"
-	.string "We've hit land in DEWFORD!\p"
-	.string "You just go on and tell me whenever\n"
-	.string "you want to set sail again!$"
+	.string "BRINEY: Chegamos a Dewford!\nProcure o sinal da Granite\pCave.$"
 
 DewfordTown_Text_WhereAreWeBound:
-	.string "MR. BRINEY: Ahoy!\n"
-	.string "For you, I'll go out to sea anytime!\p"
-	.string "Now, my friend, where are we bound?$"
+	.string "BRINEY: Para onde vamos?$"
 
 DewfordTown_Text_PetalburgWereSettingSail:
-	.string "MR. BRINEY: PETALBURG, is it?\p"
-	.string "Anchors aweigh!\n"
-	.string "PEEKO, we're setting sail, my darling!$"
+	.string "BRINEY: Rumo à Rota 104!$"
 
 DewfordTown_Text_SlateportWereSettingSail:
-	.string "MR. BRINEY: SLATEPORT, is it?\p"
-	.string "Anchors aweigh!\n"
-	.string "PEEKO, we're setting sail, my darling!$"
+	.string "BRINEY: O porto precisa de\nnós. Rumo a Slateport!$"
 
 DewfordTown_Text_JustTellMeWhenYouNeedToSetSail:
-	.string "MR. BRINEY: You just tell me whenever\n"
-	.string "you need to set sail again!$"
+	.string "BRINEY: Estarei aqui quando\nprecisar.$"
 
 DewfordTown_Text_GettingItchToFish:
-	.string "This is a renowned fishing spot.\n"
-	.string "Are you getting the itch to fish?$"
+	.string "Quer aprender a pescar?\nPosso emprestar uma vara.$"
 
 DewfordTown_Text_GiveYouOneOfMyRods:
-	.string "I hear you, and I like what\n"
-	.string "you're saying!\p"
-	.string "I'll give you one of my fishing RODS.$"
+	.string "Leve esta vara. Um parceiro\ndo mar pode ajudar na\pjornada.$"
 
 DewfordTown_Text_ThrowInFishingAdvice:
-	.string "And, as an added bonus, I'll even throw\n"
-	.string "in a little fishing advice!\p"
-	.string "First, you want to face the water,\n"
-	.string "then use the ROD.\p"
-	.string "Focus your mind…\n"
-	.string "If you get a bite, pull on the ROD.\p"
-	.string "Sometimes you can snag something\n"
-	.string "immediately, but with bigger catches,\l"
-	.string "you need to time the pulls on your ROD\l"
-	.string "to haul them in.$"
+	.string "Use a vara perto da água.\nQuando sentir uma fisgada,\pconfirme com A.$"
 
 DewfordTown_Text_ThatsTooBadThen:
-	.string "Oh, is that so?\n"
-	.string "That's too bad, then.$"
+	.string "Se mudar de ideia, estou\naqui.$"
 
 DewfordTown_Text_HowsYourFishing:
-	.string "Yo!\n"
-	.string "How's your fishing?$"
+	.string "Como vai a pesca?$"
 
 DewfordTown_Text_GreatHaulInSomeBigOnes:
-	.string "Is that right! That's great!\n"
-	.string "Haul in some big ones!$"
+	.string "Boa pescaria!$"
 
 DewfordTown_Text_FishingAdvice:
-	.string "Oh, hey, don't get down on yourself!\n"
-	.string "I'll give you a little fishing advice.\p"
-	.string "First, you want to face the water,\n"
-	.string "then use the ROD.\p"
-	.string "Focus your mind…\n"
-	.string "If you get a bite, pull the ROD.\p"
-	.string "Sometimes you can snag something\n"
-	.string "immediately, but with bigger catches,\l"
-	.string "you need to time the pulls on your ROD\l"
-	.string "to haul them in.$"
+	.string "Pesque perto da água e\nconfirme a fisgada com A.$"
 
 DewfordTown_Text_XIsTheBiggestHappeningThingRight:
 	.string "I like what's hip, happening, and trendy.\n"
@@ -781,3 +741,25 @@ DewfordTown_Text_YeahDefinitionOfInRightNow:
 	.string "Yeah, absolutely right!\p"
 	.string "“{STR_VAR_1}” is the\n"
 	.string "definition of “in” right now.$"
+HE_DewfordFrame:
+	map_script_2 VAR_HE_DEWFORD_INTRO, 0, HE_DewfordArrival
+	.2byte 0
+HE_DewfordArrival::
+	lockall
+	setvar VAR_HE_DEWFORD_INTRO, 1
+	setweather WEATHER_SHADE
+	doweather
+	call HE_Shake
+	applywaitmovement 1, HE_DewfordPanic
+	msgbox HE_Text_DewfordArrival, MSGBOX_DEFAULT
+	releaseall
+	end
+HE_DewfordPanic:
+	jump_in_place_down
+	delay_16
+	face_left
+	delay_8
+	face_right
+	step_end
+HE_Text_DewfordArrival:
+	.string "MORADORA: As luzes apagaram\ne os barcos perderam o\prumo!\pBrawly protege o abrigo. Um\nzumbido vem da Granite\pCave, ao norte.\pVocê trouxe o\ndecodificador? Talvez\pconsiga nos tirar deste\nisolamento.$"

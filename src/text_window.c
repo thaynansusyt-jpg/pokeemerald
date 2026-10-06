@@ -6,7 +6,7 @@
 #include "bg.h"
 #include "graphics.h"
 
-const u8 gTextWindowFrame1_Gfx[] = INCGFX_U8("graphics/text_window/1.png", ".4bpp");
+const u8 gTextWindowFrame1_Gfx[] = INCBIN_U8("graphics/hoenn_expansion/window.4bpp");
 static const u8 sTextWindowFrame2_Gfx[] = INCGFX_U8("graphics/text_window/2.png", ".4bpp");
 static const u8 sTextWindowFrame3_Gfx[] = INCGFX_U8("graphics/text_window/3.png", ".4bpp");
 static const u8 sTextWindowFrame4_Gfx[] = INCGFX_U8("graphics/text_window/4.png", ".4bpp");
@@ -27,7 +27,7 @@ static const u8 sTextWindowFrame18_Gfx[] = INCGFX_U8("graphics/text_window/18.pn
 static const u8 sTextWindowFrame19_Gfx[] = INCGFX_U8("graphics/text_window/19.png", ".4bpp");
 static const u8 sTextWindowFrame20_Gfx[] = INCGFX_U8("graphics/text_window/20.png", ".4bpp");
 
-const u16 gTextWindowFrame1_Pal[] = INCGFX_U16("graphics/text_window/1.png", ".gbapal");
+const u16 gTextWindowFrame1_Pal[] = INCBIN_U16("graphics/hoenn_expansion/window.gbapal");
 static const u16 sTextWindowFrame2_Pal[] = INCGFX_U16("graphics/text_window/2.png", ".gbapal");
 static const u16 sTextWindowFrame3_Pal[] = INCGFX_U16("graphics/text_window/3.png", ".gbapal");
 static const u16 sTextWindowFrame4_Pal[] = INCGFX_U16("graphics/text_window/4.png", ".gbapal");

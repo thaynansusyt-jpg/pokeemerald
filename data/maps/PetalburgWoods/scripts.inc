@@ -89,6 +89,7 @@ PetalburgWoods_EventScript_DevonResearcherFinish::
 
 PetalburgWoods_EventScript_RemoveDevonResearcher::
 	removeobject LOCALID_PETALBURG_WOODS_DEVON_EMPLOYEE
+	setflag FLAG_HE_ECLIPSE_PROOF
 	setvar VAR_PETALBURG_WOODS_STATE, 1
 	releaseall
 	end
@@ -297,93 +298,58 @@ PetalburgWoods_EventScript_JamesRematch::
 	end
 
 PetalburgWoods_Text_NotAOneToBeFound:
-	.string "Hmmm…\n"
-	.string "Not a one to be found…$"
+	.string "O sinal sumiu... Onde está\no aparelho?$"
 
 PetalburgWoods_Text_HaveYouSeenShroomish:
-	.string "Hello, have you seen any POKéMON\n"
-	.string "called SHROOMISH around here?\p"
-	.string "I really love that POKéMON.$"
+	.string "PESQUISADOR: Você veio de\nPetalburg? Preciso chegar a\pRoxanne.\pEu trabalhava nos sensores\nda Devon. Achei ordens de\psabotagem assinadas pela\nRocket!\pEles chamam o plano de\nOperação Eclipse.$"
 
 PetalburgWoods_Text_IWasGoingToAmbushYou:
-	.string "I was going to ambush you, but you\n"
-	.string "had to dawdle in PETALBURG WOODS\l"
-	.string "forever, didn't you?\p"
-	.string "I got sick of waiting, so here I am!$"
+	.string "ROCKET: Achou que a\nfloresta ia te esconder?\pVocê levou documentos que\npertencem à nossa operação!$"
 
 PetalburgWoods_Text_HandOverThosePapers:
-	.string "You! DEVON RESEARCHER!\p"
-	.string "Hand over those papers!$"
+	.string "Entregue os dados da Devon!\nAgora!$"
 
 PetalburgWoods_Text_YouHaveToHelpMe:
-	.string "Aiyeeeh!\p"
-	.string "You're a POKéMON TRAINER, aren't you?\n"
-	.string "You've got to help me, please!$"
+	.string "PESQUISADOR: Esses dados\nprovam tudo! Por favor, me\pajude!$"
 
 PetalburgWoods_Text_NoOneCrossesTeamAqua:
-	.string "Hunh? What do you think you're doing?\n"
-	.string "What, you're going to protect him?\p"
-	.string "No one who crosses TEAM AQUA\n"
-	.string "gets any mercy, not even a kid!\p"
-	.string "Come on and battle me!$"
+	.string "ROCKET: Vai defender esse\nhomem?\pHoenn já está caindo.\nQuando a Liga perder o\pcontrole, nós assumimos.\pSaia da frente ou enfrente\na Rocket!$"
 
 PetalburgWoods_Text_YoureKiddingMe:
-	.string "You're kidding me! You're tough!$"
+	.string "Como uma criança conseguiu\nme parar?!$"
 
 PetalburgWoods_Text_YouveGotSomeNerve:
-	.string "Grrr… You've got some nerve\n"
-	.string "meddling with TEAM AQUA!\l"
-	.string "Come on and battle me again!\p"
-	.string "I wish I could say that, but I'm out of\n"
-	.string "POKéMON…\p"
-	.string "And, hey, we of TEAM AQUA are also\n"
-	.string "after something in RUSTBORO.\p"
-	.string "I'll let you go today!$"
+	.string "ROCKET: Aproveite sua\nvitória.\pNosso transmissor em\nRustboro já recebeu as\pordens. Esta floresta era\nsó o teste.\pO céu de Hoenn vai se\napagar!$"
 
 PetalburgWoods_Text_ThatWasAwfullyClose:
-	.string "Whew…\n"
-	.string "That was awfully close!\p"
-	.string "Thanks to you, he didn't rob me of\n"
-	.string "these important papers.\p"
-	.string "I know, I'll give you a GREAT BALL as\n"
-	.string "my thanks!$"
+	.string "PESQUISADOR: Você nos\nsalvou!\pLeve esta Great Ball. Um\nnovo parceiro pode fazer a\pdiferença.$"
 
 PetalburgWoods_Text_TeamAquaAfterSomethingInRustboro:
-	.string "Didn't that TEAM AQUA thug say\n"
-	.string "they were after something in\l"
-	.string "RUSTBORO, too?$"
+	.string "Os aparelhos forçam Pokémon\na fugir e sobrecarregam as\pusinas.\pA Rocket está provocando o\ncolapso para vender uma\pfalsa proteção às cidades!$"
 
 PetalburgWoods_Text_ICantBeWastingTime:
-	.string "Uh-oh! It's a crisis!\n"
-	.string "I can't be wasting time!$"
+	.string "Vou entregar as provas à\nDevon.\pEncontre Roxanne no ginásio\nde Rustboro. Ela precisa de\paliados!$"
 
 PetalburgWoods_Text_YoureLoadedWithItems:
-	.string "You're loaded with items.\n"
-	.string "I can't give you this GREAT BALL.$"
+	.string "Sua mochila está cheia. Mas\nprecisamos sair daqui!$"
 
 PetalburgWoods_Text_GoBugPokemonTeam:
-	.string "I caught a whole bunch of POKéMON!\p"
-	.string "Go, go, go!\n"
-	.string "My BUG POKéMON team!$"
+	.string "Treino meus Pokémon para\nproteger a floresta!$"
 
 PetalburgWoods_Text_ICouldntWin:
-	.string "I have all these POKéMON,\n"
-	.string "but I couldn't win…$"
+	.string "Ainda preciso treinar\nmais...$"
 
 PetalburgWoods_Text_ImOutOfPokeBalls:
-	.string "I caught a bunch of POKéMON.\n"
-	.string "Now I'm out of POKé BALLS.$"
+	.string "Minha equipe vai ajudar os\nPokémon assustados.$"
 
 PetalburgWoods_Text_InstantlyPopularWithBugPokemon:
-	.string "If you take BUG POKéMON to school,\n"
-	.string "you get to be instantly popular!$"
+	.string "A floresta precisa de\ntreinadores corajosos!$"
 
 PetalburgWoods_Text_CantBePopularIfILose:
-	.string "I can't be popular if I lose.$"
+	.string "Você venceu!$"
 
 PetalburgWoods_Text_PeopleRespectYou:
-	.string "If you have a big BUG POKéMON,\n"
-	.string "people respect you for it.$"
+	.string "Cuidar dos pequenos Pokémon\ntambém é proteger Hoenn.$"
 
 PetalburgWoods_Text_IWantRematch1:
 	.string "I want a rematch when my BUG\n"
@@ -408,17 +374,10 @@ PetalburgWoods_Text_IveBeenTrainingHard:
 	.string "So, I've been training hard.$"
 
 PetalburgWoods_Text_StayOutOfTallGrass:
-	.string "Yo, there!\n"
-	.string "Your POKéMON doing okay?\p"
-	.string "If your POKéMON are weak and you want\n"
-	.string "to avoid battles, you should stay out\l"
-	.string "of tall grass.$"
+	.string "Se sua equipe estiver\ncansada, evite a grama e\pprocure um Centro Pokémon.$"
 
 PetalburgWoods_Text_HiddenItemsExplanation:
-	.string "Sometimes, there are things on the\n"
-	.string "ground even if you can't see them.\p"
-	.string "That's why I always check where I'm\n"
-	.string "walking.$"
+	.string "Às vezes há objetos\nescondidos no chão. Examine\pos lugares suspeitos.$"
 
 PetalburgWoods_Text_TryUsingThisItem:
 	.string "Oh, neat!\n"

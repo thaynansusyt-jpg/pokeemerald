@@ -1,11 +1,18 @@
-# Pokémon Emerald
+# Pokémon Hoenn Expansion
 
-This is a decompilation of Pokémon Emerald.
+Primeira alpha de uma hack de Pokémon Emerald, baseada na decompilação
+[pret/pokeemerald](https://github.com/pret/pokeemerald).
 
-It builds the following ROM:
+Versão: **0.4.0 alpha — Operação Eclipse: Resistência**. História até Wattson, decodificador de sinais, diário de missão, novos iniciais, sprites e cenários próprios, praças remodeladas e encontros diferentes. Comece um novo save.
+uma missão de pesquisa no laboratório do Birch, nova tela inicial, Pikachu na
+apresentação, Senhor Laranja como NPC e um seletor EN / PT-BR com tradução parcial.
 
-* [**pokeemerald.gba**](https://datomatic.no-intro.org/index.php?page=show_record&s=23&n=1961) `sha1: f3ae088181bf583e55daf962a92bb46f4f1d07b7`
+Confira os recursos, evoluções, encontros, testes e instruções para baixar
+pelo celular em [HOENN_EXPANSION.md](docs/HOENN_EXPANSION.md).
 
-To set up the repository, see [INSTALL.md](INSTALL.md).
+Para compilar localmente, configure as ferramentas conforme [INSTALL.md](INSTALL.md)
+e execute `make -j4 COMPARE=0`. O arquivo gerado é
+`pokemon_hoenn_expansion.gba`. Não use o checksum do Emerald original para
+validar a hack: o conteúdo foi modificado.
 
-For contacts and other pret projects, see [pret.github.io](https://pret.github.io/).
+Projeto original e outras decompilações: [pret.github.io](https://pret.github.io/).

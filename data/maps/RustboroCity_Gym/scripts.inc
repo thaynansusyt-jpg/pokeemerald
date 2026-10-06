@@ -2,6 +2,9 @@ RustboroCity_Gym_MapScripts::
 	.byte 0
 
 RustboroCity_Gym_EventScript_Roxanne::
+	lock
+	faceplayer
+	goto_if_unset FLAG_HE_ECLIPSE_PROOF, HE_EventScript_NoProof
 	trainerbattle_single TRAINER_ROXANNE_1, RustboroCity_Gym_Text_RoxanneIntro, RustboroCity_Gym_Text_RoxanneDefeat, RustboroCity_Gym_EventScript_RoxanneDefeated, NO_MUSIC
 	specialvar VAR_RESULT, ShouldTryRematchBattle
 	goto_if_eq VAR_RESULT, TRUE, RustboroCity_Gym_EventScript_RoxanneRematch
@@ -17,7 +20,7 @@ RustboroCity_Gym_EventScript_RoxanneDefeated::
 	msgbox RustboroCity_Gym_Text_StoneBadgeInfoTakeThis, MSGBOX_DEFAULT
 	setflag FLAG_DEFEATED_RUSTBORO_GYM
 	setflag FLAG_BADGE01_GET
-	setvar VAR_RUSTBORO_CITY_STATE, 1
+	setvar VAR_RUSTBORO_CITY_STATE, 0 @ Keep the original Aqua theft arc disabled
 	addvar VAR_PETALBURG_GYM_STATE, 1
 	setvar VAR_0x8008, 1
 	call Common_EventScript_SetGymTrainers
@@ -30,6 +33,7 @@ RustboroCity_Gym_EventScript_GiveRockTomb::
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
 	setflag FLAG_RECEIVED_TM_ROCK_TOMB
 	msgbox RustboroCity_Gym_Text_ExplainRockTomb, MSGBOX_DEFAULT
+	call_if_unset FLAG_HE_ECLIPSE_COMPLETE, HE_EventScript_ChapterEnding
 	release
 	end
 
@@ -104,132 +108,61 @@ RustboroCity_Gym_EventScript_RegisterRoxanne::
 	end
 
 RustboroCity_Gym_Text_GymGuideAdvice:
-	.string "Yo, how's it going?\p"
-	.string "Listen, my friend!\n"
-	.string "Would you like to become the CHAMPION?\p"
-	.string "I'm no TRAINER, not me, but I can\n"
-	.string "sure give you winning advice.\p"
-	.string "That's settled, then! We'll aim for the\n"
-	.string "POKéMON CHAMPIONSHIP together!\p"
-	.string "It's your job as a TRAINER to collect\n"
-	.string "GYM BADGES, am I right?\p"
-	.string "But GYM LEADERS aren't pushovers!\p"
-	.string "And that's where I come in!\n"
-	.string "I'm here to provide expert advice!\p"
-	.string "ROXANNE, the GYM LEADER, is a user\n"
-	.string "of ROCK-type POKéMON.\p"
-	.string "The ROCK type is very durable, but\n"
-	.string "it can't stand WATER-type and\l"
-	.string "GRASS-type moves.\p"
-	.string "Come see me afterwards, if you beat\n"
-	.string "the GYM LEADER.\p"
-	.string "Well, go for it!$"
+	.string "Roxanne transformou o\nginásio em ponto de apoio.\pEla usa Pokémon de Pedra.\nGolpes de Água e Planta são\peficazes.\pPrepare sua equipe.\nConfiança também se\pconstrói treinando!$"
 
 RustboroCity_Gym_Text_GymGuidePostVictory:
-	.string "Whoa! What a breathtaking victory!\n"
-	.string "My cheering must've worked!\p"
-	.string "Great!\n"
-	.string "Check your TRAINER CARD.\p"
-	.string "The STONE BADGE you got should be\n"
-	.string "properly recorded on it.\p"
-	.string "In other words…\p"
-	.string "You've climbed the first step on\n"
-	.string "the stairs to the CHAMPIONSHIP!\p"
-	.string "That's got to feel awesome!$"
+	.string "Sua vitória deu esperança\nao abrigo! A primeira\pinsígnia é sua.$"
 
 RustboroCity_Gym_Text_JoshIntro:
-	.string "Don't take us GYM TRAINERS lightly!\n"
-	.string "I'll show you why we're better!$"
+	.string "Se quer defender Rustboro,\nmostre sua força!$"
 
 RustboroCity_Gym_Text_JoshDefeat:
-	.string "You were too good for me…$"
+	.string "Você está pronto!$"
 
 RustboroCity_Gym_Text_JoshPostBattle:
-	.string "You haven't seen anything of the ROCK\n"
-	.string "type's terrifying power!$"
+	.string "Nossos Pokémon ajudam a\nretirar os escombros.$"
 
 RustboroCity_Gym_Text_TommyIntro:
-	.string "If you can't beat me, you won't stand\n"
-	.string "a chance against ROXANNE!$"
+	.string "Roxanne precisa de aliados\npreparados!$"
 
 RustboroCity_Gym_Text_TommyDefeat:
-	.string "Wow! You've got some potential!$"
+	.string "Que boa equipe!$"
 
 RustboroCity_Gym_Text_TommyPostBattle:
-	.string "ROXANNE is stronger than me by\n"
-	.string "several times.\p"
-	.string "You'd better be on your guard!$"
+	.string "Roxanne é nossa linha de\ndefesa.$"
 
 RustboroCity_Gym_Text_MarcIntro:
-	.string "We might be in the middle of town,\n"
-	.string "but so what?\p"
-	.string "My ROCK POKéMON need room to\n"
-	.string "rampage!$"
+	.string "Vou testar sua equipe. Na\nestrada, não há tempo para\phesitar!$"
 
 RustboroCity_Gym_Text_MarcDefeat:
-	.string "Oh, man oh man!\n"
-	.string "Our challenger is one feisty customer!$"
+	.string "Você tem coragem!$"
 
 RustboroCity_Gym_Text_MarcPostBattle:
-	.string "I have to hand it to our LEADER.\p"
-	.string "It took smarts and sense for her to\n"
-	.string "pick the ROCK type at her young age.$"
+	.string "Pedra pode ser abrigo, não\nsó arma.$"
 
 RustboroCity_Gym_Text_RoxanneIntro:
-	.string "Hello, I am ROXANNE, the RUSTBORO\n"
-	.string "POKéMON GYM LEADER.\p"
-	.string "I became a GYM LEADER so that I might\n"
-	.string "apply what I learned at the POKéMON\l"
-	.string "TRAINER'S SCHOOL in battle.\p"
-	.string "Would you kindly demonstrate how you\n"
-	.string "battle, and with which POKéMON?$"
+	.string "ROXANNE: Birch me falou de\nvocê. O pesquisador chegou\pcom as provas.\pA Rocket ofereceu segurança\nà Devon. Enquanto\pnegociava, instalou os\nsabotadores.\pEstamos numa guerra pelo\nfuturo de Hoenn.\pEu preciso saber se você\nconsegue proteger seus\pPokémon sob pressão.\pEnfrente meu ginásio. Vamos\ntransformar seu medo em\pforça!$"
 
 RustboroCity_Gym_Text_RoxanneDefeat:
-	.string "So…\n"
-	.string "I lost…\p"
-	.string "It seems that I still have much more\n"
-	.string "to learn…\p"
-	.string "I understand.\p"
-	.string "The POKéMON LEAGUE's rules state\n"
-	.string "that TRAINERS are to be given this\l"
-	.string "if they defeat a GYM LEADER.\p"
-	.string "Please accept the official POKéMON\n"
-	.string "LEAGUE STONE BADGE.$"
+	.string "ROXANNE: Mesmo sob pressão,\nvocês confiaram um no\poutro.\pÉ isso que Hoenn precisa.\nReceba sua primeira\pinsígnia!$"
 
 RustboroCity_Gym_Text_ReceivedStoneBadge:
-	.string "{PLAYER} received the STONE BADGE\n"
-	.string "from ROXANNE.$"
+	.string "{PLAYER} recebeu a INSÍGNIA\nDA PEDRA!$"
 
 RustboroCity_Gym_Text_StoneBadgeInfoTakeThis:
-	.string "The STONE BADGE heightens the ATTACK\n"
-	.string "power of your POKéMON.\p"
-	.string "It also enables them to use the HM move\n"
-	.string "CUT outside of battle.\p"
-	.string "Please take this with you, too.$"
+	.string "ROXANNE: Esta insígnia\npermite usar CUT fora das\pbatalhas.\pLeve também este golpe para\nsua jornada.$"
 
 RustboroCity_Gym_Text_ExplainRockTomb:
-	.string "That TECHNICAL MACHINE, TM39,\n"
-	.string "contains ROCK TOMB.\p"
-	.string "It not only inflicts damage by dropping\n"
-	.string "rocks, it also lowers SPEED.\p"
-	.string "If you use a TM, it instantly teaches\n"
-	.string "the move to a POKéMON.\p"
-	.string "Remember, a TM can be used only once,\n"
-	.string "so think before you use it.$"
+	.string "TM39 ensina ROCK TOMB. Ele\ncausa dano e reduz a\pvelocidade.\pAs TMs desta aventura são\nreutilizáveis. Pode ensinar\po golpe a vários parceiros!$"
 
 RustboroCity_Gym_Text_RoxannePostBattle:
-	.string "Since you are so strong, you should\n"
-	.string "challenge other GYM LEADERS.\p"
-	.string "By battling many TRAINERS, you should\n"
-	.string "learn many things.$"
+	.string "ROXANNE: A primeira etapa\nterminou. Treine, capture\pPokémon e cuide de sua\nequipe.\pQuando a resistência\npartir, vamos precisar de\pvocê.$"
 
 RustboroCity_Gym_Text_GymStatue:
-	.string "RUSTBORO CITY POKéMON GYM$"
+	.string "GINÁSIO DE RUSTBORO\pLíder: ROXANNE$"
 
 RustboroCity_Gym_Text_GymStatueCertified:
-	.string "RUSTBORO CITY POKéMON GYM\p"
-	.string "ROXANNE'S CERTIFIED TRAINERS:\n"
-	.string "{PLAYER}$"
+	.string "GINÁSIO DE RUSTBORO\pTreinador reconhecido:\n{PLAYER}$"
 
 RustboroCity_Gym_Text_RoxanneRegisterCall:
 	.string "… … … … … …\n"
@@ -281,3 +214,35 @@ RustboroCity_Gym_Text_RoxanneRematchNeedTwoMons:
 	.string "You only have one POKéMON with you?\p"
 	.string "Please return with at least one more\n"
 	.string "POKéMON.$"
+
+HE_EventScript_NoProof::
+	msgbox HE_Text_NoProof, MSGBOX_DEFAULT
+	release
+	end
+
+HE_EventScript_ChapterEnding::
+	closemessage
+	setvar VAR_0x8004, 0
+	setvar VAR_0x8005, 2
+	setvar VAR_0x8006, 8
+	setvar VAR_0x8007, 5
+	special ShakeCamera
+	waitstate
+	playse SE_PC_ON
+	msgbox HE_Text_Radio, MSGBOX_DEFAULT
+	msgbox HE_Text_RoxanneResistance, MSGBOX_DEFAULT
+	setflag FLAG_HE_ECLIPSE_COMPLETE
+	msgbox HE_Text_EndChapter, MSGBOX_DEFAULT
+	return
+
+HE_Text_NoProof:
+	.string "ROXANNE: Precisamos achar o\npesquisador da Devon.\pProcure na Floresta de\nPetalburg, ao sul.\pDepois volte para nosso\ndesafio!$"
+
+HE_Text_Radio:
+	.string "O chão começa a tremer!\p... chiado no rádio ...\pROCKET: Posto Rustboro,\nresponda.\pO teste foi concluído.\nIniciar fase dois.\pO alvo é o coração de Hoenn.\pQuando o guardião do céu\ndescer, será tarde demais.\p... transmissão encerrada ...$"
+
+HE_Text_RoxanneResistance:
+	.string "ROXANNE: Guardião do céu...?\nO que eles querem despertar?\pA Devon desligou o aparelho.\nRustboro está segura por ora.\pMas isto foi só o começo.\pVou reunir os líderes. Birch\ne Laranja protegem o sul.\pHoje você conquistou mais\nque uma insígnia.\pVocê nos deu uma chance\nde resistir.$"
+
+HE_Text_EndChapter:
+	.string "ROXANNE: O pesquisador\nmontou um decodificador.\pEncontre ele em frente ao\nginásio. Há um transmissor\pna praça.\pCorte o sinal e procure\nBriney. Dewford precisa de\pajuda.\pA resistência começa agora!$"

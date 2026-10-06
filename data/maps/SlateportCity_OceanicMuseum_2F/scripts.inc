@@ -2,81 +2,37 @@ SlateportCity_OceanicMuseum_2F_MapScripts::
 	.byte 0
 
 SlateportCity_OceanicMuseum_2F_EventScript_CaptStern::
-	lock
-	faceplayer
-	msgbox SlateportCity_OceanicMuseum_2F_Text_ThankYouForTheParts, MSGBOX_DEFAULT
+	lockall
+	goto_if_set FLAG_HE_HARBOR_SAFE, HE_SternSafe
+	msgbox HE_Text_SternMission, MSGBOX_DEFAULT
 	closemessage
-	playbgm MUS_ENCOUNTER_AQUA, TRUE
-	addobject LOCALID_OCEANIC_MUSEUM_2F_GRUNT_1
-	applywaitmovement LOCALID_OCEANIC_MUSEUM_2F_GRUNT_1, SlateportCity_OceanicMuseum_2F_Movement_FirstGruntEnter
-	addobject LOCALID_OCEANIC_MUSEUM_2F_GRUNT_2
-	applywaitmovement LOCALID_OCEANIC_MUSEUM_2F_GRUNT_2, SlateportCity_OceanicMuseum_2F_Movement_SecondGruntEnter
-	applymovement LOCALID_OCEANIC_MUSEUM_2F_GRUNT_1, SlateportCity_OceanicMuseum_2F_Movement_FirstGruntApproach
-	applymovement LOCALID_OCEANIC_MUSEUM_2F_GRUNT_2, SlateportCity_OceanicMuseum_2F_Movement_SecondGruntApproach
-	waitmovement 0
-	call_if_eq VAR_FACING, DIR_SOUTH, SlateportCity_OceanicMuseum_2F_EventScript_PlayerFaceGrunts
-	call_if_eq VAR_FACING, DIR_EAST, SlateportCity_OceanicMuseum_2F_EventScript_PlayerFaceGrunts
-	msgbox SlateportCity_OceanicMuseum_2F_Text_WellTakeThoseParts, MSGBOX_DEFAULT
-	call_if_ne VAR_FACING, DIR_EAST, SlateportCity_OceanicMuseum_2F_EventScript_SternFaceGrunts
-	msgbox SlateportCity_OceanicMuseum_2F_Text_SternWhoAreYou, MSGBOX_DEFAULT
-	msgbox SlateportCity_OceanicMuseum_2F_Text_WereTeamAqua, MSGBOX_DEFAULT
-	closemessage
-	applywaitmovement LOCALID_OCEANIC_MUSEUM_2F_GRUNT_2, SlateportCity_OceanicMuseum_2F_Movement_GruntApproachToBattle
-	call_if_eq VAR_FACING, DIR_SOUTH, SlateportCity_OceanicMuseum_2F_EventScript_PlayerApproachGruntSouth
-	call_if_eq VAR_FACING, DIR_WEST, SlateportCity_OceanicMuseum_2F_EventScript_PlayerApproachGruntWest
-	trainerbattle_no_intro TRAINER_GRUNT_MUSEUM_1, SlateportCity_OceanicMuseum_2F_Text_Grunt1Defeat
-	msgbox SlateportCity_OceanicMuseum_2F_Text_BossGoingToBeFurious, MSGBOX_DEFAULT
-	closemessage
-	applywaitmovement LOCALID_OCEANIC_MUSEUM_2F_GRUNT_2, SlateportCity_OceanicMuseum_2F_Movement_GruntDefeated
-	applywaitmovement LOCALID_OCEANIC_MUSEUM_2F_GRUNT_1, SlateportCity_OceanicMuseum_2F_Movement_GruntApproachToBattle
-	msgbox SlateportCity_OceanicMuseum_2F_Text_LetMeTakeCareOfThis, MSGBOX_DEFAULT
-	trainerbattle_no_intro TRAINER_GRUNT_MUSEUM_2, SlateportCity_OceanicMuseum_2F_Text_Grunt2Defeat
-	applywaitmovement LOCALID_OCEANIC_MUSEUM_2F_GRUNT_1, SlateportCity_OceanicMuseum_2F_Movement_GruntDefeated
-	applymovement LOCALID_OCEANIC_MUSEUM_2F_GRUNT_1, Common_Movement_WalkInPlaceFasterDown
-	applymovement LOCALID_OCEANIC_MUSEUM_2F_GRUNT_2, Common_Movement_WalkInPlaceFasterUp
-	waitmovement 0
-	msgbox SlateportCity_OceanicMuseum_2F_Text_MeddlingKid, MSGBOX_DEFAULT
-	closemessage
-	delay 35
+	playbgm MUS_ENCOUNTER_MAGMA, TRUE
 	addobject LOCALID_OCEANIC_MUSEUM_2F_ARCHIE
-	applymovement LOCALID_OCEANIC_MUSEUM_2F_ARCHIE, SlateportCity_OceanicMuseum_2F_Movement_ArchieEnter
-	applymovement LOCALID_OCEANIC_MUSEUM_2F_GRUNT_2, SlateportCity_OceanicMuseum_2F_Movement_GruntMoveForArchie
-	waitmovement 0
-	msgbox SlateportCity_OceanicMuseum_2F_Text_CameToSeeWhatsTakingSoLong, MSGBOX_DEFAULT
+	applywaitmovement LOCALID_OCEANIC_MUSEUM_2F_ARCHIE, HE_VesperEnter
+	call HE_Shake
+	msgbox HE_Text_HarborVesper, MSGBOX_DEFAULT
+	special HealPlayerParty
+	trainerbattle_no_intro TRAINER_LEAF, HE_Text_HarborLose
+	msgbox HE_Text_HarborExit, MSGBOX_DEFAULT
 	closemessage
-	applywaitmovement LOCALID_OCEANIC_MUSEUM_2F_ARCHIE, SlateportCity_OceanicMuseum_2F_Movement_ArchieApproachPlayer
-	msgbox SlateportCity_OceanicMuseum_2F_Text_ArchieWarning, MSGBOX_DEFAULT
-	closemessage
-	savebgm MUS_DUMMY
-	fadedefaultbgm
-	fadescreen FADE_TO_BLACK
+	applywaitmovement LOCALID_OCEANIC_MUSEUM_2F_ARCHIE, HE_VesperLeave
 	removeobject LOCALID_OCEANIC_MUSEUM_2F_ARCHIE
-	removeobject LOCALID_OCEANIC_MUSEUM_2F_GRUNT_1
-	removeobject LOCALID_OCEANIC_MUSEUM_2F_GRUNT_2
-	fadescreen FADE_FROM_BLACK
-	delay 30
+	setflag FLAG_HE_HARBOR_SAFE
+	setflag FLAG_DELIVERED_DEVON_GOODS
+	setflag FLAG_HIDE_ROUTE_110_TEAM_AQUA
+	setflag FLAG_HIDE_SLATEPORT_CITY_TEAM_AQUA
 	setflag FLAG_HIDE_SLATEPORT_CITY_OCEANIC_MUSEUM_AQUA_GRUNTS
-	applywaitmovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterRight
-	msgbox SlateportCity_OceanicMuseum_2F_Text_SternThankYouForSavingUs, MSGBOX_DEFAULT
-	setvar VAR_0x8004, ITEM_DEVON_GOODS
-	call Common_EventScript_PlayerHandedOverTheItem
-	msgbox SlateportCity_OceanicMuseum_2F_Text_SternIveGotToGo, MSGBOX_DEFAULT
-	closemessage
+	setvar VAR_SLATEPORT_OUTSIDE_MUSEUM_STATE, 2
 	fadescreen FADE_TO_BLACK
 	playfanfare MUS_HEAL
-	waitfanfare
 	special HealPlayerParty
-	removeobject LOCALID_OCEANIC_MUSEUM_2F_CAPT_STERN
-	setflag FLAG_HIDE_ROUTE_110_TEAM_AQUA
-	call_if_eq VAR_REGISTER_BIRCH_STATE, 0, SlateportCity_OceanicMuseum_2F_EventScript_ReadyRegisterBirch
-	setflag FLAG_DELIVERED_DEVON_GOODS
-	clearflag FLAG_HIDE_ROUTE_116_DEVON_EMPLOYEE
-	setflag FLAG_HIDE_RUSTBORO_CITY_DEVON_CORP_3F_EMPLOYEE
-	setvar VAR_SLATEPORT_OUTSIDE_MUSEUM_STATE, 1
+	waitfanfare
 	fadescreen FADE_FROM_BLACK
-	release
+	fadedefaultbgm
+	HE_SternSafe:
+	msgbox HE_Text_SternSaved, MSGBOX_DEFAULT
+	releaseall
 	end
-
 SlateportCity_OceanicMuseum_2F_EventScript_ReadyRegisterBirch::
 	setvar VAR_REGISTER_BIRCH_STATE, 1
 	return
@@ -420,3 +376,35 @@ SlateportCity_OceanicMuseum_2F_Text_SSAnneReplica:
 	.string "“A replica of the luxury liner that\n"
 	.string "circles the globe.”$"
 
+HE_VesperEnter:
+	walk_fast_down
+	walk_fast_down
+	walk_fast_down
+	walk_fast_down
+	walk_fast_down
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	step_end
+HE_VesperLeave:
+	walk_fast_left
+	walk_fast_left
+	walk_fast_left
+	walk_fast_left
+	walk_fast_up
+	walk_fast_up
+	walk_fast_up
+	walk_fast_up
+	walk_fast_up
+	step_end
+HE_Text_SternMission:
+	.string "STERN: A Rocket tomou o\nporto. Quer transformar\pnossos barcos em antenas\nmóveis.\pCapturei a chave da rede de\nMauville. Precisamos\plevá-la a Wattson.$"
+HE_Text_HarborVesper:
+	.string "VÉSPER: Comandante da\nOperação Eclipse.\pA Liga chama isto de\ncolapso. Eu chamo de uma\pregião aprendendo a\nobedecer.\pOs líderes vão entregar\nHoenn quando não puderem\pacender uma única lâmpada.$"
+HE_Text_HarborLose:
+	.string "Você interrompeu a\ntransmissão!$"
+HE_Text_HarborExit:
+	.string "VÉSPER: Protegeu um porto.\nA rede elétrica inteira é\poutro assunto.\pNos vemos em Mauville. O\ncéu já começou a mudar.$"
+HE_Text_SternSaved:
+	.string "STERN: Os barcos estão\nlivres!\pGuardei a chave no seu\ndecodificador. Ela abre o\pterminal de Mauville.\pSiga ao norte pela Rota\n110. Você devolveu o\phorizonte a esta cidade.$"

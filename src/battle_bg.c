@@ -757,8 +757,27 @@ void LoadBattleMenuWindowGfx(void)
     }
 }
 
+static const u16 sHeBattlePalette[] = INCBIN_U16("graphics/hoenn_expansion/battle_city.gbapal");
+static const u32 sHeBattleTiles[] = INCBIN_U32("graphics/hoenn_expansion/battle_city.4bpp");
+static const u16 sHeBattleMap[] = INCBIN_U16("graphics/hoenn_expansion/battle_city_map.bin");
+
+static const u32 sHeForestTiles[] = INCBIN_U32("graphics/hoenn_expansion/battle_forest.4bpp");
+static const u16 sHeForestPalette[] = INCBIN_U16("graphics/hoenn_expansion/battle_forest.gbapal");
+
 void DrawMainBattleBackground(void)
 {
+    bool8 city = (gBattleTypeFlags & BATTLE_TYPE_TRAINER)
+        && (gTrainers[gTrainerBattleOpponent_A].trainerClass == TRAINER_CLASS_ROCKET
+            || gTrainers[gTrainerBattleOpponent_A].trainerClass == TRAINER_CLASS_LEADER);
+    bool8 forest = gBattleEnvironment == BATTLE_ENVIRONMENT_GRASS
+        || gBattleEnvironment == BATTLE_ENVIRONMENT_LONG_GRASS;
+    if ((city || forest) && !(gBattleTypeFlags & (BATTLE_TYPE_LINK | BATTLE_TYPE_FRONTIER | BATTLE_TYPE_RECORDED_LINK)))
+    {
+        CpuCopy16(city ? sHeBattleTiles : sHeForestTiles, (void *)BG_CHAR_ADDR(2), sizeof(sHeBattleTiles));
+        CpuCopy16(sHeBattleMap, (void *)BG_SCREEN_ADDR(26), sizeof(sHeBattleMap));
+        LoadPalette(city ? sHeBattlePalette : sHeForestPalette, BG_PLTT_ID(2), sizeof(sHeBattlePalette));
+        return;
+    }
     if (gBattleTypeFlags & (BATTLE_TYPE_LINK | BATTLE_TYPE_FRONTIER | BATTLE_TYPE_EREADER_TRAINER | BATTLE_TYPE_RECORDED_LINK))
     {
         LZDecompressVram(gBattleEnvironmentTiles_Building, (void *)(BG_CHAR_ADDR(2)));
