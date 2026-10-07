@@ -1,6 +1,7 @@
 #include "global.h"
 #include "main.h"
 #include "hoenn_rules.h"
+#include "hoenn_expansion.h"
 #include "bg.h"
 #include "window.h"
 #include "text.h"
@@ -102,6 +103,7 @@ void HeStartNewGameConfig(MainCallback main, MainCallback vblank)
 void HeApplyNewGameRules(void)
 {
     gSaveBlock2Ptr->optionsLanguage = sNewGameLanguage;
+    VarSet(VAR_HE_SAVE_REVISION, 2);
     VarSet(VAR_HE_DIFFICULTY, sChoices[0]);
     VarSet(VAR_HE_LEVEL_CAP, sChoices[1]);
     VarSet(VAR_HE_BAG_RULES, sChoices[4]);
@@ -113,6 +115,7 @@ void HeApplyNewGameRules(void)
 // Safe to run repeatedly: later Devon states, sailing and completed arcs are untouched.
 void HeRepairProgression(void)
 {
+    HeMigrateQuestProgress();
     if (FlagGet(FLAG_BADGE01_GET)
      && !FlagGet(FLAG_DEVON_GOODS_STOLEN)
      && !FlagGet(FLAG_RECOVERED_DEVON_GOODS)

@@ -3,5 +3,6 @@
 
 const u8 *HeLocalize(const u8 *text);
 void HeInitTitleScreen(void);
+void HeMigrateQuestProgress(void);
 
 #endif

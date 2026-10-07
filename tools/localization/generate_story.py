@@ -39,6 +39,8 @@ def main():
     pairs=[];cache={};seen=set()
     for entry in catalog:
         text=wrap(entry['en'])
+        worst=re.sub(r'\{([^}]+)\}',lambda m:'M'*(RESERVE.get(m[1],0)//8),text).replace('\\n','X').replace('\\p','X')
+        if len(worst)>1000:raise ValueError('Expanded dialogue exceeds gStringVar4: '+str(entry['id']))
         asm.extend([f"HE_English_{entry['id']}::",f'\t.string "{quote(text)}"',''])
         header.append(f"extern const u8 HE_English_{entry['id']}[];")
         for label in entry['labels']:
@@ -57,5 +59,14 @@ def main():
     header.extend(['','static const struct HeTranslation sStoryTranslations[] = {',*pairs,'};',''])
     (ROOT/'data/text/hoenn_story_en.inc').write_text('\n'.join(asm)+'\n')
     (ROOT/'src/data/hoenn_story_localization.h').write_text('\n'.join(header))
+    ui=json.loads((ROOT/'docs/localization/ui_catalog.json').read_text())
+    out=['// Reviewed custom interface translations.']
+    for i,e in enumerate(ui):
+        if i>=36 and len(e['en'])>37:raise ValueError('Opening caption too wide: '+e['en'])
+        for lang in ['pt','en']:out.append(f'static const u8 sStoryUi{i}{lang}[] = _(\"{e[lang]}\");')
+    out+=['static const struct HeTranslation sStoryUiTranslations[] = {']
+    out += [f'    {{sStoryUi{i}en, sStoryUi{i}pt}},' for i in range(len(ui))]
+    out+=['};','']
+    (ROOT/'src/data/hoenn_ui_localization.h').write_text('\n'.join(out))
     print(f'Generated {len(catalog)} English texts for {len(pairs)} source labels; placeholders and 208px line widths verified.')
 if __name__=='__main__':main()

@@ -1,7 +1,7 @@
 name: Hoenn Expansion Gen7
 on:
   push:
-    branches: [hoenn-expansion-gen7, hoenn-expansion-0.7]
+    branches: [hoenn-expansion-gen7, hoenn-expansion-0.7, hoenn-expansion-0.7.2]
   workflow_dispatch:
 permissions:
   contents: read
@@ -17,11 +17,12 @@ jobs:
           python3 tools/validate_hoenn.py
           python3 tools/validate_hoenn_07.py
           python3 tools/validate_hoenn_071.py
+          python3 tools/validate_hoenn_072.py
       - name: Build
         run: make modern -j4
       - uses: actions/upload-artifact@v4
         with:
-          name: Pokemon-Hoenn-Expansion-0.7.1-beta
+          name: Pokemon-Hoenn-Expansion-0.7.2-beta
           path: |
             pokemon_hoenn_expansion_gen7.gba
             README_HOENN.md

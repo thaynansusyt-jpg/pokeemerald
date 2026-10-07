@@ -7,8 +7,9 @@
     "habitat": "ShoalCave_LowTideIceRoom",
     "evidence": "STAR_PIECE",
     "night": false,
-    "flag": 54,
-    "ultra_beast": false
+    "flag": 612,
+    "ultra_beast": false,
+    "legacy_flag": 54
   },
   {
     "id": 2,
@@ -18,8 +19,9 @@
     "habitat": "NewMauville_Inside",
     "evidence": "STAR_PIECE",
     "night": false,
-    "flag": 55,
-    "ultra_beast": false
+    "flag": 613,
+    "ultra_beast": false,
+    "legacy_flag": 55
   },
   {
     "id": 3,
@@ -29,8 +31,9 @@
     "habitat": "ScorchedSlab",
     "evidence": "STAR_PIECE",
     "night": false,
-    "flag": 56,
-    "ultra_beast": false
+    "flag": 614,
+    "ultra_beast": false,
+    "legacy_flag": 56
   },
   {
     "id": 4,
@@ -40,8 +43,9 @@
     "habitat": "MtPyre_Summit",
     "evidence": "STAR_PIECE",
     "night": true,
-    "flag": 57,
-    "ultra_beast": false
+    "flag": 615,
+    "ultra_beast": false,
+    "legacy_flag": 57
   },
   {
     "id": 5,
@@ -51,8 +55,9 @@
     "habitat": "PetalburgWoods",
     "evidence": "STAR_PIECE",
     "night": false,
-    "flag": 58,
-    "ultra_beast": false
+    "flag": 616,
+    "ultra_beast": false,
+    "legacy_flag": 58
   },
   {
     "id": 6,
@@ -62,8 +67,9 @@
     "habitat": "NewMauville_Inside",
     "evidence": "PEARL",
     "night": false,
-    "flag": 59,
-    "ultra_beast": false
+    "flag": 617,
+    "ultra_beast": false,
+    "legacy_flag": 59
   },
   {
     "id": 7,
@@ -73,8 +79,9 @@
     "habitat": "ScorchedSlab",
     "evidence": "PEARL",
     "night": false,
-    "flag": 60,
-    "ultra_beast": false
+    "flag": 618,
+    "ultra_beast": false,
+    "legacy_flag": 60
   },
   {
     "id": 8,
@@ -84,8 +91,9 @@
     "habitat": "SeafloorCavern_Room9",
     "evidence": "PEARL",
     "night": false,
-    "flag": 61,
-    "ultra_beast": false
+    "flag": 619,
+    "ultra_beast": false,
+    "legacy_flag": 61
   },
   {
     "id": 9,
@@ -95,8 +103,9 @@
     "habitat": "SeafloorCavern_Room9",
     "evidence": "PEARL",
     "night": false,
-    "flag": 62,
-    "ultra_beast": false
+    "flag": 620,
+    "ultra_beast": false,
+    "legacy_flag": 62
   },
   {
     "id": 10,
@@ -106,8 +115,9 @@
     "habitat": "SkyPillar_Top",
     "evidence": "PEARL",
     "night": false,
-    "flag": 63,
-    "ultra_beast": false
+    "flag": 621,
+    "ultra_beast": false,
+    "legacy_flag": 63
   },
   {
     "id": 11,
@@ -117,8 +127,9 @@
     "habitat": "PetalburgWoods",
     "evidence": "PEARL",
     "night": false,
-    "flag": 64,
-    "ultra_beast": false
+    "flag": 622,
+    "ultra_beast": false,
+    "legacy_flag": 64
   },
   {
     "id": 12,
@@ -128,8 +139,9 @@
     "habitat": "DesertRuins",
     "evidence": "BIG_MUSHROOM",
     "night": false,
-    "flag": 65,
-    "ultra_beast": false
+    "flag": 623,
+    "ultra_beast": false,
+    "legacy_flag": 65
   },
   {
     "id": 13,
@@ -139,8 +151,9 @@
     "habitat": "ShoalCave_LowTideIceRoom",
     "evidence": "BIG_MUSHROOM",
     "night": false,
-    "flag": 66,
-    "ultra_beast": false
+    "flag": 624,
+    "ultra_beast": false,
+    "legacy_flag": 66
   },
   {
     "id": 14,
@@ -150,8 +163,9 @@
     "habitat": "AncientTomb",
     "evidence": "BIG_MUSHROOM",
     "night": false,
-    "flag": 67,
-    "ultra_beast": false
+    "flag": 625,
+    "ultra_beast": false,
+    "legacy_flag": 67
   },
   {
     "id": 15,
@@ -161,8 +175,9 @@
     "habitat": "SkyPillar_Top",
     "evidence": "BIG_MUSHROOM",
     "night": false,
-    "flag": 68,
-    "ultra_beast": false
+    "flag": 626,
+    "ultra_beast": false,
+    "legacy_flag": 68
   },
   {
     "id": 16,
@@ -172,8 +187,9 @@
     "habitat": "SkyPillar_Top",
     "evidence": "BIG_MUSHROOM",
     "night": false,
-    "flag": 69,
-    "ultra_beast": false
+    "flag": 627,
+    "ultra_beast": false,
+    "legacy_flag": 69
   },
   {
     "id": 17,
@@ -183,8 +199,9 @@
     "habitat": "SeafloorCavern_Room9",
     "evidence": "BIG_MUSHROOM",
     "night": false,
-    "flag": 70,
-    "ultra_beast": false
+    "flag": 628,
+    "ultra_beast": false,
+    "legacy_flag": 70
   },
   {
     "id": 18,
@@ -194,8 +211,9 @@
     "habitat": "ScorchedSlab",
     "evidence": "BIG_MUSHROOM",
     "night": false,
-    "flag": 71,
-    "ultra_beast": false
+    "flag": 629,
+    "ultra_beast": false,
+    "legacy_flag": 71
   },
   {
     "id": 19,
@@ -205,8 +223,9 @@
     "habitat": "SkyPillar_Top",
     "evidence": "BIG_MUSHROOM",
     "night": false,
-    "flag": 72,
-    "ultra_beast": false
+    "flag": 630,
+    "ultra_beast": false,
+    "legacy_flag": 72
   },
   {
     "id": 20,
@@ -216,8 +235,9 @@
     "habitat": "DesertRuins",
     "evidence": "BIG_MUSHROOM",
     "night": false,
-    "flag": 73,
-    "ultra_beast": false
+    "flag": 631,
+    "ultra_beast": false,
+    "legacy_flag": 73
   },
   {
     "id": 21,
@@ -227,8 +247,9 @@
     "habitat": "MeteorFalls_1F_1R",
     "evidence": "BIG_MUSHROOM",
     "night": false,
-    "flag": 74,
-    "ultra_beast": false
+    "flag": 632,
+    "ultra_beast": false,
+    "legacy_flag": 74
   },
   {
     "id": 22,
@@ -238,8 +259,9 @@
     "habitat": "AbandonedShip_Rooms_1F",
     "evidence": "NUGGET",
     "night": false,
-    "flag": 75,
-    "ultra_beast": false
+    "flag": 633,
+    "ultra_beast": false,
+    "legacy_flag": 75
   },
   {
     "id": 23,
@@ -249,8 +271,9 @@
     "habitat": "MeteorFalls_1F_1R",
     "evidence": "NUGGET",
     "night": false,
-    "flag": 76,
-    "ultra_beast": false
+    "flag": 634,
+    "ultra_beast": false,
+    "legacy_flag": 76
   },
   {
     "id": 24,
@@ -260,8 +283,9 @@
     "habitat": "GraniteCave_B2F",
     "evidence": "NUGGET",
     "night": false,
-    "flag": 77,
-    "ultra_beast": false
+    "flag": 635,
+    "ultra_beast": false,
+    "legacy_flag": 77
   },
   {
     "id": 25,
@@ -271,8 +295,9 @@
     "habitat": "ScorchedSlab",
     "evidence": "NUGGET",
     "night": false,
-    "flag": 78,
-    "ultra_beast": false
+    "flag": 636,
+    "ultra_beast": false,
+    "legacy_flag": 78
   },
   {
     "id": 26,
@@ -282,8 +307,9 @@
     "habitat": "SeafloorCavern_Room9",
     "evidence": "NUGGET",
     "night": false,
-    "flag": 79,
-    "ultra_beast": false
+    "flag": 637,
+    "ultra_beast": false,
+    "legacy_flag": 79
   },
   {
     "id": 27,
@@ -293,8 +319,9 @@
     "habitat": "ScorchedSlab",
     "evidence": "NUGGET",
     "night": false,
-    "flag": 84,
-    "ultra_beast": false
+    "flag": 638,
+    "ultra_beast": false,
+    "legacy_flag": 84
   },
   {
     "id": 28,
@@ -304,8 +331,9 @@
     "habitat": "IslandCave",
     "evidence": "NUGGET",
     "night": false,
-    "flag": 85,
-    "ultra_beast": false
+    "flag": 639,
+    "ultra_beast": false,
+    "legacy_flag": 85
   },
   {
     "id": 29,
@@ -315,8 +343,9 @@
     "habitat": "MtPyre_Summit",
     "evidence": "NUGGET",
     "night": true,
-    "flag": 104,
-    "ultra_beast": false
+    "flag": 640,
+    "ultra_beast": false,
+    "legacy_flag": 104
   },
   {
     "id": 30,
@@ -326,8 +355,9 @@
     "habitat": "MtPyre_Summit",
     "evidence": "NUGGET",
     "night": true,
-    "flag": 233,
-    "ultra_beast": false
+    "flag": 641,
+    "ultra_beast": false,
+    "legacy_flag": 233
   },
   {
     "id": 31,
@@ -337,8 +367,9 @@
     "habitat": "SeafloorCavern_Room9",
     "evidence": "NUGGET",
     "night": false,
-    "flag": 426,
-    "ultra_beast": false
+    "flag": 642,
+    "ultra_beast": false,
+    "legacy_flag": 426
   },
   {
     "id": 32,
@@ -348,8 +379,9 @@
     "habitat": "SeafloorCavern_Room9",
     "evidence": "NUGGET",
     "night": false,
-    "flag": 427,
-    "ultra_beast": false
+    "flag": 643,
+    "ultra_beast": false,
+    "legacy_flag": 427
   },
   {
     "id": 33,
@@ -359,8 +391,9 @@
     "habitat": "MtPyre_Summit",
     "evidence": "NUGGET",
     "night": true,
-    "flag": 474,
-    "ultra_beast": false
+    "flag": 644,
+    "ultra_beast": false,
+    "legacy_flag": 474
   },
   {
     "id": 34,
@@ -370,8 +403,9 @@
     "habitat": "PetalburgWoods",
     "evidence": "NUGGET",
     "night": false,
-    "flag": 478,
-    "ultra_beast": false
+    "flag": 645,
+    "ultra_beast": false,
+    "legacy_flag": 478
   },
   {
     "id": 35,
@@ -381,8 +415,9 @@
     "habitat": "AbandonedShip_Rooms_1F",
     "evidence": "NUGGET",
     "night": false,
-    "flag": 479,
-    "ultra_beast": false
+    "flag": 646,
+    "ultra_beast": false,
+    "legacy_flag": 479
   },
   {
     "id": 36,
@@ -392,8 +427,9 @@
     "habitat": "ScorchedSlab",
     "evidence": "HEART_SCALE",
     "night": false,
-    "flag": 480,
-    "ultra_beast": false
+    "flag": 647,
+    "ultra_beast": false,
+    "legacy_flag": 480
   },
   {
     "id": 37,
@@ -403,8 +439,9 @@
     "habitat": "ScorchedSlab",
     "evidence": "HEART_SCALE",
     "night": false,
-    "flag": 481,
-    "ultra_beast": false
+    "flag": 648,
+    "ultra_beast": false,
+    "legacy_flag": 481
   },
   {
     "id": 38,
@@ -414,8 +451,9 @@
     "habitat": "ShoalCave_LowTideIceRoom",
     "evidence": "HEART_SCALE",
     "night": false,
-    "flag": 482,
-    "ultra_beast": false
+    "flag": 649,
+    "ultra_beast": false,
+    "legacy_flag": 482
   },
   {
     "id": 39,
@@ -425,8 +463,9 @@
     "habitat": "PetalburgWoods",
     "evidence": "HEART_SCALE",
     "night": false,
-    "flag": 483,
-    "ultra_beast": false
+    "flag": 650,
+    "ultra_beast": false,
+    "legacy_flag": 483
   },
   {
     "id": 40,
@@ -436,8 +475,9 @@
     "habitat": "SkyPillar_Top",
     "evidence": "HEART_SCALE",
     "night": false,
-    "flag": 612,
-    "ultra_beast": false
+    "flag": 651,
+    "ultra_beast": false,
+    "legacy_flag": 612
   },
   {
     "id": 41,
@@ -447,8 +487,9 @@
     "habitat": "NewMauville_Inside",
     "evidence": "HEART_SCALE",
     "night": false,
-    "flag": 613,
-    "ultra_beast": false
+    "flag": 652,
+    "ultra_beast": false,
+    "legacy_flag": 613
   },
   {
     "id": 42,
@@ -458,8 +499,9 @@
     "habitat": "ScorchedSlab",
     "evidence": "HEART_SCALE",
     "night": false,
-    "flag": 614,
-    "ultra_beast": false
+    "flag": 653,
+    "ultra_beast": false,
+    "legacy_flag": 614
   },
   {
     "id": 43,
@@ -469,8 +511,9 @@
     "habitat": "NewMauville_Inside",
     "evidence": "HEART_SCALE",
     "night": false,
-    "flag": 615,
-    "ultra_beast": false
+    "flag": 654,
+    "ultra_beast": false,
+    "legacy_flag": 615
   },
   {
     "id": 44,
@@ -480,8 +523,9 @@
     "habitat": "SkyPillar_Top",
     "evidence": "HEART_SCALE",
     "night": false,
-    "flag": 616,
-    "ultra_beast": false
+    "flag": 655,
+    "ultra_beast": false,
+    "legacy_flag": 616
   },
   {
     "id": 45,
@@ -491,8 +535,9 @@
     "habitat": "ShoalCave_LowTideIceRoom",
     "evidence": "HEART_SCALE",
     "night": false,
-    "flag": 617,
-    "ultra_beast": false
+    "flag": 656,
+    "ultra_beast": false,
+    "legacy_flag": 617
   },
   {
     "id": 46,
@@ -502,8 +547,9 @@
     "habitat": "SeafloorCavern_Room9",
     "evidence": "HEART_SCALE",
     "night": false,
-    "flag": 618,
-    "ultra_beast": false
+    "flag": 657,
+    "ultra_beast": false,
+    "legacy_flag": 618
   },
   {
     "id": 47,
@@ -513,8 +559,9 @@
     "habitat": "AbandonedShip_Rooms_1F",
     "evidence": "HEART_SCALE",
     "night": false,
-    "flag": 619,
-    "ultra_beast": false
+    "flag": 658,
+    "ultra_beast": false,
+    "legacy_flag": 619
   },
   {
     "id": 48,
@@ -524,8 +571,9 @@
     "habitat": "AbandonedShip_Rooms_1F",
     "evidence": "HEART_SCALE",
     "night": false,
-    "flag": 620,
-    "ultra_beast": false
+    "flag": 659,
+    "ultra_beast": false,
+    "legacy_flag": 620
   },
   {
     "id": 49,
@@ -535,8 +583,9 @@
     "habitat": "PetalburgWoods",
     "evidence": "STARDUST",
     "night": false,
-    "flag": 621,
-    "ultra_beast": false
+    "flag": 660,
+    "ultra_beast": false,
+    "legacy_flag": 621
   },
   {
     "id": 50,
@@ -546,8 +595,9 @@
     "habitat": "MtPyre_Summit",
     "evidence": "STARDUST",
     "night": true,
-    "flag": 622,
-    "ultra_beast": false
+    "flag": 661,
+    "ultra_beast": false,
+    "legacy_flag": 622
   },
   {
     "id": 51,
@@ -557,8 +607,9 @@
     "habitat": "MtPyre_Summit",
     "evidence": "STARDUST",
     "night": false,
-    "flag": 623,
-    "ultra_beast": false
+    "flag": 662,
+    "ultra_beast": false,
+    "legacy_flag": 623
   },
   {
     "id": 52,
@@ -568,8 +619,9 @@
     "habitat": "NewMauville_Inside",
     "evidence": "STARDUST",
     "night": false,
-    "flag": 624,
-    "ultra_beast": false
+    "flag": 663,
+    "ultra_beast": false,
+    "legacy_flag": 624
   },
   {
     "id": 53,
@@ -579,8 +631,9 @@
     "habitat": "SkyPillar_Top",
     "evidence": "STARDUST",
     "night": false,
-    "flag": 625,
-    "ultra_beast": false
+    "flag": 664,
+    "ultra_beast": false,
+    "legacy_flag": 625
   },
   {
     "id": 54,
@@ -590,8 +643,9 @@
     "habitat": "ScorchedSlab",
     "evidence": "STARDUST",
     "night": false,
-    "flag": 626,
-    "ultra_beast": false
+    "flag": 665,
+    "ultra_beast": false,
+    "legacy_flag": 626
   },
   {
     "id": 55,
@@ -601,8 +655,9 @@
     "habitat": "DesertRuins",
     "evidence": "BIG_PEARL",
     "night": false,
-    "flag": 627,
-    "ultra_beast": false
+    "flag": 666,
+    "ultra_beast": false,
+    "legacy_flag": 627
   },
   {
     "id": 56,
@@ -612,8 +667,9 @@
     "habitat": "IslandCave",
     "evidence": "BIG_PEARL",
     "night": false,
-    "flag": 628,
-    "ultra_beast": false
+    "flag": 667,
+    "ultra_beast": false,
+    "legacy_flag": 628
   },
   {
     "id": 57,
@@ -623,8 +679,9 @@
     "habitat": "NewMauville_Inside",
     "evidence": "BIG_PEARL",
     "night": false,
-    "flag": 629,
-    "ultra_beast": false
+    "flag": 668,
+    "ultra_beast": false,
+    "legacy_flag": 629
   },
   {
     "id": 58,
@@ -634,8 +691,9 @@
     "habitat": "AbandonedShip_Rooms_1F",
     "evidence": "BIG_PEARL",
     "night": false,
-    "flag": 630,
-    "ultra_beast": false
+    "flag": 669,
+    "ultra_beast": false,
+    "legacy_flag": 630
   },
   {
     "id": 59,
@@ -645,8 +703,9 @@
     "habitat": "PetalburgWoods",
     "evidence": "BIG_PEARL",
     "night": false,
-    "flag": 631,
-    "ultra_beast": false
+    "flag": 670,
+    "ultra_beast": false,
+    "legacy_flag": 631
   },
   {
     "id": 60,
@@ -656,8 +715,9 @@
     "habitat": "SeafloorCavern_Room9",
     "evidence": "BIG_PEARL",
     "night": false,
-    "flag": 632,
-    "ultra_beast": false
+    "flag": 671,
+    "ultra_beast": false,
+    "legacy_flag": 632
   },
   {
     "id": 61,
@@ -667,8 +727,9 @@
     "habitat": "SkyPillar_Top",
     "evidence": "BIG_PEARL",
     "night": false,
-    "flag": 633,
-    "ultra_beast": false
+    "flag": 672,
+    "ultra_beast": false,
+    "legacy_flag": 633
   },
   {
     "id": 62,
@@ -678,8 +739,9 @@
     "habitat": "SkyPillar_Top",
     "evidence": "BIG_PEARL",
     "night": false,
-    "flag": 634,
-    "ultra_beast": false
+    "flag": 673,
+    "ultra_beast": false,
+    "legacy_flag": 634
   },
   {
     "id": 63,
@@ -689,8 +751,9 @@
     "habitat": "SkyPillar_Top",
     "evidence": "BIG_PEARL",
     "night": false,
-    "flag": 635,
-    "ultra_beast": false
+    "flag": 674,
+    "ultra_beast": false,
+    "legacy_flag": 635
   },
   {
     "id": 64,
@@ -700,8 +763,9 @@
     "habitat": "MtPyre_Summit",
     "evidence": "BIG_PEARL",
     "night": true,
-    "flag": 636,
-    "ultra_beast": false
+    "flag": 675,
+    "ultra_beast": false,
+    "legacy_flag": 636
   },
   {
     "id": 65,
@@ -711,8 +775,9 @@
     "habitat": "MtPyre_Summit",
     "evidence": "BIG_PEARL",
     "night": true,
-    "flag": 637,
-    "ultra_beast": false
+    "flag": 676,
+    "ultra_beast": false,
+    "legacy_flag": 637
   },
   {
     "id": 66,
@@ -722,8 +787,9 @@
     "habitat": "SeafloorCavern_Room9",
     "evidence": "BIG_PEARL",
     "night": false,
-    "flag": 638,
-    "ultra_beast": false
+    "flag": 677,
+    "ultra_beast": false,
+    "legacy_flag": 638
   },
   {
     "id": 67,
@@ -733,8 +799,9 @@
     "habitat": "MtPyre_Summit",
     "evidence": "BIG_PEARL",
     "night": true,
-    "flag": 639,
-    "ultra_beast": false
+    "flag": 678,
+    "ultra_beast": false,
+    "legacy_flag": 639
   },
   {
     "id": 68,
@@ -744,8 +811,9 @@
     "habitat": "NewMauville_Inside",
     "evidence": "BIG_PEARL",
     "night": false,
-    "flag": 640,
-    "ultra_beast": false
+    "flag": 679,
+    "ultra_beast": false,
+    "legacy_flag": 640
   },
   {
     "id": 69,
@@ -755,8 +823,9 @@
     "habitat": "IslandCave",
     "evidence": "BIG_PEARL",
     "night": false,
-    "flag": 641,
-    "ultra_beast": false
+    "flag": 680,
+    "ultra_beast": false,
+    "legacy_flag": 641
   },
   {
     "id": 70,
@@ -766,8 +835,9 @@
     "habitat": "AncientTomb",
     "evidence": "BIG_PEARL",
     "night": false,
-    "flag": 642,
-    "ultra_beast": false
+    "flag": 681,
+    "ultra_beast": false,
+    "legacy_flag": 642
   },
   {
     "id": 71,
@@ -777,8 +847,9 @@
     "habitat": "AbandonedShip_Rooms_1F",
     "evidence": "BIG_PEARL",
     "night": false,
-    "flag": 643,
-    "ultra_beast": true
+    "flag": 682,
+    "ultra_beast": true,
+    "legacy_flag": 643
   },
   {
     "id": 72,
@@ -788,8 +859,9 @@
     "habitat": "MeteorFalls_1F_1R",
     "evidence": "BIG_PEARL",
     "night": false,
-    "flag": 644,
-    "ultra_beast": true
+    "flag": 683,
+    "ultra_beast": true,
+    "legacy_flag": 644
   },
   {
     "id": 73,
@@ -799,8 +871,9 @@
     "habitat": "GraniteCave_B2F",
     "evidence": "BIG_PEARL",
     "night": false,
-    "flag": 645,
-    "ultra_beast": true
+    "flag": 684,
+    "ultra_beast": true,
+    "legacy_flag": 645
   },
   {
     "id": 74,
@@ -810,8 +883,9 @@
     "habitat": "NewMauville_Inside",
     "evidence": "BIG_PEARL",
     "night": false,
-    "flag": 646,
-    "ultra_beast": true
+    "flag": 685,
+    "ultra_beast": true,
+    "legacy_flag": 646
   },
   {
     "id": 75,
@@ -821,8 +895,9 @@
     "habitat": "SkyPillar_Top",
     "evidence": "BIG_PEARL",
     "night": false,
-    "flag": 647,
-    "ultra_beast": true
+    "flag": 686,
+    "ultra_beast": true,
+    "legacy_flag": 647
   },
   {
     "id": 76,
@@ -832,8 +907,9 @@
     "habitat": "PetalburgWoods",
     "evidence": "BIG_PEARL",
     "night": false,
-    "flag": 648,
-    "ultra_beast": true
+    "flag": 687,
+    "ultra_beast": true,
+    "legacy_flag": 648
   },
   {
     "id": 77,
@@ -843,8 +919,9 @@
     "habitat": "MtPyre_Summit",
     "evidence": "BIG_PEARL",
     "night": true,
-    "flag": 649,
-    "ultra_beast": true
+    "flag": 688,
+    "ultra_beast": true,
+    "legacy_flag": 649
   },
   {
     "id": 78,
@@ -854,8 +931,9 @@
     "habitat": "SkyPillar_Top",
     "evidence": "BIG_PEARL",
     "night": false,
-    "flag": 650,
-    "ultra_beast": true
+    "flag": 689,
+    "ultra_beast": true,
+    "legacy_flag": 650
   },
   {
     "id": 79,
@@ -865,8 +943,9 @@
     "habitat": "SeafloorCavern_Room9",
     "evidence": "BIG_PEARL",
     "night": false,
-    "flag": 651,
-    "ultra_beast": true
+    "flag": 690,
+    "ultra_beast": true,
+    "legacy_flag": 651
   },
   {
     "id": 80,
@@ -876,8 +955,9 @@
     "habitat": "PetalburgWoods",
     "evidence": "BIG_PEARL",
     "night": false,
-    "flag": 652,
-    "ultra_beast": true
+    "flag": 691,
+    "ultra_beast": true,
+    "legacy_flag": 652
   },
   {
     "id": 81,
@@ -887,7 +967,8 @@
     "habitat": "ScorchedSlab",
     "evidence": "BIG_PEARL",
     "night": false,
-    "flag": 653,
-    "ultra_beast": true
+    "flag": 692,
+    "ultra_beast": true,
+    "legacy_flag": 653
   }
 ]

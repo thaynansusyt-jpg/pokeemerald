@@ -2,6 +2,8 @@
 #include "battle.h"
 #include "event_data.h"
 #include "pokemon.h"
+#include "pokedex.h"
+#include "constants/pokedex.h"
 #include "script_pokemon_util.h"
 #include "string_util.h"
 #include "strings.h"
@@ -112,4 +114,24 @@ void HePrepareShinyRayquaza(void)
     mon.moves[3] = MOVE_EARTHQUAKE;
     for (i = 0; i < NUM_STATS; i++) mon.ivs[i] = 31;
     CreateMonFromTemplate(&gParties[B_TRAINER_OPPONENT_A][0], &mon);
+}
+
+// 0.7.0/0.7.1 used 0x36..0x86, which overlaps vanilla story flags.
+// Never clear those original flags: their source is ambiguous in old saves.
+void HeMigrateQuestProgress(void)
+{
+    u32 i;
+    if (VarGet(VAR_HE_SAVE_REVISION) >= 2)
+        return;
+    for (i = 0; i < ARRAY_COUNT(sQuests); i++)
+    {
+        u16 oldFlag = 0x36 + i;
+        bool32 wasUnused = oldFlag <= 0x4F || oldFlag == 0x54 || oldFlag == 0x55 || oldFlag == 0x68 || oldFlag == 0x71;
+        bool32 caught = GetSetPokedexFlag(SpeciesToNationalPokedexNum(sQuests[i].species), FLAG_GET_CAUGHT);
+        if (caught || (wasUnused && FlagGet(oldFlag)))
+            FlagSet(sQuests[i].flag);
+        else
+            FlagClear(sQuests[i].flag);
+    }
+    VarSet(VAR_HE_SAVE_REVISION, 2);
 }

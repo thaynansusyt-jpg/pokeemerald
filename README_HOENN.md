@@ -1,6 +1,16 @@
-# Pokémon Hoenn Expansion — 0.7.1 Eclipse Gen7 beta
+# Pokémon Hoenn Expansion — 0.7.2 Eclipse Gen7 beta
 
 Projeto de Senhor Laranja. Esta versão reconstrói a expansão sobre pokeemerald-expansion (RHH), mantendo os recursos personalizados da base anterior e removendo a barreira do terceiro ginásio.
+
+## Atualização bilíngue 0.7.2
+
+A história personalizada da Operação Eclipse e da Rainbow Rocket agora tem PT-BR e inglês selecionáveis na mesma ROM. Foram revisados 506 textos, ligados a 614 rótulos de diálogo, além de 56 textos da interface personalizada. Os diálogos originais que já estavam em inglês continuam disponíveis em inglês.
+
+No menu inicial, entre em **AJUSTES / OPTION**, escolha **IDIOMA / LANGUAGE: PT-BR ou EN**, volte e selecione **NOVO JOGO / NEW GAME** ou **CONTINUAR / CONTINUE**. A escolha vale para as regras iniciais, cutscene, apresentação de Birch, diário, campanha, expedições e Rainbow Rocket. A língua escolhida permanece no save; trocar idioma não apaga o progresso.
+
+Esta atualização conserva o formato do save 0.7.x e as correções da 0.7.1. Use uma cópia do seu `.sav`, com o mesmo nome-base da nova ROM; carregue por **Continuar**, sem importar um save state de outra versão. O emulador/flashcart precisa de **Flash 128 KiB (1 Mbit)** e RTC. 128 KiB é o tamanho esperado do save, não um defeito corrigível reduzindo-o a 64 KiB. Não foi feito teste em flashcart físico.
+
+Os testes em emulador usam cenários controlados, warps e equipe preparada. Consulte `docs/QA_072.md` para a cobertura exata. Eles não equivalem a uma campanha inteira percorrida normalmente nem garantem ausência de bugs.
 
 ## Correções da 0.7.1
 

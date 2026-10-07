@@ -69,3 +69,6 @@ __pycache__
 
 # ROM-level test artifacts
 .qa071/
+
+# Other bilingual QA artifacts
+.qa072/

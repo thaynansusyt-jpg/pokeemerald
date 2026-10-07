@@ -282,6 +282,7 @@
 #define VAR_HE_ACTIVE_QUEST 0x40FB
 #define VAR_HE_QUEST_STAGE 0x40FC
 #define VAR_HE_RAINBOW_STAGE 0x40FD
+#define VAR_HE_SAVE_REVISION 0x40FE
 #define VARS_END                                         0x40FF
 #define VARS_COUNT                                       (VARS_END - VARS_START + 1)
 
