@@ -396,4 +396,4 @@ HE_Text_Act3Radio:
 HE_Text_Act3Wattson:
 	.string "WATTSON: As cidades eram\nbaterias...\pProtegemos as pessoas, mas\na energia roubada seguiu\ppara o vulcão.\pBirch e os líderes vão se\nreunir. Precisamos\pdescobrir o que pretendem\nacordar.\pHoje Hoenn voltou a\nacender. Graças a você.$"
 HE_Text_Act3End:
-	.string "HOENN EXPANSION\pOperação Eclipse: atos 1 a\n3.\pFIM DESTA VERSão\pA continuação vem depois de\nWattson. Você pode salvar e\pexplorar as áreas abertas.\pObrigado por defender\nHoenn!$"
+	.string "CAPÍTULO 4: CINZAS\pA Rocket moveu sua energia\npara o vulcão.\pSiga pelas Rotas 111 e 112.\nLavaridge precisa de ajuda.$"

@@ -14,8 +14,10 @@ AquaHideout_B2F_EventScript_MattNoticePlayer::
 	lockall
 	setvar VAR_0x8008, LOCALID_AQUA_HIDEOUT_MATT
 	playse SE_PIN
-	applywaitmovement VAR_0x8008, Common_Movement_ExclamationMark
-	applywaitmovement VAR_0x8008, Common_Movement_FacePlayer
+	applymovement VAR_0x8008, Common_Movement_ExclamationMark
+	waitmovement 0
+	applymovement VAR_0x8008, Common_Movement_FacePlayer
+	waitmovement 0
 	setvar VAR_TEMP_1, 1
 	releaseall
 	end
@@ -29,9 +31,11 @@ AquaHideout_B2F_EventScript_Matt::
 AquaHideout_B2F_EventScript_SubmarineEscape::
 	setvar VAR_0x8008, LOCALID_AQUA_HIDEOUT_MATT
 	setvar VAR_0x8009, LOCALID_AQUA_HIDEOUT_SUBMARINE
-	applywaitmovement VAR_0x8008, Common_Movement_WalkInPlaceFasterLeft
+	applymovement VAR_0x8008, Common_Movement_WalkInPlaceFasterLeft
+	waitmovement 0
 	delay 20
-	applywaitmovement VAR_0x8008, Common_Movement_FacePlayer
+	applymovement VAR_0x8008, Common_Movement_FacePlayer
+	waitmovement 0
 	msgbox AquaHideout_B2F_Text_OurBossGotThroughHisPreparations, MSGBOX_DEFAULT
 	closemessage
 	applymovement VAR_0x8008, Common_Movement_WalkInPlaceFasterLeft
@@ -39,7 +43,8 @@ AquaHideout_B2F_EventScript_SubmarineEscape::
 	waitmovement 0
 	removeobject VAR_0x8009
 	delay 20
-	applywaitmovement VAR_0x8008, Common_Movement_FacePlayer
+	applymovement VAR_0x8008, Common_Movement_FacePlayer
+	waitmovement 0
 	msgbox AquaHideout_B2F_Text_MattPostBattle, MSGBOX_DEFAULT
 	setflag FLAG_TEAM_AQUA_ESCAPED_IN_SUBMARINE
 	setflag FLAG_HIDE_LILYCOVE_CITY_AQUA_GRUNTS
@@ -82,73 +87,40 @@ AquaHideout_B2F_EventScript_Grunt8::
 	end
 
 AquaHideout_B2F_Text_MattIntro:
-	.string "Hehehe…\p"
-	.string "Got here already, did you?\n"
-	.string "We underestimated you!\p"
-	.string "But this is it!\p"
-	.string "I'm a cut above the GRUNTS you've seen\n"
-	.string "so far.\p"
-	.string "I'm not stalling for time.\n"
-	.string "I'm going to pulverize you!$"
+	.string "ROCKET: O transporte está\nquase pronto. Não vou deixar\pvocê abrir essas comportas!$"
 
 AquaHideout_B2F_Text_MattDefeat:
-	.string "Hehehe…\n"
-	.string "So, I lost, too…$"
+	.string "A linha de defesa caiu!$"
 
 AquaHideout_B2F_Text_OurBossGotThroughHisPreparations:
-	.string "Hehehe!\p"
-	.string "While I was toying with you, our BOSS\n"
-	.string "got through his preparations!$"
+	.string "ROCKET: O submarino está\nsaindo! Você salvou a base,\pmas perdeu o transporte.$"
 
 AquaHideout_B2F_Text_MattPostBattle:
-	.string "Hehehe!\p"
-	.string "Our BOSS has already gone on his way to\n"
-	.string "some cave under the sea!\p"
-	.string "If you're going to give chase, you'd\n"
-	.string "better search the big, wide sea beyond\l"
-	.string "LILYCOVE.\p"
-	.string "But will you find it then?\n"
-	.string "Hehehe!$"
+	.string "Vesper levou o núcleo para\numa caverna sob o mar, além\pde Lilycove.\pSem Dive e as coordenadas,\nninguém chega até lá.$"
 
 AquaHideout_B2F_Text_Grunt4Intro:
-	.string "Wahahah, I grew weary of waiting!\n"
-	.string "You owe me a battle, too!$"
+	.string "ROCKET: Essas cargas\nsustentam nossa operação.\pNão vai levá-las!$"
 
 AquaHideout_B2F_Text_Grunt4Defeat:
-	.string "Tired of waiting…\n"
-	.string "Lost and dazed…$"
+	.string "Não consegui proteger a\ncarga!$"
 
 AquaHideout_B2F_Text_Grunt4PostBattle:
-	.string "BOSS…\n"
-	.string "Is this good enough?$"
+	.string "O submarino leva o núcleo. A\nsaída fica no andar\pinferior.$"
 
 AquaHideout_B2F_Text_Grunt6Intro:
-	.string "Warp panels, the HIDEOUT's pride\n"
-	.string "and joy!\p"
-	.string "You're clueless about where you are,\n"
-	.string "aren't you?\p"
-	.string "Fluster and tire out the enemy, then\n"
-	.string "lower the boom! That's our plan!$"
+	.string "ROCKET: Essas cargas\nsustentam nossa operação.\pNão vai levá-las!$"
 
 AquaHideout_B2F_Text_Grunt6Defeat:
-	.string "What's wrong with you?\n"
-	.string "You're not tired at all!$"
+	.string "Não consegui proteger a\ncarga!$"
 
 AquaHideout_B2F_Text_Grunt6PostBattle:
-	.string "That reminds me… I can't remember\n"
-	.string "where I put the MASTER BALL.\p"
-	.string "If I fail to guard it, our BOSS will\n"
-	.string "chew me out…$"
+	.string "O submarino leva o núcleo. A\nsaída fica no andar\pinferior.$"
 
 AquaHideout_B2F_Text_Grunt8Intro:
-	.string "When I joined TEAM AQUA, the first\n"
-	.string "thing I had to learn was how these\l"
-	.string "warp panels connected.$"
+	.string "ROCKET: Essas cargas\nsustentam nossa operação.\pNão vai levá-las!$"
 
 AquaHideout_B2F_Text_Grunt8Defeat:
-	.string "I was too occupied thinking about\n"
-	.string "the warp panels…$"
+	.string "Não consegui proteger a\ncarga!$"
 
 AquaHideout_B2F_Text_Grunt8PostBattle:
-	.string "I'll have to learn about how I can\n"
-	.string "battle more effectively…$"
+	.string "O submarino leva o núcleo. A\nsaída fica no andar\pinferior.$"

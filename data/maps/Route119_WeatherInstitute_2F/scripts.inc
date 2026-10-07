@@ -53,8 +53,10 @@ Route119_WeatherInstitute_2F_EventScript_ShellyDefeated::
 	msgbox Route119_WeatherInstitute_2F_Text_TeamMagmaJustPassedBy, MSGBOX_DEFAULT
 	closemessage
 	playse SE_PIN
-	applywaitmovement LOCALID_WEATHER_INSTITUTE_2F_SHELLY, Common_Movement_ExclamationMark
-	applywaitmovement LOCALID_WEATHER_INSTITUTE_2F_SHELLY, Common_Movement_Delay48
+	applymovement LOCALID_WEATHER_INSTITUTE_2F_SHELLY, Common_Movement_ExclamationMark
+	waitmovement 0
+	applymovement LOCALID_WEATHER_INSTITUTE_2F_SHELLY, Common_Movement_Delay48
+	waitmovement 0
 	msgbox Route119_WeatherInstitute_2F_Text_WeHaveToHurryToMtPyre, MSGBOX_DEFAULT
 	closemessage
 	setvar VAR_WEATHER_INSTITUTE_STATE, 1
@@ -68,17 +70,19 @@ Route119_WeatherInstitute_2F_EventScript_ShellyDefeated::
 	removeobject LOCALID_WEATHER_INSTITUTE_2F_SHELLY
 	removeobject LOCALID_WEATHER_INSTITUTE_2F_GRUNT_4
 	removeobject LOCALID_WEATHER_INSTITUTE_2F_GRUNT_3
-	applywaitmovement LOCALID_PLAYER, Route119_WeatherInstitute_2F_Movement_PlayerReturnToPosition
+	applymovement LOCALID_PLAYER, Route119_WeatherInstitute_2F_Movement_PlayerReturnToPosition
+	waitmovement 0
 	fadescreen FADE_FROM_BLACK
-	applywaitmovement LOCALID_WEATHER_INSTITUTE_2F_SCIENTIST, Route119_WeatherInstitute_2F_Movement_ScientistApproachPlayer
+	applymovement LOCALID_WEATHER_INSTITUTE_2F_SCIENTIST, Route119_WeatherInstitute_2F_Movement_ScientistApproachPlayer
+	waitmovement 0
 	copyobjectxytoperm LOCALID_WEATHER_INSTITUTE_2F_SCIENTIST
 	goto Route119_WeatherInstitute_2F_EventScript_ReceiveCastform
 	end
 
 Route119_WeatherInstitute_2F_EventScript_ReceiveCastform::
 	msgbox Route119_WeatherInstitute_2F_Text_ThanksPleaseTakePokemon, MSGBOX_DEFAULT
-	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_CASTFORM
-	givemon SPECIES_CASTFORM, 25, ITEM_MYSTIC_WATER
+	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_CASTFORM_NORMAL
+	givemon SPECIES_CASTFORM_NORMAL, 25, ITEM_MYSTIC_WATER
 	goto_if_eq VAR_RESULT, MON_GIVEN_TO_PARTY, Route119_WeatherInstitute_2F_EventScript_ReceiveCastformParty
 	goto_if_eq VAR_RESULT, MON_GIVEN_TO_PC, Route119_WeatherInstitute_2F_EventScript_ReceiveCastformPC
 	goto Common_EventScript_NoMoreRoomForPokemon
@@ -111,7 +115,7 @@ Route119_WeatherInstitute_2F_EventScript_ReceivedCastformFanfare::
 	message Route119_WeatherInstitute_2F_Text_PlayerReceivedCastform
 	waitmessage
 	waitfanfare
-	bufferspeciesname STR_VAR_1, SPECIES_CASTFORM
+	bufferspeciesname STR_VAR_1, SPECIES_CASTFORM_NORMAL
 	return
 
 Route119_WeatherInstitute_2F_EventScript_ExplainCastform::
@@ -200,103 +204,62 @@ Route119_WeatherInstitute_2F_EventScript_WeatherScientist::
 	end
 
 Route119_WeatherInstitute_2F_Text_Grunt2Intro:
-	.string "The INSTITUTE created a type of\n"
-	.string "POKéMON that has something to do with\l"
-	.string "the weather. We're here to take them!$"
+	.string "ROCKET: As ordens são manter\nesta área sob controle!$"
 
 Route119_WeatherInstitute_2F_Text_Grunt2Defeat:
-	.string "Our plan's being spoiled by a kid?$"
+	.string "A operação perdeu esta\nposição!$"
 
 Route119_WeatherInstitute_2F_Text_Grunt2PostBattle:
-	.string "If the POKéMON they made here can\n"
-	.string "control the weather freely, then we of\l"
-	.string "TEAM AQUA definitely need it!$"
+	.string "Eu seguia ordens. Isso não\nvai apagar o que aconteceu\paqui.$"
 
 Route119_WeatherInstitute_2F_Text_Grunt3Intro:
-	.string "We're TEAM AQUA!\n"
-	.string "We appear wherever anything rare is\l"
-	.string "found!$"
+	.string "ROCKET: As ordens são manter\nesta área sob controle!$"
 
 Route119_WeatherInstitute_2F_Text_Grunt3Defeat:
-	.string "You got me!$"
+	.string "A operação perdeu esta\nposição!$"
 
 Route119_WeatherInstitute_2F_Text_Grunt3PostBattle:
-	.string "You don't have any idea what we of\n"
-	.string "TEAM AQUA are working towards!\l"
-	.string "You stay out of our way!$"
+	.string "Eu seguia ordens. Isso não\nvai apagar o que aconteceu\paqui.$"
 
 Route119_WeatherInstitute_2F_Text_Grunt5Intro:
-	.string "Don't tell me you're looking for that\n"
-	.string "weather POKéMON, too?\p"
-	.string "That's a no-no!\n"
-	.string "We were here to get it first!$"
+	.string "ROCKET: As ordens são manter\nesta área sob controle!$"
 
 Route119_WeatherInstitute_2F_Text_Grunt5Defeat:
-	.string "Oh, will you look at my POKéMON?$"
+	.string "A operação perdeu esta\nposição!$"
 
 Route119_WeatherInstitute_2F_Text_Grunt5PostBattle:
-	.string "Humph, so what?\n"
-	.string "What we want…\p"
-	.string "What we really want isn't here…\n"
-	.string "Ihihihihi…$"
+	.string "Eu seguia ordens. Isso não\nvai apagar o que aconteceu\paqui.$"
 
 Route119_WeatherInstitute_2F_Text_ShellyIntro:
-	.string "Ahahahaha!\p"
-	.string "You're going to meddle in TEAM AQUA's\n"
-	.string "affairs?\p"
-	.string "You're either absolutely fearless,\n"
-	.string "simply ignorant, or both!\p"
-	.string "You're so cute, you're disgusting!\n"
-	.string "I'll put you down, kiddy!$"
+	.string "AGENTE ROCKET: As previsões\nalimentam nossas antenas. O\pInstituto não vai devolver\nos dados à Liga!$"
 
 Route119_WeatherInstitute_2F_Text_ShellyDefeat:
-	.string "Ahahahaha!\n"
-	.string "You're disgustingly strong!$"
+	.string "O registro da operação foi\nexposto!$"
 
 Route119_WeatherInstitute_2F_Text_ShellyPostBattle:
-	.string "It's bad enough to have TEAM MAGMA\n"
-	.string "blunder about, but now there's you!\p"
-	.string "What makes you want to sniff around\n"
-	.string "in our business, anyway?$"
+	.string "AGENTE ROCKET: Vesper tem\ncópias. Pode salvar esse\pInstituto, mas não as ilhas.$"
 
 Route119_WeatherInstitute_2F_Text_TeamMagmaJustPassedBy:
-	.string "We have a situation here!\p"
-	.string "A TEAM MAGMA mob just passed\n"
-	.string "the WEATHER INSTITUTE.\p"
-	.string "They appear to be headed for\n"
-	.string "MT. PYRE!$"
+	.string "ROCKET: Orion chegou ao\nsantuário. O outro núcleo\pestá em movimento.$"
 
 Route119_WeatherInstitute_2F_Text_WeHaveToHurryToMtPyre:
-	.string "What?!\p"
-	.string "We can't waste any more time here!\n"
-	.string "We have to hurry to MT. PYRE, too!\p"
-	.string "Ahahahaha!\n"
-	.string "TEAM MAGMA, just you wait!$"
+	.string "ROCKET: Recuar! Vesper\nespera em Mt. Pyre!$"
 
 Route119_WeatherInstitute_2F_Text_ThanksPleaseTakePokemon:
-	.string "Thanks!\n"
-	.string "Thanks to you, we're safe!\p"
-	.string "It might be an odd way of thanking you,\n"
-	.string "but take this POKéMON.$"
+	.string "PESQUISADOR: Recuperamos as\ngravações. Eles provocavam\ptempestades para vender\nproteção.\pEste Castform ajudou a\ndetectar os pulsos. Leve-o.\pOs dados precisam chegar a\nWinona.$"
 
 @ Unused
 Route119_WeatherInstitute_2F_Text_NoRoomForPokemon:
-	.string "Hm? You don't seem to have any room\n"
-	.string "for this POKéMON.$"
+	.string "Sua equipe está cheia. Abra\nespaço para Castform.$"
 
 Route119_WeatherInstitute_2F_Text_PlayerReceivedCastform:
-	.string "{PLAYER} received CASTFORM!$"
+	.string "{PLAYER} recebeu CASTFORM!$"
 
 Route119_WeatherInstitute_2F_Text_PokemonChangesWithWeather:
-	.string "That POKéMON changes shape according\n"
-	.string "to the weather conditions.\p"
-	.string "There're plenty of them in the\n"
-	.string "INSTITUTE--go ahead and take it.$"
+	.string "Castform sente mudanças no\nclima. Os pulsos da Rocket\pperturbam seu corpo.$"
 
 Route119_WeatherInstitute_2F_Text_ChangingWeatherRidiculous:
-	.string "I've been researching rain for many\n"
-	.string "years, but it's ridiculous to think that\l"
-	.string "humans can freely change the weather.$"
+	.string "Tentaram tratar o clima como\numa máquina. Não\pcompreenderam os seres que\nmantêm o equilíbrio.$"
 
 Route119_WeatherInstitute_2F_Text_GroudonWeather:
 	.string "I track weather patterns over\n"

@@ -465,14 +465,3 @@ Route116_Text_TrainerTipsBagHasPockets:
 	.string "a BAG of their own.$"
 
 
-HE_Route116_Boundary::
-	lockall
-	msgbox HE_Route116_Closed, MSGBOX_DEFAULT
-	closemessage
-	warp MAP_RUSTBORO_CITY, 255, 27, 20
-	waitstate
-	releaseall
-	end
-
-HE_Route116_Closed:
-	.string "AVISO DA LIGA\pEsta estrada está fechada\npor risco de desabamento.\pO capítulo atual termina\nno ginásio de Roxanne.\pAs próximas áreas serão\nabertas na continuação.$"

@@ -17,7 +17,8 @@ MtChimney_EventScript_Archie::
 	call_if_unset FLAG_EVIL_LEADER_PLEASE_STOP, MtChimney_EventScript_ArchieGoStopTeamMagma
 	call_if_set FLAG_EVIL_LEADER_PLEASE_STOP, MtChimney_EventScript_ArchieBusyFighting
 	closemessage
-	applywaitmovement LOCALID_MT_CHIMNEY_ARCHIE, Common_Movement_FaceOriginalDirection
+	applymovement LOCALID_MT_CHIMNEY_ARCHIE, Common_Movement_FaceOriginalDirection
+	waitmovement 0
 	setflag FLAG_EVIL_LEADER_PLEASE_STOP
 	release
 	end
@@ -34,27 +35,31 @@ MtChimney_EventScript_Maxie::
 	lockall
 	playbgm MUS_ENCOUNTER_MAGMA, FALSE
 	msgbox MtChimney_Text_MeteoriteWillActivateVolcano, MSGBOX_DEFAULT
-	applywaitmovement LOCALID_MT_CHIMNEY_MAXIE, Common_Movement_FacePlayer
+	applymovement LOCALID_MT_CHIMNEY_MAXIE, Common_Movement_FacePlayer
+	waitmovement 0
 	playse SE_PIN
-	applywaitmovement LOCALID_MT_CHIMNEY_MAXIE, Common_Movement_ExclamationMark
-	applywaitmovement LOCALID_MT_CHIMNEY_MAXIE, Common_Movement_Delay48
+	applymovement LOCALID_MT_CHIMNEY_MAXIE, Common_Movement_ExclamationMark
+	waitmovement 0
+	applymovement LOCALID_MT_CHIMNEY_MAXIE, Common_Movement_Delay48
+	waitmovement 0
 	msgbox MtChimney_Text_MaxieIntro, MSGBOX_DEFAULT
 	trainerbattle_no_intro TRAINER_MAXIE_MT_CHIMNEY, MtChimney_Text_MaxieDefeat
 	msgbox MtChimney_Text_MaxieYouHaventSeenLastOfMagma, MSGBOX_DEFAULT
 	closemessage
 	delay 30
-	fadescreen FADE_TO_BLACK
+	fadescreenswapbuffers FADE_TO_BLACK
 	removeobject LOCALID_MT_CHIMNEY_MAXIE
 	removeobject LOCALID_MT_CHIMNEY_MAGMA_GRUNT_1
 	removeobject LOCALID_MT_CHIMNEY_TABITHA
 	removeobject LOCALID_MT_CHIMNEY_MAGMA_GRUNT_2
 	setflag FLAG_HIDE_MT_CHIMNEY_TEAM_MAGMA
-	fadescreen FADE_FROM_BLACK
+	fadescreenswapbuffers FADE_FROM_BLACK
 	setobjectxyperm LOCALID_MT_CHIMNEY_ARCHIE, 10, 12
 	addobject LOCALID_MT_CHIMNEY_ARCHIE
 	call_if_eq VAR_FACING, DIR_EAST, MtChimney_EventScript_ArchieApproachPlayerEast
 	call_if_eq VAR_FACING, DIR_NORTH, MtChimney_EventScript_ArchieApproachPlayerNorth
-	applywaitmovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterLeft
+	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterLeft
+	waitmovement 0
 	msgbox MtChimney_Text_ArchieThankYou, MSGBOX_DEFAULT
 	closemessage
 	call_if_eq VAR_FACING, DIR_EAST, MtChimney_EventScript_ArchieExitEast
@@ -69,19 +74,23 @@ MtChimney_EventScript_Maxie::
 	end
 
 MtChimney_EventScript_ArchieApproachPlayerEast::
-	applywaitmovement LOCALID_MT_CHIMNEY_ARCHIE, MtChimney_Movement_ArchieApproachPlayerEast
+	applymovement LOCALID_MT_CHIMNEY_ARCHIE, MtChimney_Movement_ArchieApproachPlayerEast
+	waitmovement 0
 	return
 
 MtChimney_EventScript_ArchieApproachPlayerNorth::
-	applywaitmovement LOCALID_MT_CHIMNEY_ARCHIE, MtChimney_Movement_ArchieApproachPlayerNorth
+	applymovement LOCALID_MT_CHIMNEY_ARCHIE, MtChimney_Movement_ArchieApproachPlayerNorth
+	waitmovement 0
 	return
 
 MtChimney_EventScript_ArchieExitEast::
-	applywaitmovement LOCALID_MT_CHIMNEY_ARCHIE, MtChimney_Movement_ArchieExitEast
+	applymovement LOCALID_MT_CHIMNEY_ARCHIE, MtChimney_Movement_ArchieExitEast
+	waitmovement 0
 	return
 
 MtChimney_EventScript_ArchieExitNorth::
-	applywaitmovement LOCALID_MT_CHIMNEY_ARCHIE, MtChimney_Movement_ArchieExitNorth
+	applymovement LOCALID_MT_CHIMNEY_ARCHIE, MtChimney_Movement_ArchieExitNorth
+	waitmovement 0
 	return
 
 MtChimney_EventScript_LavaCookieLady::
@@ -95,6 +104,7 @@ MtChimney_EventScript_LavaCookieLady::
 	msgbox MtChimney_Text_ThankYouDear, MSGBOX_DEFAULT
 	checkitemspace ITEM_LAVA_COOKIE
 	call_if_eq VAR_RESULT, TRUE, MtChimney_EventScript_RemoveMoney
+.if OW_SHOW_ITEM_DESCRIPTIONS == OW_ITEM_DESCRIPTIONS_OFF
 	giveitem ITEM_LAVA_COOKIE
 	goto_if_eq VAR_RESULT, FALSE, MtChimney_EventScript_BagIsFull
 	hidemoneybox
@@ -106,6 +116,19 @@ MtChimney_EventScript_BagIsFull::
 	hidemoneybox
 	release
 	end
+.else
+	hidemoneybox
+	giveitem ITEM_LAVA_COOKIE
+	goto_if_eq VAR_RESULT, FALSE, MtChimney_EventScript_BagIsFull
+	release
+	end
+
+MtChimney_EventScript_BagIsFull::
+	msgbox gText_TooBadBagIsFull, MSGBOX_DEFAULT
+	release
+	end
+.endif @ OW_SHOW_ITEM_DESCRIPTIONS
+
 
 MtChimney_EventScript_RemoveMoney::
 	removemoney 200
@@ -432,6 +455,7 @@ MtChimney_EventScript_MeteoriteMachine::
 	goto_if_eq VAR_RESULT, NO, MtChimney_EventScript_LeaveMeteoriteAlone
 	msgbox MtChimney_Text_PlayerRemovedMeteorite, MSGBOX_DEFAULT
 	giveitem ITEM_METEORITE
+	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
 	setflag FLAG_RECEIVED_METEORITE
 	releaseall
 	end
@@ -518,100 +542,43 @@ MtChimney_EventScript_SawyerRematch::
 	end
 
 MtChimney_Text_MeteoriteWillActivateVolcano:
-	.string "The power contained in the METEORITE…\p"
-	.string "By amplifying its power with this\n"
-	.string "machine, MT. CHIMNEY's volcanic\l"
-	.string "activity will instantly intensify…\p"
-	.string "Its energy will grow deep inside\n"
-	.string "the crater and…\l"
-	.string "Fufufu…$"
+	.string "ROCKET: Desviamos a energia\nde Mauville. O meteorito\pestabiliza o amplificador.$"
 
 MtChimney_Text_MaxieIntro:
-	.string "MAXIE: Hm?\n"
-	.string "Who are you?\p"
-	.string "… … … … … …\n"
-	.string "… … … … … …\p"
-	.string "I'd heard ARCHIE bemoaning a child\n"
-	.string "who's been meddling in TEAM AQUA's\l"
-	.string "affairs.\p"
-	.string "It must be you he meant.\p"
-	.string "Humph! So you're thinking of\n"
-	.string "interfering with us, TEAM MAGMA?\p"
-	.string "Now you listen.\n"
-	.string "Long ago, living things used the\l"
-	.string "land to live and grow.\p"
-	.string "That is why land is all important!\n"
-	.string "It is the cradle of all!\p"
-	.string "That is why TEAM MAGMA is dedicated\n"
-	.string "to the expansion of the land mass.\p"
-	.string "It is for further advancement of\n"
-	.string "humankind and POKéMON!\p"
-	.string "And for that, we need the power of\n"
-	.string "what sleeps within this mountain…\p"
-	.string "Oh! There was no need for you to\n"
-	.string "learn that much.\p"
-	.string "But, no matter!\n"
-	.string "I'll teach you the consequences of\l"
-	.string "meddling in our grand design!$"
+	.string "ORION: Você salvou cidades e\ndeixou a fonte ligada. É\pisso que aprendem nos\nginásios?\pHoenn terá uma nova rede.\nQuem obedecer recebe água e\pluz. O resto aprende a\npedir.\pEu não preciso derrotar toda\na Liga. Só preciso que ela\pchegue tarde.$"
 
 MtChimney_Text_MaxieDefeat:
-	.string "What?!\p"
-	.string "I, MAXIE, was caught off guard?!$"
+	.string "A reserva térmica... está\ncaindo!$"
 
 MtChimney_Text_MaxieYouHaventSeenLastOfMagma:
-	.string "MAXIE: But, enough.\n"
-	.string "I will back off this time.\p"
-	.string "But don't think that this is the last\n"
-	.string "you've seen of TEAM MAGMA.\p"
-	.string "Fufufu…\p"
-	.string "Even without the METEORITE, if we\n"
-	.string "obtain that ORB… Fufufu…$"
+	.string "ORION: O núcleo já recebeu\nenergia. Desligue esta\pmáquina se quiser. Vou\nrecuperar o controle em\pLavaridge.$"
 
 MtChimney_Text_TabithaIntro:
-	.string "Hehehe!\p"
-	.string "So you've come all the way here!\p"
-	.string "But you're too late!\n"
-	.string "I've already delivered the METEORITE\l"
-	.string "from METEOR FALLS to the BOSS!$"
+	.string "ROCKET: As ordens são manter\nesta área sob controle!$"
 
 MtChimney_Text_TabithaDefeat:
-	.string "Hehehe…\p"
-	.string "Even though I've lost, if our leader\n"
-	.string "awakens that thing…$"
+	.string "A operação perdeu esta\nposição!$"
 
 MtChimney_Text_TabithaPostBattle:
-	.string "BOSS, hurry!\n"
-	.string "Give it the METEORITE's energy!\p"
-	.string "Hehehe…$"
+	.string "Eu seguia ordens. Isso não\nvai apagar o que aconteceu\paqui.$"
 
 MtChimney_Text_Grunt2Intro:
-	.string "We of TEAM MAGMA are working hard for\n"
-	.string "everyone's sake.\p"
-	.string "Like, if that thing's power made more\n"
-	.string "land, there'd be more places to live.\p"
-	.string "Everyone'd be happy!$"
+	.string "ROCKET: As ordens são manter\nesta área sob controle!$"
 
 MtChimney_Text_Grunt2Defeat:
-	.string "Hunh?\n"
-	.string "What do you mean I lost?$"
+	.string "A operação perdeu esta\nposição!$"
 
 MtChimney_Text_Grunt2PostBattle:
-	.string "Our BOSS says, “It will make everyone\n"
-	.string "happy.”\p"
-	.string "But why does everyone keep getting\n"
-	.string "in our way?$"
+	.string "Eu seguia ordens. Isso não\nvai apagar o que aconteceu\paqui.$"
 
 MtChimney_Text_Grunt1Intro:
-	.string "If there were more land, I'd be able\n"
-	.string "to get a big house of my own!\p"
-	.string "I'm going to build it on hardened lava!$"
+	.string "ROCKET: As ordens são manter\nesta área sob controle!$"
 
 MtChimney_Text_Grunt1Defeat:
-	.string "My dream of a big house…$"
+	.string "A operação perdeu esta\nposição!$"
 
 MtChimney_Text_Grunt1PostBattle:
-	.string "A kid like you, you ought to be\n"
-	.string "splashing about in the waves!$"
+	.string "Eu seguia ordens. Isso não\nvai apagar o que aconteceu\paqui.$"
 
 MtChimney_Text_TeamAquaAlwaysMessingWithPlans:
 	.string "That annoying TEAM AQUA…\n"
@@ -642,33 +609,13 @@ MtChimney_Text_Bufoh:
 	.string "Bufoh!$"
 
 MtChimney_Text_ArchieGoStopTeamMagma:
-	.string "ARCHIE: Grr, {PLAYER}!\n"
-	.string "I should've guessed you'd show up!\p"
-	.string "See for yourself what the fanatics\n"
-	.string "of TEAM MAGMA are up to!\p"
-	.string "They're trying to inject the stolen\n"
-	.string "METEORITE's power into the volcano!\p"
-	.string "Doing something like that will cause\n"
-	.string "the volcano's eruption!$"
+	.string "VESPER: Tire Orion do\namplificador. A energia está\pacima do limite.$"
 
 MtChimney_Text_ArchieIHaveMyHandsFull:
-	.string "ARCHIE: Grrr…\p"
-	.string "I want to stop that MAXIE,\n"
-	.string "but I can't!\p"
-	.string "Not when I have my hands full battling\n"
-	.string "three opponents at once!$"
+	.string "VESPER: Meus agentes estão\npresos nessa disputa. Abra\pcaminho até a máquina.$"
 
 MtChimney_Text_ArchieThankYou:
-	.string "ARCHIE: {PLAYER}!\n"
-	.string "Thank you!\p"
-	.string "With your help, we thwarted TEAM\n"
-	.string "MAGMA's destructive plan!\p"
-	.string "But… You…\n"
-	.string "Whose side are you on?\p"
-	.string "Ah, it doesn't matter.\p"
-	.string "We will remain vigilant and keep up\n"
-	.string "our pursuit of TEAM MAGMA.\p"
-	.string "{PLAYER}, we shall meet again!$"
+	.string "VESPER: O vulcão\nestabilizou. Não é uma\paliança. Hoje nossos\ninteresses coincidiram.$"
 
 MtChimney_Text_MagmaOutnumbersUs:
 	.string "Darn… TEAM MAGMA outnumbers us!\n"
@@ -703,27 +650,19 @@ MtChimney_Text_OhFineThen:
 	.string "Oh, fine then.$"
 
 MtChimney_Text_MeteoriteFittedOnMachine:
-	.string "A METEORITE is fitted on a mysterious\n"
-	.string "machine…\p"
-	.string "The machine seems to be storing\n"
-	.string "energy in the METEORITE.$"
+	.string "O meteorito mantém o\namplificador ligado.$"
 
 MtChimney_Text_RemoveTheMeteorite:
-	.string "A METEORITE is fitted on a mysterious\n"
-	.string "machine…\p"
-	.string "Do you want to remove the METEORITE?$"
+	.string "Retirar o meteorito?$"
 
 MtChimney_Text_PlayerRemovedMeteorite:
-	.string "{PLAYER} removed the METEORITE from\n"
-	.string "the mysterious machine.$"
+	.string "{PLAYER} retirou o\nmeteorito. O amplificador\pperdeu sua fonte.$"
 
 MtChimney_Text_PlayerLeftMeteorite:
-	.string "{PLAYER} left the METEORITE where\n"
-	.string "it was.$"
+	.string "O amplificador continua\nligado.$"
 
 MtChimney_Text_MachineMakesNoResponse:
-	.string "This mysterious machine…\n"
-	.string "It makes no response whatsoever.$"
+	.string "O amplificador não responde.$"
 
 MtChimney_Text_RouteSign:
 	.string "{DOWN_ARROW} JAGGED PATH\n"
@@ -827,4 +766,3 @@ MtChimney_Text_SawyerRematchDefeat:
 MtChimney_Text_SawyerPostRematch:
 	.string "Actually, it really is hot here.\n"
 	.string "I'm overdressed for these parts.$"
-

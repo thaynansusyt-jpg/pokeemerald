@@ -1,20 +1,157 @@
 HE_Journal::
 	lockall
-	setvar VAR_0x8000, 0
-	call_if_set FLAG_HE_SIGNAL_RUSTBORO, HE_CountSignal
-	call_if_set FLAG_HE_SIGNAL_DEWFORD, HE_CountSignal
-	call_if_set FLAG_HE_SIGNAL_MAUVILLE, HE_CountSignal
-	buffernumberstring STR_VAR_1, VAR_0x8000
-	msgbox HE_Text_Journal, MSGBOX_DEFAULT
-	goto_if_unset FLAG_HE_SIGNAL_RUSTBORO, HE_GoalRustboro
-	goto_if_unset FLAG_HE_SIGNAL_DEWFORD, HE_GoalDewford
-	goto_if_unset FLAG_BADGE02_GET, HE_GoalBrawly
-	goto_if_unset FLAG_HE_HARBOR_SAFE, HE_GoalHarbor
-	goto_if_unset FLAG_HE_SIGNAL_MAUVILLE, HE_GoalMauville
-	goto_if_unset FLAG_BADGE03_GET, HE_GoalWattson
-	msgbox HE_Text_GoalEnd, MSGBOX_DEFAULT
+	goto_if_unset FLAG_SYS_POKEDEX_GET, HE_CampaignGoal0
+	goto_if_unset FLAG_HE_ECLIPSE_PROOF, HE_CampaignGoal1
+	goto_if_unset FLAG_BADGE01_GET, HE_CampaignGoal2
+	goto_if_unset FLAG_HE_SIGNAL_RUSTBORO, HE_CampaignGoal3
+	goto_if_unset FLAG_HE_SIGNAL_DEWFORD, HE_CampaignGoal4
+	goto_if_unset FLAG_BADGE02_GET, HE_CampaignGoal5
+	goto_if_unset FLAG_HE_HARBOR_SAFE, HE_CampaignGoal6
+	goto_if_unset FLAG_HE_SIGNAL_MAUVILLE, HE_CampaignGoal7
+	goto_if_unset FLAG_BADGE03_GET, HE_CampaignGoal8
+	goto_if_unset FLAG_HE_THERMAL_SAFE, HE_CampaignGoal9
+	goto_if_unset FLAG_BADGE04_GET, HE_CampaignGoal10
+	goto_if_unset FLAG_HE_SUPPLY_SAFE, HE_CampaignGoal11
+	goto_if_unset FLAG_BADGE05_GET, HE_CampaignGoal12
+	goto_if_unset FLAG_HE_FOREST_SAFE, HE_CampaignGoal13
+	goto_if_unset FLAG_BADGE06_GET, HE_CampaignGoal14
+	goto_if_unset FLAG_HE_ORBIT_SAFE, HE_CampaignGoal15
+	goto_if_unset FLAG_BADGE07_GET, HE_CampaignGoal16
+	goto_if_unset FLAG_HE_OCEAN_SAFE, HE_CampaignGoal17
+	goto_if_unset FLAG_BADGE08_GET, HE_CampaignGoal18
+	goto_if_unset FLAG_HE_FINAL_ROCKET, HE_CampaignGoal19
+	goto_if_unset FLAG_HE_CAMPAIGN_COMPLETE, HE_CampaignGoal20
+	msgbox HE_CampaignDoneText, MSGBOX_DEFAULT
 	releaseall
 	end
+HE_CampaignGoal0::
+	msgbox HE_CampaignGoalText0, MSGBOX_DEFAULT
+	releaseall
+	end
+HE_CampaignGoalText0:
+	.string "MISSAO DA RESISTÊNCIA\pObtenha seu inicial e\nencontre o rival na Rota\p103. Depois, volte ao\nlaboratório de Birch.$"
+HE_CampaignGoal1::
+	msgbox HE_CampaignGoalText1, MSGBOX_DEFAULT
+	releaseall
+	end
+HE_CampaignGoalText1:
+	.string "MISSAO DA RESISTÊNCIA\pEncontre o pesquisador na\nfloresta de Petalburg. A\pRocket procura os documentos\nDevon.$"
+HE_CampaignGoal2::
+	msgbox HE_CampaignGoalText2, MSGBOX_DEFAULT
+	releaseall
+	end
+HE_CampaignGoalText2:
+	.string "MISSAO DA RESISTÊNCIA\pLeve as provas a Rustboro e\nenfrente Roxanne.$"
+HE_CampaignGoal3::
+	msgbox HE_CampaignGoalText3, MSGBOX_DEFAULT
+	releaseall
+	end
+HE_CampaignGoalText3:
+	.string "MISSAO DA RESISTÊNCIA\pReceba o decodificador do\npesquisador em Rustboro.\pDesligue o primeiro\ntransmissor.$"
+HE_CampaignGoal4::
+	msgbox HE_CampaignGoalText4, MSGBOX_DEFAULT
+	releaseall
+	end
+HE_CampaignGoalText4:
+	.string "MISSAO DA RESISTÊNCIA\pViaje com Briney para\nDewford e desative o sinal\pna entrada da Granite Cave.$"
+HE_CampaignGoal5::
+	msgbox HE_CampaignGoalText5, MSGBOX_DEFAULT
+	releaseall
+	end
+HE_CampaignGoalText5:
+	.string "MISSAO DA RESISTÊNCIA\pA ilha foi protegida.\nEnfrente Brawly.$"
+HE_CampaignGoal6::
+	msgbox HE_CampaignGoalText6, MSGBOX_DEFAULT
+	releaseall
+	end
+HE_CampaignGoalText6:
+	.string "MISSAO DA RESISTÊNCIA\pProteja Stern no segundo\nandar do museu de Slateport.$"
+HE_CampaignGoal7::
+	msgbox HE_CampaignGoalText7, MSGBOX_DEFAULT
+	releaseall
+	end
+HE_CampaignGoalText7:
+	.string "MISSAO DA RESISTÊNCIA\pStern entregou a chave.\nDesative o transmissor de\pMauville.$"
+HE_CampaignGoal8::
+	msgbox HE_CampaignGoalText8, MSGBOX_DEFAULT
+	releaseall
+	end
+HE_CampaignGoalText8:
+	.string "MISSAO DA RESISTÊNCIA\pA rede de Mauville está\nsegura. Enfrente Wattson.$"
+HE_CampaignGoal9::
+	msgbox HE_CampaignGoalText9, MSGBOX_DEFAULT
+	releaseall
+	end
+HE_CampaignGoalText9:
+	.string "MISSAO DA RESISTÊNCIA\pA cinza e a sede: encontre a\ncaixa vermelha e o policial\pem Lavaridge.$"
+HE_CampaignGoal10::
+	msgbox HE_CampaignGoalText10, MSGBOX_DEFAULT
+	releaseall
+	end
+HE_CampaignGoalText10:
+	.string "MISSAO DA RESISTÊNCIA\pA cidade está protegida.\nEnfrente o líder de\pLavaridge.$"
+HE_CampaignGoal11::
+	msgbox HE_CampaignGoalText11, MSGBOX_DEFAULT
+	releaseall
+	end
+HE_CampaignGoalText11:
+	.string "MISSAO DA RESISTÊNCIA\pO preço do abrigo: encontre\na caixa vermelha e o\ppolicial em Petalburg.$"
+HE_CampaignGoal12::
+	msgbox HE_CampaignGoalText12, MSGBOX_DEFAULT
+	releaseall
+	end
+HE_CampaignGoalText12:
+	.string "MISSAO DA RESISTÊNCIA\pA cidade está protegida.\nEnfrente o líder de\pPetalburg.$"
+HE_CampaignGoal13::
+	msgbox HE_CampaignGoalText13, MSGBOX_DEFAULT
+	releaseall
+	end
+HE_CampaignGoalText13:
+	.string "MISSAO DA RESISTÊNCIA\pA floresta sem canto:\nencontre a caixa vermelha e\po policial em Fortree.$"
+HE_CampaignGoal14::
+	msgbox HE_CampaignGoalText14, MSGBOX_DEFAULT
+	releaseall
+	end
+HE_CampaignGoalText14:
+	.string "MISSAO DA RESISTÊNCIA\pA cidade está protegida.\nEnfrente o líder de Fortree.$"
+HE_CampaignGoal15::
+	msgbox HE_CampaignGoalText15, MSGBOX_DEFAULT
+	releaseall
+	end
+HE_CampaignGoalText15:
+	.string "MISSAO DA RESISTÊNCIA\pA órbita da mentira:\nencontre a caixa vermelha e\po policial em Mossdeep.$"
+HE_CampaignGoal16::
+	msgbox HE_CampaignGoalText16, MSGBOX_DEFAULT
+	releaseall
+	end
+HE_CampaignGoalText16:
+	.string "MISSAO DA RESISTÊNCIA\pA cidade está protegida.\nEnfrente o líder de\pMossdeep.$"
+HE_CampaignGoal17::
+	msgbox HE_CampaignGoalText17, MSGBOX_DEFAULT
+	releaseall
+	end
+HE_CampaignGoalText17:
+	.string "MISSAO DA RESISTÊNCIA\pO mar não obedece: encontre\na caixa vermelha e o\ppolicial em Sootopolis.$"
+HE_CampaignGoal18::
+	msgbox HE_CampaignGoalText18, MSGBOX_DEFAULT
+	releaseall
+	end
+HE_CampaignGoalText18:
+	.string "MISSAO DA RESISTÊNCIA\pA cidade está protegida.\nEnfrente o líder de\pSootopolis.$"
+HE_CampaignGoal19::
+	msgbox HE_CampaignGoalText19, MSGBOX_DEFAULT
+	releaseall
+	end
+HE_CampaignGoalText19:
+	.string "MISSAO DA RESISTÊNCIA\pAs oito insígnias abrem a\núltima operação. Procure a\pcaixa vermelha em Ever\nGrande e enfrente Giovanni.$"
+HE_CampaignGoal20::
+	msgbox HE_CampaignGoalText20, MSGBOX_DEFAULT
+	releaseall
+	end
+HE_CampaignGoalText20:
+	.string "MISSAO DA RESISTÊNCIA\pA Rocket perdeu a rede.\nAtravesse Victory Road e\pconquiste a Liga Pokémon.$"
+HE_CampaignDoneText:
+	.string "A Operação Eclipse terminou.\nHoenn está livre da Rocket.\pContinue sua pesquisa,\ncapture espécies de outras\pregiões e visite seus\naliados.$"
 HE_CountSignal::
 	addvar VAR_0x8000, 1
 	return
@@ -61,7 +198,7 @@ HE_GoalEnd::
 	releaseall
 	end
 HE_Text_GoalEnd:
-	.string "Três cidades protegidas!\pEsta versão termina após\nWattson. Você pode salvar e\pexplorar as áreas abertas.$"
+	.string "Três cidades protegidas!\pA luta continua além de\nMauville. Procure o rádio\pda resistência nas cidades.$"
 HE_Researcher::
 	lock
 	faceplayer

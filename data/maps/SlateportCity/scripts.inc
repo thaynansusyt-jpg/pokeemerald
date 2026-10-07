@@ -986,9 +986,7 @@ SlateportCity_Text_QuitPushing:
 	.string "This is the line, can't you see?$"
 
 SlateportCity_Text_AquaHasPolicy:
-	.string "TEAM AQUA has a policy of\n"
-	.string "assembling and dispersing at\l"
-	.string "the operation site.$"
+	.string "A Rocket chega sem aviso,\ncorta as comunicações e\pexige pagamento pela própria\najuda.$"
 
 SlateportCity_Text_BossIsBrilliant:
 	.string "Our BOSS is brilliant.\p"
@@ -1144,26 +1142,13 @@ SlateportCity_Text_OhPlayerWeMadeDiscovery:
 	.string "that's said to have been long extinct.$"
 
 SlateportCity_Text_AquaWillAssumeControlOfSubmarine:
-	.string "Fufufu…\n"
-	.string "CAPT. STERN, I presume.\p"
-	.string "We of TEAM AQUA will assume\n"
-	.string "control of your submarine!\p"
-	.string "Your objections are meaningless!\n"
-	.string "We expect your total cooperation!\p"
-	.string "Fufufu…\n"
-	.string "Just watch and learn what TEAM\l"
-	.string "AQUA has planned!$"
+	.string "RÁDIO: Capitão Stern, a\nRocket assumirá o controle\pdo submarino!\pA carga e a tripulação agora\nestão sob nossa proteção.$"
 
 SlateportCity_Text_SternWhatWasAllThat:
-	.string "CAPT. STERN: What was that all about?\p"
-	.string "It sounded like someone using\n"
-	.string "a megaphone…\p"
-	.string "Where did it come from?$"
+	.string "STERN: Isso veio do porto!\nEra uma ameaça à tripulação?$"
 
 SlateportCity_Text_FromHarborTryingToTakeSub:
-	.string "It's from the HARBOR!\p"
-	.string "The submarine!\n"
-	.string "They're trying to take it!$"
+	.string "O submarino! Estão invadindo\no porto!$"
 
 SlateportCity_Text_PleaseComeWithMe:
 	.string "{PLAYER}{KUN}!\n"

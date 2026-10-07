@@ -31,15 +31,17 @@ MtPyre_Summit_EventScript_TeamAquaTrigger2::
 
 MtPyre_Summit_EventScript_TeamAquaExits::
 	playbgm MUS_ENCOUNTER_AQUA, FALSE
-	applywaitmovement LOCALID_PLAYER, Common_Movement_FaceUp
-	applywaitmovement LOCALID_MT_PYRE_SUMMIT_ARCHIE, Common_Movement_WalkInPlaceFasterDown
+	applymovement LOCALID_PLAYER, Common_Movement_FaceUp
+	waitmovement 0
+	applymovement LOCALID_MT_PYRE_SUMMIT_ARCHIE, Common_Movement_WalkInPlaceFasterDown
+	waitmovement 0
 	delay 50
 	call_if_eq VAR_0x8008, 0, MtPyre_Summit_EventScript_ArchieFacePlayer0
 	call_if_eq VAR_0x8008, 1, MtPyre_Summit_EventScript_ArchieFacePlayer1
 	call_if_eq VAR_0x8008, 2, MtPyre_Summit_EventScript_ArchieFacePlayer2
 	msgbox MtPyre_Summit_Text_ArchieWeGotTheOrbLetsGo, MSGBOX_DEFAULT
 	closemessage
-	fadescreen FADE_TO_BLACK
+	fadescreenswapbuffers FADE_TO_BLACK
 	removeobject LOCALID_MT_PYRE_SUMMIT_ARCHIE
 	removeobject LOCALID_MT_PYRE_SUMMIT_GRUNT_1
 	removeobject LOCALID_MT_PYRE_SUMMIT_GRUNT_2
@@ -48,7 +50,7 @@ MtPyre_Summit_EventScript_TeamAquaExits::
 	setflag FLAG_HIDE_MT_PYRE_SUMMIT_ARCHIE
 	setflag FLAG_HIDE_MT_PYRE_SUMMIT_TEAM_AQUA
 	fadedefaultbgm
-	fadescreen FADE_FROM_BLACK
+	fadescreenswapbuffers FADE_FROM_BLACK
 	delay 20
 	setvar VAR_MT_PYRE_STATE, 1
 	call_if_eq VAR_0x8008, 0, MtPyre_Summit_EventScript_OldLadyApproachPlayer0
@@ -62,7 +64,8 @@ MtPyre_Summit_EventScript_TeamAquaExits::
 	end
 
 MtPyre_Summit_EventScript_ArchieFacePlayer0::
-	applywaitmovement LOCALID_MT_PYRE_SUMMIT_ARCHIE, MtPyre_Summit_Movement_ArchieFacePlayer0
+	applymovement LOCALID_MT_PYRE_SUMMIT_ARCHIE, MtPyre_Summit_Movement_ArchieFacePlayer0
+	waitmovement 0
 	return
 
 @ Archie is already facing player
@@ -70,21 +73,27 @@ MtPyre_Summit_EventScript_ArchieFacePlayer1::
 	return
 
 MtPyre_Summit_EventScript_ArchieFacePlayer2::
-	applywaitmovement LOCALID_MT_PYRE_SUMMIT_ARCHIE, MtPyre_Summit_Movement_ArchieFacePlayer2
+	applymovement LOCALID_MT_PYRE_SUMMIT_ARCHIE, MtPyre_Summit_Movement_ArchieFacePlayer2
+	waitmovement 0
 	return
 
 MtPyre_Summit_EventScript_OldLadyApproachPlayer0::
-	applywaitmovement LOCALID_MT_PYRE_SUMMIT_OLD_LADY, MtPyre_Summit_Movement_OldLadyApproachPlayer0
-	applywaitmovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterRight
+	applymovement LOCALID_MT_PYRE_SUMMIT_OLD_LADY, MtPyre_Summit_Movement_OldLadyApproachPlayer0
+	waitmovement 0
+	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterRight
+	waitmovement 0
 	return
 
 MtPyre_Summit_EventScript_OldLadyApproachPlayer1::
-	applywaitmovement LOCALID_MT_PYRE_SUMMIT_OLD_LADY, MtPyre_Summit_Movement_OldLadyApproachPlayer1
+	applymovement LOCALID_MT_PYRE_SUMMIT_OLD_LADY, MtPyre_Summit_Movement_OldLadyApproachPlayer1
+	waitmovement 0
 	return
 
 MtPyre_Summit_EventScript_OldLadyApproachPlayer2::
-	applywaitmovement LOCALID_MT_PYRE_SUMMIT_OLD_LADY, MtPyre_Summit_Movement_OldLadyApproachPlayer2
-	applywaitmovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterLeft
+	applymovement LOCALID_MT_PYRE_SUMMIT_OLD_LADY, MtPyre_Summit_Movement_OldLadyApproachPlayer2
+	waitmovement 0
+	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterLeft
+	waitmovement 0
 	return
 
 MtPyre_Summit_Movement_OldLadyApproachPlayer0:
@@ -187,14 +196,17 @@ MtPyre_Summit_EventScript_ArchieMaxieTrigger2::
 	end
 
 MtPyre_Summit_EventScript_ArchieMaxieReturnOrbs::
-	applywaitmovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterUp
+	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterUp
+	waitmovement 0
 	delay 60
 	call_if_eq VAR_0x8008, 0, MtPyre_Summit_EventScript_ArchieMaxieBeginExit0
 	call_if_eq VAR_0x8008, 1, MtPyre_Summit_EventScript_ArchieMaxieBeginExit1
 	call_if_eq VAR_0x8008, 2, MtPyre_Summit_EventScript_ArchieMaxieBeginExit2
 	playse SE_PIN
-	applywaitmovement LOCALID_MT_PYRE_SUMMIT_MAXIE, Common_Movement_ExclamationMark
-	applywaitmovement LOCALID_MT_PYRE_SUMMIT_MAXIE, Common_Movement_Delay48
+	applymovement LOCALID_MT_PYRE_SUMMIT_MAXIE, Common_Movement_ExclamationMark
+	waitmovement 0
+	applymovement LOCALID_MT_PYRE_SUMMIT_MAXIE, Common_Movement_Delay48
+	waitmovement 0
 	delay 30
 	call_if_eq VAR_0x8008, 0, MtPyre_Summit_EventScript_MaxieApproachPlayer0
 	call_if_eq VAR_0x8008, 1, MtPyre_Summit_EventScript_MaxieApproachPlayer1
@@ -260,21 +272,24 @@ MtPyre_Summit_EventScript_MaxieApproachArchie0::
 	applymovement LOCALID_PLAYER, MtPyre_Summit_Movement_PlayerWatchMaxie
 	applymovement LOCALID_MT_PYRE_SUMMIT_MAXIE, MtPyre_Summit_Movement_MaxieApproachArchie0
 	waitmovement 0
-	applywaitmovement LOCALID_MT_PYRE_SUMMIT_ARCHIE, Common_Movement_WalkInPlaceFasterRight
+	applymovement LOCALID_MT_PYRE_SUMMIT_ARCHIE, Common_Movement_WalkInPlaceFasterRight
+	waitmovement 0
 	return
 
 MtPyre_Summit_EventScript_MaxieApproachArchie1::
 	applymovement LOCALID_PLAYER, MtPyre_Summit_Movement_PlayerWatchMaxie
 	applymovement LOCALID_MT_PYRE_SUMMIT_MAXIE, MtPyre_Summit_Movement_MaxieApproachArchie1
 	waitmovement 0
-	applywaitmovement LOCALID_MT_PYRE_SUMMIT_ARCHIE, Common_Movement_WalkInPlaceFasterRight
+	applymovement LOCALID_MT_PYRE_SUMMIT_ARCHIE, Common_Movement_WalkInPlaceFasterRight
+	waitmovement 0
 	return
 
 MtPyre_Summit_EventScript_MaxieApproachArchie2::
 	applymovement LOCALID_PLAYER, MtPyre_Summit_Movement_PlayerWatchMaxie
 	applymovement LOCALID_MT_PYRE_SUMMIT_MAXIE, MtPyre_Summit_Movement_MaxieApproachArchie2
 	waitmovement 0
-	applywaitmovement LOCALID_MT_PYRE_SUMMIT_ARCHIE, Common_Movement_WalkInPlaceFasterRight
+	applymovement LOCALID_MT_PYRE_SUMMIT_ARCHIE, Common_Movement_WalkInPlaceFasterRight
+	waitmovement 0
 	return
 
 MtPyre_Summit_Movement_PlayerFaceMaxie0:
@@ -407,196 +422,74 @@ MtPyre_Summit_EventScript_Grunt4::
 	end
 
 MtPyre_Summit_Text_Grunt1Intro:
-	.string "No! Those TEAM MAGMA goons got\n"
-	.string "here ahead of us!\p"
-	.string "We can't fall behind!$"
+	.string "ROCKET: Vesper precisa sair\ncom o núcleo. Você não\ppassa!$"
 
 MtPyre_Summit_Text_Grunt1Defeat:
-	.string "I thought you were one of the MAGMAS\n"
-	.string "who happened to come back…$"
+	.string "Perdemos a posição!$"
 
 MtPyre_Summit_Text_Grunt1PostBattle:
-	.string "Yeah, so you are strong…\n"
-	.string "But there're a lot of us!$"
+	.string "O núcleo já foi levado. O\ntransporte espera no porto.$"
 
 MtPyre_Summit_Text_Grunt2Intro:
-	.string "Hah!\n"
-	.string "Too bad for you!\p"
-	.string "If you came earlier, you only would've\n"
-	.string "had to battle the wimpy TEAM MAGMA.\p"
-	.string "But since you arrived now, you have\n"
-	.string "to take on us toughies!$"
+	.string "ROCKET: Vesper precisa sair\ncom o núcleo. Você não\ppassa!$"
 
 MtPyre_Summit_Text_Grunt2Defeat:
-	.string "Urgh… I should've let you take on\n"
-	.string "TEAM MAGMA first…$"
+	.string "Perdemos a posição!$"
 
 MtPyre_Summit_Text_Grunt2PostBattle:
-	.string "You don't know anything!\n"
-	.string "So why are you messing with us?$"
+	.string "O núcleo já foi levado. O\ntransporte espera no porto.$"
 
 MtPyre_Summit_Text_Grunt3Intro:
-	.string "You…\n"
-	.string "We saw you at MT. CHIMNEY.\p"
-	.string "You don't belong to either TEAM,\n"
-	.string "so why would you be here?$"
+	.string "ROCKET: Vesper precisa sair\ncom o núcleo. Você não\ppassa!$"
 
 MtPyre_Summit_Text_Grunt3Defeat:
-	.string "If you're going to mess with anyone,\n"
-	.string "let it be TEAM MAGMA…$"
+	.string "Perdemos a posição!$"
 
 MtPyre_Summit_Text_Grunt3PostBattle:
-	.string "Heh, it doesn't matter!\n"
-	.string "We bought ourselves some time!\p"
-	.string "The BOSS should have snatched what\n"
-	.string "he was after!$"
+	.string "O núcleo já foi levado. O\ntransporte espera no porto.$"
 
 MtPyre_Summit_Text_Grunt4Intro:
-	.string "Oh, I know!\n"
-	.string "You tried to join TEAM MAGMA,\l"
-	.string "but they wouldn't have you!\p"
-	.string "Well, don't think that we'll let you\n"
-	.string "join our TEAM AQUA!$"
+	.string "ROCKET: Vesper precisa sair\ncom o núcleo. Você não\ppassa!$"
 
 MtPyre_Summit_Text_Grunt4Defeat:
-	.string "If you want to join TEAM AQUA that\n"
-	.string "badly, we can consider it…$"
+	.string "Perdemos a posição!$"
 
 MtPyre_Summit_Text_Grunt4PostBattle:
-	.string "We have a great combination going\n"
-	.string "with us members and our leader.$"
+	.string "O núcleo já foi levado. O\ntransporte espera no porto.$"
 
 MtPyre_Summit_Text_ArchieWeGotTheOrbLetsGo:
-	.string "ARCHIE: TEAM MAGMA's MAXIE got ahead\n"
-	.string "of us, but we also got what we wanted.\p"
-	.string "The RED ORB preserved at MT. PYRE…\n"
-	.string "I, ARCHIE, now have it in my possession!\p"
-	.string "Fufufu… Now we can bring our ultimate\n"
-	.string "objective to fruition!\p"
-	.string "Okay, TEAM!\n"
-	.string "We're pulling out!$"
+	.string "VESPER: Orion levou o núcleo\ntérmico. Nós ficamos com o\poceânico.\pOs dois foram guardados\njuntos por um motivo. Mas\pGiovanni só quer resultados.\pRetirada! O transporte\nespera em Slateport.$"
 
 MtPyre_Summit_Text_BothOrbsTakenMagmaLeftThis:
-	.string "Oh, no…\n"
-	.string "This cannot happen…\p"
-	.string "Not only the BLUE ORB, but even\n"
-	.string "the RED ORB has been taken…\p"
-	.string "The BLUE ORB and RED ORB must never\n"
-	.string "be separated. They belong together.\p"
-	.string "What are those men trying to do with\n"
-	.string "the two ORBS?\p"
-	.string "… … … … … …\n"
-	.string "… … … … … …\p"
-	.string "Oh, yes. Was it TEAM MAGMA who came\n"
-	.string "and took the BLUE ORB first?\p"
-	.string "Well, in their haste, they left this\n"
-	.string "behind.\p"
-	.string "I couldn't imagine what exactly it\n"
-	.string "could be.\p"
-	.string "I would like you to have it.\n"
-	.string "Perhaps it will be useful in some way.$"
+	.string "Os invasores separaram os\ndois núcleos. Se os\pativarem, as fontes antigas\nvoltarão a lutar.\pOrion deixou este emblema ao\nfugir. Ele abre a base no\pvulcão. Leve-o e recupere os\nnúcleos.$"
 
 MtPyre_Summit_Text_OrbsHaveBeenTaken:
-	.string "The BLUE ORB and RED ORB taken by\n"
-	.string "those sinister men…\p"
-	.string "They must never be apart…\n"
-	.string "I fear something terrible will happen…$"
+	.string "Os núcleos azul e vermelho\nforam roubados. Separados,\peles não conseguem limitar a\ndescarga.$"
 
 MtPyre_Summit_Text_GroudonKyogreAwakened:
-	.string "Oh, my goodness…\p"
-	.string "You say that both GROUDON and KYOGRE\n"
-	.string "have been awakened?\p"
-	.string "It is said that the BLUE ORB and\n"
-	.string "the RED ORB quelled the rage of\l"
-	.string "the two POKéMON…\p"
-	.string "It is also said that the true owner\n"
-	.string "of the ORBS still exists.\p"
-	.string "However, no one knows who, or what\n"
-	.string "exactly, the ORBS belong to.\p"
-	.string "It could be a human, or perhaps\n"
-	.string "a POKéMON, but no one knows.$"
+	.string "Groudon e Kyogre\ndespertaram? Então a Rocket\pquebrou a proteção.\pOs núcleos guardavam o\nequilíbrio. Apenas Rayquaza\pconsegue conter as duas\nfontes agora.$"
 
 MtPyre_Summit_Text_ThoseTwoMenReturnedOrbs:
-	.string "The two men who took the ORBS came\n"
-	.string "back to return them on their own.\p"
-	.string "Those men…\n"
-	.string "Perhaps they are not so evil after all…$"
+	.string "Os dois comandantes\ndevolveram os núcleos. Isso\pnão apaga o que fizeram.\pOs guardiões registrarão\nseus atos e os entregarão à\pLiga.$"
 
 MtPyre_Summit_Text_SuperAncientPokemonTaughtUs:
-	.string "The embodiments of the land, sea,\n"
-	.string "and the sky…\p"
-	.string "That is said to be the identities of\n"
-	.string "the super-ancient POKéMON…\p"
-	.string "In the same way that we humans and\n"
-	.string "POKéMON have life, our world, too,\l"
-	.string "is alive…\p"
-	.string "The super-ancient POKéMON have\n"
-	.string "taught us that…$"
+	.string "Terra, mar e céu vivem em\nequilíbrio. Não existem para\pobedecer a ordens.\pHoenn tem vida. Precisamos\nouvi-la.$"
 
 MtPyre_Summit_Text_WillYouHearOutMyTale:
-	.string "MT. PYRE is where we calm the spirits\n"
-	.string "of POKéMON that have passed on…\p"
-	.string "This is a high place where one can\n"
-	.string "see all of HOENN…\p"
-	.string "The disembodied spirits of POKéMON\n"
-	.string "must find solace here…\p"
-	.string "Is it coincidence that you are here…\p"
-	.string "Will you hear out my tale? A tale long\n"
-	.string "told in the HOENN region?$"
+	.string "Mt. Pyre guarda a memória\ndos Pokémon que partiram.\pVocê quer ouvir a história\ndas fontes antigas?$"
 
 MtPyre_Summit_Text_GroudonKyogreTale:
-	.string "It happened long, long ago…\p"
-	.string "The world was wracked by a ferocious\n"
-	.string "clash between the POKéMON of the land\l"
-	.string "and the POKéMON of the sea…\p"
-	.string "The POKéMON of the land raised\n"
-	.string "mountains and created continents…\p"
-	.string "The POKéMON of the sea raised huge\n"
-	.string "waves and carved out oceans…\p"
-	.string "Their fierce duel raged without end.\p"
-	.string "The world was engulfed in massive\n"
-	.string "infernos and vicious storms.\p"
-	.string "The BLUE ORB and the RED ORB brought\n"
-	.string "an end to the calamity.\p"
-	.string "Light poured from the two ORBS and\n"
-	.string "becalmed the enraged adversaries.\p"
-	.string "The pair, made docile, dove deep into\n"
-	.string "the sea where eventually they\l"
-	.string "disappeared…$"
+	.string "Há muito tempo, Groudon e\nKyogre disputaram o mundo.\pA terra ardia. O mar cobria\nos povoados. Dois núcleos\plimitaram a energia e\nencerraram a luta.\pSeparados, eles não são\narmas seguras. Esse é o\paviso que Orion ignorou.$"
 
 MtPyre_Summit_Text_WellThatTooIsFine:
-	.string "I see…\n"
-	.string "Well, that, too, is fine…$"
+	.string "Entendo. Volte quando quiser\nouvir.$"
 
 MtPyre_Summit_Text_MaxieSilence:
-	.string "MAXIE: {PLAYER}…\p"
-	.string "… … … … … …\n"
-	.string "… … … … … …$"
+	.string "ORION: {PLAYER}...\pEu devolvi o núcleo. Não\nespero que isso compre seu\pperdão.$"
 
 MtPyre_Summit_Text_HearTheNewLegendOfHoenn:
-	.string "It is my role to pass on the legends\n"
-	.string "of HOENN to future generations.\p"
-	.string "And the crisis that just ended in\n"
-	.string "SOOTOPOLIS rewrote a legend…\p"
-	.string "Have you the time to hear the new\n"
-	.string "legend of HOENN?$"
+	.string "A história precisa guardar o\nque houve em Sootopolis.\pQuer ouvir como Hoenn\nresistiu?$"
 
 MtPyre_Summit_Text_HoennTrioTale:
-	.string "It happened long, long ago…\p"
-	.string "The world was wracked by a ferocious\n"
-	.string "clash between the POKéMON of the land\l"
-	.string "and the POKéMON of the sea…\p"
-	.string "The POKéMON of the land raised\n"
-	.string "mountains and created continents…\p"
-	.string "The POKéMON of the sea raised huge\n"
-	.string "waves and carved out oceans…\p"
-	.string "Their fierce duel raged without end.\p"
-	.string "The world was engulfed in massive\n"
-	.string "fires and vicious storms.\p"
-	.string "It was then that the POKéMON of\n"
-	.string "the sky descended from a storm.\p"
-	.string "The POKéMON, shining a vivid green,\n"
-	.string "becalmed the two enraged POKéMON.\p"
-	.string "Then, its duty done, the green POKéMON\n"
-	.string "flew off into the wild blue yonder…$"
+	.string "Quando as fontes antigas\nperderam o limite, Rayquaza\pveio do céu.\pEle separou Groudon e\nKyogre. As pessoas abriram\pseus abrigos e cuidaram dos\nferidos.\pA região sobreviveu porque\nninguém precisou lutar\psozinho.$"
 

@@ -3,6 +3,7 @@
   "name": "SootopolisCity",
   "layout": "LAYOUT_SOOTOPOLIS_CITY",
   "music": "MUS_SOOTOPOLIS",
+  "region": "REGION_HOENN",
   "region_map_section": "MAPSEC_SOOTOPOLIS_CITY",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",
@@ -264,6 +265,32 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "SootopolisCity_EventScript_Wallace",
       "flag": "FLAG_HIDE_SOOTOPOLIS_CITY_WALLACE"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_HE_RELAY",
+      "x": 31,
+      "y": 17,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "HE_Ocean",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_HE_OFFICER",
+      "x": 33,
+      "y": 20,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "HE_CampaignLiaison",
+      "flag": "0"
     }
   ],
   "warp_events": [

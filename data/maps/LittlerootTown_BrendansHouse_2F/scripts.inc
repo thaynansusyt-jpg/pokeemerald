@@ -258,7 +258,7 @@ PlayersHouse_2F_EventScript_GameCube::
 	end
 
 PlayersHouse_2F_Text_ClockIsStopped:
-	.string "O relógio parou. Vamos\nacertar a hora!$"
+	.string "O relógio recebe a hora do\nRTC automaticamente.$"
 
 PlayersHouse_2F_Text_HowDoYouLikeYourRoom:
 	.string "Mãe: Ficou tudo arrumado!\pConfira sua mesa antes de\nsair.$"

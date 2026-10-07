@@ -1,53 +1,73 @@
 Route102_Text_CalvinIntro:
-	.string "Você também está começando?\nVamos treinar!$"
+	.string "If you have POKéMON with you, then\n"
+	.string "you're an official POKéMON TRAINER!\l"
+	.string "You can't say no to my challenge!$"
 
 Route102_Text_CalvinDefeated:
-	.string "Preciso treinar mais!$"
+	.string "Arrgh, I lost…\n"
+	.string "I should have trained mine more…$"
 
 Route102_Text_CalvinPostBattle:
-	.string "Você e seu parceiro são\nfortes!$"
+	.string "Listen, you. If you're strong,\n"
+	.string "you should have told me before!$"
 
 Route102_Text_CalvinRegister:
-	.string "Vamos treinar outra vez!\nVou registrar você no\pPokénav.$"
+	.string "I've been working hard at this since\n"
+	.string "I saw you before.\p"
+	.string "I'd like to battle you again, so can\n"
+	.string "you register me in your POKéNAV?$"
 
 Route102_Text_CalvinRegisterShort:
-	.string "Vamos treinar outra vez!\nVou registrar você no\pPokénav.$"
+	.string "I'd like to battle you again, so can\n"
+	.string "you register me in your POKéNAV?$"
 
 Route102_Text_CalvinRematchIntro:
-	.string "Treino para proteger meus\nparceiros. Vamos batalhar!$"
+	.string "Ever since I lost to you, I desperately\n"
+	.string "trained my POKéMON.\l"
+	.string "You can't say no to my challenge!$"
 
 Route102_Text_CalvinRematchDefeated:
-	.string "Você venceu! Boa batalha!$"
+	.string "Arrgh, I lost…\n"
+	.string "Is my training method not right?$"
 
 Route102_Text_CalvinRematchPostBattle:
-	.string "Vou continuar treinando.\nPrecisamos cuidar de Hoenn!$"
+	.string "If you're going to get stronger,\n"
+	.string "I'll get stronger, too.$"
 
 Route102_Text_AllenIntro:
-	.string "Somos iniciantes! Vamos\naprender juntos.$"
+	.string "Did you just become a TRAINER?\n"
+	.string "We're both beginners!$"
 
 Route102_Text_AllenDefeated:
-	.string "Achei que podia vencer...$"
+	.string "I called you because I thought\n"
+	.string "I could beat you…$"
 
 Route102_Text_AllenPostBattle:
-	.string "Um dia vou vencer também!$"
+	.string "I haven't won once yet…\n"
+	.string "I wish I would win soon…$"
 
 Route102_Text_RickIntro:
-	.string "Meus Pokémon de Inseto\nestão prontos!$"
+	.string "Hahah! Our eyes met!\n"
+	.string "I'll take you on with my BUG POKéMON!$"
 
 Route102_Text_RickDefeated:
-	.string "Minha equipe caiu!$"
+	.string "Ow! Down and out!$"
 
 Route102_Text_RickPostBattle:
-	.string "Uma batalha ajuda a\nconhecer sua equipe.$"
+	.string "If you lock eyes with a TRAINER,\n"
+	.string "you have to challenge! It's a rule!$"
 
 Route102_Text_TianaIntro:
-	.string "Quero ser forte para ajudar\nHoenn!$"
+	.string "I'm going to keep winning and aim\n"
+	.string "to be the best TRAINER.\p"
+	.string "Help me further my career!$"
 
 Route102_Text_TianaDefeated:
-	.string "Você foi melhor!$"
+	.string "I ended up furthering your career…$"
 
 Route102_Text_TianaPostBattle:
-	.string "Vou procurar novos\nparceiros.$"
+	.string "To keep winning my way up, I see that\n"
+	.string "I have to catch more POKéMON.$"
 
 Route103_Text_DaisyIntro:
 	.string "Did you feel the tug of our\n"
@@ -226,67 +246,99 @@ Route103_Text_MarcosPostBattle:
 	.string "Heh, maybe I should turn pro.$"
 
 Route104_Text_GinaIntro:
-	.string "Treino para proteger meus\nparceiros. Vamos batalhar!$"
+	.string "GINA: Okay, let's battle with our\n"
+	.string "POKéMON!$"
 
 Route104_Text_GinaDefeat:
-	.string "Você venceu! Boa batalha!$"
+	.string "GINA: Losing upsets me!$"
 
 Route104_Text_GinaPostBattle:
-	.string "Vou continuar treinando.\nPrecisamos cuidar de Hoenn!$"
+	.string "GINA: You are strong!\n"
+	.string "We have to train lots more!$"
 
 Route104_Text_GinaNotEnoughMons:
-	.string "Volte com dois Pokémon para\numa batalha em dupla!$"
+	.string "GINA: Oh? Only one POKéMON?\n"
+	.string "Then, we don't battle with you.\p"
+	.string "If there's only one POKéMON, it will\n"
+	.string "be lonesome. That's not nice.$"
 
 Route104_Text_MiaIntro:
-	.string "Treino para proteger meus\nparceiros. Vamos batalhar!$"
+	.string "MIA: We are twins, so we battle\n"
+	.string "POKéMON together.$"
 
 Route104_Text_MiaDefeat:
-	.string "Você venceu! Boa batalha!$"
+	.string "MIA: We battled together, but we\n"
+	.string "both lost…$"
 
 Route104_Text_MiaPostBattle:
-	.string "Vou continuar treinando.\nPrecisamos cuidar de Hoenn!$"
+	.string "MIA: We will train our POKéMON more\n"
+	.string "and be strong like you.$"
 
 Route104_Text_MiaNotEnoughMons:
-	.string "Volte com dois Pokémon para\numa batalha em dupla!$"
+	.string "MIA: You want to battle with us?\p"
+	.string "It's a big no-no if you don't have two\n"
+	.string "POKéMON with you.\l"
+	.string "We're too strong for you!$"
 
 Route104_Text_IvanIntro:
-	.string "Treino para proteger meus\nparceiros. Vamos batalhar!$"
+	.string "Why keep it a secret?\n"
+	.string "I'm the WATER POKéMON expert!\p"
+	.string "Huh?\n"
+	.string "You don't know me?$"
 
 Route104_Text_IvanDefeat:
-	.string "Você venceu! Boa batalha!$"
+	.string "I thought I wasn't too bad, if I may\n"
+	.string "say so, but I guess not… Bleah…$"
 
 Route104_Text_IvanPostBattle:
-	.string "Vou continuar treinando.\nPrecisamos cuidar de Hoenn!$"
+	.string "I got too into fishing.\n"
+	.string "I forgot I had to raise my POKéMON…$"
 
 Route104_Text_BillyIntro:
-	.string "Treino para proteger meus\nparceiros. Vamos batalhar!$"
+	.string "Leaving footprints in the sand is\n"
+	.string "so fun!$"
 
 Route104_Text_BillyDefeat:
-	.string "Você venceu! Boa batalha!$"
+	.string "Waah! I got sand in my runners!\n"
+	.string "They're all gritty!$"
 
 Route104_Text_BillyPostBattle:
-	.string "Vou continuar treinando.\nPrecisamos cuidar de Hoenn!$"
+	.string "I want to leave my footprints in\n"
+	.string "the sand everywhere, but they\l"
+	.string "disappear quickly…$"
 
 Route104_Text_HaleyIntro:
-	.string "Treino para proteger meus\nparceiros. Vamos batalhar!$"
+	.string "Should I…\n"
+	.string "Or shouldn't I?\p"
+	.string "Okay, sure, I will battle!$"
 
 Route104_Text_HaleyDefeat:
-	.string "Você venceu! Boa batalha!$"
+	.string "I shouldn't have battled…$"
 
 Route104_Text_HaleyPostBattle:
-	.string "Vou continuar treinando.\nPrecisamos cuidar de Hoenn!$"
+	.string "If you're faced with a decision and\n"
+	.string "you let someone else choose for you,\l"
+	.string "you will regret it, however things\l"
+	.string "turn out.$"
 
 Route104_Text_HaleyRegister1:
-	.string "Vamos treinar outra vez!\nVou registrar você no\pPokénav.$"
+	.string "You're strong, but should I register\n"
+	.string "you in my POKéNAV?\l"
+	.string "Maybe I shouldn't…\p"
+	.string "Okay, sure, I will register you!$"
 
 Route104_Text_HaleyRegister2:
-	.string "Vamos treinar outra vez!\nVou registrar você no\pPokénav.$"
+	.string "You're strong, but should I register\n"
+	.string "you in my POKéNAV?\l"
+	.string "Maybe I shouldn't…\p"
+	.string "Okay, sure, I will register you!$"
 
 Route104_Text_HaleyRematchIntro:
-	.string "Treino para proteger meus\nparceiros. Vamos batalhar!$"
+	.string "Come on, battle with me!$"
 
 Route104_Text_HaleyRematchDefeat:
-	.string "Você venceu! Boa batalha!$"
+	.string "Ohh…\n"
+	.string "I thought I could win…$"
 
 Route104_Text_HaleyPostRematch:
 	.string "I made the decision to battle, so\n"
@@ -294,25 +346,35 @@ Route104_Text_HaleyPostRematch:
 	.string "I am still upset about losing!$"
 
 Route104_Text_WinstonIntro:
-	.string "Treino para proteger meus\nparceiros. Vamos batalhar!$"
+	.string "Oh, sure, I'll accept your challenge.\n"
+	.string "I have a lot of money.$"
 
 Route104_Text_WinstonDefeat:
-	.string "Você venceu! Boa batalha!$"
+	.string "Why couldn't I win?$"
 
 Route104_Text_WinstonPostBattle:
-	.string "Vou continuar treinando.\nPrecisamos cuidar de Hoenn!$"
+	.string "There are some things money can't buy.\n"
+	.string "That's POKéMON…$"
 
 Route104_Text_WinstonRegister1:
-	.string "Vamos treinar outra vez!\nVou registrar você no\pPokénav.$"
+	.string "Hm?\n"
+	.string "Ah, you've obtained a POKéNAV.\p"
+	.string "I will gladly register you.\n"
+	.string "After all, I have plenty of money.$"
 
 Route104_Text_WinstonRegister2:
-	.string "Vamos treinar outra vez!\nVou registrar você no\pPokénav.$"
+	.string "Hm?\n"
+	.string "Ah, you've obtained a POKéNAV.\p"
+	.string "I will gladly register you.\n"
+	.string "After all, I have plenty of money.$"
 
 Route104_Text_WinstonRematchIntro:
-	.string "Treino para proteger meus\nparceiros. Vamos batalhar!$"
+	.string "After I lost to you, I learned a bunch\n"
+	.string "of things about POKéMON.$"
 
 Route104_Text_WinstonRematchDefeat:
-	.string "Você venceu! Boa batalha!$"
+	.string "I lost again?\n"
+	.string "Why couldn't I win?$"
 
 Route104_Text_WinstonPostRematch:
 	.string "I'm fabulously wealthy, but I can't\n"
@@ -320,38 +382,50 @@ Route104_Text_WinstonPostRematch:
 	.string "It's so deep, the world of POKéMON…$"
 
 Route104_Text_CindyIntro:
-	.string "Treino para proteger meus\nparceiros. Vamos batalhar!$"
+	.string "We must have been fated to meet.\n"
+	.string "May I ask you for a battle?$"
 
 Route104_Text_CindyDefeat:
-	.string "Você venceu! Boa batalha!$"
+	.string "Oh, my!$"
 
 Route104_Text_CindyPostBattle:
-	.string "Vou continuar treinando.\nPrecisamos cuidar de Hoenn!$"
+	.string "“Hello” is the beginning of “good-bye.”\n"
+	.string "I hope we meet again.$"
 
 Route104_Text_CindyRegister1:
-	.string "Vamos treinar outra vez!\nVou registrar você no\pPokénav.$"
+	.string "Hello, we meet again.\p"
+	.string "We seem to be drawn together. Let's\n"
+	.string "register each other in our POKéNAVS.$"
 
 Route104_Text_CindyRegister2:
-	.string "Vamos treinar outra vez!\nVou registrar você no\pPokénav.$"
+	.string "We should commemorate how we seem\n"
+	.string "to be drawn to each other.\p"
+	.string "Let's register each other in our\n"
+	.string "POKéNAVS.$"
 
 Route104_Text_CindyRematchIntro:
-	.string "Treino para proteger meus\nparceiros. Vamos batalhar!$"
+	.string "Hello, we meet again.\n"
+	.string "May I ask you for a battle?$"
 
 Route104_Text_CindyRematchDefeat:
-	.string "Você venceu! Boa batalha!$"
+	.string "Oh, my…\n"
+	.string "I did the best that I could…$"
 
 Route104_Text_CindyPostRematch:
 	.string "“Hello” is the beginning of “good-bye.”\n"
 	.string "I hope we meet again.$"
 
 Route104_Text_DarianIntro:
-	.string "ROCKET: Pedágio de\nemergência! Entregue seus\pPokémon.$"
+	.string "I fished up a tough-looking POKéMON!\p"
+	.string "It has this magical quality to it!\n"
+	.string "It surely looks tough, yes it does!$"
 
 Route104_Text_DarianDefeat:
-	.string "Você venceu! Boa batalha!$"
+	.string "What the…$"
 
 Route104_Text_DarianPostBattle:
-	.string "ROCKET: Leve seus Pokémon.\nMas fique longe da\pfloresta!$"
+	.string "Hey, MAGIKARP, you sure don't live up\n"
+	.string "to your name, do you?$"
 
 Route105_Text_FosterIntro:
 	.string "There's supposed to be a mystical\n"
@@ -4705,3 +4779,18 @@ Route134_Text_HudsonPostBattle:
 	.string "Our boat drifted out to sea.\p"
 	.string "My buddy's a timid fellow, so I'm\n"
 	.string "worried about him.$"
+
+VSSeeker_Text_BatteryNotChargedNeedXSteps::
+	.string "The battery isn't charged enough.\p"
+	.string "No. of steps required to fully\n"
+	.string "charge the battery: {STR_VAR_1}{PAUSE_UNTIL_PRESS}$"
+
+VSSeeker_Text_NoTrainersWithinRange::
+	.string "There are no Trainers within range\n"
+	.string "who can battle…\p"
+	.string "The VS Seeker was turned off.{PAUSE_UNTIL_PRESS}$"
+
+VSSeeker_Text_TrainersNotReady::
+	.string "The other Trainers don't appear\n"
+	.string "to be ready for battle.\p"
+	.string "Let's wait till later.{PAUSE_UNTIL_PRESS}$"

@@ -1,4 +1,5 @@
 MossdeepCity_MapScripts::
+	map_script MAP_SCRIPT_ON_FRAME_TABLE, HE_FrameOrbit
 	map_script MAP_SCRIPT_ON_TRANSITION, MossdeepCity_OnTransition
 	.byte 0
 
@@ -75,7 +76,8 @@ MossdeepCity_EventScript_VisitedMossdeep::
 
 MossdeepCity_EventScript_TeamMagmaEnterSpaceCenter::
 	lockall
-	applywaitmovement LOCALID_MOSSDEEP_MAXIE, MossdeepCity_Movement_MaxieGestureToSpaceCenter
+	applymovement LOCALID_MOSSDEEP_MAXIE, MossdeepCity_Movement_MaxieGestureToSpaceCenter
+	waitmovement 0
 	applymovement LOCALID_MOSSDEEP_GRUNT_1, MossdeepCity_Movement_GruntFaceSpaceCenter
 	applymovement LOCALID_MOSSDEEP_GRUNT_2, MossdeepCity_Movement_GruntFaceSpaceCenter
 	applymovement LOCALID_MOSSDEEP_GRUNT_3, MossdeepCity_Movement_GruntFaceSpaceCenter
@@ -215,7 +217,8 @@ MossdeepCity_EventScript_Man::
 	lock
 	faceplayer
 	msgbox MossdeepCity_Text_SurfExhilarating, MSGBOX_DEFAULT
-	applywaitmovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
+	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
+	waitmovement 0
 	release
 	end
 
@@ -424,3 +427,7 @@ MossdeepCity_Text_SootopolisNewGymLeader:
 	.string "People tell me the new LEADER once\n"
 	.string "mentored WALLACE.$"
 
+
+HE_FrameOrbit:
+	map_script_2 VAR_HE_SCENE, 3, HE_ArrivalOrbit
+	.2byte 0

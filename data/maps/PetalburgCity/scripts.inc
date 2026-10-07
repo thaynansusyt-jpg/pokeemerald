@@ -25,6 +25,7 @@ PetalburgCity_EventScript_SetGymDoorsUnlocked::
 	return
 
 PetalburgCity_OnFrame:
+	map_script_2 VAR_HE_SCENE, 1, HE_ArrivalSupply
 	map_script_2 VAR_PETALBURG_CITY_STATE, 2, PetalburgCity_EventScript_WallyTutorial
 	map_script_2 VAR_PETALBURG_CITY_STATE, 4, PetalburgCity_EventScript_WalkToWallyHouse
 	.2byte 0

@@ -5,6 +5,7 @@ FortreeCity_Gym_MapScripts::
 
 FortreeCity_Gym_OnTransition:
 	special RotatingGate_InitPuzzle
+	setflag FLAG_TEMP_HIDE_FOLLOWER @ Hide follower bc of rotating gates
 	end
 
 FortreeCity_Gym_OnWarp:
@@ -17,6 +18,7 @@ FortreeCity_Gym_EventScript_InitRotatingGates::
 	end
 
 FortreeCity_Gym_EventScript_Winona::
+	goto_if_unset FLAG_HE_FOREST_SAFE, HE_NeedForest
 	trainerbattle_single TRAINER_WINONA_1, FortreeCity_Gym_Text_WinonaIntro, FortreeCity_Gym_Text_WinonaDefeat, FortreeCity_Gym_EventScript_WinonaDefeated, NO_MUSIC
 	specialvar VAR_RESULT, ShouldTryRematchBattle
 	goto_if_eq VAR_RESULT, TRUE, FortreeCity_Gym_EventScript_WinonaRematch

@@ -1,36 +1,27 @@
-name: Build Hoenn Expansion
-
+name: Hoenn Expansion Gen7
 on:
   push:
-    branches: [master, hoenn-expansion-alpha, hoenn-rebuild]
-  pull_request:
+    branches: [hoenn-expansion-gen7]
   workflow_dispatch:
-
 permissions:
   contents: read
-
 jobs:
-  build:
-    runs-on: ubuntu-24.04
+  gba:
+    runs-on: ubuntu-latest
     steps:
-      - name: Checkout game
-        uses: actions/checkout@v4
-      - name: Install build dependencies
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y build-essential gcc-arm-none-eabi binutils-arm-none-eabi libnewlib-arm-none-eabi libpng-dev
-      - name: Build reconstruction
-        run: make modern -j2 COMPARE=0
-      - name: Archive source checkpoint
-        run: git archive --format=zip --output=Hoenn-Expansion-0.4.1-source.zip HEAD
-      - name: Upload playable build
-        uses: actions/upload-artifact@v4
+      - uses: actions/checkout@v4
+      - name: Install toolchain
+        run: sudo apt-get update && sudo apt-get install -y gcc-arm-none-eabi binutils-arm-none-eabi libnewlib-arm-none-eabi libpng-dev python3
+      - name: Validate campaign
+        run: python3 tools/validate_hoenn.py
+      - name: Build
+        run: make modern -j4
+      - uses: actions/upload-artifact@v4
         with:
-          name: Pokemon-Hoenn-Expansion-0.4.1-Reconstrucao
+          name: Pokemon-Hoenn-Expansion-0.6.0-Gen7-beta
           path: |
-            pokemon_hoenn_expansion_modern.gba
-            Hoenn-Expansion-0.4.1-source.zip
-            docs/REBUILD_0.4.1.md
+            pokemon_hoenn_expansion_gen7.gba
+            README_HOENN.md
+            docs/HOENN_CAMPAIGN.json
+            docs/HOENN_ENCOUNTERS.json
             docs/credits/
-            docs/HOENN_EXPANSION.md
-          if-no-files-found: error

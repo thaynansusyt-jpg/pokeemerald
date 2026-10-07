@@ -47,6 +47,7 @@ EverGrandeCity_PokemonLeague_1F_Pokemart:
 @ Its assumed the player has the remaining badges
 EverGrandeCity_PokemonLeague_1F_EventScript_DoorGuard::
 	lockall
+	goto_if_unset FLAG_HE_FINAL_ROCKET, HE_NeedFinalCentral
 	goto_if_set FLAG_ENTERED_ELITE_FOUR, EverGrandeCity_PokemonLeague_1F_EventScript_GoForth
 	getplayerxy VAR_TEMP_0, VAR_TEMP_1
 	call_if_ge VAR_TEMP_0, 11, EverGrandeCity_PokemonLeague_1F_EventScript_PlayerMoveToFrontFromRight
@@ -72,11 +73,13 @@ EverGrandeCity_PokemonLeague_1F_EventScript_DoorGuard::
 	end
 
 EverGrandeCity_PokemonLeague_1F_EventScript_PlayerMoveToFrontFromRight::
-	applywaitmovement LOCALID_PLAYER, EverGrandeCity_PokemonLeague_1F_Movement_MoveToFrontFromRight
+	applymovement LOCALID_PLAYER, EverGrandeCity_PokemonLeague_1F_Movement_MoveToFrontFromRight
+	waitmovement 0
 	return
 
 EverGrandeCity_PokemonLeague_1F_EventScript_PlayerMoveToFrontFromLeft::
-	applywaitmovement LOCALID_PLAYER, EverGrandeCity_PokemonLeague_1F_Movement_MoveToFrontFromLeft
+	applymovement LOCALID_PLAYER, EverGrandeCity_PokemonLeague_1F_Movement_MoveToFrontFromLeft
+	waitmovement 0
 	return
 
 EverGrandeCity_PokemonLeague_1F_EventScript_NotAllBadges::
@@ -86,10 +89,12 @@ EverGrandeCity_PokemonLeague_1F_EventScript_NotAllBadges::
 	end
 
 EverGrandeCity_PokemonLeague_1F_EventScript_GoForth::
-	applywaitmovement VAR_LAST_TALKED, Common_Movement_FacePlayer
+	applymovement VAR_LAST_TALKED, Common_Movement_FacePlayer
+	waitmovement 0
 	msgbox EverGrandeCity_PokemonLeague_1F_Text_GoForth, MSGBOX_DEFAULT
 	closemessage
-	applywaitmovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
+	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
+	waitmovement 0
 	releaseall
 	end
 

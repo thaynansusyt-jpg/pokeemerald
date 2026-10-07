@@ -15,13 +15,15 @@ MagmaHideout_4F_EventScript_Maxie::
 	playfanfare MUS_AWAKEN_LEGEND
 	playse SE_ORB
 	special DoOrbEffect
-	applywaitmovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterUp
+	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterUp
+	waitmovement 0
 	delay 150
 	removeobject LOCALID_MAGMA_HIDEOUT_4F_GROUDON_SLEEPING
 	addobject LOCALID_MAGMA_HIDEOUT_4F_GROUDON
 	waitstate
 	delay 60
-	applywaitmovement LOCALID_MAGMA_HIDEOUT_4F_GROUDON, MagmaHideout_4F_Movement_GroudonApproach
+	applymovement LOCALID_MAGMA_HIDEOUT_4F_GROUDON, MagmaHideout_4F_Movement_GroudonApproach
+	waitmovement 0
 	special FadeOutOrbEffect
 	setvar VAR_0x8004, 1  @ vertical pan
 	setvar VAR_0x8005, 1  @ horizontal pan
@@ -29,7 +31,8 @@ MagmaHideout_4F_EventScript_Maxie::
 	setvar VAR_0x8007, 5  @ shake delay
 	special ShakeCamera
 	waitstate
-	applywaitmovement LOCALID_MAGMA_HIDEOUT_4F_GROUDON, MagmaHideout_4F_Movement_GroudonExit
+	applymovement LOCALID_MAGMA_HIDEOUT_4F_GROUDON, MagmaHideout_4F_Movement_GroudonExit
+	waitmovement 0
 	removeobject LOCALID_MAGMA_HIDEOUT_4F_GROUDON
 	delay 4
 	setvar VAR_0x8004, 2  @ vertical pan
@@ -39,12 +42,15 @@ MagmaHideout_4F_EventScript_Maxie::
 	special ShakeCamera
 	waitstate
 	delay 30
-	applywaitmovement LOCALID_MAGMA_HIDEOUT_4F_MAXIE, MagmaHideout_4F_Movement_MaxieLookAround
+	applymovement LOCALID_MAGMA_HIDEOUT_4F_MAXIE, MagmaHideout_4F_Movement_MaxieLookAround
+	waitmovement 0
 	msgbox MagmaHideout_4F_Text_MaxieGroudonWhatsWrong, MSGBOX_DEFAULT
 	closemessage
-	applywaitmovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterRight
+	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterRight
+	waitmovement 0
 	delay 30
-	applywaitmovement LOCALID_MAGMA_HIDEOUT_4F_MAXIE, Common_Movement_FacePlayer
+	applymovement LOCALID_MAGMA_HIDEOUT_4F_MAXIE, Common_Movement_FacePlayer
+	waitmovement 0
 	msgbox MagmaHideout_4F_Text_MaxieOhItWasYou, MSGBOX_DEFAULT
 	closemessage
 	trainerbattle_no_intro TRAINER_MAXIE_MAGMA_HIDEOUT, MagmaHideout_4F_Text_MaxieDefeat
@@ -119,99 +125,52 @@ MagmaHideout_4F_EventScript_Tabitha::
 	end
 
 MagmaHideout_4F_Text_Grunt11Intro:
-	.string "I want to see GROUDON, too, but they\n"
-	.string "won't let me see even its tail…\p"
-	.string "It's got me feeling really frustrated.\p"
-	.string "Oh, no!\n"
-	.string "I blabbed about GROUDON!$"
+	.string "ROCKET: As ordens são manter\nesta área sob controle!$"
 
 MagmaHideout_4F_Text_Grunt11Defeat:
-	.string "I guess it's impossible to win if one\n"
-	.string "doesn't have a calm mind…$"
+	.string "A operação perdeu esta\nposição!$"
 
 MagmaHideout_4F_Text_Grunt11PostBattle:
-	.string "I wonder if GROUDON even has a tail?$"
+	.string "Eu seguia ordens. Isso não\nvai apagar o que aconteceu\paqui.$"
 
 MagmaHideout_4F_Text_Grunt12Intro:
-	.string "Fuhahaha!\n"
-	.string "Soon! Very soon!\l"
-	.string "Our grand objective will be achieved!$"
+	.string "ROCKET: As ordens são manter\nesta área sob controle!$"
 
 MagmaHideout_4F_Text_Grunt12Defeat:
-	.string "Grrr…\n"
-	.string "I've come so far, but now this?$"
+	.string "A operação perdeu esta\nposição!$"
 
 MagmaHideout_4F_Text_Grunt12PostBattle:
-	.string "MAXIE, sir!\n"
-	.string "An intruder is headed your way!$"
+	.string "Eu seguia ordens. Isso não\nvai apagar o que aconteceu\paqui.$"
 
 MagmaHideout_4F_Text_Grunt13Intro:
-	.string "You're not finished yet!\n"
-	.string "You're not getting by me easily!$"
+	.string "ROCKET: As ordens são manter\nesta área sob controle!$"
 
 MagmaHideout_4F_Text_Grunt13Defeat:
-	.string "Was I that easy to knock down?$"
+	.string "A operação perdeu esta\nposição!$"
 
 MagmaHideout_4F_Text_Grunt13PostBattle:
-	.string "C-come on, one more match…$"
+	.string "Eu seguia ordens. Isso não\nvai apagar o que aconteceu\paqui.$"
 
 MagmaHideout_4F_Text_TabithaIntro:
-	.string "Hehehe!\n"
-	.string "You made it this far, so I'll tell you!\p"
-	.string "That's right!\n"
-	.string "Up ahead, GROUDON is sleeping!\p"
-	.string "MAXIE went to GROUDON just seconds\n"
-	.string "ago!\p"
-	.string "It's going to awaken real soon!\n"
-	.string "Hehe! Hehehe!$"
+	.string "ROCKET: As ordens são manter\nesta área sob controle!$"
 
 MagmaHideout_4F_Text_TabithaDefeat:
-	.string "Taken down again…\n"
-	.string "Hehe…$"
+	.string "A operação perdeu esta\nposição!$"
 
 MagmaHideout_4F_Text_TabithaPostBattle:
-	.string "…And while you wasted time with me,\n"
-	.string "MAXIE should have awakened GROUDON…$"
+	.string "Eu seguia ordens. Isso não\nvai apagar o que aconteceu\paqui.$"
 
 MagmaHideout_4F_Text_MaxieAwakenGroudon:
-	.string "MAXIE: GROUDON…\p"
-	.string "Nothing could awaken you from your\n"
-	.string "sleep bathed in magma…\p"
-	.string "This BLUE ORB is what you sought.\n"
-	.string "Wasn't it?\p"
-	.string "I have brought you the BLUE ORB.\n"
-	.string "Let its shine awaken you!\p"
-	.string "And show me…\n"
-	.string "Show me the full extent of your power!$"
+	.string "ORION: A rede foi dividida.\nPreciso de uma fonte que\pnenhuma cidade possa\ndesligar.\pGroudon, receba a energia do\nnúcleo! Hoenn vai depender\pde nós!$"
 
 MagmaHideout_4F_Text_MaxieGroudonWhatsWrong:
-	.string "MAXIE: GROUDON!\n"
-	.string "What's wrong?\p"
-	.string "Wasn't the BLUE ORB the key?\p"
-	.string "GROUDON!\n"
-	.string "Where have you gone…$"
+	.string "ORION: Não! O núcleo deveria\nlimitar a descarga! Por que\pele não obedece?$"
 
 MagmaHideout_4F_Text_MaxieOhItWasYou:
-	.string "MAXIE: Oh, so it was you?\p"
-	.string "I've seen you poking around uninvited\n"
-	.string "here and there…\p"
-	.string "I get it now!\n"
-	.string "You must have pulled a cheap stunt!$"
+	.string "ORION: Você retirou o\nmeteorito. Preciso recuperar\po amplificador antes que\nVesper use o outro núcleo.\pNão vou deixar uma criança\nencerrar minha operação!$"
 
 MagmaHideout_4F_Text_MaxieDefeat:
-	.string "What makes you so adept at handling\n"
-	.string "POKéMON?$"
+	.string "O sistema está fora do meu\nalcance...$"
 
 MagmaHideout_4F_Text_MaxieImGoingAfterGroudon:
-	.string "MAXIE: There has to be some reason\n"
-	.string "why GROUDON fled…\p"
-	.string "That's what you're trying to say,\n"
-	.string "aren't you?\p"
-	.string "… … … … … …\n"
-	.string "… … … … … …\p"
-	.string "Humph…\n"
-	.string "You think I didn't know that?\p"
-	.string "With GROUDON gone, there is no longer\n"
-	.string "any need for this blasted volcano.\p"
-	.string "I am going after GROUDON, so this\n"
-	.string "is where we part!$"
+	.string "ORION: Se a energia não pode\nser contida, vamos destruir\po centro que distribui os\ncódigos. O satélite tem que\pcair!$"

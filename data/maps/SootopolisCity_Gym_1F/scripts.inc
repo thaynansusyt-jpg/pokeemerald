@@ -67,7 +67,8 @@ SootopolisCity_Gym_1F_EventScript_UnlockThirdStairs::
 SootopolisCity_Gym_1F_EventScript_FallThroughIce::
 	lockall
 	delay 20
-	applywaitmovement LOCALID_PLAYER, SootopolisCity_Gym_1F_Movement_FallThroughIce
+	applymovement LOCALID_PLAYER, SootopolisCity_Gym_1F_Movement_FallThroughIce
+	waitmovement 0
 	playse SE_FALL
 	delay 60
 	warphole MAP_SOOTOPOLIS_CITY_GYM_B1F
@@ -79,6 +80,7 @@ SootopolisCity_Gym_1F_Movement_FallThroughIce:
 	step_end
 
 SootopolisCity_Gym_1F_EventScript_Juan::
+	goto_if_unset FLAG_HE_OCEAN_SAFE, HE_NeedOcean
 	trainerbattle_single TRAINER_JUAN_1, SootopolisCity_Gym_1F_Text_JuanIntro, SootopolisCity_Gym_1F_Text_JuanDefeat, SootopolisCity_Gym_1F_EventScript_JuanDefeated, NO_MUSIC
 	specialvar VAR_RESULT, ShouldTryRematchBattle
 	goto_if_eq VAR_RESULT, TRUE, SootopolisCity_Gym_1F_EventScript_JuanRematch

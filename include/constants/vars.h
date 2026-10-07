@@ -1,6 +1,8 @@
 #ifndef GUARD_CONSTANTS_VARS_H
 #define GUARD_CONSTANTS_VARS_H
 
+#include "constants/vars_frlg.h"
+
 #define VARS_START 0x4000
 
 // temporary vars
@@ -51,8 +53,8 @@
 #define VAR_REPEL_STEP_COUNT                             0x4021
 #define VAR_ICE_STEP_COUNT                               0x4022
 #define VAR_STARTER_MON                                  0x4023 // 0=Treecko, 1=Torchic, 2=Mudkip
-#define VAR_MIRAGE_RND_H                                 0x4024
-#define VAR_MIRAGE_RND_L                                 0x4025
+#define VAR_MIRAGE_RND_H                                 0x4024 // Unused if OW_USE_DAILY_SEED_FOR_VANILLA_VARIABLES is TRUE
+#define VAR_MIRAGE_RND_L                                 0x4025 // Unused if OW_USE_DAILY_SEED_FOR_VANILLA_VARIABLES is TRUE
 #define VAR_SECRET_BASE_MAP                              0x4026
 #define VAR_CYCLING_ROAD_RECORD_COLLISIONS               0x4027
 #define VAR_CYCLING_ROAD_RECORD_TIME_L                   0x4028
@@ -92,10 +94,10 @@
 #define VAR_ASH_GATHER_COUNT                             0x4048
 #define VAR_BIRCH_STATE                                  0x4049
 #define VAR_CRUISE_STEP_COUNT                            0x404A
-#define VAR_POKELOT_RND1                                 0x404B
-#define VAR_POKELOT_RND2                                 0x404C
+#define VAR_POKELOT_RND1                                 0x404B // Unused if OW_USE_DAILY_SEED_FOR_VANILLA_VARIABLES is TRUE
+#define VAR_POKELOT_RND2                                 0x404C // Unused if OW_USE_DAILY_SEED_FOR_VANILLA_VARIABLES is TRUE
 #define VAR_POKELOT_PRIZE_PLACE                          0x404D
-#define VAR_HE_DEMO_BOUNDARY                                0x404E // Unused Var
+#define VAR_UNUSED_0x404E                                0x404E // Unused Var
 #define VAR_LOTAD_SIZE_RECORD                            0x404F
 #define VAR_LITTLEROOT_TOWN_STATE                        0x4050
 #define VAR_OLDALE_TOWN_STATE                            0x4051
@@ -148,7 +150,7 @@
 #define VAR_ROUTE133_STATE                               0x4080 // Unused Var
 #define VAR_ROUTE134_STATE                               0x4081 // Unused Var
 #define VAR_LITTLEROOT_HOUSES_STATE_MAY                  0x4082
-#define VAR_HE_DEWFORD_INTRO                                0x4083 // Unused Var
+#define VAR_UNUSED_0x4083                                0x4083 // Unused Var
 #define VAR_BIRCH_LAB_STATE                              0x4084
 #define VAR_PETALBURG_GYM_STATE                          0x4085 // 0-1: Wally tutorial, 2-6: 0-4 badges, 7: Defeated Norman, 8: Rematch Norman
 #define VAR_CONTEST_HALL_STATE                           0x4086
@@ -156,7 +158,7 @@
 #define VAR_CONTEST_TYPE                                 0x4088
 #define VAR_SECRET_BASE_INITIALIZED                      0x4089
 #define VAR_CONTEST_PRIZE_PICKUP                         0x408A
-#define VAR_HE_MAUVILLE_INTRO                                0x408B // Unused Var
+#define VAR_UNUSED_0x408B                                0x408B // Unused Var
 #define VAR_LITTLEROOT_HOUSES_STATE_BRENDAN              0x408C
 #define VAR_LITTLEROOT_RIVAL_STATE                       0x408D
 #define VAR_BOARD_BRINEY_BOAT_STATE                      0x408E
@@ -301,7 +303,7 @@
 #define VAR_MON_BOX_ID                0x8012
 #define VAR_MON_BOX_POS               0x8013
 #define VAR_UNUSED_0x8014             0x8014
-#define VAR_TRAINER_BATTLE_OPPONENT_A 0x8015 // Alias of gTrainerBattleOpponent_A
+#define VAR_TRAINER_BATTLE_OPPONENT_A 0x8015 // Alias of TRAINER_BATTLE_PARAM.opponentA
 
 #define SPECIAL_VARS_END              0x8015
 
@@ -324,4 +326,27 @@
 
 #define VAR_TEMP_TRANSFERRED_SPECIES  VAR_TEMP_1
 
+#if TESTING
+#define TESTING_VARS_START                  0x9000
+#define TESTING_VAR_DIFFICULTY              (TESTING_VARS_START + 0x0)
+#define TESTING_VAR_TRAINER_SLIDES          (TESTING_VARS_START + 0x1)
+#define TESTING_VAR_UNUSED_2                (TESTING_VARS_START + 0x2)
+#define TESTING_VAR_UNUSED_3                (TESTING_VARS_START + 0x3)
+#define TESTING_VAR_UNUSED_4                (TESTING_VARS_START + 0x4)
+#define TESTING_VAR_UNUSED_5                (TESTING_VARS_START + 0x5)
+#define TESTING_VAR_UNUSED_6                (TESTING_VARS_START + 0x6)
+#define TESTING_VAR_UNUSED_7                (TESTING_VARS_START + 0x7)
+#endif // TESTING
+
 #endif // GUARD_CONSTANTS_VARS_H
+
+#define VAR_HE_DEMO_BOUNDARY                                0x404E // Unused Var
+#define VAR_HE_DEWFORD_INTRO                                0x4083 // Unused Var
+#define VAR_HE_MAUVILLE_INTRO                                0x408B // Unused Var
+
+
+#define VAR_HE_SCENE 0x40F7
+#define VAR_HE_RESCUES 0x40F8
+
+#define VAR_HE_DN_SPECIES 0x40F9
+#define VAR_HE_DN_STEPS 0x40FA

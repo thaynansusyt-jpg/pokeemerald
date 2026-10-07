@@ -7,18 +7,24 @@ SeafloorCavern_Room9_EventScript_ArchieAwakenKyogre::
 	setvar VAR_0x8005, LOCALID_SEAFLOOR_CAVERN_MAXIE
 	setvar VAR_0x8006, LOCALID_SEAFLOOR_CAVERN_GRUNT_1
 	setvar VAR_0x8007, LOCALID_SEAFLOOR_CAVERN_GRUNT_2
-	applywaitmovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterUp
-	applywaitmovement LOCALID_PLAYER, SeafloorCavern_Room9_Movement_Delay32
+	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterUp
+	waitmovement 0
+	applymovement LOCALID_PLAYER, SeafloorCavern_Room9_Movement_Delay32
+	waitmovement 0
 	playbgm MUS_ENCOUNTER_AQUA, FALSE
 	msgbox SeafloorCavern_Room9_Text_ArchieHoldItRightThere, MSGBOX_DEFAULT
 	closemessage
 	addobject VAR_0x8004
-	applywaitmovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterLeft
-	applywaitmovement VAR_0x8004, SeafloorCavern_Room9_Movement_ArchieApproachPlayer
+	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterLeft
+	waitmovement 0
+	applymovement VAR_0x8004, SeafloorCavern_Room9_Movement_ArchieApproachPlayer
+	waitmovement 0
 	msgbox SeafloorCavern_Room9_Text_ArchieSoItWasYou, MSGBOX_DEFAULT
-	applywaitmovement VAR_0x8004, Common_Movement_WalkInPlaceFasterUp
+	applymovement VAR_0x8004, Common_Movement_WalkInPlaceFasterUp
+	waitmovement 0
 	msgbox SeafloorCavern_Room9_Text_ArchieBeholdKyogre, MSGBOX_DEFAULT
-	applywaitmovement VAR_0x8004, Common_Movement_FacePlayer
+	applymovement VAR_0x8004, Common_Movement_FacePlayer
+	waitmovement 0
 	msgbox SeafloorCavern_Room9_Text_ArchieYouMustDisappear, MSGBOX_DEFAULT
 	trainerbattle_no_intro TRAINER_ARCHIE, SeafloorCavern_Room9_Text_ArchieDefeat
 	msgbox SeafloorCavern_Room9_Text_ArchieWithThisRedOrb, MSGBOX_DEFAULT
@@ -44,7 +50,8 @@ SeafloorCavern_Room9_EventScript_ArchieAwakenKyogre::
 	addobject LOCALID_SEAFLOOR_CAVERN_KYOGRE
 	waitstate
 	delay 60
-	applywaitmovement LOCALID_SEAFLOOR_CAVERN_KYOGRE, SeafloorCavern_Room9_Movement_KyogreApproach
+	applymovement LOCALID_SEAFLOOR_CAVERN_KYOGRE, SeafloorCavern_Room9_Movement_KyogreApproach
+	waitmovement 0
 	special FadeOutOrbEffect
 	setvar VAR_0x8004, 1  @ vertical pan
 	setvar VAR_0x8005, 1  @ horizontal pan
@@ -52,7 +59,8 @@ SeafloorCavern_Room9_EventScript_ArchieAwakenKyogre::
 	setvar VAR_0x8007, 5  @ shake delay
 	special ShakeCamera
 	waitstate
-	applywaitmovement LOCALID_SEAFLOOR_CAVERN_KYOGRE, SeafloorCavern_Room9_Movement_KyogreExit
+	applymovement LOCALID_SEAFLOOR_CAVERN_KYOGRE, SeafloorCavern_Room9_Movement_KyogreExit
+	waitmovement 0
 	removeobject LOCALID_SEAFLOOR_CAVERN_KYOGRE
 	delay 4
 	setvar VAR_0x8004, 2  @ vertical pan
@@ -68,15 +76,18 @@ SeafloorCavern_Room9_EventScript_ArchieAwakenKyogre::
 	setvar VAR_0x8007, LOCALID_SEAFLOOR_CAVERN_GRUNT_2
 	msgbox SeafloorCavern_Room9_Text_ArchieWhereDidKyogreGo, MSGBOX_DEFAULT
 	playse SE_PC_LOGIN
-	applywaitmovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterLeft
+	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterLeft
+	waitmovement 0
 	msgbox SeafloorCavern_Room9_Text_ArchieAMessageFromOutside, MSGBOX_DEFAULT
 	closemessage
-	applywaitmovement VAR_0x8004, SeafloorCavern_Room9_Movement_ArchieListenMessage
+	applymovement VAR_0x8004, SeafloorCavern_Room9_Movement_ArchieListenMessage
+	waitmovement 0
 	msgbox SeafloorCavern_Room9_Text_ArchieWhatRainingTooHard, MSGBOX_DEFAULT
 	closemessage
 	playse SE_PC_OFF
 	delay 20
-	applywaitmovement VAR_0x8004, Common_Movement_WalkInPlaceFasterDown
+	applymovement VAR_0x8004, Common_Movement_WalkInPlaceFasterDown
+	waitmovement 0
 	msgbox SeafloorCavern_Room9_Text_ArchieWhyDidKyogreDisappear, MSGBOX_DEFAULT
 	closemessage
 	addobject VAR_0x8005
@@ -86,11 +97,14 @@ SeafloorCavern_Room9_EventScript_ArchieAwakenKyogre::
 	applymovement VAR_0x8006, SeafloorCavern_Room9_Movement_MagmaGruntArrive
 	applymovement VAR_0x8005, SeafloorCavern_Room9_Movement_MaxieArrive
 	waitmovement 0
-	applywaitmovement VAR_0x8004, Common_Movement_WalkInPlaceFasterLeft
+	applymovement VAR_0x8004, Common_Movement_WalkInPlaceFasterLeft
+	waitmovement 0
 	msgbox SeafloorCavern_Room9_Text_MaxieWhatHaveYouWrought, MSGBOX_DEFAULT
 	playse SE_PIN
-	applywaitmovement VAR_0x8004, Common_Movement_ExclamationMark
-	applywaitmovement VAR_0x8004, Common_Movement_Delay48
+	applymovement VAR_0x8004, Common_Movement_ExclamationMark
+	waitmovement 0
+	applymovement VAR_0x8004, Common_Movement_Delay48
+	waitmovement 0
 	msgbox SeafloorCavern_Room9_Text_ArchieDontGetAllHighAndMighty, MSGBOX_DEFAULT
 	msgbox SeafloorCavern_Room9_Text_MaxieWeDontHaveTimeToArgue, MSGBOX_DEFAULT
 	closemessage
@@ -202,101 +216,46 @@ SeafloorCavern_Room9_Movement_Delay32:
 	step_end
 
 SeafloorCavern_Room9_Text_ArchieHoldItRightThere:
-	.string "ARCHIE: Hold it right there.$"
+	.string "VESPER: Não encoste no\nnúcleo!$"
 
 SeafloorCavern_Room9_Text_ArchieSoItWasYou:
-	.string "ARCHIE: Fufufu…\n"
-	.string "So it was you, after all.$"
+	.string "VESPER: A central orbital\nfoi desligada. Você chegou\pmais longe do que Giovanni\nimaginou.$"
 
 SeafloorCavern_Room9_Text_ArchieBeholdKyogre:
-	.string "ARCHIE: Behold!\p"
-	.string "See how beautiful it is, the sleeping\n"
-	.string "form of the ancient POKéMON KYOGRE!\p"
-	.string "I have waited so long for this day to\n"
-	.string "come…$"
+	.string "VESPER: Este núcleo desperta\na fonte oceânica. Se eu\pestabilizar o mar, as\ncidades precisarão de mim.\pOrion fracassou porque quis\nenergia sem limite. Eu tenho\pos dados do Instituto.$"
 
 SeafloorCavern_Room9_Text_ArchieYouMustDisappear:
-	.string "ARCHIE: It surprises me, how you've\n"
-	.string "managed to chase me here.\p"
-	.string "But that's all over now.\p"
-	.string "For the realization of my dream,\n"
-	.string "you must disappear now!$"
+	.string "VESPER: Estou perto de\ncorrigir tudo. Não vou\pabandonar a operação agora!$"
 
 SeafloorCavern_Room9_Text_ArchieDefeat:
-	.string "What?!\n"
-	.string "I lost to a mere child like you?!$"
+	.string "Não posso perder o único\ncontrole que resta!$"
 
 SeafloorCavern_Room9_Text_ArchieWithThisRedOrb:
-	.string "ARCHIE: Fufufu…\p"
-	.string "I commend you. I must recognize that\n"
-	.string "you are truly gifted.\p"
-	.string "But!\n"
-	.string "I have this in my possession!\p"
-	.string "With this RED ORB, I can make KYOGRE…$"
+	.string "VESPER: O núcleo ainda\nfunciona. Kyogre, receba o\ppulso!$"
 
 SeafloorCavern_Room9_Text_RedOrbShinesByItself:
-	.string "The RED ORB suddenly began shining\n"
-	.string "by itself!$"
+	.string "O núcleo brilha sozinho. A\ndescarga rompe o limite!$"
 
 SeafloorCavern_Room9_Text_ArchieWhereDidKyogreGo:
-	.string "ARCHIE: What?!\p"
-	.string "I didn't do anything.\n"
-	.string "Why did the RED ORB…\p"
-	.string "Where did KYOGRE go?$"
+	.string "VESPER: O sinal sumiu? Por\nque ele saiu da área de\pcontrole?$"
 
 SeafloorCavern_Room9_Text_ArchieAMessageFromOutside:
-	.string "ARCHIE: Hm? It's a message from our\n"
-	.string "members outside…$"
+	.string "RÁDIO: As sirenes de todas\nas ilhas dispararam!$"
 
 SeafloorCavern_Room9_Text_ArchieWhatRainingTooHard:
-	.string "ARCHIE: Yes, what is it?\p"
-	.string "Hm…\n"
-	.string "It's raining heavily?\p"
-	.string "Good… That should have happened.\n"
-	.string "That is why we awakened KYOGRE,\l"
-	.string "to realize TEAM AQUA's vision of\l"
-	.string "expanding the sea.\p"
-	.string "What?!\p"
-	.string "It's raining far harder than we\n"
-	.string "envisioned? You're in danger?\p"
-	.string "That can't be…\n"
-	.string "That's just not possible…\p"
-	.string "Hold your position and monitor\n"
-	.string "the situation!$"
+	.string "VESPER: Chuva sem pausa?\nIsso não estava nos dados!\pDesliguem as antenas!$"
 
 SeafloorCavern_Room9_Text_ArchieWhyDidKyogreDisappear:
-	.string "ARCHIE: There's something wrong…\p"
-	.string "The RED ORB is supposed to awaken\n"
-	.string "and control KYOGRE…\p"
-	.string "But… Why?\n"
-	.string "Why did KYOGRE disappear?\p"
-	.string "Why?!$"
+	.string "VESPER: O mar não obedece ao\nnúcleo. Nós só o ferimos...$"
 
 SeafloorCavern_Room9_Text_MaxieWhatHaveYouWrought:
-	.string "MAXIE: What have you wrought?\p"
-	.string "ARCHIE… You've finally awoken KYOGRE,\n"
-	.string "haven't you?\p"
-	.string "What will happen to the world if this\n"
-	.string "downpour continues for all eternity?\p"
-	.string "The world's landmass will drown in\n"
-	.string "the deepening sea…$"
+	.string "ORION: Eu também perdi a\nfonte térmica. As duas\pdescargas estão se atraindo.$"
 
 SeafloorCavern_Room9_Text_ArchieDontGetAllHighAndMighty:
-	.string "ARCHIE: W-what?!\n"
-	.string "Don't get all high and mighty with me!\p"
-	.string "Wasn't it you, TEAM MAGMA, that\n"
-	.string "infuriated GROUDON?\p"
-	.string "So long as I have this RED ORB,\n"
-	.string "I should be able to control KYOGRE…\p"
-	.string "I should be able to control it…$"
+	.string "VESPER: Você ampliou a carga\nsem me avisar. Giovanni\pexigiu resultados de nós\ndois!$"
 
 SeafloorCavern_Room9_Text_MaxieWeDontHaveTimeToArgue:
-	.string "MAXIE: We don't have the time to\n"
-	.string "argue about it here!\p"
-	.string "Get outside and see for yourself!\p"
-	.string "See if what you've wrought is the\n"
-	.string "world that we desired!$"
+	.string "ORION: Não há tempo para\nculpar ninguém. Sootopolis\pestá no centro da\nperturbação.$"
 
 SeafloorCavern_Room9_Text_MaxieComeOnPlayer:
-	.string "MAXIE: {PLAYER}, come on, you have\n"
-	.string "to get out of here, too!$"
+	.string "ORION: Vá à superfície. A\nLiga precisa saber. Giovanni\pjá recebeu a cópia dos\ncódigos.$"

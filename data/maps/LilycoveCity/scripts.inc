@@ -36,9 +36,7 @@ LilycoveCity_EventScript_BerryGentleman::
 	dotimebasedevents
 	goto_if_set FLAG_DAILY_LILYCOVE_RECEIVED_BERRY, LilycoveCity_EventScript_ReceivedBerry
 	msgbox LilycoveCity_Text_BerrySuitsYou, MSGBOX_DEFAULT
-	random 10
-	addvar VAR_RESULT, FIRST_BERRY_INDEX
-	giveitem VAR_RESULT
+	giverandomberry BERRY_ID_CHERI, BERRY_ID_SITRUS
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
 	setflag FLAG_DAILY_LILYCOVE_RECEIVED_BERRY
 	msgbox LilycoveCity_Text_BecauseYoureTrainer, MSGBOX_DEFAULT
@@ -196,9 +194,11 @@ LilycoveCity_EventScript_WailmerTrainerGrunt::
 	lockall
 	goto_if_set FLAG_MET_WAILMER_TRAINER, LilycoveCity_EventScript_MetWailmerTrainer
 	msgbox LilycoveCity_Text_WailmerLeapOutOfWater, MSGBOX_DEFAULT
-	applywaitmovement VAR_LAST_TALKED, Common_Movement_FacePlayer
+	applymovement VAR_LAST_TALKED, Common_Movement_FacePlayer
+	waitmovement 0
 	msgbox LilycoveCity_Text_GetLostMessingUpTraining, MSGBOX_DEFAULT
-	applywaitmovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
+	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
+	waitmovement 0
 	setflag FLAG_MET_WAILMER_TRAINER
 	releaseall
 	end
@@ -376,7 +376,8 @@ LilycoveCity_EventScript_BrendanBattleFrontier::
 
 LilycoveCity_EventScript_RivalFlyAway::
 	closemessage
-	applywaitmovement VAR_LAST_TALKED, Common_Movement_WalkInPlaceFasterDown
+	applymovement VAR_LAST_TALKED, Common_Movement_WalkInPlaceFasterDown
+	waitmovement 0
 	delay 50
 	setfieldeffectargument 0, 1
 	dofieldeffect FLDEFF_NPCFLY_OUT
@@ -547,12 +548,7 @@ LilycoveCity_Text_MovedLootIntoHideoutToday:
 	.string "I was just talking to myself!$"
 
 LilycoveCity_Text_ChanceToDoBigThings:
-	.string "I'm just a GRUNT, so I don't know what\n"
-	.string "the BOSS is thinking…\p"
-	.string "But being on TEAM AQUA, I know I'll get\n"
-	.string "the chance to do big things!\p"
-	.string "Wh-who are you?!\n"
-	.string "I was just talking to myself!$"
+	.string "ROCKET: Disseram que\nfaríamos parte de algo\pgrande. Agora transportamos\nPokémon tomados dos abrigos.$"
 
 LilycoveCity_Text_DontGoNearCaveInCove:
 	.string "Hey, you!\p"
@@ -561,9 +557,7 @@ LilycoveCity_Text_DontGoNearCaveInCove:
 	.string "I'm an adult, so you just listen to me!$"
 
 LilycoveCity_Text_IfWorldBecomesOurs:
-	.string "If this whole wide world becomes ours,\n"
-	.string "TEAM AQUA's, it will be a happier\l"
-	.string "place for POKéMON, too.$"
+	.string "ROCKET: Vesper diz que a\nrede vai acabar com a crise.\pPor que as famílias estão\nfugindo de nós?$"
 
 LilycoveCity_Text_WailmerLeapOutOfWater:
 	.string "There! WAILMER!\n"
@@ -600,17 +594,10 @@ LilycoveCity_Text_ImFromKanto:
 	.string "only in this area?$"
 
 LilycoveCity_Text_TeamAquaBeenTrainingWailmer:
-	.string "TEAM AQUA's been training their\n"
-	.string "WAILMER in the cove.\p"
-	.string "We SAILORS can't get our boats out\n"
-	.string "to sea with them in the way!$"
+	.string "A Rocket usa Wailmer para\nbloquear a baía. Os barcos\pde ajuda não conseguem sair.$"
 
 LilycoveCity_Text_SomeonePuntedTeamAquaOut:
-	.string "Ahoy, did you know?\p"
-	.string "Someone punted TEAM AQUA out of\n"
-	.string "the way for us!\p"
-	.string "That got the WAILMER out of the cove,\n"
-	.string "so we can get our boats out again.$"
+	.string "A passagem abriu! Podemos\nentregar remédios às ilhas\pde novo.$"
 
 LilycoveCity_Text_SomeoneStoleMyPokemon:
 	.string "I was taking a relaxing snooze at the\n"
@@ -643,22 +630,10 @@ LilycoveCity_Text_SixtyYearsAgoHusbandProposed:
 	.string "Mufufufu mufufufufufu…$"
 
 LilycoveCity_Text_TeamAquaRenovatedCavern:
-	.string "Hm, you know of the peculiar cavern\n"
-	.string "in this cove?\p"
-	.string "That had been a natural formation,\n"
-	.string "but then that TEAM AQUA lot came\l"
-	.string "along and made their renovations.\p"
-	.string "They call themselves\n"
-	.string "the “nature-loving TEAM AQUA”!\p"
-	.string "But what they do and what they say\n"
-	.string "don't match at all!$"
+	.string "A caverna virou depósito da\nRocket. Vi gente levando\pcaixas de equipamento Devon.$"
 
 LilycoveCity_Text_TeamAquaLotGoneForGood:
-	.string "That cave in the cove…\p"
-	.string "I didn't notice it right away,\n"
-	.string "but it's completely empty now.\p"
-	.string "That TEAM AQUA lot, they must\n"
-	.string "have gone away for good.$"
+	.string "A base está vazia. Os\nagentes partiram para o mar\pcom um submarino.$"
 
 LilycoveCity_Text_CitySign:
 	.string "LILYCOVE CITY\p"

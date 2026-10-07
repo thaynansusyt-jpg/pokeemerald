@@ -163,6 +163,7 @@ SootopolisCity_OnResume:
 	end
 
 SootopolisCity_OnFrame:
+	map_script_2 VAR_HE_SCENE, 4, HE_ArrivalOcean
 	map_script_2 VAR_SOOTOPOLIS_CITY_STATE, 1, SootopolisCity_EventScript_StartLegendariesScene
 	map_script_2 VAR_SKY_PILLAR_STATE, 1, SootopolisCity_EventScript_StartRayquazaScene
 	.2byte 0
@@ -179,7 +180,8 @@ SootopolisCity_EventScript_StartLegendariesScene::
 SootopolisCity_EventScript_LegendariesSceneFromPokeCenter::
 	delay 60
 	special SpawnCameraObject
-	applywaitmovement LOCALID_CAMERA, SootopolisCity_Movement_PanToActionFromPokeCenter
+	applymovement LOCALID_CAMERA, SootopolisCity_Movement_PanToActionFromPokeCenter
+	waitmovement 0
 	special RemoveCameraObject
 	delay 60
 	fadescreenspeed FADE_TO_BLACK, 8
@@ -277,7 +279,8 @@ SootopolisCity_Movement_PanBackToPokeCenter:
 SootopolisCity_EventScript_LegendariesSceneFromDive::
 	delay 60
 	special SpawnCameraObject
-	applywaitmovement LOCALID_CAMERA, SootopolisCity_Movement_PanToActionFromDive
+	applymovement LOCALID_CAMERA, SootopolisCity_Movement_PanToActionFromDive
+	waitmovement 0
 	special RemoveCameraObject
 	delay 60
 	fadescreenspeed FADE_TO_BLACK, 8
@@ -464,7 +467,8 @@ SootopolisCity_EventScript_StartRayquazaScene::
 SootopolisCity_EventScript_RayquazaSceneFromPokeCenter::
 	delay 60
 	special SpawnCameraObject
-	applywaitmovement LOCALID_CAMERA, SootopolisCity_Movement_PanToActionFromPokeCenter
+	applymovement LOCALID_CAMERA, SootopolisCity_Movement_PanToActionFromPokeCenter
+	waitmovement 0
 	special RemoveCameraObject
 	delay 60
 	fadescreenspeed FADE_TO_BLACK, 8
@@ -472,11 +476,13 @@ SootopolisCity_EventScript_RayquazaSceneFromPokeCenter::
 	removeobject LOCALID_SOOTOPOLIS_GROUDON
 	removeobject LOCALID_SOOTOPOLIS_KYOGRE
 	addobject LOCALID_SOOTOPOLIS_RAYQUAZA
+	hideobjectat LOCALID_SOOTOPOLIS_RAYQUAZA, MAP_SOOTOPOLIS_CITY
 	setvar VAR_0x8004, TRUE
 	special Script_DoRayquazaScene
 	playse SE_THUNDER
 	special SpawnCameraObject
-	applywaitmovement LOCALID_CAMERA, SootopolisCity_Movement_PanUp
+	applymovement LOCALID_CAMERA, SootopolisCity_Movement_PanUp
+	waitmovement 0
 	waitse
 	playmoncry SPECIES_RAYQUAZA, CRY_MODE_ENCOUNTER
 	setvar VAR_0x8004, 1  @ vertical pan
@@ -496,7 +502,8 @@ SootopolisCity_EventScript_RayquazaSceneFromPokeCenter::
 	waitmoncry
 	setweather WEATHER_NONE
 	doweather
-	applywaitmovement LOCALID_SOOTOPOLIS_RAYQUAZA, SootopolisCity_Movement_RayquazaFlyOff
+	applymovement LOCALID_SOOTOPOLIS_RAYQUAZA, SootopolisCity_Movement_RayquazaFlyOff
+	waitmovement 0
 	removeobject LOCALID_SOOTOPOLIS_RAYQUAZA
 	special WaitWeather
 	clearflag FLAG_SYS_WEATHER_CTRL
@@ -512,7 +519,8 @@ SootopolisCity_EventScript_RayquazaSceneFromPokeCenter::
 SootopolisCity_EventScript_RayquazaSceneFromDive::
 	delay 60
 	special SpawnCameraObject
-	applywaitmovement LOCALID_CAMERA, SootopolisCity_Movement_PanToActionFromDive
+	applymovement LOCALID_CAMERA, SootopolisCity_Movement_PanToActionFromDive
+	waitmovement 0
 	special RemoveCameraObject
 	delay 60
 	fadescreenspeed FADE_TO_BLACK, 8
@@ -545,7 +553,8 @@ SootopolisCity_EventScript_RayquazaSceneFromDive::
 	waitmoncry
 	setweather WEATHER_NONE
 	doweather
-	applywaitmovement LOCALID_SOOTOPOLIS_RAYQUAZA, SootopolisCity_Movement_RayquazaFlyOff
+	applymovement LOCALID_SOOTOPOLIS_RAYQUAZA, SootopolisCity_Movement_RayquazaFlyOff
+	waitmovement 0
 	removeobject LOCALID_SOOTOPOLIS_RAYQUAZA
 	special WaitWeather
 	clearflag FLAG_SYS_WEATHER_CTRL
@@ -683,7 +692,8 @@ SootopolisCity_EventScript_Kiri::
 	goto_if_eq VAR_SOOTOPOLIS_CITY_STATE, 5, SootopolisCity_EventScript_KiriRayquaza
 	msgbox SootopolisCity_Text_BigPokemonFighting, MSGBOX_DEFAULT
 	closemessage
-	applywaitmovement LOCALID_KIRI, Common_Movement_FaceOriginalDirection
+	applymovement LOCALID_KIRI, Common_Movement_FaceOriginalDirection
+	waitmovement 0
 	release
 	end
 
@@ -693,16 +703,13 @@ SootopolisCity_EventScript_KiriRayquaza::
 	release
 	end
 
-@ Gives 2 berries daily. First ranges from FIRST_KIRI_BERRY to LAST_KIRI_BERRY, second is always Figy or Iapapa
+@ Gives 2 berries daily. First ranges from BERRY_ID_POMEG to BERRY_ID_NOMEL, second is always Figy or Iapapa
 SootopolisCity_EventScript_KiriGiveBerry::
 	dotimebasedevents
 	special GetPlayerBigGuyGirlString
 	goto_if_set FLAG_DAILY_SOOTOPOLIS_RECEIVED_BERRY, SootopolisCity_EventScript_KiriReceivedBerry
 	msgbox SootopolisCity_Text_NameIsKiriHaveOneOfThese, MSGBOX_DEFAULT
-	random NUM_KIRI_BERRIES
-	addvar VAR_RESULT, NUM_KIRI_BERRIES_SKIPPED
-	addvar VAR_RESULT, FIRST_BERRY_INDEX
-	giveitem VAR_RESULT
+	giverandomberry BERRY_ID_POMEG, BERRY_ID_NOMEL
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
 	setflag FLAG_DAILY_SOOTOPOLIS_RECEIVED_BERRY
 	msgbox SootopolisCity_Text_GiveYouThisBerryToo, MSGBOX_DEFAULT
@@ -739,11 +746,13 @@ SootopolisCity_EventScript_KiriLikeSeasonBornIn::
 
 SootopolisCity_EventScript_Woman2::
 	lockall
-	applywaitmovement LOCALID_SOOTOPOLIS_WOMAN_2, Common_Movement_FacePlayer
+	applymovement LOCALID_SOOTOPOLIS_WOMAN_2, Common_Movement_FacePlayer
+	waitmovement 0
 	goto_if_eq VAR_SOOTOPOLIS_CITY_STATE, 5, SootopolisCity_EventScript_Woman2Rayquaza
 	msgbox SootopolisCity_Text_WeatherWentWild, MSGBOX_DEFAULT
 	closemessage
-	applywaitmovement LOCALID_SOOTOPOLIS_WOMAN_2, Common_Movement_FaceOriginalDirection
+	applymovement LOCALID_SOOTOPOLIS_WOMAN_2, Common_Movement_FaceOriginalDirection
+	waitmovement 0
 	releaseall
 	end
 
@@ -778,7 +787,8 @@ SootopolisCity_EventScript_Woman1::
 SootopolisCity_EventScript_Woman1Legendaries::
 	msgbox SootopolisCity_Text_GiganticPokemonFight, MSGBOX_DEFAULT
 	closemessage
-	applywaitmovement LOCALID_SOOTOPOLIS_WOMAN_1, Common_Movement_FaceOriginalDirection
+	applymovement LOCALID_SOOTOPOLIS_WOMAN_1, Common_Movement_FaceOriginalDirection
+	waitmovement 0
 	release
 	end
 
@@ -794,13 +804,15 @@ SootopolisCity_EventScript_Woman1Rayquaza::
 
 SootopolisCity_EventScript_NinjaBoy::
 	lockall
-	applywaitmovement LOCALID_SOOTOPOLIS_NINJA_BOY, Common_Movement_FacePlayer
+	applymovement LOCALID_SOOTOPOLIS_NINJA_BOY, Common_Movement_FacePlayer
+	waitmovement 0
 	goto_if_eq VAR_SOOTOPOLIS_CITY_STATE, 5, SootopolisCity_EventScript_NinjaBoyRayquaza
 	goto_if_ge VAR_SOOTOPOLIS_CITY_STATE, 6, SootopolisCity_EventScript_NinjaBoyNormal
 	goto_if_le VAR_SOOTOPOLIS_CITY_STATE, 1, SootopolisCity_EventScript_NinjaBoyNormal
 	msgbox SootopolisCity_Text_ThisIsWicked, MSGBOX_DEFAULT
 	closemessage
-	applywaitmovement LOCALID_SOOTOPOLIS_NINJA_BOY, Common_Movement_FaceOriginalDirection
+	applymovement LOCALID_SOOTOPOLIS_NINJA_BOY, Common_Movement_FaceOriginalDirection
+	waitmovement 0
 	release
 	end
 
@@ -816,14 +828,16 @@ SootopolisCity_EventScript_NinjaBoyRayquaza::
 
 SootopolisCity_EventScript_Boy1::
 	lockall
-	applywaitmovement LOCALID_SOOTOPOLIS_BOY_1, Common_Movement_FacePlayer
+	applymovement LOCALID_SOOTOPOLIS_BOY_1, Common_Movement_FacePlayer
+	waitmovement 0
 	goto_if_eq VAR_SOOTOPOLIS_CITY_STATE, 5, SootopolisCity_EventScript_Boy1Rayquaza
 	goto_if_set FLAG_SYS_GAME_CLEAR, SootopolisCity_EventScript_Boy1GameClear
 	goto_if_ge VAR_SOOTOPOLIS_CITY_STATE, 6, SootopolisCity_EventScript_Boy1Normal
 	goto_if_le VAR_SOOTOPOLIS_CITY_STATE, 1, SootopolisCity_EventScript_Boy1Normal
 	msgbox SootopolisCity_Text_GiantPokemonSuddenlyAppeared, MSGBOX_DEFAULT
 	closemessage
-	applywaitmovement LOCALID_SOOTOPOLIS_BOY_1, Common_Movement_FaceOriginalDirection
+	applymovement LOCALID_SOOTOPOLIS_BOY_1, Common_Movement_FaceOriginalDirection
+	waitmovement 0
 	release
 	end
 
@@ -856,7 +870,8 @@ EventScript_ClosedSootopolisDoor::
 
 SootopolisCity_EventScript_Steven::
 	lockall
-	applywaitmovement LOCALID_SOOTOPOLIS_STEVEN, Common_Movement_FacePlayer
+	applymovement LOCALID_SOOTOPOLIS_STEVEN, Common_Movement_FacePlayer
+	waitmovement 0
 	call_if_unset FLAG_STEVEN_GUIDES_TO_CAVE_OF_ORIGIN, SootopolisCity_EventScript_StevenLeadPlayerCaveOfOrigin
 	goto_if_eq VAR_SOOTOPOLIS_CITY_STATE, 2, SootopolisCity_EventScript_StevenHelpWallace
 	goto_if_eq VAR_SOOTOPOLIS_CITY_STATE, 3, SootopolisCity_EventScript_StevenHelpedWallace
@@ -892,14 +907,16 @@ SootopolisCity_EventScript_StevenLeadPlayerCaveOfOrigin::
 	applymovement LOCALID_PLAYER, SootopolisCity_Movement_PlayerWalkToCaveOfOrigin
 	waitmovement 0
 	delay 120
-	applywaitmovement LOCALID_SOOTOPOLIS_EXPERT, SootopolisCity_Movement_ExpertMoveAside
+	applymovement LOCALID_SOOTOPOLIS_EXPERT, SootopolisCity_Movement_ExpertMoveAside
+	waitmovement 0
 	applymovement LOCALID_SOOTOPOLIS_STEVEN, SootopolisCity_Movement_StevenArriveCaveEntrance
 	applymovement LOCALID_PLAYER, SootopolisCity_Movement_PlayerArriveCaveEntrance
 	waitmovement 0
 	msgbox SootopolisCity_Text_HereWereAreHelpWallace, MSGBOX_DEFAULT
 	closemessage
 	setflag FLAG_STEVEN_GUIDES_TO_CAVE_OF_ORIGIN
-	applywaitmovement LOCALID_PLAYER, SootopolisCity_Movement_PlayerEnterCaveOfOrigin
+	applymovement LOCALID_PLAYER, SootopolisCity_Movement_PlayerEnterCaveOfOrigin
+	waitmovement 0
 	warp MAP_CAVE_OF_ORIGIN_ENTRANCE, 9, 20
 	waitstate
 	end
@@ -1182,11 +1199,13 @@ SootopolisCity_Movement_PlayerEnterCaveOfOrigin:
 
 SootopolisCity_EventScript_Boy2::
 	lockall
-	applywaitmovement LOCALID_SOOTOPOLIS_BOY_2, Common_Movement_FacePlayer
+	applymovement LOCALID_SOOTOPOLIS_BOY_2, Common_Movement_FacePlayer
+	waitmovement 0
 	goto_if_eq VAR_SOOTOPOLIS_CITY_STATE, 5, SootopolisCity_EventScript_Boy2Rayquaza
 	msgbox SootopolisCity_Text_TwoPokemonArentAngry, MSGBOX_DEFAULT
 	closemessage
-	applywaitmovement LOCALID_SOOTOPOLIS_BOY_2, Common_Movement_FaceOriginalDirection
+	applymovement LOCALID_SOOTOPOLIS_BOY_2, Common_Movement_FaceOriginalDirection
+	waitmovement 0
 	releaseall
 	end
 
@@ -1201,26 +1220,31 @@ SootopolisCity_EventScript_BlackBelt::
 	goto_if_eq VAR_SOOTOPOLIS_CITY_STATE, 5, SootopolisCity_EventScript_BlackBeltRayquaza
 	msgbox SootopolisCity_Text_GoRedAndBlueMon, MSGBOX_DEFAULT
 	closemessage
-	applywaitmovement LOCALID_SOOTOPOLIS_BLACK_BELT, Common_Movement_FacePlayer
+	applymovement LOCALID_SOOTOPOLIS_BLACK_BELT, Common_Movement_FacePlayer
+	waitmovement 0
 	msgbox SootopolisCity_Text_DoYouKnowMonNames, MSGBOX_DEFAULT
 	closemessage
-	applywaitmovement LOCALID_SOOTOPOLIS_BLACK_BELT, Common_Movement_FaceOriginalDirection
+	applymovement LOCALID_SOOTOPOLIS_BLACK_BELT, Common_Movement_FaceOriginalDirection
+	waitmovement 0
 	releaseall
 	end
 
 SootopolisCity_EventScript_BlackBeltRayquaza::
-	applywaitmovement LOCALID_SOOTOPOLIS_BLACK_BELT, Common_Movement_FacePlayer
+	applymovement LOCALID_SOOTOPOLIS_BLACK_BELT, Common_Movement_FacePlayer
+	waitmovement 0
 	msgbox SootopolisCity_Text_GreenOneSettlesThings, MSGBOX_DEFAULT
 	releaseall
 	end
 
 SootopolisCity_EventScript_Girl::
 	lockall
-	applywaitmovement LOCALID_SOOTOPOLIS_GIRL, Common_Movement_FacePlayer
+	applymovement LOCALID_SOOTOPOLIS_GIRL, Common_Movement_FacePlayer
+	waitmovement 0
 	goto_if_eq VAR_SOOTOPOLIS_CITY_STATE, 5, SootopolisCity_EventScript_GirlRayquaza
 	msgbox SootopolisCity_Text_SootopolisWillBeWrecked, MSGBOX_DEFAULT
 	closemessage
-	applywaitmovement LOCALID_SOOTOPOLIS_GIRL, Common_Movement_FaceOriginalDirection
+	applymovement LOCALID_SOOTOPOLIS_GIRL, Common_Movement_FaceOriginalDirection
+	waitmovement 0
 	releaseall
 	end
 
@@ -1232,11 +1256,13 @@ SootopolisCity_EventScript_GirlRayquaza::
 
 SootopolisCity_EventScript_Maniac::
 	lockall
-	applywaitmovement LOCALID_SOOTOPOLIS_MANIAC, Common_Movement_FacePlayer
+	applymovement LOCALID_SOOTOPOLIS_MANIAC, Common_Movement_FacePlayer
+	waitmovement 0
 	goto_if_eq VAR_SOOTOPOLIS_CITY_STATE, 5, SootopolisCity_EventScript_ManiacRayquaza
 	msgbox SootopolisCity_Text_SeeingLegendWithOwnEyes, MSGBOX_DEFAULT
 	closemessage
-	applywaitmovement LOCALID_SOOTOPOLIS_MANIAC, Common_Movement_FaceOriginalDirection
+	applymovement LOCALID_SOOTOPOLIS_MANIAC, Common_Movement_FaceOriginalDirection
+	waitmovement 0
 	releaseall
 	end
 
@@ -1268,13 +1294,15 @@ SootopolisCity_EventScript_GiveWaterfall::
 	end
 
 SootopolisCity_EventScript_WallaceMoveFromGym::
-	applywaitmovement LOCALID_SOOTOPOLIS_WALLACE, SootopolisCity_Movement_WallaceMoveFromGym
+	applymovement LOCALID_SOOTOPOLIS_WALLACE, SootopolisCity_Movement_WallaceMoveFromGym
+	waitmovement 0
 	copyobjectxytoperm LOCALID_SOOTOPOLIS_WALLACE
 	setvar VAR_SOOTOPOLIS_WALLACE_STATE, 1
 	return
 
 SootopolisCity_EventScript_WallaceMoveFromGymWest::
-	applywaitmovement LOCALID_SOOTOPOLIS_WALLACE, SootopolisCity_Movement_WallaceMoveFromGymWest
+	applymovement LOCALID_SOOTOPOLIS_WALLACE, SootopolisCity_Movement_WallaceMoveFromGymWest
+	waitmovement 0
 	copyobjectxytoperm LOCALID_SOOTOPOLIS_WALLACE
 	setvar VAR_SOOTOPOLIS_WALLACE_STATE, 2
 	return
@@ -1358,9 +1386,7 @@ SootopolisCity_Text_GymSign:
 	.string "of pure water!”$"
 
 SootopolisCity_Text_CitySign:
-	.string "SOOTOPOLIS CITY\p"
-	.string "“The mystical city where history\n"
-	.string "slumbers.”$"
+	.string "SOOTOPOLIS\pAbrigo da resistência e\ncentro de recuperação.$"
 
 SootopolisCity_Text_DoorIsClosed:
 	.string "The door is closed.$"
@@ -1385,10 +1411,7 @@ SootopolisCity_Text_WhatIsThatGreenPokemon:
 	.string "What is that green POKéMON?!$"
 
 SootopolisCity_Text_WhereDidLegendariesGo:
-	.string "GROUDON and KYOGRE…\n"
-	.string "Where did they go?\p"
-	.string "Will they cause droughts or downpours\n"
-	.string "somewhere else?$"
+	.string "Os lendários deixaram a\ncidade. Os técnicos estão\precuperando a água.$"
 
 SootopolisCity_Text_TwoPokemonArentAngry:
 	.string "I just get this sense somehow that\n"
@@ -1461,7 +1484,7 @@ SootopolisCity_Text_SootopolisWillBeWrecked:
 	.string "SOOTOPOLIS CITY will get wrecked!$"
 
 SootopolisCity_Text_SootopolisDidntGetWrecked:
-	.string "SOOTOPOLIS CITY didn't get wrecked!$"
+	.string "As casas resistiram. Agora\nprecisamos cuidar de quem\pperdeu tudo na costa.$"
 
 SootopolisCity_Text_NoOrdinaryTourist:
 	.string "Hm!\n"
@@ -1471,7 +1494,7 @@ SootopolisCity_Text_NoOrdinaryTourist:
 	.string "an extraordinary tourist, either.$"
 
 SootopolisCity_Text_CityRegainedCalm:
-	.string "The city has regained its calm…$"
+	.string "O mar baixou. Os hospitais\nretomaram o atendimento.$"
 
 SootopolisCity_Text_CaveOfOriginPleaseLeave:
 	.string "Who might you be?\p"
@@ -1543,129 +1566,49 @@ SootopolisCity_Text_YouBroughtFlyingMon:
 	.string "Well, aren't you amazing!$"
 
 SootopolisCity_Text_GroudonPleaseStop:
-	.string "MAXIE: G… GROUDON…\n"
-	.string "Please! Stop what you're doing!\p"
-	.string "I know the extent of your power now!\p"
-	.string "If you keep going, all HOENN, not just\n"
-	.string "SOOTOPOLIS, will be utterly ruined!$"
+	.string "ORION: Pare! Não há mais\ncomandos! Você está\pdestruindo a rede!$"
 
 SootopolisCity_Text_AfterAllOurScheming:
-	.string "MAXIE: So the super-ancient POKéMON\n"
-	.string "weren't only GROUDON and KYOGRE…\p"
-	.string "After all our fruitless scheming and\n"
-	.string "frantic efforts, that one POKéMON's\l"
-	.string "simple action puts everything right\l"
-	.string "again as if nothing had happened…\p"
-	.string "Fu…\n"
-	.string "Fuhahaha…$"
+	.string "ORION: Confundi energia com\nobediência. A cidade vai\ppagar pelo que fiz.$"
 
 SootopolisCity_Text_KyogreCalmDown:
-	.string "ARCHIE: KYOGRE! What's wrong?!\n"
-	.string "Look over here! It's the RED ORB!\l"
-	.string "Calm down! KYOGRE!\p"
-	.string "… … … … … …\n"
-	.string "… … … … … …\p"
-	.string "It's no good!\n"
-	.string "It's not responding at all!$"
+	.string "VESPER: Desliguei as\nantenas! Por que a descarga\pcontinua?$"
 
 SootopolisCity_Text_TryingMeaninglessToPokemon:
-	.string "ARCHIE: KYOGRE and GROUDON both\n"
-	.string "flew off to who knows where.\p"
-	.string "The weather in HOENN has returned\n"
-	.string "to its normal state…\p"
-	.string "Haha…\n"
-	.string "Hahaha…\p"
-	.string "Maybe what we were trying to do was\n"
-	.string "something small, even meaningless,\l"
-	.string "to POKéMON…$"
+	.string "VESPER: O núcleo feriu o\nequilíbrio. Eles nem sabem\pquem começou isso...$"
 
 SootopolisCity_Text_InvolvedWithCrisisComeWithMe:
-	.string "STEVEN: Those POKéMON fighting…\n"
-	.string "GROUDON… And KYOGRE…\p"
-	.string "The two super-ancient POKéMON\n"
-	.string "were awakened from a long sleep…\p"
-	.string "And now they are smashing each other\n"
-	.string "with their uncontrollable energy…\p"
-	.string "…{PLAYER}{KUN}.\p"
-	.string "You being here now I'll take to mean\n"
-	.string "that you're prepared to become\l"
-	.string "involved in this crisis.\p"
-	.string "Well, then, there's someone that\n"
-	.string "I'd like you to meet.\p"
-	.string "Come with me, please.$"
+	.string "STEVEN: Temos abrigos nas\ncasas altas, mas a água\pcontinua subindo.\pWallace estuda as fontes\nantigas. Venha comigo.$"
 
 SootopolisCity_Text_DoesThisMakeYourFearPokemon:
-	.string "STEVEN: Listen, {PLAYER}{KUN}.\p"
-	.string "Does seeing GROUDON and KYOGRE make\n"
-	.string "you think POKéMON are to be feared?\p"
-	.string "But that's not true.\n"
-	.string "POKéMON are really more…\p"
-	.string "…Why am I asking you this?\n"
-	.string "You already know.$"
+	.string "STEVEN: Não tema os Pokémon.\nEles respondem à ferida que\pabrimos.\pPrecisamos desfazer o núcleo\ne chamar quem mantém as duas\pfontes em equilíbrio.$"
 
 SootopolisCity_Text_HereWereAreHelpWallace:
-	.string "STEVEN: Okay, here we are!\p"
-	.string "Inside here you'll find someone named\n"
-	.string "WALLACE.\p"
-	.string "I think you have what's needed to\n"
-	.string "help him…$"
+	.string "STEVEN: Wallace está na\ncaverna. Ele conhece\pRayquaza. Conte tudo sobre\nos pulsos.$"
 
 SootopolisCity_Text_KnowWhatsNeededToHelpHim:
-	.string "STEVEN: I think you have what's\n"
-	.string "needed to help him…$"
+	.string "STEVEN: Sem o núcleo, ainda\nresta a descarga dos\plendários. Rayquaza pode\nsepará-los.$"
 
 SootopolisCity_Text_NeverBeenToSkyPillar:
-	.string "STEVEN: The SKY PILLAR…\p"
-	.string "I've never been there.\n"
-	.string "I wonder where it could be?$"
+	.string "WALLACE: Rayquaza repousa no\nSky Pillar, além de\pPacifidlog.\pNão é uma arma da Liga.\nVamos pedir ajuda para\prestaurar o equilíbrio.$"
 
 SootopolisCity_Text_SoThatsRayquaza:
-	.string "STEVEN: So that's RAYQUAZA…\p"
-	.string "It's incredible how the two rampaging\n"
-	.string "POKéMON would flee from it in fear…$"
+	.string "STEVEN: Rayquaza está\ntrazendo as duas fontes de\pvolta ao equilíbrio!$"
 
 SootopolisCity_Text_MaxieArchieLeft:
-	.string "STEVEN: It looks like both MAXIE and\n"
-	.string "ARCHIE have gone away somewhere.\p"
-	.string "Perhaps they've gone to MT. PYRE to\n"
-	.string "return those ORBS…$"
+	.string "STEVEN: Os agentes recuaram.\nOrion retirou as cargas.\pVesper deixou os registros.\pAinda precisamos apagar a\ncópia que Giovanni levou\ppara a central da Liga.$"
 
 SootopolisCity_Text_HaventYouScaledSkyPillar:
-	.string "WALLACE: Oh?\n"
-	.string "{PLAYER}{KUN}?\p"
-	.string "Haven't you scaled the SKY PILLAR\n"
-	.string "yet?\p"
-	.string "I'm sure that you can make it to\n"
-	.string "the top of the SKY PILLAR…$"
+	.string "STEVEN: Precisamos de\nRayquaza. Procure Wallace no\pSky Pillar.$"
 
 SootopolisCity_Text_AquaMagmaDidntMeanHarm:
-	.string "WALLACE: {PLAYER}{KUN}…\p"
-	.string "The leaders of TEAM MAGMA and AQUA,\n"
-	.string "I don't think they meant harm.\p"
-	.string "It wouldn't hurt to hear what they\n"
-	.string "have to say for themselves.$"
+	.string "WALLACE: A Rocket responde\npelo que fez. Salvar uma\pcidade não apaga a extorsão\ndos abrigos.\pA Liga recebeu os\ndepoimentos. Sua tarefa\pfinal é impedir que Giovanni\nrestaure a rede.$"
 
 SootopolisCity_Text_ThankYouForHelpAcceptThis:
-	.string "WALLACE: {PLAYER}{KUN}…\n"
-	.string "My eyes didn't deceive me.\p"
-	.string "Thanks to your help, SOOTOPOLIS…\n"
-	.string "No, all of HOENN was saved.\p"
-	.string "On behalf of the people, I thank you.\p"
-	.string "This is a gift from me.\n"
-	.string "Please accept it.$"
+	.string "WALLACE: Você protegeu a\ncidade. Leve esta técnica\ppara alcançar Ever Grande.$"
 
 SootopolisCity_Text_ExplainWaterfallGoToGym:
-	.string "That HIDDEN MACHINE contains\n"
-	.string "WATERFALL.\p"
-	.string "If you have the RAIN BADGE, a POKéMON\n"
-	.string "that has learned that HM move can\l"
-	.string "force its way up waterfalls.\p"
-	.string "And where does one get the RAIN BADGE?\n"
-	.string "You know, don't you?\p"
-	.string "That's right! You have to beat\n"
-	.string "the SOOTOPOLIS GYM LEADER.\p"
-	.string "When you're all set to go, step through\n"
-	.string "that door.$"
+	.string "WALLACE: Waterfall permite\nsubir quedas após a última\pinsígnia.\pJuan espera no ginásio. O\ndiário mostra a operação que\pfalta.$"
 
 SootopolisCity_Text_DazzledByMentor:
 	.string "WALLACE: I'm sure that you will be\n"

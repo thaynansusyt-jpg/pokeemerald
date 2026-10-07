@@ -1,0 +1,301 @@
+{
+  "chapters": [
+    {
+      "key": "Thermal",
+      "city": "LavaridgeTown",
+      "flag": "FLAG_HE_THERMAL_SAFE",
+      "badge": "FLAG_BADGE03_GET",
+      "gate": "LavaridgeTown_Gym_1F",
+      "gym": "LavaridgeTown_Gym_1F_EventScript_Flannery",
+      "trainer": "TRAINER_HE_THERMAL",
+      "name": "ORION",
+      "mons": [
+        [
+          "Salandit",
+          24
+        ],
+        [
+          "Houndour",
+          25
+        ],
+        [
+          "Magneton",
+          26
+        ]
+      ],
+      "pattern": [
+        1,
+        2,
+        0
+      ],
+      "title": "A cinza e a sede",
+      "arrival": "RÁDIO: A cinza chegou aos reservatórios!|FLANNERY: Os idosos não conseguem sair. O transmissor térmico fica na praça. Não vou abandonar a cidade por uma batalha.",
+      "intro": "ORION: A Liga oferece medalhas. Eu ofereço água limpa. Tudo que quero são os Pokémon da população.|Este meteorito alimenta a antena. Um nome bonito não muda quem segura a torneira.",
+      "after": "ORION fugiu, mas deixou o pulso térmico ativo.|FLANNERY: O hospital precisa da reserva da rede. As famílias precisam de transporte. Qual ajuda vem primeiro?",
+      "done": "O transmissor térmico parou. Equipes locais assumiram os abrigos.|FLANNERY: Não escolhemos quem merece ajuda. Só quem conseguimos alcançar primeiro. Agora posso testar sua equipe."
+    },
+    {
+      "key": "Supply",
+      "city": "PetalburgCity",
+      "flag": "FLAG_HE_SUPPLY_SAFE",
+      "badge": "FLAG_BADGE04_GET",
+      "gate": "PetalburgCity_Gym",
+      "gym": "PetalburgCity_Gym_EventScript_NormanBattle",
+      "trainer": "TRAINER_HE_SUPPLY",
+      "name": "ROCKET",
+      "mons": [
+        [
+          "Golbat",
+          29
+        ],
+        [
+          "Watchog",
+          29
+        ],
+        [
+          "Pawniard",
+          30
+        ]
+      ],
+      "pattern": [
+        2,
+        0,
+        1
+      ],
+      "title": "O preço do abrigo",
+      "arrival": "NORMAN: Pessoas chegaram de Lavaridge. O armazém de alimentos virou uma prisão.|A Rocket registrou famílias como dívidas. Temem perder o abrigo se recusarem entregar seus Pokémon.",
+      "intro": "ROCKET: Esses contratos são legais. Quer rasgar todos? Então vai ter que responder pela distribuição de comida.",
+      "after": "Você recuperou a lista dos reféns.|NORMAN: O comboio pode levar remédios ou remover as famílias ameaçadas. Vou organizar a segunda viagem. Escolha a primeira.",
+      "done": "Os contratos foram destruídos e o armazém foi reaberto.|NORMAN: Ser responsável não é obedecer ao mais forte. É responder por quem depende de você. Tenho orgulho de ver isso na sua jornada."
+    },
+    {
+      "key": "Forest",
+      "city": "FortreeCity",
+      "flag": "FLAG_HE_FOREST_SAFE",
+      "badge": "FLAG_BADGE05_GET",
+      "gate": "FortreeCity_Gym",
+      "gym": "FortreeCity_Gym_EventScript_Winona",
+      "trainer": "TRAINER_HE_FOREST",
+      "name": "VESPER",
+      "mons": [
+        [
+          "Murkrow",
+          33
+        ],
+        [
+          "Ariados",
+          33
+        ],
+        [
+          "Salazzle",
+          34
+        ]
+      ],
+      "pattern": [
+        0,
+        2,
+        1
+      ],
+      "title": "A floresta sem canto",
+      "arrival": "WINONA: Não é uma tempestade. Os pássaros fogem dos pulsos do Instituto.|Um técnico desertou da Rocket e trouxe as frequências. Temos uma chance de libertar a rota de migração.",
+      "intro": "VESPER: Você corta antenas, eu compro silêncio. Amanhã eles vão agradecer pela ordem.|Não posso permitir que esse técnico fale. Minha operação depende de parecer um resgate.",
+      "after": "O depoimento foi transmitido. Os abrigos descobriram a extorsão.|WINONA: Há Pokémon presos nos galhos e energia para o Instituto. Precisamos das duas coisas, mas o primeiro envio é seu.",
+      "done": "Os pulsos cessaram. A floresta volta a receber bandos de várias regiões.|WINONA: Vamos levar o depoimento a Mossdeep. O sistema orbital é a última peça da Rocket."
+    },
+    {
+      "key": "Orbit",
+      "city": "MossdeepCity",
+      "flag": "FLAG_HE_ORBIT_SAFE",
+      "badge": "FLAG_BADGE06_GET",
+      "gate": "MossdeepCity_Gym",
+      "gym": "MossdeepCity_Gym_EventScript_TateAndLiza",
+      "trainer": "TRAINER_HE_ORBIT",
+      "name": "ORION",
+      "mons": [
+        [
+          "Magneton",
+          39
+        ],
+        [
+          "Malamar",
+          39
+        ],
+        [
+          "Houndoom",
+          40
+        ]
+      ],
+      "pattern": [
+        2,
+        1,
+        0
+      ],
+      "title": "A órbita da mentira",
+      "arrival": "STEVEN: Roubaram os códigos de emergência do centro espacial.|A Rocket pretende enviar um comando para toda a rede Devon. Um único pulso pode desligar a região inteira.",
+      "intro": "ORION: Depois do lançamento, nenhum abrigo recebe energia sem minha autorização.|A crise nos deu soldados. Seu diário não vai deter um satélite.",
+      "after": "Os códigos de lançamento foram copiados para a Liga.|STEVEN: O telescópio também detectou uma perturbação sob o mar. Podemos enviar ajuda às ilhas ou estabilizar as comunicações primeiro.",
+      "done": "O sinal orbital foi isolado. O centro espacial consegue avisar as ilhas.|STEVEN: Vesper levou o último núcleo ao fundo do mar. Se despertar as fontes antigas, nenhuma antena conseguirá conter o desastre."
+    },
+    {
+      "key": "Ocean",
+      "city": "SootopolisCity",
+      "flag": "FLAG_HE_OCEAN_SAFE",
+      "badge": "FLAG_BADGE07_GET",
+      "gate": "SootopolisCity_Gym_1F",
+      "gym": "SootopolisCity_Gym_1F_EventScript_Juan",
+      "trainer": "TRAINER_HE_OCEAN",
+      "name": "VESPER",
+      "mons": [
+        [
+          "Crobat",
+          45
+        ],
+        [
+          "Sharpedo",
+          45
+        ],
+        [
+          "Salazzle",
+          46
+        ],
+        [
+          "Malamar",
+          46
+        ]
+      ],
+      "pattern": [
+        1,
+        0,
+        2
+      ],
+      "title": "O mar não obedece",
+      "arrival": "WALLACE: A cidade virou abrigo para quem perdeu a costa.|Vesper não domina o mar. Ela só retirou os freios. Precisamos de Rayquaza e do desligamento do núcleo; uma batalha sozinha não resolve.",
+      "intro": "VESPER: Eu queria uma região dependente, não uma região morta.|Orion enviou energia além do limite. Se entregar o núcleo, Giovanni vai me abandonar aqui. Não me peça para confiar na Liga agora.",
+      "after": "VESPER: O núcleo aceita uma sequência de três pulsos. Use o decodificador.|WALLACE: A evacuação segue pelo lago. Nossos técnicos recuperam a rede. Defina a prioridade do último comboio.",
+      "done": "O núcleo oceânico foi desligado. A recuperação ainda depende de acalmar os lendários.|VESPER: Giovanni já tem a cópia dos códigos. Ele espera na central da Liga. Leve meus registros. Não deixem que ele recomece."
+    }
+  ],
+  "placements": {
+    "HE_Thermal": {
+      "map": "LavaridgeTown",
+      "x": 7,
+      "y": 7
+    },
+    "HE_CampaignLiaison": {
+      "map": "EverGrandeCity",
+      "x": 20,
+      "y": 54
+    },
+    "HE_Supply": {
+      "map": "PetalburgCity",
+      "x": 15,
+      "y": 18
+    },
+    "HE_Forest": {
+      "map": "FortreeCity",
+      "x": 31,
+      "y": 16
+    },
+    "HE_Orbit": {
+      "map": "MossdeepCity",
+      "x": 18,
+      "y": 25
+    },
+    "HE_Ocean": {
+      "map": "SootopolisCity",
+      "x": 31,
+      "y": 17
+    },
+    "HE_FinalCentral": {
+      "map": "EverGrandeCity",
+      "x": 19,
+      "y": 54
+    }
+  },
+  "goals": [
+    [
+      "FLAG_SYS_POKEDEX_GET",
+      "Obtenha seu inicial e encontre o rival na Rota 103. Depois, volte ao laboratório de Birch."
+    ],
+    [
+      "FLAG_HE_ECLIPSE_PROOF",
+      "Encontre o pesquisador na floresta de Petalburg. A Rocket procura os documentos Devon."
+    ],
+    [
+      "FLAG_BADGE01_GET",
+      "Leve as provas a Rustboro e enfrente Roxanne."
+    ],
+    [
+      "FLAG_HE_SIGNAL_RUSTBORO",
+      "Receba o decodificador do pesquisador em Rustboro. Desligue o primeiro transmissor."
+    ],
+    [
+      "FLAG_HE_SIGNAL_DEWFORD",
+      "Viaje com Briney para Dewford e desative o sinal na entrada da Granite Cave."
+    ],
+    [
+      "FLAG_BADGE02_GET",
+      "A ilha foi protegida. Enfrente Brawly."
+    ],
+    [
+      "FLAG_HE_HARBOR_SAFE",
+      "Proteja Stern no segundo andar do museu de Slateport."
+    ],
+    [
+      "FLAG_HE_SIGNAL_MAUVILLE",
+      "Stern entregou a chave. Desative o transmissor de Mauville."
+    ],
+    [
+      "FLAG_BADGE03_GET",
+      "A rede de Mauville está segura. Enfrente Wattson."
+    ],
+    [
+      "FLAG_HE_THERMAL_SAFE",
+      "A cinza e a sede: encontre a caixa vermelha e o policial em Lavaridge."
+    ],
+    [
+      "FLAG_BADGE04_GET",
+      "A cidade está protegida. Enfrente o líder de Lavaridge."
+    ],
+    [
+      "FLAG_HE_SUPPLY_SAFE",
+      "O preço do abrigo: encontre a caixa vermelha e o policial em Petalburg."
+    ],
+    [
+      "FLAG_BADGE05_GET",
+      "A cidade está protegida. Enfrente o líder de Petalburg."
+    ],
+    [
+      "FLAG_HE_FOREST_SAFE",
+      "A floresta sem canto: encontre a caixa vermelha e o policial em Fortree."
+    ],
+    [
+      "FLAG_BADGE06_GET",
+      "A cidade está protegida. Enfrente o líder de Fortree."
+    ],
+    [
+      "FLAG_HE_ORBIT_SAFE",
+      "A órbita da mentira: encontre a caixa vermelha e o policial em Mossdeep."
+    ],
+    [
+      "FLAG_BADGE07_GET",
+      "A cidade está protegida. Enfrente o líder de Mossdeep."
+    ],
+    [
+      "FLAG_HE_OCEAN_SAFE",
+      "O mar não obedece: encontre a caixa vermelha e o policial em Sootopolis."
+    ],
+    [
+      "FLAG_BADGE08_GET",
+      "A cidade está protegida. Enfrente o líder de Sootopolis."
+    ],
+    [
+      "FLAG_HE_FINAL_ROCKET",
+      "As oito insígnias abrem a última operação. Procure a caixa vermelha em Ever Grande e enfrente Giovanni."
+    ],
+    [
+      "FLAG_HE_CAMPAIGN_COMPLETE",
+      "A Rocket perdeu a rede. Atravesse Victory Road e conquiste a Liga Pokémon."
+    ]
+  ]
+}

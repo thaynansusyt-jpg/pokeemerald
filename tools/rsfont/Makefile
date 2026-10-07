@@ -3,7 +3,7 @@ CC ?= gcc
 CFLAGS = -Wall -Wextra -Werror -std=c11 -O2 -DPNG_SKIP_SETJMP_CHECK
 CFLAGS += $(shell pkg-config --cflags libpng)
 
-LIBS = -lpng -lz -lm
+LIBS = -lpng -lm -lz
 LDFLAGS += $(shell pkg-config --libs-only-L libpng)
 
 SRCS = main.c convert_png.c util.c font.c

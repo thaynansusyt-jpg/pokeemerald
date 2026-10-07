@@ -186,15 +186,21 @@ static const u8 sEn89[] = _("WALLY used\n{B_LAST_ITEM}!");
 static const u8 sBr89[] = _("WALLY usou\n{B_LAST_ITEM}!");
 static const u8 sEn90[] = _("But it had no effect!");
 static const u8 sBr90[] = _("Mas não teve efeito!");
-static const u8 sEn91[] = _("What will\n{B_ACTIVE_NAME_WITH_PREFIX} do?");
-static const u8 sBr91[] = _("O que {B_ACTIVE_NAME_WITH_PREFIX}\nvai fazer?");
+static const u8 sEn91[] = _("What will\n{B_SCR_NAME_WITH_PREFIX} do?");
+static const u8 sBr91[] = _("O que {B_SCR_NAME_WITH_PREFIX}\nvai fazer?");
 static const u8 sEn92[] = _("What will\n{B_PLAYER_NAME} do?");
 static const u8 sBr92[] = _("O que {B_PLAYER_NAME}\nvai fazer?");
 static const u8 sEn93[] = _("What will\nWALLY do?");
 static const u8 sBr93[] = _("O que WALLY\nvai fazer?");
 static const u8 sEn94[] = _("FIGHT{CLEAR_TO 56}BAG\nPOKéMON{CLEAR_TO 56}RUN");
 static const u8 sBr94[] = _("LUTAR{CLEAR_TO 56}BOLSA\nPOKéMON{CLEAR_TO 56}FUGIR");
+static const u8 sEn95[] = _("Do you choose this POKéMON?");
+static const u8 sBr95[] = _("Escolher este Pokémon?");
+static const u8 sEn96[] = _("PROF. BIRCH is in trouble!\nRelease a POKéMON and rescue him!");
+static const u8 sBr96[] = _("Birch está em perigo!\nEscolha um Pokémon para ajudá-lo!");
 static const struct HeTranslation sTranslations[] = {
+    {sEn95, sBr95},
+    {sEn96, sBr96},
     {sLanguageEn, sLanguageBr},
     {sEn91, sBr91},
     {sEn92, sBr92},

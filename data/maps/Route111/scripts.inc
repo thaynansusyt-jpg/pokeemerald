@@ -101,7 +101,7 @@ Route111_EventScript_HidePlayerForMirageTower::
 	end
 
 Route111_OnFrame:
-	map_script_2 VAR_HE_DEMO_BOUNDARY, 0, HE_Route111_Boundary
+
 	map_script_2 VAR_MIRAGE_TOWER_STATE, 1, Route111_EventScript_MirageTowerDisappear
 	.2byte 0
 
@@ -696,13 +696,3 @@ Route111_Text_TrainerHillSign:
 	.string "“Scale the heights, you hot-blooded\n"
 	.string "TRAINERS!”$"
 
-HE_Route111_Boundary::
-	lockall
-	msgbox HE_Text_Route111Closed, MSGBOX_DEFAULT
-	closemessage
-	warp MAP_MAUVILLE_CITY, 255, 20, 16
-	waitstate
-	releaseall
-	end
-HE_Text_Route111Closed:
-	.string "AVISO DA RESISTÊNCIA\pEstrada interditada. O\ncapítulo atual termina\pdepois de Wattson.\pRetorne a Mauville. As\npróximas áreas virão na\pcontinuação.$"

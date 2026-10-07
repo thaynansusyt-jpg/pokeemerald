@@ -1,4 +1,5 @@
 FortreeCity_MapScripts::
+	map_script MAP_SCRIPT_ON_FRAME_TABLE, HE_FrameForest
 	map_script MAP_SCRIPT_ON_TRANSITION, FortreeCity_OnTransition
 	map_script MAP_SCRIPT_ON_RESUME, FortreeCity_OnResume
 	.byte 0
@@ -70,12 +71,14 @@ FortreeCity_EventScript_AskUseDevonScope::
 FortreeCity_EventScript_UseDevonScope::
 	msgbox FortreeCity_Text_UsedDevonScopePokemonFled, MSGBOX_DEFAULT
 	closemessage
-	applywaitmovement VAR_LAST_TALKED, Movement_KecleonAppears
+	applymovement VAR_LAST_TALKED, Movement_KecleonAppears
+	waitmovement 0
 	waitse
 	playmoncry SPECIES_KECLEON, CRY_MODE_ENCOUNTER
 	delay 40
 	waitmoncry
-	applywaitmovement VAR_LAST_TALKED, FortreeCity_Movement_KecleonFlee
+	applymovement VAR_LAST_TALKED, FortreeCity_Movement_KecleonFlee
+	waitmovement 0
 	removeobject VAR_LAST_TALKED
 	setflag FLAG_KECLEON_FLED_FORTREE
 	release
@@ -152,3 +155,7 @@ FortreeCity_Text_GymSign:
 	.string "“The bird user taking flight into\n"
 	.string "the world.”$"
 
+
+HE_FrameForest:
+	map_script_2 VAR_HE_SCENE, 2, HE_ArrivalForest
+	.2byte 0
