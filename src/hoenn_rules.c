@@ -19,10 +19,10 @@ static MainCallback sReturnMain, sReturnVBlank;
 static u8 sWindow, sRow;
 // These survive the Birch speech; only NewGameInitData commits them to the save.
 static EWRAM_DATA u8 sChoices[6] = {0};
-static const u8 sCounts[6] = {3, 3, 2, 2, 3, 2};
+static const u8 sCounts[6] = {3, 3, 2, 2, 2, 2};
 static const u8 sTitle[] = _("REGRAS DA JORNADA");
 static const u8 sStart[] = _("Comecar aventura");
-static const u8 sHelp[] = _("Cima/baixo: escolher  Esquerda/direita: mudar");
+static const u8 sHelp[] = _("Cima/baixo: linha  Esq/dir: opcao");
 static const u8 *const sLabels[6] = {
     COMPOUND_STRING("Dificuldade"), COMPOUND_STRING("Limite de nivel"), COMPOUND_STRING("Anti-grinding"),
     COMPOUND_STRING("EXP para equipe"), COMPOUND_STRING("Uso da mochila"), COMPOUND_STRING("Estilo de batalha")
@@ -32,7 +32,7 @@ static const u8 *const sValues[6][3] = {
     {COMPOUND_STRING("Livre"), COMPOUND_STRING("Rigido"), COMPOUND_STRING("Suave")},
     {COMPOUND_STRING("Desligado"), COMPOUND_STRING("Ligado"), NULL},
     {COMPOUND_STRING("Desligado"), COMPOUND_STRING("Ligado"), NULL},
-    {COMPOUND_STRING("Livre"), COMPOUND_STRING("Sem treinador"), COMPOUND_STRING("Sem batalhas")},
+    {COMPOUND_STRING("Livre"), COMPOUND_STRING("So selvagens"), NULL},
     {COMPOUND_STRING("Trocar"), COMPOUND_STRING("Manter"), NULL}
 };
 static const u8 *const sHints[6] = {

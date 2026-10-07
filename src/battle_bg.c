@@ -920,7 +920,24 @@ static u8 GetBattleEnvironmentOverride(void)
     }
 
     if (battleScene == MAP_BATTLE_SCENE_NORMAL)
+    {
+        // Trainers usually stand on paths, whose default environment is PLAIN.
+        // Choose scenery from the map as well, rather than requiring tall grass.
+        if (gBattleEnvironment == BATTLE_ENVIRONMENT_PLAIN)
+        {
+            if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(MAP_SKY_PILLAR_TOP)
+             && gSaveBlock1Ptr->location.mapNum == MAP_NUM(MAP_SKY_PILLAR_TOP))
+                return BATTLE_ENVIRONMENT_MOUNTAIN;
+            if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(MAP_PETALBURG_WOODS)
+             && gSaveBlock1Ptr->location.mapNum == MAP_NUM(MAP_PETALBURG_WOODS))
+                return BATTLE_ENVIRONMENT_LONG_GRASS;
+            if (gMapHeader.mapType == MAP_TYPE_ROUTE)
+                return BATTLE_ENVIRONMENT_GRASS;
+            if (gMapHeader.mapType == MAP_TYPE_OCEAN_ROUTE)
+                return BATTLE_ENVIRONMENT_WATER;
+        }
         return gBattleEnvironment;
+    }
 
     return GetBattleEnvironmentByMapScene(battleScene);
 }
@@ -993,6 +1010,15 @@ static const u16 sHeGymMap[] = INCBIN_U16("graphics/hoenn_expansion/battle_gym_m
 
 void DrawMainBattleBackground(void)
 {
+    if (!(gBattleTypeFlags & (BATTLE_TYPE_LINK | BATTLE_TYPE_FRONTIER | BATTLE_TYPE_RECORDED_LINK))
+        && gBattleEnvironment == BATTLE_ENVIRONMENT_PLAIN
+        && (gMapHeader.mapType == MAP_TYPE_CITY || gMapHeader.mapType == MAP_TYPE_TOWN))
+    {
+        CpuCopy16(sHeBattleTiles, (void *)BG_CHAR_ADDR(2), sizeof(sHeBattleTiles));
+        CpuCopy16(sHeBattleMap, (void *)BG_SCREEN_ADDR(26), sizeof(sHeBattleMap));
+        LoadPalette(sHeBattlePalette, BG_PLTT_ID(2), sizeof(sHeBattlePalette));
+        return;
+    }
     if (!(gBattleTypeFlags & (BATTLE_TYPE_LINK | BATTLE_TYPE_FRONTIER | BATTLE_TYPE_RECORDED_LINK))
         && gBattleEnvironment == BATTLE_ENVIRONMENT_BUILDING)
     {
@@ -1359,7 +1385,8 @@ bool8 LoadChosenBattleElement(u8 caseId)
         DecompressDataWithHeaderVram(gBattleEnvironmentInfo[GetBattleEnvironmentOverride()].background.tilemap, (void *)(BG_SCREEN_ADDR(26)));
         break;
     case 5:
-        LoadPalette(gBattleEnvironmentInfo[GetBattleEnvironmentOverride()].palette, BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
+        // Restore the complete themed background after staged graphics loads.
+        DrawMainBattleBackground();
         break;
     case 6:
         LoadBattleMenuWindowGfx();

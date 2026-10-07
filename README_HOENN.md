@@ -4,7 +4,7 @@ Projeto de Senhor Laranja. Esta versão reconstrói a expansão sobre pokeemeral
 
 ## Novidades da 0.7
 
-- Antes do prólogo, configure dificuldade (Fácil/Normal/Difícil), limite (livre/rígido/suave), anti-grinding, EXP da equipe, mochila e estilo de batalha. As escolhas são gravadas ao iniciar o save. Fácil reduz os níveis em dois e os IVs; Difícil aumenta dois níveis e os IVs. Os times de Brendan/May têm parceiros de outras gerações.
+- Antes do prólogo, configure dificuldade (Fácil/Normal/Difícil), limite (livre/rígido/suave), anti-grinding, EXP da equipe, mochila nas batalhas de treinador e estilo de batalha. As escolhas são gravadas ao iniciar o save. Fácil reduz os níveis em dois e os IVs; Difícil aumenta dois níveis e os IVs. Os times de Brendan/May têm parceiros de outras gerações.
 - O limite por insígnia acompanha o perfil de dificuldade. Rígido bloqueia EXP e Rare Candy no limite; suave reduz EXP acima dele. Anti-grinding aumenta EXP abaixo do limite e libera um coach nos Centros Pokémon, que fornece dez Rare Candies quando você tem menos de dez. Os doces não têm valor de revenda. EXP da equipe usa o sistema nativo da expansão.
 - Sprites ORAS de frente e costas completos para Brendan/May, com paletas separadas; agentes Rocket usam a arte oficial de FireRed/LeafGreen. Policial de Littleroot reposicionado em terreno livre.
 - Cenários CFRU para grama, mata, areia, rocha, cavernas, água, interiores e ginásios, nas batalhas selvagens e contra treinadores. Link/Frontier preservam seus fundos próprios.
