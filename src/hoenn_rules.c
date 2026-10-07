@@ -19,6 +19,7 @@ static MainCallback sReturnMain, sReturnVBlank;
 static u8 sWindow, sRow;
 // These survive the Birch speech; only NewGameInitData commits them to the save.
 static EWRAM_DATA u8 sChoices[6] = {0};
+static EWRAM_DATA u8 sNewGameLanguage = 0;
 static const u8 sCounts[6] = {3, 3, 2, 2, 2, 2};
 static const u8 sTitle[] = _("REGRAS DA JORNADA");
 static const u8 sStart[] = _("Comecar aventura");
@@ -84,6 +85,7 @@ void HeStartNewGameConfig(MainCallback main, MainCallback vblank)
     static const struct WindowTemplate window = {0, 1, 0, 28, 19, 15, 0x100};
     static const u16 palette[16] = {RGB(2, 4, 8), RGB(29, 30, 31), RGB(7, 9, 13), RGB(31, 23, 5)};
     u32 i;
+    sNewGameLanguage = gSaveBlock2Ptr->optionsLanguage;
     sReturnMain = main; sReturnVBlank = vblank; sRow = 0;
     sChoices[0] = 1; sChoices[1] = 0; sChoices[2] = 1; sChoices[3] = 0; sChoices[4] = 0; sChoices[5] = 0;
     for (i = 0; i < 8; i++) ClearWindowTilemap(i);
@@ -99,6 +101,7 @@ void HeStartNewGameConfig(MainCallback main, MainCallback vblank)
 }
 void HeApplyNewGameRules(void)
 {
+    gSaveBlock2Ptr->optionsLanguage = sNewGameLanguage;
     VarSet(VAR_HE_DIFFICULTY, sChoices[0]);
     VarSet(VAR_HE_LEVEL_CAP, sChoices[1]);
     VarSet(VAR_HE_BAG_RULES, sChoices[4]);

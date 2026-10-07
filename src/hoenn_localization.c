@@ -4,6 +4,8 @@
 static const u8 sLanguageEn[] = _("LANGUAGE");
 static const u8 sLanguageBr[] = _("IDIOMA");
 struct HeTranslation { const u8 *en; const u8 *br; };
+#include "data/hoenn_story_localization.h"
+#include "data/hoenn_ui_localization.h"
 static const u8 sEn0[] = _("NEW GAME");
 static const u8 sBr0[] = _("NOVO JOGO");
 static const u8 sEn1[] = _("CONTINUE");
@@ -303,8 +305,20 @@ static const struct HeTranslation sTranslations[] = {
 const u8 *HeLocalize(const u8 *text)
 {
     u32 i;
-    if (text == NULL || gSaveBlock2Ptr == NULL || !gSaveBlock2Ptr->optionsLanguage)
+    if (text == NULL || gSaveBlock2Ptr == NULL)
         return text;
+    if (!gSaveBlock2Ptr->optionsLanguage)
+    {
+        // Story pointers are resolved before placeholders are expanded.
+        for (i = 0; i < ARRAY_COUNT(sStoryTranslations); i++)
+            if (text == sStoryTranslations[i].br)
+                return sStoryTranslations[i].en;
+        for (i = 0; i < ARRAY_COUNT(sStoryUiTranslations); i++)
+            if (text[0] == sStoryUiTranslations[i].br[0]
+             && StringCompare(text, sStoryUiTranslations[i].br) == 0)
+                return sStoryUiTranslations[i].en;
+        return text;
+    }
     for (i = 0; i < ARRAY_COUNT(sTranslations); i++)
         if (text[0] == sTranslations[i].en[0] && StringCompare(text, sTranslations[i].en) == 0)
             return sTranslations[i].br;

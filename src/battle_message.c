@@ -1,4 +1,5 @@
 #include "global.h"
+#include "hoenn_expansion.h"
 #include "battle.h"
 #include "battle_anim.h"
 #include "battle_ai_record.h"
@@ -3083,6 +3084,7 @@ u32 BattleStringExpandPlaceholders(const u8 *src, u8 *dst, u32 dstSize)
     u8 multiplayerId;
     u8 fontId = FONT_NORMAL;
 
+    src = HeLocalize(src);
     if (gBattleTypeFlags & BATTLE_TYPE_RECORDED_LINK)
         multiplayerId = gRecordedBattleMultiplayerId;
     else

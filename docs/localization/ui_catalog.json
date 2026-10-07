@@ -1,0 +1,226 @@
+[
+  {
+    "pt": "REGRAS DA JORNADA",
+    "en": "JOURNEY RULES"
+  },
+  {
+    "pt": "Comecar aventura",
+    "en": "Start adventure"
+  },
+  {
+    "pt": "Cima/baixo: linha  Esq/dir: opcao",
+    "en": "Up/down: row  Left/right: option"
+  },
+  {
+    "pt": "Dificuldade",
+    "en": "Difficulty"
+  },
+  {
+    "pt": "Limite de nivel",
+    "en": "Level cap"
+  },
+  {
+    "pt": "Anti-grinding",
+    "en": "Anti-grinding"
+  },
+  {
+    "pt": "EXP para equipe",
+    "en": "Team EXP"
+  },
+  {
+    "pt": "Uso da mochila",
+    "en": "Bag use"
+  },
+  {
+    "pt": "Estilo de batalha",
+    "en": "Battle style"
+  },
+  {
+    "pt": "Facil",
+    "en": "Easy"
+  },
+  {
+    "pt": "Normal",
+    "en": "Normal"
+  },
+  {
+    "pt": "Dificil",
+    "en": "Hard"
+  },
+  {
+    "pt": "Livre",
+    "en": "Free"
+  },
+  {
+    "pt": "Rigido",
+    "en": "Hard cap"
+  },
+  {
+    "pt": "Suave",
+    "en": "Soft cap"
+  },
+  {
+    "pt": "Desligado",
+    "en": "Off"
+  },
+  {
+    "pt": "Ligado",
+    "en": "On"
+  },
+  {
+    "pt": "So selvagens",
+    "en": "Wild only"
+  },
+  {
+    "pt": "Trocar",
+    "en": "Shift"
+  },
+  {
+    "pt": "Manter",
+    "en": "Set"
+  },
+  {
+    "pt": "Muda niveis e IVs dos treinadores.",
+    "en": "Changes trainer levels and IVs."
+  },
+  {
+    "pt": "Rigido bloqueia EXP e doces no limite.",
+    "en": "Hard cap stops EXP and candies."
+  },
+  {
+    "pt": "EXP extra com limite. Coach da doces.",
+    "en": "Bonus EXP below cap. Coach gives candy."
+  },
+  {
+    "pt": "Todos os membros recebem experiencia.",
+    "en": "All team members gain experience."
+  },
+  {
+    "pt": "Bloqueia itens da mochila em combate.",
+    "en": "Restricts Bag items in trainer fights."
+  },
+  {
+    "pt": "Manter impede troca gratuita apos KO.",
+    "en": "Set removes the free switch after a KO."
+  },
+  {
+    "pt": "MISSAO",
+    "en": "MISSION"
+  },
+  {
+    "pt": "Sair",
+    "en": "Exit"
+  },
+  {
+    "pt": "Resgate",
+    "en": "Rescue"
+  },
+  {
+    "pt": "Energia",
+    "en": "Power"
+  },
+  {
+    "pt": "Depois",
+    "en": "Later"
+  },
+  {
+    "pt": "Aceitar alvo",
+    "en": "Accept target"
+  },
+  {
+    "pt": "Proximo alvo",
+    "en": "Next target"
+  },
+  {
+    "pt": "Missao ativa",
+    "en": "Active mission"
+  },
+  {
+    "pt": "Outra geracao",
+    "en": "Other generation"
+  },
+  {
+    "pt": "Alola e Ultra",
+    "en": "Alola and Ultra"
+  },
+  {
+    "pt": "RUSTBORO - 02:17",
+    "en": "RUSTBORO - 02:17"
+  },
+  {
+    "pt": "A REDE DEVON FOI INVADIDA.",
+    "en": "THE DEVON GRID WAS BREACHED."
+  },
+  {
+    "pt": "HOSPITAIS PERDERAM ENERGIA.",
+    "en": "HOSPITALS LOST POWER."
+  },
+  {
+    "pt": "OS PEDIDOS DE SOCORRO CESSARAM.",
+    "en": "THE CALLS FOR HELP WENT SILENT."
+  },
+  {
+    "pt": "OPERAÇAO ECLIPSE",
+    "en": "OPERATION ECLIPSE"
+  },
+  {
+    "pt": "VESPER: NAO ATAQUEM A LIGA.",
+    "en": "VESPER: DO NOT ATTACK THE LEAGUE."
+  },
+  {
+    "pt": "CONTROLEM ÁGUA, LUZ E RÁDIO.",
+    "en": "CONTROL WATER, POWER AND RADIO."
+  },
+  {
+    "pt": "A FOME VAI LUTAR POR NÓS.",
+    "en": "HUNGER WILL FIGHT FOR US."
+  },
+  {
+    "pt": "SLATEPORT - 06:40",
+    "en": "SLATEPORT - 06:40"
+  },
+  {
+    "pt": "NAVIOS DE AJUDA FORAM TOMADOS.",
+    "en": "RELIEF SHIPS HAVE BEEN SEIZED."
+  },
+  {
+    "pt": "A ROCKET OFERECE PROTEÇAO...",
+    "en": "ROCKET OFFERS PROTECTION..."
+  },
+  {
+    "pt": "EM TROCA DOS POKÉMON LOCAIS.",
+    "en": "IN EXCHANGE FOR LOCAL POKÉMON."
+  },
+  {
+    "pt": "LITTLEROOT - DIA SEGUINTE",
+    "en": "LITTLEROOT - THE NEXT DAY"
+  },
+  {
+    "pt": "BIRCH: A MIGRAÇAO NAO É NATURAL.",
+    "en": "BIRCH: THIS MIGRATION IS NOT NATURAL."
+  },
+  {
+    "pt": "ALGO EXPULSA OS POKÉMON.",
+    "en": "SOMETHING IS DRIVING POKÉMON AWAY."
+  },
+  {
+    "pt": "PRECISO DE PROVAS, NAO RUMORES.",
+    "en": "I NEED EVIDENCE, NOT RUMORS."
+  },
+  {
+    "pt": "POKÉMON HOENN EXPANSION",
+    "en": "POKÉMON HOENN EXPANSION"
+  },
+  {
+    "pt": "SEU CAMINHAO CRUZA A FRONTEIRA.",
+    "en": "YOUR TRUCK CROSSES THE BORDER."
+  },
+  {
+    "pt": "UMA VIAGEM COMEÇA.",
+    "en": "A JOURNEY BEGINS."
+  },
+  {
+    "pt": "UMA REGIAO PRECISA RESPIRAR.",
+    "en": "A REGION NEEDS TO BREATHE."
+  }
+]

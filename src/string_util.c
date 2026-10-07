@@ -1,4 +1,5 @@
 #include "global.h"
+#include "hoenn_expansion.h"
 #include "string_util.h"
 #include "text.h"
 #include "strings.h"
@@ -345,6 +346,7 @@ u8 *ConvertIntToHexStringN(u8 *dest, s32 value, enum StringConvertMode mode, u8 
 
 u8 *StringExpandPlaceholders(u8 *dest, const u8 *src)
 {
+    src = HeLocalize(src);
     for (;;)
     {
         u8 c = *src++;

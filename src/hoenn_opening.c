@@ -1,4 +1,5 @@
 #include "global.h"
+#include "hoenn_expansion.h"
 #include "text.h"
 #include "main.h"
 #include "gpu_regs.h"
@@ -63,6 +64,7 @@ static void Rect(int x, int y, int w, int h, u8 color)
 static void Text(const u8 *str, int x, int y, u8 color)
 {
     int i, j;
+    str = HeLocalize(str);
     while (*str != EOS)
     {
         const u8 *glyph = sFont + *str++ * 128;

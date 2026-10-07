@@ -1743,3 +1743,5 @@ EventScript_PalletTown_PlayersHouse_2F_TurnOnPC::
 	.include "data/scripts/hoenn_campaign.inc"
 
 	.include "data/scripts/hoenn_postgame.inc"
+
+	.include "data/text/hoenn_story_en.inc"
