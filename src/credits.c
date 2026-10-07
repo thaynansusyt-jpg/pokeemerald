@@ -445,7 +445,7 @@ void CB2_StartCreditsSequence(void)
     BeginNormalPaletteFade(PALETTES_ALL, 0, 16, 0, RGB_BLACK);
     EnableInterrupts(INTR_FLAG_VBLANK);
     SetVBlankCallback(VBlankCB_Credits);
-    m4aSongNumStart(MUS_CREDITS);
+    PlayBGM(MUS_CREDITS);
     SetMainCallback2(CB2_Credits);
     sUsedSpeedUp = FALSE;
     sCreditsData = AllocZeroed(sizeof(struct CreditsData));
@@ -683,7 +683,7 @@ static void Task_CreditsTheEnd6(u8 taskId)
             FadeOutBGM(8);
 
         if (gTasks[taskId].tDelay == 6840)
-            m4aSongNumStart(MUS_END);
+            PlayBGM(MUS_END);
 
         gTasks[taskId].tDelay--;
     }

@@ -30,6 +30,7 @@ extern struct ToneData gCryTable_Reverse[];
 
 static void Task_Fanfare(u8 taskId);
 static void CreateFanfareTask(void);
+static u16 HeRemapBGM(u16 songNum);
 static void Task_DuckBGMForPokemonCry(u8 taskId);
 static void RestoreBGMVolumeAfterPokemonCry(void);
 
@@ -261,6 +262,7 @@ void FadeInNewBGM(u16 songNum, u8 speed)
         songNum = 0;
     if (songNum == MUS_NONE)
         songNum = 0;
+    songNum = HeRemapBGM(songNum);
     m4aSongNumStart(songNum);
     m4aMPlayImmInit(&gMPlayInfo_BGM);
     m4aMPlayVolumeControl(&gMPlayInfo_BGM, TRACKS_ALL, 0);
@@ -560,12 +562,137 @@ static void RestoreBGMVolumeAfterPokemonCry(void)
         CreateTask(Task_DuckBGMForPokemonCry, 80);
 }
 
+static u16 HeRemapBGM(u16 songNum)
+{
+    switch (songNum)
+    {
+    case MUS_ABANDONED_SHIP: return MUS_RG_SS_ANNE;
+    case MUS_ABNORMAL_WEATHER: return MUS_RG_VS_LEGEND;
+    case MUS_AQUA_MAGMA_HIDEOUT: return MUS_RG_ROCKET_HIDEOUT;
+    case MUS_BIRCH_LAB: return MUS_RG_OAK_LAB;
+    case MUS_B_ARENA: return MUS_RG_TRAINER_TOWER;
+    case MUS_B_DOME: return MUS_RG_TRAINER_TOWER;
+    case MUS_B_DOME_LOBBY: return MUS_RG_TRAINER_TOWER;
+    case MUS_B_FACTORY: return MUS_RG_TRAINER_TOWER;
+    case MUS_B_FRONTIER: return MUS_RG_TRAINER_TOWER;
+    case MUS_B_PALACE: return MUS_RG_TRAINER_TOWER;
+    case MUS_B_PIKE: return MUS_RG_TRAINER_TOWER;
+    case MUS_B_PYRAMID: return MUS_RG_VICTORY_ROAD;
+    case MUS_B_PYRAMID_TOP: return MUS_RG_VICTORY_ROAD;
+    case MUS_B_TOWER: return MUS_RG_TRAINER_TOWER;
+    case MUS_B_TOWER_RS: return MUS_RG_TRAINER_TOWER;
+    case MUS_CABLE_CAR: return MUS_RG_CYCLING;
+    case MUS_CAVE_OF_ORIGIN: return MUS_RG_MT_MOON;
+    case MUS_CONTEST: return MUS_RG_UNION_ROOM;
+    case MUS_CONTEST_LOBBY: return MUS_RG_UNION_ROOM;
+    case MUS_CONTEST_RESULTS: return MUS_RG_VICTORY_TRAINER;
+    case MUS_CONTEST_WINNER: return MUS_RG_VICTORY_TRAINER;
+    case MUS_CREDITS: return MUS_RG_CREDITS;
+    case MUS_CYCLING: return MUS_RG_CYCLING;
+    case MUS_C_COMM_CENTER: return MUS_RG_POKE_CENTER;
+    case MUS_C_VS_LEGEND_BEAST: return MUS_RG_VS_LEGEND;
+    case MUS_DESERT: return MUS_RG_ROUTE24;
+    case MUS_DEWFORD: return MUS_RG_FUCHSIA;
+    case MUS_ENCOUNTER_AQUA: return MUS_RG_ENCOUNTER_ROCKET;
+    case MUS_ENCOUNTER_BRENDAN: return MUS_RG_ENCOUNTER_RIVAL;
+    case MUS_ENCOUNTER_CHAMPION: return MUS_RG_ENCOUNTER_RIVAL;
+    case MUS_ENCOUNTER_COOL: return MUS_RG_ENCOUNTER_BOY;
+    case MUS_ENCOUNTER_ELITE_FOUR: return MUS_RG_ENCOUNTER_GYM_LEADER;
+    case MUS_ENCOUNTER_FEMALE: return MUS_RG_ENCOUNTER_GIRL;
+    case MUS_ENCOUNTER_GIRL: return MUS_RG_ENCOUNTER_GIRL;
+    case MUS_ENCOUNTER_HIKER: return MUS_RG_ENCOUNTER_BOY;
+    case MUS_ENCOUNTER_INTENSE: return MUS_RG_ENCOUNTER_GYM_LEADER;
+    case MUS_ENCOUNTER_INTERVIEWER: return MUS_RG_ENCOUNTER_GIRL;
+    case MUS_ENCOUNTER_MAGMA: return MUS_RG_ENCOUNTER_ROCKET;
+    case MUS_ENCOUNTER_MALE: return MUS_RG_ENCOUNTER_BOY;
+    case MUS_ENCOUNTER_MAY: return MUS_RG_ENCOUNTER_RIVAL;
+    case MUS_ENCOUNTER_RICH: return MUS_RG_ENCOUNTER_BOY;
+    case MUS_ENCOUNTER_SUSPICIOUS: return MUS_RG_ENCOUNTER_ROCKET;
+    case MUS_ENCOUNTER_SWIMMER: return MUS_RG_ENCOUNTER_BOY;
+    case MUS_ENCOUNTER_TWINS: return MUS_RG_ENCOUNTER_GIRL;
+    case MUS_END: return MUS_RG_CREDITS;
+    case MUS_EVER_GRANDE: return MUS_RG_CELADON;
+    case MUS_EVOLUTION: return MUS_RG_CAUGHT;
+    case MUS_FALLARBOR: return MUS_RG_PEWTER;
+    case MUS_FOLLOW_ME: return MUS_RG_FOLLOW_ME;
+    case MUS_FORTREE: return MUS_RG_FUCHSIA;
+    case MUS_GAME_CORNER: return MUS_RG_GAME_CORNER;
+    case MUS_GSC_PEWTER: return MUS_RG_PEWTER;
+    case MUS_GYM: return MUS_RG_GYM;
+    case MUS_HALL_OF_FAME: return MUS_RG_HALL_OF_FAME;
+    case MUS_HALL_OF_FAME_ROOM: return MUS_RG_HALL_OF_FAME;
+    case MUS_HELP: return MUS_RG_FOLLOW_ME;
+    case MUS_INTRO: return MUS_RG_INTRO_FIGHT;
+    case MUS_INTRO_BATTLE: return MUS_RG_INTRO_FIGHT;
+    case MUS_LILYCOVE: return MUS_RG_CELADON;
+    case MUS_LILYCOVE_MUSEUM: return MUS_RG_CELADON;
+    case MUS_LINK_CONTEST_P1: return MUS_RG_UNION_ROOM;
+    case MUS_LINK_CONTEST_P2: return MUS_RG_UNION_ROOM;
+    case MUS_LINK_CONTEST_P3: return MUS_RG_UNION_ROOM;
+    case MUS_LINK_CONTEST_P4: return MUS_RG_UNION_ROOM;
+    case MUS_LITTLEROOT: return MUS_RG_PALLET;
+    case MUS_LITTLEROOT_TEST: return MUS_RG_PALLET;
+    case MUS_MT_CHIMNEY: return MUS_RG_MT_MOON;
+    case MUS_MT_PYRE: return MUS_RG_POKE_TOWER;
+    case MUS_MT_PYRE_EXTERIOR: return MUS_RG_CELADON;
+    case MUS_OCEANIC_MUSEUM: return MUS_RG_SS_ANNE;
+    case MUS_OLDALE: return MUS_RG_PEWTER;
+    case MUS_PETALBURG: return MUS_RG_VERMILLION;
+    case MUS_PETALBURG_WOODS: return MUS_RG_VIRIDIAN_FOREST;
+    case MUS_POKE_CENTER: return MUS_RG_POKE_CENTER;
+    case MUS_POKE_MART: return MUS_RG_GAME_CORNER;
+    case MUS_RAYQUAZA_APPEARS: return MUS_RG_VS_LEGEND;
+    case MUS_ROULETTE: return MUS_RG_GAME_CORNER;
+    case MUS_ROUTE101: return MUS_RG_ROUTE1;
+    case MUS_ROUTE104: return MUS_RG_ROUTE1;
+    case MUS_ROUTE110: return MUS_RG_ROUTE24;
+    case MUS_ROUTE113: return MUS_RG_LAVENDER;
+    case MUS_ROUTE119: return MUS_RG_ROUTE11;
+    case MUS_ROUTE120: return MUS_RG_ROUTE24;
+    case MUS_ROUTE122: return MUS_RG_ROUTE11;
+    case MUS_RUSTBORO: return MUS_RG_PEWTER;
+    case MUS_SAFARI_ZONE: return MUS_RG_VIRIDIAN_FOREST;
+    case MUS_SAILING: return MUS_RG_SS_ANNE;
+    case MUS_SCHOOL: return MUS_RG_OAK_LAB;
+    case MUS_SEALED_CHAMBER: return MUS_RG_SEVII_CAVE;
+    case MUS_SLATEPORT: return MUS_RG_VERMILLION;
+    case MUS_SOOTOPOLIS: return MUS_RG_CELADON;
+    case MUS_SURF: return MUS_RG_SURF;
+    case MUS_TITLE: return MUS_RG_TITLE;
+    case MUS_TRICK_HOUSE: return MUS_RG_SILPH;
+    case MUS_UNDERWATER: return MUS_RG_SEVII_CAVE;
+    case MUS_VERDANTURF: return MUS_RG_CELADON;
+    case MUS_VICTORY_AQUA_MAGMA: return MUS_RG_VICTORY_TRAINER;
+    case MUS_VICTORY_GYM_LEADER: return MUS_RG_VICTORY_GYM_LEADER;
+    case MUS_VICTORY_LEAGUE: return MUS_RG_VICTORY_GYM_LEADER;
+    case MUS_VICTORY_ROAD: return MUS_RG_VICTORY_ROAD;
+    case MUS_VICTORY_TRAINER: return MUS_RG_VICTORY_TRAINER;
+    case MUS_VICTORY_WILD: return MUS_RG_VICTORY_WILD;
+    case MUS_VS_AQUA_MAGMA: return MUS_RG_VS_TRAINER;
+    case MUS_VS_AQUA_MAGMA_LEADER: return MUS_RG_VS_CHAMPION;
+    case MUS_VS_CHAMPION: return MUS_RG_VS_CHAMPION;
+    case MUS_VS_ELITE_FOUR: return MUS_RG_VS_GYM_LEADER;
+    case MUS_VS_FRONTIER_BRAIN: return MUS_RG_VS_GYM_LEADER;
+    case MUS_VS_GYM_LEADER: return MUS_RG_VS_GYM_LEADER;
+    case MUS_VS_KYOGRE_GROUDON: return MUS_RG_VS_LEGEND;
+    case MUS_VS_MEW: return MUS_RG_VS_LEGEND;
+    case MUS_VS_RAYQUAZA: return MUS_RG_VS_LEGEND;
+    case MUS_VS_REGI: return MUS_RG_VS_LEGEND;
+    case MUS_VS_RIVAL: return MUS_RG_VS_TRAINER;
+    case MUS_VS_TRAINER: return MUS_RG_VS_TRAINER;
+    case MUS_VS_WILD: return MUS_RG_VS_WILD;
+    case MUS_WEATHER_GROUDON: return MUS_RG_VS_LEGEND;
+    default: return songNum;
+    }
+}
+
 void PlayBGM(u16 songNum)
 {
     if (gDisableMusic)
         songNum = 0;
     if (songNum == MUS_NONE)
         songNum = 0;
+    songNum = HeRemapBGM(songNum);
     m4aSongNumStart(songNum);
 }
 

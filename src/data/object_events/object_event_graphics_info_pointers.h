@@ -1,3 +1,4 @@
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_HeOfficer;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_HeTransmitter;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_BrendanNormal;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_BrendanMachBike;
@@ -486,6 +487,7 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_LINK_RS_BRENDAN] =          &gObjectEventGraphicsInfo_HeTransmitter,
     [OBJ_EVENT_GFX_LINK_RS_MAY] =              &gObjectEventGraphicsInfo_RubySapphireMay,
     [OBJ_EVENT_GFX_LUGIA] =                    &gObjectEventGraphicsInfo_Lugia,
+    [OBJ_EVENT_GFX_HE_OFFICER] = &gObjectEventGraphicsInfo_HeOfficer,
     [OBJ_EVENT_GFX_HOOH] =                     &gObjectEventGraphicsInfo_HoOh,
 };
 

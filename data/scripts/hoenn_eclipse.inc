@@ -248,3 +248,16 @@ HE_NeedHarbor::
 	msgbox HE_Text_NeedHarbor, MSGBOX_DEFAULT
 	release
 	end
+
+HeRebuild_EventScript_Officer::
+    lock
+    faceplayer
+    msgbox HeRebuild_Text_Officer, MSGBOX_DEFAULT
+    release
+    end
+
+HeRebuild_Text_Officer:
+    .string "A estrada está aberta, mas evite\n"
+    .string "os postos com o símbolo R.\p"
+    .string "O rádio da polícia está mudo.\n"
+    .string "Se encontrar Birch, avise-o.$"

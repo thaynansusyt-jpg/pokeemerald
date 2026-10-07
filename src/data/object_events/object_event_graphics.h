@@ -362,3 +362,5 @@ const u32 gObjectEventPic_HoOh[] = INCGFX_U32("graphics/object_events/pics/pokem
 const u16 gObjectEventPal_HoOh[] = INCGFX_U16("graphics/object_events/palettes/ho_oh.pal", ".gbapal");
 
 const u32 gHeTransmitterGfx[] = INCBIN_U32("graphics/hoenn_expansion/transmitter.4bpp");
+
+const u32 gHeOfficerGfx[] = INCGFX_U32("graphics/object_events/pics/people/he_officer.png", ".4bpp", "-mwidth 2 -mheight 4");

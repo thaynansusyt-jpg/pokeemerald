@@ -70,7 +70,7 @@ static void FrameType_DrawChoices(u8 selection);
 static u8 ButtonMode_ProcessInput(u8 selection);
 static void ButtonMode_DrawChoices(u8 selection);
 static void Language_DrawChoices(u8 selection);
-static const u8 sLanguageLabel[] = _("IDIOMA");
+static const u8 sLanguageLabel[] = _("LANGUAGE");
 static const u8 sEnglish[] = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}EN");
 static const u8 sPortuguese[] = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}PT-BR");
 
@@ -408,7 +408,7 @@ static void HighlightOptionMenuItem(u8 index)
 
 static void DrawOptionMenuChoice(const u8 *text, u8 x, u8 y, u8 style)
 {
-    u8 dst[16];
+    u8 dst[64];
     u16 i;
 
     text = HeLocalize(text);

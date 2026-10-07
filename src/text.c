@@ -1338,6 +1338,7 @@ s32 GetStringWidth(u8 fontId, const u8 *str, s16 letterSpacing)
     int glyphWidth;
     s32 width;
 
+    str = HeLocalize(str);
     isJapanese = 0;
     minGlyphWidth = 0;
 

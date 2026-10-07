@@ -1,6 +1,8 @@
 #include "global.h"
 #include "hoenn_expansion.h"
 #include "string_util.h"
+static const u8 sLanguageEn[] = _("LANGUAGE");
+static const u8 sLanguageBr[] = _("IDIOMA");
 struct HeTranslation { const u8 *en; const u8 *br; };
 static const u8 sEn0[] = _("NEW GAME");
 static const u8 sBr0[] = _("NOVO JOGO");
@@ -193,6 +195,7 @@ static const u8 sBr93[] = _("O que WALLY\nvai fazer?");
 static const u8 sEn94[] = _("FIGHT{CLEAR_TO 56}BAG\nPOKéMON{CLEAR_TO 56}RUN");
 static const u8 sBr94[] = _("LUTAR{CLEAR_TO 56}BOLSA\nPOKéMON{CLEAR_TO 56}FUGIR");
 static const struct HeTranslation sTranslations[] = {
+    {sLanguageEn, sLanguageBr},
     {sEn91, sBr91},
     {sEn92, sBr92},
     {sEn93, sBr93},
