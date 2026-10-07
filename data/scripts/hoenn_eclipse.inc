@@ -1,4 +1,5 @@
 HE_Journal::
+	goto_if_set FLAG_IS_CHAMPION, HE_PostJournal
 	lockall
 	goto_if_unset FLAG_SYS_POKEDEX_GET, HE_CampaignGoal0
 	goto_if_unset FLAG_HE_ECLIPSE_PROOF, HE_CampaignGoal1

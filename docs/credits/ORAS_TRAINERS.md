@@ -1,0 +1,1 @@
+ORAS back sprites: Solo993, edits by KyuZee. ORAS front sprites: Hyo-Oppa, adapted by KyuZee. Free-to-use collection: https://github.com/monhacks/teamaquas-assets . Original terms in the repository README.

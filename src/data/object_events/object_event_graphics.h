@@ -136,8 +136,8 @@ const u32 gObjectEventPic_Scientist2[] = INCGFX_U32("graphics/object_events/pics
 const u32 gObjectEventPic_DevonEmployee[] = INCGFX_U32("graphics/object_events/pics/people/devon_employee.png", ".4bpp", "-mwidth 2 -mheight 4");
 const u32 gObjectEventPic_AquaMemberM[] = INCGFX_U32("graphics/object_events/pics/people/team_aqua/aqua_member_m.png", ".4bpp", "-mwidth 2 -mheight 4");
 const u32 gObjectEventPic_AquaMemberF[] = INCGFX_U32("graphics/object_events/pics/people/team_aqua/aqua_member_f.png", ".4bpp", "-mwidth 2 -mheight 4");
-const u32 gObjectEventPic_MagmaMemberM[] = INCBIN_U32("graphics/hoenn_expansion/rocket.4bpp");
-const u32 gObjectEventPic_MagmaMemberF[] = INCBIN_U32("graphics/hoenn_expansion/commander.4bpp");
+const u32 gObjectEventPic_MagmaMemberM[] = INCGFX_U32("graphics/object_events/pics/people/rocket_m.png", ".4bpp", "-mwidth 2 -mheight 4");
+const u32 gObjectEventPic_MagmaMemberF[] = INCGFX_U32("graphics/object_events/pics/people/rocket_f.png", ".4bpp", "-mwidth 2 -mheight 4");
 const u32 gObjectEventPic_Sidney[] = INCGFX_U32("graphics/object_events/pics/people/elite_four/sidney.png", ".4bpp", "-mwidth 2 -mheight 4");
 const u32 gObjectEventPic_Phoebe[] = INCGFX_U32("graphics/object_events/pics/people/elite_four/phoebe.png", ".4bpp", "-mwidth 2 -mheight 4");
 const u32 gObjectEventPic_Glacia[] = INCGFX_U32("graphics/object_events/pics/people/elite_four/glacia.png", ".4bpp", "-mwidth 2 -mheight 4");
@@ -636,3 +636,5 @@ const u16 gObjectEventPic_ClefairyOld[] = INCGFX_U16("graphics/object_events/pic
 
 const u32 gHeTransmitterGfx[] = INCBIN_U32("graphics/hoenn_expansion/transmitter.4bpp");
 const u32 gHeOfficerGfx[] = INCGFX_U32("graphics/object_events/pics/people/he_officer.png", ".4bpp", "-mwidth 2 -mheight 4");
+
+const u16 gHeRocketPal[] = INCGFX_U16("graphics/object_events/pics/people/rocket_m.png", ".gbapal");

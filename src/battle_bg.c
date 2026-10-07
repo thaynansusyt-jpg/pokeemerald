@@ -918,14 +918,6 @@ static u8 GetBattleEnvironmentOverride(void)
             return gBattleEnvironment;
         }
     }
-    else if (gBattleTypeFlags & BATTLE_TYPE_TRAINER)
-    {
-        u32 trainerClass = GetTrainerClassFromId(TRAINER_BATTLE_PARAM.opponentA);
-        if (trainerClass == TRAINER_CLASS_LEADER)
-            return BATTLE_ENVIRONMENT_LEADER;
-        else if (trainerClass == TRAINER_CLASS_CHAMPION)
-            return BATTLE_ENVIRONMENT_CHAMPION;
-    }
 
     if (battleScene == MAP_BATTLE_SCENE_NORMAL)
         return gBattleEnvironment;
@@ -992,14 +984,22 @@ static const u16 sHeBattleMap[] = INCBIN_U16("graphics/hoenn_expansion/battle_ci
 static const u32 sHeForestTiles[] = INCBIN_U32("graphics/hoenn_expansion/battle_forest.4bpp");
 static const u16 sHeForestPalette[] = INCBIN_U16("graphics/hoenn_expansion/battle_forest.gbapal");
 
+static const u32 sHeIndoorTiles[] = INCBIN_U32("graphics/hoenn_expansion/battle_indoor.4bpp");
+static const u16 sHeIndoorPalette[] = INCBIN_U16("graphics/hoenn_expansion/battle_indoor.gbapal");
+static const u16 sHeIndoorMap[] = INCBIN_U16("graphics/hoenn_expansion/battle_indoor_map.bin");
+static const u32 sHeGymTiles[] = INCBIN_U32("graphics/hoenn_expansion/battle_gym.4bpp");
+static const u16 sHeGymPalette[] = INCBIN_U16("graphics/hoenn_expansion/battle_gym.gbapal");
+static const u16 sHeGymMap[] = INCBIN_U16("graphics/hoenn_expansion/battle_gym_map.bin");
+
 void DrawMainBattleBackground(void)
 {
     if (!(gBattleTypeFlags & (BATTLE_TYPE_LINK | BATTLE_TYPE_FRONTIER | BATTLE_TYPE_RECORDED_LINK))
-        && (gBattleEnvironment == BATTLE_ENVIRONMENT_GRASS || gBattleEnvironment == BATTLE_ENVIRONMENT_LONG_GRASS))
+        && gBattleEnvironment == BATTLE_ENVIRONMENT_BUILDING)
     {
-        CpuCopy16(sHeForestTiles, (void *)BG_CHAR_ADDR(2), sizeof(sHeForestTiles));
-        CpuCopy16(sHeBattleMap, (void *)BG_SCREEN_ADDR(26), sizeof(sHeBattleMap));
-        LoadPalette(sHeForestPalette, BG_PLTT_ID(2), sizeof(sHeForestPalette));
+        bool32 gym = GetCurrentMapBattleScene() == MAP_BATTLE_SCENE_GYM;
+        CpuCopy16(gym ? sHeGymTiles : sHeIndoorTiles, (void *)BG_CHAR_ADDR(2), sizeof(sHeIndoorTiles));
+        CpuCopy16(gym ? sHeGymMap : sHeIndoorMap, (void *)BG_SCREEN_ADDR(26), sizeof(sHeIndoorMap));
+        LoadPalette(gym ? sHeGymPalette : sHeIndoorPalette, BG_PLTT_ID(2), sizeof(sHeIndoorPalette));
         return;
     }
     LoadBattleEnvironmentGfx(GetBattleEnvironmentOverride());

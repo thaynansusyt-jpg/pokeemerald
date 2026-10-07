@@ -504,6 +504,7 @@ LittlerootTown_ProfessorBirchsLab_EventScript_ReceivedJohtoStarter::
 	return
 
 LittlerootTown_ProfessorBirchsLab_EventScript_Birch::
+	goto_if_set FLAG_IS_CHAMPION, HE_RainbowStart
 	lock
 	faceplayer
 	goto_if_eq VAR_DEX_UPGRADE_JOHTO_STARTER_STATE, 5, LittlerootTown_ProfessorBirchsLab_EventScript_CanHaveAnyOneOfRarePokemon

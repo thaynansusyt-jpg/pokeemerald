@@ -77,7 +77,7 @@ static void Agent(int x, int y)
 {
     int px, py;
     int frame = sFrame / 20 % 2 ? 3 : 0;
-    const u8 *tiles = sRocket + frame * 512;
+    const u8 *tiles = sRocket + frame * 256;
     for (py = 0; py < 32; py++)
         for (px = 0; px < 16; px++)
         {

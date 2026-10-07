@@ -1129,6 +1129,15 @@ static const struct MenuAction MultichoiceList_Exit[] =
     {gText_Exit},
 };
 
+static const struct MenuAction sHeQuestChoices[] = {
+ {COMPOUND_STRING("Aceitar alvo")}, {COMPOUND_STRING("Proximo alvo")},
+ {COMPOUND_STRING("Missao ativa")}, {COMPOUND_STRING("Outra geracao")}, {COMPOUND_STRING("Sair")}
+};
+static const struct MenuAction sHeQuestGenerations[] = {
+ {COMPOUND_STRING("Kanto")}, {COMPOUND_STRING("Johto")}, {COMPOUND_STRING("Hoenn")},
+ {COMPOUND_STRING("Sinnoh")}, {COMPOUND_STRING("Unova")}, {COMPOUND_STRING("Kalos")},
+ {COMPOUND_STRING("Alola e Ultra")}, {COMPOUND_STRING("Sair")}
+};
 struct MultichoiceListStruct
 {
     const struct MenuAction *list;
@@ -1137,6 +1146,8 @@ struct MultichoiceListStruct
 
 static const struct MultichoiceListStruct sMultichoiceLists[] =
 {
+    [MULTI_HE_QUEST] = MULTICHOICE(sHeQuestChoices),
+    [MULTI_HE_GENERATION] = MULTICHOICE(sHeQuestGenerations),
     [MULTI_HE_PRIORITY] = MULTICHOICE(MultichoiceList_HePriority),
     [MULTI_HE_SIGNAL] = MULTICHOICE(MultichoiceList_HeSignal),
     [MULTI_BRINEY_ON_DEWFORD]          = MULTICHOICE(MultichoiceList_BrineyOnDewford),

@@ -1,7 +1,7 @@
 name: Hoenn Expansion Gen7
 on:
   push:
-    branches: [hoenn-expansion-gen7]
+    branches: [hoenn-expansion-gen7, hoenn-expansion-0.7]
   workflow_dispatch:
 permissions:
   contents: read
@@ -13,12 +13,14 @@ jobs:
       - name: Install toolchain
         run: sudo apt-get update && sudo apt-get install -y gcc-arm-none-eabi binutils-arm-none-eabi libnewlib-arm-none-eabi libpng-dev python3
       - name: Validate campaign
-        run: python3 tools/validate_hoenn.py
+        run: |
+          python3 tools/validate_hoenn.py
+          python3 tools/validate_hoenn_07.py
       - name: Build
         run: make modern -j4
       - uses: actions/upload-artifact@v4
         with:
-          name: Pokemon-Hoenn-Expansion-0.6.0-Gen7-beta
+          name: Pokemon-Hoenn-Expansion-0.7.0-beta
           path: |
             pokemon_hoenn_expansion_gen7.gba
             README_HOENN.md

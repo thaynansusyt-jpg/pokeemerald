@@ -149,6 +149,34 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "MeteorFalls_1F_1R_EventScript_ProfCozmo",
       "flag": "FLAG_HIDE_METEOR_FALLS_1F_1R_COZMO"
+    },
+    {
+      "local_id": "LOCALID_METEORFALLS_1F_1R_HE_QUESTHABITAT",
+      "graphics_id": "OBJ_EVENT_GFX_SCIENTIST_2",
+      "x": 2,
+      "y": 3,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "HE_QuestHabitat",
+      "flag": "0"
+    },
+    {
+      "local_id": "LOCALID_METEORFALLS_1F_1R_HE_RAINBOWMETEOR",
+      "graphics_id": "OBJ_EVENT_GFX_MAGMA_MEMBER_M",
+      "x": 3,
+      "y": 3,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "HE_RainbowMeteor",
+      "flag": "0"
     }
   ],
   "warp_events": [

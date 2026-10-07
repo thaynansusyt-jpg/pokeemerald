@@ -1,4 +1,5 @@
 #include "global.h"
+#include "hoenn_expansion.h"
 #include "bg.h"
 #include "blit.h"
 #include "decompress.h"
@@ -171,7 +172,7 @@ bool16 AddTextPrinterParameterized2(u8 windowId, u8 fontId, const u8 *str, u8 sp
 {
     struct TextPrinterTemplate printer;
 
-    printer.currentChar = str;
+    printer.currentChar = HeLocalize(str);
     printer.type = WINDOW_TEXT_PRINTER;
     printer.windowId = windowId;
     printer.fontId = fontId;
@@ -1636,7 +1637,7 @@ void AddTextPrinterParameterized3(u8 windowId, u8 fontId, u8 left, u8 top, const
 {
     struct TextPrinterTemplate printer;
 
-    printer.currentChar = str;
+    printer.currentChar = HeLocalize(str);
     printer.type = WINDOW_TEXT_PRINTER;
     printer.windowId = windowId;
     printer.fontId = fontId;
@@ -1658,7 +1659,7 @@ void AddTextPrinterParameterized4(u8 windowId, u8 fontId, u8 left, u8 top, u8 le
 {
     struct TextPrinterTemplate printer;
 
-    printer.currentChar = str;
+    printer.currentChar = HeLocalize(str);
     printer.type = WINDOW_TEXT_PRINTER;
     printer.windowId = windowId;
     printer.fontId = fontId;
@@ -1680,7 +1681,7 @@ void AddTextPrinterParameterized5(u8 windowId, u8 fontId, const u8 *str, u8 left
 {
     struct TextPrinterTemplate printer;
 
-    printer.currentChar = str;
+    printer.currentChar = HeLocalize(str);
     printer.type = WINDOW_TEXT_PRINTER;
     printer.windowId = windowId;
     printer.fontId = fontId;

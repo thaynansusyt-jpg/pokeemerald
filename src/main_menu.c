@@ -1,6 +1,6 @@
 #include "global.h"
 #include "main.h"
-extern void HeStartOpening(MainCallback, MainCallback);
+#include "hoenn_rules.h"
 #include "trainer_pokemon_sprites.h"
 #include "bg.h"
 #include "constants/rgb.h"
@@ -683,6 +683,9 @@ static void Task_MainMenuCheckSaveFile(u8 taskId)
                 tMenuType++;
             break;
         case SAVE_STATUS_EMPTY:
+            if (!(sCurrItemAndOptionMenuCheck & OPTION_MENU_FLAG))
+                gSaveBlock2Ptr->optionsLanguage = 1;
+            // fallthrough
         default:
             tMenuType = HAS_NO_SAVED_GAME;
             gTasks[taskId].func = Task_MainMenuCheckBattery;
@@ -1303,7 +1306,7 @@ static void Task_NewGameBirchSpeech_Init(u8 taskId)
     if (gTasks[taskId].data[15] != 0x4845)
     {
         gTasks[taskId].data[15] = 0x4845;
-        HeStartOpening(CB2_MainMenu, VBlankCB_MainMenu);
+        HeStartNewGameConfig(CB2_MainMenu, VBlankCB_MainMenu);
         return;
     }
     SetGpuReg(REG_OFFSET_DISPCNT, 0);

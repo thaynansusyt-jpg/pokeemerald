@@ -22,12 +22,19 @@ u32 GetCurrentLevelCap(void)
 
     u32 i;
 
+    if (HeExpCapType() == EXP_CAP_NONE)
+        return MAX_LEVEL;
+
     if (B_LEVEL_CAP_TYPE == LEVEL_CAP_FLAG_LIST)
     {
         for (i = 0; i < ARRAY_COUNT(sLevelCapFlagMap); i++)
         {
             if (!FlagGet(sLevelCapFlagMap[i][0]))
-                return sLevelCapFlagMap[i][1];
+            {
+                u32 base = sLevelCapFlagMap[i][1];
+                u32 difficulty = VarGet(VAR_HE_DIFFICULTY);
+                return difficulty == 0 ? base - 2 : difficulty == 2 ? base + 2 : base;
+            }
         }
     }
     else if (B_LEVEL_CAP_TYPE == LEVEL_CAP_VARIABLE)
