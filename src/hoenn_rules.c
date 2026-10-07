@@ -106,6 +106,18 @@ void HeApplyNewGameRules(void)
     if (sChoices[3]) FlagSet(FLAG_HE_EXP_ALL);
     gSaveBlock2Ptr->optionsBattleStyle = sChoices[5];
 }
+// Repair the 0.7 theft gate without changing the save layout or resetting progress.
+// Safe to run repeatedly: later Devon states, sailing and completed arcs are untouched.
+void HeRepairProgression(void)
+{
+    if (FlagGet(FLAG_BADGE01_GET)
+     && !FlagGet(FLAG_DEVON_GOODS_STOLEN)
+     && !FlagGet(FLAG_RECOVERED_DEVON_GOODS)
+     && !FlagGet(FLAG_RECEIVED_POKENAV)
+     && !FlagGet(FLAG_HE_HARBOR_SAFE)
+     && VarGet(VAR_RUSTBORO_CITY_STATE) == 0)
+        VarSet(VAR_RUSTBORO_CITY_STATE, 1);
+}
 unsigned HeExpCapType(void) { return VarGet(VAR_HE_LEVEL_CAP); }
 unsigned char HeFastTraining(void) { return FlagGet(FLAG_HE_ANTI_GRINDING); }
 void HeCoachRefill(void)

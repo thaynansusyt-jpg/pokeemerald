@@ -50,11 +50,25 @@ HE_CampaignGoal3::
 HE_CampaignGoalText3:
 	.string "MISSAO DA RESISTÊNCIA\pReceba o decodificador do\npesquisador em Rustboro.\pDesligue o primeiro\ntransmissor.$"
 HE_CampaignGoal4::
+	goto_if_unset FLAG_RECOVERED_DEVON_GOODS, HE_CampaignGoalPeeko
+	goto_if_unset FLAG_RECEIVED_POKENAV, HE_CampaignGoalDevon
 	msgbox HE_CampaignGoalText4, MSGBOX_DEFAULT
 	releaseall
 	end
 HE_CampaignGoalText4:
 	.string "MISSAO DA RESISTÊNCIA\pViaje com Briney para\nDewford e desative o sinal\pna entrada da Granite Cave.$"
+HE_CampaignGoalPeeko:
+	msgbox HE_CampaignGoalPeekoText, MSGBOX_DEFAULT
+	releaseall
+	end
+HE_CampaignGoalPeekoText:
+	.string "MISSAO DA RESISTÊNCIA\pVolte a Rustboro e siga\npara a saída leste.\pA Devon foi roubada!\nResgate Peeko e a carga\pno Rusturf Tunnel,\nno fim da Rota 116.$"
+HE_CampaignGoalDevon:
+	msgbox HE_CampaignGoalDevonText, MSGBOX_DEFAULT
+	releaseall
+	end
+HE_CampaignGoalDevonText:
+	.string "MISSAO DA RESISTÊNCIA\pDevolva a carga ao\nfuncionário em Rustboro.\pConverse com Stone na\nDevon antes de procurar\pBriney na Rota 104.$"
 HE_CampaignGoal5::
 	msgbox HE_CampaignGoalText5, MSGBOX_DEFAULT
 	releaseall
@@ -302,7 +316,7 @@ HE_RelayRustboro::
 HE_Text_PatternRustboro:
 	.string "DECODIFICADOR\pPadrão: A depois C.\pRepita os dois pulsos para\ncortar o sinal.$"
 HE_Text_RelayRustboroOff:
-	.string "O transmissor perdeu\nenergia!\pRoxanne liberou a rota\nmarítima. Briney espera na\pcasa da Rota 104.\pO próximo sinal vem de uma\ncaverna em Dewford.$"
+	.string "O transmissor perdeu\nenergia!\pA rota marítima está livre.\nResgate Peeko e devolva\pa carga à Devon em Rustboro.\nDepois encontre Briney\pna casa da Rota 104.\nO diário mostra a etapa\pque falta.$"
 HE_RelayDewford::
 	lock
 	faceplayer

@@ -12,13 +12,14 @@ SlateportCity_OceanicMuseum_2F_EventScript_CaptStern::
 	call HE_Shake
 	msgbox HE_Text_HarborVesper, MSGBOX_DEFAULT
 	special HealPlayerParty
-	trainerbattle_no_intro TRAINER_LEAF, HE_Text_HarborLose
+	trainerbattle_no_intro TRAINER_HE_HARBOR, HE_Text_HarborLose
 	msgbox HE_Text_HarborExit, MSGBOX_DEFAULT
 	closemessage
 	applywaitmovement LOCALID_OCEANIC_MUSEUM_2F_ARCHIE, HE_VesperLeave
 	removeobject LOCALID_OCEANIC_MUSEUM_2F_ARCHIE
 	setflag FLAG_HE_HARBOR_SAFE
 	setflag FLAG_DELIVERED_DEVON_GOODS
+	removeitem ITEM_DEVON_PARTS, 1
 	setflag FLAG_HIDE_ROUTE_110_TEAM_AQUA
 	setflag FLAG_HIDE_SLATEPORT_CITY_TEAM_AQUA
 	setflag FLAG_HIDE_SLATEPORT_CITY_OCEANIC_MUSEUM_AQUA_GRUNTS

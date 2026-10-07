@@ -29,6 +29,7 @@
 #include "follower_npc.h"
 #include "gpu_regs.h"
 #include "heal_location.h"
+#include "hoenn_rules.h"
 #include "io_reg.h"
 #include "item.h"
 #include "item_icon.h"
@@ -2116,6 +2117,7 @@ void CB2_ContinueSavedGame(void)
 {
     u8 trainerHillMapId;
 
+    HeRepairProgression();
     FieldClearVBlankHBlankCallbacks();
     StopMapMusic();
     ResetSafariZoneFlag_();

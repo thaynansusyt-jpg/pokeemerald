@@ -857,6 +857,7 @@
 #define TRAINER_EVERETT                     850
 #define TRAINER_RED                         851
 #define TRAINER_LEAF                        852
+#define TRAINER_HE_HARBOR                   852 // Reuses the unused Leaf slot; save IDs remain stable
 #define TRAINER_BRENDAN_PLACEHOLDER         853
 #define TRAINER_MAY_PLACEHOLDER             854
 

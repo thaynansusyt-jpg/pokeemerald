@@ -301,26 +301,16 @@ HoennExpansion_EventScript_ResearchComplete::
 	end
 
 HoennExpansion_Text_Research:
-	.string "Join the HOENN research project!\p"
-	.string "Catch 10 different HOENN species,\n"
-	.string "then return for an EXP. SHARE.\p"
-	.string "Your POKéDEX records {STR_VAR_1} caught.\n"
-	.string "Evolved POKéMON count, too!$"
+	.string "Participe da pesquisa\nde Hoenn!\pCapture dez espécies\ndiferentes e volte\ppara receber um EXP. SHARE.\nRegistradas: {STR_VAR_1}.\pEvoluções também contam!$"
 
 HoennExpansion_Text_ResearchReward:
-	.string "Excellent fieldwork! Your POKéDEX\n"
-	.string "records at least 10 HOENN species.\p"
-	.string "Here is your research reward!$"
+	.string "Ótima pesquisa! Você\nregistrou dez espécies\pde Hoenn. Aqui está\nsua recompensa!$"
 
 HoennExpansion_Text_BagFull:
-	.string "Your BAG is full. Make room and\n"
-	.string "come back to claim your reward!$"
+	.string "Sua mochila está cheia.\nOrganize os itens e volte\ppara receber a recompensa.$"
 
 HoennExpansion_Text_ResearchComplete:
-	.string "Let a POKéMON hold the EXP. SHARE\n"
-	.string "to help it grow with your team.\p"
-	.string "Keep exploring! HOENN has new\n"
-	.string "encounters waiting along its trails.$"
+	.string "Entregue o EXP. SHARE\na um Pokémon para ajudar\pno treino com sua equipe.\nContinue explorando:\pHoenn tem novos encontros\nesperando por você!$"
 
 LittlerootTown_ProfessorBirchsLab_EventScript_AideAlreadyMet::
 	msgbox LittlerootTown_ProfessorBirchsLab_Text_BirchIsntOneForDeskWork, MSGBOX_DEFAULT

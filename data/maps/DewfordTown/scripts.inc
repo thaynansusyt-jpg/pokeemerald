@@ -8,9 +8,9 @@ DewfordTown_OnTransition:
 	end
 
 DewfordTown_EventScript_Briney::
-	goto_if_unset FLAG_BADGE02_GET, DewfordTown_EventScript_ReturnToPetalburgPrompt
 	lock
 	faceplayer
+	goto_if_unset FLAG_BADGE02_GET, DewfordTown_EventScript_ReturnToPetalburgPrompt
 	goto_if_unset FLAG_DELIVERED_STEVEN_LETTER, DewfordTown_EventScript_ReturnToPetalburgPrompt
 	message DewfordTown_Text_WhereAreWeBound
 	waitmessage

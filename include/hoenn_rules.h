@@ -4,6 +4,7 @@
 unsigned HeExpCapType(void);
 unsigned char HeFastTraining(void);
 void HeApplyNewGameRules(void);
+void HeRepairProgression(void);
 void HeStartNewGameConfig(void (*main)(void), void (*vblank)(void));
 #endif
 #endif

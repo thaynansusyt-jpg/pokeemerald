@@ -4,6 +4,7 @@ RustboroCity_MapScripts::
 	.byte 0
 
 RustboroCity_OnTransition:
+	callnative HeRepairProgression
 	setflag FLAG_VISITED_RUSTBORO_CITY
 	call Common_EventScript_SetupRivalGfxId
 	call_if_eq VAR_RUSTBORO_CITY_STATE, 6, RustboroCity_EventScript_HideMapNamePopup

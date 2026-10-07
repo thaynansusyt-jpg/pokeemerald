@@ -6,6 +6,7 @@ HE_TrainingCoach::
 	callnative HeCoachRefill
 	goto_if_eq VAR_RESULT, 0, HE_CoachStocked
 	giveitem ITEM_RARE_CANDY, 10
+	goto_if_eq VAR_RESULT, FALSE, HE_CoachBagFull
 	msgbox HE_CoachGift, MSGBOX_DEFAULT
 	release
 	end
@@ -23,6 +24,12 @@ HE_CoachEnough:
 	.string "Você já tem doces de treino.\nUse-os antes de pedir mais.\pO treino ajuda a recuperar\nníveis; estratégia continua\pdecidindo as batalhas.$"
 HE_CoachOff:
 	.string "O treino assistido foi\ndesligado nas regras desta\pjornada. Cada aventura pode\nter seu próprio desafio!$"
+HE_CoachBagFull:
+	msgbox HE_CoachBagFullText, MSGBOX_DEFAULT
+	release
+	end
+HE_CoachBagFullText:
+	.string "Não há espaço para os\ndoces. Organize a mochila\pe volte para receber\nseu apoio de treino.$"
 
 HE_QuestBoard::
 	lock
@@ -224,6 +231,7 @@ HE_RainbowSpace::
 HE_RainbowShip::
 	lockall
 	faceplayer
+	goto_if_ge VAR_HE_RAINBOW_STAGE, 4, HE_RainbowRecoverRing
 	goto_if_ne VAR_HE_RAINBOW_STAGE, 3, HE_RainbowWait
 	msgbox HE_RainbowShipIntro, MSGBOX_DEFAULT
 	playse SE_SWITCH
@@ -231,10 +239,27 @@ HE_RainbowShip::
 	delay 40
 	fadescreen FADE_FROM_BLACK
 	msgbox HE_RainbowShipAfter, MSGBOX_DEFAULT
-	setvar VAR_HE_RAINBOW_STAGE, 4
 	giveitem ITEM_MEGA_RING
+	goto_if_eq VAR_RESULT, FALSE, HE_RainbowRingBagFull
+	setvar VAR_HE_RAINBOW_STAGE, 4
 	releaseall
 	end
+HE_RainbowRingBagFull:
+	msgbox HE_RainbowRingBagFullText, MSGBOX_DEFAULT
+	releaseall
+	end
+HE_RainbowRingBagFullText:
+	.string "Não há espaço para o Mega\nRing. Organize a mochila\pe volte aqui. O resgate\ncontinua registrado.$"
+HE_RainbowRecoverRing:
+	checkitem ITEM_MEGA_RING
+	goto_if_eq VAR_RESULT, TRUE, HE_RainbowWait
+	msgbox HE_RainbowRecoverRingText, MSGBOX_DEFAULT
+	giveitem ITEM_MEGA_RING
+	goto_if_eq VAR_RESULT, FALSE, HE_RainbowRingBagFull
+	releaseall
+	end
+HE_RainbowRecoverRingText:
+	.string "ENGENHEIRO: Nosso resgate\njá terminou, mas você não\pestá com o Mega Ring.\nLeve-o para sua jornada.$"
 HE_RainbowFinal::
 	lockall
 	faceplayer

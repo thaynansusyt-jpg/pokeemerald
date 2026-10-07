@@ -52139,43 +52139,58 @@ AI: Check Bad Move / Try To Faint / Check Viability
 Pikachu
 Level: 7
 
-=== TRAINER_LEAF ===
-Name: LEAF
-Class: Rival
-Pic: Leaf
+=== TRAINER_HE_HARBOR ===
+Name: VESPER
+Class: Team Rocket FRLG
+Pic: Rocket Grunt F FRLG
 Gender: Female
-Music: Male
-Double Battle: No
+Music: Suspicious
+AI: Check Bad Move / Try To Faint / Check Viability
 
-Bulbasaur
-Level: 5
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Murkrow
+Level: 18
 
-=== TRAINER_LEAF ===
+Salandit
+Level: 18
+
+Pawniard
+Level: 19
+
+=== TRAINER_HE_HARBOR ===
 Difficulty: Easy
-Name: LEAF
-Class: Rival
-Pic: Leaf
+Name: VESPER
+Class: Team Rocket FRLG
+Pic: Rocket Grunt F FRLG
 Gender: Female
-Music: Male
-Double Battle: No
+Music: Suspicious
+AI: Check Bad Move / Try To Faint / Check Viability
 
-Bulbasaur
-Level: 3
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Murkrow
+Level: 16
 
-=== TRAINER_LEAF ===
+Salandit
+Level: 16
+
+Pawniard
+Level: 17
+
+=== TRAINER_HE_HARBOR ===
 Difficulty: Hard
-Name: LEAF
-Class: Rival
-Pic: Leaf
+Name: VESPER
+Class: Team Rocket FRLG
+Pic: Rocket Grunt F FRLG
 Gender: Female
-Music: Male
-Double Battle: No
+Music: Suspicious
+AI: Check Bad Move / Try To Faint / Check Viability
 
-Bulbasaur
-Level: 7
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Murkrow
+Level: 20
+
+Salandit
+Level: 20
+
+Pawniard
+Level: 21
 
 === TRAINER_BRENDAN_PLACEHOLDER ===
 Name: ROCKET

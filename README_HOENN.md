@@ -1,6 +1,15 @@
-# Pokémon Hoenn Expansion — 0.7.0 Eclipse Gen7 beta
+# Pokémon Hoenn Expansion — 0.7.1 Eclipse Gen7 beta
 
 Projeto de Senhor Laranja. Esta versão reconstrói a expansão sobre pokeemerald-expansion (RHH), mantendo os recursos personalizados da base anterior e removendo a barreira do terceiro ginásio.
+
+## Correções da 0.7.1
+
+- Reativa a sequência Devon/Peeko que estava desabilitada após Roxanne; recupera saves travados sem apagar o progresso.
+- Diário e mensagem do decodificador explicam Peeko, Devon e Briney na ordem correta.
+- Vesper usa seu sprite Rocket e seu time no museu; a entrega remove os Devon Parts da mochila.
+- Mega Ring só avança o evento após entrega; o engenheiro recupera o anel ausente em saves antigos do pós-jogo.
+- Coach informa mochila cheia; interações com Briney corrigidas; textos auxiliares de pesquisa em PT-BR e com largura verificada.
+- Relatório e limites dos testes: `docs/QA_0.7.1.md`.
 
 ## Novidades da 0.7
 
@@ -18,7 +27,7 @@ Projeto de Senhor Laranja. Esta versão reconstrói a expansão sobre pokeemeral
 
 **Flash 128 KiB (1024 Kbit) é o formato esperado**, herdado de Emerald e da expansão. Não é tamanho de ROM e não é um erro que exija reduzir para 64 KiB. Use um emulador/cartucho com suporte a Flash 128 KiB e RTC. Em flashcart, a configuração ou patch de save depende do modelo; esta beta não foi testada em hardware físico. Não prometemos compatibilidade com SRAM/Flash 64 KiB.
 
-Faça backup antes de atualizar. Recomenda-se Novo Jogo para escolher as regras; saves 0.6 sem novas variáveis usam dificuldade fácil e limite livre até migração futura. Saves 0.4/0.5 continuam incompatíveis. Não use savestates de uma ROM em outra.
+A atualização **0.7.0 → 0.7.1 preserva o `.sav`**, sem Novo Jogo. O formato e os IDs de progresso não mudaram. Consulte `docs/MIGRACAO_0.7.1.md`. A correção recupera a sequência Devon/Peeko após Roxanne ao escolher Continuar; não reinicia missões concluídas. Saves 0.4/0.5 são incompatíveis, e a migração da 0.6 não foi validada. Não use savestates de uma ROM em outra.
 
 ## Conteúdo integrado
 
@@ -38,7 +47,7 @@ Faça backup antes de atualizar. Recomenda-se Novo Jogo para escolher as regras;
 
 ## Jogar
 
-Abra `Pokemon_Hoenn_Expansion_0.7.0_Gen7_beta.gba` em um emulador GBA com RTC e save Flash 128 KiB (mGBA, por exemplo). **Comece um save novo**: a estrutura de save da expansão mudou; saves das versões 0.4/0.5 não são compatíveis. A cutscene aparece ao selecionar Novo Jogo.
+Abra `Pokemon_Hoenn_Expansion_0.7.1_Gen7_beta.gba` em um emulador GBA com RTC e save Flash 128 KiB (mGBA, por exemplo). Para atualizar da 0.7.0, importe seu `.sav` e escolha **Continuar**. Novo Jogo é apenas para iniciar outra jornada; exibe a cutscene e a escolha de regras.
 
 Depois da Pokédex, consulte MISSÃO no menu START. Nas operações, examine a caixa vermelha perto do policial. Conclua a operação local antes do respectivo líder. Há cinco operações após Mauville e uma central final após a oitava insígnia. A progressão original de Surf, Dive, Waterfall e Rayquaza permanece necessária.
 
