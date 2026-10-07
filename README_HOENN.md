@@ -37,7 +37,7 @@ Os testes em emulador usam cenários controlados, warps e equipe preparada. Cons
 
 **Flash 128 KiB (1024 Kbit) é o formato esperado**, herdado de Emerald e da expansão. Não é tamanho de ROM e não é um erro que exija reduzir para 64 KiB. Use um emulador/cartucho com suporte a Flash 128 KiB e RTC. Em flashcart, a configuração ou patch de save depende do modelo; esta beta não foi testada em hardware físico. Não prometemos compatibilidade com SRAM/Flash 64 KiB.
 
-A atualização **0.7.0 → 0.7.1 preserva o `.sav`**, sem Novo Jogo. O formato e os IDs de progresso não mudaram. Consulte `docs/MIGRACAO_0.7.1.md`. A correção recupera a sequência Devon/Peeko após Roxanne ao escolher Continuar; não reinicia missões concluídas. Saves 0.4/0.5 são incompatíveis, e a migração da 0.6 não foi validada. Não use savestates de uma ROM em outra.
+A atualização **0.7.0 → 0.7.1 preserva o `.sav`**, sem Novo Jogo. O formato do save e os IDs da campanha são preservados. Na 0.7.2, as marcas de capturas são separadas dos eventos originais e migradas ao Continuar. Consulte `docs/MIGRACAO_0.7.2.md`. A correção recupera a sequência Devon/Peeko após Roxanne ao escolher Continuar; não reinicia missões concluídas. Saves 0.4/0.5 são incompatíveis, e a migração da 0.6 não foi validada. Não use savestates de uma ROM em outra.
 
 ## Conteúdo integrado
 

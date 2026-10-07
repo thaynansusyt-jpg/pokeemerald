@@ -27,3 +27,7 @@ for q in quests:
  assert 0x264 <= q['flag'] <= 0x2B4
 assert 'HeMigrateQuestProgress();' in s
 print('OK: 81 unique formerly unused capture flags; compatible migration is called on Continue.')
+
+catch=(root/'src/battle_script_commands.c').read_text().split('static void ComputeBallData',1)[-1]
+assert catch.index('if (ballId == BALL_MASTER)') < catch.index('if (gSpeciesInfo[battleMon->species].isUltraBeast)')
+print('OK: Master Ball guarantee precedes Ultra Beast penalty.')
