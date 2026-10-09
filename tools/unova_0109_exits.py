@@ -32,4 +32,4 @@ add_trigger("UnNuvemaBedroom","UN_BedroomExit",[(x,12) for x in (9,10,11)])
 add_trigger("UnNuvemaHouse","UN_HouseExit",[(x,11) for x in (8,9,10)])
 # Facilitate navigation in both directions.
 add_trigger("UnNuvemaHouse","UN_ToBedroom",[(14,7),(14,8)])
-add_trigger("UnNuvemaTown","UN_EnterHouse",[(9,9)])
+add_trigger("UnNuvemaTown","UN_EnterHouse",[(9,11)])
