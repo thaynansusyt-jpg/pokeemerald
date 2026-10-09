@@ -1,0 +1,97 @@
+diff --git a/data/scripts/sinnoh_chapter1.inc b/data/scripts/sinnoh_chapter1.inc
+index 07ead0d..985b007 100644
+--- a/data/scripts/sinnoh_chapter1.inc
++++ b/data/scripts/sinnoh_chapter1.inc
+@@ -54,13 +54,20 @@ SI_Lake::
+  faceplayer
+  goto_if_lt VAR_SI_STAGE, 2, SI_LakeEarly
+  goto_if_ge VAR_SI_STAGE, 3, SI_LakeDone
+- trainerbattle_single TRAINER_SI_LAKE, SI_Text_LakeIntro, SI_Text_Lose, SI_LakeWin, NO_MUSIC
+- goto SI_LakeWin
++ trainerbattle_single TRAINER_SI_LAKE, SI_Text_LakeIntro, SI_Text_Lose, SI_LakeAfterBattle, NO_MUSIC
++ goto SI_LakeAfterBattle
++SI_LakeAfterBattle:
++ callnative SiLakeBattleWon
++ goto_if_eq VAR_RESULT, FALSE, SI_LakeRetry
+ SI_LakeWin:
+  msgbox SI_Text_LakeWin, MSGBOX_DEFAULT
+  setvar VAR_SI_STAGE, 3
+  release
+  end
++SI_LakeRetry:
++ msgbox SI_Text_LakeRetry, MSGBOX_DEFAULT
++ release
++ end
+ SI_Looker::
+  lock
+  faceplayer
+@@ -337,6 +344,10 @@ SI_Text_Lose::
+  .string "O sinal... ficou instável!$"
+ SI_Text_Lose_En::
+  .string "The signal... became\nunstable!$"
++SI_Text_LakeRetry::
++ .string "Seu time foi recuperado.\pVolte quando estiver pronto\npara tentar de novo!$"
++SI_Text_LakeRetry_En::
++ .string "Your team has recovered.\pCome back when you are ready\nto try again!$"
+ SI_Text_LakeWin::
+  .string "O coletor desliga. Entre os\nfios há uma etiqueta: LOTE\pO-17, MINA OREBURGH. Você\nguarda a leitura para\pRowan. Um policial em\nJubilife pode identificar a\pcarga.$"
+ SI_Text_LakeWin_En::
+diff --git a/src/battle_setup.c b/src/battle_setup.c
+index 49cc3df..b55eb29 100644
+--- a/src/battle_setup.c
++++ b/src/battle_setup.c
+@@ -1,5 +1,6 @@
+ #include "global.h"
+ #include "sinnoh_prism.h"
++#include "sinnoh_chapter.h"
+ #include "data.h"
+ #include "main.h"
+ #include "battle.h"
+@@ -1622,6 +1623,15 @@ static void CB2_EndTrainerBattle(void)
+         DowngradeBadPoison();
+         SetMainCallback2(CB2_ReturnToFieldContinueScriptPlayMapMusic);
+     }
++    else if (SiIsSeason() && TRAINER_BATTLE_PARAM.opponentA == TRAINER_SI_LAKE
++             && IsPlayerDefeated(gBattleOutcome))
++    {
++        // The mandatory introductory encounter must be retryable, not a blackout.
++        // Do not flag the trainer as beaten: the player has not won the chapter.
++        HealPlayerParty();
++        DowngradeBadPoison();
++        SetMainCallback2(CB2_ReturnToFieldContinueScriptPlayMapMusic);
++    }
+     else if (IsPlayerDefeated(gBattleOutcome))
+     {
+         if (CurrentBattlePyramidLocation() != PYRAMID_LOCATION_NONE || InTrainerHillChallenge() || FlagGet(B_FLAG_NO_WHITEOUT))
+diff --git a/src/overworld.c b/src/overworld.c
+index f77f5ca..4773def 100644
+--- a/src/overworld.c
++++ b/src/overworld.c
+@@ -745,6 +745,11 @@ void SetWarpDestinationToHealLocation(u8 healLocationId)
+ 
+ static bool32 IsWhiteoutCutscene(void)
+ {
++    // Sinnoh uses custom center maps and healing NPC scripts: the inherited
++    // rush-to-nurse whiteout cutscene can leave the script context locked.
++    // Use a regular field fade instead, while preserving the player's heal warp.
++    if (SiIsSeason())
++        return FALSE;
+     if (OW_WHITEOUT_CUTSCENE < GEN_4)
+         return FALSE;
+     return GetHealNpcLocalId(GetHealLocationIndexByWarpData(&gSaveBlock1Ptr->lastHealLocation)) != LOCALID_NONE;
+diff --git a/src/sinnoh_chapter.c b/src/sinnoh_chapter.c
+index 4df84d7..b553432 100644
+--- a/src/sinnoh_chapter.c
++++ b/src/sinnoh_chapter.c
+@@ -518,3 +518,11 @@ void SiInferStarter(void)
+     }
+     VarSet(VAR_SI_STARTER,1);
+ }
++
++// The chapter resumes a script after a trainer battle. Only a genuine victory
++// advances its mandatory lake stage; a defeat allows the same encounter again.
++#include "battle.h"
++void SiLakeBattleWon(void)
++{
++    gSpecialVar_Result = (gBattleOutcome == B_OUTCOME_WON);
++}

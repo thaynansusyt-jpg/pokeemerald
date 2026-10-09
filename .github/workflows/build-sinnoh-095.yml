@@ -1,0 +1,70 @@
+name: Sinnoh 0.9.5 - Mandatory Battle Recovery
+on:
+  push:
+    branches: [sinnoh-0.9.5-derrota-inicial]
+    paths:
+      - 'patches/**'
+      - 'src/**'
+      - 'include/**'
+      - 'data/**'
+      - '.github/workflows/build-sinnoh-095.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  sinnoh-gba:
+    runs-on: ubuntu-latest
+    timeout-minutes: 75
+    steps:
+      - name: Checkout recovered branch
+        uses: actions/checkout@v4
+      - name: Install GBA build toolchain
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y gcc-arm-none-eabi binutils-arm-none-eabi libnewlib-arm-none-eabi libpng-dev python3 git make
+      - name: Reconstruct and verify source patches
+        shell: bash
+        run: |
+          set -euo pipefail
+          cat patches/sinnoh_092/part-*.b64 | base64 --decode > /tmp/sinnoh_092.patch.xz
+          echo "b7a3c83299858909166344bf6aa823dd9c1950cbd5f28e3835da0391de7dff07  /tmp/sinnoh_092.patch.xz" | sha256sum -c -
+          xz -dc /tmp/sinnoh_092.patch.xz > /tmp/sinnoh_092.patch
+          base64 --decode patches/sinnoh_093_additional.tar.gz.b64 > /tmp/sinnoh_093_additional.tar.gz
+          echo "f38b1ef378e54201d350ba832d6520a38b53a44854f8fa695798833ee92b2c9a  /tmp/sinnoh_093_additional.tar.gz" | sha256sum -c -
+          tar -xzf /tmp/sinnoh_093_additional.tar.gz -C /tmp
+          git apply --whitespace=nowarn /tmp/sinnoh_092.patch
+          git apply --whitespace=nowarn /tmp/0.9.3.patch
+          git apply --whitespace=nowarn /tmp/0.9.3-options.patch
+          base64 --decode patches/sinnoh_093_source_overlay.tar.gz.b64 > /tmp/sinnoh_093_source_overlay.tar.gz
+          echo "aaf049dc5d5695e5c6a25dc6cec20650100dad70120cf8df83d6df13a078c69b  /tmp/sinnoh_093_source_overlay.tar.gz" | sha256sum -c -
+          tar -xzf /tmp/sinnoh_093_source_overlay.tar.gz -C .
+          echo "245ef4cd1583d7b3856046e7d80066a33f69b73812621267b2ba782516c61ea0  patches/sinnoh_094_hotfix.patch" | sha256sum -c -
+          git apply --whitespace=nowarn patches/sinnoh_094_hotfix.patch
+          echo 'f18150f2f43f85f53d4d98d815e86ff7c458a6ee7596e6ecb3bf1fe9c9631b89  patches/sinnoh_095_defeat_recovery.patch' | sha256sum -c -
+          git apply --whitespace=nowarn patches/sinnoh_095_defeat_recovery.patch
+      - name: Validate encounters and UI
+        run: |
+          python3 tools/test_sinnoh_093_static.py
+          python3 tools/test_sinnoh_094_hotfix.py
+          python3 tools/test_sinnoh_095_retry.py
+          python3 tools/validate_hoenn.py
+          # Older 0.7.x checks hardcode MAX_TRAINERS_COUNT_EMERALD=864;
+          # Sinnoh increases it to 994. Run the compatible validators above.
+          grep -q 'MAX_TRAINERS_COUNT_EMERALD 994' include/constants/opponents.h
+      - name: Build playable GBA ROM
+        run: |
+          make modern -j2
+          test -s pokemon_hoenn_expansion_gen7.gba
+          ls -lh pokemon_hoenn_expansion_gen7.gba
+      - name: Upload Sinnoh 0.9.5 defeat recovery build
+        if: success()
+        uses: actions/upload-artifact@v4
+        with:
+          name: Pokemon-Hoenn-Expansion-Sinnoh-0.9.5-beta
+          path: |
+            pokemon_hoenn_expansion_gen7.gba
+            README_HOENN.md
+          if-no-files-found: error
+          retention-days: 14
