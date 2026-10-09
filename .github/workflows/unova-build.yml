@@ -2,6 +2,14 @@ name: Unova - Compilar e validar
 on:
   push:
     branches: [unova-0.10.5-dev]
+    paths:
+      - 'src/**'
+      - 'data/**'
+      - 'graphics/**'
+      - 'sound/**'
+      - 'include/**'
+      - 'tools/**'
+      - 'Makefile*'
   workflow_dispatch:
 permissions:
   contents: read
