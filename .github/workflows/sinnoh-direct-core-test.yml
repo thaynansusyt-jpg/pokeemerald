@@ -41,6 +41,7 @@ jobs:
           #define KEY_A 1
           #define KEY_START 8
           #define KEY_DOWN 128
+          #define KEY_RIGHT 16
           static uint32_t framebuf[W * H];
           static void snap(int frame) {
             char path[128];
@@ -66,9 +67,9 @@ jobs:
             core->setVideoBuffer(core,framebuf,W);
             if(!mCoreLoadFile(core,argv[1])){fprintf(stderr,"load ROM failed\n");return 5;}
             core->reset(core);
-            int marks[]={120,1500,3000,3500,3600,3850,3900,4200,4250,4500,4550,4800,5100,5400,5550,5700,6100,6800,7600,8500,10000,11600};
+            int marks[]={120,1500,3000,3500,3600,3850,3900,4200,4250,4500,4550,4800,5100,5400,5550,5700,6100,6800,7600,8500,10000,11600,12100,12700,13300,13900,14600,15100,16500};
             size_t mi=0;
-            for(int frame=0; frame<=11600; frame++) {
+            for(int frame=0; frame<=16500; frame++) {
               uint32_t keys=0;
               if(frame>=3500 && frame<3520) keys=KEY_START;
               if(frame>=3800 && frame<3820) keys=KEY_A;
@@ -78,7 +79,9 @@ jobs:
               if(frame>=4600 && frame<5380 && ((frame-4600)%60)<13) keys=KEY_DOWN;
               if(frame>=5500 && frame<5520) keys=KEY_A;
               // Walk through dialog after the Sinnoh new-game transition.
-              if(frame>=5900 && frame<10500 && (frame%180)<14) keys=KEY_A;
+              if(frame>=5900 && frame<14100 && (frame%180)<14) keys=KEY_A;
+              if(frame>=14500 && frame<14580) keys=KEY_DOWN;
+              if(frame>=15000 && frame<15080) keys=KEY_RIGHT;
               core->setKeys(core,keys);
               core->runFrame(core);
               if(mi < sizeof(marks)/sizeof(marks[0]) && frame==marks[mi]) {
@@ -86,7 +89,7 @@ jobs:
                 mi++;
               }
             }
-            printf("COMPLETED 11600 GBA frames, running direct core controls\n");
+            printf("COMPLETED 16500 GBA frames, running direct core controls\n");
             core->unloadROM(core);
             mCoreConfigDeinit(&core->config);
             core->deinit(core);
