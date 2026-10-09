@@ -41,7 +41,7 @@ jobs:
           #define KEY_A 1
           #define KEY_START 8
           #define KEY_DOWN 128
-          static mColor framebuf[W * H];
+          static uint32_t framebuf[W * H];
           static void snap(int frame) {
             char path[128];
             snprintf(path, sizeof(path), "captures/frame-%05d.ppm", frame);
