@@ -1,0 +1,338 @@
+diff --git a/src/sinnoh_missions.c b/src/sinnoh_missions.c
+--- a/src/sinnoh_missions.c
++++ b/src/sinnoh_missions.c
+@@ -3,6 +3,9 @@
+ #include "hoenn_rules.h"
+ #include "sinnoh_prism.h"
+ #include "sinnoh_chapter.h"
++#include "field_player_avatar.h"
++#include "fieldmap.h"
++#include "constants/map_groups.h"
+ #include "hoenn_expansion.h"
+ #include "main.h"
+ #include "overworld.h"
+@@ -244,3 +247,142 @@
+     HeUiInit(FALSE);
+     Draw();SetMainCallback2(SiMissionMain);
+ }
++
++
++// ---- Sinnoh Modo Ajuda: sprite-layer marker (not drawn into the mission menu). ----
++// A standalone 16x16 icon uses four graphics frames (up/down/left/right),
++// never changes collision, trainer state, scripts or save structure size.
++#define SI_GUIDE_TILE_TAG 0x7AC0
++#define SI_GUIDE_PAL_TAG  0x7AC1
++static const u8 sSiGuideArrowGfx[] = {
++    0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x11, 0x00, 0x00, 0x10, 0x22, 0x00, 0x00, 0x10, 0x22,
++    0x00, 0x00, 0x10, 0x22, 0x00, 0x00, 0x10, 0x22, 0x00, 0x00, 0x10, 0x22, 0x00, 0x10, 0x11, 0x22,
++    0x00, 0x00, 0x00, 0x00, 0x11, 0x00, 0x00, 0x00, 0x22, 0x01, 0x00, 0x00, 0x22, 0x01, 0x00, 0x00,
++    0x22, 0x01, 0x00, 0x00, 0x22, 0x01, 0x00, 0x00, 0x22, 0x01, 0x00, 0x00, 0x22, 0x11, 0x01, 0x00,
++    0x00, 0x21, 0x22, 0x22, 0x00, 0x21, 0x22, 0x22, 0x00, 0x10, 0x22, 0x22, 0x00, 0x00, 0x21, 0x22,
++    0x00, 0x00, 0x10, 0x22, 0x00, 0x00, 0x00, 0x21, 0x00, 0x00, 0x00, 0x10, 0x00, 0x00, 0x00, 0x00,
++    0x22, 0x22, 0x12, 0x00, 0x22, 0x22, 0x12, 0x00, 0x22, 0x22, 0x01, 0x00, 0x23, 0x12, 0x00, 0x00,
++    0x22, 0x01, 0x00, 0x00, 0x12, 0x00, 0x00, 0x00, 0x01, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
++    0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x11, 0x00, 0x00, 0x10, 0x22,
++    0x00, 0x00, 0x21, 0x22, 0x00, 0x10, 0x22, 0x22, 0x00, 0x21, 0x22, 0x22, 0x10, 0x22, 0x22, 0x22,
++    0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x01, 0x00, 0x00, 0x00,
++    0x01, 0x00, 0x00, 0x00, 0x11, 0x11, 0x11, 0x00, 0x22, 0x22, 0x22, 0x01, 0x22, 0x22, 0x22, 0x01,
++    0x10, 0x22, 0x23, 0x22, 0x00, 0x21, 0x22, 0x22, 0x00, 0x10, 0x22, 0x22, 0x00, 0x00, 0x21, 0x22,
++    0x00, 0x00, 0x10, 0x22, 0x00, 0x00, 0x00, 0x11, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
++    0x22, 0x22, 0x22, 0x01, 0x22, 0x22, 0x22, 0x01, 0x11, 0x11, 0x11, 0x00, 0x01, 0x00, 0x00, 0x00,
++    0x01, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
++    0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x10, 0x00, 0x00, 0x00, 0x21, 0x00, 0x00, 0x10, 0x22,
++    0x00, 0x00, 0x21, 0x32, 0x00, 0x10, 0x22, 0x22, 0x00, 0x21, 0x22, 0x22, 0x00, 0x21, 0x22, 0x22,
++    0x00, 0x00, 0x00, 0x00, 0x01, 0x00, 0x00, 0x00, 0x12, 0x00, 0x00, 0x00, 0x22, 0x01, 0x00, 0x00,
++    0x22, 0x12, 0x00, 0x00, 0x22, 0x22, 0x01, 0x00, 0x22, 0x22, 0x12, 0x00, 0x22, 0x22, 0x12, 0x00,
++    0x00, 0x10, 0x11, 0x22, 0x00, 0x00, 0x10, 0x22, 0x00, 0x00, 0x10, 0x22, 0x00, 0x00, 0x10, 0x22,
++    0x00, 0x00, 0x10, 0x22, 0x00, 0x00, 0x10, 0x22, 0x00, 0x00, 0x00, 0x11, 0x00, 0x00, 0x00, 0x00,
++    0x22, 0x11, 0x01, 0x00, 0x22, 0x01, 0x00, 0x00, 0x22, 0x01, 0x00, 0x00, 0x22, 0x01, 0x00, 0x00,
++    0x22, 0x01, 0x00, 0x00, 0x22, 0x01, 0x00, 0x00, 0x11, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
++    0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x10,
++    0x00, 0x00, 0x00, 0x10, 0x00, 0x11, 0x11, 0x11, 0x10, 0x22, 0x22, 0x22, 0x10, 0x22, 0x22, 0x22,
++    0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x11, 0x00, 0x00, 0x00, 0x22, 0x01, 0x00, 0x00,
++    0x22, 0x12, 0x00, 0x00, 0x22, 0x22, 0x01, 0x00, 0x22, 0x22, 0x12, 0x00, 0x22, 0x32, 0x22, 0x01,
++    0x10, 0x22, 0x22, 0x22, 0x10, 0x22, 0x22, 0x22, 0x00, 0x11, 0x11, 0x11, 0x00, 0x00, 0x00, 0x10,
++    0x00, 0x00, 0x00, 0x10, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
++    0x22, 0x22, 0x22, 0x01, 0x22, 0x22, 0x12, 0x00, 0x22, 0x22, 0x01, 0x00, 0x22, 0x12, 0x00, 0x00,
++    0x22, 0x01, 0x00, 0x00, 0x11, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
++};
++static const u16 sSiGuidePal[] = {RGB(0,0,0), RGB(3,5,8), RGB(31,28,5), RGB(31,31,31)};
++static const struct SpriteSheet sSiGuideSheet = { sSiGuideArrowGfx, sizeof(sSiGuideArrowGfx), SI_GUIDE_TILE_TAG };
++static const struct SpritePalette sSiGuidePalette = {sSiGuidePal, SI_GUIDE_PAL_TAG};
++static const struct OamData sSiGuideOam = {
++    .shape = SPRITE_SHAPE(16x16), .size = SPRITE_SIZE(16x16),
++    .priority = 0, .affineMode = ST_OAM_AFFINE_OFF, .bpp = ST_OAM_4BPP
++};
++static void SiGuideSpriteCB(struct Sprite *sprite);
++static const struct SpriteTemplate sSiGuideTemplate = {
++    .tileTag = SI_GUIDE_TILE_TAG, .paletteTag = SI_GUIDE_PAL_TAG,
++    .oam = &sSiGuideOam, .anims = gDummySpriteAnimTable,
++    .images = NULL, .affineAnims = gDummySpriteAffineAnimTable,
++    .callback = SiGuideSpriteCB
++};
++struct SiGuideGoal {u16 stage, map; s16 x,y;};
++static const struct SiGuideGoal sSiGuideGoals[] = {
++    {1, MAP_SANDGEM_LAB, 6, 3},       // Speak to Rowan
++    {2, MAP_ROUTE201, 0, 14},         // Route 201 western junction
++    {2, MAP_VERITY_LAKEFRONT, 2, 4},  // Enter lake
++    {2, MAP_LAKE_VERITY, 19, 41},     // Galactic collector (exact NPC)
++    {3, MAP_JUBILIFE_CITY_POKEMON_SCHOOL, 4, 3},
++    {4, MAP_OREBURGH_MUSEUM, 6, 3},
++    {5, MAP_OREBURGH_MINE_B2F, 18, 24},
++    {6, MAP_OREBURGH_CITY_GYM, 5, 2}
++};
++static u8 sSiGuideSpriteId = MAX_SPRITES;
++static u16 sSiGuideChime = 0;
++
++static const struct SiGuideGoal *SiGuideCurrentGoal(void)
++{
++    u16 i, map = gSaveBlock1Ptr->location.mapNum | (gSaveBlock1Ptr->location.mapGroup << 8);
++    u16 stage = VarGet(VAR_SI_STAGE);
++    for (i = 0; i < ARRAY_COUNT(sSiGuideGoals); i++)
++        if (sSiGuideGoals[i].stage == stage && sSiGuideGoals[i].map == map)
++            return &sSiGuideGoals[i];
++    return NULL; // Never point at an invented or inaccessible destination.
++}
++static void SiGuideSpriteCB(struct Sprite *sprite)
++{
++    const struct SiGuideGoal *goal = SiGuideCurrentGoal();
++    s16 playerX, playerY, drawX, drawY, dx, dy;
++    u8 id, frame = 0;
++    if (!SiIsSeason() || VarGet(VAR_SI_GUIDE_MODE) != 1 || !goal)
++    {
++        sprite->invisible = TRUE;
++        sSiGuideChime = 0;
++        return;
++    }
++    id = GetPlayerAvatarSpriteId();
++    if (id >= MAX_SPRITES || !gSprites[id].inUse)
++    {
++        sprite->invisible = TRUE;
++        return;
++    }
++    PlayerGetDestCoords(&playerX, &playerY);
++    dx = goal->x + MAP_OFFSET - playerX;
++    dy = goal->y + MAP_OFFSET - playerY;
++    drawX = gSprites[id].x + dx * 16;
++    drawY = gSprites[id].y + dy * 16 - 17;
++    // When out of view show a directional edge marker instead of a false NPC.
++    if (drawX < 14) {drawX = 14; frame = 2;}
++    else if (drawX > 226) {drawX = 226; frame = 3;}
++    if (drawY < 13) {drawY = 13; if (frame == 0) frame = 0;}
++    else if (drawY > 143) {drawY = 143; if (frame == 0) frame = 1;}
++    sprite->x = drawX;
++    sprite->y = drawY - ((sprite->data[0] / 10) % 3);
++    sprite->oam.tileNum = GetSpriteTileStartByTag(SI_GUIDE_TILE_TAG) + frame * 4;
++    sprite->data[0]++;
++    sprite->invisible = ((sprite->data[0] / 16) & 1) != 0;
++    // Short confirmation once at a mission target, not a repeated nuisance.
++    if (abs(dx) <= 1 && abs(dy) <= 1)
++    {
++        if (!sSiGuideChime) {PlaySE(SE_SELECT); sSiGuideChime = 1;}
++    }
++    else if (abs(dx) > 3 || abs(dy) > 3) sSiGuideChime = 0;
++}
++void SiGuideUpdate(void)
++{
++    u8 id;
++    if (!SiIsSeason() || VarGet(VAR_SI_GUIDE_MODE) != 1 || !SiGuideCurrentGoal())
++    {
++        if (sSiGuideSpriteId < MAX_SPRITES
++         && gSprites[sSiGuideSpriteId].inUse
++         && gSprites[sSiGuideSpriteId].callback == SiGuideSpriteCB)
++            gSprites[sSiGuideSpriteId].invisible = TRUE;
++        return;
++    }
++    if (sSiGuideSpriteId < MAX_SPRITES
++     && gSprites[sSiGuideSpriteId].inUse
++     && gSprites[sSiGuideSpriteId].callback == SiGuideSpriteCB)
++        return;
++    if (GetSpriteTileStartByTag(SI_GUIDE_TILE_TAG) == 0xFFFF)
++        LoadSpriteSheet(&sSiGuideSheet);
++    if (IndexOfSpritePaletteTag(SI_GUIDE_PAL_TAG) == 0xFF)
++        LoadSpritePalette(&sSiGuidePalette);
++    id = CreateSprite(&sSiGuideTemplate, 120, 70, 0);
++    if (id < MAX_SPRITES) {sSiGuideSpriteId = id; sSiGuideChime = 0;}
++}
+diff --git a/src/option_menu.c b/src/option_menu.c
+--- a/src/option_menu.c
++++ b/src/option_menu.c
+@@ -23,6 +23,9 @@
+ static const u8 gText_ButtonTypeLEqualsA[] = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}L=A");
+ #include "option_menu.h"
+ #include "hoenn_expansion.h"
++#include "event_data.h"
++#include "sinnoh_chapter.h"
++#include "constants/vars.h"
+ #include "bg.h"
+ #include "gpu_regs.h"
+ #include "international_string_util.h"
+@@ -47,6 +50,7 @@
+ #define tButtonMode data[5]
+ #define tWindowFrameType data[6]
+ #define tLanguage data[7]
++#define tGuideMode data[8]
+ 
+ enum
+ {
+@@ -57,6 +61,7 @@
+     MENUITEM_BUTTONMODE,
+     MENUITEM_FRAMETYPE,
+     MENUITEM_LANGUAGE,
++    MENUITEM_GUIDEMODE,
+     MENUITEM_CANCEL,
+     MENUITEM_COUNT,
+ };
+@@ -67,12 +72,12 @@
+     WIN_OPTIONS
+ };
+ 
+-#define YPOS_TEXTSPEED    (MENUITEM_TEXTSPEED * 14)
+-#define YPOS_BATTLESCENE  (MENUITEM_BATTLESCENE * 14)
+-#define YPOS_BATTLESTYLE  (MENUITEM_BATTLESTYLE * 14)
+-#define YPOS_SOUND        (MENUITEM_SOUND * 14)
+-#define YPOS_BUTTONMODE   (MENUITEM_BUTTONMODE * 14)
+-#define YPOS_FRAMETYPE    (MENUITEM_FRAMETYPE * 14)
++#define YPOS_TEXTSPEED    (MENUITEM_TEXTSPEED * 12)
++#define YPOS_BATTLESCENE  (MENUITEM_BATTLESCENE * 12)
++#define YPOS_BATTLESTYLE  (MENUITEM_BATTLESTYLE * 12)
++#define YPOS_SOUND        (MENUITEM_SOUND * 12)
++#define YPOS_BUTTONMODE   (MENUITEM_BUTTONMODE * 12)
++#define YPOS_FRAMETYPE    (MENUITEM_FRAMETYPE * 12)
+ 
+ static void Task_OptionMenuFadeIn(u8 taskId);
+ static void Task_OptionMenuProcessInput(u8 taskId);
+@@ -93,6 +98,15 @@
+ static void ButtonMode_DrawChoices(u8 selection);
+ static void Language_DrawChoices(u8 selection);
+ static const u8 sLanguageLabel[] = _("LANGUAGE");
++static void DrawOptionMenuChoice(const u8 *text, u8 x, u8 y, u8 style);
++static const u8 sGuideLabel[] = _("MODO AJUDA");
++static const u8 sGuideNormal[] = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}NORMAL");
++static const u8 sGuideHelp[] = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}AJUDA");
++static void Guide_DrawChoices(u8 selection)
++{
++    DrawOptionMenuChoice(sGuideNormal, 104, MENUITEM_GUIDEMODE * 12, selection == 0);
++    DrawOptionMenuChoice(sGuideHelp, 172, MENUITEM_GUIDEMODE * 12, selection == 1);
++}
+ static const u8 sEnglish[] = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}EN");
+ static const u8 sPortuguese[] = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}PT-BR");
+ 
+@@ -115,6 +129,7 @@
+     [MENUITEM_BUTTONMODE]  = gText_ButtonMode,
+     [MENUITEM_FRAMETYPE]   = gText_Frame,
+     [MENUITEM_LANGUAGE]   = sLanguageLabel,
++    [MENUITEM_GUIDEMODE]  = sGuideLabel,
+     [MENUITEM_CANCEL]      = gText_OptionMenuCancel,
+ };
+ 
+@@ -266,6 +281,7 @@
+         gTasks[taskId].tButtonMode = gSaveBlock2Ptr->optionsButtonMode;
+         gTasks[taskId].tWindowFrameType = gSaveBlock2Ptr->optionsWindowFrameType;
+         gTasks[taskId].tLanguage = gSaveBlock2Ptr->optionsLanguage;
++        gTasks[taskId].tGuideMode = VarGet(VAR_SI_GUIDE_MODE) == 1;
+ 
+         TextSpeed_DrawChoices(gTasks[taskId].tTextSpeed);
+         BattleScene_DrawChoices(gTasks[taskId].tBattleSceneOff);
+@@ -274,6 +290,7 @@
+         ButtonMode_DrawChoices(gTasks[taskId].tButtonMode);
+         FrameType_DrawChoices(gTasks[taskId].tWindowFrameType);
+         Language_DrawChoices(gTasks[taskId].tLanguage);
++        Guide_DrawChoices(gTasks[taskId].tGuideMode);
+         HighlightOptionMenuItem(gTasks[taskId].tMenuSelection);
+ 
+         CopyWindowToVram(WIN_OPTIONS, COPYWIN_FULL);
+@@ -361,6 +378,14 @@
+ 
+             if (previousOption != gTasks[taskId].tButtonMode)
+                 ButtonMode_DrawChoices(gTasks[taskId].tButtonMode);
++            break;
++        case MENUITEM_GUIDEMODE:
++            if (JOY_NEW(DPAD_LEFT | DPAD_RIGHT))
++            {
++                gTasks[taskId].tGuideMode ^= 1;
++                Guide_DrawChoices(gTasks[taskId].tGuideMode);
++                sArrowPressed = TRUE;
++            }
+             break;
+         case MENUITEM_LANGUAGE:
+             if (JOY_NEW(DPAD_LEFT | DPAD_RIGHT))
+@@ -376,6 +401,7 @@
+                 ButtonMode_DrawChoices(gTasks[taskId].tButtonMode);
+                 FrameType_DrawChoices(gTasks[taskId].tWindowFrameType);
+                 Language_DrawChoices(gTasks[taskId].tLanguage);
++                Guide_DrawChoices(gTasks[taskId].tGuideMode);
+                 sArrowPressed = TRUE;
+             }
+             break;
+@@ -407,6 +433,7 @@
+     gSaveBlock2Ptr->optionsButtonMode = gTasks[taskId].tButtonMode;
+     gSaveBlock2Ptr->optionsWindowFrameType = gTasks[taskId].tWindowFrameType;
+     gSaveBlock2Ptr->optionsLanguage = gTasks[taskId].tLanguage;
++    VarSet(VAR_SI_GUIDE_MODE, gTasks[taskId].tGuideMode);
+ 
+     BeginNormalPaletteFade(PALETTES_ALL, 0, 0, 16, RGB_BLACK);
+     gTasks[taskId].func = Task_OptionMenuFadeOut;
+@@ -425,7 +452,7 @@
+ static void HighlightOptionMenuItem(u8 index)
+ {
+     SetGpuReg(REG_OFFSET_WIN0H, WIN_RANGE(16, DISPLAY_WIDTH - 16));
+-    SetGpuReg(REG_OFFSET_WIN0V, WIN_RANGE(index * 14 + 40, index * 14 + 54));
++    SetGpuReg(REG_OFFSET_WIN0V, WIN_RANGE(index * 12 + 40, index * 12 + 54));
+ }
+ 
+ static void DrawOptionMenuChoice(const u8 *text, u8 x, u8 y, u8 style)
+@@ -680,7 +707,7 @@
+ 
+     FillWindowPixelBuffer(WIN_OPTIONS, PIXEL_FILL(1));
+     for (i = 0; i < MENUITEM_COUNT; i++)
+-        AddTextPrinterParameterized(WIN_OPTIONS, FONT_SMALL, sOptionMenuItemsNames[i], 8, (i * 14) + 1, TEXT_SKIP_DRAW, NULL);
++        AddTextPrinterParameterized(WIN_OPTIONS, FONT_SMALL, sOptionMenuItemsNames[i], 8, (i * 12) + 1, TEXT_SKIP_DRAW, NULL);
+     CopyWindowToVram(WIN_OPTIONS, COPYWIN_FULL);
+ }
+ 
+@@ -721,6 +748,6 @@
+ 
+ static void Language_DrawChoices(u8 selection)
+ {
+-    DrawOptionMenuChoice(sEnglish, 104, MENUITEM_LANGUAGE * 14, selection == 0);
+-    DrawOptionMenuChoice(sPortuguese, 163, MENUITEM_LANGUAGE * 14, selection == 1);
+-}
++    DrawOptionMenuChoice(sEnglish, 104, MENUITEM_LANGUAGE * 12, selection == 0);
++    DrawOptionMenuChoice(sPortuguese, 163, MENUITEM_LANGUAGE * 12, selection == 1);
++}
+diff --git a/src/overworld.c b/src/overworld.c
+--- a/src/overworld.c
++++ b/src/overworld.c
+@@ -1855,6 +1855,7 @@
+     AnimateSprites();
+     CameraUpdate();
+     UpdateCameraPanning();
++    SiGuideUpdate(); // Blink a marker over the active Sinnoh objective (help mode only).
+     BuildOamBuffer();
+     UpdatePaletteFade();
+     UpdateTilesetAnimations();
+diff --git a/include/constants/vars.h b/include/constants/vars.h
+--- a/include/constants/vars.h
++++ b/include/constants/vars.h
+@@ -358,6 +358,9 @@
+ #define VAR_HE_DN_SPECIES 0x40F9
+ #define VAR_HE_DN_STEPS 0x40FA
+ 
++// Local to Sinnoh. Route 127's old slot was unused in this project.
++// 0 = Normal, 1 = Ajuda (guide arrows on supported mission maps).
++#define VAR_SI_GUIDE_MODE 0x407A
+ #define VAR_SI_STAGE 0x4055
+ #define VAR_SI_BADGES 0x4056
+ #define VAR_SI_CLUES 0x4061
+diff --git a/include/sinnoh_chapter.h b/include/sinnoh_chapter.h
+--- a/include/sinnoh_chapter.h
++++ b/include/sinnoh_chapter.h
+@@ -9,6 +9,7 @@
+ const unsigned char *SiLayoutName(unsigned short layoutId);
+ void SiInitializeSeason(void);
+ void SiOpenMissionMenu(void);
++void SiGuideUpdate(void);
+ void SiCoachFillCandy(void);
+ void SiCoachMaxIvs(void);
+ #endif
