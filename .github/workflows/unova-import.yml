@@ -1,0 +1,69 @@
+name: Unova - Importar codigo-fonte
+on:
+  workflow_dispatch:
+    inputs:
+      release_tag:
+        description: "Tag do Release contendo o ZIP do checkpoint"
+        required: true
+        default: "unova-source-0.10.5"
+      source_asset:
+        description: "Nome exato do ZIP anexado ao Release"
+        required: true
+        default: "Pokemon_Hoenn_Expansion_Unova_0.10.5_CHECKPOINT_DEV.zip"
+permissions:
+  contents: write
+jobs:
+  import-source:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - name: Checkout da branch isolada de Unova
+        uses: actions/checkout@v4
+        with:
+          ref: unova-0.10.5-dev
+          fetch-depth: 1
+          persist-credentials: true
+      - name: Baixar e verificar o ZIP do Release
+        id: unpack
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: ${{ inputs.release_tag }}
+          ASSET: ${{ inputs.source_asset }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p /tmp/unova-zip /tmp/unova-extracted
+          gh release download "$TAG" --repo "$GITHUB_REPOSITORY" --pattern "$ASSET" --dir /tmp/unova-zip
+          test -s "/tmp/unova-zip/$ASSET"
+          unzip -tq "/tmp/unova-zip/$ASSET"
+          unzip -q "/tmp/unova-zip/$ASSET" -d /tmp/unova-extracted
+          mapfile -t roots < <(find /tmp/unova-extracted -maxdepth 3 -type f -name Makefile.termux)
+          if [ "${#roots[@]}" -ne 1 ]; then
+            echo "ERRO: ZIP precisa conter exatamente uma raiz de projeto com Makefile.termux" >&2
+            exit 1
+          fi
+          src="$(dirname "${roots[0]}")"
+          test -f "$src/Makefile"
+          test -f "$src/tools/qa_unova_0101.py"
+          test -f "$src/tools/qa_unova_integrated.py"
+          echo "source=$src" >> "$GITHUB_OUTPUT"
+      - name: Importar os arquivos, preservando Git e o CI na branch
+        env:
+          SOURCE: ${{ steps.unpack.outputs.source }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          rsync -a --delete --exclude='/.git/' --exclude='/.github/workflows/unova-build.yml' "$SOURCE/" "$GITHUB_WORKSPACE/"
+          test -f Makefile
+          test -f Makefile.termux
+          test -f .github/workflows/unova-build.yml
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "Sem alteracoes: checkpoint ja importado."
+          else
+            git commit -m "Import Unova 0.10.5 development checkpoint"
+            git push origin HEAD:refs/heads/unova-0.10.5-dev
+            echo "Checkpoint importado. Build sera executado no push."
+          fi
