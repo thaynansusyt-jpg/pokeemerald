@@ -1,0 +1,37 @@
+name: Unova 0107 - Inspecao de assets
+on:
+  push:
+    branches: [unova-0.10.7-video-qa]
+    paths:
+      - .github/workflows/unova-asset-check.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  asset-review:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Prepare visual asset samples and map metadata
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p /tmp/unova-review
+          cp -a graphics/object_events/pics/people/unova/{hilda,hilbert,bianca,cheren}.{png,pal} /tmp/unova-review/
+          cp -a data/tilesets/primary/un_indoor/tiles.png /tmp/unova-review/primary_un_indoor.png
+          cp -a data/tilesets/secondary/un_rooms/tiles.png /tmp/unova-review/secondary_un_rooms.png
+          cp -a data/tilesets/primary/un_indoor/metatiles.bin /tmp/unova-review/primary_metatiles.bin
+          cp -a data/tilesets/secondary/un_rooms/metatiles.bin /tmp/unova-review/secondary_metatiles.bin
+          cp -a data/layouts/UnNuvemaBedroom/map.bin /tmp/unova-review/bedroom_map.bin
+          cp -a data/layouts/UnNuvemaHouse/map.bin /tmp/unova-review/house_map.bin
+          cp -a data/layouts/UnNuvemaBedroom/border.bin /tmp/unova-review/bedroom_border.bin
+          cp -a data/layouts/UnNuvemaHouse/border.bin /tmp/unova-review/house_border.bin
+          cp -a data/maps/UnNuvemaBedroom/map.json /tmp/unova-review/bedroom_map.json
+          cp -a data/maps/UnNuvemaHouse/map.json /tmp/unova-review/house_map.json
+          cp -a data/tilesets/primary/un_indoor/palettes /tmp/unova-review/primary_palettes
+          cp -a data/tilesets/secondary/un_rooms/palettes /tmp/unova-review/secondary_palettes
+      - uses: actions/upload-artifact@v4
+        with:
+          name: unova-0107-asset-review
+          path: /tmp/unova-review/
+          if-no-files-found: error
