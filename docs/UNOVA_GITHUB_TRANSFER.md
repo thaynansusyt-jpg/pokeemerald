@@ -9,8 +9,8 @@
 3. Crie uma tag exatamente chamada `unova-source-0.10.5`. Se o GitHub pedir uma branch de destino da tag, selecione `unova-0.10.5-dev`.
 4. Anexe o ZIP **sem renomear** e publique o release. Faça upload do ZIP como *release asset*: não precisa extrair os 32 mil arquivos no celular.
 5. Publique o Release. O workflow **Unova - Importar codigo-fonte** inicia automaticamente ao detectar a tag `unova-source-0.10.5` (não precisa apertar Run workflow).
-6. O workflow importará os arquivos para a branch **unova-0.10.5-dev**, sem alterar `master` ou `sinnoh-0.9.7-lake-verity-fix`. Um segundo workflow (Unova - Compilar e validar) iniciará automaticamente após o push.
-7. Em **Actions → Unova - Compilar e validar → Artifacts**, baixe a ROM `.gba` se os testes e a compilação forem concluídos com sucesso. Se falhar, o artefato `unova-build-log` fornecerá o erro.
+6. O workflow importará os arquivos para a branch **unova-0.10.5-dev**, sem alterar `master` ou `sinnoh-0.9.7-lake-verity-fix`. O próprio workflow de importação executará as verificações e a compilação na nuvem. O workflow Unova - Compilar e validar fica disponível para commits posteriores.
+7. Em **Actions → Unova - Importar codigo-fonte → Artifacts**, baixe a ROM `.gba` se os testes e a compilação forem concluídos com sucesso. Se falhar, o artefato `unova-build-log` fornecerá o erro.
 
 **Importante:** o workflow preserva a pasta `.github/workflows` e não importa os workflows do ZIP. Importa o restante do código-fonte, inclusive recursos binários. Não considera a ROM jogável apenas por ter compilado.
 
