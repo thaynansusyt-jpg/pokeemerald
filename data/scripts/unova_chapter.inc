@@ -1,3 +1,25 @@
+// Reachable walk-on exits; not dependent on a door metatile behavior.
+UN_BedroomExit::
+ lockall
+ warp MAP_UN_NUVEMA_HOUSE, 10, 9
+ waitstate
+ end
+UN_HouseExit::
+ lockall
+ warp MAP_UN_NUVEMA_TOWN, 10, 11
+ waitstate
+ end
+UN_ToBedroom::
+ lockall
+ warp MAP_UN_NUVEMA_BEDROOM, 9, 10
+ waitstate
+ end
+UN_EnterHouse::
+ lockall
+ warp MAP_UN_NUVEMA_HOUSE, 9, 9
+ waitstate
+ end
+
 UN_Gate_NuvemaTown::
  goto_if_ge VAR_UN_STAGE, 2, UN_End
  lockall

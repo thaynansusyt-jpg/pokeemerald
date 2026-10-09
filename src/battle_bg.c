@@ -995,6 +995,14 @@ void LoadBattleMenuWindowGfx(void)
     }
 }
 
+// Complete 256x256-pixel Unova arena: background covers the full screen.
+static const u32 sUnArenaIndoorTiles[] = INCBIN_U32("graphics/unova/battle_indoor.4bpp");
+static const u16 sUnArenaIndoorMap[] = INCBIN_U16("graphics/unova/battle_indoor_map.bin");
+static const u16 sUnArenaIndoorPal[] = INCBIN_U16("graphics/unova/battle_indoor.gbapal");
+static const u32 sUnArenaOutdoorTiles[] = INCBIN_U32("graphics/unova/battle_outdoor.4bpp");
+static const u16 sUnArenaOutdoorMap[] = INCBIN_U16("graphics/unova/battle_outdoor_map.bin");
+static const u16 sUnArenaOutdoorPal[] = INCBIN_U16("graphics/unova/battle_outdoor.gbapal");
+
 static const u16 sHeBattlePalette[] = INCBIN_U16("graphics/hoenn_expansion/battle_city.gbapal");
 static const u32 sHeBattleTiles[] = INCBIN_U32("graphics/hoenn_expansion/battle_city.4bpp");
 static const u16 sHeBattleMap[] = INCBIN_U16("graphics/hoenn_expansion/battle_city_map.bin");
@@ -1011,6 +1019,21 @@ static const u16 sHeGymMap[] = INCBIN_U16("graphics/hoenn_expansion/battle_gym_m
 
 void DrawMainBattleBackground(void)
 {
+    // Prior arenas only covered the lower screen, leaving a black band.
+    // Use an original, full-size 4bpp arena in Unova story battles.
+    if (UnIsSeason() && !(gBattleTypeFlags &
+        (BATTLE_TYPE_LINK | BATTLE_TYPE_FRONTIER | BATTLE_TYPE_RECORDED_LINK | BATTLE_TYPE_LEGENDARY)))
+    {
+        bool32 indoor = gMapHeader.mapType == MAP_TYPE_INDOOR
+                     || gBattleEnvironment == BATTLE_ENVIRONMENT_BUILDING;
+        const u32 *tiles = indoor ? sUnArenaIndoorTiles : sUnArenaOutdoorTiles;
+        const u16 *map = indoor ? sUnArenaIndoorMap : sUnArenaOutdoorMap;
+        const u16 *pal = indoor ? sUnArenaIndoorPal : sUnArenaOutdoorPal;
+        CpuCopy16(tiles, (void *)BG_CHAR_ADDR(2), sizeof(sUnArenaIndoorTiles));
+        CpuCopy16(map, (void *)BG_SCREEN_ADDR(26), sizeof(sUnArenaIndoorMap));
+        LoadPalette(pal, BG_PLTT_ID(2), sizeof(sUnArenaIndoorPal));
+        return;
+    }
     if (!(gBattleTypeFlags & (BATTLE_TYPE_LINK | BATTLE_TYPE_FRONTIER | BATTLE_TYPE_RECORDED_LINK))
         && gBattleEnvironment == BATTLE_ENVIRONMENT_PLAIN
         && (gMapHeader.mapType == MAP_TYPE_CITY || gMapHeader.mapType == MAP_TYPE_TOWN))
