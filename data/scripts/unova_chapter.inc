@@ -125,6 +125,9 @@ UN_FirstWon::
  special HealPlayerParty
  setvar VAR_UN_STAGE, 1
  msgbox UN_T_FriendsLeave, MSGBOX_DEFAULT
+ setflag FLAG_UN_FRIENDS_LEFT
+ removeobject LOCALID_UN_NUVEMA_BEDROOM_1
+ removeobject LOCALID_UN_NUVEMA_BEDROOM_2
  releaseall
  end
 UN_FriendBianca::

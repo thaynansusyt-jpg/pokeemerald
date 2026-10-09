@@ -25,7 +25,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "UN_FriendBianca",
-      "flag": "0",
+      "flag": "FLAG_UN_FRIENDS_LEFT",
       "local_id": "LOCALID_UN_NUVEMA_BEDROOM_1"
     },
     {
@@ -39,7 +39,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "UN_FriendCheren",
-      "flag": "0",
+      "flag": "FLAG_UN_FRIENDS_LEFT",
       "local_id": "LOCALID_UN_NUVEMA_BEDROOM_2"
     }
   ],

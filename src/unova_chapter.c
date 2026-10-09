@@ -24,6 +24,7 @@ void UnInitializeSeason(void)
     SetWarpDestination(MAP_GROUP(MAP_UN_NUVEMA_BEDROOM),MAP_NUM(MAP_UN_NUVEMA_BEDROOM),WARP_ID_NONE,9,10);
     WarpIntoMap();SetLastHealLocationWarp(HEAL_LOCATION_UN_NUVEMAHOUSE);
     VarSet(VAR_UN_STAGE,0);VarSet(VAR_UN_BADGES,0);VarSet(VAR_UN_MEMORY,0);
+    FlagClear(FLAG_UN_FRIENDS_LEFT);
     FlagSet(FLAG_RECEIVED_RUNNING_SHOES);FlagSet(FLAG_SYS_B_DASH);
 }
 u8 UnCurrentSeason(void)
