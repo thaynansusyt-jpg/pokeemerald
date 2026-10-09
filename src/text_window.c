@@ -1,4 +1,9 @@
 #include "global.h"
+#include "sinnoh_chapter.h"
+static const u8 sSiMessageGfx[] = INCGFX_U8("graphics/text_window/si_message_box.png", ".4bpp");
+static const u16 sSiMessagePal[] = INCGFX_U16("graphics/text_window/si_message_box.png", ".gbapal");
+static const u8 sUnMessageGfx[] = INCGFX_U8("graphics/text_window/un_message_box.png", ".4bpp");
+static const u16 sUnMessagePal[] = INCGFX_U16("graphics/text_window/un_message_box.png", ".gbapal");
 #include "text.h"
 #include "text_window.h"
 #include "window.h"
@@ -98,7 +103,7 @@ const struct TilesPal *GetWindowFrameTilesPal(u8 id)
 
 void LoadMessageBoxGfx(u8 windowId, u16 destOffset, u8 palOffset)
 {
-    LoadBgTiles(GetWindowAttribute(windowId, WINDOW_BG), gMessageBox_Gfx, 0x1C0, destOffset);
+    LoadBgTiles(GetWindowAttribute(windowId, WINDOW_BG), SiNamingSeason()==2 ? sUnMessageGfx : SiNamingSeason()==1 ? sSiMessageGfx : gMessageBox_Gfx, 0x1C0, destOffset);
     LoadPalette(GetOverworldTextboxPalettePtr(), palOffset, PLTT_SIZE_4BPP);
 }
 
@@ -204,7 +209,7 @@ const u16 *GetTextWindowPalette(u8 id)
 
 const u16 *GetOverworldTextboxPalettePtr(void)
 {
-    return gMessageBox_Pal;
+    return SiNamingSeason()==2 ? sUnMessagePal : SiNamingSeason()==1 ? sSiMessagePal : gMessageBox_Pal;
 }
 
 // Effectively LoadUserWindowBorderGfx but specifying the bg directly instead of a window from that bg

@@ -1,0 +1,79 @@
+{
+  "id": "MAP_LAKE_VALOR",
+  "name": "LakeValor",
+  "layout": "LAYOUT_SI_LAKEVALOR",
+  "music": "MUS_DPP_LAKE",
+  "region_map_section": "MAPSEC_LAKE_VALOR",
+  "requires_flash": false,
+  "weather": "WEATHER_SUNNY",
+  "map_type": "MAP_TYPE_TOWN",
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": null,
+  "object_events": [
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SI_SATURN",
+      "x": 30,
+      "y": 46,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "SI_C_SATURN_VALOR",
+      "flag": "0",
+      "local_id": "LOCALID_SI_LAKEVALOR_1"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(AZELF)",
+      "x": 40,
+      "y": 37,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "SI_C_Encounter_AZELF",
+      "flag": "FLAG_SI_CAUGHT_AZELF",
+      "local_id": "LOCALID_SI_LAKEVALOR_2"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SI_BARRY_PT",
+      "x": 34,
+      "y": 43,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "SI_W_BarrySupport2",
+      "flag": "0",
+      "local_id": "LOCALID_SI_W_LAKEVALOR_3"
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 40,
+      "y": 4,
+      "elevation": 0,
+      "dest_map": "MAP_VALOR_LAKEFRONT",
+      "dest_warp_id": "1"
+    },
+    {
+      "x": 40,
+      "y": 3,
+      "elevation": 0,
+      "dest_map": "MAP_VALOR_LAKEFRONT",
+      "dest_warp_id": "0"
+    }
+  ],
+  "coord_events": [],
+  "bg_events": [],
+  "region": "REGION_SINNOH"
+}

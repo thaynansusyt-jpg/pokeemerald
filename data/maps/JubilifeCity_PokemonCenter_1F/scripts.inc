@@ -1,0 +1,6 @@
+JubilifeCity_PokemonCenter_1F_MapScripts::
+ map_script MAP_SCRIPT_ON_TRANSITION, JubilifeCity_PokemonCenter_1F_SiHeal
+ .byte 0
+JubilifeCity_PokemonCenter_1F_SiHeal:
+ setrespawn HEAL_LOCATION_SI_JUBILIFECITY
+ end

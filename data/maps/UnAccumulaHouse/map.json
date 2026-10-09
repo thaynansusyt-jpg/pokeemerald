@@ -1,0 +1,44 @@
+{
+  "id": "MAP_UN_ACCUMULA_HOUSE",
+  "name": "UnAccumulaHouse",
+  "layout": "LAYOUT_UN_ACCUMULAHOUSE",
+  "music": "MUS_UN_CITY",
+  "region_map_section": "MAPSEC_UN_ROUTES",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_INDOOR",
+  "allow_cycling": false,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [],
+  "object_events": [
+    {
+      "graphics_id": "OBJ_EVENT_GFX_UN_GENTLEMAN",
+      "x": 13,
+      "y": 9,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "UN_Resident19",
+      "flag": "0",
+      "local_id": "LOCALID_UN_ACCUMULA_HOUSE_1"
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 9,
+      "y": 13,
+      "elevation": 0,
+      "dest_map": "MAP_UN_ACCUMULA_TOWN",
+      "dest_warp_id": "0"
+    }
+  ],
+  "coord_events": [],
+  "bg_events": [],
+  "region": "REGION_UNOVA"
+}

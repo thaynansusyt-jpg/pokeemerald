@@ -1,3 +1,5 @@
+static const struct MenuAction sUnStarterChoices[]={{COMPOUND_STRING("Snivy")},{COMPOUND_STRING("Tepig")},{COMPOUND_STRING("Oshawott")}};
+static const struct MenuAction MultichoiceList_SiStarter[] = {{COMPOUND_STRING("Turtwig")}, {COMPOUND_STRING("Chimchar")}, {COMPOUND_STRING("Piplup")}};
 static const struct MenuAction MultichoiceList_HeSignal[] = {{COMPOUND_STRING("A")}, {COMPOUND_STRING("B")}, {COMPOUND_STRING("C")}, {COMPOUND_STRING("Sair")}};
 static const struct MenuAction MultichoiceList_HePriority[] = {{COMPOUND_STRING("Resgate")}, {COMPOUND_STRING("Energia")}, {COMPOUND_STRING("Depois")}};
 // multichoice lists
@@ -1149,6 +1151,8 @@ static const struct MultichoiceListStruct sMultichoiceLists[] =
     [MULTI_HE_QUEST] = MULTICHOICE(sHeQuestChoices),
     [MULTI_HE_GENERATION] = MULTICHOICE(sHeQuestGenerations),
     [MULTI_HE_PRIORITY] = MULTICHOICE(MultichoiceList_HePriority),
+    [MULTI_UN_STARTER] = MULTICHOICE(sUnStarterChoices),
+    [MULTI_SI_STARTER] = MULTICHOICE(MultichoiceList_SiStarter),
     [MULTI_HE_SIGNAL] = MULTICHOICE(MultichoiceList_HeSignal),
     [MULTI_BRINEY_ON_DEWFORD]          = MULTICHOICE(MultichoiceList_BrineyOnDewford),
     [MULTI_PC]                         = MULTICHOICE(MultichoiceList_Exit),

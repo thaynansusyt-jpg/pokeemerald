@@ -1,4 +1,6 @@
 HE_Journal::
+	special SiInRegion
+	goto_if_eq VAR_RESULT, TRUE, SI_Journal
 	goto_if_set FLAG_IS_CHAMPION, HE_PostJournal
 	lockall
 	goto_if_unset FLAG_SYS_POKEDEX_GET, HE_CampaignGoal0

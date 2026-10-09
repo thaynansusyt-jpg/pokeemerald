@@ -1,0 +1,47 @@
+{
+  "id": "MAP_ROUTE223",
+  "name": "Route223",
+  "layout": "LAYOUT_SI_ROUTE223",
+  "music": "MUS_DPP_ROUTE210",
+  "region_map_section": "MAPSEC_SINNOH_ROUTES",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_ROUTE",
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "map": "MAP_SUNYSHORE_CITY",
+      "offset": 2,
+      "direction": "down"
+    },
+    {
+      "map": "MAP_POKMON_LEAGUE",
+      "offset": -1,
+      "direction": "up"
+    }
+  ],
+  "object_events": [
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SI_YOUNGSTER",
+      "x": 10,
+      "y": 45,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "2",
+      "script": "SI_W_Trainer_39",
+      "flag": "0",
+      "local_id": "LOCALID_SI_ROUTE223_1"
+    }
+  ],
+  "warp_events": [],
+  "coord_events": [],
+  "bg_events": [],
+  "region": "REGION_SINNOH"
+}

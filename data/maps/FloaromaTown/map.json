@@ -1,0 +1,228 @@
+{
+  "id": "MAP_FLOAROMA_TOWN",
+  "name": "FloaromaTown",
+  "layout": "LAYOUT_SI_FLOAROMATOWN",
+  "music": "MUS_DPP_FLOAROMA",
+  "region_map_section": "MAPSEC_FLOAROMA_TOWN",
+  "requires_flash": false,
+  "weather": "WEATHER_SUNNY",
+  "map_type": "MAP_TYPE_TOWN",
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "map": "MAP_ROUTE204",
+      "offset": 2,
+      "direction": "down"
+    },
+    {
+      "map": "MAP_ROUTE205_SOUTH",
+      "offset": -64,
+      "direction": "right"
+    }
+  ],
+  "object_events": [
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SI_SCHOOL_KID_F",
+      "x": 4,
+      "y": 4,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "SI_W_Resident_66",
+      "flag": "0",
+      "local_id": "LOCALID_SI_FLOAROMATOWN_1"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SI_BREEDER",
+      "x": 5,
+      "y": 4,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "SI_W_Resident_67",
+      "flag": "0",
+      "local_id": "LOCALID_SI_FLOAROMATOWN_2"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SI_RANCHER",
+      "x": 21,
+      "y": 23,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT",
+      "movement_range_x": 1,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "SI_W_Resident_68",
+      "flag": "0",
+      "local_id": "LOCALID_SI_FLOAROMATOWN_3"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SI_COWGIRL",
+      "x": 12,
+      "y": 7,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT",
+      "movement_range_x": 1,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "SI_W_Resident_69",
+      "flag": "0",
+      "local_id": "LOCALID_SI_FLOAROMATOWN_4"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SI_GENTLEMAN",
+      "x": 21,
+      "y": 18,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT",
+      "movement_range_x": 1,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "SI_W_Resident_70",
+      "flag": "0",
+      "local_id": "LOCALID_SI_FLOAROMATOWN_5"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SI_SKIER_M",
+      "x": 12,
+      "y": 21,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT",
+      "movement_range_x": 1,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "SI_W_Resident_71",
+      "flag": "0",
+      "local_id": "LOCALID_SI_FLOAROMATOWN_6"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SI_WORKER",
+      "x": 25,
+      "y": 13,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_WANDER_UP_AND_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "SI_W_Resident_72",
+      "flag": "0",
+      "local_id": "LOCALID_SI_FLOAROMATOWN_7"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SI_FISHERMAN",
+      "x": 8,
+      "y": 12,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT",
+      "movement_range_x": 1,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "SI_W_Resident_73",
+      "flag": "0",
+      "local_id": "LOCALID_SI_FLOAROMATOWN_8"
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 18,
+      "y": 28,
+      "elevation": 0,
+      "dest_map": "MAP_FLOAROMA_TOWN_POKEMON_CENTER_1F",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 26,
+      "y": 28,
+      "elevation": 0,
+      "dest_map": "MAP_FLOAROMA_TOWN_HOUSE2",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 13,
+      "y": 16,
+      "elevation": 0,
+      "dest_map": "MAP_FLOAROMA_TOWN_HOUSE1",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 22,
+      "y": 13,
+      "elevation": 0,
+      "dest_map": "MAP_FLOAROMA_TOWN_FLOWER_SHOP",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 26,
+      "y": 19,
+      "elevation": 0,
+      "dest_map": "MAP_FLOAROMA_TOWN_MART",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "elevation": 0,
+      "dest_map": "MAP_FLOAROMA_MEADOW",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "elevation": 0,
+      "dest_map": "MAP_FLOAROMA_MEADOW",
+      "dest_warp_id": "1"
+    }
+  ],
+  "coord_events": [],
+  "bg_events": [
+    {
+      "type": "sign",
+      "x": 19,
+      "y": 13,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "SI_W_Sign_FloaromaTown_0"
+    },
+    {
+      "type": "sign",
+      "x": 31,
+      "y": 17,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "SI_W_Sign_FloaromaTown_1"
+    },
+    {
+      "type": "sign",
+      "x": 15,
+      "y": 20,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "SI_W_Sign_FloaromaTown_2"
+    },
+    {
+      "type": "sign",
+      "x": 19,
+      "y": 28,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "SI_W_Sign_FloaromaTown_3"
+    }
+  ],
+  "region": "REGION_SINNOH"
+}

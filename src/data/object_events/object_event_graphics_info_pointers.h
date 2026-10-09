@@ -1,3 +1,86 @@
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_UnLenora;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_UnGhetsis;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_UnPlasmaF;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_UnPlasmaM;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_UnNurse;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_UnBackpacker;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_UnMusician;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_UnClerk;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_UnLady;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_UnGentleman;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_UnSailor;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_UnArtist;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_UnScientist;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_UnWorker;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_UnChildF;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_UnChildM;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_UnFennel;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_UnBurgh;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_UnCress;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_UnChili;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_UnCilan;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_UnN;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_UnJuniper;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_UnCheren;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_UnBianca;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_UnHilda;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_UnHilbert;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_SiSkierM;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_SiGentleman;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_SiCowgirl;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_SiRancher;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_SiRiley;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_SiCheryl;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_SiBreeder;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_SiAceTrainerF;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_SiAceTrainerM;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_SiAromaLady;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_SiSchoolKidF;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_SiSchoolKidM;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_SiClown;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_SiGuitarist;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_SiSailor;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_SiPoliceman;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_SiCashierF;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_SiCashierM;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_SiNurseJoy;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_SiScientistF;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_SiScientistM;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_SiHiker;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_SiFisherman;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_SiWorker;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Sidney;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_SittingBoy;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Sign;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_SiYoungster;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_SiLass;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_SiMan;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_SiWoman;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_SiOldMan;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_SiOldWoman;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_SiJohanna;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_SiLooker;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_SiGardenia;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_SiFantina;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_SiMaylene;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_SiCrasherWake;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_SiByron;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_SiCandice;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_SiVolkner;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_SiCyrus;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_SiCynthia;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_SiAaron;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_SiBertha;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_SiFlint;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_SiLucian;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_SiMars;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_SiJupiter;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_SiSaturn;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_GalacticGruntFPt;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_GalacticGruntMPt;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_BarryPt;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RowanPt;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RoarkPt;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_HeOfficer;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_HeRelay;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_BrendanNormal;
@@ -795,6 +878,87 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_DEOXYS_N]                 = &gObjectEventGraphicsInfo_DeoxysN,
     [OBJ_EVENT_GFX_SS_ANNE]                  = &gObjectEventGraphicsInfo_SSAnne,
 #endif // IS_FRLG
+[OBJ_EVENT_GFX_SI_WORKER] = &gObjectEventGraphicsInfo_SiWorker,
+[OBJ_EVENT_GFX_SI_FISHERMAN] = &gObjectEventGraphicsInfo_SiFisherman,
+[OBJ_EVENT_GFX_SI_HIKER] = &gObjectEventGraphicsInfo_SiHiker,
+[OBJ_EVENT_GFX_SI_SCIENTIST_M] = &gObjectEventGraphicsInfo_SiScientistM,
+[OBJ_EVENT_GFX_SI_SCIENTIST_F] = &gObjectEventGraphicsInfo_SiScientistF,
+[OBJ_EVENT_GFX_SI_NURSE_JOY] = &gObjectEventGraphicsInfo_SiNurseJoy,
+[OBJ_EVENT_GFX_SI_CASHIER_M] = &gObjectEventGraphicsInfo_SiCashierM,
+[OBJ_EVENT_GFX_SI_CASHIER_F] = &gObjectEventGraphicsInfo_SiCashierF,
+[OBJ_EVENT_GFX_SI_POLICEMAN] = &gObjectEventGraphicsInfo_SiPoliceman,
+[OBJ_EVENT_GFX_SI_SAILOR] = &gObjectEventGraphicsInfo_SiSailor,
+[OBJ_EVENT_GFX_SI_GUITARIST] = &gObjectEventGraphicsInfo_SiGuitarist,
+[OBJ_EVENT_GFX_SI_CLOWN] = &gObjectEventGraphicsInfo_SiClown,
+[OBJ_EVENT_GFX_SI_SCHOOL_KID_M] = &gObjectEventGraphicsInfo_SiSchoolKidM,
+[OBJ_EVENT_GFX_SI_SCHOOL_KID_F] = &gObjectEventGraphicsInfo_SiSchoolKidF,
+[OBJ_EVENT_GFX_SI_AROMA_LADY] = &gObjectEventGraphicsInfo_SiAromaLady,
+[OBJ_EVENT_GFX_SI_ACE_TRAINER_M] = &gObjectEventGraphicsInfo_SiAceTrainerM,
+[OBJ_EVENT_GFX_SI_ACE_TRAINER_F] = &gObjectEventGraphicsInfo_SiAceTrainerF,
+[OBJ_EVENT_GFX_SI_BREEDER] = &gObjectEventGraphicsInfo_SiBreeder,
+[OBJ_EVENT_GFX_SI_CHERYL] = &gObjectEventGraphicsInfo_SiCheryl,
+[OBJ_EVENT_GFX_SI_RILEY] = &gObjectEventGraphicsInfo_SiRiley,
+[OBJ_EVENT_GFX_SI_RANCHER] = &gObjectEventGraphicsInfo_SiRancher,
+[OBJ_EVENT_GFX_SI_COWGIRL] = &gObjectEventGraphicsInfo_SiCowgirl,
+[OBJ_EVENT_GFX_SI_GENTLEMAN] = &gObjectEventGraphicsInfo_SiGentleman,
+[OBJ_EVENT_GFX_SI_SKIER_M] = &gObjectEventGraphicsInfo_SiSkierM,
+[OBJ_EVENT_GFX_UN_HILBERT] = &gObjectEventGraphicsInfo_UnHilbert,
+[OBJ_EVENT_GFX_UN_HILDA] = &gObjectEventGraphicsInfo_UnHilda,
+[OBJ_EVENT_GFX_UN_BIANCA] = &gObjectEventGraphicsInfo_UnBianca,
+[OBJ_EVENT_GFX_UN_CHEREN] = &gObjectEventGraphicsInfo_UnCheren,
+[OBJ_EVENT_GFX_UN_JUNIPER] = &gObjectEventGraphicsInfo_UnJuniper,
+[OBJ_EVENT_GFX_UN_N] = &gObjectEventGraphicsInfo_UnN,
+[OBJ_EVENT_GFX_UN_CILAN] = &gObjectEventGraphicsInfo_UnCilan,
+[OBJ_EVENT_GFX_UN_CHILI] = &gObjectEventGraphicsInfo_UnChili,
+[OBJ_EVENT_GFX_UN_CRESS] = &gObjectEventGraphicsInfo_UnCress,
+[OBJ_EVENT_GFX_UN_BURGH] = &gObjectEventGraphicsInfo_UnBurgh,
+[OBJ_EVENT_GFX_UN_FENNEL] = &gObjectEventGraphicsInfo_UnFennel,
+[OBJ_EVENT_GFX_UN_CHILD_M] = &gObjectEventGraphicsInfo_UnChildM,
+[OBJ_EVENT_GFX_UN_CHILD_F] = &gObjectEventGraphicsInfo_UnChildF,
+[OBJ_EVENT_GFX_UN_WORKER] = &gObjectEventGraphicsInfo_UnWorker,
+[OBJ_EVENT_GFX_UN_SCIENTIST] = &gObjectEventGraphicsInfo_UnScientist,
+[OBJ_EVENT_GFX_UN_ARTIST] = &gObjectEventGraphicsInfo_UnArtist,
+[OBJ_EVENT_GFX_UN_SAILOR] = &gObjectEventGraphicsInfo_UnSailor,
+[OBJ_EVENT_GFX_UN_GENTLEMAN] = &gObjectEventGraphicsInfo_UnGentleman,
+[OBJ_EVENT_GFX_UN_LADY] = &gObjectEventGraphicsInfo_UnLady,
+[OBJ_EVENT_GFX_UN_CLERK] = &gObjectEventGraphicsInfo_UnClerk,
+[OBJ_EVENT_GFX_UN_MUSICIAN] = &gObjectEventGraphicsInfo_UnMusician,
+[OBJ_EVENT_GFX_UN_BACKPACKER] = &gObjectEventGraphicsInfo_UnBackpacker,
+[OBJ_EVENT_GFX_UN_NURSE] = &gObjectEventGraphicsInfo_UnNurse,
+[OBJ_EVENT_GFX_UN_PLASMAM] = &gObjectEventGraphicsInfo_UnPlasmaM,
+[OBJ_EVENT_GFX_UN_PLASMAF] = &gObjectEventGraphicsInfo_UnPlasmaF,
+[OBJ_EVENT_GFX_UN_GHETSIS] = &gObjectEventGraphicsInfo_UnGhetsis,
+[OBJ_EVENT_GFX_UN_LENORA] = &gObjectEventGraphicsInfo_UnLenora,
+[OBJ_EVENT_GFX_SI_YOUNGSTER] = &gObjectEventGraphicsInfo_SiYoungster,
+[OBJ_EVENT_GFX_SI_LASS] = &gObjectEventGraphicsInfo_SiLass,
+[OBJ_EVENT_GFX_SI_MAN] = &gObjectEventGraphicsInfo_SiMan,
+[OBJ_EVENT_GFX_SI_WOMAN] = &gObjectEventGraphicsInfo_SiWoman,
+[OBJ_EVENT_GFX_SI_OLD_MAN] = &gObjectEventGraphicsInfo_SiOldMan,
+[OBJ_EVENT_GFX_SI_OLD_WOMAN] = &gObjectEventGraphicsInfo_SiOldWoman,
+[OBJ_EVENT_GFX_SI_JOHANNA] = &gObjectEventGraphicsInfo_SiJohanna,
+[OBJ_EVENT_GFX_SI_LOOKER] = &gObjectEventGraphicsInfo_SiLooker,
+[OBJ_EVENT_GFX_SI_GARDENIA] = &gObjectEventGraphicsInfo_SiGardenia,
+[OBJ_EVENT_GFX_SI_FANTINA] = &gObjectEventGraphicsInfo_SiFantina,
+[OBJ_EVENT_GFX_SI_MAYLENE] = &gObjectEventGraphicsInfo_SiMaylene,
+[OBJ_EVENT_GFX_SI_CRASHER_WAKE] = &gObjectEventGraphicsInfo_SiCrasherWake,
+[OBJ_EVENT_GFX_SI_BYRON] = &gObjectEventGraphicsInfo_SiByron,
+[OBJ_EVENT_GFX_SI_CANDICE] = &gObjectEventGraphicsInfo_SiCandice,
+[OBJ_EVENT_GFX_SI_VOLKNER] = &gObjectEventGraphicsInfo_SiVolkner,
+[OBJ_EVENT_GFX_SI_CYRUS] = &gObjectEventGraphicsInfo_SiCyrus,
+[OBJ_EVENT_GFX_SI_CYNTHIA] = &gObjectEventGraphicsInfo_SiCynthia,
+[OBJ_EVENT_GFX_SI_AARON] = &gObjectEventGraphicsInfo_SiAaron,
+[OBJ_EVENT_GFX_SI_BERTHA] = &gObjectEventGraphicsInfo_SiBertha,
+[OBJ_EVENT_GFX_SI_FLINT] = &gObjectEventGraphicsInfo_SiFlint,
+[OBJ_EVENT_GFX_SI_LUCIAN] = &gObjectEventGraphicsInfo_SiLucian,
+[OBJ_EVENT_GFX_SI_MARS] = &gObjectEventGraphicsInfo_SiMars,
+[OBJ_EVENT_GFX_SI_JUPITER] = &gObjectEventGraphicsInfo_SiJupiter,
+[OBJ_EVENT_GFX_SI_SATURN] = &gObjectEventGraphicsInfo_SiSaturn,
+
+    [OBJ_EVENT_GFX_SI_ROARK_PT] = &gObjectEventGraphicsInfo_RoarkPt,
+    [OBJ_EVENT_GFX_SI_ROWAN_PT] = &gObjectEventGraphicsInfo_RowanPt,
+    [OBJ_EVENT_GFX_SI_BARRY_PT] = &gObjectEventGraphicsInfo_BarryPt,
+    [OBJ_EVENT_GFX_SI_GALACTIC_GRUNT_M_PT] = &gObjectEventGraphicsInfo_GalacticGruntMPt,
+    [OBJ_EVENT_GFX_SI_GALACTIC_GRUNT_F_PT] = &gObjectEventGraphicsInfo_GalacticGruntFPt,
 };
 
 const struct ObjectEventGraphicsInfo *const gMauvilleOldManGraphicsInfoPointers[] = {

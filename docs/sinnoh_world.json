@@ -1,0 +1,762 @@
+{
+  "maps": 214,
+  "residents": 309,
+  "trainers": [
+    {
+      "map": "OreburghCity_Gym",
+      "script": "SI_W_Trainer_0",
+      "id": "TRAINER_SI_JONATHON",
+      "level": 12,
+      "x": 2,
+      "y": 4
+    },
+    {
+      "map": "OreburghCity_Gym",
+      "script": "SI_W_Trainer_1",
+      "id": "TRAINER_SI_DARIUS",
+      "level": 12,
+      "x": 5,
+      "y": 11
+    },
+    {
+      "map": "OreburghGate_1F",
+      "script": "SI_W_Trainer_2",
+      "id": "TRAINER_SI_ROUTE0",
+      "level": 12,
+      "x": 6,
+      "y": 17
+    },
+    {
+      "map": "OreburghGate_1F",
+      "script": "SI_W_Trainer_3",
+      "id": "TRAINER_SI_ROUTE1",
+      "level": 12,
+      "x": 6,
+      "y": 18
+    },
+    {
+      "map": "Route202",
+      "script": "SI_W_Trainer_4",
+      "id": "TRAINER_SI_ROUTE2",
+      "level": 5,
+      "x": 22,
+      "y": 27
+    },
+    {
+      "map": "Route202",
+      "script": "SI_W_Trainer_5",
+      "id": "TRAINER_SI_ROUTE3",
+      "level": 5,
+      "x": 24,
+      "y": 16
+    },
+    {
+      "map": "Route202",
+      "script": "SI_W_Trainer_6",
+      "id": "TRAINER_SI_ROUTE4",
+      "level": 5,
+      "x": 8,
+      "y": 15
+    },
+    {
+      "map": "Route202",
+      "script": "SI_W_Trainer_7",
+      "id": "TRAINER_SI_ROUTE5",
+      "level": 5,
+      "x": 10,
+      "y": 6
+    },
+    {
+      "map": "Route202",
+      "script": "SI_W_Trainer_8",
+      "id": "TRAINER_SI_ROUTE6",
+      "level": 5,
+      "x": 7,
+      "y": 7
+    },
+    {
+      "map": "Route203",
+      "script": "SI_W_Trainer_9",
+      "id": "TRAINER_SI_ROUTE7",
+      "level": 7,
+      "x": 12,
+      "y": 19
+    },
+    {
+      "map": "Route203",
+      "script": "SI_W_Trainer_10",
+      "id": "TRAINER_SI_FIELD0",
+      "level": 7,
+      "x": 24,
+      "y": 10
+    },
+    {
+      "map": "Route203",
+      "script": "SI_W_Trainer_11",
+      "id": "TRAINER_SI_FIELD1",
+      "level": 7,
+      "x": 30,
+      "y": 14
+    },
+    {
+      "map": "Route203",
+      "script": "SI_W_Trainer_12",
+      "id": "TRAINER_SI_FIELD2",
+      "level": 7,
+      "x": 42,
+      "y": 9
+    },
+    {
+      "map": "Route203",
+      "script": "SI_W_Trainer_13",
+      "id": "TRAINER_SI_FIELD3",
+      "level": 7,
+      "x": 45,
+      "y": 19
+    },
+    {
+      "map": "Route203",
+      "script": "SI_W_Trainer_14",
+      "id": "TRAINER_SI_FIELD4",
+      "level": 7,
+      "x": 10,
+      "y": 19
+    },
+    {
+      "map": "Route204",
+      "script": "SI_W_Trainer_15",
+      "id": "TRAINER_SI_FIELD5",
+      "level": 13,
+      "x": 3,
+      "y": 6
+    },
+    {
+      "map": "Route205_North",
+      "script": "SI_W_Trainer_16",
+      "id": "TRAINER_SI_FIELD6",
+      "level": 18,
+      "x": 34,
+      "y": 18
+    },
+    {
+      "map": "Route205_South",
+      "script": "SI_W_Trainer_17",
+      "id": "TRAINER_SI_FIELD7",
+      "level": 18,
+      "x": 14,
+      "y": 68
+    },
+    {
+      "map": "Route206",
+      "script": "SI_W_Trainer_18",
+      "id": "TRAINER_SI_FIELD8",
+      "level": 23,
+      "x": 18,
+      "y": 30
+    },
+    {
+      "map": "Route206_North",
+      "script": "SI_W_Trainer_19",
+      "id": "TRAINER_SI_FIELD9",
+      "level": 23,
+      "x": 4,
+      "y": 4
+    },
+    {
+      "map": "Route207",
+      "script": "SI_W_Trainer_20",
+      "id": "TRAINER_SI_FIELD10",
+      "level": 13,
+      "x": 4,
+      "y": 4
+    },
+    {
+      "map": "Route208",
+      "script": "SI_W_Trainer_21",
+      "id": "TRAINER_SI_FIELD11",
+      "level": 24,
+      "x": 42,
+      "y": 14
+    },
+    {
+      "map": "Route209",
+      "script": "SI_W_Trainer_22",
+      "id": "TRAINER_SI_FIELD12",
+      "level": 27,
+      "x": 10,
+      "y": 42
+    },
+    {
+      "map": "Route210_North",
+      "script": "SI_W_Trainer_23",
+      "id": "TRAINER_SI_FIELD13",
+      "level": 32,
+      "x": 62,
+      "y": 13
+    },
+    {
+      "map": "Route210_South",
+      "script": "SI_W_Trainer_24",
+      "id": "TRAINER_SI_FIELD14",
+      "level": 32,
+      "x": 20,
+      "y": 4
+    },
+    {
+      "map": "Route211_East",
+      "script": "SI_W_Trainer_25",
+      "id": "TRAINER_SI_FIELD15",
+      "level": 35,
+      "x": 15,
+      "y": 4
+    },
+    {
+      "map": "Route211_West",
+      "script": "SI_W_Trainer_26",
+      "id": "TRAINER_SI_FIELD16",
+      "level": 35,
+      "x": 3,
+      "y": 4
+    },
+    {
+      "map": "Route212_North",
+      "script": "SI_W_Trainer_27",
+      "id": "TRAINER_SI_FIELD17",
+      "level": 29,
+      "x": 10,
+      "y": 4
+    },
+    {
+      "map": "Route212_South",
+      "script": "SI_W_Trainer_28",
+      "id": "TRAINER_SI_FIELD18",
+      "level": 29,
+      "x": 44,
+      "y": 16
+    },
+    {
+      "map": "Route213",
+      "script": "SI_W_Trainer_29",
+      "id": "TRAINER_SI_FIELD19",
+      "level": 34,
+      "x": 4,
+      "y": 7
+    },
+    {
+      "map": "Route214",
+      "script": "SI_W_Trainer_30",
+      "id": "TRAINER_SI_FIELD20",
+      "level": 30,
+      "x": 14,
+      "y": 4
+    },
+    {
+      "map": "Route215",
+      "script": "SI_W_Trainer_31",
+      "id": "TRAINER_SI_FIELD21",
+      "level": 29,
+      "x": 48,
+      "y": 6
+    },
+    {
+      "map": "Route216",
+      "script": "SI_W_Trainer_32",
+      "id": "TRAINER_SI_FIELD22",
+      "level": 41,
+      "x": 34,
+      "y": 14
+    },
+    {
+      "map": "Route217",
+      "script": "SI_W_Trainer_33",
+      "id": "TRAINER_SI_FIELD23",
+      "level": 43,
+      "x": 4,
+      "y": 14
+    },
+    {
+      "map": "Route218",
+      "script": "SI_W_Trainer_34",
+      "id": "TRAINER_SI_FIELD24",
+      "level": 37,
+      "x": 8,
+      "y": 10
+    },
+    {
+      "map": "Route219",
+      "script": "SI_W_Trainer_35",
+      "id": "TRAINER_SI_FIELD25",
+      "level": 5,
+      "x": 8,
+      "y": 8
+    },
+    {
+      "map": "Route220",
+      "script": "SI_W_Trainer_36",
+      "id": "TRAINER_SI_FIELD26",
+      "level": 34,
+      "x": 7,
+      "y": 18
+    },
+    {
+      "map": "Route221",
+      "script": "SI_W_Trainer_37",
+      "id": "TRAINER_SI_FIELD27",
+      "level": 35,
+      "x": 26,
+      "y": 8
+    },
+    {
+      "map": "Route222",
+      "script": "SI_W_Trainer_38",
+      "id": "TRAINER_SI_FIELD28",
+      "level": 49,
+      "x": 24,
+      "y": 7
+    },
+    {
+      "map": "Route223",
+      "script": "SI_W_Trainer_39",
+      "id": "TRAINER_SI_FIELD29",
+      "level": 51,
+      "x": 10,
+      "y": 45
+    },
+    {
+      "map": "Route224",
+      "script": "SI_W_Trainer_40",
+      "id": "TRAINER_SI_FIELD30",
+      "level": 59,
+      "x": 7,
+      "y": 45
+    },
+    {
+      "map": "Route225",
+      "script": "SI_W_Trainer_41",
+      "id": "TRAINER_SI_FIELD31",
+      "level": 59,
+      "x": 10,
+      "y": 8
+    },
+    {
+      "map": "Route226",
+      "script": "SI_W_Trainer_42",
+      "id": "TRAINER_SI_WORLD42",
+      "level": 60,
+      "x": 4,
+      "y": 4
+    },
+    {
+      "map": "Route227",
+      "script": "SI_W_Trainer_43",
+      "id": "TRAINER_SI_WORLD43",
+      "level": 61,
+      "x": 20,
+      "y": 48
+    },
+    {
+      "map": "Route228",
+      "script": "SI_W_Trainer_44",
+      "id": "TRAINER_SI_WORLD44",
+      "level": 61,
+      "x": 6,
+      "y": 10
+    },
+    {
+      "map": "Route229",
+      "script": "SI_W_Trainer_45",
+      "id": "TRAINER_SI_WORLD45",
+      "level": 60,
+      "x": 16,
+      "y": 1
+    },
+    {
+      "map": "Route230",
+      "script": "SI_W_Trainer_46",
+      "id": "TRAINER_SI_WORLD46",
+      "level": 60,
+      "x": 8,
+      "y": 5
+    },
+    {
+      "map": "CanalaveCity_Gym",
+      "script": "SI_W_Trainer_47",
+      "id": "TRAINER_SI_WORLD47",
+      "level": 36,
+      "x": 3,
+      "y": 10
+    },
+    {
+      "map": "CanalaveCity_Gym",
+      "script": "SI_W_Trainer_48",
+      "id": "TRAINER_SI_WORLD48",
+      "level": 36,
+      "x": 8,
+      "y": 10
+    },
+    {
+      "map": "EternaCity_Gym",
+      "script": "SI_W_Trainer_49",
+      "id": "TRAINER_SI_WORLD49",
+      "level": 20,
+      "x": 7,
+      "y": 12
+    },
+    {
+      "map": "EternaCity_Gym",
+      "script": "SI_W_Trainer_50",
+      "id": "TRAINER_SI_WORLD50",
+      "level": 20,
+      "x": 9,
+      "y": 12
+    },
+    {
+      "map": "EternaForest",
+      "script": "SI_W_Trainer_51",
+      "id": "TRAINER_SI_WORLD51",
+      "level": 20,
+      "x": 28,
+      "y": 50
+    },
+    {
+      "map": "EternaForest",
+      "script": "SI_W_Trainer_52",
+      "id": "TRAINER_SI_WORLD52",
+      "level": 20,
+      "x": 54,
+      "y": 38
+    },
+    {
+      "map": "HearthomeCity_Gym",
+      "script": "SI_W_Trainer_53",
+      "id": "TRAINER_SI_WORLD53",
+      "level": 27,
+      "x": 3,
+      "y": 10
+    },
+    {
+      "map": "HearthomeCity_Gym",
+      "script": "SI_W_Trainer_54",
+      "id": "TRAINER_SI_WORLD54",
+      "level": 27,
+      "x": 8,
+      "y": 10
+    },
+    {
+      "map": "MtCoronetSummit",
+      "script": "SI_W_Trainer_55",
+      "id": "TRAINER_SI_WORLD55",
+      "level": 30,
+      "x": 5,
+      "y": 12
+    },
+    {
+      "map": "MtCoronetSummit",
+      "script": "SI_W_Trainer_56",
+      "id": "TRAINER_SI_WORLD56",
+      "level": 30,
+      "x": 10,
+      "y": 12
+    },
+    {
+      "map": "MtCoronetSummit",
+      "script": "SI_W_Trainer_57",
+      "id": "TRAINER_SI_WORLD57",
+      "level": 30,
+      "x": 15,
+      "y": 12
+    },
+    {
+      "map": "MtCoronetSummit",
+      "script": "SI_W_Trainer_58",
+      "id": "TRAINER_SI_WORLD58",
+      "level": 30,
+      "x": 20,
+      "y": 12
+    },
+    {
+      "map": "PastoriaCity_Gym",
+      "script": "SI_W_Trainer_59",
+      "id": "TRAINER_SI_WORLD59",
+      "level": 30,
+      "x": 3,
+      "y": 10
+    },
+    {
+      "map": "PastoriaCity_Gym",
+      "script": "SI_W_Trainer_60",
+      "id": "TRAINER_SI_WORLD60",
+      "level": 30,
+      "x": 8,
+      "y": 10
+    },
+    {
+      "map": "Route201",
+      "script": "SI_W_Trainer_61",
+      "id": "TRAINER_SI_WORLD61",
+      "level": 4,
+      "x": 21,
+      "y": 12
+    },
+    {
+      "map": "Route201",
+      "script": "SI_W_Trainer_62",
+      "id": "TRAINER_SI_WORLD62",
+      "level": 4,
+      "x": 42,
+      "y": 11
+    },
+    {
+      "map": "Route204",
+      "script": "SI_W_Trainer_63",
+      "id": "TRAINER_SI_WORLD63",
+      "level": 13,
+      "x": 10,
+      "y": 29
+    },
+    {
+      "map": "Route205_North",
+      "script": "SI_W_Trainer_64",
+      "id": "TRAINER_SI_WORLD64",
+      "level": 18,
+      "x": 34,
+      "y": 30
+    },
+    {
+      "map": "Route205_South",
+      "script": "SI_W_Trainer_65",
+      "id": "TRAINER_SI_WORLD65",
+      "level": 18,
+      "x": 15,
+      "y": 68
+    },
+    {
+      "map": "Route206",
+      "script": "SI_W_Trainer_66",
+      "id": "TRAINER_SI_WORLD66",
+      "level": 23,
+      "x": 18,
+      "y": 60
+    },
+    {
+      "map": "Route206_North",
+      "script": "SI_W_Trainer_67",
+      "id": "TRAINER_SI_WORLD67",
+      "level": 23,
+      "x": 3,
+      "y": 5
+    },
+    {
+      "map": "Route206_South",
+      "script": "SI_W_Trainer_68",
+      "id": "TRAINER_SI_WORLD68",
+      "level": 23,
+      "x": 3,
+      "y": 5
+    },
+    {
+      "map": "Route206_South",
+      "script": "SI_W_Trainer_69",
+      "id": "TRAINER_SI_WORLD69",
+      "level": 23,
+      "x": 5,
+      "y": 5
+    },
+    {
+      "map": "Route207",
+      "script": "SI_W_Trainer_70",
+      "id": "TRAINER_SI_WORLD70",
+      "level": 13,
+      "x": 22,
+      "y": 16
+    },
+    {
+      "map": "Route208",
+      "script": "SI_W_Trainer_71",
+      "id": "TRAINER_SI_WORLD71",
+      "level": 24,
+      "x": 42,
+      "y": 19
+    },
+    {
+      "map": "Route209",
+      "script": "SI_W_Trainer_72",
+      "id": "TRAINER_SI_WORLD72",
+      "level": 27,
+      "x": 19,
+      "y": 42
+    },
+    {
+      "map": "Route210_North",
+      "script": "SI_W_Trainer_73",
+      "id": "TRAINER_SI_WORLD73",
+      "level": 32,
+      "x": 62,
+      "y": 14
+    },
+    {
+      "map": "Route210_South",
+      "script": "SI_W_Trainer_74",
+      "id": "TRAINER_SI_WORLD74",
+      "level": 32,
+      "x": 14,
+      "y": 41
+    },
+    {
+      "map": "Route211_East",
+      "script": "SI_W_Trainer_75",
+      "id": "TRAINER_SI_WORLD75",
+      "level": 35,
+      "x": 15,
+      "y": 5
+    },
+    {
+      "map": "Route211_West",
+      "script": "SI_W_Trainer_76",
+      "id": "TRAINER_SI_WORLD76",
+      "level": 35,
+      "x": 10,
+      "y": 14
+    },
+    {
+      "map": "Route212_North",
+      "script": "SI_W_Trainer_77",
+      "id": "TRAINER_SI_WORLD77",
+      "level": 29,
+      "x": 11,
+      "y": 50
+    },
+    {
+      "map": "Route212_South",
+      "script": "SI_W_Trainer_78",
+      "id": "TRAINER_SI_WORLD78",
+      "level": 29,
+      "x": 44,
+      "y": 17
+    },
+    {
+      "map": "Route213",
+      "script": "SI_W_Trainer_79",
+      "id": "TRAINER_SI_WORLD79",
+      "level": 34,
+      "x": 33,
+      "y": 30
+    },
+    {
+      "map": "Route214",
+      "script": "SI_W_Trainer_80",
+      "id": "TRAINER_SI_WORLD80",
+      "level": 30,
+      "x": 23,
+      "y": 45
+    },
+    {
+      "map": "Route215",
+      "script": "SI_W_Trainer_81",
+      "id": "TRAINER_SI_WORLD81",
+      "level": 29,
+      "x": 47,
+      "y": 13
+    },
+    {
+      "map": "Route216",
+      "script": "SI_W_Trainer_82",
+      "id": "TRAINER_SI_WORLD82",
+      "level": 41,
+      "x": 34,
+      "y": 16
+    },
+    {
+      "map": "Route217",
+      "script": "SI_W_Trainer_83",
+      "id": "TRAINER_SI_WORLD83",
+      "level": 43,
+      "x": 12,
+      "y": 59
+    },
+    {
+      "map": "Route218",
+      "script": "SI_W_Trainer_84",
+      "id": "TRAINER_SI_WORLD84",
+      "level": 37,
+      "x": 21,
+      "y": 18
+    },
+    {
+      "map": "Route218_East",
+      "script": "SI_W_Trainer_85",
+      "id": "TRAINER_SI_WORLD85",
+      "level": 37,
+      "x": 4,
+      "y": 4
+    },
+    {
+      "map": "Route218_East",
+      "script": "SI_W_Trainer_86",
+      "id": "TRAINER_SI_WORLD86",
+      "level": 37,
+      "x": 8,
+      "y": 4
+    },
+    {
+      "map": "Route218_West",
+      "script": "SI_W_Trainer_87",
+      "id": "TRAINER_SI_WORLD87",
+      "level": 37,
+      "x": 4,
+      "y": 4
+    },
+    {
+      "map": "Route218_West",
+      "script": "SI_W_Trainer_88",
+      "id": "TRAINER_SI_WORLD88",
+      "level": 37,
+      "x": 8,
+      "y": 4
+    },
+    {
+      "map": "Route219",
+      "script": "SI_W_Trainer_89",
+      "id": "TRAINER_SI_WORLD89",
+      "level": 5,
+      "x": 12,
+      "y": 13
+    },
+    {
+      "map": "Route220",
+      "script": "SI_W_Trainer_90",
+      "id": "TRAINER_SI_WORLD90",
+      "level": 34,
+      "x": 12,
+      "y": 15
+    }
+  ],
+  "barry_battles": 6,
+  "new_sprites": [
+    "worker",
+    "fisherman",
+    "hiker",
+    "scientist_m",
+    "scientist_f",
+    "nurse_joy",
+    "cashier_m",
+    "cashier_f",
+    "policeman",
+    "sailor",
+    "guitarist",
+    "clown",
+    "school_kid_m",
+    "school_kid_f",
+    "aroma_lady",
+    "ace_trainer_m",
+    "ace_trainer_f",
+    "breeder",
+    "cheryl",
+    "riley",
+    "rancher",
+    "cowgirl",
+    "gentleman",
+    "skier_m"
+  ],
+  "dialogues": 1016
+}

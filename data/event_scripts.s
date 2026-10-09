@@ -1745,3 +1745,418 @@ EventScript_PalletTown_PlayersHouse_2F_TurnOnPC::
 	.include "data/scripts/hoenn_postgame.inc"
 
 	.include "data/text/hoenn_story_en.inc"
+
+	.include "data/scripts/sinnoh_chapter1.inc"
+
+	.include "data/maps/TwinleafTown/scripts.inc"
+	.include "data/maps/SandgemTown/scripts.inc"
+	.include "data/maps/JubilifeCity/scripts.inc"
+	.include "data/maps/OreburghCity/scripts.inc"
+	.include "data/maps/Route201/scripts.inc"
+	.include "data/maps/Route202/scripts.inc"
+	.include "data/maps/Route203/scripts.inc"
+	.include "data/maps/VerityLakefront/scripts.inc"
+	.include "data/maps/LakeVerity/scripts.inc"
+	.include "data/maps/OreburghGate_1F/scripts.inc"
+	.include "data/maps/OreburghMine_B1F/scripts.inc"
+	.include "data/maps/OreburghMine_B2F/scripts.inc"
+	.include "data/maps/TwinleafTown_MainHouse_1F/scripts.inc"
+	.include "data/maps/TwinleafTown_MainHouse_2F/scripts.inc"
+	.include "data/maps/Twinleaf_Town_RivalsHouse_F1/scripts.inc"
+	.include "data/maps/Twinleaf_Town_RivalsHouse_F2/scripts.inc"
+	.include "data/maps/TwinleafTown_Haouse1/scripts.inc"
+	.include "data/maps/TwinleafTown_House2/scripts.inc"
+	.include "data/maps/SandgemTown_RivalHouse_F1/scripts.inc"
+	.include "data/maps/SandgemTown_RivalHouse_F2/scripts.inc"
+	.include "data/maps/SandgemTown_House1/scripts.inc"
+	.include "data/maps/SandgemTown_PokemonCenter_1F/scripts.inc"
+	.include "data/maps/SandgemTown_PokemonCenter_2F/scripts.inc"
+	.include "data/maps/SandgemTown_Mart/scripts.inc"
+	.include "data/maps/JubilifeCity_PokemonSchool/scripts.inc"
+	.include "data/maps/JubilifeCity_JubilifeTV_F1/scripts.inc"
+	.include "data/maps/JubilifeCity_JubilifeTV_F2/scripts.inc"
+	.include "data/maps/JubilifeCity_JubilifeTV_F3/scripts.inc"
+	.include "data/maps/JubilifeCity_JubilifeTV_F4/scripts.inc"
+	.include "data/maps/JubilifeCity_PoketchCompany_F1/scripts.inc"
+	.include "data/maps/JubilifeCity_PoketchCompany_F2/scripts.inc"
+	.include "data/maps/JubilifeCity_PoketchCompany_F3/scripts.inc"
+	.include "data/maps/JubilifeCity_Flat1_F1/scripts.inc"
+	.include "data/maps/JubilifeCity_Flat1_F2/scripts.inc"
+	.include "data/maps/JubilifeCity_Flat1_F3/scripts.inc"
+	.include "data/maps/JubilifeCity_Flat2_F1/scripts.inc"
+	.include "data/maps/JubilifeCity_Flat2_F2/scripts.inc"
+	.include "data/maps/JubilifeCity_Flat2_F3/scripts.inc"
+	.include "data/maps/JubilifeCity_Flat3_F1/scripts.inc"
+	.include "data/maps/JubilifeCity_Flat3_F2/scripts.inc"
+	.include "data/maps/JubilifeCity_Flat3_F3/scripts.inc"
+	.include "data/maps/JubilifeCity_PokemonCenter_1F/scripts.inc"
+	.include "data/maps/JubilifeCity_PokemonCenter_2F/scripts.inc"
+	.include "data/maps/JubilifeCity_Mart/scripts.inc"
+	.include "data/maps/OreburghCity_Flat1_F1/scripts.inc"
+	.include "data/maps/OreburghCity_Flat1_F2/scripts.inc"
+	.include "data/maps/OreburghCity_Flat2_F1/scripts.inc"
+	.include "data/maps/OreburghCity_Flat2_F2/scripts.inc"
+	.include "data/maps/OreburghCity_Flat3_F1/scripts.inc"
+	.include "data/maps/OreburghCity_Flat3_F2/scripts.inc"
+	.include "data/maps/OreburghCity_House1/scripts.inc"
+	.include "data/maps/OreburghCity_House2/scripts.inc"
+	.include "data/maps/OreburghCity_House3/scripts.inc"
+	.include "data/maps/OreburghCity_Gym/scripts.inc"
+	.include "data/maps/OreburghCity_PokemonCenter_1F/scripts.inc"
+	.include "data/maps/OreburghCity_PokemonCenter_2F/scripts.inc"
+	.include "data/maps/OreburghCity_Mart/scripts.inc"
+	.include "data/maps/SandgemLab/scripts.inc"
+	.include "data/maps/OreburghMuseum/scripts.inc"
+
+.include "data/scripts/sinnoh_campaign.inc"
+
+.include "data/maps/FloaromaTown/scripts.inc"
+
+.include "data/maps/EternaCity/scripts.inc"
+
+.include "data/maps/HearthomeCity/scripts.inc"
+
+.include "data/maps/SolaceonTown/scripts.inc"
+
+.include "data/maps/CelesticTown/scripts.inc"
+
+.include "data/maps/VeilstoneCity/scripts.inc"
+
+.include "data/maps/PastoriaCity/scripts.inc"
+
+.include "data/maps/CanalaveCity/scripts.inc"
+
+.include "data/maps/SnowpointCity/scripts.inc"
+
+.include "data/maps/SunyshoreCity/scripts.inc"
+
+.include "data/maps/PokmonLeague/scripts.inc"
+
+.include "data/maps/Route204/scripts.inc"
+
+.include "data/maps/Route205_North/scripts.inc"
+
+.include "data/maps/Route205_South/scripts.inc"
+
+.include "data/maps/Route206/scripts.inc"
+
+.include "data/maps/Route207/scripts.inc"
+
+.include "data/maps/Route208/scripts.inc"
+
+.include "data/maps/Route209/scripts.inc"
+
+.include "data/maps/Route210_North/scripts.inc"
+
+.include "data/maps/Route210_South/scripts.inc"
+
+.include "data/maps/Route211_East/scripts.inc"
+
+.include "data/maps/Route211_West/scripts.inc"
+
+.include "data/maps/Route212_North/scripts.inc"
+
+.include "data/maps/Route212_South/scripts.inc"
+
+.include "data/maps/Route213/scripts.inc"
+
+.include "data/maps/Route214/scripts.inc"
+
+.include "data/maps/Route215/scripts.inc"
+
+.include "data/maps/Route216/scripts.inc"
+
+.include "data/maps/Route217/scripts.inc"
+
+.include "data/maps/Route218/scripts.inc"
+
+.include "data/maps/Route219/scripts.inc"
+
+.include "data/maps/Route220/scripts.inc"
+
+.include "data/maps/Route221/scripts.inc"
+
+.include "data/maps/Route222/scripts.inc"
+
+.include "data/maps/Route223/scripts.inc"
+
+.include "data/maps/Route224/scripts.inc"
+
+.include "data/maps/Route225/scripts.inc"
+
+.include "data/maps/Route226/scripts.inc"
+
+.include "data/maps/Route227/scripts.inc"
+
+.include "data/maps/Route228/scripts.inc"
+
+.include "data/maps/Route229/scripts.inc"
+
+.include "data/maps/Route230/scripts.inc"
+
+.include "data/maps/ValorLakefront/scripts.inc"
+
+.include "data/maps/AcuityLakefront/scripts.inc"
+
+.include "data/maps/FightArea/scripts.inc"
+
+.include "data/maps/SurvivalArea/scripts.inc"
+
+.include "data/maps/ResortArea/scripts.inc"
+
+.include "data/maps/LakeValor/scripts.inc"
+
+.include "data/maps/LakeAcuity/scripts.inc"
+
+.include "data/maps/ValleyWindworks/scripts.inc"
+
+.include "data/maps/EternaForest/scripts.inc"
+
+.include "data/maps/FloaromaMeadow/scripts.inc"
+
+.include "data/maps/RavagedPath/scripts.inc"
+
+.include "data/maps/MtCoronet_B1F/scripts.inc"
+
+.include "data/maps/MtCoronet_1F_South/scripts.inc"
+
+.include "data/maps/MtCoronet_1F_North_Room1/scripts.inc"
+
+.include "data/maps/MtCoronet_1F_North_Room2/scripts.inc"
+
+.include "data/maps/OldChateau_Entrance/scripts.inc"
+
+.include "data/maps/OldChateau_SideRoom_1/scripts.inc"
+
+.include "data/maps/OldChateau_SideRoom_2/scripts.inc"
+
+.include "data/maps/OldChateau_DiningRoom/scripts.inc"
+
+.include "data/maps/OldChateau_2F/scripts.inc"
+
+.include "data/maps/Route206_North/scripts.inc"
+
+.include "data/maps/Route206_South/scripts.inc"
+
+.include "data/maps/Route208_Access/scripts.inc"
+
+.include "data/maps/Route209_Access/scripts.inc"
+
+.include "data/maps/Route212_Access/scripts.inc"
+
+.include "data/maps/Route213_Access/scripts.inc"
+
+.include "data/maps/Route214_Access/scripts.inc"
+
+.include "data/maps/Route215_Access/scripts.inc"
+
+.include "data/maps/Route218_East/scripts.inc"
+
+.include "data/maps/Route218_West/scripts.inc"
+
+.include "data/maps/Route222_Access/scripts.inc"
+
+.include "data/maps/Route225_Access/scripts.inc"
+
+.include "data/maps/Route226_Access/scripts.inc"
+
+.include "data/maps/HotelGrandLake/scripts.inc"
+
+.include "data/maps/ValleyWindoworks_Indoor/scripts.inc"
+
+.include "data/maps/Route205_House/scripts.inc"
+
+.include "data/maps/FloaromaTown_House1/scripts.inc"
+
+.include "data/maps/FloaromaTown_House2/scripts.inc"
+
+.include "data/maps/FloaromaTown_FlowerShop/scripts.inc"
+
+.include "data/maps/FloaromaTown_PokemonCenter_1F/scripts.inc"
+
+.include "data/maps/FloaromaTwon_PokemonCenter_2F/scripts.inc"
+
+.include "data/maps/FloaromaTown_Mart/scripts.inc"
+
+.include "data/maps/FloaromaMeadow_House/scripts.inc"
+
+.include "data/maps/EternaCity_Flat1_F1/scripts.inc"
+
+.include "data/maps/EternaCity_Flat1_F2/scripts.inc"
+
+.include "data/maps/EternaCity_Flat1_F3/scripts.inc"
+
+.include "data/maps/EternaCity_HerbShop/scripts.inc"
+
+.include "data/maps/EternaCity_UndergroundManHouse/scripts.inc"
+
+.include "data/maps/EternaCity_CycleShop/scripts.inc"
+
+.include "data/maps/EternaCity_House1/scripts.inc"
+
+.include "data/maps/EternaCity_House2/scripts.inc"
+
+.include "data/maps/EternaCity_Gym/scripts.inc"
+
+.include "data/maps/EternaCity_PokemonCenter_F1/scripts.inc"
+
+.include "data/maps/EternaCity_PokemonCenter_F2/scripts.inc"
+
+.include "data/maps/EternaCity_Mart/scripts.inc"
+
+.include "data/maps/EternaCity_GalacticBuilding_1F/scripts.inc"
+
+.include "data/maps/EternaCity_GalacticBuilding_2F/scripts.inc"
+
+.include "data/maps/EternaCity_GalacticBuilding_3F/scripts.inc"
+
+.include "data/maps/EternaCity_GalacticBuilding_4F/scripts.inc"
+
+.include "data/maps/EternaCity_GalacticBuilding_B1F/scripts.inc"
+
+.include "data/maps/HearthomeCity_PokemonCenter/scripts.inc"
+
+.include "data/maps/HearthomeCity_Mart/scripts.inc"
+
+.include "data/maps/HearthomeCity_House/scripts.inc"
+
+.include "data/maps/SolaceonTown_PokemonCenter/scripts.inc"
+
+.include "data/maps/SolaceonTown_Mart/scripts.inc"
+
+.include "data/maps/SolaceonTown_House/scripts.inc"
+
+.include "data/maps/VeilstoneCity_PokemonCenter/scripts.inc"
+
+.include "data/maps/VeilstoneCity_Mart/scripts.inc"
+
+.include "data/maps/VeilstoneCity_House/scripts.inc"
+
+.include "data/maps/PastoriaCity_PokemonCenter/scripts.inc"
+
+.include "data/maps/PastoriaCity_Mart/scripts.inc"
+
+.include "data/maps/PastoriaCity_House/scripts.inc"
+
+.include "data/maps/CelesticTown_PokemonCenter/scripts.inc"
+
+.include "data/maps/CelesticTown_Mart/scripts.inc"
+
+.include "data/maps/CelesticTown_House/scripts.inc"
+
+.include "data/maps/CanalaveCity_PokemonCenter/scripts.inc"
+
+.include "data/maps/CanalaveCity_Mart/scripts.inc"
+
+.include "data/maps/CanalaveCity_House/scripts.inc"
+
+.include "data/maps/SnowpointCity_PokemonCenter/scripts.inc"
+
+.include "data/maps/SnowpointCity_Mart/scripts.inc"
+
+.include "data/maps/SnowpointCity_House/scripts.inc"
+
+.include "data/maps/SunyshoreCity_PokemonCenter/scripts.inc"
+
+.include "data/maps/SunyshoreCity_Mart/scripts.inc"
+
+.include "data/maps/SunyshoreCity_House/scripts.inc"
+
+.include "data/maps/FightArea_PokemonCenter/scripts.inc"
+
+.include "data/maps/FightArea_Mart/scripts.inc"
+
+.include "data/maps/FightArea_House/scripts.inc"
+
+.include "data/maps/ResortArea_PokemonCenter/scripts.inc"
+
+.include "data/maps/ResortArea_Mart/scripts.inc"
+
+.include "data/maps/ResortArea_House/scripts.inc"
+
+.include "data/maps/SurvivalArea_PokemonCenter/scripts.inc"
+
+.include "data/maps/SurvivalArea_Mart/scripts.inc"
+
+.include "data/maps/SurvivalArea_House/scripts.inc"
+
+.include "data/maps/HearthomeCity_Gym/scripts.inc"
+
+.include "data/maps/VeilstoneCity_Gym/scripts.inc"
+
+.include "data/maps/PastoriaCity_Gym/scripts.inc"
+
+.include "data/maps/CanalaveCity_Gym/scripts.inc"
+
+.include "data/maps/SnowpointCity_Gym/scripts.inc"
+
+.include "data/maps/SunyshoreCity_Gym/scripts.inc"
+
+.include "data/maps/CanalaveLibrary/scripts.inc"
+
+.include "data/maps/VeilstoneHQ/scripts.inc"
+
+.include "data/maps/MtCoronetSummit/scripts.inc"
+
+.include "data/maps/SpearPillar/scripts.inc"
+
+.include "data/maps/DistortionWorld/scripts.inc"
+
+.include "data/maps/HallOfOrigin/scripts.inc"
+
+.include "data/maps/TurnbackCave/scripts.inc"
+
+.include "data/maps/SnowpointTemple/scripts.inc"
+
+.include "data/maps/VictoryRoad/scripts.inc"
+
+.include "data/maps/LeagueAaron/scripts.inc"
+
+.include "data/maps/LeagueBertha/scripts.inc"
+
+.include "data/maps/LeagueFlint/scripts.inc"
+
+.include "data/maps/LeagueLucian/scripts.inc"
+
+.include "data/maps/LeagueCynthia/scripts.inc"
+
+ .include "data/maps/UnNuvemaTown/scripts.inc"
+ .include "data/maps/UnAccumulaTown/scripts.inc"
+ .include "data/maps/UnStriatonCity/scripts.inc"
+ .include "data/maps/UnNacreneCity/scripts.inc"
+ .include "data/maps/UnRoute1/scripts.inc"
+ .include "data/maps/UnRoute2/scripts.inc"
+ .include "data/maps/UnRoute3/scripts.inc"
+ .include "data/maps/UnDreamyard/scripts.inc"
+ .include "data/maps/UnWellspringCave/scripts.inc"
+ .include "data/maps/UnPinwheelOuter/scripts.inc"
+ .include "data/maps/UnPinwheelInner/scripts.inc"
+ .include "data/maps/UnSkyarrowBridge/scripts.inc"
+ .include "data/maps/UnCasteliaCity/scripts.inc"
+ .include "data/maps/UnCasteliaStreet/scripts.inc"
+ .include "data/maps/UnNuvemaHouse/scripts.inc"
+ .include "data/maps/UnAccumulaHouse/scripts.inc"
+ .include "data/maps/UnAccumulaCenter/scripts.inc"
+ .include "data/maps/UnAccumulaMart/scripts.inc"
+ .include "data/maps/UnStriatonHouse/scripts.inc"
+ .include "data/maps/UnStriatonCenter/scripts.inc"
+ .include "data/maps/UnStriatonMart/scripts.inc"
+ .include "data/maps/UnNacreneHouse/scripts.inc"
+ .include "data/maps/UnNacreneCenter/scripts.inc"
+ .include "data/maps/UnNacreneMart/scripts.inc"
+ .include "data/maps/UnCasteliaHouse/scripts.inc"
+ .include "data/maps/UnCasteliaCenter/scripts.inc"
+ .include "data/maps/UnCasteliaMart/scripts.inc"
+ .include "data/maps/UnNuvemaBedroom/scripts.inc"
+ .include "data/maps/UnNuvemaLab/scripts.inc"
+ .include "data/maps/UnStriatonSchool/scripts.inc"
+ .include "data/maps/UnStriatonGym/scripts.inc"
+ .include "data/maps/UnFennelLab/scripts.inc"
+ .include "data/maps/UnNacreneMuseum/scripts.inc"
+ .include "data/maps/UnCasteliaPlasmaHouse/scripts.inc"
+ .include "data/maps/UnCasteliaGym/scripts.inc"
+ .include "data/maps/UnCasteliaStudio/scripts.inc"
+ .include "data/maps/UnRoute4/scripts.inc"
+ .include "data/maps/UnNimbasaCity/scripts.inc"
+ .include "data/maps/UnNimbasaCenter/scripts.inc"
+ .include "data/scripts/unova_chapter.inc"

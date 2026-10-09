@@ -1,0 +1,297 @@
+{
+  "id": "MAP_ROUTE205_SOUTH",
+  "name": "Route205_South",
+  "layout": "LAYOUT_SI_ROUTE205_SOUTH",
+  "music": "MUS_DPP_ROUTE205",
+  "region_map_section": "MAPSEC_SINNOH_ROUTES",
+  "requires_flash": false,
+  "weather": "WEATHER_SUNNY",
+  "map_type": "MAP_TYPE_ROUTE",
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "map": "MAP_FLOAROMA_TOWN",
+      "offset": 64,
+      "direction": "left"
+    },
+    {
+      "map": "MAP_ROUTE205_NORTH",
+      "offset": 20,
+      "direction": "up"
+    },
+    {
+      "map": "MAP_VALLEY_WINDWORKS",
+      "offset": 0,
+      "direction": "right"
+    }
+  ],
+  "object_events": [
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SI_GUITARIST",
+      "x": 18,
+      "y": 68,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_WANDER_UP_AND_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "SI_W_Resident_256",
+      "flag": "0",
+      "local_id": "LOCALID_SI_ROUTE205_SOUTH_1"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SI_CLOWN",
+      "x": 23,
+      "y": 67,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "SI_W_Resident_257",
+      "flag": "0",
+      "local_id": "LOCALID_SI_ROUTE205_SOUTH_2"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SI_SCHOOL_KID_F",
+      "x": 23,
+      "y": 77,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT",
+      "movement_range_x": 1,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "SI_W_Resident_258",
+      "flag": "0",
+      "local_id": "LOCALID_SI_ROUTE205_SOUTH_3"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SI_BREEDER",
+      "x": 22,
+      "y": 67,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "SI_W_Resident_259",
+      "flag": "0",
+      "local_id": "LOCALID_SI_ROUTE205_SOUTH_4"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SI_RANCHER",
+      "x": 16,
+      "y": 66,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "SI_W_Resident_260",
+      "flag": "0",
+      "local_id": "LOCALID_SI_ROUTE205_SOUTH_5"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SI_COWGIRL",
+      "x": 15,
+      "y": 66,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "SI_W_Resident_261",
+      "flag": "0",
+      "local_id": "LOCALID_SI_ROUTE205_SOUTH_6"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SI_GENTLEMAN",
+      "x": 14,
+      "y": 66,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "SI_W_Resident_262",
+      "flag": "0",
+      "local_id": "LOCALID_SI_ROUTE205_SOUTH_7"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SI_SKIER_M",
+      "x": 14,
+      "y": 67,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "SI_W_Resident_263",
+      "flag": "0",
+      "local_id": "LOCALID_SI_ROUTE205_SOUTH_8"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SI_WORKER",
+      "x": 15,
+      "y": 67,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "SI_W_Resident_264",
+      "flag": "0",
+      "local_id": "LOCALID_SI_ROUTE205_SOUTH_9"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SI_FISHERMAN",
+      "x": 16,
+      "y": 67,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "SI_W_Resident_265",
+      "flag": "0",
+      "local_id": "LOCALID_SI_ROUTE205_SOUTH_10"
+    },
+    {
+      "local_id": "LOCALID_SI_ROUTE205_SOUTH_11",
+      "graphics_id": "OBJ_EVENT_GFX_SI_HIKER",
+      "x": 17,
+      "y": 68,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_WANDER_UP_AND_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "SI_W_Resident_266",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SI_SCIENTIST_F",
+      "x": 19,
+      "y": 67,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT",
+      "movement_range_x": 1,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "SI_W_Resident_267",
+      "flag": "0",
+      "local_id": "LOCALID_SI_ROUTE205_SOUTH_12"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SI_SCIENTIST_M",
+      "x": 14,
+      "y": 68,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "2",
+      "script": "SI_W_Trainer_17",
+      "flag": "0",
+      "local_id": "LOCALID_SI_ROUTE205_SOUTH_13"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SI_HIKER",
+      "x": 15,
+      "y": 68,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "2",
+      "script": "SI_W_Trainer_65",
+      "flag": "0",
+      "local_id": "LOCALID_SI_W_ROUTE205_SOUTH_14"
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 14,
+      "y": 12,
+      "elevation": 0,
+      "dest_map": "MAP_ETERNA_FOREST",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 15,
+      "y": 12,
+      "elevation": 0,
+      "dest_map": "MAP_ETERNA_FOREST",
+      "dest_warp_id": "1"
+    },
+    {
+      "x": 21,
+      "y": 22,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE205_HOUSE",
+      "dest_warp_id": "0"
+    }
+  ],
+  "coord_events": [],
+  "bg_events": [
+    {
+      "type": "sign",
+      "x": 26,
+      "y": 89,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "SI_W_Sign_Route205_South_0"
+    },
+    {
+      "type": "sign",
+      "x": 17,
+      "y": 18,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "SI_W_Sign_Route205_South_1"
+    },
+    {
+      "type": "sign",
+      "x": 20,
+      "y": 55,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "SI_W_Sign_Route205_South_2"
+    },
+    {
+      "type": "sign",
+      "x": 0,
+      "y": 86,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "SI_W_Sign_Route205_South_3"
+    },
+    {
+      "type": "sign",
+      "x": 23,
+      "y": 85,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "SI_W_Sign_Route205_South_4"
+    }
+  ],
+  "region": "REGION_SINNOH"
+}

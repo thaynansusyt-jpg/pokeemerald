@@ -311,3 +311,89 @@ $(PKNAVOPTIONSGFXDIR)/options.4bpp: $(PKNAVOPTIONSGFXDIR)/hoenn_map.4bpp \
                                     $(PKNAVOPTIONSGFXDIR)/tough.4bpp \
                                     $(PKNAVOPTIONSGFXDIR)/cancel.4bpp
 	@cat $^ >$@
+
+# Sinnoh player sheets use 32x32 frames.
+graphics/object_events/pics/people/lucas/walking.4bpp: graphics/object_events/pics/people/lucas/walking.png
+	$(GFX) $< $@ -mwidth 4 -mheight 4
+
+graphics/object_events/pics/people/lucas/running.4bpp: graphics/object_events/pics/people/lucas/running.png
+	$(GFX) $< $@ -mwidth 4 -mheight 4
+
+graphics/object_events/pics/people/dawn/walking.4bpp: graphics/object_events/pics/people/dawn/walking.png
+	$(GFX) $< $@ -mwidth 4 -mheight 4
+
+graphics/object_events/pics/people/dawn/running.4bpp: graphics/object_events/pics/people/dawn/running.png
+	$(GFX) $< $@ -mwidth 4 -mheight 4
+
+# Sinnoh NPC sheets contain complete 32x32 animation frames.
+graphics/object_events/pics/people/youngster_pt.4bpp: graphics/object_events/pics/people/youngster_pt.png
+	$(GFX) $< $@ -mwidth 4 -mheight 4
+
+graphics/object_events/pics/people/lass_pt.4bpp: graphics/object_events/pics/people/lass_pt.png
+	$(GFX) $< $@ -mwidth 4 -mheight 4
+
+graphics/object_events/pics/people/man_pt.4bpp: graphics/object_events/pics/people/man_pt.png
+	$(GFX) $< $@ -mwidth 4 -mheight 4
+
+graphics/object_events/pics/people/woman_pt.4bpp: graphics/object_events/pics/people/woman_pt.png
+	$(GFX) $< $@ -mwidth 4 -mheight 4
+
+graphics/object_events/pics/people/old_man_pt.4bpp: graphics/object_events/pics/people/old_man_pt.png
+	$(GFX) $< $@ -mwidth 4 -mheight 4
+
+graphics/object_events/pics/people/old_woman_pt.4bpp: graphics/object_events/pics/people/old_woman_pt.png
+	$(GFX) $< $@ -mwidth 4 -mheight 4
+
+graphics/object_events/pics/people/johanna_pt.4bpp: graphics/object_events/pics/people/johanna_pt.png
+	$(GFX) $< $@ -mwidth 4 -mheight 4
+
+graphics/object_events/pics/people/looker_pt.4bpp: graphics/object_events/pics/people/looker_pt.png
+	$(GFX) $< $@ -mwidth 4 -mheight 4
+
+graphics/object_events/pics/people/gardenia_pt.4bpp: graphics/object_events/pics/people/gardenia_pt.png
+	$(GFX) $< $@ -mwidth 4 -mheight 4
+
+graphics/object_events/pics/people/fantina_pt.4bpp: graphics/object_events/pics/people/fantina_pt.png
+	$(GFX) $< $@ -mwidth 4 -mheight 4
+
+graphics/object_events/pics/people/maylene_pt.4bpp: graphics/object_events/pics/people/maylene_pt.png
+	$(GFX) $< $@ -mwidth 4 -mheight 4
+
+graphics/object_events/pics/people/crasher_wake_pt.4bpp: graphics/object_events/pics/people/crasher_wake_pt.png
+	$(GFX) $< $@ -mwidth 4 -mheight 4
+
+graphics/object_events/pics/people/byron_pt.4bpp: graphics/object_events/pics/people/byron_pt.png
+	$(GFX) $< $@ -mwidth 4 -mheight 4
+
+graphics/object_events/pics/people/candice_pt.4bpp: graphics/object_events/pics/people/candice_pt.png
+	$(GFX) $< $@ -mwidth 4 -mheight 4
+
+graphics/object_events/pics/people/volkner_pt.4bpp: graphics/object_events/pics/people/volkner_pt.png
+	$(GFX) $< $@ -mwidth 4 -mheight 4
+
+graphics/object_events/pics/people/cyrus_pt.4bpp: graphics/object_events/pics/people/cyrus_pt.png
+	$(GFX) $< $@ -mwidth 4 -mheight 4
+
+graphics/object_events/pics/people/cynthia_pt.4bpp: graphics/object_events/pics/people/cynthia_pt.png
+	$(GFX) $< $@ -mwidth 4 -mheight 4
+
+graphics/object_events/pics/people/aaron_pt.4bpp: graphics/object_events/pics/people/aaron_pt.png
+	$(GFX) $< $@ -mwidth 4 -mheight 4
+
+graphics/object_events/pics/people/bertha_pt.4bpp: graphics/object_events/pics/people/bertha_pt.png
+	$(GFX) $< $@ -mwidth 4 -mheight 4
+
+graphics/object_events/pics/people/flint_pt.4bpp: graphics/object_events/pics/people/flint_pt.png
+	$(GFX) $< $@ -mwidth 4 -mheight 4
+
+graphics/object_events/pics/people/lucian_pt.4bpp: graphics/object_events/pics/people/lucian_pt.png
+	$(GFX) $< $@ -mwidth 4 -mheight 4
+
+graphics/object_events/pics/people/mars_pt.4bpp: graphics/object_events/pics/people/mars_pt.png
+	$(GFX) $< $@ -mwidth 4 -mheight 4
+
+graphics/object_events/pics/people/jupiter_pt.4bpp: graphics/object_events/pics/people/jupiter_pt.png
+	$(GFX) $< $@ -mwidth 4 -mheight 4
+
+graphics/object_events/pics/people/saturn_pt.4bpp: graphics/object_events/pics/people/saturn_pt.png
+	$(GFX) $< $@ -mwidth 4 -mheight 4

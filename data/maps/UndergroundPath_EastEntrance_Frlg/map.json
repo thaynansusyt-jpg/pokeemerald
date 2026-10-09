@@ -2,7 +2,7 @@
   "id": "MAP_UNDERGROUND_PATH_EAST_ENTRANCE",
   "name": "UndergroundPath_EastEntrance_Frlg",
   "layout": "LAYOUT_UNDERGROUND_PATH_ENTRANCE",
-  "music": "MUS_RG_PEWTER",
+  "music": "MUS_UN_CITY",
   "region": "REGION_KANTO",
   "region_map_section": "MAPSEC_UNDERGROUND_PATH_2",
   "requires_flash": false,

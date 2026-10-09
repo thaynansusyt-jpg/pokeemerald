@@ -349,6 +349,95 @@
       "y": 12,
       "respawn_map": "MAP_SIX_ISLAND_POKEMON_CENTER_1F",
       "respawn_npc": "LOCALID_SIX_ISLAND_NURSE"
+    },
+    {
+      "id": "HEAL_LOCATION_SI_SANDGEMTOWN",
+      "map": "MAP_SANDGEM_TOWN",
+      "x": 17,
+      "y": 9,
+      "respawn_map": "MAP_SANDGEM_TOWN_POKEMON_CENTER_1F",
+      "respawn_npc": "LOCALID_SI_SANDGEMTOWN_POKEMONCENTER_1F_1",
+      "respawn_x": 7,
+      "respawn_y": 4
+    },
+    {
+      "id": "HEAL_LOCATION_SI_JUBILIFECITY",
+      "map": "MAP_JUBILIFE_CITY",
+      "x": 55,
+      "y": 37,
+      "respawn_map": "MAP_JUBILIFE_CITY_POKEMON_CENTER_1F",
+      "respawn_npc": "LOCALID_SI_JUBILIFECITY_POKEMONCENTER_1F_1",
+      "respawn_x": 7,
+      "respawn_y": 4
+    },
+    {
+      "id": "HEAL_LOCATION_SI_OREBURGHCITY",
+      "map": "MAP_OREBURGH_CITY",
+      "x": 51,
+      "y": 23,
+      "respawn_map": "MAP_OREBURGH_CITY_POKEMON_CENTER_1F",
+      "respawn_npc": "LOCALID_SI_OREBURGHCITY_POKEMONCENTER_1F_1",
+      "respawn_x": 7,
+      "respawn_y": 4
+    },
+    {
+      "id": "HEAL_LOCATION_UN_NUVEMAHOUSE",
+      "map": "MAP_UN_NUVEMA_HOUSE",
+      "x": 9,
+      "y": 10,
+      "respawn_map": "MAP_UN_NUVEMA_HOUSE",
+      "respawn_x": 9,
+      "respawn_y": 10
+    },
+    {
+      "id": "HEAL_LOCATION_UN_ACCUMULACENTER",
+      "map": "MAP_UN_ACCUMULA_CENTER",
+      "x": 11,
+      "y": 15,
+      "respawn_map": "MAP_UN_ACCUMULA_CENTER",
+      "respawn_x": 11,
+      "respawn_y": 15,
+      "respawn_npc": "1"
+    },
+    {
+      "id": "HEAL_LOCATION_UN_STRIATONCENTER",
+      "map": "MAP_UN_STRIATON_CENTER",
+      "x": 11,
+      "y": 15,
+      "respawn_map": "MAP_UN_STRIATON_CENTER",
+      "respawn_x": 11,
+      "respawn_y": 15,
+      "respawn_npc": "1"
+    },
+    {
+      "id": "HEAL_LOCATION_UN_NACRENECENTER",
+      "map": "MAP_UN_NACRENE_CENTER",
+      "x": 11,
+      "y": 15,
+      "respawn_map": "MAP_UN_NACRENE_CENTER",
+      "respawn_x": 11,
+      "respawn_y": 15,
+      "respawn_npc": "1"
+    },
+    {
+      "id": "HEAL_LOCATION_UN_CASTELIACENTER",
+      "map": "MAP_UN_CASTELIA_CENTER",
+      "x": 11,
+      "y": 15,
+      "respawn_map": "MAP_UN_CASTELIA_CENTER",
+      "respawn_x": 11,
+      "respawn_y": 15,
+      "respawn_npc": "1"
+    },
+    {
+      "id": "HEAL_LOCATION_UN_NIMBASACENTER",
+      "map": "MAP_UN_NIMBASA_CENTER",
+      "x": 11,
+      "y": 15,
+      "respawn_map": "MAP_UN_NIMBASA_CENTER",
+      "respawn_x": 11,
+      "respawn_y": 15,
+      "respawn_npc": "1"
     }
   ]
 }

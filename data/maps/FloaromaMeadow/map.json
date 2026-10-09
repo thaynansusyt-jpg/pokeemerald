@@ -1,0 +1,100 @@
+{
+  "id": "MAP_FLOAROMA_MEADOW",
+  "name": "FloaromaMeadow",
+  "layout": "LAYOUT_SI_FLOAROMAMEADOW",
+  "music": "MUS_DPP_FLOAROMA",
+  "region_map_section": "MAPSEC_FLOAROMA_MEADOW",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_NONE",
+  "allow_cycling": false,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": null,
+  "object_events": [
+    {
+      "local_id": "LOCALID_SI_FLOAROMAMEADOW_1",
+      "graphics_id": "OBJ_EVENT_GFX_SI_FISHERMAN",
+      "x": 30,
+      "y": 34,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT",
+      "movement_range_x": 1,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "SI_W_Resident_61",
+      "flag": "0"
+    },
+    {
+      "local_id": "LOCALID_SI_FLOAROMAMEADOW_2",
+      "graphics_id": "OBJ_EVENT_GFX_SI_HIKER",
+      "x": 28,
+      "y": 34,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_WANDER_UP_AND_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "SI_W_Resident_62",
+      "flag": "0"
+    },
+    {
+      "local_id": "LOCALID_SI_FLOAROMAMEADOW_3",
+      "graphics_id": "OBJ_EVENT_GFX_SI_SCIENTIST_F",
+      "x": 27,
+      "y": 34,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_WANDER_UP_AND_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "SI_W_Resident_63",
+      "flag": "0"
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 10,
+      "y": 50,
+      "elevation": 0,
+      "dest_map": "MAP_FLOAROMA_TOWN",
+      "dest_warp_id": "5"
+    },
+    {
+      "x": 11,
+      "y": 50,
+      "elevation": 0,
+      "dest_map": "MAP_FLOAROMA_TOWN",
+      "dest_warp_id": "6"
+    },
+    {
+      "x": 35,
+      "y": 41,
+      "elevation": 0,
+      "dest_map": "MAP_FLOAROMA_MEADOW_HOUSE",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 48,
+      "y": 10,
+      "elevation": 0,
+      "dest_map": "MAP_FLOAROMA_MEADOW",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 49,
+      "y": 10,
+      "elevation": 0,
+      "dest_map": "MAP_FLOAROMA_MEADOW",
+      "dest_warp_id": "0"
+    }
+  ],
+  "coord_events": [],
+  "bg_events": [],
+  "region": "REGION_SINNOH"
+}

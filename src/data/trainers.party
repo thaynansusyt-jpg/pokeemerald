@@ -52703,3 +52703,11327 @@ Shiny: Yes
 - Earthquake
 - Extreme Speed
 
+
+=== TRAINER_SI_LAKE ===
+Name: GALACTIC
+Class: SI Galactic
+Pic: SI Galactic Grunt M DP
+Gender: Male
+Music: Suspicious
+AI: Basic Trainer
+
+Zubat
+Level: 6
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Glameow
+Level: 7
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+=== TRAINER_SI_LAKE ===
+Difficulty: Easy
+Name: GALACTIC
+Class: SI Galactic
+Pic: SI Galactic Grunt M DP
+Gender: Male
+Music: Suspicious
+AI: Basic Trainer
+
+Zubat
+Level: 4
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Glameow
+Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_SI_LAKE ===
+Difficulty: Hard
+Name: GALACTIC
+Class: SI Galactic
+Pic: SI Galactic Grunt M DP
+Gender: Male
+Music: Suspicious
+AI: Basic Trainer
+
+Zubat
+Level: 8
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Glameow
+Level: 9
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+=== TRAINER_SI_MINE ===
+Name: CALIGO
+Class: SI Galactic
+Pic: SI Galactic Grunt F DP
+Gender: Female
+Music: Suspicious
+AI: Basic Trainer
+
+Stunky
+Level: 11
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Bronzor
+Level: 12
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Croagunk
+Level: 12
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+=== TRAINER_SI_MINE ===
+Difficulty: Easy
+Name: CALIGO
+Class: SI Galactic
+Pic: SI Galactic Grunt F DP
+Gender: Female
+Music: Suspicious
+AI: Basic Trainer
+
+Stunky
+Level: 9
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Bronzor
+Level: 10
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Croagunk
+Level: 10
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_SI_MINE ===
+Difficulty: Hard
+Name: CALIGO
+Class: SI Galactic
+Pic: SI Galactic Grunt F DP
+Gender: Female
+Music: Suspicious
+AI: Basic Trainer
+
+Stunky
+Level: 13
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Bronzor
+Level: 14
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Croagunk
+Level: 14
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+=== TRAINER_SI_ROARK ===
+Name: ROARK
+Class: Leader
+Pic: SI Roark DP
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Geodude
+Level: 12
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Onix
+Level: 12
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Cranidos
+Level: 14
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+=== TRAINER_SI_ROARK ===
+Difficulty: Easy
+Name: ROARK
+Class: Leader
+Pic: SI Roark DP
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Geodude
+Level: 10
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Onix
+Level: 10
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Cranidos
+Level: 12
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_SI_ROARK ===
+Difficulty: Hard
+Name: ROARK
+Class: Leader
+Pic: SI Roark DP
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Geodude
+Level: 14
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Onix
+Level: 14
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Cranidos
+Level: 16
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+=== TRAINER_SI_MARS ===
+Name: MARS
+Class: Si Galactic
+Pic: TRAINER_PIC_SI_MARS_DP
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Zubat
+Level: 18
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Purugly
+Level: 19
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+
+
+=== TRAINER_SI_MARS ===
+Difficulty: Easy
+Name: MARS
+Class: Si Galactic
+Pic: TRAINER_PIC_SI_MARS_DP
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Zubat
+Level: 16
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Purugly
+Level: 17
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+
+
+=== TRAINER_SI_MARS ===
+Difficulty: Hard
+Name: MARS
+Class: Si Galactic
+Pic: TRAINER_PIC_SI_MARS_DP
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Zubat
+Level: 20
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Purugly
+Level: 21
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+
+
+=== TRAINER_SI_GARDENIA ===
+Name: GARDENIA
+Class: Leader
+Pic: TRAINER_PIC_SI_GARDENIA_DP
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Cherubi
+Level: 22
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Turtwig
+Level: 22
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Roserade
+Level: 23
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+
+
+=== TRAINER_SI_GARDENIA ===
+Difficulty: Easy
+Name: GARDENIA
+Class: Leader
+Pic: TRAINER_PIC_SI_GARDENIA_DP
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Cherubi
+Level: 20
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Turtwig
+Level: 20
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Roserade
+Level: 21
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+
+
+=== TRAINER_SI_GARDENIA ===
+Difficulty: Hard
+Name: GARDENIA
+Class: Leader
+Pic: TRAINER_PIC_SI_GARDENIA_DP
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Cherubi
+Level: 24
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Turtwig
+Level: 24
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Roserade
+Level: 25
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+
+
+=== TRAINER_SI_JUPITER ===
+Name: JUPITER
+Class: Si Galactic
+Pic: TRAINER_PIC_SI_JUPITER_DP
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Bronzor
+Level: 24
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Skuntank
+Level: 25
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+
+
+=== TRAINER_SI_JUPITER ===
+Difficulty: Easy
+Name: JUPITER
+Class: Si Galactic
+Pic: TRAINER_PIC_SI_JUPITER_DP
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Bronzor
+Level: 22
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Skuntank
+Level: 23
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+
+
+=== TRAINER_SI_JUPITER ===
+Difficulty: Hard
+Name: JUPITER
+Class: Si Galactic
+Pic: TRAINER_PIC_SI_JUPITER_DP
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Bronzor
+Level: 26
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Skuntank
+Level: 27
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+
+
+=== TRAINER_SI_FANTINA ===
+Name: FANTINA
+Class: Leader
+Pic: TRAINER_PIC_SI_FANTINA_DP
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Drifblim
+Level: 27
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Gengar
+Level: 27
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Mismagius
+Level: 28
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+
+
+=== TRAINER_SI_FANTINA ===
+Difficulty: Easy
+Name: FANTINA
+Class: Leader
+Pic: TRAINER_PIC_SI_FANTINA_DP
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Drifblim
+Level: 25
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Gengar
+Level: 25
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Mismagius
+Level: 26
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+
+
+=== TRAINER_SI_FANTINA ===
+Difficulty: Hard
+Name: FANTINA
+Class: Leader
+Pic: TRAINER_PIC_SI_FANTINA_DP
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Drifblim
+Level: 29
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Gengar
+Level: 29
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Mismagius
+Level: 30
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+
+
+=== TRAINER_SI_MAYLENE ===
+Name: MAYLENE
+Class: Leader
+Pic: TRAINER_PIC_SI_MAYLENE_DP
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Meditite
+Level: 30
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Machoke
+Level: 30
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Lucario
+Level: 31
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+
+
+=== TRAINER_SI_MAYLENE ===
+Difficulty: Easy
+Name: MAYLENE
+Class: Leader
+Pic: TRAINER_PIC_SI_MAYLENE_DP
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Meditite
+Level: 28
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Machoke
+Level: 28
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Lucario
+Level: 29
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+
+
+=== TRAINER_SI_MAYLENE ===
+Difficulty: Hard
+Name: MAYLENE
+Class: Leader
+Pic: TRAINER_PIC_SI_MAYLENE_DP
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Meditite
+Level: 32
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Machoke
+Level: 32
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Lucario
+Level: 33
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+
+
+=== TRAINER_SI_SATURN_VALOR ===
+Name: SATURN
+Class: Si Galactic
+Pic: TRAINER_PIC_SI_SATURN_DP
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Kadabra
+Level: 32
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Bronzor
+Level: 32
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Toxicroak
+Level: 33
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+
+
+=== TRAINER_SI_SATURN_VALOR ===
+Difficulty: Easy
+Name: SATURN
+Class: Si Galactic
+Pic: TRAINER_PIC_SI_SATURN_DP
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Kadabra
+Level: 30
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Bronzor
+Level: 30
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Toxicroak
+Level: 31
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+
+
+=== TRAINER_SI_SATURN_VALOR ===
+Difficulty: Hard
+Name: SATURN
+Class: Si Galactic
+Pic: TRAINER_PIC_SI_SATURN_DP
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Kadabra
+Level: 34
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Bronzor
+Level: 34
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Toxicroak
+Level: 35
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+
+
+=== TRAINER_SI_WAKE ===
+Name: WAKE
+Class: Leader
+Pic: TRAINER_PIC_SI_CRASHER_WAKE_DP
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Gyarados
+Level: 34
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Quagsire
+Level: 34
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Floatzel
+Level: 35
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+
+
+=== TRAINER_SI_WAKE ===
+Difficulty: Easy
+Name: WAKE
+Class: Leader
+Pic: TRAINER_PIC_SI_CRASHER_WAKE_DP
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Gyarados
+Level: 32
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Quagsire
+Level: 32
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Floatzel
+Level: 33
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+
+
+=== TRAINER_SI_WAKE ===
+Difficulty: Hard
+Name: WAKE
+Class: Leader
+Pic: TRAINER_PIC_SI_CRASHER_WAKE_DP
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Gyarados
+Level: 36
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Quagsire
+Level: 36
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Floatzel
+Level: 37
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+
+
+=== TRAINER_SI_BYRON ===
+Name: BYRON
+Class: Leader
+Pic: TRAINER_PIC_SI_BYRON_DP
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Bronzong
+Level: 39
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Steelix
+Level: 39
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Bastiodon
+Level: 40
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+
+
+=== TRAINER_SI_BYRON ===
+Difficulty: Easy
+Name: BYRON
+Class: Leader
+Pic: TRAINER_PIC_SI_BYRON_DP
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Bronzong
+Level: 37
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Steelix
+Level: 37
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Bastiodon
+Level: 38
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+
+
+=== TRAINER_SI_BYRON ===
+Difficulty: Hard
+Name: BYRON
+Class: Leader
+Pic: TRAINER_PIC_SI_BYRON_DP
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Bronzong
+Level: 41
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Steelix
+Level: 41
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Bastiodon
+Level: 42
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+
+
+=== TRAINER_SI_SATURN_ACUITY ===
+Name: SATURN
+Class: Si Galactic
+Pic: TRAINER_PIC_SI_SATURN_DP
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Kadabra
+Level: 42
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Bronzong
+Level: 42
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Toxicroak
+Level: 43
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+
+
+=== TRAINER_SI_SATURN_ACUITY ===
+Difficulty: Easy
+Name: SATURN
+Class: Si Galactic
+Pic: TRAINER_PIC_SI_SATURN_DP
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Kadabra
+Level: 40
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Bronzong
+Level: 40
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Toxicroak
+Level: 41
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+
+
+=== TRAINER_SI_SATURN_ACUITY ===
+Difficulty: Hard
+Name: SATURN
+Class: Si Galactic
+Pic: TRAINER_PIC_SI_SATURN_DP
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Kadabra
+Level: 44
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Bronzong
+Level: 44
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Toxicroak
+Level: 45
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+
+
+=== TRAINER_SI_CANDICE ===
+Name: CANDICE
+Class: Leader
+Pic: TRAINER_PIC_SI_CANDICE_DP
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Sneasel
+Level: 44
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Piloswine
+Level: 44
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Medicham
+Level: 44
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Abomasnow
+Level: 45
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+
+
+=== TRAINER_SI_CANDICE ===
+Difficulty: Easy
+Name: CANDICE
+Class: Leader
+Pic: TRAINER_PIC_SI_CANDICE_DP
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Sneasel
+Level: 42
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Piloswine
+Level: 42
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Medicham
+Level: 42
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Abomasnow
+Level: 43
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+
+
+=== TRAINER_SI_CANDICE ===
+Difficulty: Hard
+Name: CANDICE
+Class: Leader
+Pic: TRAINER_PIC_SI_CANDICE_DP
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Sneasel
+Level: 46
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Piloswine
+Level: 46
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Medicham
+Level: 46
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Abomasnow
+Level: 47
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+
+
+=== TRAINER_SI_CYRUS ===
+Name: CYRUS
+Class: Si Galactic
+Pic: TRAINER_PIC_SI_CYRUS_DP
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Honchkrow
+Level: 46
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Crobat
+Level: 46
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Weavile
+Level: 47
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+
+
+=== TRAINER_SI_CYRUS ===
+Difficulty: Easy
+Name: CYRUS
+Class: Si Galactic
+Pic: TRAINER_PIC_SI_CYRUS_DP
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Honchkrow
+Level: 44
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Crobat
+Level: 44
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Weavile
+Level: 45
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+
+
+=== TRAINER_SI_CYRUS ===
+Difficulty: Hard
+Name: CYRUS
+Class: Si Galactic
+Pic: TRAINER_PIC_SI_CYRUS_DP
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Honchkrow
+Level: 48
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Crobat
+Level: 48
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Weavile
+Level: 49
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+
+
+=== TRAINER_SI_CYRUS_FINAL ===
+Name: CYRUS
+Class: Si Galactic
+Pic: TRAINER_PIC_SI_CYRUS_DP
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Houndoom
+Level: 50
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Honchkrow
+Level: 50
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Crobat
+Level: 50
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Gyarados
+Level: 50
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Weavile
+Level: 51
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+
+
+=== TRAINER_SI_CYRUS_FINAL ===
+Difficulty: Easy
+Name: CYRUS
+Class: Si Galactic
+Pic: TRAINER_PIC_SI_CYRUS_DP
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Houndoom
+Level: 48
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Honchkrow
+Level: 48
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Crobat
+Level: 48
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Gyarados
+Level: 48
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Weavile
+Level: 49
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+
+
+=== TRAINER_SI_CYRUS_FINAL ===
+Difficulty: Hard
+Name: CYRUS
+Class: Si Galactic
+Pic: TRAINER_PIC_SI_CYRUS_DP
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Houndoom
+Level: 52
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Honchkrow
+Level: 52
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Crobat
+Level: 52
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Gyarados
+Level: 52
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Weavile
+Level: 53
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+
+
+=== TRAINER_SI_VOLKNER ===
+Name: VOLKNER
+Class: Leader
+Pic: TRAINER_PIC_SI_VOLKNER_DP
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Jolteon
+Level: 51
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Luxray
+Level: 51
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Raichu
+Level: 51
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Electivire
+Level: 52
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+
+
+=== TRAINER_SI_VOLKNER ===
+Difficulty: Easy
+Name: VOLKNER
+Class: Leader
+Pic: TRAINER_PIC_SI_VOLKNER_DP
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Jolteon
+Level: 49
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Luxray
+Level: 49
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Raichu
+Level: 49
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Electivire
+Level: 50
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+
+
+=== TRAINER_SI_VOLKNER ===
+Difficulty: Hard
+Name: VOLKNER
+Class: Leader
+Pic: TRAINER_PIC_SI_VOLKNER_DP
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Jolteon
+Level: 53
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Luxray
+Level: 53
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Raichu
+Level: 53
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Electivire
+Level: 54
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+
+
+=== TRAINER_SI_AARON ===
+Name: AARON
+Class: Elite Four
+Pic: TRAINER_PIC_SI_AARON_DP
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Yanmega
+Level: 55
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Scizor
+Level: 55
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Vespiquen
+Level: 55
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Heracross
+Level: 55
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Drapion
+Level: 56
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+
+
+=== TRAINER_SI_AARON ===
+Difficulty: Easy
+Name: AARON
+Class: Elite Four
+Pic: TRAINER_PIC_SI_AARON_DP
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Yanmega
+Level: 53
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Scizor
+Level: 53
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Vespiquen
+Level: 53
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Heracross
+Level: 53
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Drapion
+Level: 54
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+
+
+=== TRAINER_SI_AARON ===
+Difficulty: Hard
+Name: AARON
+Class: Elite Four
+Pic: TRAINER_PIC_SI_AARON_DP
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Yanmega
+Level: 57
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Scizor
+Level: 57
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Vespiquen
+Level: 57
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Heracross
+Level: 57
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Drapion
+Level: 58
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+
+
+=== TRAINER_SI_BERTHA ===
+Name: BERTHA
+Class: Elite Four
+Pic: TRAINER_PIC_SI_BERTHA_DP
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Whiscash
+Level: 56
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Gliscor
+Level: 56
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Golem
+Level: 56
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Hippowdon
+Level: 56
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Rhyperior
+Level: 57
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+
+
+=== TRAINER_SI_BERTHA ===
+Difficulty: Easy
+Name: BERTHA
+Class: Elite Four
+Pic: TRAINER_PIC_SI_BERTHA_DP
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Whiscash
+Level: 54
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Gliscor
+Level: 54
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Golem
+Level: 54
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Hippowdon
+Level: 54
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Rhyperior
+Level: 55
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+
+
+=== TRAINER_SI_BERTHA ===
+Difficulty: Hard
+Name: BERTHA
+Class: Elite Four
+Pic: TRAINER_PIC_SI_BERTHA_DP
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Whiscash
+Level: 58
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Gliscor
+Level: 58
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Golem
+Level: 58
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Hippowdon
+Level: 58
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Rhyperior
+Level: 59
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+
+
+=== TRAINER_SI_FLINT ===
+Name: FLINT
+Class: Elite Four
+Pic: TRAINER_PIC_SI_FLINT_DP
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Houndoom
+Level: 57
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Flareon
+Level: 57
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Rapidash
+Level: 57
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Infernape
+Level: 57
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Magmortar
+Level: 58
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+
+
+=== TRAINER_SI_FLINT ===
+Difficulty: Easy
+Name: FLINT
+Class: Elite Four
+Pic: TRAINER_PIC_SI_FLINT_DP
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Houndoom
+Level: 55
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Flareon
+Level: 55
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Rapidash
+Level: 55
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Infernape
+Level: 55
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Magmortar
+Level: 56
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+
+
+=== TRAINER_SI_FLINT ===
+Difficulty: Hard
+Name: FLINT
+Class: Elite Four
+Pic: TRAINER_PIC_SI_FLINT_DP
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Houndoom
+Level: 59
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Flareon
+Level: 59
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Rapidash
+Level: 59
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Infernape
+Level: 59
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Magmortar
+Level: 60
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+
+
+=== TRAINER_SI_LUCIAN ===
+Name: LUCIAN
+Class: Elite Four
+Pic: TRAINER_PIC_SI_LUCIAN_DP
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Mr. Mime
+Level: 58
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Espeon
+Level: 58
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Bronzong
+Level: 58
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Alakazam
+Level: 58
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Gallade
+Level: 59
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+
+
+=== TRAINER_SI_LUCIAN ===
+Difficulty: Easy
+Name: LUCIAN
+Class: Elite Four
+Pic: TRAINER_PIC_SI_LUCIAN_DP
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Mr. Mime
+Level: 56
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Espeon
+Level: 56
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Bronzong
+Level: 56
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Alakazam
+Level: 56
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Gallade
+Level: 57
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+
+
+=== TRAINER_SI_LUCIAN ===
+Difficulty: Hard
+Name: LUCIAN
+Class: Elite Four
+Pic: TRAINER_PIC_SI_LUCIAN_DP
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Mr. Mime
+Level: 60
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Espeon
+Level: 60
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Bronzong
+Level: 60
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Alakazam
+Level: 60
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Gallade
+Level: 61
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+
+
+=== TRAINER_SI_CYNTHIA ===
+Name: CYNTHIA
+Class: Champion
+Pic: TRAINER_PIC_SI_CYNTHIA_DP
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Spiritomb
+Level: 62
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Roserade
+Level: 62
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Togekiss
+Level: 62
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Lucario
+Level: 62
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Milotic
+Level: 62
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Garchomp
+Level: 63
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+
+
+=== TRAINER_SI_CYNTHIA ===
+Difficulty: Easy
+Name: CYNTHIA
+Class: Champion
+Pic: TRAINER_PIC_SI_CYNTHIA_DP
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Spiritomb
+Level: 60
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Roserade
+Level: 60
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Togekiss
+Level: 60
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Lucario
+Level: 60
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Milotic
+Level: 60
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Garchomp
+Level: 61
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+
+
+=== TRAINER_SI_CYNTHIA ===
+Difficulty: Hard
+Name: CYNTHIA
+Class: Champion
+Pic: TRAINER_PIC_SI_CYNTHIA_DP
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Spiritomb
+Level: 64
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Roserade
+Level: 64
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Togekiss
+Level: 64
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Lucario
+Level: 64
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Milotic
+Level: 64
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Garchomp
+Level: 65
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+
+
+
+
+=== TRAINER_SI_JONATHON ===
+Name: CAIO
+Class: Youngster
+Pic: TRAINER_PIC_SI_YOUNGSTER_DP
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Starly
+Level: 12
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Shinx
+Level: 13
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+
+=== TRAINER_SI_JONATHON ===
+Difficulty: Easy
+Name: CAIO
+Class: Youngster
+Pic: TRAINER_PIC_SI_YOUNGSTER_DP
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Starly
+Level: 10
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Shinx
+Level: 11
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+
+=== TRAINER_SI_JONATHON ===
+Difficulty: Hard
+Name: CAIO
+Class: Youngster
+Pic: TRAINER_PIC_SI_YOUNGSTER_DP
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Starly
+Level: 14
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Shinx
+Level: 15
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+
+=== TRAINER_SI_DARIUS ===
+Name: LIA
+Class: Lass
+Pic: TRAINER_PIC_SI_LASS_DP
+Gender: Female
+Music: Female
+AI: Basic Trainer
+
+Buneary
+Level: 12
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Budew
+Level: 13
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+
+=== TRAINER_SI_DARIUS ===
+Difficulty: Easy
+Name: LIA
+Class: Lass
+Pic: TRAINER_PIC_SI_LASS_DP
+Gender: Female
+Music: Female
+AI: Basic Trainer
+
+Buneary
+Level: 10
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Budew
+Level: 11
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+
+=== TRAINER_SI_DARIUS ===
+Difficulty: Hard
+Name: LIA
+Class: Lass
+Pic: TRAINER_PIC_SI_LASS_DP
+Gender: Female
+Music: Female
+AI: Basic Trainer
+
+Buneary
+Level: 14
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Budew
+Level: 15
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+
+=== TRAINER_SI_ROUTE0 ===
+Name: RAFA
+Class: Hiker
+Pic: TRAINER_PIC_HIKER
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Geodude
+Level: 12
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Machop
+Level: 13
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+
+=== TRAINER_SI_ROUTE0 ===
+Difficulty: Easy
+Name: RAFA
+Class: Hiker
+Pic: TRAINER_PIC_HIKER
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Geodude
+Level: 10
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Machop
+Level: 11
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+
+=== TRAINER_SI_ROUTE0 ===
+Difficulty: Hard
+Name: RAFA
+Class: Hiker
+Pic: TRAINER_PIC_HIKER
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Geodude
+Level: 14
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Machop
+Level: 15
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+
+=== TRAINER_SI_ROUTE1 ===
+Name: NINA
+Class: Bug Catcher
+Pic: TRAINER_PIC_BUG_CATCHER
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Kricketot
+Level: 12
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Burmy
+Level: 13
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+
+=== TRAINER_SI_ROUTE1 ===
+Difficulty: Easy
+Name: NINA
+Class: Bug Catcher
+Pic: TRAINER_PIC_BUG_CATCHER
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Kricketot
+Level: 10
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Burmy
+Level: 11
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+
+=== TRAINER_SI_ROUTE1 ===
+Difficulty: Hard
+Name: NINA
+Class: Bug Catcher
+Pic: TRAINER_PIC_BUG_CATCHER
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Kricketot
+Level: 14
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Burmy
+Level: 15
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+
+=== TRAINER_SI_ROUTE2 ===
+Name: OTAVIO
+Class: Fisherman
+Pic: TRAINER_PIC_FISHERMAN
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Magikarp
+Level: 5
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Buizel
+Level: 6
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+
+=== TRAINER_SI_ROUTE2 ===
+Difficulty: Easy
+Name: OTAVIO
+Class: Fisherman
+Pic: TRAINER_PIC_FISHERMAN
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Magikarp
+Level: 3
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Buizel
+Level: 4
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+
+=== TRAINER_SI_ROUTE2 ===
+Difficulty: Hard
+Name: OTAVIO
+Class: Fisherman
+Pic: TRAINER_PIC_FISHERMAN
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Magikarp
+Level: 7
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Buizel
+Level: 8
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+
+=== TRAINER_SI_ROUTE3 ===
+Name: BIA
+Class: Aroma Lady
+Pic: TRAINER_PIC_AROMA_LADY
+Gender: Female
+Music: Female
+AI: Basic Trainer
+
+Budew
+Level: 5
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Cherubi
+Level: 6
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+
+=== TRAINER_SI_ROUTE3 ===
+Difficulty: Easy
+Name: BIA
+Class: Aroma Lady
+Pic: TRAINER_PIC_AROMA_LADY
+Gender: Female
+Music: Female
+AI: Basic Trainer
+
+Budew
+Level: 3
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Cherubi
+Level: 4
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+
+=== TRAINER_SI_ROUTE3 ===
+Difficulty: Hard
+Name: BIA
+Class: Aroma Lady
+Pic: TRAINER_PIC_AROMA_LADY
+Gender: Female
+Music: Female
+AI: Basic Trainer
+
+Budew
+Level: 7
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Cherubi
+Level: 8
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+
+=== TRAINER_SI_ROUTE4 ===
+Name: LUCAS
+Class: Cooltrainer 2
+Pic: TRAINER_PIC_COOLTRAINER_M
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Gible
+Level: 5
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Riolu
+Level: 6
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+
+=== TRAINER_SI_ROUTE4 ===
+Difficulty: Easy
+Name: LUCAS
+Class: Cooltrainer 2
+Pic: TRAINER_PIC_COOLTRAINER_M
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Gible
+Level: 3
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Riolu
+Level: 4
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+
+=== TRAINER_SI_ROUTE4 ===
+Difficulty: Hard
+Name: LUCAS
+Class: Cooltrainer 2
+Pic: TRAINER_PIC_COOLTRAINER_M
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Gible
+Level: 7
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Riolu
+Level: 8
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+
+=== TRAINER_SI_ROUTE5 ===
+Name: MAIA
+Class: Cooltrainer 2
+Pic: TRAINER_PIC_COOLTRAINER_F
+Gender: Female
+Music: Female
+AI: Basic Trainer
+
+Ralts
+Level: 5
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Ponyta
+Level: 6
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+
+=== TRAINER_SI_ROUTE5 ===
+Difficulty: Easy
+Name: MAIA
+Class: Cooltrainer 2
+Pic: TRAINER_PIC_COOLTRAINER_F
+Gender: Female
+Music: Female
+AI: Basic Trainer
+
+Ralts
+Level: 3
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Ponyta
+Level: 4
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+
+=== TRAINER_SI_ROUTE5 ===
+Difficulty: Hard
+Name: MAIA
+Class: Cooltrainer 2
+Pic: TRAINER_PIC_COOLTRAINER_F
+Gender: Female
+Music: Female
+AI: Basic Trainer
+
+Ralts
+Level: 7
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Ponyta
+Level: 8
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+
+=== TRAINER_SI_ROUTE6 ===
+Name: NICO
+Class: Psychic
+Pic: TRAINER_PIC_PSYCHIC_M
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Abra
+Level: 5
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Bronzor
+Level: 6
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+
+=== TRAINER_SI_ROUTE6 ===
+Difficulty: Easy
+Name: NICO
+Class: Psychic
+Pic: TRAINER_PIC_PSYCHIC_M
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Abra
+Level: 3
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Bronzor
+Level: 4
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+
+=== TRAINER_SI_ROUTE6 ===
+Difficulty: Hard
+Name: NICO
+Class: Psychic
+Pic: TRAINER_PIC_PSYCHIC_M
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Abra
+Level: 7
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Bronzor
+Level: 8
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+
+=== TRAINER_SI_ROUTE7 ===
+Name: IRIS
+Class: Youngster
+Pic: TRAINER_PIC_SI_YOUNGSTER_DP
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Starly
+Level: 7
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Shinx
+Level: 8
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+
+=== TRAINER_SI_ROUTE7 ===
+Difficulty: Easy
+Name: IRIS
+Class: Youngster
+Pic: TRAINER_PIC_SI_YOUNGSTER_DP
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Starly
+Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Shinx
+Level: 6
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+
+=== TRAINER_SI_ROUTE7 ===
+Difficulty: Hard
+Name: IRIS
+Class: Youngster
+Pic: TRAINER_PIC_SI_YOUNGSTER_DP
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Starly
+Level: 9
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Shinx
+Level: 10
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+
+=== TRAINER_SI_FIELD0 ===
+Name: ENZO
+Class: Lass
+Pic: TRAINER_PIC_SI_LASS_DP
+Gender: Female
+Music: Female
+AI: Basic Trainer
+
+Buneary
+Level: 7
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Budew
+Level: 8
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+
+=== TRAINER_SI_FIELD0 ===
+Difficulty: Easy
+Name: ENZO
+Class: Lass
+Pic: TRAINER_PIC_SI_LASS_DP
+Gender: Female
+Music: Female
+AI: Basic Trainer
+
+Buneary
+Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Budew
+Level: 6
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+
+=== TRAINER_SI_FIELD0 ===
+Difficulty: Hard
+Name: ENZO
+Class: Lass
+Pic: TRAINER_PIC_SI_LASS_DP
+Gender: Female
+Music: Female
+AI: Basic Trainer
+
+Buneary
+Level: 9
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Budew
+Level: 10
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+
+=== TRAINER_SI_FIELD1 ===
+Name: LUNA
+Class: Hiker
+Pic: TRAINER_PIC_HIKER
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Geodude
+Level: 7
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Machop
+Level: 8
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+
+=== TRAINER_SI_FIELD1 ===
+Difficulty: Easy
+Name: LUNA
+Class: Hiker
+Pic: TRAINER_PIC_HIKER
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Geodude
+Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Machop
+Level: 6
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+
+=== TRAINER_SI_FIELD1 ===
+Difficulty: Hard
+Name: LUNA
+Class: Hiker
+Pic: TRAINER_PIC_HIKER
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Geodude
+Level: 9
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Machop
+Level: 10
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+
+=== TRAINER_SI_FIELD2 ===
+Name: TEO
+Class: Bug Catcher
+Pic: TRAINER_PIC_BUG_CATCHER
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Kricketot
+Level: 7
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Burmy
+Level: 8
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+
+=== TRAINER_SI_FIELD2 ===
+Difficulty: Easy
+Name: TEO
+Class: Bug Catcher
+Pic: TRAINER_PIC_BUG_CATCHER
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Kricketot
+Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Burmy
+Level: 6
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+
+=== TRAINER_SI_FIELD2 ===
+Difficulty: Hard
+Name: TEO
+Class: Bug Catcher
+Pic: TRAINER_PIC_BUG_CATCHER
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Kricketot
+Level: 9
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Burmy
+Level: 10
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+
+=== TRAINER_SI_FIELD3 ===
+Name: ANA
+Class: Fisherman
+Pic: TRAINER_PIC_FISHERMAN
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Magikarp
+Level: 7
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Buizel
+Level: 8
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+
+=== TRAINER_SI_FIELD3 ===
+Difficulty: Easy
+Name: ANA
+Class: Fisherman
+Pic: TRAINER_PIC_FISHERMAN
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Magikarp
+Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Buizel
+Level: 6
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+
+=== TRAINER_SI_FIELD3 ===
+Difficulty: Hard
+Name: ANA
+Class: Fisherman
+Pic: TRAINER_PIC_FISHERMAN
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Magikarp
+Level: 9
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Buizel
+Level: 10
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+
+=== TRAINER_SI_FIELD4 ===
+Name: IVO
+Class: Aroma Lady
+Pic: TRAINER_PIC_AROMA_LADY
+Gender: Female
+Music: Female
+AI: Basic Trainer
+
+Budew
+Level: 7
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Cherubi
+Level: 8
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+
+=== TRAINER_SI_FIELD4 ===
+Difficulty: Easy
+Name: IVO
+Class: Aroma Lady
+Pic: TRAINER_PIC_AROMA_LADY
+Gender: Female
+Music: Female
+AI: Basic Trainer
+
+Budew
+Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Cherubi
+Level: 6
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+
+=== TRAINER_SI_FIELD4 ===
+Difficulty: Hard
+Name: IVO
+Class: Aroma Lady
+Pic: TRAINER_PIC_AROMA_LADY
+Gender: Female
+Music: Female
+AI: Basic Trainer
+
+Budew
+Level: 9
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Cherubi
+Level: 10
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+
+=== TRAINER_SI_FIELD5 ===
+Name: EVA
+Class: Cooltrainer 2
+Pic: TRAINER_PIC_COOLTRAINER_M
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Gible
+Level: 13
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Riolu
+Level: 14
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+
+=== TRAINER_SI_FIELD5 ===
+Difficulty: Easy
+Name: EVA
+Class: Cooltrainer 2
+Pic: TRAINER_PIC_COOLTRAINER_M
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Gible
+Level: 11
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Riolu
+Level: 12
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+
+=== TRAINER_SI_FIELD5 ===
+Difficulty: Hard
+Name: EVA
+Class: Cooltrainer 2
+Pic: TRAINER_PIC_COOLTRAINER_M
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Gible
+Level: 15
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Riolu
+Level: 16
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+
+=== TRAINER_SI_FIELD6 ===
+Name: PEDRO
+Class: Cooltrainer 2
+Pic: TRAINER_PIC_COOLTRAINER_F
+Gender: Female
+Music: Female
+AI: Basic Trainer
+
+Kirlia
+Level: 18
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Ponyta
+Level: 19
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+
+=== TRAINER_SI_FIELD6 ===
+Difficulty: Easy
+Name: PEDRO
+Class: Cooltrainer 2
+Pic: TRAINER_PIC_COOLTRAINER_F
+Gender: Female
+Music: Female
+AI: Basic Trainer
+
+Kirlia
+Level: 16
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Ponyta
+Level: 17
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+
+=== TRAINER_SI_FIELD6 ===
+Difficulty: Hard
+Name: PEDRO
+Class: Cooltrainer 2
+Pic: TRAINER_PIC_COOLTRAINER_F
+Gender: Female
+Music: Female
+AI: Basic Trainer
+
+Kirlia
+Level: 20
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Ponyta
+Level: 21
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+
+=== TRAINER_SI_FIELD7 ===
+Name: LARA
+Class: Psychic
+Pic: TRAINER_PIC_PSYCHIC_M
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Kadabra
+Level: 18
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Bronzong
+Level: 19
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+
+=== TRAINER_SI_FIELD7 ===
+Difficulty: Easy
+Name: LARA
+Class: Psychic
+Pic: TRAINER_PIC_PSYCHIC_M
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Kadabra
+Level: 16
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Bronzong
+Level: 17
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+
+=== TRAINER_SI_FIELD7 ===
+Difficulty: Hard
+Name: LARA
+Class: Psychic
+Pic: TRAINER_PIC_PSYCHIC_M
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Kadabra
+Level: 20
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Bronzong
+Level: 21
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+
+=== TRAINER_SI_FIELD8 ===
+Name: JOAO
+Class: Youngster
+Pic: TRAINER_PIC_SI_YOUNGSTER_DP
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Staravia
+Level: 23
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Luxio
+Level: 24
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+
+=== TRAINER_SI_FIELD8 ===
+Difficulty: Easy
+Name: JOAO
+Class: Youngster
+Pic: TRAINER_PIC_SI_YOUNGSTER_DP
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Staravia
+Level: 21
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Luxio
+Level: 22
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+
+=== TRAINER_SI_FIELD8 ===
+Difficulty: Hard
+Name: JOAO
+Class: Youngster
+Pic: TRAINER_PIC_SI_YOUNGSTER_DP
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Staravia
+Level: 25
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Luxio
+Level: 26
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+
+=== TRAINER_SI_FIELD9 ===
+Name: ALICE
+Class: Lass
+Pic: TRAINER_PIC_SI_LASS_DP
+Gender: Female
+Music: Female
+AI: Basic Trainer
+
+Lopunny
+Level: 23
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Roselia
+Level: 24
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+
+=== TRAINER_SI_FIELD9 ===
+Difficulty: Easy
+Name: ALICE
+Class: Lass
+Pic: TRAINER_PIC_SI_LASS_DP
+Gender: Female
+Music: Female
+AI: Basic Trainer
+
+Lopunny
+Level: 21
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Roselia
+Level: 22
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+
+=== TRAINER_SI_FIELD9 ===
+Difficulty: Hard
+Name: ALICE
+Class: Lass
+Pic: TRAINER_PIC_SI_LASS_DP
+Gender: Female
+Music: Female
+AI: Basic Trainer
+
+Lopunny
+Level: 25
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Roselia
+Level: 26
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+
+=== TRAINER_SI_FIELD10 ===
+Name: DANTE
+Class: Hiker
+Pic: TRAINER_PIC_HIKER
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Geodude
+Level: 13
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Machop
+Level: 14
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+
+=== TRAINER_SI_FIELD10 ===
+Difficulty: Easy
+Name: DANTE
+Class: Hiker
+Pic: TRAINER_PIC_HIKER
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Geodude
+Level: 11
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Machop
+Level: 12
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+
+=== TRAINER_SI_FIELD10 ===
+Difficulty: Hard
+Name: DANTE
+Class: Hiker
+Pic: TRAINER_PIC_HIKER
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Geodude
+Level: 15
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Machop
+Level: 16
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+
+=== TRAINER_SI_FIELD11 ===
+Name: CECI
+Class: Bug Catcher
+Pic: TRAINER_PIC_BUG_CATCHER
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Kricketune
+Level: 24
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Mothim
+Level: 25
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+
+=== TRAINER_SI_FIELD11 ===
+Difficulty: Easy
+Name: CECI
+Class: Bug Catcher
+Pic: TRAINER_PIC_BUG_CATCHER
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Kricketune
+Level: 22
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Mothim
+Level: 23
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+
+=== TRAINER_SI_FIELD11 ===
+Difficulty: Hard
+Name: CECI
+Class: Bug Catcher
+Pic: TRAINER_PIC_BUG_CATCHER
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Kricketune
+Level: 26
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Mothim
+Level: 27
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+
+=== TRAINER_SI_FIELD12 ===
+Name: LEVI
+Class: Fisherman
+Pic: TRAINER_PIC_FISHERMAN
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Gyarados
+Level: 27
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Floatzel
+Level: 28
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Gastrodon
+Level: 27
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+
+=== TRAINER_SI_FIELD12 ===
+Difficulty: Easy
+Name: LEVI
+Class: Fisherman
+Pic: TRAINER_PIC_FISHERMAN
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Gyarados
+Level: 25
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Floatzel
+Level: 26
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Gastrodon
+Level: 25
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+
+=== TRAINER_SI_FIELD12 ===
+Difficulty: Hard
+Name: LEVI
+Class: Fisherman
+Pic: TRAINER_PIC_FISHERMAN
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Gyarados
+Level: 29
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Floatzel
+Level: 30
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Gastrodon
+Level: 29
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+
+=== TRAINER_SI_FIELD13 ===
+Name: JADE
+Class: Aroma Lady
+Pic: TRAINER_PIC_AROMA_LADY
+Gender: Female
+Music: Female
+AI: Basic Trainer
+
+Roserade
+Level: 32
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Cherrim
+Level: 33
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Roselia
+Level: 32
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+
+=== TRAINER_SI_FIELD13 ===
+Difficulty: Easy
+Name: JADE
+Class: Aroma Lady
+Pic: TRAINER_PIC_AROMA_LADY
+Gender: Female
+Music: Female
+AI: Basic Trainer
+
+Roserade
+Level: 30
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Cherrim
+Level: 31
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Roselia
+Level: 30
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+
+=== TRAINER_SI_FIELD13 ===
+Difficulty: Hard
+Name: JADE
+Class: Aroma Lady
+Pic: TRAINER_PIC_AROMA_LADY
+Gender: Female
+Music: Female
+AI: Basic Trainer
+
+Roserade
+Level: 34
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Cherrim
+Level: 35
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Roselia
+Level: 34
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+
+=== TRAINER_SI_FIELD14 ===
+Name: RUI
+Class: Cooltrainer 2
+Pic: TRAINER_PIC_COOLTRAINER_M
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Garchomp
+Level: 32
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Lucario
+Level: 33
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Weavile
+Level: 32
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+
+=== TRAINER_SI_FIELD14 ===
+Difficulty: Easy
+Name: RUI
+Class: Cooltrainer 2
+Pic: TRAINER_PIC_COOLTRAINER_M
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Garchomp
+Level: 30
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Lucario
+Level: 31
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Weavile
+Level: 30
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+
+=== TRAINER_SI_FIELD14 ===
+Difficulty: Hard
+Name: RUI
+Class: Cooltrainer 2
+Pic: TRAINER_PIC_COOLTRAINER_M
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Garchomp
+Level: 34
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Lucario
+Level: 35
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Weavile
+Level: 34
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+
+=== TRAINER_SI_FIELD15 ===
+Name: SARA
+Class: Cooltrainer 2
+Pic: TRAINER_PIC_COOLTRAINER_F
+Gender: Female
+Music: Female
+AI: Basic Trainer
+
+Gardevoir
+Level: 35
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Rapidash
+Level: 36
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Abomasnow
+Level: 35
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+
+=== TRAINER_SI_FIELD15 ===
+Difficulty: Easy
+Name: SARA
+Class: Cooltrainer 2
+Pic: TRAINER_PIC_COOLTRAINER_F
+Gender: Female
+Music: Female
+AI: Basic Trainer
+
+Gardevoir
+Level: 33
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Rapidash
+Level: 34
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Abomasnow
+Level: 33
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+
+=== TRAINER_SI_FIELD15 ===
+Difficulty: Hard
+Name: SARA
+Class: Cooltrainer 2
+Pic: TRAINER_PIC_COOLTRAINER_F
+Gender: Female
+Music: Female
+AI: Basic Trainer
+
+Gardevoir
+Level: 37
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Rapidash
+Level: 38
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Abomasnow
+Level: 37
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+
+=== TRAINER_SI_FIELD16 ===
+Name: LEO
+Class: Psychic
+Pic: TRAINER_PIC_PSYCHIC_M
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Kadabra
+Level: 35
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Bronzong
+Level: 36
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Chimecho
+Level: 35
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+
+=== TRAINER_SI_FIELD16 ===
+Difficulty: Easy
+Name: LEO
+Class: Psychic
+Pic: TRAINER_PIC_PSYCHIC_M
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Kadabra
+Level: 33
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Bronzong
+Level: 34
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Chimecho
+Level: 33
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+
+=== TRAINER_SI_FIELD16 ===
+Difficulty: Hard
+Name: LEO
+Class: Psychic
+Pic: TRAINER_PIC_PSYCHIC_M
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Kadabra
+Level: 37
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Bronzong
+Level: 38
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Chimecho
+Level: 37
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+
+=== TRAINER_SI_FIELD17 ===
+Name: MEL
+Class: Youngster
+Pic: TRAINER_PIC_SI_YOUNGSTER_DP
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Staravia
+Level: 29
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Luxio
+Level: 30
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Bibarel
+Level: 29
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+
+=== TRAINER_SI_FIELD17 ===
+Difficulty: Easy
+Name: MEL
+Class: Youngster
+Pic: TRAINER_PIC_SI_YOUNGSTER_DP
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Staravia
+Level: 27
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Luxio
+Level: 28
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Bibarel
+Level: 27
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+
+=== TRAINER_SI_FIELD17 ===
+Difficulty: Hard
+Name: MEL
+Class: Youngster
+Pic: TRAINER_PIC_SI_YOUNGSTER_DP
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Staravia
+Level: 31
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Luxio
+Level: 32
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Bibarel
+Level: 31
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+
+=== TRAINER_SI_FIELD18 ===
+Name: YURI
+Class: Lass
+Pic: TRAINER_PIC_SI_LASS_DP
+Gender: Female
+Music: Female
+AI: Basic Trainer
+
+Lopunny
+Level: 29
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Roselia
+Level: 30
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Pachirisu
+Level: 29
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+
+=== TRAINER_SI_FIELD18 ===
+Difficulty: Easy
+Name: YURI
+Class: Lass
+Pic: TRAINER_PIC_SI_LASS_DP
+Gender: Female
+Music: Female
+AI: Basic Trainer
+
+Lopunny
+Level: 27
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Roselia
+Level: 28
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Pachirisu
+Level: 27
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+
+=== TRAINER_SI_FIELD18 ===
+Difficulty: Hard
+Name: YURI
+Class: Lass
+Pic: TRAINER_PIC_SI_LASS_DP
+Gender: Female
+Music: Female
+AI: Basic Trainer
+
+Lopunny
+Level: 31
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Roselia
+Level: 32
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Pachirisu
+Level: 31
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+
+=== TRAINER_SI_FIELD19 ===
+Name: CLARA
+Class: Hiker
+Pic: TRAINER_PIC_HIKER
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Golem
+Level: 34
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Machamp
+Level: 35
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Onix
+Level: 34
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+
+=== TRAINER_SI_FIELD19 ===
+Difficulty: Easy
+Name: CLARA
+Class: Hiker
+Pic: TRAINER_PIC_HIKER
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Golem
+Level: 32
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Machamp
+Level: 33
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Onix
+Level: 32
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+
+=== TRAINER_SI_FIELD19 ===
+Difficulty: Hard
+Name: CLARA
+Class: Hiker
+Pic: TRAINER_PIC_HIKER
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Golem
+Level: 36
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Machamp
+Level: 37
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Onix
+Level: 36
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+
+=== TRAINER_SI_FIELD20 ===
+Name: CAIO
+Class: Bug Catcher
+Pic: TRAINER_PIC_BUG_CATCHER
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Kricketune
+Level: 30
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Mothim
+Level: 31
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Combee
+Level: 30
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+
+=== TRAINER_SI_FIELD20 ===
+Difficulty: Easy
+Name: CAIO
+Class: Bug Catcher
+Pic: TRAINER_PIC_BUG_CATCHER
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Kricketune
+Level: 28
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Mothim
+Level: 29
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Combee
+Level: 28
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+
+=== TRAINER_SI_FIELD20 ===
+Difficulty: Hard
+Name: CAIO
+Class: Bug Catcher
+Pic: TRAINER_PIC_BUG_CATCHER
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Kricketune
+Level: 32
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Mothim
+Level: 33
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Combee
+Level: 32
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+
+=== TRAINER_SI_FIELD21 ===
+Name: LIA
+Class: Fisherman
+Pic: TRAINER_PIC_FISHERMAN
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Gyarados
+Level: 29
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Floatzel
+Level: 30
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Gastrodon
+Level: 29
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+
+=== TRAINER_SI_FIELD21 ===
+Difficulty: Easy
+Name: LIA
+Class: Fisherman
+Pic: TRAINER_PIC_FISHERMAN
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Gyarados
+Level: 27
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Floatzel
+Level: 28
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Gastrodon
+Level: 27
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+
+=== TRAINER_SI_FIELD21 ===
+Difficulty: Hard
+Name: LIA
+Class: Fisherman
+Pic: TRAINER_PIC_FISHERMAN
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Gyarados
+Level: 31
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Floatzel
+Level: 32
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Gastrodon
+Level: 31
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+
+=== TRAINER_SI_FIELD22 ===
+Name: RAFA
+Class: Aroma Lady
+Pic: TRAINER_PIC_AROMA_LADY
+Gender: Female
+Music: Female
+AI: Basic Trainer
+
+Roserade
+Level: 41
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Cherrim
+Level: 42
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Roselia
+Level: 41
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+
+=== TRAINER_SI_FIELD22 ===
+Difficulty: Easy
+Name: RAFA
+Class: Aroma Lady
+Pic: TRAINER_PIC_AROMA_LADY
+Gender: Female
+Music: Female
+AI: Basic Trainer
+
+Roserade
+Level: 39
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Cherrim
+Level: 40
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Roselia
+Level: 39
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+
+=== TRAINER_SI_FIELD22 ===
+Difficulty: Hard
+Name: RAFA
+Class: Aroma Lady
+Pic: TRAINER_PIC_AROMA_LADY
+Gender: Female
+Music: Female
+AI: Basic Trainer
+
+Roserade
+Level: 43
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Cherrim
+Level: 44
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Roselia
+Level: 43
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+
+=== TRAINER_SI_FIELD23 ===
+Name: NINA
+Class: Cooltrainer 2
+Pic: TRAINER_PIC_COOLTRAINER_M
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Garchomp
+Level: 43
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Lucario
+Level: 44
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Weavile
+Level: 43
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+
+=== TRAINER_SI_FIELD23 ===
+Difficulty: Easy
+Name: NINA
+Class: Cooltrainer 2
+Pic: TRAINER_PIC_COOLTRAINER_M
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Garchomp
+Level: 41
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Lucario
+Level: 42
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Weavile
+Level: 41
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+
+=== TRAINER_SI_FIELD23 ===
+Difficulty: Hard
+Name: NINA
+Class: Cooltrainer 2
+Pic: TRAINER_PIC_COOLTRAINER_M
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Garchomp
+Level: 45
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Lucario
+Level: 46
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Weavile
+Level: 45
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+
+=== TRAINER_SI_FIELD24 ===
+Name: OTAVIO
+Class: Cooltrainer 2
+Pic: TRAINER_PIC_COOLTRAINER_F
+Gender: Female
+Music: Female
+AI: Basic Trainer
+
+Gardevoir
+Level: 37
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Rapidash
+Level: 38
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Abomasnow
+Level: 37
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+
+=== TRAINER_SI_FIELD24 ===
+Difficulty: Easy
+Name: OTAVIO
+Class: Cooltrainer 2
+Pic: TRAINER_PIC_COOLTRAINER_F
+Gender: Female
+Music: Female
+AI: Basic Trainer
+
+Gardevoir
+Level: 35
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Rapidash
+Level: 36
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Abomasnow
+Level: 35
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+
+=== TRAINER_SI_FIELD24 ===
+Difficulty: Hard
+Name: OTAVIO
+Class: Cooltrainer 2
+Pic: TRAINER_PIC_COOLTRAINER_F
+Gender: Female
+Music: Female
+AI: Basic Trainer
+
+Gardevoir
+Level: 39
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Rapidash
+Level: 40
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Abomasnow
+Level: 39
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+
+=== TRAINER_SI_FIELD25 ===
+Name: BIA
+Class: Psychic
+Pic: TRAINER_PIC_PSYCHIC_M
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Abra
+Level: 5
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Bronzor
+Level: 6
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+
+=== TRAINER_SI_FIELD25 ===
+Difficulty: Easy
+Name: BIA
+Class: Psychic
+Pic: TRAINER_PIC_PSYCHIC_M
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Abra
+Level: 3
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Bronzor
+Level: 4
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+
+=== TRAINER_SI_FIELD25 ===
+Difficulty: Hard
+Name: BIA
+Class: Psychic
+Pic: TRAINER_PIC_PSYCHIC_M
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Abra
+Level: 7
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Bronzor
+Level: 8
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+
+=== TRAINER_SI_FIELD26 ===
+Name: LUCAS
+Class: Youngster
+Pic: TRAINER_PIC_SI_YOUNGSTER_DP
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Staraptor
+Level: 34
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Luxray
+Level: 35
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Bibarel
+Level: 34
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+
+=== TRAINER_SI_FIELD26 ===
+Difficulty: Easy
+Name: LUCAS
+Class: Youngster
+Pic: TRAINER_PIC_SI_YOUNGSTER_DP
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Staraptor
+Level: 32
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Luxray
+Level: 33
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Bibarel
+Level: 32
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+
+=== TRAINER_SI_FIELD26 ===
+Difficulty: Hard
+Name: LUCAS
+Class: Youngster
+Pic: TRAINER_PIC_SI_YOUNGSTER_DP
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Staraptor
+Level: 36
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Luxray
+Level: 37
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Bibarel
+Level: 36
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+
+=== TRAINER_SI_FIELD27 ===
+Name: MAIA
+Class: Lass
+Pic: TRAINER_PIC_SI_LASS_DP
+Gender: Female
+Music: Female
+AI: Basic Trainer
+
+Lopunny
+Level: 35
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Roserade
+Level: 36
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Pachirisu
+Level: 35
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+
+=== TRAINER_SI_FIELD27 ===
+Difficulty: Easy
+Name: MAIA
+Class: Lass
+Pic: TRAINER_PIC_SI_LASS_DP
+Gender: Female
+Music: Female
+AI: Basic Trainer
+
+Lopunny
+Level: 33
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Roserade
+Level: 34
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Pachirisu
+Level: 33
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+
+=== TRAINER_SI_FIELD27 ===
+Difficulty: Hard
+Name: MAIA
+Class: Lass
+Pic: TRAINER_PIC_SI_LASS_DP
+Gender: Female
+Music: Female
+AI: Basic Trainer
+
+Lopunny
+Level: 37
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Roserade
+Level: 38
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Pachirisu
+Level: 37
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+
+=== TRAINER_SI_FIELD28 ===
+Name: NICO
+Class: Hiker
+Pic: TRAINER_PIC_HIKER
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Golem
+Level: 49
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Machamp
+Level: 50
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Onix
+Level: 49
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+
+=== TRAINER_SI_FIELD28 ===
+Difficulty: Easy
+Name: NICO
+Class: Hiker
+Pic: TRAINER_PIC_HIKER
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Golem
+Level: 47
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Machamp
+Level: 48
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Onix
+Level: 47
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+
+=== TRAINER_SI_FIELD28 ===
+Difficulty: Hard
+Name: NICO
+Class: Hiker
+Pic: TRAINER_PIC_HIKER
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Golem
+Level: 51
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Machamp
+Level: 52
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Onix
+Level: 51
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+
+=== TRAINER_SI_FIELD29 ===
+Name: IRIS
+Class: Bug Catcher
+Pic: TRAINER_PIC_BUG_CATCHER
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Kricketune
+Level: 51
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Mothim
+Level: 52
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Combee
+Level: 51
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+
+=== TRAINER_SI_FIELD29 ===
+Difficulty: Easy
+Name: IRIS
+Class: Bug Catcher
+Pic: TRAINER_PIC_BUG_CATCHER
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Kricketune
+Level: 49
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Mothim
+Level: 50
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Combee
+Level: 49
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+
+=== TRAINER_SI_FIELD29 ===
+Difficulty: Hard
+Name: IRIS
+Class: Bug Catcher
+Pic: TRAINER_PIC_BUG_CATCHER
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Kricketune
+Level: 53
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Mothim
+Level: 54
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Combee
+Level: 53
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+
+=== TRAINER_SI_FIELD30 ===
+Name: ENZO
+Class: Fisherman
+Pic: TRAINER_PIC_FISHERMAN
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Gyarados
+Level: 59
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Floatzel
+Level: 60
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Gastrodon
+Level: 59
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+
+=== TRAINER_SI_FIELD30 ===
+Difficulty: Easy
+Name: ENZO
+Class: Fisherman
+Pic: TRAINER_PIC_FISHERMAN
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Gyarados
+Level: 57
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Floatzel
+Level: 58
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Gastrodon
+Level: 57
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+
+=== TRAINER_SI_FIELD30 ===
+Difficulty: Hard
+Name: ENZO
+Class: Fisherman
+Pic: TRAINER_PIC_FISHERMAN
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Gyarados
+Level: 61
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Floatzel
+Level: 62
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Gastrodon
+Level: 61
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+
+=== TRAINER_SI_FIELD31 ===
+Name: LUNA
+Class: Aroma Lady
+Pic: TRAINER_PIC_AROMA_LADY
+Gender: Female
+Music: Female
+AI: Basic Trainer
+
+Roserade
+Level: 59
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Cherrim
+Level: 60
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Roselia
+Level: 59
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+
+=== TRAINER_SI_FIELD31 ===
+Difficulty: Easy
+Name: LUNA
+Class: Aroma Lady
+Pic: TRAINER_PIC_AROMA_LADY
+Gender: Female
+Music: Female
+AI: Basic Trainer
+
+Roserade
+Level: 57
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Cherrim
+Level: 58
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Roselia
+Level: 57
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+
+=== TRAINER_SI_FIELD31 ===
+Difficulty: Hard
+Name: LUNA
+Class: Aroma Lady
+Pic: TRAINER_PIC_AROMA_LADY
+Gender: Female
+Music: Female
+AI: Basic Trainer
+
+Roserade
+Level: 61
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Cherrim
+Level: 62
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Roselia
+Level: 61
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+
+=== TRAINER_SI_WORLD42 ===
+Name: TEO
+Class: Cooltrainer 2
+Pic: TRAINER_PIC_COOLTRAINER_M
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Garchomp
+Level: 60
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Lucario
+Level: 61
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Weavile
+Level: 60
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+
+=== TRAINER_SI_WORLD42 ===
+Difficulty: Easy
+Name: TEO
+Class: Cooltrainer 2
+Pic: TRAINER_PIC_COOLTRAINER_M
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Garchomp
+Level: 58
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Lucario
+Level: 59
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Weavile
+Level: 58
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+
+=== TRAINER_SI_WORLD42 ===
+Difficulty: Hard
+Name: TEO
+Class: Cooltrainer 2
+Pic: TRAINER_PIC_COOLTRAINER_M
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Garchomp
+Level: 62
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Lucario
+Level: 63
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Weavile
+Level: 62
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+
+=== TRAINER_SI_WORLD43 ===
+Name: ANA
+Class: Cooltrainer 2
+Pic: TRAINER_PIC_COOLTRAINER_F
+Gender: Female
+Music: Female
+AI: Basic Trainer
+
+Gardevoir
+Level: 61
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Rapidash
+Level: 62
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Abomasnow
+Level: 61
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+
+=== TRAINER_SI_WORLD43 ===
+Difficulty: Easy
+Name: ANA
+Class: Cooltrainer 2
+Pic: TRAINER_PIC_COOLTRAINER_F
+Gender: Female
+Music: Female
+AI: Basic Trainer
+
+Gardevoir
+Level: 59
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Rapidash
+Level: 60
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Abomasnow
+Level: 59
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+
+=== TRAINER_SI_WORLD43 ===
+Difficulty: Hard
+Name: ANA
+Class: Cooltrainer 2
+Pic: TRAINER_PIC_COOLTRAINER_F
+Gender: Female
+Music: Female
+AI: Basic Trainer
+
+Gardevoir
+Level: 63
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Rapidash
+Level: 64
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Abomasnow
+Level: 63
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+
+=== TRAINER_SI_WORLD44 ===
+Name: IVO
+Class: Psychic
+Pic: TRAINER_PIC_PSYCHIC_M
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Kadabra
+Level: 61
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Bronzong
+Level: 62
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Chimecho
+Level: 61
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+
+=== TRAINER_SI_WORLD44 ===
+Difficulty: Easy
+Name: IVO
+Class: Psychic
+Pic: TRAINER_PIC_PSYCHIC_M
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Kadabra
+Level: 59
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Bronzong
+Level: 60
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Chimecho
+Level: 59
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+
+=== TRAINER_SI_WORLD44 ===
+Difficulty: Hard
+Name: IVO
+Class: Psychic
+Pic: TRAINER_PIC_PSYCHIC_M
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Kadabra
+Level: 63
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Bronzong
+Level: 64
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Chimecho
+Level: 63
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+
+=== TRAINER_SI_WORLD45 ===
+Name: EVA
+Class: Youngster
+Pic: TRAINER_PIC_SI_YOUNGSTER_DP
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Staraptor
+Level: 60
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Luxray
+Level: 61
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Bibarel
+Level: 60
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+
+=== TRAINER_SI_WORLD45 ===
+Difficulty: Easy
+Name: EVA
+Class: Youngster
+Pic: TRAINER_PIC_SI_YOUNGSTER_DP
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Staraptor
+Level: 58
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Luxray
+Level: 59
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Bibarel
+Level: 58
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+
+=== TRAINER_SI_WORLD45 ===
+Difficulty: Hard
+Name: EVA
+Class: Youngster
+Pic: TRAINER_PIC_SI_YOUNGSTER_DP
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Staraptor
+Level: 62
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Luxray
+Level: 63
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Bibarel
+Level: 62
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+
+=== TRAINER_SI_WORLD46 ===
+Name: PEDRO
+Class: Lass
+Pic: TRAINER_PIC_SI_LASS_DP
+Gender: Female
+Music: Female
+AI: Basic Trainer
+
+Lopunny
+Level: 60
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Roserade
+Level: 61
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Pachirisu
+Level: 60
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+
+=== TRAINER_SI_WORLD46 ===
+Difficulty: Easy
+Name: PEDRO
+Class: Lass
+Pic: TRAINER_PIC_SI_LASS_DP
+Gender: Female
+Music: Female
+AI: Basic Trainer
+
+Lopunny
+Level: 58
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Roserade
+Level: 59
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Pachirisu
+Level: 58
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+
+=== TRAINER_SI_WORLD46 ===
+Difficulty: Hard
+Name: PEDRO
+Class: Lass
+Pic: TRAINER_PIC_SI_LASS_DP
+Gender: Female
+Music: Female
+AI: Basic Trainer
+
+Lopunny
+Level: 62
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Roserade
+Level: 63
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Pachirisu
+Level: 62
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+
+=== TRAINER_SI_WORLD47 ===
+Name: LARA
+Class: Hiker
+Pic: TRAINER_PIC_HIKER
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Golem
+Level: 36
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Machamp
+Level: 37
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Onix
+Level: 36
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+
+=== TRAINER_SI_WORLD47 ===
+Difficulty: Easy
+Name: LARA
+Class: Hiker
+Pic: TRAINER_PIC_HIKER
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Golem
+Level: 34
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Machamp
+Level: 35
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Onix
+Level: 34
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+
+=== TRAINER_SI_WORLD47 ===
+Difficulty: Hard
+Name: LARA
+Class: Hiker
+Pic: TRAINER_PIC_HIKER
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Golem
+Level: 38
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Machamp
+Level: 39
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Onix
+Level: 38
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+
+=== TRAINER_SI_WORLD48 ===
+Name: JOAO
+Class: Bug Catcher
+Pic: TRAINER_PIC_BUG_CATCHER
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Kricketune
+Level: 36
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Mothim
+Level: 37
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Combee
+Level: 36
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+
+=== TRAINER_SI_WORLD48 ===
+Difficulty: Easy
+Name: JOAO
+Class: Bug Catcher
+Pic: TRAINER_PIC_BUG_CATCHER
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Kricketune
+Level: 34
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Mothim
+Level: 35
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Combee
+Level: 34
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+
+=== TRAINER_SI_WORLD48 ===
+Difficulty: Hard
+Name: JOAO
+Class: Bug Catcher
+Pic: TRAINER_PIC_BUG_CATCHER
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Kricketune
+Level: 38
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Mothim
+Level: 39
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Combee
+Level: 38
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+
+=== TRAINER_SI_WORLD49 ===
+Name: ALICE
+Class: Fisherman
+Pic: TRAINER_PIC_FISHERMAN
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Gyarados
+Level: 20
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Floatzel
+Level: 21
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+
+=== TRAINER_SI_WORLD49 ===
+Difficulty: Easy
+Name: ALICE
+Class: Fisherman
+Pic: TRAINER_PIC_FISHERMAN
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Gyarados
+Level: 18
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Floatzel
+Level: 19
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+
+=== TRAINER_SI_WORLD49 ===
+Difficulty: Hard
+Name: ALICE
+Class: Fisherman
+Pic: TRAINER_PIC_FISHERMAN
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Gyarados
+Level: 22
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Floatzel
+Level: 23
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+
+=== TRAINER_SI_WORLD50 ===
+Name: DANTE
+Class: Aroma Lady
+Pic: TRAINER_PIC_AROMA_LADY
+Gender: Female
+Music: Female
+AI: Basic Trainer
+
+Roselia
+Level: 20
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Cherrim
+Level: 21
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+
+=== TRAINER_SI_WORLD50 ===
+Difficulty: Easy
+Name: DANTE
+Class: Aroma Lady
+Pic: TRAINER_PIC_AROMA_LADY
+Gender: Female
+Music: Female
+AI: Basic Trainer
+
+Roselia
+Level: 18
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Cherrim
+Level: 19
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+
+=== TRAINER_SI_WORLD50 ===
+Difficulty: Hard
+Name: DANTE
+Class: Aroma Lady
+Pic: TRAINER_PIC_AROMA_LADY
+Gender: Female
+Music: Female
+AI: Basic Trainer
+
+Roselia
+Level: 22
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Cherrim
+Level: 23
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+
+=== TRAINER_SI_WORLD51 ===
+Name: CECI
+Class: Cooltrainer 2
+Pic: TRAINER_PIC_COOLTRAINER_M
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Gabite
+Level: 20
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Lucario
+Level: 21
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+
+=== TRAINER_SI_WORLD51 ===
+Difficulty: Easy
+Name: CECI
+Class: Cooltrainer 2
+Pic: TRAINER_PIC_COOLTRAINER_M
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Gabite
+Level: 18
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Lucario
+Level: 19
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+
+=== TRAINER_SI_WORLD51 ===
+Difficulty: Hard
+Name: CECI
+Class: Cooltrainer 2
+Pic: TRAINER_PIC_COOLTRAINER_M
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Gabite
+Level: 22
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Lucario
+Level: 23
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+
+=== TRAINER_SI_WORLD52 ===
+Name: LEVI
+Class: Cooltrainer 2
+Pic: TRAINER_PIC_COOLTRAINER_F
+Gender: Female
+Music: Female
+AI: Basic Trainer
+
+Kirlia
+Level: 20
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Ponyta
+Level: 21
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+
+=== TRAINER_SI_WORLD52 ===
+Difficulty: Easy
+Name: LEVI
+Class: Cooltrainer 2
+Pic: TRAINER_PIC_COOLTRAINER_F
+Gender: Female
+Music: Female
+AI: Basic Trainer
+
+Kirlia
+Level: 18
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Ponyta
+Level: 19
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+
+=== TRAINER_SI_WORLD52 ===
+Difficulty: Hard
+Name: LEVI
+Class: Cooltrainer 2
+Pic: TRAINER_PIC_COOLTRAINER_F
+Gender: Female
+Music: Female
+AI: Basic Trainer
+
+Kirlia
+Level: 22
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Ponyta
+Level: 23
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+
+=== TRAINER_SI_WORLD53 ===
+Name: JADE
+Class: Psychic
+Pic: TRAINER_PIC_PSYCHIC_M
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Kadabra
+Level: 27
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Bronzong
+Level: 28
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Chimecho
+Level: 27
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+
+=== TRAINER_SI_WORLD53 ===
+Difficulty: Easy
+Name: JADE
+Class: Psychic
+Pic: TRAINER_PIC_PSYCHIC_M
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Kadabra
+Level: 25
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Bronzong
+Level: 26
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Chimecho
+Level: 25
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+
+=== TRAINER_SI_WORLD53 ===
+Difficulty: Hard
+Name: JADE
+Class: Psychic
+Pic: TRAINER_PIC_PSYCHIC_M
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Kadabra
+Level: 29
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Bronzong
+Level: 30
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Chimecho
+Level: 29
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+
+=== TRAINER_SI_WORLD54 ===
+Name: RUI
+Class: Youngster
+Pic: TRAINER_PIC_SI_YOUNGSTER_DP
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Staravia
+Level: 27
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Luxio
+Level: 28
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Bibarel
+Level: 27
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+
+=== TRAINER_SI_WORLD54 ===
+Difficulty: Easy
+Name: RUI
+Class: Youngster
+Pic: TRAINER_PIC_SI_YOUNGSTER_DP
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Staravia
+Level: 25
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Luxio
+Level: 26
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Bibarel
+Level: 25
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+
+=== TRAINER_SI_WORLD54 ===
+Difficulty: Hard
+Name: RUI
+Class: Youngster
+Pic: TRAINER_PIC_SI_YOUNGSTER_DP
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Staravia
+Level: 29
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Luxio
+Level: 30
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Bibarel
+Level: 29
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+
+=== TRAINER_SI_WORLD55 ===
+Name: SARA
+Class: Lass
+Pic: TRAINER_PIC_SI_LASS_DP
+Gender: Female
+Music: Female
+AI: Basic Trainer
+
+Lopunny
+Level: 30
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Roselia
+Level: 31
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Pachirisu
+Level: 30
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+
+=== TRAINER_SI_WORLD55 ===
+Difficulty: Easy
+Name: SARA
+Class: Lass
+Pic: TRAINER_PIC_SI_LASS_DP
+Gender: Female
+Music: Female
+AI: Basic Trainer
+
+Lopunny
+Level: 28
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Roselia
+Level: 29
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Pachirisu
+Level: 28
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+
+=== TRAINER_SI_WORLD55 ===
+Difficulty: Hard
+Name: SARA
+Class: Lass
+Pic: TRAINER_PIC_SI_LASS_DP
+Gender: Female
+Music: Female
+AI: Basic Trainer
+
+Lopunny
+Level: 32
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Roselia
+Level: 33
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Pachirisu
+Level: 32
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+
+=== TRAINER_SI_WORLD56 ===
+Name: LEO
+Class: Hiker
+Pic: TRAINER_PIC_HIKER
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Graveler
+Level: 30
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Machoke
+Level: 31
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Onix
+Level: 30
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+
+=== TRAINER_SI_WORLD56 ===
+Difficulty: Easy
+Name: LEO
+Class: Hiker
+Pic: TRAINER_PIC_HIKER
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Graveler
+Level: 28
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Machoke
+Level: 29
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Onix
+Level: 28
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+
+=== TRAINER_SI_WORLD56 ===
+Difficulty: Hard
+Name: LEO
+Class: Hiker
+Pic: TRAINER_PIC_HIKER
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Graveler
+Level: 32
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Machoke
+Level: 33
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Onix
+Level: 32
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+
+=== TRAINER_SI_WORLD57 ===
+Name: MEL
+Class: Bug Catcher
+Pic: TRAINER_PIC_BUG_CATCHER
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Kricketune
+Level: 30
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Mothim
+Level: 31
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Combee
+Level: 30
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+
+=== TRAINER_SI_WORLD57 ===
+Difficulty: Easy
+Name: MEL
+Class: Bug Catcher
+Pic: TRAINER_PIC_BUG_CATCHER
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Kricketune
+Level: 28
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Mothim
+Level: 29
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Combee
+Level: 28
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+
+=== TRAINER_SI_WORLD57 ===
+Difficulty: Hard
+Name: MEL
+Class: Bug Catcher
+Pic: TRAINER_PIC_BUG_CATCHER
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Kricketune
+Level: 32
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Mothim
+Level: 33
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Combee
+Level: 32
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+
+=== TRAINER_SI_WORLD58 ===
+Name: YURI
+Class: Fisherman
+Pic: TRAINER_PIC_FISHERMAN
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Gyarados
+Level: 30
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Floatzel
+Level: 31
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Gastrodon
+Level: 30
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+
+=== TRAINER_SI_WORLD58 ===
+Difficulty: Easy
+Name: YURI
+Class: Fisherman
+Pic: TRAINER_PIC_FISHERMAN
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Gyarados
+Level: 28
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Floatzel
+Level: 29
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Gastrodon
+Level: 28
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+
+=== TRAINER_SI_WORLD58 ===
+Difficulty: Hard
+Name: YURI
+Class: Fisherman
+Pic: TRAINER_PIC_FISHERMAN
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Gyarados
+Level: 32
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Floatzel
+Level: 33
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Gastrodon
+Level: 32
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+
+=== TRAINER_SI_WORLD59 ===
+Name: CLARA
+Class: Aroma Lady
+Pic: TRAINER_PIC_AROMA_LADY
+Gender: Female
+Music: Female
+AI: Basic Trainer
+
+Roselia
+Level: 30
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Cherrim
+Level: 31
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Roselia
+Level: 30
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+
+=== TRAINER_SI_WORLD59 ===
+Difficulty: Easy
+Name: CLARA
+Class: Aroma Lady
+Pic: TRAINER_PIC_AROMA_LADY
+Gender: Female
+Music: Female
+AI: Basic Trainer
+
+Roselia
+Level: 28
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Cherrim
+Level: 29
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Roselia
+Level: 28
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+
+=== TRAINER_SI_WORLD59 ===
+Difficulty: Hard
+Name: CLARA
+Class: Aroma Lady
+Pic: TRAINER_PIC_AROMA_LADY
+Gender: Female
+Music: Female
+AI: Basic Trainer
+
+Roselia
+Level: 32
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Cherrim
+Level: 33
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Roselia
+Level: 32
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+
+=== TRAINER_SI_WORLD60 ===
+Name: CAIO
+Class: Cooltrainer 2
+Pic: TRAINER_PIC_COOLTRAINER_M
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Gabite
+Level: 30
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Lucario
+Level: 31
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Sneasel
+Level: 30
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+
+=== TRAINER_SI_WORLD60 ===
+Difficulty: Easy
+Name: CAIO
+Class: Cooltrainer 2
+Pic: TRAINER_PIC_COOLTRAINER_M
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Gabite
+Level: 28
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Lucario
+Level: 29
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Sneasel
+Level: 28
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+
+=== TRAINER_SI_WORLD60 ===
+Difficulty: Hard
+Name: CAIO
+Class: Cooltrainer 2
+Pic: TRAINER_PIC_COOLTRAINER_M
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Gabite
+Level: 32
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Lucario
+Level: 33
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Sneasel
+Level: 32
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+
+=== TRAINER_SI_WORLD61 ===
+Name: LIA
+Class: Cooltrainer 2
+Pic: TRAINER_PIC_COOLTRAINER_F
+Gender: Female
+Music: Female
+AI: Basic Trainer
+
+Ralts
+Level: 4
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Ponyta
+Level: 5
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+
+=== TRAINER_SI_WORLD61 ===
+Difficulty: Easy
+Name: LIA
+Class: Cooltrainer 2
+Pic: TRAINER_PIC_COOLTRAINER_F
+Gender: Female
+Music: Female
+AI: Basic Trainer
+
+Ralts
+Level: 2
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Ponyta
+Level: 3
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+
+=== TRAINER_SI_WORLD61 ===
+Difficulty: Hard
+Name: LIA
+Class: Cooltrainer 2
+Pic: TRAINER_PIC_COOLTRAINER_F
+Gender: Female
+Music: Female
+AI: Basic Trainer
+
+Ralts
+Level: 6
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Ponyta
+Level: 7
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+
+=== TRAINER_SI_WORLD62 ===
+Name: RAFA
+Class: Psychic
+Pic: TRAINER_PIC_PSYCHIC_M
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Abra
+Level: 4
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Bronzor
+Level: 5
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+
+=== TRAINER_SI_WORLD62 ===
+Difficulty: Easy
+Name: RAFA
+Class: Psychic
+Pic: TRAINER_PIC_PSYCHIC_M
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Abra
+Level: 2
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Bronzor
+Level: 3
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+
+=== TRAINER_SI_WORLD62 ===
+Difficulty: Hard
+Name: RAFA
+Class: Psychic
+Pic: TRAINER_PIC_PSYCHIC_M
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Abra
+Level: 6
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Bronzor
+Level: 7
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+
+=== TRAINER_SI_WORLD63 ===
+Name: NINA
+Class: Youngster
+Pic: TRAINER_PIC_SI_YOUNGSTER_DP
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Starly
+Level: 13
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Shinx
+Level: 14
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+
+=== TRAINER_SI_WORLD63 ===
+Difficulty: Easy
+Name: NINA
+Class: Youngster
+Pic: TRAINER_PIC_SI_YOUNGSTER_DP
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Starly
+Level: 11
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Shinx
+Level: 12
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+
+=== TRAINER_SI_WORLD63 ===
+Difficulty: Hard
+Name: NINA
+Class: Youngster
+Pic: TRAINER_PIC_SI_YOUNGSTER_DP
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Starly
+Level: 15
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Shinx
+Level: 16
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+
+=== TRAINER_SI_WORLD64 ===
+Name: OTAVIO
+Class: Lass
+Pic: TRAINER_PIC_SI_LASS_DP
+Gender: Female
+Music: Female
+AI: Basic Trainer
+
+Lopunny
+Level: 18
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Roselia
+Level: 19
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+
+=== TRAINER_SI_WORLD64 ===
+Difficulty: Easy
+Name: OTAVIO
+Class: Lass
+Pic: TRAINER_PIC_SI_LASS_DP
+Gender: Female
+Music: Female
+AI: Basic Trainer
+
+Lopunny
+Level: 16
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Roselia
+Level: 17
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+
+=== TRAINER_SI_WORLD64 ===
+Difficulty: Hard
+Name: OTAVIO
+Class: Lass
+Pic: TRAINER_PIC_SI_LASS_DP
+Gender: Female
+Music: Female
+AI: Basic Trainer
+
+Lopunny
+Level: 20
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Roselia
+Level: 21
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+
+=== TRAINER_SI_WORLD65 ===
+Name: BIA
+Class: Hiker
+Pic: TRAINER_PIC_HIKER
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Graveler
+Level: 18
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Machoke
+Level: 19
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+
+=== TRAINER_SI_WORLD65 ===
+Difficulty: Easy
+Name: BIA
+Class: Hiker
+Pic: TRAINER_PIC_HIKER
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Graveler
+Level: 16
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Machoke
+Level: 17
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+
+=== TRAINER_SI_WORLD65 ===
+Difficulty: Hard
+Name: BIA
+Class: Hiker
+Pic: TRAINER_PIC_HIKER
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Graveler
+Level: 20
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Machoke
+Level: 21
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+
+=== TRAINER_SI_WORLD66 ===
+Name: LUCAS
+Class: Bug Catcher
+Pic: TRAINER_PIC_BUG_CATCHER
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Kricketune
+Level: 23
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Mothim
+Level: 24
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+
+=== TRAINER_SI_WORLD66 ===
+Difficulty: Easy
+Name: LUCAS
+Class: Bug Catcher
+Pic: TRAINER_PIC_BUG_CATCHER
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Kricketune
+Level: 21
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Mothim
+Level: 22
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+
+=== TRAINER_SI_WORLD66 ===
+Difficulty: Hard
+Name: LUCAS
+Class: Bug Catcher
+Pic: TRAINER_PIC_BUG_CATCHER
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Kricketune
+Level: 25
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Mothim
+Level: 26
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+
+=== TRAINER_SI_WORLD67 ===
+Name: MAIA
+Class: Fisherman
+Pic: TRAINER_PIC_FISHERMAN
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Gyarados
+Level: 23
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Floatzel
+Level: 24
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+
+=== TRAINER_SI_WORLD67 ===
+Difficulty: Easy
+Name: MAIA
+Class: Fisherman
+Pic: TRAINER_PIC_FISHERMAN
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Gyarados
+Level: 21
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Floatzel
+Level: 22
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+
+=== TRAINER_SI_WORLD67 ===
+Difficulty: Hard
+Name: MAIA
+Class: Fisherman
+Pic: TRAINER_PIC_FISHERMAN
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Gyarados
+Level: 25
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Floatzel
+Level: 26
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+
+=== TRAINER_SI_WORLD68 ===
+Name: NICO
+Class: Aroma Lady
+Pic: TRAINER_PIC_AROMA_LADY
+Gender: Female
+Music: Female
+AI: Basic Trainer
+
+Roselia
+Level: 23
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Cherrim
+Level: 24
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+
+=== TRAINER_SI_WORLD68 ===
+Difficulty: Easy
+Name: NICO
+Class: Aroma Lady
+Pic: TRAINER_PIC_AROMA_LADY
+Gender: Female
+Music: Female
+AI: Basic Trainer
+
+Roselia
+Level: 21
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Cherrim
+Level: 22
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+
+=== TRAINER_SI_WORLD68 ===
+Difficulty: Hard
+Name: NICO
+Class: Aroma Lady
+Pic: TRAINER_PIC_AROMA_LADY
+Gender: Female
+Music: Female
+AI: Basic Trainer
+
+Roselia
+Level: 25
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Cherrim
+Level: 26
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+
+=== TRAINER_SI_WORLD69 ===
+Name: IRIS
+Class: Cooltrainer 2
+Pic: TRAINER_PIC_COOLTRAINER_M
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Gabite
+Level: 23
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Lucario
+Level: 24
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+
+=== TRAINER_SI_WORLD69 ===
+Difficulty: Easy
+Name: IRIS
+Class: Cooltrainer 2
+Pic: TRAINER_PIC_COOLTRAINER_M
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Gabite
+Level: 21
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Lucario
+Level: 22
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+
+=== TRAINER_SI_WORLD69 ===
+Difficulty: Hard
+Name: IRIS
+Class: Cooltrainer 2
+Pic: TRAINER_PIC_COOLTRAINER_M
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Gabite
+Level: 25
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Lucario
+Level: 26
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+
+=== TRAINER_SI_WORLD70 ===
+Name: ENZO
+Class: Cooltrainer 2
+Pic: TRAINER_PIC_COOLTRAINER_F
+Gender: Female
+Music: Female
+AI: Basic Trainer
+
+Ralts
+Level: 13
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Ponyta
+Level: 14
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+
+=== TRAINER_SI_WORLD70 ===
+Difficulty: Easy
+Name: ENZO
+Class: Cooltrainer 2
+Pic: TRAINER_PIC_COOLTRAINER_F
+Gender: Female
+Music: Female
+AI: Basic Trainer
+
+Ralts
+Level: 11
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Ponyta
+Level: 12
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+
+=== TRAINER_SI_WORLD70 ===
+Difficulty: Hard
+Name: ENZO
+Class: Cooltrainer 2
+Pic: TRAINER_PIC_COOLTRAINER_F
+Gender: Female
+Music: Female
+AI: Basic Trainer
+
+Ralts
+Level: 15
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Ponyta
+Level: 16
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+
+=== TRAINER_SI_WORLD71 ===
+Name: LUNA
+Class: Psychic
+Pic: TRAINER_PIC_PSYCHIC_M
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Kadabra
+Level: 24
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Bronzong
+Level: 25
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+
+=== TRAINER_SI_WORLD71 ===
+Difficulty: Easy
+Name: LUNA
+Class: Psychic
+Pic: TRAINER_PIC_PSYCHIC_M
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Kadabra
+Level: 22
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Bronzong
+Level: 23
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+
+=== TRAINER_SI_WORLD71 ===
+Difficulty: Hard
+Name: LUNA
+Class: Psychic
+Pic: TRAINER_PIC_PSYCHIC_M
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Kadabra
+Level: 26
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Bronzong
+Level: 27
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+
+=== TRAINER_SI_WORLD72 ===
+Name: TEO
+Class: Youngster
+Pic: TRAINER_PIC_SI_YOUNGSTER_DP
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Staravia
+Level: 27
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Luxio
+Level: 28
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Bibarel
+Level: 27
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+
+=== TRAINER_SI_WORLD72 ===
+Difficulty: Easy
+Name: TEO
+Class: Youngster
+Pic: TRAINER_PIC_SI_YOUNGSTER_DP
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Staravia
+Level: 25
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Luxio
+Level: 26
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Bibarel
+Level: 25
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+
+=== TRAINER_SI_WORLD72 ===
+Difficulty: Hard
+Name: TEO
+Class: Youngster
+Pic: TRAINER_PIC_SI_YOUNGSTER_DP
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Staravia
+Level: 29
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Luxio
+Level: 30
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Bibarel
+Level: 29
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+
+=== TRAINER_SI_WORLD73 ===
+Name: ANA
+Class: Lass
+Pic: TRAINER_PIC_SI_LASS_DP
+Gender: Female
+Music: Female
+AI: Basic Trainer
+
+Lopunny
+Level: 32
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Roserade
+Level: 33
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Pachirisu
+Level: 32
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+
+=== TRAINER_SI_WORLD73 ===
+Difficulty: Easy
+Name: ANA
+Class: Lass
+Pic: TRAINER_PIC_SI_LASS_DP
+Gender: Female
+Music: Female
+AI: Basic Trainer
+
+Lopunny
+Level: 30
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Roserade
+Level: 31
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Pachirisu
+Level: 30
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+
+=== TRAINER_SI_WORLD73 ===
+Difficulty: Hard
+Name: ANA
+Class: Lass
+Pic: TRAINER_PIC_SI_LASS_DP
+Gender: Female
+Music: Female
+AI: Basic Trainer
+
+Lopunny
+Level: 34
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Roserade
+Level: 35
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Pachirisu
+Level: 34
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+
+=== TRAINER_SI_WORLD74 ===
+Name: IVO
+Class: Hiker
+Pic: TRAINER_PIC_HIKER
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Golem
+Level: 32
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Machamp
+Level: 33
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Onix
+Level: 32
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+
+=== TRAINER_SI_WORLD74 ===
+Difficulty: Easy
+Name: IVO
+Class: Hiker
+Pic: TRAINER_PIC_HIKER
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Golem
+Level: 30
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Machamp
+Level: 31
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Onix
+Level: 30
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+
+=== TRAINER_SI_WORLD74 ===
+Difficulty: Hard
+Name: IVO
+Class: Hiker
+Pic: TRAINER_PIC_HIKER
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Golem
+Level: 34
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Machamp
+Level: 35
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Onix
+Level: 34
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+
+=== TRAINER_SI_WORLD75 ===
+Name: EVA
+Class: Bug Catcher
+Pic: TRAINER_PIC_BUG_CATCHER
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Kricketune
+Level: 35
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Mothim
+Level: 36
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Combee
+Level: 35
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+
+=== TRAINER_SI_WORLD75 ===
+Difficulty: Easy
+Name: EVA
+Class: Bug Catcher
+Pic: TRAINER_PIC_BUG_CATCHER
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Kricketune
+Level: 33
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Mothim
+Level: 34
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Combee
+Level: 33
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+
+=== TRAINER_SI_WORLD75 ===
+Difficulty: Hard
+Name: EVA
+Class: Bug Catcher
+Pic: TRAINER_PIC_BUG_CATCHER
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Kricketune
+Level: 37
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Mothim
+Level: 38
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Combee
+Level: 37
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+
+=== TRAINER_SI_WORLD76 ===
+Name: PEDRO
+Class: Fisherman
+Pic: TRAINER_PIC_FISHERMAN
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Gyarados
+Level: 35
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Floatzel
+Level: 36
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Gastrodon
+Level: 35
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+
+=== TRAINER_SI_WORLD76 ===
+Difficulty: Easy
+Name: PEDRO
+Class: Fisherman
+Pic: TRAINER_PIC_FISHERMAN
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Gyarados
+Level: 33
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Floatzel
+Level: 34
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Gastrodon
+Level: 33
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+
+=== TRAINER_SI_WORLD76 ===
+Difficulty: Hard
+Name: PEDRO
+Class: Fisherman
+Pic: TRAINER_PIC_FISHERMAN
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Gyarados
+Level: 37
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Floatzel
+Level: 38
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Gastrodon
+Level: 37
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+
+=== TRAINER_SI_WORLD77 ===
+Name: LARA
+Class: Aroma Lady
+Pic: TRAINER_PIC_AROMA_LADY
+Gender: Female
+Music: Female
+AI: Basic Trainer
+
+Roselia
+Level: 29
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Cherrim
+Level: 30
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Roselia
+Level: 29
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+
+=== TRAINER_SI_WORLD77 ===
+Difficulty: Easy
+Name: LARA
+Class: Aroma Lady
+Pic: TRAINER_PIC_AROMA_LADY
+Gender: Female
+Music: Female
+AI: Basic Trainer
+
+Roselia
+Level: 27
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Cherrim
+Level: 28
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Roselia
+Level: 27
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+
+=== TRAINER_SI_WORLD77 ===
+Difficulty: Hard
+Name: LARA
+Class: Aroma Lady
+Pic: TRAINER_PIC_AROMA_LADY
+Gender: Female
+Music: Female
+AI: Basic Trainer
+
+Roselia
+Level: 31
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Cherrim
+Level: 32
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Roselia
+Level: 31
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+
+=== TRAINER_SI_WORLD78 ===
+Name: JOAO
+Class: Cooltrainer 2
+Pic: TRAINER_PIC_COOLTRAINER_M
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Gabite
+Level: 29
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Lucario
+Level: 30
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Sneasel
+Level: 29
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+
+=== TRAINER_SI_WORLD78 ===
+Difficulty: Easy
+Name: JOAO
+Class: Cooltrainer 2
+Pic: TRAINER_PIC_COOLTRAINER_M
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Gabite
+Level: 27
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Lucario
+Level: 28
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Sneasel
+Level: 27
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+
+=== TRAINER_SI_WORLD78 ===
+Difficulty: Hard
+Name: JOAO
+Class: Cooltrainer 2
+Pic: TRAINER_PIC_COOLTRAINER_M
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Gabite
+Level: 31
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Lucario
+Level: 32
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Sneasel
+Level: 31
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+
+=== TRAINER_SI_WORLD79 ===
+Name: ALICE
+Class: Cooltrainer 2
+Pic: TRAINER_PIC_COOLTRAINER_F
+Gender: Female
+Music: Female
+AI: Basic Trainer
+
+Gardevoir
+Level: 34
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Rapidash
+Level: 35
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Abomasnow
+Level: 34
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+
+=== TRAINER_SI_WORLD79 ===
+Difficulty: Easy
+Name: ALICE
+Class: Cooltrainer 2
+Pic: TRAINER_PIC_COOLTRAINER_F
+Gender: Female
+Music: Female
+AI: Basic Trainer
+
+Gardevoir
+Level: 32
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Rapidash
+Level: 33
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Abomasnow
+Level: 32
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+
+=== TRAINER_SI_WORLD79 ===
+Difficulty: Hard
+Name: ALICE
+Class: Cooltrainer 2
+Pic: TRAINER_PIC_COOLTRAINER_F
+Gender: Female
+Music: Female
+AI: Basic Trainer
+
+Gardevoir
+Level: 36
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Rapidash
+Level: 37
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Abomasnow
+Level: 36
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+
+=== TRAINER_SI_WORLD80 ===
+Name: DANTE
+Class: Psychic
+Pic: TRAINER_PIC_PSYCHIC_M
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Kadabra
+Level: 30
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Bronzong
+Level: 31
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Chimecho
+Level: 30
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+
+=== TRAINER_SI_WORLD80 ===
+Difficulty: Easy
+Name: DANTE
+Class: Psychic
+Pic: TRAINER_PIC_PSYCHIC_M
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Kadabra
+Level: 28
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Bronzong
+Level: 29
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Chimecho
+Level: 28
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+
+=== TRAINER_SI_WORLD80 ===
+Difficulty: Hard
+Name: DANTE
+Class: Psychic
+Pic: TRAINER_PIC_PSYCHIC_M
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Kadabra
+Level: 32
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Bronzong
+Level: 33
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Chimecho
+Level: 32
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+
+=== TRAINER_SI_WORLD81 ===
+Name: CECI
+Class: Youngster
+Pic: TRAINER_PIC_SI_YOUNGSTER_DP
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Staravia
+Level: 29
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Luxio
+Level: 30
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Bibarel
+Level: 29
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+
+=== TRAINER_SI_WORLD81 ===
+Difficulty: Easy
+Name: CECI
+Class: Youngster
+Pic: TRAINER_PIC_SI_YOUNGSTER_DP
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Staravia
+Level: 27
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Luxio
+Level: 28
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Bibarel
+Level: 27
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+
+=== TRAINER_SI_WORLD81 ===
+Difficulty: Hard
+Name: CECI
+Class: Youngster
+Pic: TRAINER_PIC_SI_YOUNGSTER_DP
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Staravia
+Level: 31
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Luxio
+Level: 32
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Bibarel
+Level: 31
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+
+=== TRAINER_SI_WORLD82 ===
+Name: LEVI
+Class: Lass
+Pic: TRAINER_PIC_SI_LASS_DP
+Gender: Female
+Music: Female
+AI: Basic Trainer
+
+Lopunny
+Level: 41
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Roserade
+Level: 42
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Pachirisu
+Level: 41
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+
+=== TRAINER_SI_WORLD82 ===
+Difficulty: Easy
+Name: LEVI
+Class: Lass
+Pic: TRAINER_PIC_SI_LASS_DP
+Gender: Female
+Music: Female
+AI: Basic Trainer
+
+Lopunny
+Level: 39
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Roserade
+Level: 40
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Pachirisu
+Level: 39
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+
+=== TRAINER_SI_WORLD82 ===
+Difficulty: Hard
+Name: LEVI
+Class: Lass
+Pic: TRAINER_PIC_SI_LASS_DP
+Gender: Female
+Music: Female
+AI: Basic Trainer
+
+Lopunny
+Level: 43
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Roserade
+Level: 44
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Pachirisu
+Level: 43
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+
+=== TRAINER_SI_WORLD83 ===
+Name: JADE
+Class: Hiker
+Pic: TRAINER_PIC_HIKER
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Golem
+Level: 43
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Machamp
+Level: 44
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Onix
+Level: 43
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+
+=== TRAINER_SI_WORLD83 ===
+Difficulty: Easy
+Name: JADE
+Class: Hiker
+Pic: TRAINER_PIC_HIKER
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Golem
+Level: 41
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Machamp
+Level: 42
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Onix
+Level: 41
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+
+=== TRAINER_SI_WORLD83 ===
+Difficulty: Hard
+Name: JADE
+Class: Hiker
+Pic: TRAINER_PIC_HIKER
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Golem
+Level: 45
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Machamp
+Level: 46
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Onix
+Level: 45
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+
+=== TRAINER_SI_WORLD84 ===
+Name: RUI
+Class: Bug Catcher
+Pic: TRAINER_PIC_BUG_CATCHER
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Kricketune
+Level: 37
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Mothim
+Level: 38
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Combee
+Level: 37
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+
+=== TRAINER_SI_WORLD84 ===
+Difficulty: Easy
+Name: RUI
+Class: Bug Catcher
+Pic: TRAINER_PIC_BUG_CATCHER
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Kricketune
+Level: 35
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Mothim
+Level: 36
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Combee
+Level: 35
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+
+=== TRAINER_SI_WORLD84 ===
+Difficulty: Hard
+Name: RUI
+Class: Bug Catcher
+Pic: TRAINER_PIC_BUG_CATCHER
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Kricketune
+Level: 39
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Mothim
+Level: 40
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Combee
+Level: 39
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+
+=== TRAINER_SI_WORLD85 ===
+Name: SARA
+Class: Fisherman
+Pic: TRAINER_PIC_FISHERMAN
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Gyarados
+Level: 37
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Floatzel
+Level: 38
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Gastrodon
+Level: 37
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+
+=== TRAINER_SI_WORLD85 ===
+Difficulty: Easy
+Name: SARA
+Class: Fisherman
+Pic: TRAINER_PIC_FISHERMAN
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Gyarados
+Level: 35
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Floatzel
+Level: 36
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Gastrodon
+Level: 35
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+
+=== TRAINER_SI_WORLD85 ===
+Difficulty: Hard
+Name: SARA
+Class: Fisherman
+Pic: TRAINER_PIC_FISHERMAN
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Gyarados
+Level: 39
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Floatzel
+Level: 40
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Gastrodon
+Level: 39
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+
+=== TRAINER_SI_WORLD86 ===
+Name: LEO
+Class: Aroma Lady
+Pic: TRAINER_PIC_AROMA_LADY
+Gender: Female
+Music: Female
+AI: Basic Trainer
+
+Roserade
+Level: 37
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Cherrim
+Level: 38
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Roselia
+Level: 37
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+
+=== TRAINER_SI_WORLD86 ===
+Difficulty: Easy
+Name: LEO
+Class: Aroma Lady
+Pic: TRAINER_PIC_AROMA_LADY
+Gender: Female
+Music: Female
+AI: Basic Trainer
+
+Roserade
+Level: 35
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Cherrim
+Level: 36
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Roselia
+Level: 35
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+
+=== TRAINER_SI_WORLD86 ===
+Difficulty: Hard
+Name: LEO
+Class: Aroma Lady
+Pic: TRAINER_PIC_AROMA_LADY
+Gender: Female
+Music: Female
+AI: Basic Trainer
+
+Roserade
+Level: 39
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Cherrim
+Level: 40
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Roselia
+Level: 39
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+
+=== TRAINER_SI_WORLD87 ===
+Name: MEL
+Class: Cooltrainer 2
+Pic: TRAINER_PIC_COOLTRAINER_M
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Garchomp
+Level: 37
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Lucario
+Level: 38
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Weavile
+Level: 37
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+
+=== TRAINER_SI_WORLD87 ===
+Difficulty: Easy
+Name: MEL
+Class: Cooltrainer 2
+Pic: TRAINER_PIC_COOLTRAINER_M
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Garchomp
+Level: 35
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Lucario
+Level: 36
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Weavile
+Level: 35
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+
+=== TRAINER_SI_WORLD87 ===
+Difficulty: Hard
+Name: MEL
+Class: Cooltrainer 2
+Pic: TRAINER_PIC_COOLTRAINER_M
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Garchomp
+Level: 39
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Lucario
+Level: 40
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Weavile
+Level: 39
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+
+=== TRAINER_SI_WORLD88 ===
+Name: YURI
+Class: Cooltrainer 2
+Pic: TRAINER_PIC_COOLTRAINER_F
+Gender: Female
+Music: Female
+AI: Basic Trainer
+
+Gardevoir
+Level: 37
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Rapidash
+Level: 38
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Abomasnow
+Level: 37
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+
+=== TRAINER_SI_WORLD88 ===
+Difficulty: Easy
+Name: YURI
+Class: Cooltrainer 2
+Pic: TRAINER_PIC_COOLTRAINER_F
+Gender: Female
+Music: Female
+AI: Basic Trainer
+
+Gardevoir
+Level: 35
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Rapidash
+Level: 36
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Abomasnow
+Level: 35
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+
+=== TRAINER_SI_WORLD88 ===
+Difficulty: Hard
+Name: YURI
+Class: Cooltrainer 2
+Pic: TRAINER_PIC_COOLTRAINER_F
+Gender: Female
+Music: Female
+AI: Basic Trainer
+
+Gardevoir
+Level: 39
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Rapidash
+Level: 40
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Abomasnow
+Level: 39
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+
+=== TRAINER_SI_WORLD89 ===
+Name: CLARA
+Class: Psychic
+Pic: TRAINER_PIC_PSYCHIC_M
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Abra
+Level: 5
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Bronzor
+Level: 6
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+
+=== TRAINER_SI_WORLD89 ===
+Difficulty: Easy
+Name: CLARA
+Class: Psychic
+Pic: TRAINER_PIC_PSYCHIC_M
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Abra
+Level: 3
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Bronzor
+Level: 4
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+
+=== TRAINER_SI_WORLD89 ===
+Difficulty: Hard
+Name: CLARA
+Class: Psychic
+Pic: TRAINER_PIC_PSYCHIC_M
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Abra
+Level: 7
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Bronzor
+Level: 8
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+
+=== TRAINER_SI_WORLD90 ===
+Name: CAIO
+Class: Youngster
+Pic: TRAINER_PIC_SI_YOUNGSTER_DP
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Staraptor
+Level: 34
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Luxray
+Level: 35
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Bibarel
+Level: 34
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+
+=== TRAINER_SI_WORLD90 ===
+Difficulty: Easy
+Name: CAIO
+Class: Youngster
+Pic: TRAINER_PIC_SI_YOUNGSTER_DP
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Staraptor
+Level: 32
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Luxray
+Level: 33
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Bibarel
+Level: 32
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+
+=== TRAINER_SI_WORLD90 ===
+Difficulty: Hard
+Name: CAIO
+Class: Youngster
+Pic: TRAINER_PIC_SI_YOUNGSTER_DP
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Staraptor
+Level: 36
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Luxray
+Level: 37
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Bibarel
+Level: 36
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+
+=== TRAINER_SI_BARRY ===
+Name: BARRY
+Class: Pkmn Trainer 2
+Pic: TRAINER_PIC_SI_BARRY_DP
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Starly
+Level: 8
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Chimchar
+Level: 9
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+
+=== TRAINER_SI_BARRY ===
+Difficulty: Easy
+Name: BARRY
+Class: Pkmn Trainer 2
+Pic: TRAINER_PIC_SI_BARRY_DP
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Starly
+Level: 6
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Chimchar
+Level: 7
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+
+=== TRAINER_SI_BARRY ===
+Difficulty: Hard
+Name: BARRY
+Class: Pkmn Trainer 2
+Pic: TRAINER_PIC_SI_BARRY_DP
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Starly
+Level: 10
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Chimchar
+Level: 11
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+
+=== TRAINER_SI_BARRY0_2 ===
+Name: BARRY
+Class: Pkmn Trainer 2
+Pic: TRAINER_PIC_SI_BARRY_DP
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Starly
+Level: 8
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Piplup
+Level: 9
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+
+=== TRAINER_SI_BARRY0_2 ===
+Difficulty: Easy
+Name: BARRY
+Class: Pkmn Trainer 2
+Pic: TRAINER_PIC_SI_BARRY_DP
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Starly
+Level: 6
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Piplup
+Level: 7
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+
+=== TRAINER_SI_BARRY0_2 ===
+Difficulty: Hard
+Name: BARRY
+Class: Pkmn Trainer 2
+Pic: TRAINER_PIC_SI_BARRY_DP
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Starly
+Level: 10
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Piplup
+Level: 11
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+
+=== TRAINER_SI_BARRY0_3 ===
+Name: BARRY
+Class: Pkmn Trainer 2
+Pic: TRAINER_PIC_SI_BARRY_DP
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Starly
+Level: 8
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Turtwig
+Level: 9
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+
+=== TRAINER_SI_BARRY0_3 ===
+Difficulty: Easy
+Name: BARRY
+Class: Pkmn Trainer 2
+Pic: TRAINER_PIC_SI_BARRY_DP
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Starly
+Level: 6
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Turtwig
+Level: 7
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+
+=== TRAINER_SI_BARRY0_3 ===
+Difficulty: Hard
+Name: BARRY
+Class: Pkmn Trainer 2
+Pic: TRAINER_PIC_SI_BARRY_DP
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Starly
+Level: 10
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Turtwig
+Level: 11
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+
+=== TRAINER_SI_BARRY1_1 ===
+Name: BARRY
+Class: Pkmn Trainer 2
+Pic: TRAINER_PIC_SI_BARRY_DP
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Staravia
+Level: 23
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Floatzel
+Level: 24
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Monferno
+Level: 23
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+
+=== TRAINER_SI_BARRY1_1 ===
+Difficulty: Easy
+Name: BARRY
+Class: Pkmn Trainer 2
+Pic: TRAINER_PIC_SI_BARRY_DP
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Staravia
+Level: 21
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Floatzel
+Level: 22
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Monferno
+Level: 21
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+
+=== TRAINER_SI_BARRY1_1 ===
+Difficulty: Hard
+Name: BARRY
+Class: Pkmn Trainer 2
+Pic: TRAINER_PIC_SI_BARRY_DP
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Staravia
+Level: 25
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Floatzel
+Level: 26
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Monferno
+Level: 25
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+
+=== TRAINER_SI_BARRY1_2 ===
+Name: BARRY
+Class: Pkmn Trainer 2
+Pic: TRAINER_PIC_SI_BARRY_DP
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Staravia
+Level: 23
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Floatzel
+Level: 24
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Prinplup
+Level: 23
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+
+=== TRAINER_SI_BARRY1_2 ===
+Difficulty: Easy
+Name: BARRY
+Class: Pkmn Trainer 2
+Pic: TRAINER_PIC_SI_BARRY_DP
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Staravia
+Level: 21
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Floatzel
+Level: 22
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Prinplup
+Level: 21
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+
+=== TRAINER_SI_BARRY1_2 ===
+Difficulty: Hard
+Name: BARRY
+Class: Pkmn Trainer 2
+Pic: TRAINER_PIC_SI_BARRY_DP
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Staravia
+Level: 25
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Floatzel
+Level: 26
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Prinplup
+Level: 25
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+
+=== TRAINER_SI_BARRY1_3 ===
+Name: BARRY
+Class: Pkmn Trainer 2
+Pic: TRAINER_PIC_SI_BARRY_DP
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Staravia
+Level: 23
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Floatzel
+Level: 24
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Grotle
+Level: 23
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+
+=== TRAINER_SI_BARRY1_3 ===
+Difficulty: Easy
+Name: BARRY
+Class: Pkmn Trainer 2
+Pic: TRAINER_PIC_SI_BARRY_DP
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Staravia
+Level: 21
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Floatzel
+Level: 22
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Grotle
+Level: 21
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+
+=== TRAINER_SI_BARRY1_3 ===
+Difficulty: Hard
+Name: BARRY
+Class: Pkmn Trainer 2
+Pic: TRAINER_PIC_SI_BARRY_DP
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Staravia
+Level: 25
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Floatzel
+Level: 26
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Grotle
+Level: 25
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+
+=== TRAINER_SI_BARRY2_1 ===
+Name: BARRY
+Class: Pkmn Trainer 2
+Pic: TRAINER_PIC_SI_BARRY_DP
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Staraptor
+Level: 37
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Floatzel
+Level: 38
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Infernape
+Level: 37
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+
+=== TRAINER_SI_BARRY2_1 ===
+Difficulty: Easy
+Name: BARRY
+Class: Pkmn Trainer 2
+Pic: TRAINER_PIC_SI_BARRY_DP
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Staraptor
+Level: 35
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Floatzel
+Level: 36
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Infernape
+Level: 35
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+
+=== TRAINER_SI_BARRY2_1 ===
+Difficulty: Hard
+Name: BARRY
+Class: Pkmn Trainer 2
+Pic: TRAINER_PIC_SI_BARRY_DP
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Staraptor
+Level: 39
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Floatzel
+Level: 40
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Infernape
+Level: 39
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+
+=== TRAINER_SI_BARRY2_2 ===
+Name: BARRY
+Class: Pkmn Trainer 2
+Pic: TRAINER_PIC_SI_BARRY_DP
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Staraptor
+Level: 37
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Floatzel
+Level: 38
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Empoleon
+Level: 37
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+
+=== TRAINER_SI_BARRY2_2 ===
+Difficulty: Easy
+Name: BARRY
+Class: Pkmn Trainer 2
+Pic: TRAINER_PIC_SI_BARRY_DP
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Staraptor
+Level: 35
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Floatzel
+Level: 36
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Empoleon
+Level: 35
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+
+=== TRAINER_SI_BARRY2_2 ===
+Difficulty: Hard
+Name: BARRY
+Class: Pkmn Trainer 2
+Pic: TRAINER_PIC_SI_BARRY_DP
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Staraptor
+Level: 39
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Floatzel
+Level: 40
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Empoleon
+Level: 39
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+
+=== TRAINER_SI_BARRY2_3 ===
+Name: BARRY
+Class: Pkmn Trainer 2
+Pic: TRAINER_PIC_SI_BARRY_DP
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Staraptor
+Level: 37
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Floatzel
+Level: 38
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Torterra
+Level: 37
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+
+=== TRAINER_SI_BARRY2_3 ===
+Difficulty: Easy
+Name: BARRY
+Class: Pkmn Trainer 2
+Pic: TRAINER_PIC_SI_BARRY_DP
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Staraptor
+Level: 35
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Floatzel
+Level: 36
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Torterra
+Level: 35
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+
+=== TRAINER_SI_BARRY2_3 ===
+Difficulty: Hard
+Name: BARRY
+Class: Pkmn Trainer 2
+Pic: TRAINER_PIC_SI_BARRY_DP
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Staraptor
+Level: 39
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Floatzel
+Level: 40
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Torterra
+Level: 39
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+
+=== TRAINER_SI_BARRY3_1 ===
+Name: BARRY
+Class: Pkmn Trainer 2
+Pic: TRAINER_PIC_SI_BARRY_DP
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Staraptor
+Level: 44
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Floatzel
+Level: 45
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Heracross
+Level: 44
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Infernape
+Level: 45
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+
+=== TRAINER_SI_BARRY3_1 ===
+Difficulty: Easy
+Name: BARRY
+Class: Pkmn Trainer 2
+Pic: TRAINER_PIC_SI_BARRY_DP
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Staraptor
+Level: 42
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Floatzel
+Level: 43
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Heracross
+Level: 42
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Infernape
+Level: 43
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+
+=== TRAINER_SI_BARRY3_1 ===
+Difficulty: Hard
+Name: BARRY
+Class: Pkmn Trainer 2
+Pic: TRAINER_PIC_SI_BARRY_DP
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Staraptor
+Level: 46
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Floatzel
+Level: 47
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Heracross
+Level: 46
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Infernape
+Level: 47
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+
+=== TRAINER_SI_BARRY3_2 ===
+Name: BARRY
+Class: Pkmn Trainer 2
+Pic: TRAINER_PIC_SI_BARRY_DP
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Staraptor
+Level: 44
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Floatzel
+Level: 45
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Heracross
+Level: 44
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Empoleon
+Level: 45
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+
+=== TRAINER_SI_BARRY3_2 ===
+Difficulty: Easy
+Name: BARRY
+Class: Pkmn Trainer 2
+Pic: TRAINER_PIC_SI_BARRY_DP
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Staraptor
+Level: 42
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Floatzel
+Level: 43
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Heracross
+Level: 42
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Empoleon
+Level: 43
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+
+=== TRAINER_SI_BARRY3_2 ===
+Difficulty: Hard
+Name: BARRY
+Class: Pkmn Trainer 2
+Pic: TRAINER_PIC_SI_BARRY_DP
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Staraptor
+Level: 46
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Floatzel
+Level: 47
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Heracross
+Level: 46
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Empoleon
+Level: 47
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+
+=== TRAINER_SI_BARRY3_3 ===
+Name: BARRY
+Class: Pkmn Trainer 2
+Pic: TRAINER_PIC_SI_BARRY_DP
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Staraptor
+Level: 44
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Floatzel
+Level: 45
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Heracross
+Level: 44
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Torterra
+Level: 45
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+
+=== TRAINER_SI_BARRY3_3 ===
+Difficulty: Easy
+Name: BARRY
+Class: Pkmn Trainer 2
+Pic: TRAINER_PIC_SI_BARRY_DP
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Staraptor
+Level: 42
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Floatzel
+Level: 43
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Heracross
+Level: 42
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Torterra
+Level: 43
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+
+=== TRAINER_SI_BARRY3_3 ===
+Difficulty: Hard
+Name: BARRY
+Class: Pkmn Trainer 2
+Pic: TRAINER_PIC_SI_BARRY_DP
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Staraptor
+Level: 46
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Floatzel
+Level: 47
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Heracross
+Level: 46
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Torterra
+Level: 47
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+
+=== TRAINER_SI_BARRY4_1 ===
+Name: BARRY
+Class: Pkmn Trainer 2
+Pic: TRAINER_PIC_SI_BARRY_DP
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Staraptor
+Level: 56
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Floatzel
+Level: 57
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Heracross
+Level: 56
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Infernape
+Level: 57
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+
+=== TRAINER_SI_BARRY4_1 ===
+Difficulty: Easy
+Name: BARRY
+Class: Pkmn Trainer 2
+Pic: TRAINER_PIC_SI_BARRY_DP
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Staraptor
+Level: 54
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Floatzel
+Level: 55
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Heracross
+Level: 54
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Infernape
+Level: 55
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+
+=== TRAINER_SI_BARRY4_1 ===
+Difficulty: Hard
+Name: BARRY
+Class: Pkmn Trainer 2
+Pic: TRAINER_PIC_SI_BARRY_DP
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Staraptor
+Level: 58
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Floatzel
+Level: 59
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Heracross
+Level: 58
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Infernape
+Level: 59
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+
+=== TRAINER_SI_BARRY4_2 ===
+Name: BARRY
+Class: Pkmn Trainer 2
+Pic: TRAINER_PIC_SI_BARRY_DP
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Staraptor
+Level: 56
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Floatzel
+Level: 57
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Heracross
+Level: 56
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Empoleon
+Level: 57
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+
+=== TRAINER_SI_BARRY4_2 ===
+Difficulty: Easy
+Name: BARRY
+Class: Pkmn Trainer 2
+Pic: TRAINER_PIC_SI_BARRY_DP
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Staraptor
+Level: 54
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Floatzel
+Level: 55
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Heracross
+Level: 54
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Empoleon
+Level: 55
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+
+=== TRAINER_SI_BARRY4_2 ===
+Difficulty: Hard
+Name: BARRY
+Class: Pkmn Trainer 2
+Pic: TRAINER_PIC_SI_BARRY_DP
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Staraptor
+Level: 58
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Floatzel
+Level: 59
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Heracross
+Level: 58
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Empoleon
+Level: 59
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+
+=== TRAINER_SI_BARRY4_3 ===
+Name: BARRY
+Class: Pkmn Trainer 2
+Pic: TRAINER_PIC_SI_BARRY_DP
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Staraptor
+Level: 56
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Floatzel
+Level: 57
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Heracross
+Level: 56
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Torterra
+Level: 57
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+
+=== TRAINER_SI_BARRY4_3 ===
+Difficulty: Easy
+Name: BARRY
+Class: Pkmn Trainer 2
+Pic: TRAINER_PIC_SI_BARRY_DP
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Staraptor
+Level: 54
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Floatzel
+Level: 55
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Heracross
+Level: 54
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Torterra
+Level: 55
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+
+=== TRAINER_SI_BARRY4_3 ===
+Difficulty: Hard
+Name: BARRY
+Class: Pkmn Trainer 2
+Pic: TRAINER_PIC_SI_BARRY_DP
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Staraptor
+Level: 58
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Floatzel
+Level: 59
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Heracross
+Level: 58
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Torterra
+Level: 59
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+
+=== TRAINER_SI_BARRY5_1 ===
+Name: BARRY
+Class: Pkmn Trainer 2
+Pic: TRAINER_PIC_SI_BARRY_DP
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Staraptor
+Level: 65
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Floatzel
+Level: 66
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Heracross
+Level: 65
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Infernape
+Level: 66
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+
+=== TRAINER_SI_BARRY5_1 ===
+Difficulty: Easy
+Name: BARRY
+Class: Pkmn Trainer 2
+Pic: TRAINER_PIC_SI_BARRY_DP
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Staraptor
+Level: 63
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Floatzel
+Level: 64
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Heracross
+Level: 63
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Infernape
+Level: 64
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+
+=== TRAINER_SI_BARRY5_1 ===
+Difficulty: Hard
+Name: BARRY
+Class: Pkmn Trainer 2
+Pic: TRAINER_PIC_SI_BARRY_DP
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Staraptor
+Level: 67
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Floatzel
+Level: 68
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Heracross
+Level: 67
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Infernape
+Level: 68
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+
+=== TRAINER_SI_BARRY5_2 ===
+Name: BARRY
+Class: Pkmn Trainer 2
+Pic: TRAINER_PIC_SI_BARRY_DP
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Staraptor
+Level: 65
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Floatzel
+Level: 66
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Heracross
+Level: 65
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Empoleon
+Level: 66
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+
+=== TRAINER_SI_BARRY5_2 ===
+Difficulty: Easy
+Name: BARRY
+Class: Pkmn Trainer 2
+Pic: TRAINER_PIC_SI_BARRY_DP
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Staraptor
+Level: 63
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Floatzel
+Level: 64
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Heracross
+Level: 63
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Empoleon
+Level: 64
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+
+=== TRAINER_SI_BARRY5_2 ===
+Difficulty: Hard
+Name: BARRY
+Class: Pkmn Trainer 2
+Pic: TRAINER_PIC_SI_BARRY_DP
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Staraptor
+Level: 67
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Floatzel
+Level: 68
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Heracross
+Level: 67
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Empoleon
+Level: 68
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+
+=== TRAINER_SI_BARRY5_3 ===
+Name: BARRY
+Class: Pkmn Trainer 2
+Pic: TRAINER_PIC_SI_BARRY_DP
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Staraptor
+Level: 65
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Floatzel
+Level: 66
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Heracross
+Level: 65
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Torterra
+Level: 66
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+
+=== TRAINER_SI_BARRY5_3 ===
+Difficulty: Easy
+Name: BARRY
+Class: Pkmn Trainer 2
+Pic: TRAINER_PIC_SI_BARRY_DP
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Staraptor
+Level: 63
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Floatzel
+Level: 64
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Heracross
+Level: 63
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Torterra
+Level: 64
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+
+=== TRAINER_SI_BARRY5_3 ===
+Difficulty: Hard
+Name: BARRY
+Class: Pkmn Trainer 2
+Pic: TRAINER_PIC_SI_BARRY_DP
+Gender: Male
+Music: Male
+AI: Basic Trainer
+
+Staraptor
+Level: 67
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Floatzel
+Level: 68
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Heracross
+Level: 67
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Torterra
+Level: 68
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+
+=== TRAINER_UN_BIANCA0_1 ===
+Difficulty: Normal
+Name: BIANCA
+Class: Pkmn Trainer 2
+Pic: TRAINER_PIC_UN_BIANCA
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Snivy
+Level: 5
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+=== TRAINER_UN_BIANCA0_1 ===
+Difficulty: Easy
+Name: BIANCA
+Class: Pkmn Trainer 2
+Pic: TRAINER_PIC_UN_BIANCA
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Snivy
+Level: 3
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_UN_BIANCA0_1 ===
+Difficulty: Hard
+Name: BIANCA
+Class: Pkmn Trainer 2
+Pic: TRAINER_PIC_UN_BIANCA
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Snivy
+Level: 7
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+=== TRAINER_UN_BIANCA0_2 ===
+Difficulty: Normal
+Name: BIANCA
+Class: Pkmn Trainer 2
+Pic: TRAINER_PIC_UN_BIANCA
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Tepig
+Level: 5
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+=== TRAINER_UN_BIANCA0_2 ===
+Difficulty: Easy
+Name: BIANCA
+Class: Pkmn Trainer 2
+Pic: TRAINER_PIC_UN_BIANCA
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Tepig
+Level: 3
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_UN_BIANCA0_2 ===
+Difficulty: Hard
+Name: BIANCA
+Class: Pkmn Trainer 2
+Pic: TRAINER_PIC_UN_BIANCA
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Tepig
+Level: 7
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+=== TRAINER_UN_BIANCA0_3 ===
+Difficulty: Normal
+Name: BIANCA
+Class: Pkmn Trainer 2
+Pic: TRAINER_PIC_UN_BIANCA
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Oshawott
+Level: 5
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+=== TRAINER_UN_BIANCA0_3 ===
+Difficulty: Easy
+Name: BIANCA
+Class: Pkmn Trainer 2
+Pic: TRAINER_PIC_UN_BIANCA
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Oshawott
+Level: 3
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_UN_BIANCA0_3 ===
+Difficulty: Hard
+Name: BIANCA
+Class: Pkmn Trainer 2
+Pic: TRAINER_PIC_UN_BIANCA
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Oshawott
+Level: 7
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+=== TRAINER_UN_CHEREN0_1 ===
+Difficulty: Normal
+Name: CHEREN
+Class: Pkmn Trainer 2
+Pic: TRAINER_PIC_UN_CHEREN
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Snivy
+Level: 5
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+=== TRAINER_UN_CHEREN0_1 ===
+Difficulty: Easy
+Name: CHEREN
+Class: Pkmn Trainer 2
+Pic: TRAINER_PIC_UN_CHEREN
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Snivy
+Level: 3
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_UN_CHEREN0_1 ===
+Difficulty: Hard
+Name: CHEREN
+Class: Pkmn Trainer 2
+Pic: TRAINER_PIC_UN_CHEREN
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Snivy
+Level: 7
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+=== TRAINER_UN_CHEREN0_2 ===
+Difficulty: Normal
+Name: CHEREN
+Class: Pkmn Trainer 2
+Pic: TRAINER_PIC_UN_CHEREN
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Tepig
+Level: 5
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+=== TRAINER_UN_CHEREN0_2 ===
+Difficulty: Easy
+Name: CHEREN
+Class: Pkmn Trainer 2
+Pic: TRAINER_PIC_UN_CHEREN
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Tepig
+Level: 3
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_UN_CHEREN0_2 ===
+Difficulty: Hard
+Name: CHEREN
+Class: Pkmn Trainer 2
+Pic: TRAINER_PIC_UN_CHEREN
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Tepig
+Level: 7
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+=== TRAINER_UN_CHEREN0_3 ===
+Difficulty: Normal
+Name: CHEREN
+Class: Pkmn Trainer 2
+Pic: TRAINER_PIC_UN_CHEREN
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Oshawott
+Level: 5
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+=== TRAINER_UN_CHEREN0_3 ===
+Difficulty: Easy
+Name: CHEREN
+Class: Pkmn Trainer 2
+Pic: TRAINER_PIC_UN_CHEREN
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Oshawott
+Level: 3
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_UN_CHEREN0_3 ===
+Difficulty: Hard
+Name: CHEREN
+Class: Pkmn Trainer 2
+Pic: TRAINER_PIC_UN_CHEREN
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Oshawott
+Level: 7
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+=== TRAINER_UN_N_ACCUMULA ===
+Difficulty: Normal
+Name: N
+Class: Pkmn Trainer 2
+Pic: TRAINER_PIC_UN_N
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Purrloin
+Level: 7
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+=== TRAINER_UN_N_ACCUMULA ===
+Difficulty: Easy
+Name: N
+Class: Pkmn Trainer 2
+Pic: TRAINER_PIC_UN_N
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Purrloin
+Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_UN_N_ACCUMULA ===
+Difficulty: Hard
+Name: N
+Class: Pkmn Trainer 2
+Pic: TRAINER_PIC_UN_N
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Purrloin
+Level: 9
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+=== TRAINER_UN_BIANCA1_1 ===
+Difficulty: Normal
+Name: BIANCA
+Class: Pkmn Trainer 2
+Pic: TRAINER_PIC_UN_BIANCA
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Lillipup
+Level: 8
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Snivy
+Level: 9
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+=== TRAINER_UN_BIANCA1_1 ===
+Difficulty: Easy
+Name: BIANCA
+Class: Pkmn Trainer 2
+Pic: TRAINER_PIC_UN_BIANCA
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Lillipup
+Level: 6
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Snivy
+Level: 7
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_UN_BIANCA1_1 ===
+Difficulty: Hard
+Name: BIANCA
+Class: Pkmn Trainer 2
+Pic: TRAINER_PIC_UN_BIANCA
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Lillipup
+Level: 10
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Snivy
+Level: 11
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+=== TRAINER_UN_BIANCA1_2 ===
+Difficulty: Normal
+Name: BIANCA
+Class: Pkmn Trainer 2
+Pic: TRAINER_PIC_UN_BIANCA
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Lillipup
+Level: 8
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Tepig
+Level: 9
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+=== TRAINER_UN_BIANCA1_2 ===
+Difficulty: Easy
+Name: BIANCA
+Class: Pkmn Trainer 2
+Pic: TRAINER_PIC_UN_BIANCA
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Lillipup
+Level: 6
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Tepig
+Level: 7
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_UN_BIANCA1_2 ===
+Difficulty: Hard
+Name: BIANCA
+Class: Pkmn Trainer 2
+Pic: TRAINER_PIC_UN_BIANCA
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Lillipup
+Level: 10
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Tepig
+Level: 11
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+=== TRAINER_UN_BIANCA1_3 ===
+Difficulty: Normal
+Name: BIANCA
+Class: Pkmn Trainer 2
+Pic: TRAINER_PIC_UN_BIANCA
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Lillipup
+Level: 8
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Oshawott
+Level: 9
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+=== TRAINER_UN_BIANCA1_3 ===
+Difficulty: Easy
+Name: BIANCA
+Class: Pkmn Trainer 2
+Pic: TRAINER_PIC_UN_BIANCA
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Lillipup
+Level: 6
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Oshawott
+Level: 7
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_UN_BIANCA1_3 ===
+Difficulty: Hard
+Name: BIANCA
+Class: Pkmn Trainer 2
+Pic: TRAINER_PIC_UN_BIANCA
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Lillipup
+Level: 10
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Oshawott
+Level: 11
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+=== TRAINER_UN_CHEREN1_1 ===
+Difficulty: Normal
+Name: CHEREN
+Class: Pkmn Trainer 2
+Pic: TRAINER_PIC_UN_CHEREN
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Lillipup
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Snivy
+Level: 11
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+=== TRAINER_UN_CHEREN1_1 ===
+Difficulty: Easy
+Name: CHEREN
+Class: Pkmn Trainer 2
+Pic: TRAINER_PIC_UN_CHEREN
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Lillipup
+Level: 8
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Snivy
+Level: 9
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_UN_CHEREN1_1 ===
+Difficulty: Hard
+Name: CHEREN
+Class: Pkmn Trainer 2
+Pic: TRAINER_PIC_UN_CHEREN
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Lillipup
+Level: 12
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Snivy
+Level: 13
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+=== TRAINER_UN_CHEREN1_2 ===
+Difficulty: Normal
+Name: CHEREN
+Class: Pkmn Trainer 2
+Pic: TRAINER_PIC_UN_CHEREN
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Lillipup
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Tepig
+Level: 11
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+=== TRAINER_UN_CHEREN1_2 ===
+Difficulty: Easy
+Name: CHEREN
+Class: Pkmn Trainer 2
+Pic: TRAINER_PIC_UN_CHEREN
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Lillipup
+Level: 8
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Tepig
+Level: 9
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_UN_CHEREN1_2 ===
+Difficulty: Hard
+Name: CHEREN
+Class: Pkmn Trainer 2
+Pic: TRAINER_PIC_UN_CHEREN
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Lillipup
+Level: 12
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Tepig
+Level: 13
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+=== TRAINER_UN_CHEREN1_3 ===
+Difficulty: Normal
+Name: CHEREN
+Class: Pkmn Trainer 2
+Pic: TRAINER_PIC_UN_CHEREN
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Lillipup
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Oshawott
+Level: 11
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+=== TRAINER_UN_CHEREN1_3 ===
+Difficulty: Easy
+Name: CHEREN
+Class: Pkmn Trainer 2
+Pic: TRAINER_PIC_UN_CHEREN
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Lillipup
+Level: 8
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Oshawott
+Level: 9
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_UN_CHEREN1_3 ===
+Difficulty: Hard
+Name: CHEREN
+Class: Pkmn Trainer 2
+Pic: TRAINER_PIC_UN_CHEREN
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Lillipup
+Level: 12
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Oshawott
+Level: 13
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+=== TRAINER_UN_CHILI ===
+Difficulty: Normal
+Name: CHILI
+Class: Pkmn Trainer 2
+Pic: TRAINER_PIC_UN_CHILI
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Lillipup
+Level: 12
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Pansear
+Level: 14
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+=== TRAINER_UN_CHILI ===
+Difficulty: Easy
+Name: CHILI
+Class: Pkmn Trainer 2
+Pic: TRAINER_PIC_UN_CHILI
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Lillipup
+Level: 10
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Pansear
+Level: 12
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_UN_CHILI ===
+Difficulty: Hard
+Name: CHILI
+Class: Pkmn Trainer 2
+Pic: TRAINER_PIC_UN_CHILI
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Lillipup
+Level: 14
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Pansear
+Level: 16
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+=== TRAINER_UN_CRESS ===
+Difficulty: Normal
+Name: CRESS
+Class: Pkmn Trainer 2
+Pic: TRAINER_PIC_UN_CRESS
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Lillipup
+Level: 12
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Panpour
+Level: 14
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+=== TRAINER_UN_CRESS ===
+Difficulty: Easy
+Name: CRESS
+Class: Pkmn Trainer 2
+Pic: TRAINER_PIC_UN_CRESS
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Lillipup
+Level: 10
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Panpour
+Level: 12
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_UN_CRESS ===
+Difficulty: Hard
+Name: CRESS
+Class: Pkmn Trainer 2
+Pic: TRAINER_PIC_UN_CRESS
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Lillipup
+Level: 14
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Panpour
+Level: 16
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+=== TRAINER_UN_CILAN ===
+Difficulty: Normal
+Name: CILAN
+Class: Pkmn Trainer 2
+Pic: TRAINER_PIC_UN_CILAN
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Lillipup
+Level: 12
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Pansage
+Level: 14
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+=== TRAINER_UN_CILAN ===
+Difficulty: Easy
+Name: CILAN
+Class: Pkmn Trainer 2
+Pic: TRAINER_PIC_UN_CILAN
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Lillipup
+Level: 10
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Pansage
+Level: 12
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_UN_CILAN ===
+Difficulty: Hard
+Name: CILAN
+Class: Pkmn Trainer 2
+Pic: TRAINER_PIC_UN_CILAN
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Lillipup
+Level: 14
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Pansage
+Level: 16
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+=== TRAINER_UN_DREAMYARD ===
+Difficulty: Normal
+Name: PLASMA
+Class: Pkmn Trainer 2
+Pic: TRAINER_PIC_UN_PLASMAM
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Patrat
+Level: 15
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Purrloin
+Level: 16
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+=== TRAINER_UN_DREAMYARD ===
+Difficulty: Easy
+Name: PLASMA
+Class: Pkmn Trainer 2
+Pic: TRAINER_PIC_UN_PLASMAM
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Patrat
+Level: 13
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Purrloin
+Level: 14
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_UN_DREAMYARD ===
+Difficulty: Hard
+Name: PLASMA
+Class: Pkmn Trainer 2
+Pic: TRAINER_PIC_UN_PLASMAM
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Patrat
+Level: 17
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Purrloin
+Level: 18
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+=== TRAINER_UN_WELLSPRING ===
+Difficulty: Normal
+Name: PLASMA
+Class: Pkmn Trainer 2
+Pic: TRAINER_PIC_UN_PLASMAF
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Patrat
+Level: 17
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Sandile
+Level: 18
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+=== TRAINER_UN_WELLSPRING ===
+Difficulty: Easy
+Name: PLASMA
+Class: Pkmn Trainer 2
+Pic: TRAINER_PIC_UN_PLASMAF
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Patrat
+Level: 15
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Sandile
+Level: 16
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_UN_WELLSPRING ===
+Difficulty: Hard
+Name: PLASMA
+Class: Pkmn Trainer 2
+Pic: TRAINER_PIC_UN_PLASMAF
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Patrat
+Level: 19
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Sandile
+Level: 20
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+=== TRAINER_UN_N_NACRENE ===
+Difficulty: Normal
+Name: N
+Class: Pkmn Trainer 2
+Pic: TRAINER_PIC_UN_N
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Pidove
+Level: 18
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Timburr
+Level: 18
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Tympole
+Level: 19
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+=== TRAINER_UN_N_NACRENE ===
+Difficulty: Easy
+Name: N
+Class: Pkmn Trainer 2
+Pic: TRAINER_PIC_UN_N
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Pidove
+Level: 16
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Timburr
+Level: 16
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Tympole
+Level: 17
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_UN_N_NACRENE ===
+Difficulty: Hard
+Name: N
+Class: Pkmn Trainer 2
+Pic: TRAINER_PIC_UN_N
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Pidove
+Level: 20
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Timburr
+Level: 20
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Tympole
+Level: 21
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+=== TRAINER_UN_LENORA ===
+Difficulty: Normal
+Name: LENORA
+Class: Pkmn Trainer 2
+Pic: TRAINER_PIC_UN_LENORA
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Herdier
+Level: 18
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Watchog
+Level: 20
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+=== TRAINER_UN_LENORA ===
+Difficulty: Easy
+Name: LENORA
+Class: Pkmn Trainer 2
+Pic: TRAINER_PIC_UN_LENORA
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Herdier
+Level: 16
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Watchog
+Level: 18
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_UN_LENORA ===
+Difficulty: Hard
+Name: LENORA
+Class: Pkmn Trainer 2
+Pic: TRAINER_PIC_UN_LENORA
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Herdier
+Level: 20
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Watchog
+Level: 22
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+=== TRAINER_UN_PINWHEEL ===
+Difficulty: Normal
+Name: PLASMA
+Class: Pkmn Trainer 2
+Pic: TRAINER_PIC_UN_PLASMAM
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Sandile
+Level: 20
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Scraggy
+Level: 21
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+=== TRAINER_UN_PINWHEEL ===
+Difficulty: Easy
+Name: PLASMA
+Class: Pkmn Trainer 2
+Pic: TRAINER_PIC_UN_PLASMAM
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Sandile
+Level: 18
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Scraggy
+Level: 19
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_UN_PINWHEEL ===
+Difficulty: Hard
+Name: PLASMA
+Class: Pkmn Trainer 2
+Pic: TRAINER_PIC_UN_PLASMAM
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Sandile
+Level: 22
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Scraggy
+Level: 23
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+=== TRAINER_UN_CASTELIA ===
+Difficulty: Normal
+Name: PLASMA
+Class: Pkmn Trainer 2
+Pic: TRAINER_PIC_UN_PLASMAF
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Scraggy
+Level: 21
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Whirlipede
+Level: 22
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Watchog
+Level: 22
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+=== TRAINER_UN_CASTELIA ===
+Difficulty: Easy
+Name: PLASMA
+Class: Pkmn Trainer 2
+Pic: TRAINER_PIC_UN_PLASMAF
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Scraggy
+Level: 19
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Whirlipede
+Level: 20
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Watchog
+Level: 20
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_UN_CASTELIA ===
+Difficulty: Hard
+Name: PLASMA
+Class: Pkmn Trainer 2
+Pic: TRAINER_PIC_UN_PLASMAF
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Scraggy
+Level: 23
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Whirlipede
+Level: 24
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Watchog
+Level: 24
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+=== TRAINER_UN_BURGH ===
+Difficulty: Normal
+Name: BURGH
+Class: Pkmn Trainer 2
+Pic: TRAINER_PIC_UN_BURGH
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Whirlipede
+Level: 21
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Dwebble
+Level: 21
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Leavanny
+Level: 23
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+=== TRAINER_UN_BURGH ===
+Difficulty: Easy
+Name: BURGH
+Class: Pkmn Trainer 2
+Pic: TRAINER_PIC_UN_BURGH
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Whirlipede
+Level: 19
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Dwebble
+Level: 19
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Leavanny
+Level: 21
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_UN_BURGH ===
+Difficulty: Hard
+Name: BURGH
+Class: Pkmn Trainer 2
+Pic: TRAINER_PIC_UN_BURGH
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Whirlipede
+Level: 23
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Dwebble
+Level: 23
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Leavanny
+Level: 25
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+=== TRAINER_UN_FIELD0 ===
+Difficulty: Normal
+Name: LEO
+Class: Pkmn Trainer 2
+Pic: YOUNGSTER
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Patrat
+Level: 5
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+=== TRAINER_UN_FIELD0 ===
+Difficulty: Easy
+Name: LEO
+Class: Pkmn Trainer 2
+Pic: YOUNGSTER
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Patrat
+Level: 3
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_UN_FIELD0 ===
+Difficulty: Hard
+Name: LEO
+Class: Pkmn Trainer 2
+Pic: YOUNGSTER
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Patrat
+Level: 7
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+=== TRAINER_UN_FIELD1 ===
+Difficulty: Normal
+Name: LIA
+Class: Pkmn Trainer 2
+Pic: LASS
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Purrloin
+Level: 5
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+=== TRAINER_UN_FIELD1 ===
+Difficulty: Easy
+Name: LIA
+Class: Pkmn Trainer 2
+Pic: LASS
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Purrloin
+Level: 3
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_UN_FIELD1 ===
+Difficulty: Hard
+Name: LIA
+Class: Pkmn Trainer 2
+Pic: LASS
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Purrloin
+Level: 7
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+=== TRAINER_UN_FIELD2 ===
+Difficulty: Normal
+Name: LEO
+Class: Pkmn Trainer 2
+Pic: YOUNGSTER
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Sewaddle
+Level: 5
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+=== TRAINER_UN_FIELD2 ===
+Difficulty: Easy
+Name: LEO
+Class: Pkmn Trainer 2
+Pic: YOUNGSTER
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Sewaddle
+Level: 3
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_UN_FIELD2 ===
+Difficulty: Hard
+Name: LEO
+Class: Pkmn Trainer 2
+Pic: YOUNGSTER
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Sewaddle
+Level: 7
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+=== TRAINER_UN_FIELD3 ===
+Difficulty: Normal
+Name: LIA
+Class: Pkmn Trainer 2
+Pic: LASS
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Tympole
+Level: 8
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Roggenrola
+Level: 9
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+=== TRAINER_UN_FIELD3 ===
+Difficulty: Easy
+Name: LIA
+Class: Pkmn Trainer 2
+Pic: LASS
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Tympole
+Level: 6
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Roggenrola
+Level: 7
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_UN_FIELD3 ===
+Difficulty: Hard
+Name: LIA
+Class: Pkmn Trainer 2
+Pic: LASS
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Tympole
+Level: 10
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Roggenrola
+Level: 11
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+=== TRAINER_UN_FIELD4 ===
+Difficulty: Normal
+Name: LEO
+Class: Pkmn Trainer 2
+Pic: YOUNGSTER
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Blitzle
+Level: 8
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Pidove
+Level: 9
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+=== TRAINER_UN_FIELD4 ===
+Difficulty: Easy
+Name: LEO
+Class: Pkmn Trainer 2
+Pic: YOUNGSTER
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Blitzle
+Level: 6
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Pidove
+Level: 7
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_UN_FIELD4 ===
+Difficulty: Hard
+Name: LEO
+Class: Pkmn Trainer 2
+Pic: YOUNGSTER
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Blitzle
+Level: 10
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Pidove
+Level: 11
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+=== TRAINER_UN_FIELD5 ===
+Difficulty: Normal
+Name: LIA
+Class: Pkmn Trainer 2
+Pic: LASS
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Timburr
+Level: 8
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Drilbur
+Level: 9
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+=== TRAINER_UN_FIELD5 ===
+Difficulty: Easy
+Name: LIA
+Class: Pkmn Trainer 2
+Pic: LASS
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Timburr
+Level: 6
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Drilbur
+Level: 7
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_UN_FIELD5 ===
+Difficulty: Hard
+Name: LIA
+Class: Pkmn Trainer 2
+Pic: LASS
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Timburr
+Level: 10
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Drilbur
+Level: 11
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+=== TRAINER_UN_FIELD6 ===
+Difficulty: Normal
+Name: LEO
+Class: Pkmn Trainer 2
+Pic: YOUNGSTER
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Cottonee
+Level: 8
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Petilil
+Level: 9
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+=== TRAINER_UN_FIELD6 ===
+Difficulty: Easy
+Name: LEO
+Class: Pkmn Trainer 2
+Pic: YOUNGSTER
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Cottonee
+Level: 6
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Petilil
+Level: 7
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_UN_FIELD6 ===
+Difficulty: Hard
+Name: LEO
+Class: Pkmn Trainer 2
+Pic: YOUNGSTER
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Cottonee
+Level: 10
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Petilil
+Level: 11
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+=== TRAINER_UN_FIELD7 ===
+Difficulty: Normal
+Name: LIA
+Class: Pkmn Trainer 2
+Pic: LASS
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Woobat
+Level: 8
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Purrloin
+Level: 9
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+=== TRAINER_UN_FIELD7 ===
+Difficulty: Easy
+Name: LIA
+Class: Pkmn Trainer 2
+Pic: LASS
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Woobat
+Level: 6
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Purrloin
+Level: 7
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_UN_FIELD7 ===
+Difficulty: Hard
+Name: LIA
+Class: Pkmn Trainer 2
+Pic: LASS
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Woobat
+Level: 10
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Purrloin
+Level: 11
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+=== TRAINER_UN_FIELD8 ===
+Difficulty: Normal
+Name: LEO
+Class: Pkmn Trainer 2
+Pic: YOUNGSTER
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Patrat
+Level: 11
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Lillipup
+Level: 12
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+=== TRAINER_UN_FIELD8 ===
+Difficulty: Easy
+Name: LEO
+Class: Pkmn Trainer 2
+Pic: YOUNGSTER
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Patrat
+Level: 9
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Lillipup
+Level: 10
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_UN_FIELD8 ===
+Difficulty: Hard
+Name: LEO
+Class: Pkmn Trainer 2
+Pic: YOUNGSTER
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Patrat
+Level: 13
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Lillipup
+Level: 14
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+=== TRAINER_UN_FIELD9 ===
+Difficulty: Normal
+Name: LIA
+Class: Pkmn Trainer 2
+Pic: LASS
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Purrloin
+Level: 11
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Pidove
+Level: 12
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+=== TRAINER_UN_FIELD9 ===
+Difficulty: Easy
+Name: LIA
+Class: Pkmn Trainer 2
+Pic: LASS
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Purrloin
+Level: 9
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Pidove
+Level: 10
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_UN_FIELD9 ===
+Difficulty: Hard
+Name: LIA
+Class: Pkmn Trainer 2
+Pic: LASS
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Purrloin
+Level: 13
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Pidove
+Level: 14
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+=== TRAINER_UN_FIELD10 ===
+Difficulty: Normal
+Name: LEO
+Class: Pkmn Trainer 2
+Pic: YOUNGSTER
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Sewaddle
+Level: 11
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Venipede
+Level: 12
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+=== TRAINER_UN_FIELD10 ===
+Difficulty: Easy
+Name: LEO
+Class: Pkmn Trainer 2
+Pic: YOUNGSTER
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Sewaddle
+Level: 9
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Venipede
+Level: 10
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_UN_FIELD10 ===
+Difficulty: Hard
+Name: LEO
+Class: Pkmn Trainer 2
+Pic: YOUNGSTER
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Sewaddle
+Level: 13
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Venipede
+Level: 14
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+=== TRAINER_UN_FIELD11 ===
+Difficulty: Normal
+Name: LIA
+Class: Pkmn Trainer 2
+Pic: LASS
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Tympole
+Level: 15
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Roggenrola
+Level: 16
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+=== TRAINER_UN_FIELD11 ===
+Difficulty: Easy
+Name: LIA
+Class: Pkmn Trainer 2
+Pic: LASS
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Tympole
+Level: 13
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Roggenrola
+Level: 14
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_UN_FIELD11 ===
+Difficulty: Hard
+Name: LIA
+Class: Pkmn Trainer 2
+Pic: LASS
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Tympole
+Level: 17
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Roggenrola
+Level: 18
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+=== TRAINER_UN_FIELD12 ===
+Difficulty: Normal
+Name: LEO
+Class: Pkmn Trainer 2
+Pic: YOUNGSTER
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Blitzle
+Level: 15
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Pidove
+Level: 16
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+=== TRAINER_UN_FIELD12 ===
+Difficulty: Easy
+Name: LEO
+Class: Pkmn Trainer 2
+Pic: YOUNGSTER
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Blitzle
+Level: 13
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Pidove
+Level: 14
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_UN_FIELD12 ===
+Difficulty: Hard
+Name: LEO
+Class: Pkmn Trainer 2
+Pic: YOUNGSTER
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Blitzle
+Level: 17
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Pidove
+Level: 18
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+=== TRAINER_UN_FIELD13 ===
+Difficulty: Normal
+Name: LIA
+Class: Pkmn Trainer 2
+Pic: LASS
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Timburr
+Level: 15
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Drilbur
+Level: 16
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+=== TRAINER_UN_FIELD13 ===
+Difficulty: Easy
+Name: LIA
+Class: Pkmn Trainer 2
+Pic: LASS
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Timburr
+Level: 13
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Drilbur
+Level: 14
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_UN_FIELD13 ===
+Difficulty: Hard
+Name: LIA
+Class: Pkmn Trainer 2
+Pic: LASS
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Timburr
+Level: 17
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Drilbur
+Level: 18
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+=== TRAINER_UN_FIELD14 ===
+Difficulty: Normal
+Name: LEO
+Class: Pkmn Trainer 2
+Pic: YOUNGSTER
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Cottonee
+Level: 15
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Petilil
+Level: 16
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+=== TRAINER_UN_FIELD14 ===
+Difficulty: Easy
+Name: LEO
+Class: Pkmn Trainer 2
+Pic: YOUNGSTER
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Cottonee
+Level: 13
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Petilil
+Level: 14
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_UN_FIELD14 ===
+Difficulty: Hard
+Name: LEO
+Class: Pkmn Trainer 2
+Pic: YOUNGSTER
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Cottonee
+Level: 17
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Petilil
+Level: 18
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+=== TRAINER_UN_FIELD15 ===
+Difficulty: Normal
+Name: LIA
+Class: Pkmn Trainer 2
+Pic: LASS
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Woobat
+Level: 15
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Purrloin
+Level: 16
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+=== TRAINER_UN_FIELD15 ===
+Difficulty: Easy
+Name: LIA
+Class: Pkmn Trainer 2
+Pic: LASS
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Woobat
+Level: 13
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Purrloin
+Level: 14
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_UN_FIELD15 ===
+Difficulty: Hard
+Name: LIA
+Class: Pkmn Trainer 2
+Pic: LASS
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Woobat
+Level: 17
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Purrloin
+Level: 18
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+=== TRAINER_UN_FIELD16 ===
+Difficulty: Normal
+Name: LEO
+Class: Pkmn Trainer 2
+Pic: YOUNGSTER
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Patrat
+Level: 16
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Lillipup
+Level: 17
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+=== TRAINER_UN_FIELD16 ===
+Difficulty: Easy
+Name: LEO
+Class: Pkmn Trainer 2
+Pic: YOUNGSTER
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Patrat
+Level: 14
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Lillipup
+Level: 15
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_UN_FIELD16 ===
+Difficulty: Hard
+Name: LEO
+Class: Pkmn Trainer 2
+Pic: YOUNGSTER
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Patrat
+Level: 18
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Lillipup
+Level: 19
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+=== TRAINER_UN_FIELD17 ===
+Difficulty: Normal
+Name: LIA
+Class: Pkmn Trainer 2
+Pic: LASS
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Purrloin
+Level: 16
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Pidove
+Level: 17
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+=== TRAINER_UN_FIELD17 ===
+Difficulty: Easy
+Name: LIA
+Class: Pkmn Trainer 2
+Pic: LASS
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Purrloin
+Level: 14
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Pidove
+Level: 15
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_UN_FIELD17 ===
+Difficulty: Hard
+Name: LIA
+Class: Pkmn Trainer 2
+Pic: LASS
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Purrloin
+Level: 18
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Pidove
+Level: 19
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+=== TRAINER_UN_FIELD18 ===
+Difficulty: Normal
+Name: LEO
+Class: Pkmn Trainer 2
+Pic: YOUNGSTER
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Sewaddle
+Level: 18
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Venipede
+Level: 19
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+=== TRAINER_UN_FIELD18 ===
+Difficulty: Easy
+Name: LEO
+Class: Pkmn Trainer 2
+Pic: YOUNGSTER
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Sewaddle
+Level: 16
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Venipede
+Level: 17
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_UN_FIELD18 ===
+Difficulty: Hard
+Name: LEO
+Class: Pkmn Trainer 2
+Pic: YOUNGSTER
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Sewaddle
+Level: 20
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Venipede
+Level: 21
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+=== TRAINER_UN_FIELD19 ===
+Difficulty: Normal
+Name: LIA
+Class: Pkmn Trainer 2
+Pic: LASS
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Tympole
+Level: 18
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Roggenrola
+Level: 19
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+=== TRAINER_UN_FIELD19 ===
+Difficulty: Easy
+Name: LIA
+Class: Pkmn Trainer 2
+Pic: LASS
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Tympole
+Level: 16
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Roggenrola
+Level: 17
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_UN_FIELD19 ===
+Difficulty: Hard
+Name: LIA
+Class: Pkmn Trainer 2
+Pic: LASS
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Tympole
+Level: 20
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Roggenrola
+Level: 21
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+=== TRAINER_UN_FIELD20 ===
+Difficulty: Normal
+Name: LEO
+Class: Pkmn Trainer 2
+Pic: YOUNGSTER
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Blitzle
+Level: 18
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Pidove
+Level: 19
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+=== TRAINER_UN_FIELD20 ===
+Difficulty: Easy
+Name: LEO
+Class: Pkmn Trainer 2
+Pic: YOUNGSTER
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Blitzle
+Level: 16
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Pidove
+Level: 17
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_UN_FIELD20 ===
+Difficulty: Hard
+Name: LEO
+Class: Pkmn Trainer 2
+Pic: YOUNGSTER
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Blitzle
+Level: 20
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Pidove
+Level: 21
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+=== TRAINER_UN_FIELD21 ===
+Difficulty: Normal
+Name: LIA
+Class: Pkmn Trainer 2
+Pic: LASS
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Timburr
+Level: 18
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Drilbur
+Level: 19
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+=== TRAINER_UN_FIELD21 ===
+Difficulty: Easy
+Name: LIA
+Class: Pkmn Trainer 2
+Pic: LASS
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Timburr
+Level: 16
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Drilbur
+Level: 17
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_UN_FIELD21 ===
+Difficulty: Hard
+Name: LIA
+Class: Pkmn Trainer 2
+Pic: LASS
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Timburr
+Level: 20
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Drilbur
+Level: 21
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+=== TRAINER_UN_FIELD22 ===
+Difficulty: Normal
+Name: LEO
+Class: Pkmn Trainer 2
+Pic: YOUNGSTER
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Cottonee
+Level: 19
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Petilil
+Level: 20
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+=== TRAINER_UN_FIELD22 ===
+Difficulty: Easy
+Name: LEO
+Class: Pkmn Trainer 2
+Pic: YOUNGSTER
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Cottonee
+Level: 17
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Petilil
+Level: 18
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_UN_FIELD22 ===
+Difficulty: Hard
+Name: LEO
+Class: Pkmn Trainer 2
+Pic: YOUNGSTER
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Cottonee
+Level: 21
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Petilil
+Level: 22
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+=== TRAINER_UN_FIELD23 ===
+Difficulty: Normal
+Name: LIA
+Class: Pkmn Trainer 2
+Pic: LASS
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Woobat
+Level: 19
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Purrloin
+Level: 20
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+=== TRAINER_UN_FIELD23 ===
+Difficulty: Easy
+Name: LIA
+Class: Pkmn Trainer 2
+Pic: LASS
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Woobat
+Level: 17
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Purrloin
+Level: 18
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_UN_FIELD23 ===
+Difficulty: Hard
+Name: LIA
+Class: Pkmn Trainer 2
+Pic: LASS
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Woobat
+Level: 21
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Purrloin
+Level: 22
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+=== TRAINER_UN_FIELD24 ===
+Difficulty: Normal
+Name: LEO
+Class: Pkmn Trainer 2
+Pic: YOUNGSTER
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Patrat
+Level: 19
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Lillipup
+Level: 20
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+=== TRAINER_UN_FIELD24 ===
+Difficulty: Easy
+Name: LEO
+Class: Pkmn Trainer 2
+Pic: YOUNGSTER
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Patrat
+Level: 17
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Lillipup
+Level: 18
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_UN_FIELD24 ===
+Difficulty: Hard
+Name: LEO
+Class: Pkmn Trainer 2
+Pic: YOUNGSTER
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Patrat
+Level: 21
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Lillipup
+Level: 22
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+=== TRAINER_UN_FIELD25 ===
+Difficulty: Normal
+Name: LIA
+Class: Pkmn Trainer 2
+Pic: LASS
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Purrloin
+Level: 19
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Pidove
+Level: 20
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+=== TRAINER_UN_FIELD25 ===
+Difficulty: Easy
+Name: LIA
+Class: Pkmn Trainer 2
+Pic: LASS
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Purrloin
+Level: 17
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Pidove
+Level: 18
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_UN_FIELD25 ===
+Difficulty: Hard
+Name: LIA
+Class: Pkmn Trainer 2
+Pic: LASS
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Purrloin
+Level: 21
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Pidove
+Level: 22
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+=== TRAINER_UN_FIELD26 ===
+Difficulty: Normal
+Name: LEO
+Class: Pkmn Trainer 2
+Pic: YOUNGSTER
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Sewaddle
+Level: 19
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Venipede
+Level: 20
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+=== TRAINER_UN_FIELD26 ===
+Difficulty: Easy
+Name: LEO
+Class: Pkmn Trainer 2
+Pic: YOUNGSTER
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Sewaddle
+Level: 17
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Venipede
+Level: 18
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_UN_FIELD26 ===
+Difficulty: Hard
+Name: LEO
+Class: Pkmn Trainer 2
+Pic: YOUNGSTER
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Sewaddle
+Level: 21
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Venipede
+Level: 22
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+=== TRAINER_UN_FIELD27 ===
+Difficulty: Normal
+Name: LIA
+Class: Pkmn Trainer 2
+Pic: LASS
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Tympole
+Level: 20
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Roggenrola
+Level: 21
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+=== TRAINER_UN_FIELD27 ===
+Difficulty: Easy
+Name: LIA
+Class: Pkmn Trainer 2
+Pic: LASS
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Tympole
+Level: 18
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Roggenrola
+Level: 19
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_UN_FIELD27 ===
+Difficulty: Hard
+Name: LIA
+Class: Pkmn Trainer 2
+Pic: LASS
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Tympole
+Level: 22
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Roggenrola
+Level: 23
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+=== TRAINER_UN_FIELD28 ===
+Difficulty: Normal
+Name: LEO
+Class: Pkmn Trainer 2
+Pic: YOUNGSTER
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Blitzle
+Level: 20
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Pidove
+Level: 21
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+=== TRAINER_UN_FIELD28 ===
+Difficulty: Easy
+Name: LEO
+Class: Pkmn Trainer 2
+Pic: YOUNGSTER
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Blitzle
+Level: 18
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Pidove
+Level: 19
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_UN_FIELD28 ===
+Difficulty: Hard
+Name: LEO
+Class: Pkmn Trainer 2
+Pic: YOUNGSTER
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Blitzle
+Level: 22
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Pidove
+Level: 23
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+=== TRAINER_UN_FIELD29 ===
+Difficulty: Normal
+Name: LIA
+Class: Pkmn Trainer 2
+Pic: LASS
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Timburr
+Level: 21
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Drilbur
+Level: 22
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+=== TRAINER_UN_FIELD29 ===
+Difficulty: Easy
+Name: LIA
+Class: Pkmn Trainer 2
+Pic: LASS
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Timburr
+Level: 19
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Drilbur
+Level: 20
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_UN_FIELD29 ===
+Difficulty: Hard
+Name: LIA
+Class: Pkmn Trainer 2
+Pic: LASS
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Timburr
+Level: 23
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Drilbur
+Level: 24
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+=== TRAINER_UN_FIELD30 ===
+Difficulty: Normal
+Name: LEO
+Class: Pkmn Trainer 2
+Pic: YOUNGSTER
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Cottonee
+Level: 21
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Petilil
+Level: 22
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+=== TRAINER_UN_FIELD30 ===
+Difficulty: Easy
+Name: LEO
+Class: Pkmn Trainer 2
+Pic: YOUNGSTER
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Cottonee
+Level: 19
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Petilil
+Level: 20
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_UN_FIELD30 ===
+Difficulty: Hard
+Name: LEO
+Class: Pkmn Trainer 2
+Pic: YOUNGSTER
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Cottonee
+Level: 23
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Petilil
+Level: 24
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+=== TRAINER_UN_FIELD31 ===
+Difficulty: Normal
+Name: LIA
+Class: Pkmn Trainer 2
+Pic: LASS
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Woobat
+Level: 21
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Purrloin
+Level: 22
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+=== TRAINER_UN_FIELD31 ===
+Difficulty: Easy
+Name: LIA
+Class: Pkmn Trainer 2
+Pic: LASS
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Woobat
+Level: 19
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Purrloin
+Level: 20
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_UN_FIELD31 ===
+Difficulty: Hard
+Name: LIA
+Class: Pkmn Trainer 2
+Pic: LASS
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Woobat
+Level: 23
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Purrloin
+Level: 24
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+=== TRAINER_UN_FIELD32 ===
+Difficulty: Normal
+Name: LEO
+Class: Pkmn Trainer 2
+Pic: YOUNGSTER
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Patrat
+Level: 12
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Lillipup
+Level: 13
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+=== TRAINER_UN_FIELD32 ===
+Difficulty: Easy
+Name: LEO
+Class: Pkmn Trainer 2
+Pic: YOUNGSTER
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Patrat
+Level: 10
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Lillipup
+Level: 11
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_UN_FIELD32 ===
+Difficulty: Hard
+Name: LEO
+Class: Pkmn Trainer 2
+Pic: YOUNGSTER
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Patrat
+Level: 14
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Lillipup
+Level: 15
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+=== TRAINER_UN_FIELD33 ===
+Difficulty: Normal
+Name: LIA
+Class: Pkmn Trainer 2
+Pic: LASS
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Purrloin
+Level: 12
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Pidove
+Level: 13
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+=== TRAINER_UN_FIELD33 ===
+Difficulty: Easy
+Name: LIA
+Class: Pkmn Trainer 2
+Pic: LASS
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Purrloin
+Level: 10
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Pidove
+Level: 11
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_UN_FIELD33 ===
+Difficulty: Hard
+Name: LIA
+Class: Pkmn Trainer 2
+Pic: LASS
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Purrloin
+Level: 14
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Pidove
+Level: 15
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+=== TRAINER_UN_FIELD34 ===
+Difficulty: Normal
+Name: LEO
+Class: Pkmn Trainer 2
+Pic: YOUNGSTER
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Sewaddle
+Level: 18
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Venipede
+Level: 19
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+=== TRAINER_UN_FIELD34 ===
+Difficulty: Easy
+Name: LEO
+Class: Pkmn Trainer 2
+Pic: YOUNGSTER
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Sewaddle
+Level: 16
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Venipede
+Level: 17
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_UN_FIELD34 ===
+Difficulty: Hard
+Name: LEO
+Class: Pkmn Trainer 2
+Pic: YOUNGSTER
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Sewaddle
+Level: 20
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Venipede
+Level: 21
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+=== TRAINER_UN_FIELD35 ===
+Difficulty: Normal
+Name: LIA
+Class: Pkmn Trainer 2
+Pic: LASS
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Tympole
+Level: 18
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Roggenrola
+Level: 19
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+=== TRAINER_UN_FIELD35 ===
+Difficulty: Easy
+Name: LIA
+Class: Pkmn Trainer 2
+Pic: LASS
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Tympole
+Level: 16
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Roggenrola
+Level: 17
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_UN_FIELD35 ===
+Difficulty: Hard
+Name: LIA
+Class: Pkmn Trainer 2
+Pic: LASS
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Tympole
+Level: 20
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Roggenrola
+Level: 21
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+=== TRAINER_UN_FIELD36 ===
+Difficulty: Normal
+Name: LEO
+Class: Pkmn Trainer 2
+Pic: YOUNGSTER
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Blitzle
+Level: 21
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Pidove
+Level: 22
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+=== TRAINER_UN_FIELD36 ===
+Difficulty: Easy
+Name: LEO
+Class: Pkmn Trainer 2
+Pic: YOUNGSTER
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Blitzle
+Level: 19
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Pidove
+Level: 20
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_UN_FIELD36 ===
+Difficulty: Hard
+Name: LEO
+Class: Pkmn Trainer 2
+Pic: YOUNGSTER
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Blitzle
+Level: 23
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Pidove
+Level: 24
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+=== TRAINER_UN_FIELD37 ===
+Difficulty: Normal
+Name: LIA
+Class: Pkmn Trainer 2
+Pic: LASS
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Timburr
+Level: 21
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Drilbur
+Level: 22
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+=== TRAINER_UN_FIELD37 ===
+Difficulty: Easy
+Name: LIA
+Class: Pkmn Trainer 2
+Pic: LASS
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Timburr
+Level: 19
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Drilbur
+Level: 20
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_UN_FIELD37 ===
+Difficulty: Hard
+Name: LIA
+Class: Pkmn Trainer 2
+Pic: LASS
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Timburr
+Level: 23
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Drilbur
+Level: 24
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+=== TRAINER_UN_FIELD38 ===
+Difficulty: Normal
+Name: LEO
+Class: Pkmn Trainer 2
+Pic: YOUNGSTER
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Cottonee
+Level: 21
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Petilil
+Level: 22
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+=== TRAINER_UN_FIELD38 ===
+Difficulty: Easy
+Name: LEO
+Class: Pkmn Trainer 2
+Pic: YOUNGSTER
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Cottonee
+Level: 19
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Petilil
+Level: 20
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_UN_FIELD38 ===
+Difficulty: Hard
+Name: LEO
+Class: Pkmn Trainer 2
+Pic: YOUNGSTER
+Gender: Female
+Music: Male
+AI: Basic Trainer
+
+Cottonee
+Level: 23
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Petilil
+Level: 24
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+

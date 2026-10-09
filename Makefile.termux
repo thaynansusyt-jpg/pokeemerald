@@ -1,0 +1,27 @@
+# Pokemon Hoenn Expansion / Unova 0.10.1 - Termux + Debian/Ubuntu proot build
+# No changes to the original Makefile (the actual ROM build system).
+.DEFAULT_GOAL := rom
+JOBS ?= 2
+.PHONY: rom preflight validate help clean
+
+help:
+	@echo 'Termux (inside Debian/Ubuntu proot):'
+	@echo '  make -f Makefile.termux validate   # offline project consistency tests'
+	@echo '  make -f Makefile.termux rom        # build Pokemon GBA ROM (2 jobs)'
+	@echo '  make -f Makefile.termux clean      # wipe build outputs'
+
+preflight:
+	@set -e; for tool in make python3 gcc g++ arm-none-eabi-gcc arm-none-eabi-as arm-none-eabi-ld arm-none-eabi-objcopy; do \
+		command -v "$$tool" >/dev/null || { echo "Missing $$tool. Open LEIA-ME_TERMUX.md"; exit 1; }; \
+	done
+	@test -f Makefile || { echo 'Original Makefile not found. Run from the source root.'; exit 1; }
+
+validate:
+	@python3 tools/qa_unova_0101.py
+
+rom: preflight validate
+	+$(MAKE) -f Makefile modern -j$(JOBS)
+	@test -s pokemon_hoenn_expansion_gen7.gba && echo 'ROM pronta: pokemon_hoenn_expansion_gen7.gba'
+
+clean:
+	+$(MAKE) -f Makefile clean

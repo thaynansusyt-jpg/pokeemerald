@@ -357,3 +357,24 @@
 
 #define VAR_HE_DN_SPECIES 0x40F9
 #define VAR_HE_DN_STEPS 0x40FA
+
+#define VAR_SI_STAGE 0x4055
+#define VAR_SI_BADGES 0x4056
+#define VAR_SI_CLUES 0x4061
+#define VAR_SI_CHOICE 0x4062
+
+#define VAR_HE_SEASON 0x40FF // 0 Hoenn (including legacy saves), 1 Sinnoh
+
+#define VAR_SI_PRISM_ENERGY 0x4091
+#define VAR_SI_PRISM_MODE 0x409B
+#define VAR_SI_PRISM_WINS 0x409D
+#define VAR_SI_STARTER 0x40A1
+
+// Existing, unused Mystery Event vars. No SaveBlock layout change.
+#define VAR_HE_GIFT_LOW 0x40DE
+#define VAR_HE_GIFT_HIGH 0x40DF
+#define VAR_UN_STAGE 0x40E0
+#define VAR_UN_BADGES 0x40E1
+#define VAR_UN_STARTER 0x40E2
+#define VAR_UN_RESONANCE 0x40E3
+#define VAR_UN_MEMORY 0x40E4

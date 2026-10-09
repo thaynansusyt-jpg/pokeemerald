@@ -190,8 +190,11 @@ const u8 gText_drastically[] = _(" drastically");
 const u8 gText_severely[] = _("severely ");
 static const u8 sText_TerrainReturnedToNormal[] = _("The terrain returned to normal!"); // Unused
 
+const u8 SI_BattlePrismMessage[] = _("Prisma dos Lagos!\nBonus de captura x2.");
+const u8 SI_BattlePrismMessage_En[] = _("Lake Prism!\nCapture bonus x2.");
 const u8 *const gBattleStringsTable[STRINGID_COUNT] =
 {
+    [STRINGID_SI_PRISM] = SI_BattlePrismMessage_En,
     [STRINGID_TRAINER1LOSETEXT]                     = COMPOUND_STRING("{B_TRAINER1_LOSE_TEXT}"),
     [STRINGID_PKMNGAINEDEXP]                        = COMPOUND_STRING("{B_BUFF1} gained{B_BUFF2} {B_BUFF3} Exp. Points!\p"),
     [STRINGID_PKMNGREWTOLV]                         = COMPOUND_STRING("{B_BUFF1} grew to Lv. {B_BUFF2}!{WAIT_SE}\p"),

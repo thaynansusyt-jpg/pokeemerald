@@ -1,0 +1,878 @@
+{
+  "beats": [
+    [
+      "MARS",
+      "ValleyWindworks",
+      "mars",
+      7,
+      8,
+      "Mars",
+      18,
+      [
+        "Zubat",
+        "Purugly"
+      ],
+      null,
+      "MARS: Cada turbina empurra o presente para um amanha perfeito. Cyrus nao precisa de pessoas; precisa da energia que elas desperdicam. Se voce desligar o coletor, condenara o nosso futuro!",
+      "MARS: Every turbine pushes the present toward a perfect tomorrow. Cyrus needs the energy people waste. Shut down this collector and you destroy our future!",
+      "A turbina para. Um trabalhador revela que o pulso foi enviado ao edificio Galactico em Eterna. Uma sombra aparece no reflexo do rio, embora nao haja nada no ceu.",
+      "The turbine stops. A worker reveals that its pulse reached Galactic Eterna. A shadow crosses the river reflection, although the sky is empty."
+    ],
+    [
+      "GARDENIA",
+      "EternaCity_Gym",
+      "gardenia",
+      8,
+      9,
+      "Gardenia",
+      22,
+      [
+        "Cherubi",
+        "Turtwig",
+        "Roserade"
+      ],
+      2,
+      "GARDENIA: Minha floresta floresceu duas vezes na mesma noite. O tempo esta errado. Mostre que voce consegue proteger uma vida antes de investigar quem quer reescrever todas elas.",
+      "GARDENIA: My forest bloomed twice in one night. Time is wrong. Show me that you can protect one life before facing those who would rewrite every life.",
+      "Gardenia entrega Cut e uma bicicleta. O caminho ao edificio Galactico esta aberto. Looker encontrou notas sobre tres lagos e uma quarta sombra.",
+      "Gardenia gives you Cut and a bicycle. Galactic Eterna is accessible. Looker found notes about three lakes and a fourth shadow."
+    ],
+    [
+      "JUPITER",
+      "EternaCity_GalacticBuilding_3F",
+      "jupiter",
+      9,
+      10,
+      "Jupiter",
+      24,
+      [
+        "Bronzor",
+        "Skuntank"
+      ],
+      null,
+      "JUPITER: Ha futuros nos quais voce perdeu tudo. Cyrus quer impedir que qualquer pessoa sinta essa dor. O espelho no lago mostrou esses futuros a ele.",
+      "JUPITER: Some futures take everything from you. Cyrus wants nobody to feel that pain. The mirror in the lake showed those futures to him.",
+      "No arquivo, Dialga aparece como o Relogio e Palkia como a Porta. O nome Giratina foi riscado. Cynthia pede que voce a encontre depois do desafio em Hearthome.",
+      "The files call Dialga the Clock and Palkia the Door. Giratina has been crossed out. Cynthia asks you to continue through Hearthome."
+    ],
+    [
+      "FANTINA",
+      "HearthomeCity_Gym",
+      "fantina",
+      10,
+      11,
+      "Fantina",
+      27,
+      [
+        "Drifblim",
+        "Gengar",
+        "Mismagius"
+      ],
+      3,
+      "FANTINA: Os espiritos nao desapareceram. Estao presos em um segundo que nunca acaba. Nossa batalha precisa lembrar a eles que o mundo ainda pode mudar!",
+      "FANTINA: The spirits are trapped inside a second that never ends. Our battle must remind them that the world can still change!",
+      "Uma rachadura se abre no palco e se fecha. Cynthia reconhece o simbolo de um mundo invertido. A Galactica esta comprando transmissores em Veilstone.",
+      "A crack opens beneath the stage, then closes. Cynthia recognizes a symbol of an inverted world. Galactic is buying transmitters in Veilstone."
+    ],
+    [
+      "MAYLENE",
+      "VeilstoneCity_Gym",
+      "maylene",
+      11,
+      12,
+      "Maylene",
+      30,
+      [
+        "Meditite",
+        "Machoke",
+        "Lucario"
+      ],
+      4,
+      "MAYLENE: Lucario sente medo vindo de todos os radios da cidade. Vamos testar uma forca que nasce da confianca, nao de controlar o outro.",
+      "MAYLENE: Lucario senses fear inside every radio in town. Let us test strength built on trust, rather than control.",
+      "Maylene encontra uma ordem de ataque ao Lago Valor. A cidade permanece vigiada por Looker. Procure Saturn antes que o pulso alcance os tres guardioes.",
+      "Maylene finds an order to attack Lake Valor. Looker stays to protect the city. Stop Saturn before the pulse reaches all three guardians."
+    ],
+    [
+      "SATURN_VALOR",
+      "LakeValor",
+      "saturn",
+      12,
+      13,
+      "Saturn",
+      32,
+      [
+        "Kadabra",
+        "Bronzor",
+        "Toxicroak"
+      ],
+      null,
+      "SATURN: Azelf nos ensinou que vontade tambem pode ser arrancada de alguem. Hoje testaremos o que resta da sua quando o lago silenciar.",
+      "SATURN: Azelf taught us that willpower can be taken away. Today we test what remains of yours when this lake falls silent.",
+      "Azelf escapa, mas um fragmento de sua vontade ficou no coletor. Rowan pede ajuda ao lider de Pastoria: as aguas estao escoando para uma fenda invisivel.",
+      "Azelf escapes, but a fragment of its will remains inside the collector. Rowan sends you to Pastoria: its water drains into an invisible rift."
+    ],
+    [
+      "WAKE",
+      "PastoriaCity_Gym",
+      "crasher_wake",
+      13,
+      14,
+      "Wake",
+      34,
+      [
+        "Gyarados",
+        "Quagsire",
+        "Floatzel"
+      ],
+      5,
+      "WAKE: Quem luta por Sinnoh nao pode ter medo de mergulhar! A agua encontrou uma saida para outro mundo. Primeiro vamos descobrir se voce aguenta a correnteza!",
+      "WAKE: A protector of Sinnoh cannot fear the deep! Water found a way into another world. First, prove that you can withstand the current!",
+      "Wake estabiliza os canais. Cynthia enviou uma pista: os registros de Celestic descrevem um julgamento conduzido por Arceus.",
+      "Wake stabilizes the channels. Cynthia sends a clue: the Celestic records describe a judgment overseen by Arceus."
+    ],
+    [
+      "BYRON",
+      "CanalaveCity_Gym",
+      "byron",
+      15,
+      16,
+      "Byron",
+      39,
+      [
+        "Bronzong",
+        "Steelix",
+        "Bastiodon"
+      ],
+      6,
+      "BYRON: Meu filho protegeu a memoria das pedras. Eu protejo quem vive sobre elas. Cyrus roubou um nucleo antigo da biblioteca. Mostre-me que voce pode busca-lo!",
+      "BYRON: My son protects the memory inside stone. I protect those who live above it. Cyrus stole an ancient library core. Prove that you can recover it!",
+      "Byron entrega Strength. Rowan aguarda na biblioteca com o mapa de um pulso que atravessa os tres lagos ao mesmo tempo.",
+      "Byron gives you Strength. Rowan waits at the library with a pulse map that crosses all three lakes at once."
+    ],
+    [
+      "SATURN_ACUITY",
+      "LakeAcuity",
+      "saturn",
+      17,
+      18,
+      "Saturn",
+      42,
+      [
+        "Kadabra",
+        "Bronzong",
+        "Toxicroak"
+      ],
+      null,
+      "SATURN: Uxie mostrou a Cyrus cada erro que ele ainda cometeria. Como poderia continuar vivendo depois de ver todos eles? Esquecer o mundo parece misericordia.",
+      "SATURN: Uxie showed Cyrus every mistake he would ever make. How could he keep living after seeing them? Forgetting this world feels merciful.",
+      "Uxie rompe o circuito. Mas Cyrus ja tem tres fragmentos. Candice protege a ultima estrada para o transmissor central.",
+      "Uxie breaks the circuit. Cyrus already has three fragments. Candice guards the last road toward the central transmitter."
+    ],
+    [
+      "CANDICE",
+      "SnowpointCity_Gym",
+      "candice",
+      18,
+      19,
+      "Candice",
+      44,
+      [
+        "Sneasel",
+        "Piloswine",
+        "Medicham",
+        "Abomasnow"
+      ],
+      7,
+      "CANDICE: O gelo guardou lembrancas de gente que nunca existiu. Eu escolho o nosso presente! Sua proxima batalha precisa derreter essa duvida.",
+      "CANDICE: Ice preserved memories of people who never existed. I choose our present! Your next battle must melt that doubt.",
+      "Cynthia confirma: a sede Galactica em Veilstone esta transmitindo ao Mt. Coronet. Looker abriu um caminho para voce.",
+      "Cynthia confirms that Galactic Veilstone is transmitting to Mt. Coronet. Looker opened a route for you."
+    ],
+    [
+      "CYRUS",
+      "VeilstoneHQ",
+      "cyrus",
+      19,
+      20,
+      "Cyrus",
+      46,
+      [
+        "Honchkrow",
+        "Crobat",
+        "Weavile"
+      ],
+      null,
+      "CYRUS: Vi mil versoes deste mundo. Em todas, alguem sofre. Dialga removera o passado. Palkia fechara as saidas. Arceus sera obrigado a aceitar minha criacao.",
+      "CYRUS: I saw a thousand versions of this world. In every one, someone suffers. Dialga will remove the past. Palkia will seal the exits. Arceus must accept my creation.",
+      "Cyrus abandona a sede e leva a corrente ao Spear Pillar. Looker liberta os pesquisadores. Suba pelo Mt. Coronet antes do ultimo pulso.",
+      "Cyrus leaves for Spear Pillar with the chain. Looker frees the researchers. Climb Mt. Coronet before the final pulse."
+    ],
+    [
+      "CYRUS_FINAL",
+      "DistortionWorld",
+      "cyrus",
+      21,
+      22,
+      "Cyrus",
+      50,
+      [
+        "Houndoom",
+        "Honchkrow",
+        "Crobat",
+        "Gyarados",
+        "Weavile"
+      ],
+      null,
+      "CYRUS: Giratina guardou todos os futuros que eu descartei. Agora eles me perseguem! Se eu tomar este mundo vazio, nenhum sentimento podera me ferir novamente!",
+      "CYRUS: Giratina kept every future I discarded. Now they pursue me! If I take this empty world, no feeling can ever hurt me again!",
+      "Cyrus cai de joelhos. Voce quebra a corrente, mas a fenda mostra Twinleaf sendo apagada. Giratina nao era o inimigo: ele segurava os futuros rejeitados.",
+      "Cyrus falls to his knees. You break the chain, but the rift shows Twinleaf being erased. Giratina was holding the rejected futures together."
+    ],
+    [
+      "VOLKNER",
+      "SunyshoreCity_Gym",
+      "volkner",
+      23,
+      24,
+      "Volkner",
+      51,
+      [
+        "Jolteon",
+        "Luxray",
+        "Raichu",
+        "Electivire"
+      ],
+      8,
+      "VOLKNER: Todos os relogios pararam, mas minha cidade voltou a acender. Voce escolheu o mundo imperfeito. Agora mostre a energia que merece chegar a Liga!",
+      "VOLKNER: Every clock stopped, but my city shines again. You chose our imperfect world. Show me the energy that deserves the League!",
+      "Volkner entrega Waterfall. A Liga de Sinnoh espera ao norte da Rota 223. Os guardioes voltaram aos lagos; eles lembram de voce.",
+      "Volkner gives you Waterfall. The Sinnoh League waits north of Route 223. The guardians returned to their lakes, and remember you."
+    ],
+    [
+      "AARON",
+      "LeagueAaron",
+      "aaron",
+      24,
+      25,
+      "Aaron",
+      55,
+      [
+        "Yanmega",
+        "Scizor",
+        "Vespiquen",
+        "Heracross",
+        "Drapion"
+      ],
+      null,
+      "AARON: Uma floresta inteira se sustenta em vidas pequenas. Voce salvou os deuses. Agora respeite quem nunca precisou ser um!",
+      "AARON: A whole forest relies on small lives. You saved the gods. Now respect those who never needed to become one!",
+      "Aaron reconhece sua vitoria. Bertha espera na proxima sala. A Liga preserva as vitorias se voce precisar voltar para se preparar.",
+      "Aaron recognizes your victory. Bertha waits in the next room. Your League progress remains if you need to prepare again."
+    ],
+    [
+      "BERTHA",
+      "LeagueBertha",
+      "bertha",
+      25,
+      26,
+      "Bertha",
+      56,
+      [
+        "Whiscash",
+        "Gliscor",
+        "Golem",
+        "Hippowdon",
+        "Rhyperior"
+      ],
+      null,
+      "BERTHA: O mundo tem rachaduras e ainda assim nos sustenta. A paciencia vale mais que um futuro sem erros. Vamos ver a sua!",
+      "BERTHA: The world has cracks and still supports us. Patience matters more than a future without mistakes. Let us test yours!",
+      "Bertha abre o caminho. Flint quer conhecer a chama que sobreviveu ao Mundo Distorcido.",
+      "Bertha opens the path. Flint wants to meet the flame that survived the Distortion World."
+    ],
+    [
+      "FLINT",
+      "LeagueFlint",
+      "flint",
+      26,
+      27,
+      "Flint",
+      57,
+      [
+        "Houndoom",
+        "Flareon",
+        "Rapidash",
+        "Infernape",
+        "Magmortar"
+      ],
+      null,
+      "FLINT: O ceu voltou ao lugar e Volkner voltou a sorrir. Agora deixe sua equipe mostrar toda a chama que tem!",
+      "FLINT: The sky returned, and Volkner smiles again. Let your team show every spark it has!",
+      "Flint aponta a proxima porta. Lucian reuniu os registros que sobreviveram a crise.",
+      "Flint points to the next door. Lucian gathered the records that survived the crisis."
+    ],
+    [
+      "LUCIAN",
+      "LeagueLucian",
+      "lucian",
+      27,
+      28,
+      "Lucian",
+      58,
+      [
+        "Mr. Mime",
+        "Espeon",
+        "Bronzong",
+        "Alakazam",
+        "Gallade"
+      ],
+      null,
+      "LUCIAN: Arceus ofereceu um mundo perfeito e voce devolveu a escolha as pessoas. Conhecimento sem compaixao foi a derrota de Cyrus. O que sera a sua vitoria?",
+      "LUCIAN: Arceus offered perfection, and you restored human choice. Knowledge without compassion defeated Cyrus. What will define your victory?",
+      "Lucian fecha seu livro. Cynthia espera. Esta batalha decide o titulo de Campeao de Sinnoh.",
+      "Lucian closes his book. Cynthia waits. This battle decides the title of Sinnoh Champion."
+    ],
+    [
+      "CYNTHIA",
+      "LeagueCynthia",
+      "cynthia",
+      28,
+      29,
+      "Cynthia",
+      62,
+      [
+        "Spiritomb",
+        "Roserade",
+        "Togekiss",
+        "Lucario",
+        "Milotic",
+        "Garchomp"
+      ],
+      null,
+      "CYNTHIA: Quando Arceus abriu a porta, voce poderia ter escolhido um mundo onde nunca perderia. Escolheu continuar. Eu tambem. Agora vamos lutar pelo amanha que conquistamos!",
+      "CYNTHIA: When Arceus opened the door, you could have chosen a world where you never lose. You chose to continue. So did I. Let us battle for the tomorrow we earned!",
+      "CAMPEAO DE SINNOH! Os lagos brilham. Dialga, Palkia e Giratina esperam quem rompeu a corrente. Depois de encontra-los, o Hall of Origin se abrira. Looker encontra Cyrus vivo, ajudando a reconstruir a biblioteca. O futuro continua livre.",
+      "SINNOH CHAMPION! The lakes shine. Dialga, Palkia and Giratina await the one who broke the chain. Meet them to open the Hall of Origin. Looker finds Cyrus alive, rebuilding the library. The future remains free."
+    ]
+  ],
+  "trainer_flags": [
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    84,
+    85,
+    104,
+    113,
+    233,
+    1176,
+    1187,
+    1188,
+    1189,
+    1190,
+    1191,
+    1192,
+    426,
+    427,
+    474,
+    478,
+    479,
+    480,
+    481,
+    482,
+    483,
+    693,
+    694,
+    695,
+    696,
+    697,
+    698,
+    699,
+    729,
+    1128,
+    1136,
+    1138,
+    1145,
+    1171,
+    1172,
+    1173,
+    1174,
+    1175
+  ],
+  "trainer_ids": {
+    "MARS": 878,
+    "GARDENIA": 879,
+    "JUPITER": 880,
+    "FANTINA": 881,
+    "MAYLENE": 882,
+    "SATURN_VALOR": 883,
+    "WAKE": 884,
+    "BYRON": 885,
+    "SATURN_ACUITY": 886,
+    "CANDICE": 887,
+    "CYRUS": 888,
+    "CYRUS_FINAL": 889,
+    "VOLKNER": 890,
+    "AARON": 891,
+    "BERTHA": 892,
+    "FLINT": 893,
+    "LUCIAN": 894,
+    "CYNTHIA": 895
+  },
+  "portals": [
+    [
+      "HearthomeCity",
+      "HearthomeCity_PokemonCenter",
+      0
+    ],
+    [
+      "HearthomeCity",
+      "HearthomeCity_Mart",
+      0
+    ],
+    [
+      "HearthomeCity",
+      "HearthomeCity_House",
+      0
+    ],
+    [
+      "SolaceonTown",
+      "SolaceonTown_PokemonCenter",
+      0
+    ],
+    [
+      "SolaceonTown",
+      "SolaceonTown_Mart",
+      0
+    ],
+    [
+      "SolaceonTown",
+      "SolaceonTown_House",
+      0
+    ],
+    [
+      "VeilstoneCity",
+      "VeilstoneCity_PokemonCenter",
+      0
+    ],
+    [
+      "VeilstoneCity",
+      "VeilstoneCity_Mart",
+      0
+    ],
+    [
+      "VeilstoneCity",
+      "VeilstoneCity_House",
+      0
+    ],
+    [
+      "PastoriaCity",
+      "PastoriaCity_PokemonCenter",
+      0
+    ],
+    [
+      "PastoriaCity",
+      "PastoriaCity_Mart",
+      0
+    ],
+    [
+      "PastoriaCity",
+      "PastoriaCity_House",
+      0
+    ],
+    [
+      "CelesticTown",
+      "CelesticTown_PokemonCenter",
+      0
+    ],
+    [
+      "CelesticTown",
+      "CelesticTown_Mart",
+      0
+    ],
+    [
+      "CelesticTown",
+      "CelesticTown_House",
+      0
+    ],
+    [
+      "CanalaveCity",
+      "CanalaveCity_PokemonCenter",
+      0
+    ],
+    [
+      "CanalaveCity",
+      "CanalaveCity_Mart",
+      0
+    ],
+    [
+      "CanalaveCity",
+      "CanalaveCity_House",
+      0
+    ],
+    [
+      "SnowpointCity",
+      "SnowpointCity_PokemonCenter",
+      0
+    ],
+    [
+      "SnowpointCity",
+      "SnowpointCity_Mart",
+      0
+    ],
+    [
+      "SnowpointCity",
+      "SnowpointCity_House",
+      0
+    ],
+    [
+      "SunyshoreCity",
+      "SunyshoreCity_PokemonCenter",
+      0
+    ],
+    [
+      "SunyshoreCity",
+      "SunyshoreCity_Mart",
+      0
+    ],
+    [
+      "SunyshoreCity",
+      "SunyshoreCity_House",
+      0
+    ],
+    [
+      "FightArea",
+      "FightArea_PokemonCenter",
+      0
+    ],
+    [
+      "FightArea",
+      "FightArea_Mart",
+      0
+    ],
+    [
+      "FightArea",
+      "FightArea_House",
+      0
+    ],
+    [
+      "ResortArea",
+      "ResortArea_PokemonCenter",
+      0
+    ],
+    [
+      "ResortArea",
+      "ResortArea_Mart",
+      0
+    ],
+    [
+      "ResortArea",
+      "ResortArea_House",
+      0
+    ],
+    [
+      "SurvivalArea",
+      "SurvivalArea_PokemonCenter",
+      0
+    ],
+    [
+      "SurvivalArea",
+      "SurvivalArea_Mart",
+      0
+    ],
+    [
+      "SurvivalArea",
+      "SurvivalArea_House",
+      0
+    ],
+    [
+      "HearthomeCity",
+      "HearthomeCity_Gym",
+      0
+    ],
+    [
+      "VeilstoneCity",
+      "VeilstoneCity_Gym",
+      0
+    ],
+    [
+      "PastoriaCity",
+      "PastoriaCity_Gym",
+      0
+    ],
+    [
+      "CanalaveCity",
+      "CanalaveCity_Gym",
+      0
+    ],
+    [
+      "SnowpointCity",
+      "SnowpointCity_Gym",
+      0
+    ],
+    [
+      "SunyshoreCity",
+      "SunyshoreCity_Gym",
+      0
+    ],
+    [
+      "CanalaveCity",
+      "CanalaveLibrary",
+      16
+    ],
+    [
+      "VeilstoneCity",
+      "VeilstoneHQ",
+      19
+    ],
+    [
+      "Route207",
+      "MtCoronetSummit",
+      20
+    ],
+    [
+      "MtCoronetSummit",
+      "SpearPillar",
+      20
+    ],
+    [
+      "SpearPillar",
+      "DistortionWorld",
+      21
+    ],
+    [
+      "SpearPillar",
+      "HallOfOrigin",
+      29
+    ],
+    [
+      "Route214",
+      "TurnbackCave",
+      29
+    ],
+    [
+      "SnowpointCity",
+      "SnowpointTemple",
+      29
+    ],
+    [
+      "Route217",
+      "LakeAcuity",
+      17
+    ],
+    [
+      "SunyshoreCity",
+      "VictoryRoad",
+      24
+    ],
+    [
+      "VictoryRoad",
+      "LeagueAaron",
+      24
+    ],
+    [
+      "LeagueAaron",
+      "LeagueBertha",
+      25
+    ],
+    [
+      "LeagueBertha",
+      "LeagueFlint",
+      26
+    ],
+    [
+      "LeagueFlint",
+      "LeagueLucian",
+      27
+    ],
+    [
+      "LeagueLucian",
+      "LeagueCynthia",
+      28
+    ],
+    [
+      "SnowpointCity",
+      "FightArea",
+      29
+    ],
+    [
+      "OreburghCity_Flat3_F1",
+      "OreburghCity_Flat3_F2",
+      0
+    ],
+    [
+      "Route225",
+      "Route225_Access",
+      0
+    ],
+    [
+      "Route226",
+      "Route226_Access",
+      0
+    ]
+  ],
+  "legends": [
+    [
+      "Dialga",
+      70,
+      "SpearPillar"
+    ],
+    [
+      "Palkia",
+      70,
+      "SpearPillar"
+    ],
+    [
+      "Giratina",
+      70,
+      "DistortionWorld"
+    ],
+    [
+      "Arceus",
+      80,
+      "HallOfOrigin"
+    ],
+    [
+      "Uxie",
+      50,
+      "LakeAcuity"
+    ],
+    [
+      "Mesprit",
+      50,
+      "LakeVerity"
+    ],
+    [
+      "Azelf",
+      50,
+      "LakeValor"
+    ],
+    [
+      "Regigigas",
+      70,
+      "SnowpointTemple"
+    ],
+    [
+      "Heatran",
+      70,
+      "Route227"
+    ],
+    [
+      "Cresselia",
+      60,
+      "TurnbackCave"
+    ]
+  ],
+  "goals": {
+    "7": "Valley Windworks",
+    "8": "Eterna Gym",
+    "9": "Eterna Galactic HQ 3F",
+    "10": "Hearthome Gym",
+    "11": "Veilstone Gym",
+    "12": "Lake Valor",
+    "13": "Pastoria Gym",
+    "14": "Cynthia - Celestic Town",
+    "15": "Canalave Gym",
+    "16": "Rowan - Canalave Library",
+    "17": "Lake Acuity",
+    "18": "Snowpoint Gym",
+    "19": "Veilstone Galactic HQ",
+    "20": "Mt. Coronet - Spear Pillar",
+    "21": "Cyrus - Distortion World",
+    "22": "Arceus - Distortion World",
+    "23": "Sunyshore Gym",
+    "24": "Aaron - Sinnoh League",
+    "25": "Bertha - Sinnoh League",
+    "26": "Flint - Sinnoh League",
+    "27": "Lucian - Sinnoh League",
+    "28": "Cynthia - Sinnoh League",
+    "29": "Lendarios / Legendary encounters"
+  },
+  "portraits": {
+    "mars": "TRAINER_PIC_SI_MARS_DP",
+    "gardenia": "TRAINER_PIC_SI_GARDENIA_DP",
+    "jupiter": "TRAINER_PIC_SI_JUPITER_DP",
+    "fantina": "TRAINER_PIC_SI_FANTINA_DP",
+    "maylene": "TRAINER_PIC_SI_MAYLENE_DP",
+    "saturn": "TRAINER_PIC_SI_SATURN_DP",
+    "crasher_wake": "TRAINER_PIC_SI_CRASHER_WAKE_DP",
+    "byron": "TRAINER_PIC_SI_BYRON_DP",
+    "candice": "TRAINER_PIC_SI_CANDICE_DP",
+    "cyrus": "TRAINER_PIC_SI_CYRUS_DP",
+    "volkner": "TRAINER_PIC_SI_VOLKNER_DP",
+    "aaron": "TRAINER_PIC_SI_AARON_DP",
+    "bertha": "TRAINER_PIC_SI_BERTHA_DP",
+    "flint": "TRAINER_PIC_SI_FLINT_DP",
+    "lucian": "TRAINER_PIC_SI_LUCIAN_DP",
+    "cynthia": "TRAINER_PIC_SI_CYNTHIA_DP"
+  },
+  "route_trainers": [
+    "Route204",
+    "Route205_North",
+    "Route205_South",
+    "Route206",
+    "Route207",
+    "Route208",
+    "Route209",
+    "Route210_North",
+    "Route210_South",
+    "Route211_East",
+    "Route211_West",
+    "Route212_North",
+    "Route212_South",
+    "Route213",
+    "Route214",
+    "Route215",
+    "Route216",
+    "Route217",
+    "Route218",
+    "Route219",
+    "Route220",
+    "Route221",
+    "Route222",
+    "Route223",
+    "Route224",
+    "Route225",
+    "Route226",
+    "Route227",
+    "Route228",
+    "Route229",
+    "Route230",
+    "Route206_North"
+  ],
+  "capture_flags": {
+    "Dialga": 1177,
+    "Palkia": 1178,
+    "Giratina": 1179,
+    "Arceus": 1180,
+    "Uxie": 1181,
+    "Mesprit": 1182,
+    "Azelf": 1183,
+    "Regigigas": 1184,
+    "Heatran": 1185,
+    "Cresselia": 1186
+  }
+}

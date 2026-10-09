@@ -1,0 +1,97 @@
+{
+  "id": "MAP_ROUTE206",
+  "name": "Route206",
+  "layout": "LAYOUT_SI_ROUTE206",
+  "music": "MUS_RG_ROUTE11",
+  "region_map_section": "MAPSEC_SINNOH_ROUTES",
+  "requires_flash": false,
+  "weather": "WEATHER_SUNNY",
+  "map_type": "MAP_TYPE_ROUTE",
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "map": "MAP_ETERNA_CITY",
+      "offset": -1,
+      "direction": "up"
+    },
+    {
+      "map": "MAP_ROUTE207",
+      "offset": -2,
+      "direction": "down"
+    }
+  ],
+  "object_events": [
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SI_YOUNGSTER",
+      "x": 18,
+      "y": 30,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "2",
+      "script": "SI_W_Trainer_18",
+      "flag": "0",
+      "local_id": "LOCALID_SI_ROUTE206_1"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SI_YOUNGSTER",
+      "x": 18,
+      "y": 60,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "2",
+      "script": "SI_W_Trainer_66",
+      "flag": "0",
+      "local_id": "LOCALID_SI_W_ROUTE206_2"
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 14,
+      "y": 5,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE206_NORTH",
+      "dest_warp_id": "1"
+    },
+    {
+      "x": 12,
+      "y": 96,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE206_SOUTH",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 13,
+      "y": 96,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE206_SOUTH",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 12,
+      "y": 102,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE206_SOUTH",
+      "dest_warp_id": "1"
+    },
+    {
+      "x": 13,
+      "y": 102,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE206_SOUTH",
+      "dest_warp_id": "1"
+    }
+  ],
+  "coord_events": [],
+  "bg_events": [],
+  "region": "REGION_SINNOH"
+}

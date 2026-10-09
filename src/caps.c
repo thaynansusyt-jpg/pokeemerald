@@ -1,4 +1,7 @@
 #include "global.h"
+#include "sinnoh_chapter.h"
+#include "unova_chapter.h"
+#include "constants/vars.h"
 #include "battle.h"
 #include "event_data.h"
 #include "caps.h"
@@ -24,6 +27,24 @@ u32 GetCurrentLevelCap(void)
 
     if (HeExpCapType() == EXP_CAP_NONE)
         return MAX_LEVEL;
+
+    if(UnIsSeason())
+    {
+        static const u8 unCaps[]={14,20,23,30};
+        u32 badges=VarGet(VAR_UN_BADGES), difficulty=VarGet(VAR_HE_DIFFICULTY);
+        u32 cap=unCaps[badges<4?badges:3];
+        return difficulty==0?cap-2:difficulty==2?cap+2:cap;
+    }
+
+    if (SiIsSeason())
+    {
+        static const u8 caps[] = {16, 23, 28, 31, 35, 40, 45, 52, 63};
+        u32 badges = VarGet(VAR_SI_BADGES);
+        u32 difficulty = VarGet(VAR_HE_DIFFICULTY);
+        u32 base = caps[badges < 9 ? badges : 8];
+        if (VarGet(VAR_SI_STAGE) >= 29) return MAX_LEVEL;
+        return difficulty == 0 ? base - 2 : difficulty == 2 ? base + 2 : base;
+    }
 
     if (B_LEVEL_CAP_TYPE == LEVEL_CAP_FLAG_LIST)
     {

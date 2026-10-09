@@ -1,0 +1,76 @@
+{
+  "id": "MAP_ROUTE212_NORTH",
+  "name": "Route212_North",
+  "layout": "LAYOUT_SI_ROUTE212_NORTH",
+  "music": "MUS_RG_ROUTE3",
+  "region_map_section": "MAPSEC_SINNOH_ROUTES",
+  "requires_flash": false,
+  "weather": "WEATHER_SUNNY",
+  "map_type": "MAP_TYPE_ROUTE",
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "map": "MAP_ROUTE212_SOUTH",
+      "offset": 0,
+      "direction": "down"
+    },
+    {
+      "map": "MAP_HEARTHOME_CITY",
+      "offset": 4,
+      "direction": "up"
+    }
+  ],
+  "object_events": [
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SI_YOUNGSTER",
+      "x": 10,
+      "y": 4,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "2",
+      "script": "SI_W_Trainer_27",
+      "flag": "0",
+      "local_id": "LOCALID_SI_ROUTE212_NORTH_1"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SI_AROMA_LADY",
+      "x": 11,
+      "y": 50,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "2",
+      "script": "SI_W_Trainer_77",
+      "flag": "0",
+      "local_id": "LOCALID_SI_W_ROUTE212_NORTH_2"
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 12,
+      "y": 3,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE212_ACCESS",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 13,
+      "y": 3,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE212_ACCESS",
+      "dest_warp_id": "0"
+    }
+  ],
+  "coord_events": [],
+  "bg_events": [],
+  "region": "REGION_SINNOH"
+}

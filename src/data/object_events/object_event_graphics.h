@@ -638,3 +638,251 @@ const u32 gHeTransmitterGfx[] = INCBIN_U32("graphics/hoenn_expansion/transmitter
 const u32 gHeOfficerGfx[] = INCGFX_U32("graphics/object_events/pics/people/he_officer.png", ".4bpp", "-mwidth 2 -mheight 4");
 
 const u16 gHeRocketPal[] = INCGFX_U16("graphics/object_events/pics/people/rocket_m.png", ".gbapal");
+
+const u16 gObjectEventPal_RoarkPt[] = INCGFX_U16("graphics/object_events/palettes/roark_pt.pal", ".gbapal");
+const u32 gObjectEventPic_RoarkPt[] = INCGFX_U32("graphics/object_events/pics/people/roark_pt.png", ".4bpp", "-mwidth 4 -mheight 4");
+
+const u16 gObjectEventPal_RowanPt[] = INCGFX_U16("graphics/object_events/palettes/rowan_pt.pal", ".gbapal");
+const u32 gObjectEventPic_RowanPt[] = INCGFX_U32("graphics/object_events/pics/people/rowan_pt.png", ".4bpp", "-mwidth 4 -mheight 4");
+
+const u16 gObjectEventPal_BarryPt[] = INCGFX_U16("graphics/object_events/palettes/barry_pt.pal", ".gbapal");
+const u32 gObjectEventPic_BarryPt[] = INCGFX_U32("graphics/object_events/pics/people/barry_pt.png", ".4bpp", "-mwidth 4 -mheight 4");
+
+const u16 gObjectEventPal_GalacticGruntMPt[] = INCGFX_U16("graphics/object_events/palettes/galactic_grunt_m_pt.pal", ".gbapal");
+const u32 gObjectEventPic_GalacticGruntMPt[] = INCGFX_U32("graphics/object_events/pics/people/galactic_grunt_m_pt.png", ".4bpp", "-mwidth 4 -mheight 4");
+
+const u16 gObjectEventPal_GalacticGruntFPt[] = INCGFX_U16("graphics/object_events/palettes/galactic_grunt_f_pt.pal", ".gbapal");
+const u32 gObjectEventPic_GalacticGruntFPt[] = INCGFX_U32("graphics/object_events/pics/people/galactic_grunt_f_pt.png", ".4bpp", "-mwidth 4 -mheight 4");
+
+const u32 gObjectEventPic_LucasNormalRunning[] = INCBIN_U32("graphics/object_events/pics/people/lucas/walking.4bpp", "graphics/object_events/pics/people/lucas/running.4bpp");
+const u32 gObjectEventPic_LucasFieldMove[] = INCGFX_U32("graphics/object_events/pics/people/lucas/field_move.png", ".4bpp", "-mwidth 4 -mheight 4");
+const u16 gObjectEventPal_Lucas[] = INCGFX_U16("graphics/object_events/palettes/lucas.pal", ".gbapal");
+
+const u32 gObjectEventPic_DawnNormalRunning[] = INCBIN_U32("graphics/object_events/pics/people/dawn/walking.4bpp", "graphics/object_events/pics/people/dawn/running.4bpp");
+const u32 gObjectEventPic_DawnFieldMove[] = INCGFX_U32("graphics/object_events/pics/people/dawn/field_move.png", ".4bpp", "-mwidth 4 -mheight 4");
+const u16 gObjectEventPal_Dawn[] = INCGFX_U16("graphics/object_events/palettes/dawn.pal", ".gbapal");
+
+const u16 gObjectEventPic_SiYoungster[] = INCGFX_U16("graphics/object_events/pics/people/youngster_pt.png", ".4bpp", "-mwidth 4 -mheight 4");
+const u16 gObjectEventPal_SiYoungster[] = INCGFX_U16("graphics/object_events/palettes/youngster_pt.pal", ".gbapal");
+
+const u16 gObjectEventPic_SiLass[] = INCGFX_U16("graphics/object_events/pics/people/lass_pt.png", ".4bpp", "-mwidth 4 -mheight 4");
+const u16 gObjectEventPal_SiLass[] = INCGFX_U16("graphics/object_events/palettes/lass_pt.pal", ".gbapal");
+
+const u16 gObjectEventPic_SiMan[] = INCGFX_U16("graphics/object_events/pics/people/man_pt.png", ".4bpp", "-mwidth 4 -mheight 4");
+const u16 gObjectEventPal_SiMan[] = INCGFX_U16("graphics/object_events/palettes/man_pt.pal", ".gbapal");
+
+const u16 gObjectEventPic_SiWoman[] = INCGFX_U16("graphics/object_events/pics/people/woman_pt.png", ".4bpp", "-mwidth 4 -mheight 4");
+const u16 gObjectEventPal_SiWoman[] = INCGFX_U16("graphics/object_events/palettes/woman_pt.pal", ".gbapal");
+
+const u16 gObjectEventPic_SiOldMan[] = INCGFX_U16("graphics/object_events/pics/people/old_man_pt.png", ".4bpp", "-mwidth 4 -mheight 4");
+const u16 gObjectEventPal_SiOldMan[] = INCGFX_U16("graphics/object_events/palettes/old_man_pt.pal", ".gbapal");
+
+const u16 gObjectEventPic_SiOldWoman[] = INCGFX_U16("graphics/object_events/pics/people/old_woman_pt.png", ".4bpp", "-mwidth 4 -mheight 4");
+const u16 gObjectEventPal_SiOldWoman[] = INCGFX_U16("graphics/object_events/palettes/old_woman_pt.pal", ".gbapal");
+
+const u16 gObjectEventPic_SiJohanna[] = INCGFX_U16("graphics/object_events/pics/people/johanna_pt.png", ".4bpp", "-mwidth 4 -mheight 4");
+const u16 gObjectEventPal_SiJohanna[] = INCGFX_U16("graphics/object_events/palettes/johanna_pt.pal", ".gbapal");
+
+const u16 gObjectEventPic_SiLooker[] = INCGFX_U16("graphics/object_events/pics/people/looker_pt.png", ".4bpp", "-mwidth 4 -mheight 4");
+const u16 gObjectEventPal_SiLooker[] = INCGFX_U16("graphics/object_events/palettes/looker_pt.pal", ".gbapal");
+
+const u16 gObjectEventPic_SiGardenia[] = INCGFX_U16("graphics/object_events/pics/people/gardenia_pt.png", ".4bpp", "-mwidth 4 -mheight 4");
+const u16 gObjectEventPal_SiGardenia[] = INCGFX_U16("graphics/object_events/palettes/gardenia_pt.pal", ".gbapal");
+
+const u16 gObjectEventPic_SiFantina[] = INCGFX_U16("graphics/object_events/pics/people/fantina_pt.png", ".4bpp", "-mwidth 4 -mheight 4");
+const u16 gObjectEventPal_SiFantina[] = INCGFX_U16("graphics/object_events/palettes/fantina_pt.pal", ".gbapal");
+
+const u16 gObjectEventPic_SiMaylene[] = INCGFX_U16("graphics/object_events/pics/people/maylene_pt.png", ".4bpp", "-mwidth 4 -mheight 4");
+const u16 gObjectEventPal_SiMaylene[] = INCGFX_U16("graphics/object_events/palettes/maylene_pt.pal", ".gbapal");
+
+const u16 gObjectEventPic_SiCrasherWake[] = INCGFX_U16("graphics/object_events/pics/people/crasher_wake_pt.png", ".4bpp", "-mwidth 4 -mheight 4");
+const u16 gObjectEventPal_SiCrasherWake[] = INCGFX_U16("graphics/object_events/palettes/crasher_wake_pt.pal", ".gbapal");
+
+const u16 gObjectEventPic_SiByron[] = INCGFX_U16("graphics/object_events/pics/people/byron_pt.png", ".4bpp", "-mwidth 4 -mheight 4");
+const u16 gObjectEventPal_SiByron[] = INCGFX_U16("graphics/object_events/palettes/byron_pt.pal", ".gbapal");
+
+const u16 gObjectEventPic_SiCandice[] = INCGFX_U16("graphics/object_events/pics/people/candice_pt.png", ".4bpp", "-mwidth 4 -mheight 4");
+const u16 gObjectEventPal_SiCandice[] = INCGFX_U16("graphics/object_events/palettes/candice_pt.pal", ".gbapal");
+
+const u16 gObjectEventPic_SiVolkner[] = INCGFX_U16("graphics/object_events/pics/people/volkner_pt.png", ".4bpp", "-mwidth 4 -mheight 4");
+const u16 gObjectEventPal_SiVolkner[] = INCGFX_U16("graphics/object_events/palettes/volkner_pt.pal", ".gbapal");
+
+const u16 gObjectEventPic_SiCyrus[] = INCGFX_U16("graphics/object_events/pics/people/cyrus_pt.png", ".4bpp", "-mwidth 4 -mheight 4");
+const u16 gObjectEventPal_SiCyrus[] = INCGFX_U16("graphics/object_events/palettes/cyrus_pt.pal", ".gbapal");
+
+const u16 gObjectEventPic_SiCynthia[] = INCGFX_U16("graphics/object_events/pics/people/cynthia_pt.png", ".4bpp", "-mwidth 4 -mheight 4");
+const u16 gObjectEventPal_SiCynthia[] = INCGFX_U16("graphics/object_events/palettes/cynthia_pt.pal", ".gbapal");
+
+const u16 gObjectEventPic_SiAaron[] = INCGFX_U16("graphics/object_events/pics/people/aaron_pt.png", ".4bpp", "-mwidth 4 -mheight 4");
+const u16 gObjectEventPal_SiAaron[] = INCGFX_U16("graphics/object_events/palettes/aaron_pt.pal", ".gbapal");
+
+const u16 gObjectEventPic_SiBertha[] = INCGFX_U16("graphics/object_events/pics/people/bertha_pt.png", ".4bpp", "-mwidth 4 -mheight 4");
+const u16 gObjectEventPal_SiBertha[] = INCGFX_U16("graphics/object_events/palettes/bertha_pt.pal", ".gbapal");
+
+const u16 gObjectEventPic_SiFlint[] = INCGFX_U16("graphics/object_events/pics/people/flint_pt.png", ".4bpp", "-mwidth 4 -mheight 4");
+const u16 gObjectEventPal_SiFlint[] = INCGFX_U16("graphics/object_events/palettes/flint_pt.pal", ".gbapal");
+
+const u16 gObjectEventPic_SiLucian[] = INCGFX_U16("graphics/object_events/pics/people/lucian_pt.png", ".4bpp", "-mwidth 4 -mheight 4");
+const u16 gObjectEventPal_SiLucian[] = INCGFX_U16("graphics/object_events/palettes/lucian_pt.pal", ".gbapal");
+
+const u16 gObjectEventPic_SiMars[] = INCGFX_U16("graphics/object_events/pics/people/mars_pt.png", ".4bpp", "-mwidth 4 -mheight 4");
+const u16 gObjectEventPal_SiMars[] = INCGFX_U16("graphics/object_events/palettes/mars_pt.pal", ".gbapal");
+
+const u16 gObjectEventPic_SiJupiter[] = INCGFX_U16("graphics/object_events/pics/people/jupiter_pt.png", ".4bpp", "-mwidth 4 -mheight 4");
+const u16 gObjectEventPal_SiJupiter[] = INCGFX_U16("graphics/object_events/palettes/jupiter_pt.pal", ".gbapal");
+
+const u16 gObjectEventPic_SiSaturn[] = INCGFX_U16("graphics/object_events/pics/people/saturn_pt.png", ".4bpp", "-mwidth 4 -mheight 4");
+const u16 gObjectEventPal_SiSaturn[] = INCGFX_U16("graphics/object_events/palettes/saturn_pt.pal", ".gbapal");
+
+const u16 gObjectEventPic_SiWorker[] = INCGFX_U16("graphics/object_events/pics/people/worker_pt.png", ".4bpp", "-mwidth 4 -mheight 4");
+const u16 gObjectEventPal_SiWorker[] = INCGFX_U16("graphics/object_events/palettes/worker_pt.pal", ".gbapal");
+
+const u16 gObjectEventPic_SiFisherman[] = INCGFX_U16("graphics/object_events/pics/people/fisherman_pt.png", ".4bpp", "-mwidth 4 -mheight 4");
+const u16 gObjectEventPal_SiFisherman[] = INCGFX_U16("graphics/object_events/palettes/fisherman_pt.pal", ".gbapal");
+
+const u16 gObjectEventPic_SiHiker[] = INCGFX_U16("graphics/object_events/pics/people/hiker_pt.png", ".4bpp", "-mwidth 4 -mheight 4");
+const u16 gObjectEventPal_SiHiker[] = INCGFX_U16("graphics/object_events/palettes/hiker_pt.pal", ".gbapal");
+
+const u16 gObjectEventPic_SiScientistM[] = INCGFX_U16("graphics/object_events/pics/people/scientist_m_pt.png", ".4bpp", "-mwidth 4 -mheight 4");
+const u16 gObjectEventPal_SiScientistM[] = INCGFX_U16("graphics/object_events/palettes/scientist_m_pt.pal", ".gbapal");
+
+const u16 gObjectEventPic_SiScientistF[] = INCGFX_U16("graphics/object_events/pics/people/scientist_f_pt.png", ".4bpp", "-mwidth 4 -mheight 4");
+const u16 gObjectEventPal_SiScientistF[] = INCGFX_U16("graphics/object_events/palettes/scientist_f_pt.pal", ".gbapal");
+
+const u16 gObjectEventPic_SiNurseJoy[] = INCGFX_U16("graphics/object_events/pics/people/nurse_joy_pt.png", ".4bpp", "-mwidth 4 -mheight 4");
+const u16 gObjectEventPal_SiNurseJoy[] = INCGFX_U16("graphics/object_events/palettes/nurse_joy_pt.pal", ".gbapal");
+
+const u16 gObjectEventPic_SiCashierM[] = INCGFX_U16("graphics/object_events/pics/people/cashier_m_pt.png", ".4bpp", "-mwidth 4 -mheight 4");
+const u16 gObjectEventPal_SiCashierM[] = INCGFX_U16("graphics/object_events/palettes/cashier_m_pt.pal", ".gbapal");
+
+const u16 gObjectEventPic_SiCashierF[] = INCGFX_U16("graphics/object_events/pics/people/cashier_f_pt.png", ".4bpp", "-mwidth 4 -mheight 4");
+const u16 gObjectEventPal_SiCashierF[] = INCGFX_U16("graphics/object_events/palettes/cashier_f_pt.pal", ".gbapal");
+
+const u16 gObjectEventPic_SiPoliceman[] = INCGFX_U16("graphics/object_events/pics/people/policeman_pt.png", ".4bpp", "-mwidth 4 -mheight 4");
+const u16 gObjectEventPal_SiPoliceman[] = INCGFX_U16("graphics/object_events/palettes/policeman_pt.pal", ".gbapal");
+
+const u16 gObjectEventPic_SiSailor[] = INCGFX_U16("graphics/object_events/pics/people/sailor_pt.png", ".4bpp", "-mwidth 4 -mheight 4");
+const u16 gObjectEventPal_SiSailor[] = INCGFX_U16("graphics/object_events/palettes/sailor_pt.pal", ".gbapal");
+
+const u16 gObjectEventPic_SiGuitarist[] = INCGFX_U16("graphics/object_events/pics/people/guitarist_pt.png", ".4bpp", "-mwidth 4 -mheight 4");
+const u16 gObjectEventPal_SiGuitarist[] = INCGFX_U16("graphics/object_events/palettes/guitarist_pt.pal", ".gbapal");
+
+const u16 gObjectEventPic_SiClown[] = INCGFX_U16("graphics/object_events/pics/people/clown_pt.png", ".4bpp", "-mwidth 4 -mheight 4");
+const u16 gObjectEventPal_SiClown[] = INCGFX_U16("graphics/object_events/palettes/clown_pt.pal", ".gbapal");
+
+const u16 gObjectEventPic_SiSchoolKidM[] = INCGFX_U16("graphics/object_events/pics/people/school_kid_m_pt.png", ".4bpp", "-mwidth 4 -mheight 4");
+const u16 gObjectEventPal_SiSchoolKidM[] = INCGFX_U16("graphics/object_events/palettes/school_kid_m_pt.pal", ".gbapal");
+
+const u16 gObjectEventPic_SiSchoolKidF[] = INCGFX_U16("graphics/object_events/pics/people/school_kid_f_pt.png", ".4bpp", "-mwidth 4 -mheight 4");
+const u16 gObjectEventPal_SiSchoolKidF[] = INCGFX_U16("graphics/object_events/palettes/school_kid_f_pt.pal", ".gbapal");
+
+const u16 gObjectEventPic_SiAromaLady[] = INCGFX_U16("graphics/object_events/pics/people/aroma_lady_pt.png", ".4bpp", "-mwidth 4 -mheight 4");
+const u16 gObjectEventPal_SiAromaLady[] = INCGFX_U16("graphics/object_events/palettes/aroma_lady_pt.pal", ".gbapal");
+
+const u16 gObjectEventPic_SiAceTrainerM[] = INCGFX_U16("graphics/object_events/pics/people/ace_trainer_m_pt.png", ".4bpp", "-mwidth 4 -mheight 4");
+const u16 gObjectEventPal_SiAceTrainerM[] = INCGFX_U16("graphics/object_events/palettes/ace_trainer_m_pt.pal", ".gbapal");
+
+const u16 gObjectEventPic_SiAceTrainerF[] = INCGFX_U16("graphics/object_events/pics/people/ace_trainer_f_pt.png", ".4bpp", "-mwidth 4 -mheight 4");
+const u16 gObjectEventPal_SiAceTrainerF[] = INCGFX_U16("graphics/object_events/palettes/ace_trainer_f_pt.pal", ".gbapal");
+
+const u16 gObjectEventPic_SiBreeder[] = INCGFX_U16("graphics/object_events/pics/people/breeder_pt.png", ".4bpp", "-mwidth 4 -mheight 4");
+const u16 gObjectEventPal_SiBreeder[] = INCGFX_U16("graphics/object_events/palettes/breeder_pt.pal", ".gbapal");
+
+const u16 gObjectEventPic_SiCheryl[] = INCGFX_U16("graphics/object_events/pics/people/cheryl_pt.png", ".4bpp", "-mwidth 4 -mheight 4");
+const u16 gObjectEventPal_SiCheryl[] = INCGFX_U16("graphics/object_events/palettes/cheryl_pt.pal", ".gbapal");
+
+const u16 gObjectEventPic_SiRiley[] = INCGFX_U16("graphics/object_events/pics/people/riley_pt.png", ".4bpp", "-mwidth 4 -mheight 4");
+const u16 gObjectEventPal_SiRiley[] = INCGFX_U16("graphics/object_events/palettes/riley_pt.pal", ".gbapal");
+
+const u16 gObjectEventPic_SiRancher[] = INCGFX_U16("graphics/object_events/pics/people/rancher_pt.png", ".4bpp", "-mwidth 4 -mheight 4");
+const u16 gObjectEventPal_SiRancher[] = INCGFX_U16("graphics/object_events/palettes/rancher_pt.pal", ".gbapal");
+
+const u16 gObjectEventPic_SiCowgirl[] = INCGFX_U16("graphics/object_events/pics/people/cowgirl_pt.png", ".4bpp", "-mwidth 4 -mheight 4");
+const u16 gObjectEventPal_SiCowgirl[] = INCGFX_U16("graphics/object_events/palettes/cowgirl_pt.pal", ".gbapal");
+
+const u16 gObjectEventPic_SiGentleman[] = INCGFX_U16("graphics/object_events/pics/people/gentleman_pt.png", ".4bpp", "-mwidth 4 -mheight 4");
+const u16 gObjectEventPal_SiGentleman[] = INCGFX_U16("graphics/object_events/palettes/gentleman_pt.pal", ".gbapal");
+
+const u16 gObjectEventPic_SiSkierM[] = INCGFX_U16("graphics/object_events/pics/people/skier_m_pt.png", ".4bpp", "-mwidth 4 -mheight 4");
+const u16 gObjectEventPal_SiSkierM[] = INCGFX_U16("graphics/object_events/palettes/skier_m_pt.pal", ".gbapal");
+
+const u16 gObjectEventPic_UnHilbert[] = INCGFX_U16("graphics/object_events/pics/people/unova/hilbert.png", ".4bpp", "-mwidth 4 -mheight 4");
+const u16 gObjectEventPal_UnHilbert[] = INCGFX_U16("graphics/object_events/pics/people/unova/hilbert.pal", ".gbapal");
+
+const u16 gObjectEventPic_UnHilda[] = INCGFX_U16("graphics/object_events/pics/people/unova/hilda.png", ".4bpp", "-mwidth 4 -mheight 4");
+const u16 gObjectEventPal_UnHilda[] = INCGFX_U16("graphics/object_events/pics/people/unova/hilda.pal", ".gbapal");
+
+const u16 gObjectEventPic_UnBianca[] = INCGFX_U16("graphics/object_events/pics/people/unova/bianca.png", ".4bpp", "-mwidth 4 -mheight 4");
+const u16 gObjectEventPal_UnBianca[] = INCGFX_U16("graphics/object_events/pics/people/unova/bianca.pal", ".gbapal");
+
+const u16 gObjectEventPic_UnCheren[] = INCGFX_U16("graphics/object_events/pics/people/unova/cheren.png", ".4bpp", "-mwidth 4 -mheight 4");
+const u16 gObjectEventPal_UnCheren[] = INCGFX_U16("graphics/object_events/pics/people/unova/cheren.pal", ".gbapal");
+
+const u16 gObjectEventPic_UnJuniper[] = INCGFX_U16("graphics/object_events/pics/people/unova/juniper.png", ".4bpp", "-mwidth 4 -mheight 4");
+const u16 gObjectEventPal_UnJuniper[] = INCGFX_U16("graphics/object_events/pics/people/unova/juniper.pal", ".gbapal");
+
+const u16 gObjectEventPic_UnN[] = INCGFX_U16("graphics/object_events/pics/people/unova/n.png", ".4bpp", "-mwidth 4 -mheight 4");
+const u16 gObjectEventPal_UnN[] = INCGFX_U16("graphics/object_events/pics/people/unova/n.pal", ".gbapal");
+
+const u16 gObjectEventPic_UnCilan[] = INCGFX_U16("graphics/object_events/pics/people/unova/cilan.png", ".4bpp", "-mwidth 4 -mheight 4");
+const u16 gObjectEventPal_UnCilan[] = INCGFX_U16("graphics/object_events/pics/people/unova/cilan.pal", ".gbapal");
+
+const u16 gObjectEventPic_UnChili[] = INCGFX_U16("graphics/object_events/pics/people/unova/chili.png", ".4bpp", "-mwidth 4 -mheight 4");
+const u16 gObjectEventPal_UnChili[] = INCGFX_U16("graphics/object_events/pics/people/unova/chili.pal", ".gbapal");
+
+const u16 gObjectEventPic_UnCress[] = INCGFX_U16("graphics/object_events/pics/people/unova/cress.png", ".4bpp", "-mwidth 4 -mheight 4");
+const u16 gObjectEventPal_UnCress[] = INCGFX_U16("graphics/object_events/pics/people/unova/cress.pal", ".gbapal");
+
+const u16 gObjectEventPic_UnBurgh[] = INCGFX_U16("graphics/object_events/pics/people/unova/burgh.png", ".4bpp", "-mwidth 4 -mheight 4");
+const u16 gObjectEventPal_UnBurgh[] = INCGFX_U16("graphics/object_events/pics/people/unova/burgh.pal", ".gbapal");
+
+const u16 gObjectEventPic_UnFennel[] = INCGFX_U16("graphics/object_events/pics/people/unova/fennel.png", ".4bpp", "-mwidth 4 -mheight 4");
+const u16 gObjectEventPal_UnFennel[] = INCGFX_U16("graphics/object_events/pics/people/unova/fennel.pal", ".gbapal");
+
+const u16 gObjectEventPic_UnChildM[] = INCGFX_U16("graphics/object_events/pics/people/unova/childm.png", ".4bpp", "-mwidth 4 -mheight 4");
+const u16 gObjectEventPal_UnChildM[] = INCGFX_U16("graphics/object_events/pics/people/unova/childm.pal", ".gbapal");
+
+const u16 gObjectEventPic_UnChildF[] = INCGFX_U16("graphics/object_events/pics/people/unova/childf.png", ".4bpp", "-mwidth 4 -mheight 4");
+const u16 gObjectEventPal_UnChildF[] = INCGFX_U16("graphics/object_events/pics/people/unova/childf.pal", ".gbapal");
+
+const u16 gObjectEventPic_UnWorker[] = INCGFX_U16("graphics/object_events/pics/people/unova/worker.png", ".4bpp", "-mwidth 4 -mheight 4");
+const u16 gObjectEventPal_UnWorker[] = INCGFX_U16("graphics/object_events/pics/people/unova/worker.pal", ".gbapal");
+
+const u16 gObjectEventPic_UnScientist[] = INCGFX_U16("graphics/object_events/pics/people/unova/scientist.png", ".4bpp", "-mwidth 4 -mheight 4");
+const u16 gObjectEventPal_UnScientist[] = INCGFX_U16("graphics/object_events/pics/people/unova/scientist.pal", ".gbapal");
+
+const u16 gObjectEventPic_UnArtist[] = INCGFX_U16("graphics/object_events/pics/people/unova/artist.png", ".4bpp", "-mwidth 4 -mheight 4");
+const u16 gObjectEventPal_UnArtist[] = INCGFX_U16("graphics/object_events/pics/people/unova/artist.pal", ".gbapal");
+
+const u16 gObjectEventPic_UnSailor[] = INCGFX_U16("graphics/object_events/pics/people/unova/sailor.png", ".4bpp", "-mwidth 4 -mheight 4");
+const u16 gObjectEventPal_UnSailor[] = INCGFX_U16("graphics/object_events/pics/people/unova/sailor.pal", ".gbapal");
+
+const u16 gObjectEventPic_UnGentleman[] = INCGFX_U16("graphics/object_events/pics/people/unova/gentleman.png", ".4bpp", "-mwidth 4 -mheight 4");
+const u16 gObjectEventPal_UnGentleman[] = INCGFX_U16("graphics/object_events/pics/people/unova/gentleman.pal", ".gbapal");
+
+const u16 gObjectEventPic_UnLady[] = INCGFX_U16("graphics/object_events/pics/people/unova/lady.png", ".4bpp", "-mwidth 4 -mheight 4");
+const u16 gObjectEventPal_UnLady[] = INCGFX_U16("graphics/object_events/pics/people/unova/lady.pal", ".gbapal");
+
+const u16 gObjectEventPic_UnClerk[] = INCGFX_U16("graphics/object_events/pics/people/unova/clerk.png", ".4bpp", "-mwidth 4 -mheight 4");
+const u16 gObjectEventPal_UnClerk[] = INCGFX_U16("graphics/object_events/pics/people/unova/clerk.pal", ".gbapal");
+
+const u16 gObjectEventPic_UnMusician[] = INCGFX_U16("graphics/object_events/pics/people/unova/musician.png", ".4bpp", "-mwidth 4 -mheight 4");
+const u16 gObjectEventPal_UnMusician[] = INCGFX_U16("graphics/object_events/pics/people/unova/musician.pal", ".gbapal");
+
+const u16 gObjectEventPic_UnBackpacker[] = INCGFX_U16("graphics/object_events/pics/people/unova/backpacker.png", ".4bpp", "-mwidth 4 -mheight 4");
+const u16 gObjectEventPal_UnBackpacker[] = INCGFX_U16("graphics/object_events/pics/people/unova/backpacker.pal", ".gbapal");
+
+const u16 gObjectEventPic_UnNurse[] = INCGFX_U16("graphics/object_events/pics/people/unova/nurse.png", ".4bpp", "-mwidth 4 -mheight 4");
+const u16 gObjectEventPal_UnNurse[] = INCGFX_U16("graphics/object_events/pics/people/unova/nurse.pal", ".gbapal");
+
+const u16 gObjectEventPic_UnPlasmaM[] = INCGFX_U16("graphics/object_events/pics/people/unova/plasmam.png", ".4bpp", "-mwidth 4 -mheight 4");
+const u16 gObjectEventPal_UnPlasmaM[] = INCGFX_U16("graphics/object_events/pics/people/unova/plasmam.pal", ".gbapal");
+
+const u16 gObjectEventPic_UnPlasmaF[] = INCGFX_U16("graphics/object_events/pics/people/unova/plasmaf.png", ".4bpp", "-mwidth 4 -mheight 4");
+const u16 gObjectEventPal_UnPlasmaF[] = INCGFX_U16("graphics/object_events/pics/people/unova/plasmaf.pal", ".gbapal");
+
+const u16 gObjectEventPic_UnGhetsis[] = INCGFX_U16("graphics/object_events/pics/people/unova/ghetsis.png", ".4bpp", "-mwidth 4 -mheight 4");
+const u16 gObjectEventPal_UnGhetsis[] = INCGFX_U16("graphics/object_events/pics/people/unova/ghetsis.pal", ".gbapal");
+
+const u16 gObjectEventPic_UnLenora[] = INCGFX_U16("graphics/object_events/pics/people/unova/lenora.png", ".4bpp", "-mwidth 4 -mheight 4");
+const u16 gObjectEventPal_UnLenora[] = INCGFX_U16("graphics/object_events/pics/people/unova/lenora.pal", ".gbapal");

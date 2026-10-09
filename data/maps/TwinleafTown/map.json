@@ -1,0 +1,141 @@
+{
+  "id": "MAP_TWINLEAF_TOWN",
+  "name": "TwinleafTown",
+  "layout": "LAYOUT_SI_TWINLEAFTOWN",
+  "music": "MUS_DPP_TWINLEAF",
+  "region_map_section": "MAPSEC_TWINLEAF_TOWN",
+  "requires_flash": false,
+  "weather": "WEATHER_SUNNY",
+  "map_type": "MAP_TYPE_TOWN",
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "map": "MAP_ROUTE201",
+      "offset": -4,
+      "direction": "up"
+    },
+    {
+      "map": "MAP_ROUTE220",
+      "offset": 0,
+      "direction": "down"
+    }
+  ],
+  "object_events": [
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SI_HIKER",
+      "x": 19,
+      "y": 12,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT",
+      "movement_range_x": 1,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "SI_W_Resident_290",
+      "flag": "0",
+      "local_id": "LOCALID_SI_TWINLEAFTOWN_1"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SI_SCIENTIST_F",
+      "x": 8,
+      "y": 22,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT",
+      "movement_range_x": 1,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "SI_W_Resident_291",
+      "flag": "0",
+      "local_id": "LOCALID_SI_TWINLEAFTOWN_2"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SI_GUITARIST",
+      "x": 8,
+      "y": 2,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_WANDER_UP_AND_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "SI_W_Resident_292",
+      "flag": "0",
+      "local_id": "LOCALID_SI_TWINLEAFTOWN_3"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SI_ROWAN_PT",
+      "x": 10,
+      "y": 20,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "SI_Rowan",
+      "flag": "0",
+      "local_id": "LOCALID_SI_TWINLEAFTOWN_4"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SI_BARRY_PT",
+      "x": 8,
+      "y": 15,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "SI_W_BarrySupport0",
+      "flag": "0",
+      "local_id": "LOCALID_SI_W_TWINLEAFTOWN_5"
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 16,
+      "y": 18,
+      "elevation": 0,
+      "dest_map": "MAP_TWINLEAF_TOWN_MAIN_HOUSE_1F",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 5,
+      "y": 9,
+      "elevation": 0,
+      "dest_map": "MAP_TWINLEAF_TOWN_RIVALS_HOUSE_F1",
+      "dest_warp_id": "1"
+    },
+    {
+      "x": 6,
+      "y": 18,
+      "elevation": 0,
+      "dest_map": "MAP_TWINLEAF_TOWN_HAOUSE1",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 16,
+      "y": 9,
+      "elevation": 0,
+      "dest_map": "MAP_TWINLEAF_TOWN_HOUSE2",
+      "dest_warp_id": "0"
+    }
+  ],
+  "coord_events": [],
+  "bg_events": [
+    {
+      "type": "sign",
+      "x": 12,
+      "y": 12,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "SI_W_Sign_TwinleafTown_0"
+    }
+  ],
+  "region": "REGION_SINNOH"
+}

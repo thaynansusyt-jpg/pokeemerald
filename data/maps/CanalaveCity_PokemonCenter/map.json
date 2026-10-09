@@ -1,0 +1,50 @@
+{
+  "id": "MAP_SI_CANALAVE_CITY__POKEMON_CENTER",
+  "name": "CanalaveCity_PokemonCenter",
+  "layout": "LAYOUT_SI_CANALAVECITY_POKEMONCENTER",
+  "music": "MUS_DPP_POKECENTER",
+  "region_map_section": "MAPSEC_CANALAVE_CITY",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_INDOOR",
+  "allow_cycling": false,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": false,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": null,
+  "object_events": [
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SI_WOMAN",
+      "x": 6,
+      "y": 6,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "SI_C_Go_CanalaveCity_CanalaveCity_PokemonCenter_Back",
+      "flag": "0",
+      "local_id": "LOCALID_SI_CANALAVECITY_POKEMONCENTER_1"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SI_NURSE_JOY",
+      "x": 4,
+      "y": 4,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "SI_Heal",
+      "flag": "0",
+      "local_id": "LOCALID_SI_CANALAVECITY_POKEMONCENTER_2"
+    }
+  ],
+  "warp_events": [],
+  "coord_events": [],
+  "bg_events": [],
+  "region": "REGION_SINNOH"
+}

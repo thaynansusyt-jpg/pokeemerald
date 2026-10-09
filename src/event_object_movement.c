@@ -1,4 +1,5 @@
 #include "global.h"
+#include "sinnoh_chapter.h"
 extern const u16 gHeRocketPal[];
 #include "malloc.h"
 #include "battle_anim.h"
@@ -497,6 +498,86 @@ const u8 gInitialMovementTypeFacingDirections[NUM_MOVEMENT_TYPES] = {
 #include "data/object_events/object_event_graphics_info_followers.h"
 
 static const struct SpritePalette sObjectEventSpritePalettes[] = {
+{gObjectEventPal_SiSaturn, 0x12b7},
+{gObjectEventPal_SiJupiter, 0x12b6},
+{gObjectEventPal_SiMars, 0x12b5},
+{gObjectEventPal_SiLucian, 0x12b4},
+{gObjectEventPal_SiFlint, 0x12b3},
+{gObjectEventPal_SiBertha, 0x12b2},
+{gObjectEventPal_SiAaron, 0x12b1},
+{gObjectEventPal_SiCynthia, 0x12b0},
+{gObjectEventPal_SiCyrus, 0x12af},
+{gObjectEventPal_SiVolkner, 0x12ae},
+{gObjectEventPal_SiCandice, 0x12ad},
+{gObjectEventPal_SiByron, 0x12ac},
+{gObjectEventPal_SiCrasherWake, 0x12ab},
+{gObjectEventPal_SiMaylene, 0x12aa},
+{gObjectEventPal_SiFantina, 0x12a9},
+{gObjectEventPal_SiGardenia, 0x12a8},
+{gObjectEventPal_SiLooker, 0x12a7},
+{gObjectEventPal_SiJohanna, 0x12a6},
+{gObjectEventPal_SiOldWoman, 0x12a5},
+{gObjectEventPal_SiOldMan, 0x12a4},
+{gObjectEventPal_SiWoman, 0x12a3},
+{gObjectEventPal_SiMan, 0x12a2},
+{gObjectEventPal_SiLass, 0x12a1},
+{gObjectEventPal_SiWorker, 0x12c0},
+{gObjectEventPal_SiFisherman, 0x12c1},
+{gObjectEventPal_SiHiker, 0x12c2},
+{gObjectEventPal_SiScientistM, 0x12c3},
+{gObjectEventPal_SiScientistF, 0x12c4},
+{gObjectEventPal_SiNurseJoy, 0x12c5},
+{gObjectEventPal_SiCashierM, 0x12c6},
+{gObjectEventPal_SiCashierF, 0x12c7},
+{gObjectEventPal_SiPoliceman, 0x12c8},
+{gObjectEventPal_SiSailor, 0x12c9},
+{gObjectEventPal_SiGuitarist, 0x12ca},
+{gObjectEventPal_SiClown, 0x12cb},
+{gObjectEventPal_SiSchoolKidM, 0x12cc},
+{gObjectEventPal_SiSchoolKidF, 0x12cd},
+{gObjectEventPal_SiAromaLady, 0x12ce},
+{gObjectEventPal_SiAceTrainerM, 0x12cf},
+{gObjectEventPal_SiAceTrainerF, 0x12d0},
+{gObjectEventPal_SiBreeder, 0x12d1},
+{gObjectEventPal_SiCheryl, 0x12d2},
+{gObjectEventPal_SiRiley, 0x12d3},
+{gObjectEventPal_SiRancher, 0x12d4},
+{gObjectEventPal_SiCowgirl, 0x12d5},
+{gObjectEventPal_SiGentleman, 0x12d6},
+{gObjectEventPal_SiSkierM, 0x12d7},
+{gObjectEventPal_UnHilbert, 0x1300},
+{gObjectEventPal_UnHilda, 0x1301},
+{gObjectEventPal_UnBianca, 0x1302},
+{gObjectEventPal_UnCheren, 0x1303},
+{gObjectEventPal_UnJuniper, 0x1304},
+{gObjectEventPal_UnN, 0x1305},
+{gObjectEventPal_UnCilan, 0x1306},
+{gObjectEventPal_UnChili, 0x1307},
+{gObjectEventPal_UnCress, 0x1308},
+{gObjectEventPal_UnBurgh, 0x1309},
+{gObjectEventPal_UnFennel, 0x130a},
+{gObjectEventPal_UnChildM, 0x130b},
+{gObjectEventPal_UnChildF, 0x130c},
+{gObjectEventPal_UnWorker, 0x130d},
+{gObjectEventPal_UnScientist, 0x130e},
+{gObjectEventPal_UnArtist, 0x130f},
+{gObjectEventPal_UnSailor, 0x1310},
+{gObjectEventPal_UnGentleman, 0x1311},
+{gObjectEventPal_UnLady, 0x1312},
+{gObjectEventPal_UnClerk, 0x1313},
+{gObjectEventPal_UnMusician, 0x1314},
+{gObjectEventPal_UnBackpacker, 0x1315},
+{gObjectEventPal_UnNurse, 0x1316},
+{gObjectEventPal_UnPlasmaM, 0x1317},
+{gObjectEventPal_UnPlasmaF, 0x1318},
+{gObjectEventPal_UnGhetsis, 0x1319},
+{gObjectEventPal_UnLenora, 0x131a},
+{gObjectEventPal_SiYoungster, 0x12a0},
+    {gObjectEventPal_GalacticGruntFPt, OBJ_EVENT_PAL_TAG_GALACTIC_GRUNT_F_PT},
+    {gObjectEventPal_GalacticGruntMPt, OBJ_EVENT_PAL_TAG_GALACTIC_GRUNT_M_PT},
+    {gObjectEventPal_BarryPt, OBJ_EVENT_PAL_TAG_BARRY_PT},
+    {gObjectEventPal_RowanPt, OBJ_EVENT_PAL_TAG_ROWAN_PT},
+    {gObjectEventPal_RoarkPt, OBJ_EVENT_PAL_TAG_ROARK_PT},
     {gHeRocketPal, OBJ_EVENT_PAL_TAG_HE_ROCKET},
     {gObjectEventPal_Npc1,                  OBJ_EVENT_PAL_TAG_NPC_1},
     {gObjectEventPal_Npc2,                  OBJ_EVENT_PAL_TAG_NPC_2},
@@ -506,6 +587,8 @@ static const struct SpritePalette sObjectEventSpritePalettes[] = {
     {gObjectEventPal_Npc2Reflection,        OBJ_EVENT_PAL_TAG_NPC_2_REFLECTION},
     {gObjectEventPal_Npc3Reflection,        OBJ_EVENT_PAL_TAG_NPC_3_REFLECTION},
     {gObjectEventPal_Npc4Reflection,        OBJ_EVENT_PAL_TAG_NPC_4_REFLECTION},
+    {gObjectEventPal_Lucas, 0x1235},
+    {gObjectEventPal_Dawn, 0x1236},
     {gObjectEventPal_Brendan,               OBJ_EVENT_PAL_TAG_BRENDAN},
     {gObjectEventPal_BrendanReflection,     OBJ_EVENT_PAL_TAG_BRENDAN_REFLECTION},
     {gObjectEventPal_BridgeReflection,      OBJ_EVENT_PAL_TAG_BRIDGE_REFLECTION},
@@ -3212,6 +3295,20 @@ const struct ObjectEventGraphicsInfo *GetObjectEventGraphicsInfo(u16 graphicsId)
     if (graphicsId >= NUM_OBJ_EVENT_GFX)
         graphicsId = OBJ_EVENT_GFX_NINJA_BOY;
 
+    if (SiNamingSeason()==2)
+    {
+        if(graphicsId==OBJ_EVENT_GFX_BRENDAN_NORMAL||graphicsId==OBJ_EVENT_GFX_BRENDAN_FIELD_MOVE||graphicsId==OBJ_EVENT_GFX_BRENDAN_FISHING)return &gObjectEventGraphicsInfo_UnHilbert;
+        if(graphicsId==OBJ_EVENT_GFX_MAY_NORMAL||graphicsId==OBJ_EVENT_GFX_MAY_FIELD_MOVE||graphicsId==OBJ_EVENT_GFX_MAY_FISHING)return &gObjectEventGraphicsInfo_UnHilda;
+    }
+    if (SiNamingSeason()==1)
+    {
+        if (graphicsId == OBJ_EVENT_GFX_BRENDAN_NORMAL || graphicsId == OBJ_EVENT_GFX_BRENDAN_FISHING)
+            return &gObjectEventGraphicsInfo_LucasNormal;
+        if (graphicsId == OBJ_EVENT_GFX_MAY_NORMAL || graphicsId == OBJ_EVENT_GFX_MAY_FISHING)
+            return &gObjectEventGraphicsInfo_DawnNormal;
+        if (graphicsId == OBJ_EVENT_GFX_BRENDAN_FIELD_MOVE) return &gObjectEventGraphicsInfo_LucasFieldMove;
+        if (graphicsId == OBJ_EVENT_GFX_MAY_FIELD_MOVE) return &gObjectEventGraphicsInfo_DawnFieldMove;
+    }
     return gObjectEventGraphicsInfoPointers[graphicsId];
 }
 

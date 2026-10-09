@@ -6,6 +6,8 @@ static const u8 sLanguageBr[] = _("IDIOMA");
 struct HeTranslation { const u8 *en; const u8 *br; };
 #include "data/hoenn_story_localization.h"
 #include "data/hoenn_ui_localization.h"
+#include "data/sinnoh_localization.h"
+#include "data/unova_localization.h"
 static const u8 sEn0[] = _("NEW GAME");
 static const u8 sBr0[] = _("NOVO JOGO");
 static const u8 sEn1[] = _("CONTINUE");
@@ -309,6 +311,10 @@ const u8 *HeLocalize(const u8 *text)
         return text;
     if (!gSaveBlock2Ptr->optionsLanguage)
     {
+        for(i=0;i<ARRAY_COUNT(sUnovaTranslations);i++)if(text==sUnovaTranslations[i].br)return sUnovaTranslations[i].en;
+        for (i = 0; i < ARRAY_COUNT(sSinnohTranslations); i++)
+            if (text == sSinnohTranslations[i].br)
+                return sSinnohTranslations[i].en;
         // Story pointers are resolved before placeholders are expanded.
         for (i = 0; i < ARRAY_COUNT(sStoryTranslations); i++)
             if (text == sStoryTranslations[i].br)

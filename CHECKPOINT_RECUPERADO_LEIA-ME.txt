@@ -1,0 +1,6 @@
+Pokémon Hoenn Expansion — código-fonte Unova 0.10 recomposto a partir dos backups salvos.
+Base 50f + patch de Sinnoh 0.9.2 + novos Sinnoh + patch Unova 0.10 + novos Unova.
+Os patches foram aplicados sem conflito. Este arquivo é fonte recuperada, NAO e ROM compilada.
+Campanha até Castelia declarada no checkpoint, sem validacao completa do lançamento.
+Comando de compilação previsto: make modern; requer ARM GCC/Newlib de projeto.
+Nao publicar chave privada ou build administrativa.

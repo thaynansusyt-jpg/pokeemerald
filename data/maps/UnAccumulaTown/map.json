@@ -1,0 +1,176 @@
+{
+  "id": "MAP_UN_ACCUMULA_TOWN",
+  "name": "UnAccumulaTown",
+  "layout": "LAYOUT_UN_ACCUMULATOWN",
+  "music": "MUS_UN_CITY",
+  "region_map_section": "MAPSEC_UN_ROUTES",
+  "requires_flash": false,
+  "weather": "WEATHER_SUNNY",
+  "map_type": "MAP_TYPE_TOWN",
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "map": "MAP_UN_ROUTE1",
+      "offset": 8,
+      "direction": "down"
+    },
+    {
+      "map": "MAP_UN_ROUTE2",
+      "offset": 8,
+      "direction": "up"
+    }
+  ],
+  "object_events": [
+    {
+      "graphics_id": "OBJ_EVENT_GFX_UN_GHETSIS",
+      "x": 24,
+      "y": 19,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "UN_PlazaCitizen",
+      "flag": "0",
+      "local_id": "LOCALID_UN_ACCUMULA_TOWN_1"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_UN_N",
+      "x": 22,
+      "y": 22,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "UN_AccumulaScene",
+      "flag": "0",
+      "local_id": "LOCALID_UN_ACCUMULA_TOWN_2"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_UN_CHEREN",
+      "x": 26,
+      "y": 24,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "UN_FriendCheren",
+      "flag": "0",
+      "local_id": "LOCALID_UN_ACCUMULA_TOWN_3"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_UN_LADY",
+      "x": 16,
+      "y": 18,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT",
+      "movement_range_x": 1,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "UN_Resident3",
+      "flag": "0",
+      "local_id": "LOCALID_UN_ACCUMULA_TOWN_4"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_UN_BACKPACKER",
+      "x": 22,
+      "y": 22,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT",
+      "movement_range_x": 1,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "UN_Resident4",
+      "flag": "0",
+      "local_id": "LOCALID_UN_ACCUMULA_TOWN_5"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_UN_SAILOR",
+      "x": 28,
+      "y": 26,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT",
+      "movement_range_x": 1,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "UN_Resident5",
+      "flag": "0",
+      "local_id": "LOCALID_UN_ACCUMULA_TOWN_6"
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 9,
+      "y": 9,
+      "elevation": 0,
+      "dest_map": "MAP_UN_ACCUMULA_HOUSE",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 34,
+      "y": 13,
+      "elevation": 0,
+      "dest_map": "MAP_UN_ACCUMULA_CENTER",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 33,
+      "y": 31,
+      "elevation": 0,
+      "dest_map": "MAP_UN_ACCUMULA_MART",
+      "dest_warp_id": "0"
+    }
+  ],
+  "coord_events": [
+    {
+      "type": "trigger",
+      "x": 22,
+      "y": 3,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "UN_Gate_AccumulaTown"
+    },
+    {
+      "type": "trigger",
+      "x": 23,
+      "y": 3,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "UN_Gate_AccumulaTown"
+    },
+    {
+      "type": "trigger",
+      "x": 24,
+      "y": 3,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "UN_Gate_AccumulaTown"
+    },
+    {
+      "type": "trigger",
+      "x": 25,
+      "y": 3,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "UN_Gate_AccumulaTown"
+    }
+  ],
+  "bg_events": [],
+  "region": "REGION_UNOVA"
+}

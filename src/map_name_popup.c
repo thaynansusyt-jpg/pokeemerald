@@ -1,4 +1,6 @@
 #include "global.h"
+#include "sinnoh_chapter.h"
+#include "unova_chapter.h"
 #include "battle_pyramid.h"
 #include "bg.h"
 #include "event_data.h"
@@ -562,7 +564,11 @@ static bool32 IsCeladonDeptStore(const struct MapHeader *mapHeader)
 
 u8 *GetPopUpMapName(u8 *dest, const struct MapHeader *mapHeader)
 {
-    if (IsCeladonDeptStore(mapHeader))
+    if (UnLayoutName(mapHeader->mapLayoutId))
+        StringCopy(dest, UnLayoutName(mapHeader->mapLayoutId));
+    else if (SiLayoutName(mapHeader->mapLayoutId))
+        StringCopy(dest, SiLayoutName(mapHeader->mapLayoutId));
+    else if (IsCeladonDeptStore(mapHeader))
         StringCopy(dest, COMPOUND_STRING("CELADON DEPT."));
     else
         GetMapName(dest, mapHeader->regionMapSectionId, 0);
@@ -679,6 +685,7 @@ static void LoadMapNamePopUpWindowBg(void)
     if (OW_POPUP_GENERATION == GEN_5)
         secondaryPopUpWindowId = GetSecondaryPopUpWindowId();
 
+    if (regionMapSectionId >= MAPSEC_JUBILIFE_CITY) regionMapSectionId = MAPSEC_LITTLEROOT_TOWN;
     if (regionMapSectionId >= KANTO_MAPSEC_START)
     {
         if (regionMapSectionId > KANTO_MAPSEC_END)

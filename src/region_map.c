@@ -117,6 +117,10 @@ static void CB_FadeInFlyMap(void);
 static void CB_HandleFlyMapInput(void);
 static void CB_ExitFlyMap(void);
 
+static const u16 sRegionMapSinnoh_Pal[] = INCGFX_U16("graphics/pokenav/region_map/map_sinnoh.pal", ".gbapal");
+static const u32 sRegionMapSinnoh_Gfx[] = INCGFX_U32("graphics/pokenav/region_map/map_sinnoh.png", ".8bpp.smol");
+static const u32 sRegionMapSinnoh_Tilemap[] = INCGFX_U32("graphics/pokenav/region_map/map_sinnoh.bin", ".smolTM");
+#include "data/region_map/sinnoh_map_layout.h"
 static const u16 sRegionMapCursorPal[] = INCGFX_U16("graphics/pokenav/region_map/cursor.pal", ".gbapal");
 static const u32 sRegionMapCursorSmallGfxLZ[] = INCGFX_U32("graphics/pokenav/region_map/cursor_small.png", ".4bpp.smol");
 static const u32 sRegionMapCursorLargeGfxLZ[] = INCGFX_U32("graphics/pokenav/region_map/cursor_large.png", ".4bpp.smol");
@@ -336,6 +340,16 @@ const struct RegionMapInfo gRegionMapInfos[] =
         .regionMapPalette = sRegionMapBg_Pal,
         .regionMapGfx = sRegionMapBg_GfxLZ,
         .regionMapTilemap = sRegionMapBg_TilemapLZ,
+    },
+    [REGION_MAP_SINNOH] =
+    {
+        .dexMapPalette = sPokedexAreaMap_Pal,
+        .dexMapGfx = sPokedexAreaMap_Gfx,
+        .dexMapTilemap = sPokedexAreaMap_Tilemap,
+        .dexMapPaletteSize = sizeof(sPokedexAreaMap_Pal),
+        .regionMapPalette = sRegionMapSinnoh_Pal,
+        .regionMapGfx = sRegionMapSinnoh_Gfx,
+        .regionMapTilemap = sRegionMapSinnoh_Tilemap,
     },
     [REGION_MAP_KANTO]    =
     {
@@ -1164,6 +1178,8 @@ enum RegionMapType GetRegionMapType(u32 mapSecId)
 {
     switch (GetRegionForSectionId(mapSecId))
     {
+    case REGION_SINNOH:
+        return REGION_MAP_SINNOH;
     case REGION_KANTO:
         switch (GetKantoSubregion(mapSecId))
         {
@@ -1194,6 +1210,8 @@ static mapsec_u16_t GetMapSecIdAt(u16 x, u16 y)
 
     switch (GetCurrentRegion())
     {
+    case REGION_SINNOH:
+        return sRegionMap_SinnohLayout[y][x];
     case REGION_KANTO:
         switch (GetKantoSubregion(gMapHeader.regionMapSectionId))
         {

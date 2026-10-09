@@ -1,3 +1,9 @@
+# ATUALIZACAO UNOVA 0.10.1 — PREVIA / TERMUX
+
+O codigo-fonte recuperado de Unova 0.10 recebeu uma extensao inicial Rota 4 -> Nimbasa, melhorias no mapa de missoes e uma revisao dos pontos de cura. **Ainda nao e uma ROM compilada ou testada em emulador.** Veja `LEIA-ME_TERMUX.md` e `Makefile.termux` para montar o projeto no Termux + Debian/Ubuntu proot. A base recuperada contem Sinnoh 0.9.2; correcoes posteriores de Sinnoh 0.9.3–0.9.7 precisam ser avaliadas antes de uma distribuicao unica.
+
+---
+
 # Pokémon Hoenn Expansion — 0.7.2 Eclipse Gen7 beta
 
 Projeto de Senhor Laranja. Esta versão reconstrói a expansão sobre pokeemerald-expansion (RHH), mantendo os recursos personalizados da base anterior e removendo a barreira do terceiro ginásio.

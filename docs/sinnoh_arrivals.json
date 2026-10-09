@@ -1,0 +1,858 @@
+{
+  "TwinleafTown": [
+    6,
+    10
+  ],
+  "SandgemTown": [
+    6,
+    9
+  ],
+  "JubilifeCity": [
+    13,
+    9
+  ],
+  "OreburghCity": [
+    6,
+    14
+  ],
+  "Route201": [
+    6,
+    9
+  ],
+  "Route202": [
+    6,
+    9
+  ],
+  "Route203": [
+    6,
+    9
+  ],
+  "VerityLakefront": [
+    5,
+    9
+  ],
+  "LakeVerity": [
+    6,
+    33
+  ],
+  "OreburghGate_1F": [
+    7,
+    9
+  ],
+  "OreburghMine_B1F": [
+    6,
+    9
+  ],
+  "OreburghMine_B2F": [
+    6,
+    14
+  ],
+  "TwinleafTown_MainHouse_1F": [
+    5,
+    7
+  ],
+  "TwinleafTown_MainHouse_2F": [
+    6,
+    6
+  ],
+  "Twinleaf_Town_RivalsHouse_F1": [
+    5,
+    7
+  ],
+  "Twinleaf_Town_RivalsHouse_F2": [
+    6,
+    6
+  ],
+  "TwinleafTown_Haouse1": [
+    6,
+    6
+  ],
+  "TwinleafTown_House2": [
+    6,
+    6
+  ],
+  "SandgemTown_RivalHouse_F1": [
+    5,
+    7
+  ],
+  "SandgemTown_RivalHouse_F2": [
+    6,
+    6
+  ],
+  "SandgemTown_House1": [
+    6,
+    7
+  ],
+  "SandgemTown_PokemonCenter_1F": [
+    6,
+    7
+  ],
+  "SandgemTown_PokemonCenter_2F": [
+    6,
+    8
+  ],
+  "SandgemTown_Mart": [
+    5,
+    6
+  ],
+  "JubilifeCity_PokemonSchool": [
+    6,
+    9
+  ],
+  "JubilifeCity_JubilifeTV_F1": [
+    6,
+    8
+  ],
+  "JubilifeCity_JubilifeTV_F2": [
+    6,
+    8
+  ],
+  "JubilifeCity_JubilifeTV_F3": [
+    6,
+    8
+  ],
+  "JubilifeCity_JubilifeTV_F4": [
+    6,
+    8
+  ],
+  "JubilifeCity_PoketchCompany_F1": [
+    6,
+    7
+  ],
+  "JubilifeCity_PoketchCompany_F2": [
+    6,
+    6
+  ],
+  "JubilifeCity_PoketchCompany_F3": [
+    6,
+    7
+  ],
+  "JubilifeCity_Flat1_F1": [
+    6,
+    7
+  ],
+  "JubilifeCity_Flat1_F2": [
+    6,
+    7
+  ],
+  "JubilifeCity_Flat1_F3": [
+    6,
+    7
+  ],
+  "JubilifeCity_Flat2_F1": [
+    6,
+    7
+  ],
+  "JubilifeCity_Flat2_F2": [
+    6,
+    7
+  ],
+  "JubilifeCity_Flat2_F3": [
+    6,
+    7
+  ],
+  "JubilifeCity_Flat3_F1": [
+    6,
+    7
+  ],
+  "JubilifeCity_Flat3_F2": [
+    6,
+    7
+  ],
+  "JubilifeCity_Flat3_F3": [
+    6,
+    7
+  ],
+  "JubilifeCity_PokemonCenter_1F": [
+    6,
+    7
+  ],
+  "JubilifeCity_PokemonCenter_2F": [
+    6,
+    8
+  ],
+  "JubilifeCity_Mart": [
+    5,
+    6
+  ],
+  "OreburghCity_Flat1_F1": [
+    6,
+    6
+  ],
+  "OreburghCity_Flat1_F2": [
+    6,
+    6
+  ],
+  "OreburghCity_Flat2_F1": [
+    6,
+    6
+  ],
+  "OreburghCity_Flat2_F2": [
+    6,
+    6
+  ],
+  "OreburghCity_Flat3_F1": [
+    6,
+    6
+  ],
+  "OreburghCity_Flat3_F2": [
+    6,
+    6
+  ],
+  "OreburghCity_House1": [
+    6,
+    7
+  ],
+  "OreburghCity_House2": [
+    6,
+    7
+  ],
+  "OreburghCity_House3": [
+    6,
+    7
+  ],
+  "OreburghCity_Gym": [
+    6,
+    8
+  ],
+  "OreburghCity_PokemonCenter_1F": [
+    6,
+    7
+  ],
+  "OreburghCity_PokemonCenter_2F": [
+    6,
+    8
+  ],
+  "OreburghCity_Mart": [
+    5,
+    6
+  ],
+  "SandgemLab": [
+    6,
+    9
+  ],
+  "OreburghMuseum": [
+    6,
+    9
+  ],
+  "FloaromaTown": [
+    6,
+    9
+  ],
+  "EternaCity": [
+    8,
+    9
+  ],
+  "HearthomeCity": [
+    6,
+    9
+  ],
+  "SolaceonTown": [
+    10,
+    12
+  ],
+  "CelesticTown": [
+    10,
+    18
+  ],
+  "VeilstoneCity": [
+    15,
+    12
+  ],
+  "PastoriaCity": [
+    18,
+    17
+  ],
+  "CanalaveCity": [
+    6,
+    19
+  ],
+  "SnowpointCity": [
+    11,
+    9
+  ],
+  "SunyshoreCity": [
+    25,
+    16
+  ],
+  "PokmonLeague": [
+    7,
+    36
+  ],
+  "Route204": [
+    3,
+    9
+  ],
+  "Route205_North": [
+    34,
+    19
+  ],
+  "Route205_South": [
+    15,
+    68
+  ],
+  "Route206": [
+    17,
+    31
+  ],
+  "Route207": [
+    6,
+    9
+  ],
+  "Route208": [
+    43,
+    14
+  ],
+  "Route209": [
+    8,
+    44
+  ],
+  "Route210_North": [
+    63,
+    13
+  ],
+  "Route210_South": [
+    20,
+    9
+  ],
+  "Route211_East": [
+    15,
+    5
+  ],
+  "Route211_West": [
+    6,
+    9
+  ],
+  "Route212_North": [
+    8,
+    9
+  ],
+  "Route212_South": [
+    45,
+    16
+  ],
+  "Route213": [
+    6,
+    9
+  ],
+  "Route214": [
+    15,
+    9
+  ],
+  "Route215": [
+    47,
+    10
+  ],
+  "Route216": [
+    35,
+    14
+  ],
+  "Route217": [
+    6,
+    15
+  ],
+  "Route218": [
+    8,
+    11
+  ],
+  "Route219": [
+    8,
+    9
+  ],
+  "Route220": [
+    8,
+    18
+  ],
+  "Route221": [
+    26,
+    9
+  ],
+  "Route222": [
+    22,
+    9
+  ],
+  "Route223": [
+    11,
+    45
+  ],
+  "Route224": [
+    7,
+    46
+  ],
+  "Route225": [
+    10,
+    9
+  ],
+  "Route226": [
+    6,
+    9
+  ],
+  "Route227": [
+    19,
+    49
+  ],
+  "Route228": [
+    8,
+    9
+  ],
+  "Route229": [
+    6,
+    19
+  ],
+  "Route230": [
+    8,
+    9
+  ],
+  "ValorLakefront": [
+    38,
+    13
+  ],
+  "AcuityLakefront": [
+    20,
+    39
+  ],
+  "FightArea": [
+    21,
+    9
+  ],
+  "SurvivalArea": [
+    6,
+    16
+  ],
+  "ResortArea": [
+    6,
+    9
+  ],
+  "LakeValor": [
+    34,
+    43
+  ],
+  "LakeAcuity": [
+    28,
+    8
+  ],
+  "ValleyWindworks": [
+    6,
+    79
+  ],
+  "EternaForest": [
+    6,
+    56
+  ],
+  "FloaromaMeadow": [
+    8,
+    12
+  ],
+  "RavagedPath": [
+    4,
+    9
+  ],
+  "MtCoronet_B1F": [
+    4,
+    9
+  ],
+  "MtCoronet_1F_South": [
+    8,
+    9
+  ],
+  "MtCoronet_1F_North_Room1": [
+    7,
+    5
+  ],
+  "MtCoronet_1F_North_Room2": [
+    8,
+    11
+  ],
+  "OldChateau_Entrance": [
+    6,
+    8
+  ],
+  "OldChateau_SideRoom_1": [
+    6,
+    8
+  ],
+  "OldChateau_SideRoom_2": [
+    6,
+    8
+  ],
+  "OldChateau_DiningRoom": [
+    6,
+    8
+  ],
+  "OldChateau_2F": [
+    5,
+    10
+  ],
+  "Route206_North": [
+    5,
+    9
+  ],
+  "Route206_South": [
+    5,
+    9
+  ],
+  "Route208_Access": [
+    6,
+    6
+  ],
+  "Route209_Access": [
+    6,
+    6
+  ],
+  "Route212_Access": [
+    5,
+    9
+  ],
+  "Route213_Access": [
+    6,
+    6
+  ],
+  "Route214_Access": [
+    5,
+    9
+  ],
+  "Route215_Access": [
+    6,
+    6
+  ],
+  "Route218_East": [
+    6,
+    6
+  ],
+  "Route218_West": [
+    6,
+    6
+  ],
+  "Route222_Access": [
+    6,
+    6
+  ],
+  "Route225_Access": [
+    5,
+    9
+  ],
+  "Route226_Access": [
+    6,
+    6
+  ],
+  "HotelGrandLake": [
+    6,
+    9
+  ],
+  "ValleyWindoworks_Indoor": [
+    6,
+    9
+  ],
+  "Route205_House": [
+    6,
+    7
+  ],
+  "FloaromaTown_House1": [
+    6,
+    7
+  ],
+  "FloaromaTown_House2": [
+    6,
+    7
+  ],
+  "FloaromaTown_FlowerShop": [
+    6,
+    7
+  ],
+  "FloaromaTown_PokemonCenter_1F": [
+    6,
+    7
+  ],
+  "FloaromaTwon_PokemonCenter_2F": [
+    6,
+    8
+  ],
+  "FloaromaTown_Mart": [
+    5,
+    6
+  ],
+  "FloaromaMeadow_House": [
+    6,
+    7
+  ],
+  "EternaCity_Flat1_F1": [
+    6,
+    6
+  ],
+  "EternaCity_Flat1_F2": [
+    6,
+    6
+  ],
+  "EternaCity_Flat1_F3": [
+    6,
+    6
+  ],
+  "EternaCity_HerbShop": [
+    6,
+    6
+  ],
+  "EternaCity_UndergroundManHouse": [
+    6,
+    6
+  ],
+  "EternaCity_CycleShop": [
+    6,
+    7
+  ],
+  "EternaCity_House1": [
+    6,
+    6
+  ],
+  "EternaCity_House2": [
+    6,
+    6
+  ],
+  "EternaCity_Gym": [
+    6,
+    9
+  ],
+  "EternaCity_PokemonCenter_F1": [
+    6,
+    7
+  ],
+  "EternaCity_PokemonCenter_F2": [
+    6,
+    8
+  ],
+  "EternaCity_Mart": [
+    5,
+    6
+  ],
+  "EternaCity_GalacticBuilding_1F": [
+    6,
+    9
+  ],
+  "EternaCity_GalacticBuilding_2F": [
+    6,
+    9
+  ],
+  "EternaCity_GalacticBuilding_3F": [
+    6,
+    9
+  ],
+  "EternaCity_GalacticBuilding_4F": [
+    6,
+    9
+  ],
+  "EternaCity_GalacticBuilding_B1F": [
+    6,
+    9
+  ],
+  "HearthomeCity_PokemonCenter": [
+    6,
+    7
+  ],
+  "HearthomeCity_Mart": [
+    5,
+    6
+  ],
+  "HearthomeCity_House": [
+    6,
+    7
+  ],
+  "SolaceonTown_PokemonCenter": [
+    6,
+    7
+  ],
+  "SolaceonTown_Mart": [
+    5,
+    6
+  ],
+  "SolaceonTown_House": [
+    6,
+    7
+  ],
+  "VeilstoneCity_PokemonCenter": [
+    6,
+    7
+  ],
+  "VeilstoneCity_Mart": [
+    5,
+    6
+  ],
+  "VeilstoneCity_House": [
+    6,
+    7
+  ],
+  "PastoriaCity_PokemonCenter": [
+    6,
+    7
+  ],
+  "PastoriaCity_Mart": [
+    5,
+    6
+  ],
+  "PastoriaCity_House": [
+    6,
+    7
+  ],
+  "CelesticTown_PokemonCenter": [
+    6,
+    7
+  ],
+  "CelesticTown_Mart": [
+    5,
+    6
+  ],
+  "CelesticTown_House": [
+    6,
+    7
+  ],
+  "CanalaveCity_PokemonCenter": [
+    6,
+    7
+  ],
+  "CanalaveCity_Mart": [
+    5,
+    6
+  ],
+  "CanalaveCity_House": [
+    6,
+    7
+  ],
+  "SnowpointCity_PokemonCenter": [
+    6,
+    7
+  ],
+  "SnowpointCity_Mart": [
+    5,
+    6
+  ],
+  "SnowpointCity_House": [
+    6,
+    7
+  ],
+  "SunyshoreCity_PokemonCenter": [
+    6,
+    7
+  ],
+  "SunyshoreCity_Mart": [
+    5,
+    6
+  ],
+  "SunyshoreCity_House": [
+    6,
+    7
+  ],
+  "FightArea_PokemonCenter": [
+    6,
+    7
+  ],
+  "FightArea_Mart": [
+    5,
+    6
+  ],
+  "FightArea_House": [
+    6,
+    7
+  ],
+  "ResortArea_PokemonCenter": [
+    6,
+    7
+  ],
+  "ResortArea_Mart": [
+    5,
+    6
+  ],
+  "ResortArea_House": [
+    6,
+    7
+  ],
+  "SurvivalArea_PokemonCenter": [
+    6,
+    7
+  ],
+  "SurvivalArea_Mart": [
+    5,
+    6
+  ],
+  "SurvivalArea_House": [
+    6,
+    7
+  ],
+  "HearthomeCity_Gym": [
+    6,
+    8
+  ],
+  "VeilstoneCity_Gym": [
+    6,
+    8
+  ],
+  "PastoriaCity_Gym": [
+    6,
+    8
+  ],
+  "CanalaveCity_Gym": [
+    6,
+    8
+  ],
+  "SnowpointCity_Gym": [
+    6,
+    8
+  ],
+  "SunyshoreCity_Gym": [
+    6,
+    8
+  ],
+  "CanalaveLibrary": [
+    6,
+    9
+  ],
+  "VeilstoneHQ": [
+    6,
+    9
+  ],
+  "MtCoronetSummit": [
+    6,
+    8
+  ],
+  "SpearPillar": [
+    6,
+    8
+  ],
+  "DistortionWorld": [
+    6,
+    8
+  ],
+  "HallOfOrigin": [
+    6,
+    8
+  ],
+  "TurnbackCave": [
+    6,
+    8
+  ],
+  "SnowpointTemple": [
+    6,
+    8
+  ],
+  "VictoryRoad": [
+    6,
+    8
+  ],
+  "LeagueAaron": [
+    6,
+    8
+  ],
+  "LeagueBertha": [
+    6,
+    8
+  ],
+  "LeagueFlint": [
+    6,
+    8
+  ],
+  "LeagueLucian": [
+    6,
+    8
+  ],
+  "LeagueCynthia": [
+    6,
+    8
+  ]
+}

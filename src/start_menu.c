@@ -1,4 +1,8 @@
+#include "sinnoh_chapter.h"
+#include "unova_chapter.h"
+#include "hoenn_rules.h"
 #include "global.h"
+#include "dexnav.h"
 #include "config/save.h"
 #include "battle_pike.h"
 #include "battle_pyramid.h"
@@ -589,6 +593,7 @@ static void CreateStartMenuTask(TaskFunc followupFunc)
 
 static bool8 FieldCB_ReturnToFieldStartMenu(void)
 {
+    if(UnIsSeason()&&!IsOverworldLinkActive()){UnOpenHub();return TRUE;}
     if (InitStartMenuStep() == FALSE)
     {
         return FALSE;
@@ -627,6 +632,10 @@ void Task_ShowStartMenu(u8 taskId)
 
 void ShowStartMenu(void)
 {
+    if(UnIsSeason()&&!IsOverworldLinkActive())
+    {
+        FreezeObjectEvents();PlayerFreeze();StopPlayerAvatar();LockPlayerFieldControls();UnOpenHub();return;
+    }
     if (!IsOverworldLinkActive())
     {
         FreezeObjectEvents();
@@ -787,8 +796,7 @@ static bool8 StartMenuOptionCallback(void)
         PlayRainStoppingSoundEffect();
         RemoveExtraStartMenuWindows();
         CleanupOverworldWindowsAndTilemaps();
-        SetMainCallback2(CB2_InitOptionMenu); // Display option menu
-        gMain.savedCallback = CB2_ReturnToFieldWithOpenMenu;
+        HeOpenJourneyRules(); // Journey rules include a reversible auto-run toggle.
 
         return TRUE;
     }
@@ -1530,6 +1538,24 @@ static bool8 HeJournalCallback(void)
 {
     RemoveExtraStartMenuWindows();
     HideStartMenu();
-    ScriptContext_SetupScript(HE_Journal);
+    if (SiIsSeason()) SiOpenMissionMenu();
+    else ScriptContext_SetupScript(HE_Journal);
     return TRUE;
+}
+
+void HeHubAction(u8 action)
+{
+    switch(action)
+    {
+    case 0:SetMainCallback2(CB2_BagMenuFromStartMenu);break;
+    case 1:SetMainCallback2(CB2_PartyMenuFromStartMenu);break;
+    case 2:
+        if(MapHasNoEncounterData()){UnOpenHub();return;}
+        DexNavGuiInit(CB2_ReturnToFieldWithOpenMenu);break;
+    case 3:SetMainCallback2(CB2_OpenPokedex);break;
+    case 7:ShowPlayerTrainerCard(CB2_ReturnToFieldWithOpenMenu);break;
+    default:
+        UnlockPlayerFieldControls();UnfreezeObjectEvents();
+        SetMainCallback2(CB2_ReturnToField);break;
+    }
 }

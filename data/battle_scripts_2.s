@@ -169,6 +169,11 @@ BattleScript_ItemRestorePP::
 	end
 
 BattleScript_BallThrow::
+    callnative BS_SiPrismPrepareThrow
+    jumpifbyte CMP_EQUAL, gSiPrismBoost, 0, BattleScript_SiPrismNormal
+    printstring STRINGID_SI_PRISM
+    waitmessage B_WAIT_TIME_LONG
+BattleScript_SiPrismNormal:
 	jumpifword CMP_COMMON_BITS, gBattleTypeFlags, BATTLE_TYPE_CATCH_TUTORIAL, BattleScript_BallThrowByWally
 	printstring STRINGID_PLAYERUSEDITEM
 	handleballthrow

@@ -1,4 +1,6 @@
 #include "global.h"
+#include "unova_chapter.h"
+#include "sinnoh_prism.h"
 #include "battle.h"
 #include "battle_hold_effects.h"
 #include "battle_message.h"
@@ -8070,7 +8072,7 @@ static u32 ComputeCaptureOdds(u32 wildMonBattler, u32 playerBattler)
     struct BallData ball;
     ComputeBallData(wildMonBattler, playerBattler, &ball);
 
-    if (ball.guaranteedCapture)
+    if (ball.guaranteedCapture || FlagGet(FLAG_HE_EASY_CATCH))
         return CAPTURE_GUARANTEED;
     struct BattlePokemon *battleMon = &gBattleMons[wildMonBattler];
     u32 odds = (battleMon->maxHP * 3 -  battleMon->hp * 2);
@@ -8117,7 +8119,7 @@ static u32 ComputeCaptureOdds(u32 wildMonBattler, u32 playerBattler)
     if (battleMon->status1 & STATUS1_CAN_MOVE)
         odds = odds * 15 / 10;
 
-    return odds;
+    return UnApplyCapture(SiPrismApplyCapture(odds,wildMonBattler),wildMonBattler);
 }
 
 static bool32 CriticalCapture(u32 odds)

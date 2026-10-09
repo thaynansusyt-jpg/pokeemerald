@@ -1,0 +1,5 @@
+exec(open('tools/qa_071/helpers.py').read())
+cmd('load .qa071/sinnoh_new_game.state');dismiss(150);shot('sinnoh_start_released');print('stage',getvar(vars['VAR_SI_STAGE']))
+warp('SandgemLab',6,4);shot('rowan_access');press(64);press(1);dismiss(150);shot('rowan_after_talk');print('after',getvar(vars['VAR_SI_STAGE']))
+for i in range(4):print('object',i,[read(sym['gObjectEvents']+i*36+j,1)for j in range(24)])
+p.stdin.close();p.wait()

@@ -8,6 +8,7 @@ for line in Path('.qa071/new.symbols').read_text().splitlines():
 env=os.environ.copy();# Use the system libmgba, or LD_LIBRARY_PATH supplied by the caller.
 p=subprocess.Popen(['.qa071/emulator','pokemon_hoenn_expansion_gen7.gba'],stdin=subprocess.PIPE,stdout=subprocess.PIPE,text=True,env=env)
 def cmd(s):p.stdin.write(s+'\n');p.stdin.flush();return p.stdout.readline().strip()
+cmd('f 120 0')
 def write(a,v,n=4):cmd(f'w {a:x} {v:x} {n}')
 def read(a,n=4):return int(cmd(f'r {a:x} {n}'))
 def press(k):cmd(f'f 1 {k}');cmd('f 8 0')

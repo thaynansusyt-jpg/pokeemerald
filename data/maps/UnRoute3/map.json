@@ -1,0 +1,190 @@
+{
+  "id": "MAP_UN_ROUTE3",
+  "name": "UnRoute3",
+  "layout": "LAYOUT_UN_ROUTE3",
+  "music": "MUS_UN_ROUTE",
+  "region_map_section": "MAPSEC_UN_ROUTES",
+  "requires_flash": false,
+  "weather": "WEATHER_SUNNY",
+  "map_type": "MAP_TYPE_ROUTE",
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "map": "MAP_UN_STRIATON_CITY",
+      "offset": -8,
+      "direction": "down"
+    },
+    {
+      "map": "MAP_UN_NACRENE_CITY",
+      "offset": -8,
+      "direction": "up"
+    }
+  ],
+  "object_events": [
+    {
+      "graphics_id": "OBJ_EVENT_GFX_UN_CHILD_F",
+      "x": 22,
+      "y": 16,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "UN_MissingChild",
+      "flag": "0",
+      "local_id": "LOCALID_UN_ROUTE3_1"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_UN_LADY",
+      "x": 15,
+      "y": 30,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "UN_Resident39",
+      "flag": "0",
+      "local_id": "LOCALID_UN_ROUTE3_2"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_UN_BACKPACKER",
+      "x": 17,
+      "y": 33,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "UN_Resident40",
+      "flag": "0",
+      "local_id": "LOCALID_UN_ROUTE3_3"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_UN_CHILD_F",
+      "x": 11,
+      "y": 12,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "2",
+      "script": "UN_Field11",
+      "flag": "0",
+      "local_id": "LOCALID_UN_ROUTE3_4"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_UN_CHILD_M",
+      "x": 21,
+      "y": 18,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "2",
+      "script": "UN_Field12",
+      "flag": "0",
+      "local_id": "LOCALID_UN_ROUTE3_5"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_UN_CHILD_F",
+      "x": 11,
+      "y": 24,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "2",
+      "script": "UN_Field13",
+      "flag": "0",
+      "local_id": "LOCALID_UN_ROUTE3_6"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_UN_CHILD_M",
+      "x": 21,
+      "y": 29,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "2",
+      "script": "UN_Field14",
+      "flag": "0",
+      "local_id": "LOCALID_UN_ROUTE3_7"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_UN_CHILD_F",
+      "x": 11,
+      "y": 35,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "2",
+      "script": "UN_Field15",
+      "flag": "0",
+      "local_id": "LOCALID_UN_ROUTE3_8"
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 28,
+      "y": 16,
+      "elevation": 0,
+      "dest_map": "MAP_UN_WELLSPRING_CAVE",
+      "dest_warp_id": "0"
+    }
+  ],
+  "coord_events": [
+    {
+      "type": "trigger",
+      "x": 14,
+      "y": 3,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "UN_Gate_Route3"
+    },
+    {
+      "type": "trigger",
+      "x": 15,
+      "y": 3,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "UN_Gate_Route3"
+    },
+    {
+      "type": "trigger",
+      "x": 16,
+      "y": 3,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "UN_Gate_Route3"
+    },
+    {
+      "type": "trigger",
+      "x": 17,
+      "y": 3,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "UN_Gate_Route3"
+    }
+  ],
+  "bg_events": [],
+  "region": "REGION_UNOVA"
+}

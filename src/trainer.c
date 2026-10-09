@@ -1,4 +1,6 @@
 #include "global.h"
+#include "sinnoh_chapter.h"
+#include "unova_chapter.h"
 #include "constants/trainers.h"
 
 static enum TrainerPicID GetEmeraldTrainerPic(enum Gender gender)
@@ -17,6 +19,9 @@ static enum TrainerPicID GetKantoTrainerPic(enum Gender gender)
 
 enum TrainerPicID GetPlayerTrainerPic(enum Gender gender, enum GameVersion version)
 {
+    if(version==VERSION_EMERALD&&UnIsSeason())return gender==MALE?TRAINER_PIC_UN_HILBERT:TRAINER_PIC_UN_HILDA;
+    if (version == VERSION_EMERALD && SiIsSeason())
+        return gender == MALE ? TRAINER_PIC_SI_LUCAS_DP : TRAINER_PIC_SI_DAWN_DP;
     switch (version)
     {
         case VERSION_SAPPHIRE:

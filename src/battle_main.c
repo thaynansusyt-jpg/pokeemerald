@@ -392,6 +392,7 @@ const struct TrainerClass gTrainerClasses[TRAINER_CLASS_COUNT] =
     [TRAINER_CLASS_SCIENTIST_FRLG] =       { _("SCIENTIST"), 12 },
     [TRAINER_CLASS_BOSS_FRLG] =            { _("BOSS"), 25 },
     [TRAINER_CLASS_LEADER_FRLG] =          { _("LEADER"), 25 },
+    [TRAINER_CLASS_SI_GALACTIC] = { _("GALACTIC"), 8 },
     [TRAINER_CLASS_TEAM_ROCKET_FRLG] =     { _("TEAM ROCKET"), 8 },
     [TRAINER_CLASS_COOLTRAINER_FRLG] =     { _("COOLTRAINER"), 9, BALL_ULTRA },
     [TRAINER_CLASS_ELITE_FOUR_FRLG] =      { _("ELITE FOUR"), 25, BALL_ULTRA },

@@ -1,0 +1,70 @@
+{
+  "id": "MAP_RESORT_AREA",
+  "name": "ResortArea",
+  "layout": "LAYOUT_SI_RESORTAREA",
+  "music": "MUS_FALLARBOR",
+  "region_map_section": "MAPSEC_RESORT_AREA",
+  "requires_flash": false,
+  "weather": "WEATHER_SUNNY",
+  "map_type": "MAP_TYPE_TOWN",
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "map": "MAP_ROUTE229",
+      "offset": -30,
+      "direction": "up"
+    }
+  ],
+  "object_events": [
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SI_MAN",
+      "x": 6,
+      "y": 6,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "SI_C_Go_ResortArea_ResortArea_PokemonCenter",
+      "flag": "0",
+      "local_id": "LOCALID_SI_RESORTAREA_1"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SI_MAN",
+      "x": 5,
+      "y": 6,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "SI_C_Go_ResortArea_ResortArea_Mart",
+      "flag": "0",
+      "local_id": "LOCALID_SI_RESORTAREA_2"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SI_MAN",
+      "x": 6,
+      "y": 7,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "SI_C_Go_ResortArea_ResortArea_House",
+      "flag": "0",
+      "local_id": "LOCALID_SI_RESORTAREA_3"
+    }
+  ],
+  "warp_events": [],
+  "coord_events": [],
+  "bg_events": [],
+  "region": "REGION_SINNOH"
+}

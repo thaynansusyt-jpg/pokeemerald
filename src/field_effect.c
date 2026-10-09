@@ -1,4 +1,5 @@
 #include "global.h"
+#include "sinnoh_chapter.h"
 #include "data.h"
 #include "decompress.h"
 #include "event_data.h"
@@ -385,6 +386,81 @@ static const struct SpriteTemplate sSpriteTemplate_NewGameBirch =
     .anims = sAnimTable_NewGameBirch,
     .images = sPicTable_NewGameBirch,
 };
+
+static const u32 sNewGameRowanTop_Gfx[] = INCGFX_U32("graphics/birch_speech/rowan_top.png", ".4bpp");
+static const u32 sNewGameRowanBottom_Gfx[] = INCGFX_U32("graphics/birch_speech/rowan_bottom.png", ".4bpp");
+static const u16 sNewGameRowan_Pal[16] = INCGFX_U16("graphics/birch_speech/rowan.pal", ".gbapal");
+static const struct SpritePalette sSpritePalette_NewGameRowan =
+{
+    .data = sNewGameRowan_Pal,
+    .tag = 0x1006
+};
+static const struct SpriteFrameImage sPicTable_NewGameRowanTop[] =
+{
+    obj_frame_tiles(sNewGameRowanTop_Gfx)
+};
+static const struct SpriteFrameImage sPicTable_NewGameRowanBottom[] =
+{
+    obj_frame_tiles(sNewGameRowanBottom_Gfx)
+};
+static const struct SpriteTemplate sSpriteTemplate_NewGameRowanTop =
+{
+    .tileTag = TAG_NONE,
+    .paletteTag = 0x1006,
+    .oam = &sOam_64x64,
+    .anims = sAnimTable_NewGameBirch,
+    .images = sPicTable_NewGameRowanTop,
+    .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = SpriteCallbackDummy
+};
+static const struct SpriteTemplate sSpriteTemplate_NewGameRowanBottom =
+{
+    .tileTag = TAG_NONE,
+    .paletteTag = 0x1006,
+    .oam = &sOam_64x64,
+    .anims = sAnimTable_NewGameBirch,
+    .images = sPicTable_NewGameRowanBottom,
+    .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = SpriteCallbackDummy
+};
+
+static const u32 sNewGameJuniperTop_Gfx[] = INCGFX_U32("graphics/birch_speech/juniper_top.png", ".4bpp");
+static const u32 sNewGameJuniperBottom_Gfx[] = INCGFX_U32("graphics/birch_speech/juniper_bottom.png", ".4bpp");
+static const u16 sNewGameJuniper_Pal[16] = INCGFX_U16("graphics/birch_speech/juniper.pal", ".gbapal");
+static const struct SpritePalette sSpritePalette_NewGameJuniper =
+{
+    .data = sNewGameJuniper_Pal,
+    .tag = 0x1006
+};
+static const struct SpriteFrameImage sPicTable_NewGameJuniperTop[] =
+{
+    obj_frame_tiles(sNewGameJuniperTop_Gfx)
+};
+static const struct SpriteFrameImage sPicTable_NewGameJuniperBottom[] =
+{
+    obj_frame_tiles(sNewGameJuniperBottom_Gfx)
+};
+static const struct SpriteTemplate sSpriteTemplate_NewGameJuniperTop =
+{
+    .tileTag = TAG_NONE,
+    .paletteTag = 0x1006,
+    .oam = &sOam_64x64,
+    .anims = sAnimTable_NewGameBirch,
+    .images = sPicTable_NewGameJuniperTop,
+    .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = SpriteCallbackDummy
+};
+static const struct SpriteTemplate sSpriteTemplate_NewGameJuniperBottom =
+{
+    .tileTag = TAG_NONE,
+    .paletteTag = 0x1006,
+    .oam = &sOam_64x64,
+    .anims = sAnimTable_NewGameBirch,
+    .images = sPicTable_NewGameJuniperBottom,
+    .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = SpriteCallbackDummy
+};
+
 
 const struct SpritePalette gSpritePalette_PokeballGlow =
 {
@@ -1022,8 +1098,34 @@ static void UNUSED LoadTrainerGfx_TrainerCard(u8 gender, u16 palOffset, u8 *dest
     LoadPalette(GetTrainerFrontPicPalette(gender), palOffset, PLTT_SIZE_4BPP);
 }
 
+static void SiRowanBottom(struct Sprite *sprite)
+{
+    struct Sprite *top = &gSprites[sprite->data[0]];
+    if (!top->inUse) { DestroySprite(sprite); return; }
+    sprite->x = top->x; sprite->y = top->y + 64;
+    sprite->x2 = top->x2; sprite->y2 = top->y2; sprite->invisible = top->invisible;
+    sprite->oam.priority = top->oam.priority;
+}
 u8 AddNewGameBirchObject(s16 x, s16 y, u8 subpriority)
 {
+    if (SiNewGameSeason()==2)
+    {
+        u8 topId,bottomId;
+        LoadSpritePalette(&sSpritePalette_NewGameJuniper);
+        topId=CreateSprite(&sSpriteTemplate_NewGameJuniperTop,x,y-36,subpriority);
+        bottomId=CreateSprite(&sSpriteTemplate_NewGameJuniperBottom,x,y+28,subpriority);
+        gSprites[bottomId].data[0]=topId;gSprites[bottomId].callback=SiRowanBottom;return topId;
+    }
+    if (SiNewGameSeason()==1)
+    {
+        u8 topId, bottomId;
+        LoadSpritePalette(&sSpritePalette_NewGameRowan);
+        topId = CreateSprite(&sSpriteTemplate_NewGameRowanTop, x, y - 36, subpriority);
+        bottomId = CreateSprite(&sSpriteTemplate_NewGameRowanBottom, x, y + 28, subpriority);
+        gSprites[bottomId].data[0] = topId;
+        gSprites[bottomId].callback = SiRowanBottom;
+        return topId;
+    }
     LoadSpritePalette(&sSpritePalette_NewGameBirch);
     return CreateSprite(&sSpriteTemplate_NewGameBirch, x, y, subpriority);
 }

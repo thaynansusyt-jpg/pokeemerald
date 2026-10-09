@@ -2,6 +2,9 @@
 #define GUARD_DEXNAV_H
 
 #include "config/dexnav.h"
+#include "main.h"
+
+void DexNavGuiInit(MainCallback callback);
 
 // GUI Info
 enum RowGUIInfo

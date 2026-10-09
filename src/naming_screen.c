@@ -1,4 +1,5 @@
 #include "global.h"
+#include "sinnoh_chapter.h"
 #include "naming_screen.h"
 #include "malloc.h"
 #include "palette.h"
@@ -1405,6 +1406,7 @@ static void NamingScreen_CreatePlayerIcon(void)
     u8 spriteId;
 
     rivalGfxId = GetRivalAvatarGraphicsIdByStateIdAndGender(PLAYER_AVATAR_STATE_NORMAL, (enum Gender)sNamingScreen->monSpecies);
+    if (SiNamingSeason()) rivalGfxId = (unsigned)sNamingScreen->monSpecies == MALE ? OBJ_EVENT_GFX_BRENDAN_NORMAL : OBJ_EVENT_GFX_MAY_NORMAL;
     spriteId = CreateObjectGraphicsSprite(rivalGfxId, SpriteCallbackDummy, 56, 37, 0);
     gSprites[spriteId].oam.priority = 3;
     StartSpriteAnim(&gSprites[spriteId], ANIM_STD_GO_SOUTH);

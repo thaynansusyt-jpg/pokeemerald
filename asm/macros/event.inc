@@ -796,6 +796,13 @@
 	.endif
 	.endm
 
+	@ Unova's bedroom prologue launches rivals automatically, not from an object event.
+	@ The stock trainerbattle_single macro sets facePlayer=TRUE and triggers an
+	@ assertion when the selected object is the player. Preserve post-battle flow.
+	.macro trainerbattle_scripted trainer:req, intro_text:req, lose_text:req, event_script:req
+	trainerbattle LOCALID_NONE, \trainer, \intro_text, \lose_text, \event_script, LOCALID_NONE, TRAINER_NONE, NULL, NULL, NULL, NULL, NULL, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE
+	.endm
+
 	@ Starts a double trainer battle. Takes a trainer, intro text, loss text, text for when you have too few pokemon
 	@ and an optional event script. When used with an event script you can pass in an optional flag to disable music
 	.macro trainerbattle_double trainer:req, intro_text:req, lose_text:req, not_enough_pkmn_text:req, event_script=FALSE, music=TRUE

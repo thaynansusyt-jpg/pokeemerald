@@ -1,0 +1,134 @@
+{
+  "id": "MAP_CANALAVE_CITY",
+  "name": "CanalaveCity",
+  "layout": "LAYOUT_SI_CANALAVECITY",
+  "music": "MUS_DPP_CANALAVE",
+  "region_map_section": "MAPSEC_CANALAVE_CITY",
+  "requires_flash": false,
+  "weather": "WEATHER_SUNNY",
+  "map_type": "MAP_TYPE_CITY",
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "map": "MAP_ROUTE218",
+      "offset": 30,
+      "direction": "right"
+    }
+  ],
+  "object_events": [
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SI_MAN",
+      "x": 4,
+      "y": 15,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "SI_C_Go_CanalaveCity_CanalaveCity_PokemonCenter",
+      "flag": "0",
+      "local_id": "LOCALID_SI_CANALAVECITY_1"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SI_MAN",
+      "x": 3,
+      "y": 15,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "SI_C_Go_CanalaveCity_CanalaveCity_Mart",
+      "flag": "0",
+      "local_id": "LOCALID_SI_CANALAVECITY_2"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SI_MAN",
+      "x": 4,
+      "y": 16,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "SI_C_Go_CanalaveCity_CanalaveCity_House",
+      "flag": "0",
+      "local_id": "LOCALID_SI_CANALAVECITY_3"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SI_MAN",
+      "x": 6,
+      "y": 18,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "SI_C_Go_CanalaveCity_CanalaveCity_Gym",
+      "flag": "0",
+      "local_id": "LOCALID_SI_CANALAVECITY_4"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SI_MAN",
+      "x": 2,
+      "y": 15,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "SI_C_Go_CanalaveCity_CanalaveLibrary",
+      "flag": "0",
+      "local_id": "LOCALID_SI_CANALAVECITY_5"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SI_BARRY_PT",
+      "x": 23,
+      "y": 32,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "SI_W_Barry2",
+      "flag": "0",
+      "local_id": "LOCALID_SI_W_CANALAVECITY_6"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SI_RILEY",
+      "x": 11,
+      "y": 15,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "SI_W_RileyEgg",
+      "flag": "0",
+      "local_id": "LOCALID_SI_W_CANALAVECITY_7"
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 33,
+      "y": 50,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE218_WEST",
+      "dest_warp_id": "1"
+    }
+  ],
+  "coord_events": [],
+  "bg_events": [],
+  "region": "REGION_SINNOH"
+}

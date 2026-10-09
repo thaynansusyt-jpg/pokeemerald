@@ -22,7 +22,7 @@ int main(int argc,char **argv){
  else if(!strcmp(cmd,"batteryload")){sscanf(line,"%*s %499s",p);FILE*f=fopen(p,"rb");if(!f){printf("error\n");}else{fseek(f,0,SEEK_END);size_t len=ftell(f);rewind(f);void *sram=malloc(len);fread(sram,1,len,f);fclose(f);int ok=c->savedataRestore(c,sram,len,true);free(sram);c->reset(c);printf("%d\n",ok);}}
  else if(!strcmp(cmd,"shot")){sscanf(line,"%*s %499s",p);FILE *f=fopen(p,"wb");fprintf(f,"P6\n240 160\n255\n");for(int i=0;i<240*160;i++){unsigned char rgb[3]={video[i]&255,(video[i]>>8)&255,(video[i]>>16)&255};fwrite(rgb,1,3,f);}fclose(f);printf("ok\n");}
  else if(!strcmp(cmd,"save")){sscanf(line,"%*s %499s",p);c->saveState(c,state);FILE*f=fopen(p,"wb");fwrite(state,1,c->stateSize(c),f);fclose(f);printf("ok\n");}
- else if(!strcmp(cmd,"load")){sscanf(line,"%*s %499s",p);FILE*f=fopen(p,"rb");fread(state,1,c->stateSize(c),f);fclose(f);c->loadState(c,state);printf("ok\n");}
+ else if(!strcmp(cmd,"load")){sscanf(line,"%*s %499s",p);FILE*f=fopen(p,"rb");fread(state,1,c->stateSize(c),f);fclose(f);printf(c->loadState(c,state)?"ok\n":"error\n");}
  fflush(stdout);
  }c->deinit(c);return 0;
 }

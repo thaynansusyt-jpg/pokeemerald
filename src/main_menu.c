@@ -1,4 +1,6 @@
 #include "global.h"
+#include "sinnoh_chapter.h"
+#include "unova_chapter.h"
 #include "main.h"
 #include "hoenn_rules.h"
 #include "trainer_pokemon_sprites.h"
@@ -195,6 +197,23 @@ static void Task_HandleMainMenuAPressed(u8);
 static void Task_HandleMainMenuBPressed(u8);
 static void Task_NewGameBirchSpeech_Init(u8);
 static void Task_DisplayMainMenuInvalidActionError(u8);
+static const u8 sSiAndYouAre[] = _("E voce? Quero conhecer\na pessoa que vai investigar\nos lagos de Sinnoh.");
+static const u8 sSiAndYouAreEn[] = _("And you? I want to meet\nthe person who will explore\nthe lakes of Sinnoh.");
+static const u8 sSiBoyOrGirl[] = _("Quem vai viver esta jornada?\nLucas ou Dawn?");
+static const u8 sSiBoyOrGirlEn[] = _("Who will take this journey?\nLucas or Dawn?");
+static const u8 sSiWhatsYourName[] = _("Como voce se chama?");
+static const u8 sSiWhatsYourNameEn[] = _("What is your name?");
+static const u8 sSiSoItsPlayer[] = _("Seu nome e {PLAYER}?");
+static const u8 sSiSoItsPlayerEn[] = _("Your name is {PLAYER}?");
+static const u8 sSiYourePlayer[] = _("{PLAYER}, os lagos de Sinnoh\nguardam sinais misteriosos.\pSeu primeiro parceiro espera\npor voce em Twinleaf Town.");
+static const u8 sSiYourePlayerEn[] = _("{PLAYER}, mysterious signals\necho in the lakes of Sinnoh.\pYour first partner awaits\nyou in Twinleaf Town.");
+static const u8 sSiAreYouReady[] = _("A jornada por Sinnoh\nvai comecar!\pExplore, conheca seus Pokemon\ne escolha seu proprio futuro.");
+static const u8 sSiAreYouReadyEn[] = _("Your journey through Sinnoh\nis about to begin!\pExplore, meet your Pokemon\nand choose your own future.");
+
+static const u8 sSiWelcomeEn[] = _("Welcome to Sinnoh!\nI am Professor Rowan.\pStrange signals echo\ninside our lakes.\pYour journey begins\nin Twinleaf Town.$");
+static const u8 sSiSpeechEn[] = _("People and Pokemon build\ntheir stories together.\pChoose your first partner\nand explore Sinnoh.\pThe lakes hold secrets.$");
+static const u8 sSiWelcome[] = _("Bem-vindo a Sinnoh!\nSou o Professor Rowan.\pEstou investigando sinais\nestranhos nos lagos.\pSua jornada começa em\nTwinleaf Town.$");
+static const u8 sSiSpeech[] = _("Aqui, humanos e Pokémon\nconstroem suas historias.\pEscolha um parceiro em\nTwinleaf e conheça\pas cidades de Sinnoh.\nOs lagos guardam segredos.$");
 static void AddBirchSpeechObjects(u8);
 static void Task_NewGameBirchSpeech_WaitToShowBirch(u8);
 static void NewGameBirchSpeech_StartFadeInTarget1OutTarget2(u8, u8);
@@ -254,6 +273,9 @@ static const u16 sBirchSpeechBgPals[][16] = {
     INCGFX_U16("graphics/birch_speech/bg1.pal", ".gbapal")
 };
 
+static const u32 sSiSpeechShadowGfx[] = INCGFX_U32("graphics/birch_speech/si_shadow.png", ".4bpp.smol");
+static const u16 sSiSpeechBgPals[][16] = {INCGFX_U16("graphics/birch_speech/si_bg0.pal", ".gbapal"), INCGFX_U16("graphics/birch_speech/si_bg1.pal", ".gbapal")};
+static const u16 sUnSpeechBgPals[][16] = {INCGFX_U16("graphics/birch_speech/un_bg0.pal", ".gbapal"), INCGFX_U16("graphics/birch_speech/un_bg1.pal", ".gbapal")};
 static const u32 sBirchSpeechShadowGfx[] = INCGFX_U32("graphics/birch_speech/shadow.png", ".4bpp.smol");
 static const u32 sBirchSpeechBgMap[] = INCGFX_U32("graphics/birch_speech/map.bin", ".smolTM");
 static const u16 sBirchSpeechBgGradientPal[] = INCGFX_U16("graphics/birch_speech/bg2.pal", ".gbapal");
@@ -771,6 +793,8 @@ static void Task_DisplayMainMenu(u8 taskId)
 
     if (!gPaletteFade.active)
     {
+        HeHomeOpen(gSaveFileStatus == SAVE_STATUS_OK || gSaveFileStatus == SAVE_STATUS_CORRUPT);
+        return;
         SetGpuReg(REG_OFFSET_WIN0H, 0);
         SetGpuReg(REG_OFFSET_WIN0V, 0);
         SetGpuReg(REG_OFFSET_WININ, WININ_WIN0_BG0 | WININ_WIN0_OBJ);
@@ -1301,6 +1325,22 @@ static void HighlightSelectedMainMenuItem(enum PartyMenuType menuType, u8 select
 #define tBrendanSpriteId data[10]
 #define tMaySpriteId data[11]
 
+static const u8 sUnWelcome[] = _("Bem-vindo a Unova!\nSou a Professora Juniper.");
+static const u8 sUnWelcomeEn[] = _("Welcome to Unova!\nI am Professor Juniper.");
+static const u8 sUnSpeech[] = _("Pokemon e pessoas dividem\neste mundo. Como voces\pvao crescer juntos? Essa\ne a minha pesquisa!");
+static const u8 sUnSpeechEn[] = _("Pokemon and people share\nthis world. How will you\pgrow together? That is\nmy research!");
+static const u8 sUnAndYouAre[] = _("Tres amigos de Nuvema\nestao prestes a viajar.\pAntes, conte um pouco\nsobre voce.");
+static const u8 sUnAndYouAreEn[] = _("Three friends in Nuvema\nare about to set out.\pFirst, tell me a little\nabout yourself.");
+static const u8 sUnBoyOrGirl[] = _("Voce e um garoto?\nOu uma garota?");
+static const u8 sUnBoyOrGirlEn[] = _("Are you a boy?\nOr are you a girl?");
+static const u8 sUnWhatsYourName[] = _("Como voce se chama?");
+static const u8 sUnWhatsYourNameEn[] = _("What is your name?");
+static const u8 sUnSoItsPlayer[] = _("Entao, {PLAYER}?");
+static const u8 sUnSoItsPlayerEn[] = _("So, it is {PLAYER}?");
+static const u8 sUnYourePlayer[] = _("Certo, {PLAYER}!\nBianca e Cheren esperam!");
+static const u8 sUnYourePlayerEn[] = _("Right, {PLAYER}!\nBianca and Cheren await!");
+static const u8 sUnAreYouReady[] = _("A verdade e os ideais\nvao cruzar seu caminho.\pEscute seu parceiro,\nmesmo no maior silencio.\pSua jornada comeca agora!");
+static const u8 sUnAreYouReadyEn[] = _("Truth and ideals will\ncross your path.\pListen to your partner,\neven in deepest silence.\pYour journey starts now!");
 static void Task_NewGameBirchSpeech_Init(u8 taskId)
 {
     if (gTasks[taskId].data[15] != 0x4845)
@@ -1321,10 +1361,10 @@ static void Task_NewGameBirchSpeech_Init(u8 taskId)
     SetGpuReg(REG_OFFSET_BLDALPHA, 0);
     SetGpuReg(REG_OFFSET_BLDY, 0);
 
-    DecompressDataWithHeaderVram(sBirchSpeechShadowGfx, (void *)VRAM);
+    DecompressDataWithHeaderVram(SiNewGameSeason() ? sSiSpeechShadowGfx : sBirchSpeechShadowGfx, (void *)VRAM);
     DecompressDataWithHeaderVram(sBirchSpeechBgMap, (void *)(BG_SCREEN_ADDR(7)));
-    LoadPalette(sBirchSpeechBgPals, BG_PLTT_ID(0), 2 * PLTT_SIZE_4BPP);
-    LoadPalette(&sBirchSpeechBgGradientPal[8], BG_PLTT_ID(0) + 1, PLTT_SIZEOF(8));
+    LoadPalette(SiNewGameSeason()==2 ? sUnSpeechBgPals : SiNewGameSeason()==1 ? sSiSpeechBgPals : sBirchSpeechBgPals, BG_PLTT_ID(0), 2 * PLTT_SIZE_4BPP);
+    if (!SiNewGameSeason()) LoadPalette(&sBirchSpeechBgGradientPal[8], BG_PLTT_ID(0) + 1, PLTT_SIZEOF(8));
     ScanlineEffect_Stop();
     ResetSpriteData();
     FreeAllSpritePalettes();
@@ -1352,8 +1392,10 @@ static void Task_NewGameBirchSpeech_WaitToShowBirch(u8 taskId)
     else
     {
         spriteId = gTasks[taskId].tBirchSpriteId;
+        // Juniper is a 128px portrait split into two 64px sprites.
+        // The generic Birch Y=60 pushes the lower half behind the dialog box.
         gSprites[spriteId].x = 136;
-        gSprites[spriteId].y = 60;
+        gSprites[spriteId].y = SiNewGameSeason()==2 ? 24 : 60;
         gSprites[spriteId].invisible = FALSE;
         gSprites[spriteId].oam.objMode = ST_OAM_OBJ_BLEND;
         NewGameBirchSpeech_StartFadeInTarget1OutTarget2(taskId, 10);
@@ -1381,7 +1423,7 @@ static void Task_NewGameBirchSpeech_WaitForSpriteFadeInWelcome(u8 taskId)
             PutWindowTilemap(0);
             CopyWindowToVram(0, COPYWIN_GFX);
             NewGameBirchSpeech_ClearWindow(0);
-            StringExpandPlaceholders(gStringVar4, gText_Birch_Welcome);
+            StringExpandPlaceholders(gStringVar4, SiNewGameSeason()==2 ? (gSaveBlock2Ptr->optionsLanguage ? sUnWelcome : sUnWelcomeEn) : SiNewGameSeason()==1 ? (gSaveBlock2Ptr->optionsLanguage ? sSiWelcome : sSiWelcomeEn) : gText_Birch_Welcome);
             AddTextPrinterForMessage(TRUE);
             gTasks[taskId].func = Task_NewGameBirchSpeech_ThisIsAPokemon;
         }
@@ -1403,7 +1445,7 @@ static void Task_NewGameBirchSpeech_MainSpeech(u8 taskId)
 {
     if (!RunTextPrintersAndIsPrinter0Active())
     {
-        StringExpandPlaceholders(gStringVar4, gText_Birch_MainSpeech);
+        StringExpandPlaceholders(gStringVar4, SiNewGameSeason()==2 ? (gSaveBlock2Ptr->optionsLanguage ? sUnSpeech : sUnSpeechEn) : SiNewGameSeason()==1 ? (gSaveBlock2Ptr->optionsLanguage ? sSiSpeech : sSiSpeechEn) : gText_Birch_MainSpeech);
         AddTextPrinterForMessage(TRUE);
         gTasks[taskId].func = Task_NewGameBirchSpeech_AndYouAre;
     }
@@ -1420,7 +1462,7 @@ static void Task_NewGameBirchSpeechSub_InitPokeBall(u8 taskId)
     gSprites[spriteId].invisible = FALSE;
     gSprites[spriteId].data[0] = 0;
 
-    CreatePokeballSpriteToReleaseMon(spriteId, gSprites[spriteId].oam.paletteNum, 112, 58, 0, 0, 32, PALETTES_BG, SPECIES_PIKACHU);
+    CreatePokeballSpriteToReleaseMon(spriteId, gSprites[spriteId].oam.paletteNum, 112, 58, 0, 0, 32, PALETTES_BG, SiNewGameSeason()==2 ? SPECIES_MINCCINO : SiNewGameSeason()==1 ? SPECIES_BUNEARY : SPECIES_PIKACHU);
     gTasks[taskId].func = Task_NewGameBirchSpeechSub_WaitForLotad;
     gTasks[sBirchSpeechMainTaskId].tTimer = 0;
 }
@@ -1458,7 +1500,7 @@ static void Task_NewGameBirchSpeech_AndYouAre(u8 taskId)
     if (!RunTextPrintersAndIsPrinter0Active())
     {
         sStartedPokeBallTask = FALSE;
-        StringExpandPlaceholders(gStringVar4, gText_Birch_AndYouAre);
+        StringExpandPlaceholders(gStringVar4, SiNewGameSeason()==2 ? (gSaveBlock2Ptr->optionsLanguage ? sUnAndYouAre : sUnAndYouAreEn) : SiNewGameSeason()==1 ? (gSaveBlock2Ptr->optionsLanguage ? sSiAndYouAre : sSiAndYouAreEn) : gText_Birch_AndYouAre);
         AddTextPrinterForMessage(TRUE);
         gTasks[taskId].func = Task_NewGameBirchSpeech_StartBirchLotadPlatformFade;
     }
@@ -1530,7 +1572,7 @@ static void Task_NewGameBirchSpeech_WaitForPlayerFadeIn(u8 taskId)
 static void Task_NewGameBirchSpeech_BoyOrGirl(u8 taskId)
 {
     NewGameBirchSpeech_ClearWindow(0);
-    StringExpandPlaceholders(gStringVar4, gText_Birch_BoyOrGirl);
+    StringExpandPlaceholders(gStringVar4, SiNewGameSeason()==2 ? (gSaveBlock2Ptr->optionsLanguage ? sUnBoyOrGirl : sUnBoyOrGirlEn) : SiNewGameSeason()==1 ? (gSaveBlock2Ptr->optionsLanguage ? sSiBoyOrGirl : sSiBoyOrGirlEn) : gText_Birch_BoyOrGirl);
     AddTextPrinterForMessage(TRUE);
     gTasks[taskId].func = Task_NewGameBirchSpeech_WaitToShowGenderMenu;
 }
@@ -1622,7 +1664,7 @@ static void Task_NewGameBirchSpeech_SlideInNewGenderSprite(u8 taskId)
 static void Task_NewGameBirchSpeech_WhatsYourName(u8 taskId)
 {
     NewGameBirchSpeech_ClearWindow(0);
-    StringExpandPlaceholders(gStringVar4, gText_Birch_WhatsYourName);
+    StringExpandPlaceholders(gStringVar4, SiNewGameSeason()==2 ? (gSaveBlock2Ptr->optionsLanguage ? sUnWhatsYourName : sUnWhatsYourNameEn) : SiNewGameSeason()==1 ? (gSaveBlock2Ptr->optionsLanguage ? sSiWhatsYourName : sSiWhatsYourNameEn) : gText_Birch_WhatsYourName);
     AddTextPrinterForMessage(TRUE);
     gTasks[taskId].func = Task_NewGameBirchSpeech_WaitForWhatsYourNameToPrint;
 }
@@ -1657,7 +1699,7 @@ static void Task_NewGameBirchSpeech_StartNamingScreen(u8 taskId)
 static void Task_NewGameBirchSpeech_SoItsPlayerName(u8 taskId)
 {
     NewGameBirchSpeech_ClearWindow(0);
-    StringExpandPlaceholders(gStringVar4, gText_Birch_SoItsPlayer);
+    StringExpandPlaceholders(gStringVar4, SiNewGameSeason()==2 ? (gSaveBlock2Ptr->optionsLanguage ? sUnSoItsPlayer : sUnSoItsPlayerEn) : SiNewGameSeason()==1 ? (gSaveBlock2Ptr->optionsLanguage ? sSiSoItsPlayer : sSiSoItsPlayerEn) : gText_Birch_SoItsPlayer);
     AddTextPrinterForMessage(TRUE);
     gTasks[taskId].func = Task_NewGameBirchSpeech_CreateNameYesNo;
 }
@@ -1711,8 +1753,10 @@ static void Task_NewGameBirchSpeech_ReshowBirchLotad(u8 taskId)
         gSprites[gTasks[taskId].tBrendanSpriteId].invisible = TRUE;
         gSprites[gTasks[taskId].tMaySpriteId].invisible = TRUE;
         spriteId = gTasks[taskId].tBirchSpriteId;
+        // Juniper is a 128px portrait split into two 64px sprites.
+        // The generic Birch Y=60 pushes the lower half behind the dialog box.
         gSprites[spriteId].x = 136;
-        gSprites[spriteId].y = 60;
+        gSprites[spriteId].y = SiNewGameSeason()==2 ? 24 : 60;
         gSprites[spriteId].invisible = FALSE;
         gSprites[spriteId].oam.objMode = ST_OAM_OBJ_BLEND;
         spriteId = gTasks[taskId].tLotadSpriteId;
@@ -1723,7 +1767,7 @@ static void Task_NewGameBirchSpeech_ReshowBirchLotad(u8 taskId)
         NewGameBirchSpeech_StartFadeInTarget1OutTarget2(taskId, 2);
         NewGameBirchSpeech_StartFadePlatformOut(taskId, 1);
         NewGameBirchSpeech_ClearWindow(0);
-        StringExpandPlaceholders(gStringVar4, gText_Birch_YourePlayer);
+        StringExpandPlaceholders(gStringVar4, SiNewGameSeason()==2 ? (gSaveBlock2Ptr->optionsLanguage ? sUnYourePlayer : sUnYourePlayerEn) : SiNewGameSeason()==1 ? (gSaveBlock2Ptr->optionsLanguage ? sSiYourePlayer : sSiYourePlayerEn) : gText_Birch_YourePlayer);
         AddTextPrinterForMessage(TRUE);
         gTasks[taskId].func = Task_NewGameBirchSpeech_WaitForSpriteFadeInAndTextPrinter;
     }
@@ -1771,7 +1815,7 @@ static void Task_NewGameBirchSpeech_AreYouReady(u8 taskId)
         gTasks[taskId].tPlayerSpriteId = spriteId;
         NewGameBirchSpeech_StartFadeInTarget1OutTarget2(taskId, 2);
         NewGameBirchSpeech_StartFadePlatformOut(taskId, 1);
-        StringExpandPlaceholders(gStringVar4, gText_Birch_AreYouReady);
+        StringExpandPlaceholders(gStringVar4, SiNewGameSeason()==2 ? (gSaveBlock2Ptr->optionsLanguage ? sUnAreYouReady : sUnAreYouReadyEn) : SiNewGameSeason()==1 ? (gSaveBlock2Ptr->optionsLanguage ? sSiAreYouReady : sSiAreYouReadyEn) : gText_Birch_AreYouReady);
         AddTextPrinterForMessage(TRUE);
         gTasks[taskId].func = Task_NewGameBirchSpeech_ShrinkPlayer;
     }
@@ -1786,6 +1830,15 @@ static void Task_NewGameBirchSpeech_ShrinkPlayer(u8 taskId)
         gSprites[gTasks[taskId].tPlayerSpriteId].oam.objMode = ST_OAM_OBJ_NORMAL;
         if (!RunTextPrintersAndIsPrinter0Active())
         {
+            // Unova: skip the legacy affine shrink/white-silhouette path.
+            // Finish with a conventional fade before loading the first map.
+            // Hoenn and Sinnoh keep their original introduction animations.
+            if (SiNewGameSeason()==2)
+            {
+                BeginNormalPaletteFade(PALETTES_ALL, 0, 0, 16, RGB_BLACK);
+                gTasks[taskId].func = Task_NewGameBirchSpeech_Cleanup;
+                return;
+            }
             spriteId = gTasks[taskId].tPlayerSpriteId;
             gSprites[spriteId].oam.affineMode = ST_OAM_AFFINE_NORMAL;
             gSprites[spriteId].affineAnims = sSpriteAffineAnimTable_PlayerShrink;
@@ -1857,10 +1910,10 @@ static void CB2_NewGameBirchSpeech_ReturnFromNamingScreen(void)
     DmaFill32(3, 0, OAM, OAM_SIZE);
     DmaFill16(3, 0, PLTT, PLTT_SIZE);
     ResetPaletteFade();
-    DecompressDataWithHeaderVram(sBirchSpeechShadowGfx, (u8 *)VRAM);
+    DecompressDataWithHeaderVram(SiNewGameSeason() ? sSiSpeechShadowGfx : sBirchSpeechShadowGfx, (u8 *)VRAM);
     DecompressDataWithHeaderVram(sBirchSpeechBgMap, (u8 *)(BG_SCREEN_ADDR(7)));
-    LoadPalette(sBirchSpeechBgPals, BG_PLTT_ID(0), 2 * PLTT_SIZE_4BPP);
-    LoadPalette(&sBirchSpeechBgGradientPal[1], BG_PLTT_ID(0) + 1, PLTT_SIZEOF(8));
+    LoadPalette(SiNewGameSeason()==2 ? sUnSpeechBgPals : SiNewGameSeason()==1 ? sSiSpeechBgPals : sBirchSpeechBgPals, BG_PLTT_ID(0), 2 * PLTT_SIZE_4BPP);
+    if (!SiNewGameSeason()) LoadPalette(&sBirchSpeechBgGradientPal[1], BG_PLTT_ID(0) + 1, PLTT_SIZEOF(8));
     ResetTasks();
     taskId = CreateTask(Task_NewGameBirchSpeech_ReturnFromNamingScreenShowTextbox, 0);
     gTasks[taskId].tTimer = 5;
@@ -1920,7 +1973,7 @@ static void SpriteCB_MovePlayerDownWhileShrinking(struct Sprite *sprite)
 
 static u8 NewGameBirchSpeech_CreateLotadSprite(u8 x, u8 y)
 {
-    return CreateMonPicSprite_Affine(SPECIES_PIKACHU, FALSE, 0, MON_PIC_AFFINE_FRONT, x, y, 14, TAG_NONE);
+    return CreateMonPicSprite_Affine(SiNewGameSeason()==2 ? SPECIES_MINCCINO : SiNewGameSeason()==1 ? SPECIES_BUNEARY : SPECIES_PIKACHU, FALSE, 0, MON_PIC_AFFINE_FRONT, x, y, 14, TAG_NONE);
 }
 
 static void AddBirchSpeechObjects(u8 taskId)
@@ -1932,7 +1985,7 @@ static void AddBirchSpeechObjects(u8 taskId)
 
     birchSpriteId = AddNewGameBirchObject(0x88, 0x3C, 1);
     gSprites[birchSpriteId].callback = SpriteCB_Null;
-    gSprites[birchSpriteId].oam.priority = 0;
+    gSprites[birchSpriteId].oam.priority = SiNewGameSeason() ? 1 : 0;
     gSprites[birchSpriteId].invisible = TRUE;
     gTasks[taskId].tBirchSpriteId = birchSpriteId;
     lotadSpriteId = NewGameBirchSpeech_CreateLotadSprite(100, 0x4B);
@@ -1940,12 +1993,12 @@ static void AddBirchSpeechObjects(u8 taskId)
     gSprites[lotadSpriteId].oam.priority = 0;
     gSprites[lotadSpriteId].invisible = TRUE;
     gTasks[taskId].tLotadSpriteId = lotadSpriteId;
-    brendanSpriteId = CreateTrainerSprite(FacilityClassToPicIndex(FACILITY_CLASS_BRENDAN), 120, 60, 0, NULL);
+    brendanSpriteId = CreateTrainerSprite(SiNewGameSeason()==2 ? TRAINER_PIC_UN_HILBERT : SiNewGameSeason()==1 ? TRAINER_PIC_SI_LUCAS_DP : FacilityClassToPicIndex(FACILITY_CLASS_BRENDAN), 120, 60, 0, NULL);
     gSprites[brendanSpriteId].callback = SpriteCB_Null;
     gSprites[brendanSpriteId].invisible = TRUE;
     gSprites[brendanSpriteId].oam.priority = 0;
     gTasks[taskId].tBrendanSpriteId = brendanSpriteId;
-    maySpriteId = CreateTrainerSprite(FacilityClassToPicIndex(FACILITY_CLASS_MAY), 120, 60, 0, NULL);
+    maySpriteId = CreateTrainerSprite(SiNewGameSeason()==2 ? TRAINER_PIC_UN_HILDA : SiNewGameSeason()==1 ? TRAINER_PIC_SI_DAWN_DP : FacilityClassToPicIndex(FACILITY_CLASS_MAY), 120, 60, 0, NULL);
     gSprites[maySpriteId].callback = SpriteCB_Null;
     gSprites[maySpriteId].invisible = TRUE;
     gSprites[maySpriteId].oam.priority = 0;
@@ -2076,7 +2129,7 @@ static void Task_NewGameBirchSpeech_FadePlatformIn(u8 taskId)
     {
         gTasks[taskId].tDelayTimer = gTasks[taskId].tDelay;
         gTasks[taskId].tPalIndex++;
-        LoadPalette(&sBirchSpeechBgGradientPal[gTasks[taskId].tPalIndex], BG_PLTT_ID(0) + 1, PLTT_SIZEOF(8));
+        if (!SiNewGameSeason()) LoadPalette(&sBirchSpeechBgGradientPal[gTasks[taskId].tPalIndex], BG_PLTT_ID(0) + 1, PLTT_SIZEOF(8));
     }
 }
 
@@ -2110,7 +2163,7 @@ static void Task_NewGameBirchSpeech_FadePlatformOut(u8 taskId)
     {
         gTasks[taskId].tDelayTimer = gTasks[taskId].tDelay;
         gTasks[taskId].tPalIndex--;
-        LoadPalette(&sBirchSpeechBgGradientPal[gTasks[taskId].tPalIndex], BG_PLTT_ID(0) + 1, PLTT_SIZEOF(8));
+        if (!SiNewGameSeason()) LoadPalette(&sBirchSpeechBgGradientPal[gTasks[taskId].tPalIndex], BG_PLTT_ID(0) + 1, PLTT_SIZEOF(8));
     }
 }
 
@@ -2149,6 +2202,8 @@ static s8 NewGameBirchSpeech_ProcessGenderMenuInput(void)
 
 void NewGameBirchSpeech_SetDefaultPlayerName(u8 nameId)
 {
+    if(SiNewGameSeason()==2){StringCopy(gSaveBlock2Ptr->playerName,gSaveBlock2Ptr->playerGender==MALE?COMPOUND_STRING("HILBERT"):COMPOUND_STRING("HILDA"));return;}
+    if (SiNewGameSeason()==1) { StringCopy(gSaveBlock2Ptr->playerName, gSaveBlock2Ptr->playerGender == MALE ? COMPOUND_STRING("LUCAS") : COMPOUND_STRING("DAWN")); return; }
     const u8 *name;
     u8 i;
 
@@ -2321,3 +2376,11 @@ static void Task_NewGameBirchSpeech_ReturnFromNamingScreenShowTextbox(u8 taskId)
 }
 
 #undef tTimer
+
+// Recreate the native opening context before the region/settings screen preserves it.
+void HeHomeStartNewGame(void)
+{
+    InitMainMenu(TRUE);
+    ResetTasks();
+    CreateTask(Task_NewGameBirchSpeech_Init, 0);
+}

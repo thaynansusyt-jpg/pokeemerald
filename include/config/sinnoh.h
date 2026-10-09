@@ -1,0 +1,4 @@
+#ifndef GUARD_CONFIG_SINNOH_H
+#define GUARD_CONFIG_SINNOH_H
+#define SI_ADMIN_BUILD FALSE
+#endif

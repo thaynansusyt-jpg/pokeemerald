@@ -617,6 +617,49 @@ gSongTable::
 	song ph_nurse_held, MUSIC_PLAYER_SE2, 2
 	song ph_nurse_solo, MUSIC_PLAYER_SE2, 2
 
+	song mus_dpp_twinleaf, MUSIC_PLAYER_BGM, 0
+	song mus_dpp_lake, MUSIC_PLAYER_BGM, 0
+	song mus_dpp_route201, MUSIC_PLAYER_BGM, 0
+	song mus_dpp_jubilife, MUSIC_PLAYER_BGM, 0
+	song mus_dpp_lab, MUSIC_PLAYER_BGM, 0
+	song mus_dpp_pokecenter, MUSIC_PLAYER_BGM, 0
+	song mus_dpp_route203, MUSIC_PLAYER_BGM, 0
+	song mus_dpp_oreburgh, MUSIC_PLAYER_BGM, 0
+	song mus_dpp_sandgem, MUSIC_PLAYER_BGM, 0
+	song mus_dpp_vs_wild, MUSIC_PLAYER_BGM, 0
+	song mus_dpp_vs_galactic, MUSIC_PLAYER_BGM, 0
+	song mus_dpp_encounter_galactic, MUSIC_PLAYER_BGM, 0
+	song mus_dpp_victory_galactic, MUSIC_PLAYER_BGM, 0
+	song mus_dp_gym, MUSIC_PLAYER_BGM, 0
+	song mus_dp_vs_gym_leader, MUSIC_PLAYER_BGM, 0
+	song mus_dp_vs_trainer, MUSIC_PLAYER_BGM, 0
+	song mus_dp_oreburgh_gate, MUSIC_PLAYER_BGM, 0
+	song mus_dp_oreburgh_mine, MUSIC_PLAYER_BGM, 0
+	song mus_dpp_canalave, MUSIC_PLAYER_BGM, 0
+	song mus_dpp_eterna, MUSIC_PLAYER_BGM, 0
+	song mus_dpp_eterna_forest, MUSIC_PLAYER_BGM, 0
+	song mus_dpp_floaroma, MUSIC_PLAYER_BGM, 0
+	song mus_dpp_galactic_hq, MUSIC_PLAYER_BGM, 0
+	song mus_dpp_hearthome, MUSIC_PLAYER_BGM, 0
+	song mus_dpp_league_outside, MUSIC_PLAYER_BGM, 0
+	song mus_dpp_mt_coronet, MUSIC_PLAYER_BGM, 0
+	song mus_dpp_old_chateau, MUSIC_PLAYER_BGM, 0
+	song mus_dpp_pastoria, MUSIC_PLAYER_BGM, 0
+	song mus_dpp_route205, MUSIC_PLAYER_BGM, 0
+	song mus_dpp_route210, MUSIC_PLAYER_BGM, 0
+	song mus_dpp_route213, MUSIC_PLAYER_BGM, 0
+	song mus_dpp_route216, MUSIC_PLAYER_BGM, 0
+	song mus_dpp_snowpoint, MUSIC_PLAYER_BGM, 0
+	song mus_dpp_sunyshore, MUSIC_PLAYER_BGM, 0
+	song mus_dpp_veilstone, MUSIC_PLAYER_BGM, 0
+	song mus_dpp_vs_cynthia, MUSIC_PLAYER_BGM, 0
+	song mus_dpp_vs_cyrus, MUSIC_PLAYER_BGM, 0
+	song mus_dpp_vs_dialga_palkia, MUSIC_PLAYER_BGM, 0
+	song mus_un_nuvema, MUSIC_PLAYER_BGM, 0
+	song mus_un_route, MUSIC_PLAYER_BGM, 0
+	song mus_un_city, MUSIC_PLAYER_BGM, 0
+	song mus_un_bridge, MUSIC_PLAYER_BGM, 0
+	song mus_un_rival, MUSIC_PLAYER_BGM, 0
 	.align 2
 dummy_song_header:
 	.byte 0, 0, 0, 0

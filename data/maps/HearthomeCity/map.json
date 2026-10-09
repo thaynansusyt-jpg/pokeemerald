@@ -1,0 +1,137 @@
+{
+  "id": "MAP_HEARTHOME_CITY",
+  "name": "HearthomeCity",
+  "layout": "LAYOUT_SI_HEARTHOMECITY",
+  "music": "MUS_DPP_HEARTHOME",
+  "region_map_section": "MAPSEC_HEARTHOME_CITY",
+  "requires_flash": false,
+  "weather": "WEATHER_SUNNY",
+  "map_type": "MAP_TYPE_CITY",
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "map": "MAP_ROUTE208",
+      "offset": 21,
+      "direction": "left"
+    },
+    {
+      "map": "MAP_ROUTE209",
+      "offset": -17,
+      "direction": "right"
+    },
+    {
+      "map": "MAP_ROUTE212_NORTH",
+      "offset": -4,
+      "direction": "down"
+    }
+  ],
+  "object_events": [
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SI_MAN",
+      "x": 7,
+      "y": 6,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "SI_C_Go_HearthomeCity_HearthomeCity_PokemonCenter",
+      "flag": "0",
+      "local_id": "LOCALID_SI_HEARTHOMECITY_1"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SI_MAN",
+      "x": 6,
+      "y": 7,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "SI_C_Go_HearthomeCity_HearthomeCity_Mart",
+      "flag": "0",
+      "local_id": "LOCALID_SI_HEARTHOMECITY_2"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SI_MAN",
+      "x": 8,
+      "y": 6,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "SI_C_Go_HearthomeCity_HearthomeCity_House",
+      "flag": "0",
+      "local_id": "LOCALID_SI_HEARTHOMECITY_3"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SI_MAN",
+      "x": 7,
+      "y": 7,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "SI_C_Go_HearthomeCity_HearthomeCity_Gym",
+      "flag": "0",
+      "local_id": "LOCALID_SI_HEARTHOMECITY_4"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SI_GUITARIST",
+      "x": 29,
+      "y": 26,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "SI_W_Quest3",
+      "flag": "0",
+      "local_id": "LOCALID_SI_W_HEARTHOMECITY_5"
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 4,
+      "y": 45,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE208_ACCESS",
+      "dest_warp_id": "1"
+    },
+    {
+      "x": 53,
+      "y": 45,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE209_ACCESS",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 8,
+      "y": 46,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE212_ACCESS",
+      "dest_warp_id": "1"
+    },
+    {
+      "x": 9,
+      "y": 46,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE212_ACCESS",
+      "dest_warp_id": "1"
+    }
+  ],
+  "coord_events": [],
+  "bg_events": [],
+  "region": "REGION_SINNOH"
+}

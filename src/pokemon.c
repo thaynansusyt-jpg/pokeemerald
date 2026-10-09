@@ -5074,6 +5074,22 @@ bool32 IsSpeciesInHoennDex(enum Species species)
 
 u16 GetBattleBGM(void)
 {
+    // Original Unova-inspired battle cue; separate from the Sinnoh/Hoenn tracks.
+    if (GetCurrentRegion() == REGION_UNOVA && !(gBattleTypeFlags & (BATTLE_TYPE_LINK | BATTLE_TYPE_FRONTIER)))
+        return MUS_UN_RIVAL;
+
+    if (GetCurrentRegion() == REGION_SINNOH && !(gBattleTypeFlags & (BATTLE_TYPE_LINK | BATTLE_TYPE_FRONTIER)))
+    {
+        if (!(gBattleTypeFlags & BATTLE_TYPE_TRAINER)) return gBattleTypeFlags & BATTLE_TYPE_LEGENDARY ? MUS_DPP_VS_DIALGA_PALKIA : MUS_DPP_VS_WILD;
+        if (TRAINER_BATTLE_PARAM.opponentA == TRAINER_SI_CYNTHIA) return MUS_DPP_VS_CYNTHIA;
+        if (TRAINER_BATTLE_PARAM.opponentA == TRAINER_SI_CYRUS || TRAINER_BATTLE_PARAM.opponentA == TRAINER_SI_CYRUS_FINAL) return MUS_DPP_VS_CYRUS;
+        if (GetTrainerClassFromId(TRAINER_BATTLE_PARAM.opponentA) == TRAINER_CLASS_LEADER || GetTrainerClassFromId(TRAINER_BATTLE_PARAM.opponentA) == TRAINER_CLASS_ELITE_FOUR) return MUS_DP_VS_GYM_LEADER;
+        if (GetTrainerClassFromId(TRAINER_BATTLE_PARAM.opponentA) == TRAINER_CLASS_SI_GALACTIC) return MUS_DPP_VS_GALACTIC;
+        if (TRAINER_BATTLE_PARAM.opponentA == TRAINER_SI_ROARK) return MUS_DP_VS_GYM_LEADER;
+        if (TRAINER_BATTLE_PARAM.opponentA == TRAINER_SI_LAKE || TRAINER_BATTLE_PARAM.opponentA == TRAINER_SI_MINE) return MUS_DPP_VS_GALACTIC;
+        return MUS_DP_VS_TRAINER;
+    }
+
     if (gBattleTypeFlags & BATTLE_TYPE_LEGENDARY)
     {
         switch (GetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_SPECIES))

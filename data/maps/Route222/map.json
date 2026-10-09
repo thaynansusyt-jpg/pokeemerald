@@ -1,0 +1,55 @@
+{
+  "id": "MAP_ROUTE222",
+  "name": "Route222",
+  "layout": "LAYOUT_SI_ROUTE222",
+  "music": "MUS_RG_ROUTE24",
+  "region_map_section": "MAPSEC_SINNOH_ROUTES",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_ROUTE",
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "map": "MAP_SUNYSHORE_CITY",
+      "offset": -25,
+      "direction": "right"
+    },
+    {
+      "map": "MAP_VALOR_LAKEFRONT",
+      "offset": -36,
+      "direction": "left"
+    }
+  ],
+  "object_events": [
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SI_HIKER",
+      "x": 24,
+      "y": 7,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "2",
+      "script": "SI_W_Trainer_38",
+      "flag": "0",
+      "local_id": "LOCALID_SI_ROUTE222_1"
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 89,
+      "y": 23,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE222_ACCESS",
+      "dest_warp_id": "0"
+    }
+  ],
+  "coord_events": [],
+  "bg_events": [],
+  "region": "REGION_SINNOH"
+}

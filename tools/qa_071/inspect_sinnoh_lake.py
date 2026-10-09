@@ -1,0 +1,5 @@
+exec(open('tools/qa_071/helpers.py').read())
+cmd('load .qa071/sinnoh_new_game.state');setvar(vars['VAR_SI_STAGE'],2)
+warp('LakeVerity',38,37);press(64);press(1);cmd('f 500 0');shot('sinnoh_lake_trigger')
+rev={v|1:k for k,v in sym.items()};print('cb',rev.get(read(sym['gMain']+4)));print('stage',getvar(vars['VAR_SI_STAGE']));print('tasks',[rev.get(read(sym['gTasks']+i*40)) for i in range(16) if read(sym['gTasks']+i*40+4,1)])
+p.stdin.close();p.wait()

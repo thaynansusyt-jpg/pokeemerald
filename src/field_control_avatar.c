@@ -1,3 +1,4 @@
+#include "sinnoh_chapter.h"
 #include "global.h"
 #include "battle_setup.h"
 #include "bike.h"

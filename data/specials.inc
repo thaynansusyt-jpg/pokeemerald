@@ -640,3 +640,7 @@ gSpecials::
 	def_special CheckAddCoins
 
 	def_special HeSyncRtc
+
+	def_special SiInRegion
+
+ def_special SiSetHealPoint

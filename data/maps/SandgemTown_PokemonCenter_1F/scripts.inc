@@ -1,0 +1,6 @@
+SandgemTown_PokemonCenter_1F_MapScripts::
+ map_script MAP_SCRIPT_ON_TRANSITION, SandgemTown_PokemonCenter_1F_SiHeal
+ .byte 0
+SandgemTown_PokemonCenter_1F_SiHeal:
+ setrespawn HEAL_LOCATION_SI_SANDGEMTOWN
+ end

@@ -1,0 +1,6 @@
+OreburghCity_PokemonCenter_1F_MapScripts::
+ map_script MAP_SCRIPT_ON_TRANSITION, OreburghCity_PokemonCenter_1F_SiHeal
+ .byte 0
+OreburghCity_PokemonCenter_1F_SiHeal:
+ setrespawn HEAL_LOCATION_SI_OREBURGHCITY
+ end

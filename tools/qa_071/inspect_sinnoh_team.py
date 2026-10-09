@@ -1,0 +1,6 @@
+exec(open('tools/qa_071/helpers.py').read());exec(open('tools/qa_071/battle_driver.py').read())
+cmd('load .qa071/sinnoh_new_game.state');dismiss(100)
+print('oldteam',read(sym['gPartiesCount'],1),[read(sym['gParties']+i,1) for i in range(80,100)])
+prepare_team();print('newteam',read(sym['gPartiesCount'],1),[read(sym['gParties']+i,1) for i in range(80,100)],'enemy',[read(sym['gParties']+600+i,1)for i in range(80,100)])
+print('vars cap',getvar(vars['VAR_HE_LEVEL_CAP']));shot('team_fixture_sinnoh');cmd('save .qa071/team_fixture_sinnoh.state')
+p.stdin.close();p.wait()

@@ -1,0 +1,127 @@
+{
+  "id": "MAP_UN_CASTELIA_STREET",
+  "name": "UnCasteliaStreet",
+  "layout": "LAYOUT_UN_CASTELIASTREET",
+  "music": "MUS_UN_CITY",
+  "region_map_section": "MAPSEC_UN_CASTELIA",
+  "requires_flash": false,
+  "weather": "WEATHER_SUNNY",
+  "map_type": "MAP_TYPE_TOWN",
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "map": "MAP_UN_CASTELIA_CITY",
+      "offset": -8,
+      "direction": "down"
+    },
+    {
+      "map": "MAP_UN_ROUTE4",
+      "offset": 8,
+      "direction": "up"
+    }
+  ],
+  "object_events": [
+    {
+      "graphics_id": "OBJ_EVENT_GFX_UN_CHILD_F",
+      "x": 16,
+      "y": 18,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT",
+      "movement_range_x": 1,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "UN_Resident15",
+      "flag": "0",
+      "local_id": "LOCALID_UN_CASTELIA_STREET_1"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_UN_SCIENTIST",
+      "x": 22,
+      "y": 22,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT",
+      "movement_range_x": 1,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "UN_Resident16",
+      "flag": "0",
+      "local_id": "LOCALID_UN_CASTELIA_STREET_2"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_UN_WORKER",
+      "x": 28,
+      "y": 26,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT",
+      "movement_range_x": 1,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "UN_Resident17",
+      "flag": "0",
+      "local_id": "LOCALID_UN_CASTELIA_STREET_3"
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 30,
+      "y": 21,
+      "elevation": 0,
+      "dest_map": "MAP_UN_CASTELIA_GYM",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 9,
+      "y": 13,
+      "elevation": 0,
+      "dest_map": "MAP_UN_CASTELIA_STUDIO",
+      "dest_warp_id": "0"
+    }
+  ],
+  "coord_events": [
+    {
+      "type": "trigger",
+      "x": 22,
+      "y": 3,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "UN_NorthBoundary"
+    },
+    {
+      "type": "trigger",
+      "x": 23,
+      "y": 3,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "UN_NorthBoundary"
+    },
+    {
+      "type": "trigger",
+      "x": 24,
+      "y": 3,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "UN_NorthBoundary"
+    },
+    {
+      "type": "trigger",
+      "x": 25,
+      "y": 3,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "UN_NorthBoundary"
+    }
+  ],
+  "bg_events": [],
+  "region": "REGION_UNOVA"
+}

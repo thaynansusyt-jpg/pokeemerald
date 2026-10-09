@@ -1,0 +1,122 @@
+{
+  "id": "MAP_UN_NUVEMA_TOWN",
+  "name": "UnNuvemaTown",
+  "layout": "LAYOUT_UN_NUVEMATOWN",
+  "music": "MUS_UN_NUVEMA",
+  "region_map_section": "MAPSEC_UN_NUVEMA",
+  "requires_flash": false,
+  "weather": "WEATHER_SUNNY",
+  "map_type": "MAP_TYPE_TOWN",
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "map": "MAP_UN_ROUTE1",
+      "offset": 8,
+      "direction": "up"
+    }
+  ],
+  "object_events": [
+    {
+      "graphics_id": "OBJ_EVENT_GFX_UN_ARTIST",
+      "x": 16,
+      "y": 18,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT",
+      "movement_range_x": 1,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "UN_Resident0",
+      "flag": "0",
+      "local_id": "LOCALID_UN_NUVEMA_TOWN_1"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_UN_GENTLEMAN",
+      "x": 22,
+      "y": 22,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT",
+      "movement_range_x": 1,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "UN_Resident1",
+      "flag": "0",
+      "local_id": "LOCALID_UN_NUVEMA_TOWN_2"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_UN_MUSICIAN",
+      "x": 28,
+      "y": 26,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT",
+      "movement_range_x": 1,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "UN_Resident2",
+      "flag": "0",
+      "local_id": "LOCALID_UN_NUVEMA_TOWN_3"
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 9,
+      "y": 9,
+      "elevation": 0,
+      "dest_map": "MAP_UN_NUVEMA_HOUSE",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 34,
+      "y": 10,
+      "elevation": 0,
+      "dest_map": "MAP_UN_NUVEMA_LAB",
+      "dest_warp_id": "0"
+    }
+  ],
+  "coord_events": [
+    {
+      "type": "trigger",
+      "x": 22,
+      "y": 3,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "UN_Gate_NuvemaTown"
+    },
+    {
+      "type": "trigger",
+      "x": 23,
+      "y": 3,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "UN_Gate_NuvemaTown"
+    },
+    {
+      "type": "trigger",
+      "x": 24,
+      "y": 3,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "UN_Gate_NuvemaTown"
+    },
+    {
+      "type": "trigger",
+      "x": 25,
+      "y": 3,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "UN_Gate_NuvemaTown"
+    }
+  ],
+  "bg_events": [],
+  "region": "REGION_UNOVA"
+}
