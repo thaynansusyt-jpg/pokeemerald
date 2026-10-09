@@ -4,7 +4,7 @@ Reproduction supplied by player: on MyBoy, losing the mandatory early battle ret
 
 ## Implementation
 - Preserve normal Hoenn battle outcomes and encounter flags.
-- For the mandatory Lake Verity Galactic trainer only, defeated Sinnoh party gets healed and returned to the field, no whiteout and no victory flag.
+- For early Sinnoh trainer defeats through stage 2 (Route 201 and mandatory Lake Verity), the party is healed in place; no whiteout or falsely granted victory flag.
 - Sinnoh chapter progression to stage 3 now checks the actual battle outcome. On loss the player can retry.
 - For other Sinnoh battles, bypass the inherited nurse cutscene during a normal blackout, using the normal fade instead.
 - Preserve existing Sinnoh 0.9.4 softer night palette and temporary DexNav nickname workaround.

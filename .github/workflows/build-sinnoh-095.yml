@@ -42,7 +42,7 @@ jobs:
           tar -xzf /tmp/sinnoh_093_source_overlay.tar.gz -C .
           echo "245ef4cd1583d7b3856046e7d80066a33f69b73812621267b2ba782516c61ea0  patches/sinnoh_094_hotfix.patch" | sha256sum -c -
           git apply --whitespace=nowarn patches/sinnoh_094_hotfix.patch
-          echo 'f18150f2f43f85f53d4d98d815e86ff7c458a6ee7596e6ecb3bf1fe9c9631b89  patches/sinnoh_095_defeat_recovery.patch' | sha256sum -c -
+          echo 'cce0d288f4cfa173ca4abe88aa66592bc6ebba006f45f10bf49ccf26da9dd7ba  patches/sinnoh_095_defeat_recovery.patch' | sha256sum -c -
           git apply --whitespace=nowarn patches/sinnoh_095_defeat_recovery.patch
       - name: Validate encounters and UI
         run: |

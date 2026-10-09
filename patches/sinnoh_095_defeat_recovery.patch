@@ -51,11 +51,11 @@ index 49cc3df..b55eb29 100644
          DowngradeBadPoison();
          SetMainCallback2(CB2_ReturnToFieldContinueScriptPlayMapMusic);
      }
-+    else if (SiIsSeason() && TRAINER_BATTLE_PARAM.opponentA == TRAINER_SI_LAKE
++    else if (SiIsSeason() && VarGet(VAR_SI_STAGE) <= 2
 +             && IsPlayerDefeated(gBattleOutcome))
 +    {
-+        // The mandatory introductory encounter must be retryable, not a blackout.
-+        // Do not flag the trainer as beaten: the player has not won the chapter.
++        // The first route and mandatory Lake Verity trainers must be retryable.
++        // An early defeat heals on the field and never flags the trainer as beaten.
 +        HealPlayerParty();
 +        DowngradeBadPoison();
 +        SetMainCallback2(CB2_ReturnToFieldContinueScriptPlayMapMusic);

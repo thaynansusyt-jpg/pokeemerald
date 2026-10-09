@@ -16,8 +16,8 @@ assert 'SI_Text_LakeRetry::' in scripts
 assert 'SI_Text_LakeRetry_En::' in scripts
 
 cb=setup[setup.index('static void CB2_EndTrainerBattle(void)\n{'):]
-assert 'SiIsSeason() && TRAINER_BATTLE_PARAM.opponentA == TRAINER_SI_LAKE' in cb
-guard=cb[cb.index('SiIsSeason() && TRAINER_BATTLE_PARAM.opponentA == TRAINER_SI_LAKE'):]
+assert 'SiIsSeason() && VarGet(VAR_SI_STAGE) <= 2' in cb
+guard=cb[cb.index('SiIsSeason() && VarGet(VAR_SI_STAGE) <= 2'):]
 assert guard.index('HealPlayerParty()') < guard.index('SetMainCallback2(CB2_ReturnToFieldContinueScriptPlayMapMusic)')
 assert guard.index('IsPlayerDefeated(gBattleOutcome)') < guard.index('SetMainCallback2(CB2_ReturnToFieldContinueScriptPlayMapMusic)')
 assert 'gSpecialVar_Result = (gBattleOutcome == B_OUTCOME_WON)' in chapter
