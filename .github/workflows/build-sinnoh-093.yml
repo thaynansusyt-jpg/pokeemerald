@@ -2,6 +2,12 @@ name: Sinnoh 0.9.3 - Build and test
 on:
   push:
     branches: [sinnoh-0.9.3-recuperacao]
+    paths:
+      - 'patches/**'
+      - 'src/**'
+      - 'include/**'
+      - 'data/**'
+      - '.github/workflows/build-sinnoh-093.yml'
   workflow_dispatch:
 
 permissions:

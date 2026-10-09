@@ -58,8 +58,10 @@ jobs:
           test -n "$wid"
           timeout 3s xdotool windowactivate "$wid" || true
           timeout 3s xdotool windowfocus "$wid" || true
+          xdotool mousemove --window "$wid" 200 150 click 1 || true
+          echo "Active window: $(xdotool getactivewindow || true)"
           shot() { import -window root "screens/$1.png"; sleep 1; }
-          press() { xdotool key --window "$wid" --clearmodifiers --delay 100 "$1"; sleep 2; }
+          press() { xdotool key --clearmodifiers --delay 100 "$1"; sleep 2; }
           shot "01-boot"
           press Return
           shot "02-start"
