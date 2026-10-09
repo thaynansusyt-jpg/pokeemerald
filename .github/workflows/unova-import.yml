@@ -53,7 +53,7 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          rsync -a --delete --exclude='/.git/' --exclude='/.github/workflows/unova-build.yml' "$SOURCE/" "$GITHUB_WORKSPACE/"
+          rsync -a --delete --exclude='/.git/' --exclude='/.github/workflows/' "$SOURCE/" "$GITHUB_WORKSPACE/"
           test -f Makefile
           test -f Makefile.termux
           test -f .github/workflows/unova-build.yml
