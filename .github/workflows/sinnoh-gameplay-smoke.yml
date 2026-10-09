@@ -21,7 +21,7 @@ jobs:
       - name: Install mGBA and screenshot tools
         run: |
           sudo apt-get update -qq
-          sudo apt-get install -y -qq mgba-qt xvfb xdotool imagemagick
+          sudo apt-get install -y -qq mgba-qt xvfb xdotool imagemagick openbox
           command -v mgba-qt
           mgba-qt --version || true
 
@@ -47,6 +47,8 @@ jobs:
           export SDL_AUDIODRIVER=dummy
           export LIBGL_ALWAYS_SOFTWARE=1
           export QT_X11_NO_MITSHM=1
+          openbox > screens/openbox.log 2>&1 &
+          sleep 2
           mgba-qt -3 "$PWD/rom/pokemon_hoenn_expansion_gen7.gba" > screens/emulator.log 2>&1 &
           emupid=$!
           trap 'kill "$emupid" 2>/dev/null || true' EXIT
@@ -55,7 +57,7 @@ jobs:
           echo "emulator_pid=$emupid window_id=$wid"
           test -n "$wid"
           xdotool windowactivate --sync "$wid" || true
-          shot() { import -window "$wid" "screens/$1.png"; sleep 1; }
+          shot() { import -window root "screens/$1.png"; sleep 1; }
           press() { xdotool key --window "$wid" --clearmodifiers --delay 100 "$1"; sleep 2; }
           shot "01-boot"
           press Return
