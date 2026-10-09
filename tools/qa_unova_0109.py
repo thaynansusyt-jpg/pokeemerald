@@ -20,7 +20,7 @@ for name,label,pts in (
  ("UnNuvemaBedroom","UN_BedroomExit",[(9,12),(10,12),(11,12)]),
  ("UnNuvemaHouse","UN_HouseExit",[(8,11),(9,11),(10,11)]),
  ("UnNuvemaHouse","UN_ToBedroom",[(14,7),(14,8)]),
- ("UnNuvemaTown","UN_EnterHouse",[(9,9)])):
+ ("UnNuvemaTown","UN_EnterHouse",[(9,11)])):
  j=json.loads((R/"data/maps"/name/"map.json").read_text())
  hits=[v for v in j["coord_events"] if v["script"]==label]
  assert {(x["x"],x["y"]) for x in hits}==set(pts),(name,label,hits)
