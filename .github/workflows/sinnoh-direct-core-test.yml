@@ -66,19 +66,19 @@ jobs:
             core->setVideoBuffer(core,framebuf,W);
             if(!mCoreLoadFile(core,argv[1])){fprintf(stderr,"load ROM failed\n");return 5;}
             core->reset(core);
-            int marks[]={120,1500,3000,3500,3600,3850,3900,4200,4250,4500,4550,4800,5050,5300,5800,6500,7300};
+            int marks[]={120,1500,3000,3500,3600,3850,3900,4200,4250,4500,4550,4800,5100,5400,5550,5700,6100,6800,7600,8500,10000,11600};
             size_t mi=0;
-            for(int frame=0; frame<=7300; frame++) {
+            for(int frame=0; frame<=11600; frame++) {
               uint32_t keys=0;
-              if(frame>=3500 && frame<3530) keys=KEY_START;
-              if(frame>=3800 && frame<3825) keys=KEY_A;
-              if(frame>=4150 && frame<4175) keys=KEY_DOWN;
-              if(frame>=4450 && frame<4475) keys=KEY_A;
-              if(frame>=4750 && frame<4775) keys=KEY_A;
-              if(frame>=5000 && frame<5025) keys=KEY_A;
-              if(frame>=5250 && frame<5275) keys=KEY_A;
-              if(frame>=5750 && frame<5775) keys=KEY_A;
-              if(frame>=6450 && frame<6475) keys=KEY_A;
+              if(frame>=3500 && frame<3520) keys=KEY_START;
+              if(frame>=3800 && frame<3820) keys=KEY_A;
+              if(frame>=4150 && frame<4170) keys=KEY_DOWN;
+              if(frame>=4450 && frame<4470) keys=KEY_A;
+              // From the first journey setting move down 13 rows to Start adventure.
+              if(frame>=4600 && frame<5380 && ((frame-4600)%60)<13) keys=KEY_DOWN;
+              if(frame>=5500 && frame<5520) keys=KEY_A;
+              // Walk through dialog after the Sinnoh new-game transition.
+              if(frame>=5900 && frame<10500 && (frame%180)<14) keys=KEY_A;
               core->setKeys(core,keys);
               core->runFrame(core);
               if(mi < sizeof(marks)/sizeof(marks[0]) && frame==marks[mi]) {
@@ -86,7 +86,7 @@ jobs:
                 mi++;
               }
             }
-            printf("COMPLETED 7300 GBA frames, running direct core controls\n");
+            printf("COMPLETED 11600 GBA frames, running direct core controls\n");
             core->unloadROM(core);
             mCoreConfigDeinit(&core->config);
             core->deinit(core);
