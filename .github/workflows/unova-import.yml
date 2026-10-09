@@ -68,5 +68,37 @@ jobs:
           else
             git commit -m "Import Unova 0.10.5 development checkpoint"
             git push origin HEAD:refs/heads/unova-0.10.5-dev
-            echo "Checkpoint importado. Build sera executado no push."
+            echo "Checkpoint importado. A compilacao sera executada neste mesmo workflow."
           fi
+      - name: Instalar compilador ARM no GitHub
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y gcc-arm-none-eabi binutils-arm-none-eabi libnewlib-arm-none-eabi make gcc g++ python3 libpng-dev zlib1g-dev pkg-config
+      - name: Verificar codigo e compilar a ROM
+        shell: bash
+        run: |
+          set -o pipefail
+          {
+            python3 tools/qa_unova_0101.py &&
+            python3 tools/qa_unova_integrated.py &&
+            make -f Makefile.termux rom JOBS=2
+          } 2>&1 | tee unova-build.log
+          test -s pokemon_hoenn_expansion_gen7.gba
+          test "$(stat -c %s pokemon_hoenn_expansion_gen7.gba)" -eq 33554432
+          sha256sum pokemon_hoenn_expansion_gen7.gba | tee rom.sha256
+      - name: Guardar diagnostico da compilacao
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: unova-build-log
+          path: unova-build.log
+          if-no-files-found: warn
+      - name: Guardar ROM somente quando passar
+        if: success()
+        uses: actions/upload-artifact@v4
+        with:
+          name: unova-0105-gba-em-desenvolvimento
+          path: |
+            pokemon_hoenn_expansion_gen7.gba
+            rom.sha256
+          if-no-files-found: error
