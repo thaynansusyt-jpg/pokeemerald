@@ -1,0 +1,94 @@
+name: Sinnoh 0.9.3 - Emulator gameplay smoke test
+on:
+  push:
+    branches:
+      - sinnoh-0.9.3-recuperacao
+    paths:
+      - .github/workflows/sinnoh-gameplay-smoke.yml
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  actions: read
+
+jobs:
+  startup-smoke:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install mGBA and screenshot tools
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq mgba-qt xvfb xdotool imagemagick
+          command -v mgba-qt
+          mgba-qt --version || true
+
+      - name: Retrieve tested GitHub-compiled Sinnoh ROM
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p rom screens
+          gh run download 37863869563 -R "${{ github.repository }}" -n Pokemon-Hoenn-Expansion-Sinnoh-0.9.3-beta -D rom
+          find rom -maxdepth 2 -type f -printf '%f (%s bytes)\n'
+          test -s rom/pokemon_hoenn_expansion_gen7.gba
+
+      - name: Emulate boot, title and first user inputs; capture screenshots
+        env:
+          SDL_AUDIODRIVER: dummy
+          LIBGL_ALWAYS_SOFTWARE: "1"
+          QT_X11_NO_MITSHM: "1"
+        shell: bash
+        run: |
+          cat > /tmp/sinnoh-boot-smoke.sh <<'SH'
+          #!/usr/bin/env bash
+          set -euo pipefail
+          export SDL_AUDIODRIVER=dummy
+          export LIBGL_ALWAYS_SOFTWARE=1
+          export QT_X11_NO_MITSHM=1
+          mgba-qt -3 "$PWD/rom/pokemon_hoenn_expansion_gen7.gba" > screens/emulator.log 2>&1 &
+          emupid=$!
+          trap 'kill "$emupid" 2>/dev/null || true' EXIT
+          sleep 12
+          wid=$(xdotool search --name 'mGBA' | head -1 || true)
+          echo "emulator_pid=$emupid window_id=$wid"
+          test -n "$wid"
+          xdotool windowactivate --sync "$wid" || true
+          shot() { import -window "$wid" "screens/$1.png"; sleep 1; }
+          press() { xdotool key --window "$wid" --clearmodifiers --delay 100 "$1"; sleep 2; }
+          shot "01-boot"
+          press Return
+          shot "02-start"
+          press x
+          shot "03-A"
+          press x
+          shot "04-A-again"
+          press x
+          shot "05-A-third"
+          press Down
+          shot "06-down"
+          press x
+          shot "07-selection"
+          press x
+          shot "08-dialog"
+          press x
+          shot "09-dialog-next"
+          for i in 1 2 3 4 5 6; do
+            press x
+          done
+          shot "10-extended-dialog"
+          echo "Captured emulator startup frames and keyboard inputs."
+          SH
+          chmod +x /tmp/sinnoh-boot-smoke.sh
+          xvfb-run -a -s '-screen 0 1280x800x24' /tmp/sinnoh-boot-smoke.sh
+          ls -lh screens/*.png
+
+      - name: Publish gameplay screenshots and emulator log
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: Sinnoh-0.9.3-mGBA-Startup-Screenshots
+          path: screens
+          if-no-files-found: warn
+          retention-days: 14
