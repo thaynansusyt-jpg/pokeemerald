@@ -44,7 +44,7 @@ jobs:
           git apply --whitespace=nowarn patches/sinnoh_094_hotfix.patch
           echo 'cce0d288f4cfa173ca4abe88aa66592bc6ebba006f45f10bf49ccf26da9dd7ba  patches/sinnoh_095_defeat_recovery.patch' | sha256sum -c -
           git apply --whitespace=nowarn patches/sinnoh_095_defeat_recovery.patch
-          echo '672220f819c09009f8fdd0cf24a92c4bee00f4c2d1b63fa67f5e23eb9e55c45e  patches/sinnoh_096_guide.patch' | sha256sum -c -
+          echo '4e80a24594b188b8307ac169b028e649fd34cefe45b832e5b176856a7b7a86c1  patches/sinnoh_096_guide.patch' | sha256sum -c -
           git apply --whitespace=nowarn patches/sinnoh_096_guide.patch
       - name: Validate encounters and UI
         run: |

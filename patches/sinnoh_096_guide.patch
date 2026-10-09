@@ -81,8 +81,8 @@ diff --git a/src/sinnoh_missions.c b/src/sinnoh_missions.c
 +    {5, MAP_OREBURGH_MINE_B2F, 18, 24},
 +    {6, MAP_OREBURGH_CITY_GYM, 5, 2}
 +};
-+static u8 sSiGuideSpriteId = MAX_SPRITES;
-+static u16 sSiGuideChime = 0;
++EWRAM_DATA static u8 sSiGuideSpriteId;
++EWRAM_DATA static u16 sSiGuideChime;
 +
 +static const struct SiGuideGoal *SiGuideCurrentGoal(void)
 +{
