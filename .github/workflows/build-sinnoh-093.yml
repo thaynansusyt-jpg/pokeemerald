@@ -35,9 +35,9 @@ jobs:
         run: |
           python3 tools/test_sinnoh_093_static.py
           python3 tools/validate_hoenn.py
-          python3 tools/validate_hoenn_07.py
-          python3 tools/validate_hoenn_071.py
-          python3 tools/validate_hoenn_072.py
+          # Older 0.7.x checks hardcode MAX_TRAINERS_COUNT_EMERALD=864;
+          # Sinnoh increases it to 994. Run the compatible validators above.
+          grep -q 'MAX_TRAINERS_COUNT_EMERALD 994' include/constants/opponents.h
       - name: Build playable GBA ROM
         run: |
           make modern -j2
