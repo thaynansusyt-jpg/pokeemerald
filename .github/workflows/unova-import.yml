@@ -1,5 +1,7 @@
 name: Unova - Importar codigo-fonte
 on:
+  release:
+    types: [published]
   workflow_dispatch:
     inputs:
       release_tag:
@@ -14,6 +16,7 @@ permissions:
   contents: write
 jobs:
   import-source:
+    if: github.event_name == 'workflow_dispatch' || startsWith(github.event.release.tag_name, 'unova-source-')
     runs-on: ubuntu-latest
     timeout-minutes: 45
     steps:
@@ -27,8 +30,8 @@ jobs:
         id: unpack
         env:
           GH_TOKEN: ${{ github.token }}
-          TAG: ${{ inputs.release_tag }}
-          ASSET: ${{ inputs.source_asset }}
+          TAG: ${{ github.event_name == 'release' && github.event.release.tag_name || inputs.release_tag }}
+          ASSET: ${{ github.event_name == 'release' && 'Pokemon_Hoenn_Expansion_Unova_0.10.5_CHECKPOINT_DEV.zip' || inputs.source_asset }}
         shell: bash
         run: |
           set -euo pipefail
