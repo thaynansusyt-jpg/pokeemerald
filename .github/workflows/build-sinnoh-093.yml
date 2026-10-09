@@ -1,7 +1,7 @@
-name: Sinnoh 0.9.3 - Build and test
+name: Sinnoh 0.9.4 - Night and DexNav hotfix
 on:
   push:
-    branches: [sinnoh-0.9.3-recuperacao]
+    branches: [sinnoh-0.9.4-hotfix-noite-dexnav]
     paths:
       - 'patches/**'
       - 'src/**'
@@ -40,9 +40,12 @@ jobs:
           base64 --decode patches/sinnoh_093_source_overlay.tar.gz.b64 > /tmp/sinnoh_093_source_overlay.tar.gz
           echo "aaf049dc5d5695e5c6a25dc6cec20650100dad70120cf8df83d6df13a078c69b  /tmp/sinnoh_093_source_overlay.tar.gz" | sha256sum -c -
           tar -xzf /tmp/sinnoh_093_source_overlay.tar.gz -C .
+          echo "245ef4cd1583d7b3856046e7d80066a33f69b73812621267b2ba782516c61ea0  patches/sinnoh_094_hotfix.patch" | sha256sum -c -
+          git apply --whitespace=nowarn patches/sinnoh_094_hotfix.patch
       - name: Validate encounters and UI
         run: |
           python3 tools/test_sinnoh_093_static.py
+          python3 tools/test_sinnoh_094_hotfix.py
           python3 tools/validate_hoenn.py
           # Older 0.7.x checks hardcode MAX_TRAINERS_COUNT_EMERALD=864;
           # Sinnoh increases it to 994. Run the compatible validators above.
@@ -52,11 +55,11 @@ jobs:
           make modern -j2
           test -s pokemon_hoenn_expansion_gen7.gba
           ls -lh pokemon_hoenn_expansion_gen7.gba
-      - name: Upload Sinnoh 0.9.3 test build
+      - name: Upload Sinnoh 0.9.4 hotfix build
         if: success()
         uses: actions/upload-artifact@v4
         with:
-          name: Pokemon-Hoenn-Expansion-Sinnoh-0.9.3-beta
+          name: Pokemon-Hoenn-Expansion-Sinnoh-0.9.4-hotfix
           path: |
             pokemon_hoenn_expansion_gen7.gba
             README_HOENN.md
