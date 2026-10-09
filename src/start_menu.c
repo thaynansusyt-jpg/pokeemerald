@@ -1,3 +1,4 @@
+#include "global.h"
 #include "sinnoh_chapter.h"
 #include "unova_chapter.h"
 #include "hoenn_rules.h"
