@@ -81,10 +81,26 @@ jobs:
             press x
           done
           shot "10-extended-dialog"
-          echo "Captured emulator startup frames and keyboard inputs."
+          sleep 36
+          shot "11-after-intro"
+          press Return
+          shot "12-start-at-title"
+          press x
+          shot "13-first-menu-choice"
+          press x
+          shot "14-next-menu"
+          press Down
+          shot "15-menu-down"
+          press x
+          shot "16-confirm-down"
+          press x
+          shot "17-confirm-next"
+          press x
+          shot "18-dialog"
+          echo "Captured opening sequence and attempted navigation to new game."
           SH
           chmod +x /tmp/sinnoh-boot-smoke.sh
-          timeout 140s xvfb-run -a -s '-screen 0 1280x800x24' /tmp/sinnoh-boot-smoke.sh
+          timeout 210s xvfb-run -a -s '-screen 0 1280x800x24' /tmp/sinnoh-boot-smoke.sh
           ls -lh screens/*.png
 
       - name: Publish gameplay screenshots and emulator log
