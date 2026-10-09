@@ -24,7 +24,7 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: |
           mkdir -p rom captures
-          gh run download 37868002724 -R "${{ github.repository }}" -n Pokemon-Hoenn-Expansion-Sinnoh-0.9.4-beta -D rom
+          gh run download 37868002724 -R "${{ github.repository }}" -n Pokemon-Hoenn-Expansion-Sinnoh-0.9.4-hotfix -D rom
           test -s rom/pokemon_hoenn_expansion_gen7.gba
       - name: Compile headless mGBA frame-and-input runner
         run: |
