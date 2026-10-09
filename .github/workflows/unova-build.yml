@@ -1,0 +1,45 @@
+name: Unova - Compilar e validar
+on:
+  push:
+    branches: [unova-0.10.5-dev]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  gba-build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 65
+    steps:
+      - uses: actions/checkout@v4
+      - name: Instalar compilador ARM e dependencias
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y gcc-arm-none-eabi binutils-arm-none-eabi libnewlib-arm-none-eabi make gcc g++ python3 libpng-dev zlib1g-dev pkg-config
+      - name: Validar Unova e compilar
+        shell: bash
+        run: |
+          set -o pipefail
+          {
+            python3 tools/qa_unova_0101.py &&
+            python3 tools/qa_unova_integrated.py &&
+            make -f Makefile.termux rom JOBS=2
+          } 2>&1 | tee unova-build.log
+          test -s pokemon_hoenn_expansion_gen7.gba
+          test "$(stat -c %s pokemon_hoenn_expansion_gen7.gba)" -eq 33554432
+          sha256sum pokemon_hoenn_expansion_gen7.gba | tee rom.sha256
+      - name: Salvar log da compilacao
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: unova-build-log
+          path: unova-build.log
+          if-no-files-found: warn
+      - name: Salvar ROM somente se compilacao passar
+        if: success()
+        uses: actions/upload-artifact@v4
+        with:
+          name: unova-0105-gba-nao-testada-em-jogo
+          path: |
+            pokemon_hoenn_expansion_gen7.gba
+            rom.sha256
+          if-no-files-found: error
