@@ -2,7 +2,7 @@ name: Sinnoh 0.9.4 - Direct GBA core input test
 on:
   push:
     branches: [sinnoh-0.9.4-hotfix-noite-dexnav]
-    paths: [' .github/workflows/sinnoh-094-boot-smoke.yml']
+    paths: ['.github/workflows/sinnoh-094-boot-smoke.yml']
   workflow_dispatch:
 
 permissions:
