@@ -37,7 +37,7 @@ index 07ead0d..985b007 100644
   .string "O coletor desliga. Entre os\nfios há uma etiqueta: LOTE\pO-17, MINA OREBURGH. Você\nguarda a leitura para\pRowan. Um policial em\nJubilife pode identificar a\pcarga.$"
  SI_Text_LakeWin_En::
 diff --git a/src/battle_setup.c b/src/battle_setup.c
-index 49cc3df..b55eb29 100644
+index 49cc3df..314e1a2 100644
 --- a/src/battle_setup.c
 +++ b/src/battle_setup.c
 @@ -1,5 +1,6 @@
