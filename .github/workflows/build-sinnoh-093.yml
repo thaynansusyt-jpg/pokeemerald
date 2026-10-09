@@ -31,6 +31,9 @@ jobs:
           git apply --whitespace=nowarn /tmp/sinnoh_092.patch
           git apply --whitespace=nowarn /tmp/0.9.3.patch
           git apply --whitespace=nowarn /tmp/0.9.3-options.patch
+          base64 --decode patches/sinnoh_093_source_overlay.tar.gz.b64 > /tmp/sinnoh_093_source_overlay.tar.gz
+          echo "aaf049dc5d5695e5c6a25dc6cec20650100dad70120cf8df83d6df13a078c69b  /tmp/sinnoh_093_source_overlay.tar.gz" | sha256sum -c -
+          tar -xzf /tmp/sinnoh_093_source_overlay.tar.gz -C .
       - name: Validate encounters and UI
         run: |
           python3 tools/test_sinnoh_093_static.py
