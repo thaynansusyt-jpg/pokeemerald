@@ -1,7 +1,7 @@
 name: Unova - Compilar e validar
 on:
   push:
-    branches: [unova-0.10.5-dev]
+    branches: [unova-0.10.6-identity-and-first-maps]
     paths:
       - 'src/**'
       - 'data/**'
@@ -29,6 +29,7 @@ jobs:
         run: |
           set -o pipefail
           {
+            python3 tools/unova_first_maps.py &&
             python3 tools/qa_unova_0101.py &&
             make -f Makefile.termux rom JOBS=2 &&
             python3 tools/qa_unova_integrated.py
@@ -47,7 +48,7 @@ jobs:
         if: success()
         uses: actions/upload-artifact@v4
         with:
-          name: unova-0105-gba-nao-testada-em-jogo
+          name: Unova_0106_Teste
           path: |
             pokemon_hoenn_expansion_gen7.gba
             rom.sha256
