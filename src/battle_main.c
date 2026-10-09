@@ -1,4 +1,5 @@
 #include "global.h"
+#include "unova_chapter.h"
 #include "battle.h"
 #include "battle_anim.h"
 #include "battle_ai_main.h"
@@ -1937,6 +1938,7 @@ void CB2_InitEndLinkBattle(void)
 
         InitBattleBgsVideo();
         LoadPalette(gBattleTextboxPalette, BG_PLTT_ID(0), 2 * PLTT_SIZE_4BPP);
+    UnBattleTextPalette();
         LoadBattleMenuWindowGfx();
         ResetSpriteData();
         ResetTasks();

@@ -1327,10 +1327,10 @@ static void HighlightSelectedMainMenuItem(enum PartyMenuType menuType, u8 select
 
 static const u8 sUnWelcome[] = _("Bem-vindo a Unova!\nSou a Professora Juniper.");
 static const u8 sUnWelcomeEn[] = _("Welcome to Unova!\nI am Professor Juniper.");
-static const u8 sUnSpeech[] = _("Pokemon e pessoas dividem\neste mundo. Como voces\pvao crescer juntos? Essa\ne a minha pesquisa!");
-static const u8 sUnSpeechEn[] = _("Pokemon and people share\nthis world. How will you\pgrow together? That is\nmy research!");
-static const u8 sUnAndYouAre[] = _("Tres amigos de Nuvema\nestao prestes a viajar.\pAntes, conte um pouco\nsobre voce.");
-static const u8 sUnAndYouAreEn[] = _("Three friends in Nuvema\nare about to set out.\pFirst, tell me a little\nabout yourself.");
+static const u8 sUnSpeech[] = _("Pokemon e pessoas vivem\nneste vasto mundo.\pQuero estudar os lacos\nque formamos com eles.");
+static const u8 sUnSpeechEn[] = _("Pokemon and people live\ntogether in this world.\pI study the bonds\nthat grow between them.");
+static const u8 sUnAndYouAre[] = _("Em Nuvema, tres amigos\nvao iniciar uma jornada.\pAntes de partir, quero\nsaber mais sobre voce.");
+static const u8 sUnAndYouAreEn[] = _("Three friends in Nuvema\nare beginning a journey.\pBefore you leave, tell\nme a little about you.");
 static const u8 sUnBoyOrGirl[] = _("Voce e um garoto?\nOu uma garota?");
 static const u8 sUnBoyOrGirlEn[] = _("Are you a boy?\nOr are you a girl?");
 static const u8 sUnWhatsYourName[] = _("Como voce se chama?");
@@ -1339,8 +1339,8 @@ static const u8 sUnSoItsPlayer[] = _("Entao, {PLAYER}?");
 static const u8 sUnSoItsPlayerEn[] = _("So, it is {PLAYER}?");
 static const u8 sUnYourePlayer[] = _("Certo, {PLAYER}!\nBianca e Cheren esperam!");
 static const u8 sUnYourePlayerEn[] = _("Right, {PLAYER}!\nBianca and Cheren await!");
-static const u8 sUnAreYouReady[] = _("A verdade e os ideais\nvao cruzar seu caminho.\pEscute seu parceiro,\nmesmo no maior silencio.\pSua jornada comeca agora!");
-static const u8 sUnAreYouReadyEn[] = _("Truth and ideals will\ncross your path.\pListen to your partner,\neven in deepest silence.\pYour journey starts now!");
+static const u8 sUnAreYouReady[] = _("Verdade e ideais vao\nmarcar sua jornada.\pCuide bem do parceiro\nque escolher.\pUnova espera por voce!");
+static const u8 sUnAreYouReadyEn[] = _("Truth and ideals will\nshape your adventure.\pTake good care of your\nfirst Pokemon partner.\pUnova is waiting!");
 static void Task_NewGameBirchSpeech_Init(u8 taskId)
 {
     if (gTasks[taskId].data[15] != 0x4845)
@@ -1432,7 +1432,7 @@ static void Task_NewGameBirchSpeech_WaitForSpriteFadeInWelcome(u8 taskId)
 
 static void Task_NewGameBirchSpeech_ThisIsAPokemon(u8 taskId)
 {
-    if (!gPaletteFade.active && !RunTextPrintersAndIsPrinter0Active())
+    if (!gPaletteFade.active && !RunTextPrintersAndIsPrinter0Active() && (SiNewGameSeason() != 2 || JOY_NEW(A_BUTTON) || JOY_NEW(B_BUTTON)))
     {
         gTasks[taskId].func = Task_NewGameBirchSpeech_MainSpeech;
         StringExpandPlaceholders(gStringVar4, gText_ThisIsAPokemon);
@@ -1443,7 +1443,7 @@ static void Task_NewGameBirchSpeech_ThisIsAPokemon(u8 taskId)
 
 static void Task_NewGameBirchSpeech_MainSpeech(u8 taskId)
 {
-    if (!RunTextPrintersAndIsPrinter0Active())
+    if (!RunTextPrintersAndIsPrinter0Active() && (SiNewGameSeason() != 2 || JOY_NEW(A_BUTTON) || JOY_NEW(B_BUTTON)))
     {
         StringExpandPlaceholders(gStringVar4, SiNewGameSeason()==2 ? (gSaveBlock2Ptr->optionsLanguage ? sUnSpeech : sUnSpeechEn) : SiNewGameSeason()==1 ? (gSaveBlock2Ptr->optionsLanguage ? sSiSpeech : sSiSpeechEn) : gText_Birch_MainSpeech);
         AddTextPrinterForMessage(TRUE);
@@ -1497,7 +1497,7 @@ static void Task_NewGameBirchSpeechSub_WaitForLotad(u8 taskId)
 
 static void Task_NewGameBirchSpeech_AndYouAre(u8 taskId)
 {
-    if (!RunTextPrintersAndIsPrinter0Active())
+    if (!RunTextPrintersAndIsPrinter0Active() && (SiNewGameSeason() != 2 || JOY_NEW(A_BUTTON) || JOY_NEW(B_BUTTON)))
     {
         sStartedPokeBallTask = FALSE;
         StringExpandPlaceholders(gStringVar4, SiNewGameSeason()==2 ? (gSaveBlock2Ptr->optionsLanguage ? sUnAndYouAre : sUnAndYouAreEn) : SiNewGameSeason()==1 ? (gSaveBlock2Ptr->optionsLanguage ? sSiAndYouAre : sSiAndYouAreEn) : gText_Birch_AndYouAre);
@@ -1508,7 +1508,7 @@ static void Task_NewGameBirchSpeech_AndYouAre(u8 taskId)
 
 static void Task_NewGameBirchSpeech_StartBirchLotadPlatformFade(u8 taskId)
 {
-    if (!RunTextPrintersAndIsPrinter0Active())
+    if (!RunTextPrintersAndIsPrinter0Active() && (SiNewGameSeason() != 2 || JOY_NEW(A_BUTTON) || JOY_NEW(B_BUTTON)))
     {
         gSprites[gTasks[taskId].tBirchSpriteId].oam.objMode = ST_OAM_OBJ_BLEND;
         gSprites[gTasks[taskId].tLotadSpriteId].oam.objMode = ST_OAM_OBJ_BLEND;
@@ -1779,7 +1779,7 @@ static void Task_NewGameBirchSpeech_WaitForSpriteFadeInAndTextPrinter(u8 taskId)
     {
         gSprites[gTasks[taskId].tBirchSpriteId].oam.objMode = ST_OAM_OBJ_NORMAL;
         gSprites[gTasks[taskId].tLotadSpriteId].oam.objMode = ST_OAM_OBJ_NORMAL;
-        if (!RunTextPrintersAndIsPrinter0Active())
+        if (!RunTextPrintersAndIsPrinter0Active() && (SiNewGameSeason() != 2 || JOY_NEW(A_BUTTON) || JOY_NEW(B_BUTTON)))
         {
             gSprites[gTasks[taskId].tBirchSpriteId].oam.objMode = ST_OAM_OBJ_BLEND;
             gSprites[gTasks[taskId].tLotadSpriteId].oam.objMode = ST_OAM_OBJ_BLEND;
@@ -1828,7 +1828,7 @@ static void Task_NewGameBirchSpeech_ShrinkPlayer(u8 taskId)
     if (gTasks[taskId].tIsDoneFadingSprites)
     {
         gSprites[gTasks[taskId].tPlayerSpriteId].oam.objMode = ST_OAM_OBJ_NORMAL;
-        if (!RunTextPrintersAndIsPrinter0Active())
+        if (!RunTextPrintersAndIsPrinter0Active() && (SiNewGameSeason() != 2 || JOY_NEW(A_BUTTON) || JOY_NEW(B_BUTTON)))
         {
             // Unova: skip the legacy affine shrink/white-silhouette path.
             // Finish with a conventional fade before loading the first map.

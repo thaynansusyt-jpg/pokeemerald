@@ -6,6 +6,7 @@ unsigned char UnCurrentSeason(void);
 const unsigned char *UnSeasonName(void);
 const unsigned char *UnLayoutName(unsigned short layoutId);
 void UnSeasonPalette(unsigned short dest, unsigned short size);
+void UnBattleTextPalette(void);
 void UnPrepareGiftSave(void);
 void UnResonancePulse(void);
 void UnHeal(void);

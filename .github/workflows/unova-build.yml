@@ -1,7 +1,7 @@
 name: Unova - Compilar e validar
 on:
   push:
-    branches: [unova-0.10.7-video-qa]
+    branches: [unova-0.10.8-video-feedback]
     paths:
       - 'src/**'
       - 'data/**'
@@ -10,7 +10,6 @@ on:
       - 'include/**'
       - 'tools/**'
       - 'Makefile*'
-      - '.github/workflows/unova-build.yml'
       - '.github/workflows/unova-build.yml'
   workflow_dispatch:
 permissions:
@@ -30,6 +29,8 @@ jobs:
         run: |
           set -o pipefail
           {
+            python3 tools/unova_0108_exits.py &&
+            python3 tools/qa_unova_0108.py &&
             python3 tools/unova_0107_visual_repair.py &&
             python3 tools/qa_unova_visual_0107.py &&
             python3 tools/unova_first_maps.py &&
@@ -51,7 +52,7 @@ jobs:
         if: success()
         uses: actions/upload-artifact@v4
         with:
-          name: unova-0107-build-revisar-antes-de-jogar
+          name: Unova_0108_Teste
           path: |
             pokemon_hoenn_expansion_gen7.gba
             rom.sha256

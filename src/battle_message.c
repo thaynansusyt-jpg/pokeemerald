@@ -1,4 +1,5 @@
 #include "global.h"
+#include "unova_chapter.h"
 #include "hoenn_expansion.h"
 #include "battle.h"
 #include "battle_anim.h"
@@ -95,6 +96,10 @@ static const u8 sText_TwoWildPkmnAppeared[] = _("Oh! A wild {B_OPPONENT_MON1_NAM
 static const u8 sText_GhostAppearedCantId[] = _("The GHOST appeared!\pDarn!\nThe GHOST can't be ID'd!\p");
 static const u8 sText_TheGhostAppeared[] = _("The GHOST appeared!\p");
 static const u8 sText_Trainer1WantsToBattle[] = _("You are challenged by {B_TRAINER1_NAME_WITH_CLASS}!\p");
+static const u8 sUnTrainerChallengePt[] = _("{B_TRAINER1_NAME_WITH_CLASS}\nquer batalhar!\p");
+static const u8 sUnTrainerSendPt[] = _("{B_TRAINER1_NAME_WITH_CLASS}\nenviou {B_OPPONENT_MON1_NAME}!");
+static const u8 sUnTrainerSend2Pt[] = _("{B_TRAINER1_NAME_WITH_CLASS}\nenviou {B_BUFF1}!");
+static const u8 sUnGoPt[] = _("Vai, {B_PLAYER_MON1_NAME}!");
 static const u8 sText_LinkTrainerWantsToBattle[] = _("You are challenged by {B_LINK_OPPONENT1_NAME}!");
 static const u8 sText_TwoLinkTrainersWantToBattle[] = _("You are challenged by {B_LINK_OPPONENT1_NAME} and {B_LINK_OPPONENT2_NAME}!");
 static const u8 sText_Trainer1SentOutPkmn[] = _("{B_TRAINER1_NAME_WITH_CLASS} sent out {B_OPPONENT_MON1_NAME}!");
@@ -2817,6 +2822,20 @@ void BufferStringBattle(enum StringID stringID, enum BattlerId battler)
         break;
     }
 
+    // Keep Hoenn/Sinnoh and English settings untouched. Localize only
+    // the most visible Unova intro battle messages in Portuguese.
+    if (UnIsSeason() && gSaveBlock2Ptr->optionsLanguage != 0
+        && !(gBattleTypeFlags & (BATTLE_TYPE_LINK | BATTLE_TYPE_RECORDED_LINK)))
+    {
+        if (stringPtr == sText_Trainer1WantsToBattle)
+            stringPtr = sUnTrainerChallengePt;
+        else if (stringPtr == sText_Trainer1SentOutPkmn)
+            stringPtr = sUnTrainerSendPt;
+        else if (stringPtr == sText_Trainer1SentOutPkmn2)
+            stringPtr = sUnTrainerSend2Pt;
+        else if (stringPtr == sText_GoPkmn)
+            stringPtr = sUnGoPt;
+    }
     BattleStringExpandPlaceholdersToDisplayedString(stringPtr);
 }
 

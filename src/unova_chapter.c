@@ -59,6 +59,17 @@ void UnSeasonPalette(u16 dest,u16 size)
         gPlttBufferUnfaded[i]=gPlttBufferFaded[i]=RGB(r,g,b);
     }
 }
+// Load the original battle textbox, then recolor only Unova's accent shades.
+// Both unfaded and faded buffers are updated so the battle remains readable.
+void UnBattleTextPalette(void)
+{
+    if (!UnIsSeason())
+        return;
+    gPlttBufferUnfaded[2] = gPlttBufferFaded[2] = RGB(12, 21, 29);
+    gPlttBufferUnfaded[13] = gPlttBufferFaded[13] = RGB(5, 12, 24);
+    gPlttBufferUnfaded[14] = gPlttBufferFaded[14] = RGB(9, 17, 29);
+}
+
 u16 UnWildSpecies(u16 species)
 {
     static const u16 deer[]={SPECIES_DEERLING_SPRING,SPECIES_DEERLING_SUMMER,SPECIES_DEERLING_AUTUMN,SPECIES_DEERLING_WINTER};
