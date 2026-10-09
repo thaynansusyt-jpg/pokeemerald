@@ -1,0 +1,107 @@
+name: Sinnoh 0.9.3 - Direct GBA core input test
+on:
+  push:
+    branches: [sinnoh-0.9.3-recuperacao]
+    paths: ['.github/workflows/sinnoh-direct-core-test.yml']
+  workflow_dispatch:
+
+permissions:
+  actions: read
+  contents: read
+
+jobs:
+  direct-input:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install mGBA development library
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq libmgba-dev build-essential
+      - name: Download compiled Sinnoh 0.9.3 ROM
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p rom captures
+          gh run download 37863869563 -R "${{ github.repository }}" -n Pokemon-Hoenn-Expansion-Sinnoh-0.9.3-beta -D rom
+          test -s rom/pokemon_hoenn_expansion_gen7.gba
+      - name: Compile headless mGBA frame-and-input runner
+        run: |
+          cat > /tmp/gba_test.c <<'C'
+          #include <mgba/core/core.h>
+          #include <mgba/core/interface.h>
+          #include <stdint.h>
+          #include <stdio.h>
+          #include <stdlib.h>
+          #include <stdbool.h>
+          #include <string.h>
+          #define W 240
+          #define H 160
+          #define KEY_A 1
+          #define KEY_START 8
+          #define KEY_DOWN 128
+          static mColor framebuf[W * H];
+          static void snap(int frame) {
+            char path[128];
+            snprintf(path, sizeof(path), "captures/frame-%05d.ppm", frame);
+            FILE *f=fopen(path,"wb");
+            if(!f) return;
+            fprintf(f,"P6\n%d %d\n255\n",W,H);
+            for(int p=0;p<W*H;p++) {
+              uint32_t v=framebuf[p];
+              unsigned char rgb[3]={(v>>16)&255,(v>>8)&255,v&255};
+              fwrite(rgb,1,3,f);
+            }
+            fclose(f);
+            printf("Saved screenshot %s\n",path);
+            fflush(stdout);
+          }
+          int main(int argc,char **argv) {
+            if(argc<2) return 2;
+            struct mCore *core=mCoreFind(argv[1]);
+            if(!core){fprintf(stderr,"mCoreFind failed\n");return 3;}
+            if(!core->init(core)){fprintf(stderr,"core init failed\n");return 4;}
+            mCoreInitConfig(core,NULL);
+            core->setVideoBuffer(core,framebuf,W);
+            if(!mCoreLoadFile(core,argv[1])){fprintf(stderr,"load ROM failed\n");return 5;}
+            core->reset(core);
+            int marks[]={120,1500,3000,3500,3600,3850,3900,4200,4250,4500,4550,4800,5050,5300,5800,6500,7300};
+            size_t mi=0;
+            for(int frame=0; frame<=7300; frame++) {
+              uint32_t keys=0;
+              if(frame>=3500 && frame<3530) keys=KEY_START;
+              if(frame>=3800 && frame<3825) keys=KEY_A;
+              if(frame>=4150 && frame<4175) keys=KEY_DOWN;
+              if(frame>=4450 && frame<4475) keys=KEY_A;
+              if(frame>=4750 && frame<4775) keys=KEY_A;
+              if(frame>=5000 && frame<5025) keys=KEY_A;
+              if(frame>=5250 && frame<5275) keys=KEY_A;
+              if(frame>=5750 && frame<5775) keys=KEY_A;
+              if(frame>=6450 && frame<6475) keys=KEY_A;
+              core->setKeys(core,keys);
+              core->runFrame(core);
+              if(mi < sizeof(marks)/sizeof(marks[0]) && frame==marks[mi]) {
+                snap(frame);
+                mi++;
+              }
+            }
+            printf("COMPLETED 7300 GBA frames, running direct core controls\n");
+            core->unloadROM(core);
+            mCoreConfigDeinit(&core->config);
+            core->deinit(core);
+            return 0;
+          }
+          C
+          cc -O2 -DENABLE_VFS -DENABLE_DIRECTORIES -o /tmp/gba_test /tmp/gba_test.c -lmgba -lm
+      - name: Run core input test and capture GBA framebuffer
+        run: |
+          timeout 260s /tmp/gba_test rom/pokemon_hoenn_expansion_gen7.gba | tee captures/direct-core.log
+      - name: Upload framebuffer captures
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: Sinnoh-0.9.3-Direct-Core-Captures
+          path: captures
+          retention-days: 14
+          if-no-files-found: warn
