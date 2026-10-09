@@ -28,3 +28,17 @@ Fonte da investigação: duas gravações do usuário, 1000738303.mp4 (2m16s) e 
 6. Confirmar que Hoenn e Sinnoh continuam intactos.
 
 **Estado:** a compilação automatizada deve ser verificada em `Actions`. Sem gameplay completo automatizado, ainda não afirmar que todos os bugs acabaram. Uma ROM por teste: `Unova_0108_Teste.gba`.
+
+## Resultado da compilação oficial de teste
+
+- **GitHub Actions: SUCCESS** — https://github.com/thaynansusyt-jpg/pokeemerald/actions/runs/37999322700
+- Porta do quarto: 6 destinos válidos, 5 novos.
+- Porta do andar de baixo: 7 destinos válidos, 5 novos.
+- 24 verificações novas de saída/textos/batalhas.
+- 63 verificações visuais/warps, 475 estáticas, 104 integradas.
+- ROM final: 33.554.432 bytes (32 MiB).
+- SHA-256: `eb36f3e2ec5fab20f337eea3ccc5696bcb9d696c2f6e79378cd0844b020db374`.
+- Arquivo diferente de 0.10.7; o arquivo `.gba` compilou e foi validado por checksum.
+- **Pendente:** gameplay interativo dos warps e apresentação visual da borda; não afirmar jogo livre de bugs.
+
+Os logs contêm alguns avisos não fatais do libpng sobre `bKGD`, que não impediram a build, e avisos de API obsoleta na base de Sinnoh.
