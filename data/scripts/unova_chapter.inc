@@ -1159,45 +1159,45 @@ UN_Field38::
  msgbox UN_T_UN_Field38_After, MSGBOX_DEFAULT
  end
 UN_T_Gate::
- .string "Seus amigos ainda precisam\nde voce. Abra Missoes para\pver o destino atual.$"
+ .string "Volte um instante!\nSeus amigos aguardam.\pAbra Missoes para ver\no proximo destino.$"
 UN_T_Gate_En::
- .string "Your friends still need\nyou. Open Missions to see\pyour current destination.$"
+ .string "Hold on a moment!\nYour friends are waiting.\pOpen Missions to find\nyour next destination.$"
 UN_T_NotYet::
- .string "Precisamos preparar o\nproximo passo. Seu C-Gear\pmostra a missao atual.$"
+ .string "Ainda falta um passo\nimportante da jornada.\pVeja a missao atual no\nC-Gear antes de seguir.$"
 UN_T_NotYet_En::
- .string "We must prepare the next\nstep. Your C-Gear shows\pthe current mission.$"
+ .string "There is still an\nimportant step ahead.\pCheck your current task\nin the C-Gear first.$"
 UN_T_Done::
  .string "Seguimos juntos, um passo\nde cada vez. Mesmo a\pverdade pode mudar quando\nescutamos.$"
 UN_T_Done_En::
  .string "We keep going together,\none step at a time. Even\ptruth can change when we\nlisten.$"
 UN_T_Prologue::
- .string "Bianca: Juniper mandou\ntres parceiros! Cheren ja\pleu cada pagina do manual.\nEu so quero conhecer o\pmeu! Escolha primeiro,\n{PLAYER}.$"
+ .string "Bianca: A encomenda da\nJuniper finalmente chegou!\pCheren: Vamos com calma.\nO primeiro parceiro muda\ptoda a viagem, {PLAYER}!$"
 UN_T_Prologue_En::
- .string "Bianca: Juniper sent three\npartners! Cheren read\pevery manual page. I just\nwant to meet mine! You\pchoose first, {PLAYER}.$"
+ .string "Bianca: Juniper's package\nis finally here!\pCheren: Take your time.\nYour first partner changes\pthe whole journey, {PLAYER}!$"
 UN_T_Starter::
- .string "Snivy, Tepig ou Oshawott?\nEsse parceiro vai viver\pesta historia ao seu lado.$"
+ .string "Tres parceiros, tres jeitos\nde conhecer Unova.\pO primeiro passo e seu.\nQuem vai caminhar com voce?$"
 UN_T_Starter_En::
- .string "Snivy, Tepig or Oshawott?\nThis partner will live\pthis story with you.$"
+ .string "Three partners, three ways\nto discover Unova.\pThe first step is yours.\nWho will walk beside you?$"
 UN_T_FirstBattle::
- .string "Cheren: Um parceiro nao e\num premio. Vamos descobrir\pjuntos como batalhar!$"
+ .string "Bianca: Espera! Quero ver\ncomo meu parceiro batalha!\pCheren: Vamos aprender\njuntos, sem pressa.$"
 UN_T_FirstBattle_En::
- .string "Cheren: A partner is not a\nprize. Let us learn how to\pbattle together!$"
+ .string "Bianca: Wait! I want to\nsee my partner in battle!\pCheren: We'll learn\ntogether, one step at a time.$"
 UN_T_FriendsLeave::
- .string "Bianca: Meu quarto virou\numa bagunca! Cheren: A\pgente limpa depois. A\nProfessora Juniper nos\pespera no laboratorio. Sua\nmae preparou os tenis de\pcorrida.$"
+ .string "Bianca: Ops... o quarto\nficou uma bagunca!\pCheren: A Juniper espera\na gente no laboratorio.\pBianca: E nao esqueca de\nfalar com sua mae!$"
 UN_T_FriendsLeave_En::
- .string "Bianca: We made such a\nmess! Cheren: We will\pclean it later. Professor\nJuniper is waiting in her\plab. Your mom prepared\nyour running shoes.$"
+ .string "Bianca: Oops... the room\nis a total mess!\pCheren: Juniper is waiting\nat her laboratory.\pBianca: And don't forget\nto talk to your mom!$"
 UN_T_UN_FriendBianca::
- .string "Bianca: Eu me perco ate na\nminha cidade. Mas meu\pparceiro sempre encontra\num jeito de me trazer de\pvolta.$"
+ .string "Bianca: Estou animada...\ne um pouco perdida!\pMas quero escolher meu\nproprio caminho. Vamos\pdescobrir Unova juntos!$"
 UN_T_UN_FriendBianca_En::
- .string "Bianca: I get lost even in\nmy own town. My partner\palways finds a way to\nbring me back.$"
+ .string "Bianca: I'm excited...\nand a little lost!\pBut I want to choose my\nown path. Let's discover\pUnova together!$"
 UN_T_UN_FriendCheren::
- .string "Cheren: Ser forte e uma\nmeta. Entender para que\pusar essa forca ainda e\numa pergunta.$"
+ .string "Cheren: Quero aprender\ncomo os Pokemon crescem.\pVencer importa, claro...\nmas entender seu parceiro\pimporta ainda mais.$"
 UN_T_UN_FriendCheren_En::
- .string "Cheren: Getting strong is\na goal. What to use that\pstrength for is still a\nquestion.$"
+ .string "Cheren: I want to learn\nhow Pokemon grow.\pWinning matters, sure...\nbut understanding your\ppartner matters even more.$"
 UN_T_Juniper::
- .string "Juniper: Nao quero uma\nlista de capturas. Quero\pas historias que voces vao\nviver. Tome a Pokedex e\pestas Poke Balls. A Rota 1\nmuda com as estacoes;\pobserve suas cores.$"
+ .string "Juniper: Seja bem-vindo\na sua jornada em Unova!\pPokemon e pessoas mudam\ne aprendem juntos.\pLeve esta Pokedex. Observe\nos habitats e as estacoes!$"
 UN_T_Juniper_En::
- .string "Juniper: I do not want a\ncapture list. I want the\pstories you will live.\nTake this Pokedex and\pthese Poke Balls. Route 1\nchanges with the seasons;\pwatch its colors.$"
+ .string "Juniper: Your adventure\nin Unova begins today!\pPokemon and people grow\nby learning together.\pTake this Pokedex. Watch\nthe habitats and seasons!$"
 UN_T_UN_AccumulaScene_Intro::
  .string "Ghetsis: A liberdade exige\nseparar pessoas e Pokemon!\pN: Espere. Seu parceiro\nquer me dizer algo. Uma\pbatalha pode revelar o que\npalavras escondem.$"
 UN_T_UN_AccumulaScene_Intro_En::
@@ -1211,9 +1211,9 @@ UN_T_UN_AccumulaScene_After::
 UN_T_UN_AccumulaScene_After_En::
  .string "N: I heard trust... and a\nnoise, like ice breaking\pinside a bell. Why do\nthree voices answer you?$"
 UN_T_UN_PlazaCitizen::
- .string "O discurso de Ghetsis\nparece bonito. Entao por\pque os Pokemon dos guardas\nse afastam dele?$"
+ .string "A pracinha ficou cheia\nhoje. Toda Unova veio\pouvir o discurso.\nMas sera que N concorda?$"
 UN_T_UN_PlazaCitizen_En::
- .string "Ghetsis gives a beautiful\nspeech. Why do his guards\pPokemon shy away from him?$"
+ .string "The plaza is crowded\ntoday. People came from\pall over Unova to listen.\nBut does N agree?$"
 UN_T_UN_BiancaRoute1_Intro::
  .string "Bianca: Meu pai quer que\neu volte. Eu quero\pdescobrir quem posso ser!\nVamos batalhar antes de\pStriaton?$"
 UN_T_UN_BiancaRoute1_Intro_En::
