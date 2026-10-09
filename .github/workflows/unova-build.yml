@@ -10,6 +10,7 @@ on:
       - 'include/**'
       - 'tools/**'
       - 'Makefile*'
+      - '.github/workflows/unova-build.yml'
   workflow_dispatch:
 permissions:
   contents: read
@@ -29,8 +30,8 @@ jobs:
           set -o pipefail
           {
             python3 tools/qa_unova_0101.py &&
-            python3 tools/qa_unova_integrated.py &&
-            make -f Makefile.termux rom JOBS=2
+            make -f Makefile.termux rom JOBS=2 &&
+            python3 tools/qa_unova_integrated.py
           } 2>&1 | tee unova-build.log
           test -s pokemon_hoenn_expansion_gen7.gba
           test "$(stat -c %s pokemon_hoenn_expansion_gen7.gba)" -eq 33554432
