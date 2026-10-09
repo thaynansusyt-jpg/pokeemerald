@@ -23,3 +23,11 @@ Vídeo fornecido: `1000738319.mp4`, 3m53s.
 - Os testes estáticos não provam que um evento funciona no emulador; a confirmação final é jogando.
 
 Não renomear build antiga como se estivesse consertada. Um único `Unova_0109_Teste.gba` na versão de teste.
+
+## Resultado do build
+- **SUCCESS:** https://github.com/thaynansusyt-jpg/pokeemerald/actions/runs/38002906820
+- Fundo `indoor` e `outdoor` gerados: 16 KiB cada; mapas de 2048 bytes e paleta de 32 bytes, sem pixels pretos nos assets.
+- 21 testes novos, 24 da 0.10.8, 63 da 0.10.7, 475 verificações estáticas e 104 verificações integradas passaram.
+- ROM gerada: 33.554.432 bytes; SHA-256 `f60db0ba913b4298f6a999289cc3ee31d11cd15f8635f0d9ea469c966ee6e8b3`.
+- Artefato GitHub: `Unova_0109_Teste`.
+- **Limitação:** build e testes estáticos não demonstram o resultado visual no emulador. Solicitar gravação da batalha Bianca e da saída do quarto/casa antes de declarar o bug resolvido.
